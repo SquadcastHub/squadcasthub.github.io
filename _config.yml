@@ -1,5 +1,9 @@
 repository: tomjoht/documentation-theme-jekyll
 
+url: squadcasthub.github.io
+   
+baseurl: /SquadcastHub
+
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
