@@ -1,0 +1,152 @@
+---
+title: ManageEngine Opmanager
+tags: [Logz.io, MongoDB-Atlas-/-Cloud-Manager]
+keywords: 
+last_updated: 
+summary: "Send alerts from ManageEngine OpManager to Squadcast"
+sidebar: mydoc_sidebar
+permalink: docs/manageengine-opmanager.html
+folder: mydoc
+---
+
+This document will help you integrate ManageEngine OpManager with Squadcast.
+
+[ManageEngine OpManager](https://www.manageengine.com/products/applications_manager/me-opmanager-monitoring.html) is an end-to-end network management software for heterogeneous, multi-vendor enterprise IT networks.
+Route detailed alerts from ManageEngine OpManager to the right users in Squadcast.
+
+## How to integrate OpManager with Squadcast
+
+### In Squadcast: Using ManageEngine OpManager as an Alert Source
+
+**(1)** On the **Sidebar**, click on **Services**.
+
+![](images/integration_1-1.png)
+
+**(2)** Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+**(3)** Click the corresponding **Alert Sources**
+
+![](images/integration_1.png)
+
+**(4)** Search for **ManageEngine OpManager** from the **Alert Source** drop down menu and copy the webhook
+
+![](images/opmanager_1.png)
+
+### In ManageEngine OpManager: Create a Squadcast webhook (Setup guide for ManageEngine OpManager running on a Linux machine)
+
+**(1)** In `/opmanager/bin` folder, run the following command
+
+```
+sudo wget https://raw.githubusercontent.com/squadcastHub/squadcast-opmanager-script/master/sq-opmanager-script.py
+```
+
+**(2)** Once the file is downloaded, kindly ensure that the file has _executable permissions_ for your OpManager user. If not, you will have to provide the same using the following command
+
+```
+sudo chmod +x sq-opmanager-script.py
+```
+
+**(3)** To add a **Notification Profile**, go to **Settings** tab > **Notifications** > **Add Profile**
+
+![](images/opmanager_2.png)
+
+**(4)** Select **Run Program**. 
+
+![](images/opmanager_3.png)
+
+**(5)** (a) In **Command Name**, paste the following
+
+```
+./sq-opmanager-script.py
+```
+
+**(5)** (b) In **Program Arguments** paste the following
+
+```
+"<COPIED_WEBHOOK_URL_FROM_SQUADCAST>" "$alarmid" "$message" "$displayName" "$category" "$stringseverity" "IP Address:$DeviceField(ipAddress)" "$strModTime" "$eventType"  "Entity: $entity"
+```
+
+**(5)** (c) Click on **Next**
+
+**(6)** Choose the appropriate criteria for which alerts should be generated and click on **Next**
+
+![](images/opmanager_4.png)
+
+**(7)** Select the devices for which this particular **Notification Profile** should be applied and click on **Next**
+
+![](images/opmanager_5.png)
+
+**(8)** Define additional custom settings for this profile as per your preferences and click on **Next**
+
+![](images/opmanager_6.png)
+
+**(9)** Give the profile a name, click on **Test Action** to generate a test alert. Verify that a test incident was created in Squadcast for the same
+
+![](images/opmanager_7.png)
+
+**(10)** Once you have verified this, click on **Save** to save this profile
+
+### In ManageEngine OpManager: Create a Squadcast webhook (Setup guide for ManageEngine OpManager running on a Windows machine)
+
+**(1)** Download the latest version of [Python3](https://www.python.org/downloads/) in your system. Make note of the absolute path of where your python.exe file is stored
+
+{{site.data.alerts.yellow-note-i}}
+<b>Note:</b>
+<br/><br/><p>This has been tested and documented for Python version 3.9</p>
+{{site.data.alerts.end}}
+
+{{site.data.alerts.blue-note}}
+<b>Pro Tip:</b>
+<br/><br/><p>To get the absolute path of <i>python.exe</i> file run the command <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">where python.exe</code> in your Command Prompt</p>
+{{site.data.alerts.end}}
+
+**(2)** Open the URL given below in a browser and copy the contents of this file into a file locally on your system and name the file `sq-opmanager-script.py`
+Make note of the _absolute path_ of where `sq-opmanager-script.py` is stored
+
+```
+https://raw.githubusercontent.com/squadcastHub/squadcast-opmanager-script/master/sq-opmanager-script.py
+```
+
+**(3)** To add a **Notification Profile**, go to **Settings** tab > **Notifications** > **Add Profile**
+
+![](images/opmanager_2.png)
+
+**(4)** Select **Run Program**. 
+
+![](images/opmanager_3.png)
+
+**(5)** (a) In **Command Name**, paste the absolute path to python.exe
+
+**(5)** (b) In **Program Arguments**, paste the _absolute path_ to `sq-opmanager-script.py`, followed by the copied webhook URL from Squadcast, followed by the parameters
+
+```
+<ABSOLUTE_PATH_TO_SCRIPT> <COPIED_WEBHOOK_URL_FROM_SQUADCAST>  "$alarmid"  "$message"  "$displayName"  "$category"  "$stringseverity"  "$DeviceField(ipAddress)"  "$strModTime"  "$eventType"  "$entity"
+```
+
+**(5)** (c) Click on **Next**
+
+![](images/opmanager_8.png)
+
+**(6)** Choose the appropriate criteria for which alerts should be generated and click on **Next**
+
+![](images/opmanager_4.png)
+
+**(7)** Select the devices for which this particular **Notification Profile** should be applied and click on **Next**
+
+![](images/opmanager_5.png)
+
+**(8)** Define additional custom settings for this profile as per your preferences and click on **Next**
+
+![](images/opmanager_6.png)
+
+**(9)** Give the profile a name, click on **Test Action** to generate a test alert. Verify that a test incident was created in Squadcast for the same
+
+**(10)** Once you have verified this, click on **Save** to save this profile
+
+![](images/opmanager_7.png)
+
+That is it, you are now good to go!
+
+Whenever OpManager sends an alert, an incident will be created in Squadcast for it. When the alert recovers in OpManager, the corresponding incident will **automatically get resolved** in Squadcast as well.

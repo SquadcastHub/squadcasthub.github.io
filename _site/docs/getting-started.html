@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Take your first steps towards incident management using Squadcast.">
+<meta name="keywords" content="getting startedtroubleshooting,  ">
+<title>Quickstart Guide | Incident Management using Squadcast</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+
+<link rel="shortcut icon" href="images/favicon1.png">
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+
+<!-- Fonts (Nunitosans & Opensans) -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<style>
+    li, .post-header, .summary, p, .post-content, #search-input {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+</style>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a class="navbar-brand" href="../index.html">&nbsp;<span class="projectTitle"> <img src="../images/squadcast_logo_white.png" style="width: 80%; margin-top: -2%;"> </span></a>
+            
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!--li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li-->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://www.squadcast.com" target="_blank" rel="noopener">Home</a></li>
+                
+                
+                
+                <li><a href="https://www.squadcast.com/blog" target="_blank" rel="noopener">Blog</a></li>
+                
+                
+                
+                <li><a href="https://headwayapp.co/squadcast-updates" target="_blank" rel="noopener">Changelog</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Quickstart Guide page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Find anything">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Quickstart Guide">{title}</a></li>',
+                    noResultsText: 'No results found',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+      
+  
+  <li>
+      <a title="Getting Started" href="#">Getting Started</a>
+      <ul>
+          
+          
+          
+          <li class="active"><a title="Quickstart Guide" href="/docs/getting-started">Quickstart Guide</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Glossary" href="/docs/glossary">Glossary</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="FAQs" href="/docs/squadcast-faq">FAQs</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="User Management" href="#">User Management</a>
+      <ul>
+          
+          
+          
+          <li><a title="Manage Your Profile" href="/docs/set-up-your-profile">Manage Your Profile</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Manage All Users" href="/docs/managing-all-users">Manage All Users</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Notification Rules" href="/docs/notification-rules">Notification Rules</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Squads" href="#">Squads</a>
+      <ul>
+          
+          
+          
+          <li><a title="Manage Squads" href="/docs/squads">Manage Squads</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Create Smart Squads" href="/docs/create-smart-squads">Create Smart Squads</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Services" href="#">Services</a>
+      <ul>
+          
+          
+          
+          <li><a title="Adding a Service" href="/docs/adding-a-service-1">Adding a Service</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Maintenance Mode" href="/docs/maintenance-mode">Maintenance Mode</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Suppression Rules" href="/docs/suppression-rules">Suppression Rules</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Service Levels" href="/docs/service-levels">Service Levels</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="De-duplication Rules" href="/docs/de-duplication-rules">De-duplication Rules</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Event Tagging" href="/docs/event-tagging">Event Tagging</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Alert Routing" href="/docs/alert-routing">Alert Routing</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Schedules" href="#">Schedules</a>
+      <ul>
+          
+          
+          
+          <li><a title="Create and Manage On-call Schedules & Rotations" href="/docs/schedules">Create and Manage On-call Schedules & Rotations</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Supported On-call Schedules & Rotations" href="/docs/schedule-types">Supported On-call Schedules & Rotations</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Who is On-Call?" href="/docs/who-is-on-call">Who is On-Call?</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Schedule Overrides" href="/docs/schedule-overrides">Schedule Overrides</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Escalation Policies" href="#">Escalation Policies</a>
+      <ul>
+          
+          
+          
+          <li><a title="Create & Manage Escalation Policies" href="/docs/escalation-policies">Create & Manage Escalation Policies</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Editing an Existing Escalation Policy" href="/docs/editing-an-existing-escalation-policy">Editing an Existing Escalation Policy</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Invoke an Escalation Policy for an Existing Incident" href="/docs/invoke-an-escalation-policy-for-an-existing-incident">Invoke an Escalation Policy for an Existing Incident</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Dashboards" href="#">Dashboards</a>
+      <ul>
+          
+          
+          
+          <li><a title="Incident Dashboard" href="/docs/incident-dashboard">Incident Dashboard</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Dashboard Metrics" href="/docs/dashboard-metrics">Dashboard Metrics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="SLO Dashboard" href="/docs/slo-dashboard">SLO Dashboard</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Take Bulk Actions" href="/docs/take-bulk-actions">Take Bulk Actions</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Incidents Page" href="#">Incidents Page</a>
+      <ul>
+          
+          
+          
+          <li><a title="Incident Details" href="/docs/incident-details">Incident Details</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident Timeline" href="/docs/incident-timeline">Incident Timeline</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident War Room" href="/docs/warroom">Incident War Room</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline">Pin messages from War Room to the Incident Timeline</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Postmortems" href="/docs/postmortems">Postmortems</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="StatusPage" href="#">StatusPage</a>
+      <ul>
+          
+          
+          
+          <li><a title="StatusPage" href="/docs/statuspage">StatusPage</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Analytics" href="#">Analytics</a>
+      <ul>
+          
+          
+          
+          <li><a title="Analyze Metrics" href="/docs/analytics">Analyze Metrics</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Alert Source Integrations" href="#">Alert Source Integrations</a>
+      <ul>
+          
+          
+          
+          <li><a title="Amazon Cloudwatch (AWS)" href="/docs/amazon-cloudwatch-aws">Amazon Cloudwatch (AWS)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="AWS CloudWatch Event Rules" href="/docs/aws-cloudwatch-event-rules">AWS CloudWatch Event Rules</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="AWS CloudTrail Logs" href="/docs/aws-cloudtrail-logs">AWS CloudTrail Logs</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="AWS CloudTrail via CloudWatch" href="/docs/aws-cloudtrail-via-cloudwatch">AWS CloudTrail via CloudWatch</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="AppDynamics" href="/docs/appdynamics">AppDynamics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="API" href="/docs/api">API</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="APIv2" href="/docs/apiv2">APIv2</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Azure Monitor" href="/docs/azure-monitor">Azure Monitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Bugsnag" href="/docs/bugsnag">Bugsnag</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Buildkite" href="/docs/buildkite">Buildkite</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Checkmk" href="/docs/checkmk">Checkmk</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Cisco DNAC" href="/docs/cisco-dnac">Cisco DNAC</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="CopperEgg" href="/docs/copperegg">CopperEgg</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Coralogix" href="/docs/coralogix">Coralogix</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Crashlytics" href="/docs/crashlytics">Crashlytics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Datadog" href="/docs/datadog">Datadog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Elastic" href="/docs/elastic">Elastic</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="ElastAlert" href="/docs/elastalert">ElastAlert</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Email" href="/docs/email">Email</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Freshping" href="/docs/freshping">Freshping</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Ghost Inspector" href="/docs/ghost-inspector">Ghost Inspector</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Grafana" href="/docs/grafana">Grafana</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Graylog" href="/docs/graylog">Graylog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Honeybadger" href="/docs/honeybadger">Honeybadger</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="InsightOps (LogEntries)" href="/docs/insightops-logentries">InsightOps (LogEntries)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Instana" href="/docs/instana">Instana</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jenkins Integration" href="/docs/jenkins">Jenkins Integration</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jira Cloud Alert Source" href="/docs/jira-cloud-alert-source">Jira Cloud Alert Source</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jira Server Alert Source" href="/docs/jira-server-alert-source">Jira Server Alert Source</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Kapacitor" href="/docs/kapacitor">Kapacitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LogDNA" href="/docs/logdna">LogDNA</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Loggly" href="/docs/loggly">Loggly</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Logstash" href="/docs/logstash-integration-guide">Logstash</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Logz.io" href="/docs/logz.io">Logz.io</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="ManageEngine Opmanager" href="/docs/manageengine-opmanager">ManageEngine Opmanager</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="MongoDB Atlas / Cloud Manager" href="/docs/mongodb-atlas-cloud-manager">MongoDB Atlas / Cloud Manager</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Nagios" href="/docs/nagios">Nagios</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="New Relic" href="/docs/new-relic">New Relic</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Nixstats" href="/docs/nixstats">Nixstats</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="OverOps" href="/docs/overops">OverOps</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Papertrail" href="/docs/papertrail">Papertrail</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pingdom" href="/docs/pingdom">Pingdom</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Prometheus" href="/docs/prometheus">Prometheus</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Rapid7 InsightIDR" href="/docs/rapid7-insightidr">Rapid7 InsightIDR</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Runscope" href="/docs/runscope">Runscope</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Scout APM" href="/docs/scout-apm">Scout APM</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Sematext" href="/docs/sematext">Sematext</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Sensu" href="/docs/sensu">Sensu</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Sentry.io" href="/docs/sentryio">Sentry.io</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Server Density" href="/docs/server-density">Server Density</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="SignalFx" href="/docs/signalfx">SignalFx</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Site24x7" href="/docs/site24x7">Site24x7</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Slack Alert Source Integration" href="/docs/slack-as-an-alert-source">Slack Alert Source Integration</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="SolarWinds AppOptics" href="/docs/solarwinds-appoptics">SolarWinds AppOptics</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Splunk" href="/docs/splunk">Splunk</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Sqreen" href="/docs/sqreen">Sqreen</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Stackdriver" href="/docs/stackdriver">Stackdriver</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="StatusCake" href="/docs/statuscake">StatusCake</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Sumo Logic" href="/docs/sumo-logic">Sumo Logic</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Sysdig Monitor" href="/docs/sysdig-monitor">Sysdig Monitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Threat Stack" href="/docs/threat-stack">Threat Stack</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Uptime Robot" href="/docs/uptime-robot">Uptime Robot</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Zabbix" href="/docs/zabbix-integration-guide">Zabbix</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Integrations (Extensions)" href="#">Integrations (Extensions)</a>
+      <ul>
+          
+          
+          
+          <li><a title="CircleCI Integration" href="/docs/circleci-integration">CircleCI Integration</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="GitHub" href="/docs/github">GitHub</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Google Hangouts" href="/docs/hangouts">Google Hangouts</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jira Cloud" href="/docs/jira-cloud">Jira Cloud</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Jira Server (On-Premise)" href="/docs/jira-server-on-premise">Jira Server (On-Premise)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Slack" href="/docs/slack">Slack</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="SSO" href="#">SSO</a>
+      <ul>
+          
+          
+          
+          <li><a title="Azure Active Directory SSO" href="/docs/azure-active-directory-sso">Azure Active Directory SSO</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Google SSO" href="/docs/google-sso">Google SSO</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Microsoft ADFS SSO" href="/docs/adfs-sso">Microsoft ADFS SSO</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Okta SSO" href="/docs/okta-sso-integration">Okta SSO</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="SAML 2.0 based SSO" href="/docs/saml-sso">SAML 2.0 based SSO</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Mobile App" href="#">Mobile App</a>
+      <ul>
+          
+          
+          
+          <li><a title="Using the Mobile App" href="/docs/using-the-mobile-app">Using the Mobile App</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline-1">Pin messages from War Room to the Incident Timeline</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Squadcast Actions" href="#">Squadcast Actions</a>
+      <ul>
+          
+          
+          
+          <li><a title="What are Squadcast Actions?" href="/docs/what-are-squadcast-actions">What are Squadcast Actions?</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="CircleCI Actions" href="/docs/circleci-actions">CircleCI Actions</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Squadcast Runbooks (Depricated)" href="/docs/squadcast-runbooks">Squadcast Runbooks (Depricated)</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="How to Video - Squadcast Actions" href="/docs/how-to-video-squadcast-actions">How to Video - Squadcast Actions</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Squadcast API Documentation" href="#">Squadcast API Documentation</a>
+      <ul>
+          
+          
+          
+          <li><a title="Squadcast Public API - Refresh Token" href="/docs/squadcast-public-api">Squadcast Public API - Refresh Token</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Squadcast API Documentation" href="https://apidocs.squadcast.com" target="_blank" rel="noopener">Squadcast API Documentation</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="Managing your Squadcast Account" href="#">Managing your Squadcast Account</a>
+      <ul>
+          
+          
+          
+          <li><a title="Deactivating your Squadcast Account" href="/docs/deactivating-your-squadcast-account">Deactivating your Squadcast Account</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Deleting your Squadcast Account" href="/docs/deleting-your-squadcast-account">Deleting your Squadcast Account</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident Rate Limiting" href="/docs/incident-rate-limiting">Incident Rate Limiting</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Organizations" href="/docs/squadcast-organizations">Organizations</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Upgrading to a Paid Plan" href="/docs/upgrading-to-a-paid-plan">Upgrading to a Paid Plan</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <style>
+a[href^="http://"]:after, a[href^="https://"]:after {
+    content: none;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li > a:hover {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li.active > a {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+#mysidebar{
+    height: 700px;
+    overflow: auto;
+}
+body{
+    padding-top: 70px;
+}
+.summary{
+    border-left: 5px solid #6E7781;
+}
+li.sidebarTitle{
+    color: #363E47;
+}
+
+@media screen and (max-width: 1920px){
+    #tg-sb-sidebar{
+        position: sticky;
+        top: 9%; /*previously, 0*/
+        margin-bottom: 30px;
+    }
+    #toc{
+        position: fixed;
+    }
+    #results-container{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1024px){
+    #tg-sb-sidebar{
+        position: relative;
+        margin-bottom: auto;
+    }
+    #toc{
+        display: none;
+    }
+    #results-container{
+        margin-top: auto;
+    }
+}
+</style>
+
+
+
+<div class="post-content">
+    <div class="col-md-8">
+        <div class="post-header">
+            <h1 class="post-title-main">Quickstart Guide</h1>
+        </div>
+            
+                <div class="summary">Take your first steps towards incident management using Squadcast.</div>
+            
+
+                
+
+            <p><img src="images/squadcast_dashboard.svg" alt="" /></p>
+
+<h2 id="welcome-to-squadcast">Welcome to Squadcast!</h2>
+
+<p>Squadcast is an incident management platform built on DevOps &amp; SRE best practices to help you adopt the same to simplify incident management, get meaningful notifications, and enable faster incident resolution in collaboration. Explore all the incredible SRE features and incident resolution capabilities in this documentation.</p>
+
+<p>As soon you sign up, you’ll be on the Enterprise plan trial and will have access to all the features on the platform for 14 days. Post the trial period, you will be downgraded to the Free plan and you can upgrade to any of the higher plans based on your need and usage. You can see all our plans <a href="https://www.squadcast.com/pricing">here</a>.</p>
+
+<p>Now that you’re here, we’ve put together a checklist of things that you can do to get started with Squadcast - a beginner’s guide.</p>
+
+<p>Begin with the basic setup guide based on <a href="managing-all-users">your role</a> in the organisation: Account Owner, Admin, User or Stakeholder.</p>
+
+<h3 id="-roles-in-squadcast">📛 Roles in Squadcast</h3>
+
+<p><strong>Getting Started as an Account Owner</strong></p>
+
+<p>An <a href="glossary#role-account-owner">Account Owner</a> has all the privileges for managing an organization on Squadcast. There can be only one Account Owner for an organization. And only she can access the Billing page to manage subscription.</p>
+
+<p>Learn more on how to <a href="set-up-your-profile">manage your profile</a> and <a href="managing-all-users">other users</a>. In case you’re also responsible for setting up of incident management tools, you can see the Admin’s section below.</p>
+
+<p><strong>Getting Started as an Admin</strong></p>
+
+<p><a href="glossary#role-admin">Admins</a> on Squadcast have privileges to manage Users, Services, On-call Schedules, Escalation Policies, and so on. The only exception to an Admin’s account is the privilege to manage Billing which is an exclusive privilege of the Account Owner.</p>
+
+<p><strong>Getting Started as a User</strong></p>
+
+<p><a href="managing-all-users">Users</a> on the platform on Squadcast have privileges to manage Services, On-call Schedules, Escalation Policies, and so on. Users will not have access to add or delete users or other privileges exclusive to Account Owner and Admins.</p>
+
+<p>Irrespective of your role, you can go through our checklist to see how you can get more out of Squadcast 🚀</p>
+
+<h2 id="the-squadcast-checklist">The Squadcast Checklist</h2>
+
+<p>Here’s a checklist of things to do to use Squadcast to its full potential or jump to the section of your choice!</p>
+
+<ol>
+  <li><a href="#1--setting-up-your-on-call-team">Setting up your on-call team</a></li>
+  <li><a href="#2--incident-response---reduce-mttr-with-faster-response">Incident Response - Reduce MTTR with Faster Response</a></li>
+  <li><a href="#3--incident-response---noise-reduction--contextual-awareness">Incident response - Noise Reduction &amp; Contextual Awareness</a></li>
+  <li><a href="#4--incident-communication">Incident communication</a></li>
+  <li><a href="#5--sre-visibility--insights">SRE Visibility &amp; Insights</a></li>
+  <li><a href="#6--squadcast-support---essential-information">Squadcast Support - Essential Information</a></li>
+  <li><a href="#7--latest-product-updates">Latest Product Updates</a></li>
+  <li><a href="#8--check-out-the-squadcast-github-page">Check out the Squadcast GitHub page</a></li>
+  <li><a href="#9--check-out-our-product-roadmap">Check out our Product Roadmap</a></li>
+  <li><a href="#10--browse-through-glossary">Browse Through Glossary</a></li>
+  <li><a href="#11--check-out-our-blog--resources">Check out our Blog &amp; Resources</a></li>
+  <li><a href="#12-%EF%B8%8F-here-are-the-events-well-be-at">Here are the events we’ll be at</a></li>
+  <li><a href="#13--heres-how-we-engage-with-the-community">Here’s how we engage with the community</a></li>
+</ol>
+
+<h3 id="1--setting-up-your-on-call-team">1. 📅 Setting up your on-call team</h3>
+
+<p>📟 <strong>Set up your profile and add your notification rules</strong></p>
+
+<p>The <a href="set-up-your-profile">My Profile</a> holds the name and contact information such as phone number, SMS number, email address that is associated with your profile. Head over to add in or edit your contact information.</p>
+
+<p>You will only be able to set your <a href="notification-rules">notification rules</a> - rules for how you want to be notified and after how long from the time of incident trigger.</p>
+
+<p>📱 <strong>Download our mobile app</strong></p>
+
+<p>You can use the <a href="using-the-mobile-app">mobile app</a> to Acknowledge, Reassign, take Actions and Resolve from the Mobile App. The Mobile app will walk you into the incident dashboard where you will be able to view incidents from all states; Triggered (Open), Acknowledged (Investigating), Resolved and Suppressed. You can also see the on-call schedule for your organization on the mobile app.</p>
+
+<p>The mobile app is available on both App Store and Google Play.</p>
+
+<style>
+table{
+    border: 0px;
+    max-width: 50%
+}
+table > tbody > tr > td{
+    border-top: 0px;
+}
+table > tbody > tr:nth-of-type(odd){
+    background-color: transparent;
+}
+</style>
+
+<table>
+    <tr>
+        <td style="width: 30%"><a href="https://apps.apple.com/app/id1501689101"><img src="images/app_store.png" /></a></td>
+        <td style="width: 32%"><a href="https://play.google.com/store/apps/details?id=com.squadcast.incidents&amp;hl=en"><img src="images/play_store.png" /></a></td>
+    </tr>
+</table>
+
+<p>👥 <strong>Add users to your organization</strong></p>
+
+<p>As an Account Owner/ Admin, you can add or remove Admin, User, and Stakeholder accounts. See how to <a href="managing-all-users#add-or-remove-a-user">Manage Users</a>.</p>
+
+<p>🙌 <strong>Create a squad</strong></p>
+
+<p>A <a href="squads">Squad</a> is a group of users that can refer to a team or a project. Squads are handy when you need to notify the whole group together. For instance, when coordinated response is required for high-urgency high-complexity incidents, or at the end of an escalation policy when nobody has acknowledged. See how to <a href="squads">Manage Squads</a>.</p>
+
+<p>Examples:</p>
+
+<ul>
+  <li>Payment gateway Squad</li>
+  <li>Backend Squad</li>
+  <li>Frontend Squad</li>
+  <li>All Hands</li>
+</ul>
+
+<p>⏳ <strong>Create escalation policies</strong></p>
+
+<p>Squadcast enables you to add time-based escalation rules for Users, <a href="squads">Squads</a> (a group
+of Users) or <a href="adding-a-service">Schedules</a> (on-call schedules). See how to <a href="escalation-policies">Manage Escalation Policies</a>.</p>
+
+<p>Escalation policies are attached to services. So, any alert or incident triggered for a service will notify based on the escalation policy attached to it.</p>
+
+<p>Examples:</p>
+
+<ul>
+  <li>Website Monitoring</li>
+  <li>Payment Portal Monitoring</li>
+  <li>Backend Issues</li>
+</ul>
+
+<p>🔩 <strong>Add services</strong></p>
+
+<p><a href="adding-a-service">Services</a> are at the core of Squadcast. A service represents an application or component that is crucial for your product or service. Services are created with an alert source integration through which incidents are triggered. Squadcast provides a Webhook URL to integrate with the tools you use. See how to <a href="adding-a-service">Manage Services</a>.</p>
+
+<p>You can search through our documentation to find helpful alert source integration guides to walk you through any particular integration.</p>
+
+<p>📅 <strong>Create schedules</strong></p>
+
+<p>Schedules can be used to create on-call schedules based on different time-zones, configurable rotations, and multiple hand-offs. You can create unique Schedules for each Services, having only the relevant engineers. See how to <a href="schedules">Manage Schedules</a></p>
+
+<p>🏖️ <strong>Use Vacation mode for scheduled overrides</strong></p>
+
+<p>Vacation mode/ Alert Forwarding is used to forward one’s alerts to another on-call user for a period of time. It can be accessed from the  <a href="https://app.squadcast.com/users">Users</a> page on the navigation sidebar. Alert Forwarding is typically used if the on-call user is sick, on vacation or had to step away due to an emergency and want another user to fill in for them. All the alerts that are assigned to him from his shifts, rotations or event directly, will be sent to the user that is stepping in. Alert forwarding is also known as Vacation Mode. To know more about how to set this up, <a href="alert-forwarding">click here</a></p>
+
+<h3 id="2--incident-response---reduce-mttr-with-faster-response">2. ⚡ Incident Response - Reduce MTTR with Faster Response</h3>
+
+<p>🔔 <strong>Check out the Incident Page</strong></p>
+
+<p>The <a href="incident-details">Incidents Details</a> page is where engineers can take actions and respond to the triggered incidents. Squadcast provides functionalities like <a href="warroom">War Room</a>, <a href="incident-timeline">Incident Timelines</a>, and <a href="what-are-squadcast-actions">Squadcast Actions</a>.</p>
+
+<p>👍 <strong>Respond to an Incident</strong></p>
+
+<p>You can respond to a triggered incident by Acknowledging and Resolving it. You can do so via phone call, slack, mobile app and web app. You can check out what each of these incident states mean <a href="incident-details">here</a>.</p>
+
+<p>➕ <strong>Add Extensions</strong></p>
+
+<p>Extensions are deeper integrations with tools where actions can be taken from within the platform to reflect on the tool as well. Within Squadcast, this is called <strong>Integrations</strong> and can be found on the navigation sidebar. You can find supported tools on this page to augment your incident management process.</p>
+
+<p>Typically, extensions augment your incident management process by connecting with other tools where actions are required. Typically, ITSM, Communication, Web conferencing, Version Control, CI/CD, SSO tools would act as extensions.</p>
+
+<p>✔️ <strong>Resolve an Incident with Squadcast Actions</strong></p>
+
+<p><a href="what-are-squadcast-actions">Squadcast Actions</a> lets you take actions directly from Squadcast as a response to incidents by clicking the <strong>More Actions</strong> button from the incident page. Squadcast Actions are typically used as a means to reduce any customer impacting issue as soon as possible. In some cases, this resolves the issue and in others, there is a need for longer term remediation. This is left to the user and team to decide and act on. To know more about how to configure this, <a href="what-are-squadcast-actions">click here</a>.</p>
+
+<p>Today the platform has the following Actions:</p>
+<ul>
+  <li><a href="circleci-actions">Circle CI </a></li>
+  <li><a href="squadcast-runbooks">Squadcast Runbooks</a></li>
+  <li><a href="jira-cloud">JIRA Cloud </a></li>
+  <li><a href="jira-server-on-premise">JIRA Server (on premise)</a></li>
+</ul>
+
+<p>Some simple examples of actions are rebuilding your project, rolling back to the previous build, rebooting a server. You can choose to build a repository of any actions, even more complex ones to take action from Squadcast.</p>
+
+<p>📜 <strong>Create a Squadcast Runbook</strong></p>
+
+<p><a href="squadcast-runbooks">Squadcast Runbooks</a> are executable scripts that you can create and store within the platform to execute when repetitive incidents are triggered. You can execute Squadcast Runbooks from the <strong>More Actions</strong> button on the . incident page and resolve your incidents quickly and bring down your MTTR significantly. The link to the status of the script execution will be added to the timeline and you should be able to see the status of the same within Squadcast. To know more about how to configure your own Squadcast Runbook, <a href="squadcast-runbooks">click here</a>.</p>
+
+<p>🔀 <strong>Configure Routing Rules for automatic overrides</strong></p>
+
+<p><a href="alert-routing">Alert routing</a> allows you to configure rules to ensure that alerts are routed to the right responder with the help of event tags attached to each alert.Routing is a part of the rules engine associated with each service. You can access <strong>routing rules</strong> from a service’s options dropdown.</p>
+
+<p>Note that this rule will override the escalation policy attached to the service. This is typically used in cases where severities are configured via tags and each severity type is to be handle by a different level of on-call user. To know more about how to configure your routing rules, <a href="alert-routing">click here</a>.</p>
+
+<h3 id="3--incident-response---noise-reduction--contextual-awareness">3. 📟 Incident response - Noise Reduction &amp; Contextual Awareness</h3>
+
+<p>🏷️ <strong>Add Tags to Incidents</strong></p>
+
+<p><a href="event-tagging">Incident tags</a> are used to add more context to your incident and helps classify incidents. You can configure tags from <strong>Tagging Rules</strong> associated with a service. You can configure tagging rules with an incident JSON to automatically add tags when incidents are triggered or you can manually create and update them. To know more about how to configure this, <a href="event-tagging">click here</a>.</p>
+
+<p>⚠️ <strong>Deduplicate to reduce alert fatigue</strong></p>
+
+<p><a href="de-duplication-rules">Alert de-duplication</a>** can help you reduce alert noise by organising and grouping relevant alerts. This also provides easy access to similar alerts when needed. You can configure deduplication rules with an incident JSON to automatically deduplicate and group similar incidents and can see this reflect on the incident dashboard. To know more about how to configure this, <a href="de-duplication-rules">click here</a>.</p>
+
+<p>🔕  <strong>Suppress non-actionable alerts</strong></p>
+
+<p><a href="suppression-rules">Suppression rules</a> is a part of the Squadcast Rules Engine that allows you to configure rules to automatically suppress non-actionable alerts such as warning, informational or test alerts. Based on your configuration, alerts will be suppressed and you will not be unnecessary notified. All suppressed data will still be available on the platform.
+See how to configure your <a href="suppression-rules">Suppression Rules</a>.</p>
+
+<h3 id="4--incident-communication">4. 🔊 Incident communication </h3>
+
+<p>✅ <strong>Set up your Public and Private Status Pages</strong></p>
+
+<p><a href="statuspage">StatusPage</a> helps you communicate the status of your services to your customers or internal teams at all times as opposed to you getting to know the status of your service though support tickets. You can access StatusPage from the navigation sidebar.</p>
+
+<p>StatusPages can either be public (accessible by everyone) or private (accessible by just your team on Squadcast) on Squadcast. You can also add a subscription option for your public status page so customers are automatically informed of any updates on the StatusPage. To set up your Status Page, <a href="statuspage">click here</a>.</p>
+
+<p>📖 <strong>Create a Postmortem report or create your own template</strong></p>
+
+<p>An <a href="postmortems">Incident postmortem</a> is a post-incident review of all the activity pertaining to resolving the incident. Typically, an incident postmortem should contain details of the incident, impacted service, alert source, dependant services, timeline of resolution activity, users involved, corrective &amp; remediation actions and lessons learned.</p>
+
+<p>You can create an incident postmortem from within an incident page once the incident is resolved from the options icon on the right corner of the incident details section. You can choose from several popularly used postmortem templates or have your admin/ account owner create one for your organization. To know more about creating and using Postmortem templates, <a href="postmortems">click here</a>.</p>
+
+<h3 id="5--sre-visibility--insights">5. 😎 SRE Visibility &amp; Insights</h3>
+
+<p>💯 <strong>Setup Service Level Objectives (SLOs)</strong></p>
+
+<p>The <a href="service-levels">Service Levels</a> feature allows you to create Service Level Objectives (SLOs) for Service Level Indicators (SLIs) like latency,  memory and status codes. Any breach of SLOs for Services will trigger an incident and notify the relevant Users, <a href="squads">Squads</a> (a group of Users) or <a href="adding-a-service">Schedules</a> (on-call schedules). See how to configure <a href="service-levels">Service Levels →</a>.</p>
+
+<p>📊 <strong>Use Analytics and Reports to Improve your Incident Response</strong></p>
+
+<p>The <a href="analytics">Analytics page</a> helps you see how your organisation has performed in a given time period by providing you the hard numbers in easy to understand graphs and charts. You will be able to view the SLO dashboard, number of incidents by the state, MTTA and MTTR analysis. 
+You can also filter reports based on the impacted service and the organization for which the incidents were triggered. To know more about using Analytics, <a href="analytics">click here</a>.</p>
+
+<h3 id="6--squadcast-support---essential-information">6. 😊 Squadcast Support - Essential Information</h3>
+
+<p>At Squadcast, we pride ourselves in the kind of support we offer to our users and customers. Feel free to reach out to us on any of the following channels and we’ll be right with you.</p>
+
+<ul>
+  <li>In-App Chat</li>
+  <li><a href="mailto:support@squadcast.com">Support Email</a></li>
+  <li>Phone Number: <a href="tel:+16506703104">+1 650 670 3104</a></li>
+  <li><a href="support.squadcast.com">Documentation Support Hub</a></li>
+  <li><a href="https://github.com/SquadcastHub/squadcast-support/issues">GitHub Support</a></li>
+</ul>
+
+<h3 id="7--latest-product-updates">7. ✨ Latest Product Updates</h3>
+
+<p>We are constantly updating our platform by adding new features, alert source integrations and other essential extensions. You can check out our latest releases in our <a href="https://headwayapp.co/squadcast-updates">Squadcast Updates</a> page.</p>
+
+<h3 id="8--check-out-the-squadcast-github-page">8. ⭐ Check out the Squadcast GitHub page</h3>
+
+<p>If you’re curious about what we do everyday, feel free to drop by the <a href="https://github.com/squadcastHub">SquadcastHQ GitHub page</a>.</p>
+
+<p>You can check out and contribute to our curated repository of <a href="https://github.com/SquadcastHub/awesome-sre-tools">awesome-sre-tools</a>! 😊</p>
+
+<h3 id="9--check-out-our-product-roadmap">9. 🤓 Check out our Product Roadmap</h3>
+
+<p>We are building an end-to-end Incident Management product built on SRE best practices. We’re always open to hearing new ideas and improvements. You can check out our <a href="http://bit.ly/squadcast-roadmap">Public Roadmap</a> to know what we have in store for the near future!</p>
+
+<p>Drop us a line at <a href="mailto:ideas@squadcast.com">ideas@squadcast.com</a> with your ideas and feature requests!</p>
+
+<h3 id="10--browse-through-glossary">10. 📖 Browse Through Glossary</h3>
+
+<p>You can browse our <a href="glossary">Glossary</a> for terminologies that we use within the platform. This will give a fair understanding of each terminology and functionalities associated with them.</p>
+
+<h3 id="11--check-out-our-blog--resources">11. 📚 Check out our Blog &amp; Resources</h3>
+
+<p>If you’re looking for more information on Squadcast, Incident Management, SRE, DevOps and general best practices associated with these fields, check out the <a href="https://www.squadcast.com/blog">Squadcast Blog</a>. You can also see additional information like case studies, comparison pages, events we’ll be at and our changelog from under the <strong>resource</strong> dropdown on our <a href="https://www.squadcast.com/">website</a> header.</p>
+
+<h3 id="12-️-here-are-the-events-well-be-at">12. ❤️ Here are the events we’ll be at</h3>
+
+<p>You can catch Squadcast participating in prominent technology events around the world! Meet our team to discuss all things SRE and what we’re building at Squadcast.</p>
+
+<p>You can check out all the events we’ll be at on the <a href="https://www.squadcast.com/events">Squadcast Events</a></p>
+
+<h3 id="13--heres-how-we-engage-with-the-community">13. 🎊 Here’s how we engage with the community</h3>
+
+<p>From discussing all things SRE, hosting a webinar, contributing to our blog, getting featured on SRE Speak to speaking at meetups, there are several ways you can participate and give back to the SRE community. To find out how you can be a part of our super awesome community, drop us a line at <a href="mailto:marketing@squadcast.com">marketing@squadcast.com</a> and hear back from us soon!</p>
+
+<div class="alert alert-info" role="alert">
+    <i class="fa fa-info-circle"></i> 
+    <b>Need more integrations?</b> 
+    <br /><br />In case you don’t find an integration, email us at <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;"><a style="color: #c7254e;" href="mailto:support@squadcast.com">support@squadcast.com</a></code>. Our team will reach out to you within 1 working day.
+</div>
+
+
+                <div class="tags">
+                    
+                    <h2>Related Documents </h2>
+                    
+                    
+                    
+                    
+                    <a href="getting started.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">getting started<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    
+                    
+                    
+                    
+                    <a href="troubleshooting.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">troubleshooting<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    
+                    
+                    
+                </div>
+
+            
+
+    </div>
+    <div class="col-md-4">
+        
+        
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc" style="margin-top: 30px;"></div>
+
+        
+    </div>
+</div>
+<script>
+    if (window.innerWidth>1024){
+        window.addEventListener('scroll', function(){
+            if (window.scrollY>=73){
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'position: fixed; top: 9%; margin-top: 20px;'); /*previously, top: 0*/
+                }
+            }else{
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'margin-top: 20px; position: fixed;');
+                }
+            }
+        }); 
+    }
+</script>
+
+<script>
+    if(window.location.href.slice(-27) == 'manageengine-opmanager.html'){
+        var lin = document.getElementsByClassName('cursorNorm')[1].href;
+        lin = lin.slice(0,-34)+'MongoDB-Atlas-Cloud-Manager.html';
+        document.getElementsByClassName('cursorNorm')[1].href = lin;
+    }
+</script>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                    <p><img src="images/company_logo.png" alt="Company logo"/></p>
+               &copy;2021 Squadcast. All rights reserved. <br />
+<!--  Site last generated: Jan 15, 2021 <br /> -->
+                </div>
+            </div>
+            <script>
+                window.intercomSettings = {
+                    app_id: "lqtvxnd7",
+                    custom_launcher_selector: "#support"
+                };
+            </script>
+            <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/lqtvxnd7';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>

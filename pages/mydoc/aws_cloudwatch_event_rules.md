@@ -1,0 +1,94 @@
+---
+title: AWS CloudWatch Event Rules
+tags: [Amazon-Cloudwatch-AWS, AWS-CloudTrail-Logs]
+keywords: 
+last_updated: 
+summary: "Send alerts from CloudWatch Event Rules and SNS endpoints to Squadcast"
+sidebar: mydoc_sidebar
+permalink: docs/aws-cloudwatch-event-rules.html
+folder: mydoc
+---
+
+This document will help you integrate AWS CloudWatch Event Rules with Squadcast. 
+
+[AWS CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html) delivers a near real-time stream of system events that describe changes in AWS resources. Using simple rules that you can quickly set up, you can match events and route them to one or more target functions or streams.
+Route detailed alerts from AWS CloudWatch Event Rules to the right users in Squadcast.
+
+## How to integrate AWS CloudWatch Event Rules with Squadcast
+
+### In Squadcast: Using AWS CloudWatch Event Rules as an Alert Source
+
+**(1)** On the **Sidebar**, click on **Services**.
+
+![](images/integration_1-1.png)
+
+**(2)** Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+**(3)** Click the corresponding **Alert Sources**
+
+![](images/integration_1.png)
+
+**(4)** Search for **AWS Cloudwatch Event Rules** from  the **Alert Source** drop down menu and copy the webhook 
+
+![](images/event_rules_1.png)
+
+### In AWS: Configure SNS Endpoint
+
+**(1)** Log in to your AWS account and proceed to **SNS**
+
+**(2)** Click on **Create topic**
+
+**(3)** Within the dialog box, fill in the details as per your requirements and then click on **Create topic**
+
+![](images/event_rules_2.png)
+
+**(4)** Inside the topic, click on **Create subscription**
+
+![](images/event_rules_3.png)
+
+**(5)** Select the protocol as **HTTPS** and in the endpoint enter the URL you obtained from previous step
+
+**(6)** Finally, click on **Create subscription** to create the subscription
+
+![](images/event_rules_4.png)
+
+{{site.data.alerts.yellow-note-i}}
+<b>Important:</b>
+<br/><br/><p>The <b>Subscription ID</b> for the subscription should immediately change to <b>Confirmed</b> from <b>PendingConfirmation</b>. Click on the refresh button to verify the same.</p>
+{{site.data.alerts.end}}
+
+### In AWS: Configure CloudWatch Event Rules
+ 
+**(1)** Go to **CloudWatch** and click on **Rules** under **Events**
+
+**(2)** Click on **Create Rule**
+
+![](images/event_rules_5.png)
+
+**(3)** Select desired **Service Name**  and  **Event Type**
+In this example, we're selecting `Service Name: EC2` and `Event Type: All Events`
+
+![](images/event_rules_6.png)
+
+**(4)** Under **Targets** click on **Add Target**
+
+**(5)** Select **SNS Topic** and your topic name from the dropdown
+In this example, we're selecting ` Topic: Instance-state-change`
+
+![](images/event_rules_7.png)
+
+**(6)** Click on **Configure rule details**. Enter the name of your rule. Add a description as needed
+
+**(7)** Click on **Create rule** to save this configuration
+
+![](images/event_rules_8.png)
+
+That's it, you are good to go! Your AWS CloudWatch Event Rules integration is complete. Now, whenever an event is triggered that matches your Event Rules, an incident will be created in Squadcast for it.
+
+{{site.data.alerts.blue-note}}
+<b>FAQ:</b>
+<br/><br/><p>Q: If an alert gets resolved in AWS CloudWatch Event Rules, does it send auto-resolve signals to Squadcast?<br/><br/>
+A: No, AWS CloudWatch Event Rules does not send auto-resolve signals to Squadcast. Hence, Squadcast incidents from AWS CloudWatch Event Rules should be resolved manually.</p>
+{{site.data.alerts.end}}

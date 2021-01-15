@@ -1,0 +1,24 @@
+---
+title: "Getting Started"
+keywords:
+tags: 
+permalink: getting-started-1.html
+search: exclude
+---
+<style>
+  .col-md-3{
+    width: 0%;
+    display: none;
+  }
+  .col-md-9{
+    width: 100%;
+  }
+</style>
+
+  {% for page in site.pages %}
+    {% unless page.search == "exclude" %}
+      {% if page.part == "Getting_Started" %}
+        <p><a href={{site.url}}{{page.url}}>{{page.title}}</a></p>
+      {% endif %}
+    {% endunless %}
+  {% endfor %}

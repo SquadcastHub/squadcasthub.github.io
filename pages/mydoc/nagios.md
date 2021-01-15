@@ -1,0 +1,121 @@
+---
+title: Nagios
+tags: [integration, nagios]
+keywords: 
+last_updated: 
+summary: "Get alerts from Nagios into Squadcast"
+sidebar: mydoc_sidebar
+permalink: docs/nagios.html
+folder: mydoc
+---
+
+Follow the steps below to configure a service so as to push related alert data from Nagios onto Squadcast.
+
+Squadcast will then process this information to create incidents for this service as per your preferences.
+
+## Using Nagios as an Alert Source
+
+On the **Sidebar**, click on **Services**.
+
+You can either choose to use existing service or [create a new service](adding-a-service.html)
+
+Now, click on the corresponding **Alert Sources** button.
+
+![](images/integration_1.png)
+
+Select **Nagios** from  **Alert Source** drop down and copy the Webhook URL shown.
+
+![](images/nagios_1.png)
+
+{{site.data.alerts.yellow-note-i}}
+Nagios Core versions 3.x and above are supported
+{{site.data.alerts.end}}
+
+## Create a Squadcast Webhook in Nagios
+
+- Log in to your Nagios server and go to your **nagios.cfg** file  (usually in  /usr/local/nagios/etc/ or /etc/nagios). Make sure **enable_environment_macros=1**. You can find the path of all your object config files and resource config file here. Go to **$USER1$ **directory. You can find the value of this macro in your resource.cfg file.
+
+- Once you're inside the directory, run the following commands:
+
+```
+sudo wget https://raw.githubusercontent.com/squadcastHub/squadcast-nagios-script/master/sq-nagios-service.py
+sudo wget https://raw.githubusercontent.com/squadcastHub/squadcast-nagios-script/master/sq-nagios-host.py
+```
+
+- Once the file is downloaded please make sure that the file has execute permissions for your Nagios user. If not, then please provide the same using the following commands:
+
+```
+sudo chmod +x sq-nagios-service.py
+sudo chmod +x sq-nagios-host.py
+```
+
+{{site.data.alerts.yellow-note-i}}
+The Squadcast script for Nagios requires Python 3 to be installed on the machine running Nagios.
+{{site.data.alerts.end}}
+
+- Go to **commands.cfg** file. Then add the following two commands:
+
+```
+# 'service-alert' command definition
+define command{
+        command_name    service-alert
+        command_line    $USER1$/sq-nagios-service.py 'https://api.squadcast.com/v1/incidents/nagios/c2165ee4e7635e337b3ae529ec5c851e6876e5a8' '$HOSTNAME$' '$SERVICEDESC$' '$SERVICESTATE$' '$SERVICEOUTPUT$' '$HOSTADDRESS$'
+}
+
+# 'host-alert' command definition
+define command{
+        command_name    host-alert
+        command_line    $USER1$/sq-nagios-host.py 'https://api.squadcast.com/v1/incidents/nagios/c2165ee4e7635e337b3ae529ec5c851e6876e5a8' '$HOSTNAME$' '$HOSTSTATE$' '$HOSTOUTPUT$' '$HOSTADDRESS$'
+
+}
+```
+
+{{site.data.alerts.yellow-note-i}}
+Make Sure to replace the url with the webhook url you copied from Squadcast Dashboard
+{{site.data.alerts.end}}
+
+- Go to **contacts.cfg** file. 
+
+Create a new contact and set your notification_options  and notification_period for service and host according to your preference. 
+
+Enable host_notifications and service_notifications
+
+Set service_notification_commands to service-alert and host_notification_commands to host-alert
+
+Ex:
+
+```
+define contact {
+        contact_name squadcast
+        alias Squadcast
+        host_notifications_enabled      1
+        service_notifications_enabled   1
+        service_notification_period 24x7
+        host_notification_period 24x7
+        service_notification_options w,u,c,r
+        host_notification_options d,u,r
+        service_notification_commands service-alert
+        host_notification_commands host-alert
+}
+```
+
+- Then add the contact to your preferred **contact group**.
+
+Ex:
+
+```
+define contactgroup{
+        contactgroup_name       admins
+        alias                   Nagios Administrators
+        members                 nagiosadmin,squadcast
+        }
+```
+
+- Finally restart Nagios using the following command:
+
+```
+service nagios restart
+```
+
+Now whenever an event is triggered in Nagios, an incident will be automatically created in Squadcast.
+Also, once the event that triggered the incident(s) is resolved in Nagios, the relevant Squadcast incidents created would get resolved automatically.

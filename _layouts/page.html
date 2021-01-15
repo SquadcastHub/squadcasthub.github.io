@@ -1,0 +1,155 @@
+---
+layout: default
+---
+<style>
+a[href^="http://"]:after, a[href^="https://"]:after {
+    content: none;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li > a:hover {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li.active > a {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+#mysidebar{
+    height: 700px;
+    overflow: auto;
+}
+body{
+    padding-top: 70px;
+}
+.summary{
+    border-left: 5px solid #6E7781;
+}
+li.sidebarTitle{
+    color: #363E47;
+}
+
+@media screen and (max-width: 1920px){
+    #tg-sb-sidebar{
+        position: sticky;
+        top: 9%; /*previously, 0*/
+        margin-bottom: 30px;
+    }
+    #toc{
+        position: fixed;
+    }
+    #results-container{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1024px){
+    #tg-sb-sidebar{
+        position: relative;
+        margin-bottom: auto;
+    }
+    #toc{
+        display: none;
+    }
+    #results-container{
+        margin-top: auto;
+    }
+}
+</style>
+
+{% if page.simple_map == true %}
+
+<script>
+    $(document).ready ( function(){
+        $('.box{{page.box_number}}').addClass('active');
+    });
+</script>
+
+{% include custom/{{page.map_name}}.html %}
+
+{% elsif page.complex_map == true %}
+
+<script>
+    $(document).ready ( function(){
+        $('.modalButton{{page.box_number}}').addClass('active');
+    });
+</script>
+
+{% include custom/{{page.map_name}}.html %}
+
+{% endif %}
+
+<div class="post-content">
+    <div class="col-md-8">
+        <div class="post-header">
+            <h1 class="post-title-main">{{ page.title }}</h1>
+        </div>
+            {% if page.summary %}
+                <div class="summary">{{page.summary}}</div>
+            {% endif %}
+
+                {% if site.github_editme_path %}
+
+                <a target="_blank" rel="noopener" href="https://github.com/{{site.github_editme_path}}{{page.path}}" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+
+                {% endif %}
+
+            {{content}}
+
+                <div class="tags">
+                    {% if page.tags != null %}
+                    <h2>Related Documents </h2>
+                    {% assign projectTags = site.data.tags.allowed-tags %}
+                    {% for tag in page.tags %}
+                    {% if projectTags contains tag %}
+                    {% assign taggs = tag | replace: "-"," " %}
+                    <a href="{{ "" | append: tag | append: ".html" }}" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">{{page.tagName}}{{taggs}}<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                </div>
+
+            {% include commento.html %}
+    </div>
+    <div class="col-md-4">
+        {% unless page.toc == false %}
+        {% include toc.html %}
+        {% endunless %}
+    </div>
+</div>
+<script>
+    if (window.innerWidth>1024){
+        window.addEventListener('scroll', function(){
+            if (window.scrollY>=73){
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'position: fixed; top: 9%; margin-top: 20px;'); /*previously, top: 0*/
+                }
+            }else{
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'margin-top: 20px; position: fixed;');
+                }
+            }
+        }); 
+    }
+</script>
+
+<script>
+    if(window.location.href.slice(-27) == 'manageengine-opmanager.html'){
+        var lin = document.getElementsByClassName('cursorNorm')[1].href;
+        lin = lin.slice(0,-34)+'MongoDB-Atlas-Cloud-Manager.html';
+        document.getElementsByClassName('cursorNorm')[1].href = lin;
+    }
+</script>
+
+{{site.data.alerts.hr_shaded}}
+
+{% include footer.html %}

@@ -1,0 +1,147 @@
+# Note:
+# If you are using the createtag script, don't leave an blank line at the end of this file.
+# In other words, the last line must be the last tag in the allowed-tags list.
+allowed-tags:
+  - getting started
+  - content_types
+  - navigation
+  - formatting
+  - publishing
+  - single_sourcing
+  - special_layouts
+  - collaboration
+  - news
+  - troubleshooting
+  - mobile
+  - faq
+  - notification
+  - squads
+  - smart squads
+  - service
+  - maintenance mode
+  - alert suppression
+  - service levels
+  - deduplication
+  - event tagging
+  - alert routing
+  - deleting service
+  - deleting
+  - manage users
+  - manage profile
+  - schedules
+  - rotations
+  - on call
+  - escalation policies
+  - incident dashboard
+  - dashboard metrics
+  - slo dashboard
+  - bulk actions
+  - incident
+  - war room
+  - pin messages
+  - manually creating incident
+  - postmortems
+  - status page
+  - analyze metrics
+  - integration
+  - amazon cloudwatch
+  - aws cloudtrail logs
+  - aws cloudtrail via cloudwatch
+  - appdynamics
+  - api
+  - azure monitor
+  - buildkite
+  - checkmk
+  - cicso dnac
+  - copperegg
+  - coralogix
+  - crashlytics
+  - datadog
+  - elastic
+  - elastalert
+  - email
+  - freshping
+  - ghost inspector
+  - grafana
+  - graylog
+  - honeybadger
+  - insightops
+  - instana
+  - jenkins
+  - jira cloud
+  - jira server
+  - logdna
+  - loggly
+  - logstash
+  - manage engine
+  - opmanager
+  - mongodb atlas
+  - cloud manager
+  - nagios
+  - new relic
+  - overops
+  - papertrail
+  - pingdom
+  - prometheus
+  - rapid7 insightidr
+  - runscope
+  - scout apm
+  - sensu
+  - sentry
+  - server density
+  - signalfx
+  - site24x7
+  - slack
+  - splunk
+  - sqreen
+  - stackdriver
+  - statuscake
+  - sumo logic
+  - sysdig monitor
+  - uptime robot
+  - zabbix
+  - circleci
+  - github
+  - google hangouts
+  - azure active directory
+  - sso
+  - google
+  - microsoft adfs
+  - okta
+  - saml 2.0
+  - mobile app
+  - squadcast actions
+  - circleci actions
+  - runbooks
+  - how to video
+  - deactivating
+  - account
+  - deleting
+  - rate limiting
+  - organizations
+  - upgrade
+  - overrides
+
+  - Logz.io
+  - Bugsnag
+  - CopperEgg
+  - Crashlytics
+  - Logstash
+  - ManageEngine-Opmanager
+  - Azure-Monitor
+  - Buildkite
+  - Slack-as-an-Alert-Source
+  - Sqreen
+  - Elastic
+  - MongoDB-Atlas-/-Cloud-Manager
+  - Splunk
+  - Jira-Server-Alert-Source
+  - LogDNA
+  - New-Relic
+  - OverOps
+  - Amazon-Cloudwatch-AWS
+  - AWS-CloudTrail-Logs
+  - Sysdig-Monitor
+  - Uptime-Robot
+  - Scout-APM
+  - Sensu

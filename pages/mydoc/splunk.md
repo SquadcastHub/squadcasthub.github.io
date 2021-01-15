@@ -1,0 +1,60 @@
+---
+title: Splunk
+tags: [Slack-as-an-Alert-Source, Sqreen]
+keywords: 
+last_updated: 
+summary: "Route alerts from Splunk into Squadcast"
+sidebar: mydoc_sidebar
+permalink: docs/splunk.html
+folder: mydoc
+---
+
+This document will help you integrate Splunk with Squadcast.
+
+Splunk is used to search, analyze and visualize the machine-generated data gathered from the websites, applications, sensors, devices etc. which make up your IT infrastructure and business. Route detailed event information from Splunk to the right users in Squadcast.
+
+## How to integrate Splunk with Squadcast 
+
+### In Squadcast: Using Splunk as an Alert Source 
+
+**(1)** On the **Sidebar**, click on **Services**.
+
+![](images/integration_1-1.png)
+
+**(2)** Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+**(3)** Click the corresponding **Alert Sources**
+
+![](images/integration_1.png)
+
+**(4)** Search for **Splunk** from the **Alert Source** drop down menu and copy the webhook URL shown.
+
+![](images/splunk_1.png)
+
+### In Splunk: Create a Squadcast webhook alert 
+
+**(1)** In the Splunk dashboard, click on **Search & Reporting** under **Apps**
+
+![](images/splunk_2.png)
+
+**(2)** Run your desired search query in the logs (a) and then click on **Save As** and select **Alert** (b)
+
+![](images/splunk_3.png)
+
+**(3)** In the **Save As Alert** box, enter the title, description and other Trigger Conditions. You can find more information on what each of these parameters mean in the [Splunk documentation](https://docs.splunk.com/Documentation/Splunk/8.1.0/Alert/Aboutalerts).
+
+**(4)** Under **Trigger Actions**, click on  **Add Actions** and select **Webhook** 
+
+**(5)** Paste the copied webhook URL from Squadcast under **URL** and click on **Save**
+
+![](images/splunk_4.png)
+
+That's it! Your Splunk Integration is now complete. Whenever an alert is fired for your search query, an incident will be created in Squadcast.
+
+## FAQ
+
+**Q:** If an alert gets resolved in Splunk, does Splunk send auto-resolve signals to Squadcast?
+
+**A:** No, Splunk does not send auto-resolve signals to Squadcast. Hence, Squadcast incidents from Splunk should be resolved manually.

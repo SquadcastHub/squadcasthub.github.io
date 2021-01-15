@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" squadcast support hub">
+<title>The Squadcast Support Hub | Incident Management using Squadcast</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+
+<link rel="shortcut icon" href="images/favicon.png">
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+
+<!-- Fonts (Nunitosans & Opensans) -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<style>
+    li, .post-header, .summary, p, .post-content, #search-input {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+</style>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <a class="navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> <img src="../images/squadcast_logo_white.png" style="width: 80%; margin-top: -2%;"></span></a>
+            
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <!--li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li-->
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://www.squadcast.com" target="_blank" rel="noopener">Home</a></li>
+                
+                
+                
+                <li><a href="https://www.squadcast.com/blog" target="_blank" rel="noopener">Blog</a></li>
+                
+                
+                
+                <li><a href="https://headwayapp.co/squadcast-updates" target="_blank" rel="noopener">Changelog</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the The Squadcast Support Hub page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="Find anything">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="The Squadcast Support Hub">{title}</a></li>',
+                    noResultsText: 'No results found',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle"> </li>
+  
+  
+  
+  <li>
+      <a title="Products" href="#">Products</a>
+      <ul>
+          
+          
+          
+          <li><a title="News" href="/news.html">News</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Theme instructions" href="/mydoc_introduction.html">Theme instructions</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Product 1" href="/p1_landing_page.html">Product 1</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Product 2" href="/p2_landing_page.html">Product 2</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <style>
+a[href^="http://"]:after, a[href^="https://"]:after {
+    content: none;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li > a:hover {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+.nav > li.active > a {
+    /* background-image: linear-gradient(129deg,#252c66,#161f56); */
+    background-color: #00162d;
+}
+#mysidebar{
+    height: 700px;
+    overflow: auto;
+}
+body{
+    padding-top: 70px;
+}
+.summary{
+    border-left: 5px solid #6E7781;
+}
+li.sidebarTitle{
+    color: #363E47;
+}
+
+@media screen and (max-width: 1920px){
+    #tg-sb-sidebar{
+        position: sticky;
+        top: 9%; /*previously, 0*/
+        margin-bottom: 30px;
+    }
+    #toc{
+        position: fixed;
+    }
+    #results-container{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1024px){
+    #tg-sb-sidebar{
+        position: relative;
+        margin-bottom: auto;
+    }
+    #toc{
+        display: none;
+    }
+    #results-container{
+        margin-top: auto;
+    }
+}
+</style>
+
+
+
+<div class="post-content">
+    <div class="col-md-8">
+        <div class="post-header">
+            <h1 class="post-title-main">The Squadcast Support Hub</h1>
+        </div>
+            
+
+                
+
+                    <style>
+        .box{
+          height: 200px;
+          width:  300px;
+          padding: 20px;
+          box-shadow: none;
+          border: 0px;
+          background-color: white;
+        }
+        .box:hover{
+            box-shadow: 0 5px 20px 0 rgba(0,0,0,.15);
+            transform: scale(1.075) rotate(.0001deg);
+            transition-duration: 170ms;
+            background-color: white;
+        }
+        .image-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading-box{
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 900;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .content-box{
+            font-size: 16px;
+            line-height: 25px;
+            text-align: center;
+            font-family: inherit;
+            display: none;
+        }
+        table, tr, td{
+        border: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        body{
+            background-color: white;
+            padding-top: 0px;
+        }
+        .col-md-3{
+            width: 0%;
+            display: none;
+        }
+        .col-md-9{
+            width: 100%;
+        }
+        table{
+            max-width: 100%;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        table > tbody > tr > td{
+            padding: 0px;
+            border-top: 0px;
+        }
+        .tags{
+            display: none;
+        }
+        .navbar{
+            display: block;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #00162d;
+            border-bottom: 0px;
+        }
+        #envel{
+          visibility: hidden;
+        }
+        #search-input{
+          visibility: hidden;
+        }
+        .image{
+            width: 100px !important;
+        }
+        .post-header{
+            display: none;
+        }
+        .container{
+            margin: 0px;
+            width: auto;
+            padding: 20px;
+        }
+        #logo-div{
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        #header-div{
+            text-align: center;
+            background-color: #00162d;
+            margin-left: -20px;
+            margin-right: -20px;
+            margin-top: -20px;
+            padding: 50px;
+            padding-bottom: 70px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        #search-demo-container{
+            text-align: center;
+        }
+        .par{
+            display: flex;
+            justify-content: center;
+        }
+        #results-container1{
+            width: 50%;
+            text-align: left;
+        }
+        #search-input1{
+            width: 55%;
+            height: 50px;
+            border-radius: 10px;
+            padding: 20px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .para{
+            color: white;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 30px;
+            width: 60%;
+            position: relative;
+            left: 21%;
+            text-align: left;
+        }
+        .col-md-9{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .col-md-8{
+            width: 100%;
+        }
+        .nav > li {
+            width: 20%;
+        }
+        .nav > li > a {
+            font-size: 18px;
+            line-height: 35px;
+            padding: 8px 10px;
+            text-align: center;
+        }
+        .nav-tabs > li > a {
+            margin-right: 10px;
+        }
+        a[data-toggle]{
+            color: #0f61dd;
+        }
+        .nav > li > a:hover {
+            background-color: #00162d;
+        }
+        .nav > li.active > a {
+            background-color: #00162d !important;
+        }
+        @media screen and (max-width: 1024px){
+          tr{
+            display: block !important;
+          }
+        }
+      </style>
+        <div style="margin-bottom: 20px; margin-top: 90px;">
+            <div id="header-div">
+                <!-- <div id="logo-div">
+                    <img src="images/squadcast_logo_white.png" style="margin-top: 0px;">
+                </div> -->
+                <h1 style="color: white; margin-bottom: 30px;">Squadcast Support Hub</h1>
+                <p class="para">Welcome to the Squadcast Support Hub. You’ll find comprehensive guides and documentation to help you start working with Squadcast as quickly as possible. Let’s jump right in! &#128640;</p>
+                <div id="search-demo-container">
+                    <input type="text" id="search-input1" placeholder="Find anything">
+                    <div class="par">
+                        <div id="results-container1" style="position: absolute; z-index: 1; font-size: 14px; background-color: white;"></div>
+                    </div>
+                </div>
+            </div>
+            <script src="js/jekyll-search.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                    SimpleJekyllSearch.init({
+                        searchInput: document.getElementById('search-input1'),
+                        resultsContainer: document.getElementById('results-container1'),
+                        dataSource: 'search.json',
+                        searchResultTemplate: '<a href="{url}" title="The Squadcast Support Hub"><li style="list-style: none; border-bottom: 1px solid #e7e9ed; padding-top: 5px; padding-left: 10px; padding-right: 10px; padding-bottom: 5px;">{title}</li></a>',
+            noResultsText: 'No results found',
+                    limit: 10,
+                    fuzzy: true,
+            })
+            </script>
+        </div>
+        <!-- <div style="padding-left: 16%; padding-right: 16%; margin-bottom: 20px;">
+            <ul id="profileTabs" class="nav nav-tabs">
+                <li class="active"><a href="#learn" data-toggle="tab">Learn</a></li>
+                <li><a href="#get-help" data-toggle="tab">Get Help</a></li>
+                <li><a href="#stay-informed" data-toggle="tab">Stay Informed</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="learn">
+                    <h2>Learn</h2>
+                    <ul>
+                        <li><a href="getting-started.html">Getting Started</a></li>
+                        <li><a href="docs/getting-started.html">Reference Manual</a></li>
+                        <li><a href="">Guides</a></li>
+                        <li><a href="https://apidocs.squadcast.com/" target=_blank>API Reference</a></li>
+                    </ul>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="get-help">
+                    <h2>Get Help</h2>
+                    <ul>
+                        <li><a href="https://community.squadcast.com/" target=_blank>Community Forum</a></li>
+                            <ul>
+                                <li><a href="https://www.squadcast.com/support-ticket-form" target=_blank>Feature Request</a></li>
+                                <li><a href="https://www.squadcast.com/support-ticket-form" target=_blank>Bug Report</a></li>
+                            </ul>
+                        <li><a href="mailto:support@squadcast.com">Customer Support</a></li>
+                        <li><a href="">Contact Sales</a></li>
+                    </ul>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="stay-informed">
+                    <h2>Stay Informed</h2>
+                    <ul>
+                        <li><a href="https://status.squadcast.com/" target=_blank>Service Status</a></li>
+                        <li><a href="https://headwayapp.co/squadcast-updates" target=_blank>What's New</a></li>
+                        <li><a href="http://bit.ly/squadcast-roadmap" target=_blank>Roadmap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+        <style>
+            .main-content{
+              margin-left: -20px;
+              margin-right: -20px;
+              margin-top: -20px;
+            }
+            div.box:hover{
+              box-shadow: 0 5px 20px 0 rgba(0,0,0,.15);
+              transform: scale(1.075) rotate(.0001deg);
+              transition-duration: 170ms;
+              background-color: white;
+            }
+            table, tr, td, table > tbody > tr:nth-of-type(odd){
+              border: 0px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: transparent;
+            }
+            #header-nav-right{
+                display: none;
+            }
+            .hub-landing-search > h2 {text-align: center;}
+          .hub-landing-description > p {text-align: center;}
+          #hub-subheader-parent {display: none;}
+          </style>
+          <div class="main-content" style="display: flex; align-items: center; justify-content: center; margin-bottom: 50px;">
+            <table>
+              <tr>
+                <td><a href="docs/getting-started" style="text-decoration: none; color: #020c45;"><div class="box" id="box" style="border:1px solid #e7e9ed; height: 250px; width: 300px; padding: 20px;box-shadow:0 5px 20px 0 #c4e1ff; background-color:white; margin-bottom:20px; margin-right:20px; border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="/images/get_started.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
+                    Getting Started
+                  </div>
+                  </div></a></td>
+                <td><a href="#" style="text-decoration: none; color: #020c45;"><div class="box" style="border: 1px solid #e7e9ed; height: 250px; width: 300px; padding: 20px;box-shadow:0 5px 20px 0 #c4e1ff; background-color:white; margin-bottom:20px; margin-right:20px; border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="/images/using_squadcast.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
+                    Using Squadcast
+                  </div>
+                  </div></a></td>
+                <td><a href="#" style="text-decoration: none; color: #020c45;"><div class="box" style="border: 1px solid #e7e9ed; height: 250px; width: 300px; padding: 20px;box-shadow:0 5px 20px 0 #c4e1ff; background-color:white; margin-bottom:20px; margin-right:0px; border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="/images/videos.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
+                    How to Videos
+                  </div>
+                  </div></a></td>
+              </tr>
+              <tr>
+                <td><a href="#" style="text-decoration: none; color: #020c45;"><div class="box" style="border:1px solid #e7e9ed;height:250px;width:300px;padding:20px;box-shadow:0 5px 20px 0 #c4e1ff;background-color:white;margin-right:20px;border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="/images/services.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
+                    Services
+                  </div>
+                  </div></a></td>
+                <td><a href="#" style="text-decoration: none; color: #020c45;"><div class="box" style="border:1px solid #e7e9ed;height:250px;width:300px;padding:20px;box-shadow:0 5px 20px 0 #c4e1ff;background-color:white;margin-right:20px;border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="/images/integrations.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
+                    Integrations & Extensions
+                  </div>
+                  </div></a></td>
+                <td><a href="#" style="text-decoration: none; color: #020c45;"><div class="box" style="border:1px solid #e7e9ed;height:250px;width:300px;padding:20px;box-shadow:0 5px 20px 0 #c4e1ff;background-color:white;margin-right:0px;border-radius:4px">
+                  <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
+                    <img src="/images/incidents.svg" width="100" height="100">
+                  </div>
+                  <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
+                    Alerts & Incidents
+                  </div>
+                  </div></a></td>
+              </tr>
+            </table>
+          </div>
+
+                <div class="tags">
+                    
+                </div>
+
+            
+
+    </div>
+    <div class="col-md-4">
+        
+    </div>
+</div>
+<script>
+    if (window.innerWidth>1024){
+        window.addEventListener('scroll', function(){
+            if (window.scrollY>=73){
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'position: fixed; top: 9%; margin-top: 20px;'); /*previously, top: 0*/
+                }
+            }else{
+                if (document.getElementById('toc').offsetHeight > 650){
+                    document.getElementById('toc').setAttribute('style', 'position: relative');
+                }else{
+                    document.getElementById('toc').setAttribute('style', 'margin-top: 20px; position: fixed;');
+                }
+            }
+        }); 
+    }
+</script>
+
+<script>
+    if(window.location.href.slice(-27) == 'manageengine-opmanager.html'){
+        var lin = document.getElementsByClassName('cursorNorm')[1].href;
+        lin = lin.slice(0,-34)+'MongoDB-Atlas-Cloud-Manager.html';
+        document.getElementsByClassName('cursorNorm')[1].href = lin;
+    }
+</script>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                    <p><img src="images/company_logo.png" alt="Company logo"/></p>
+               &copy;2021 Squadcast. All rights reserved. <br />
+<!--  Site last generated: Jan 15, 2021 <br /> -->
+                </div>
+            </div>
+            <script>
+                window.intercomSettings = {
+                    app_id: "lqtvxnd7",
+                    custom_launcher_selector: "#support"
+                };
+            </script>
+            <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/lqtvxnd7';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+</html>

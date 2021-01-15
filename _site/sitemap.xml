@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+
+
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/adding-a-service-1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/alert-routing.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/amazon-cloudwatch-aws.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/analytics.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/api.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/apiv2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/appdynamics.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/aws-cloudtrail-logs.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/aws-cloudtrail-via-cloudwatch.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/aws-cloudwatch-event-rules.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/azure-active-directory-sso.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/azure-monitor.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/bugsnag.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/buildkite.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/checkmk.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/circleci-actions.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/circleci-integration.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/cisco-dnac.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/copperegg.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/coralogix.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/crashlytics.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/escalation-policies.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/schedules.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/create-smart-squads.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/dashboard-metrics.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/datadog.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/de-duplication-rules.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/deactivating-your-squadcast-account.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/deleting-a-service.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/deleting-your-squadcast-account.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/editing-an-existing-escalation-policy.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/elastalert.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/elastic.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/email.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/event-tagging.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/squadcast-faq.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/freshping.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/getting-started.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/ghost-inspector.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/github.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/glossary</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/hangouts.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/google-sso.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/grafana.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/graylog.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/honeybadger.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/how-to-video-squadcast-actions.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/incident-dashboard.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/incident-details.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/incident-rate-limiting.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/incident-timeline.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/warroom.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/index.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/insightops-logentries.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/instana.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/invoke-an-escalation-policy-for-an-existing-incident.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/jenkins.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/jira-cloud.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/jira-cloud-alert-source.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/jira-server-on-premise.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/jira-server-alert-source.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/kapacitor.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/logdna.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/loggly.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/logstash-integration-guide.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/logz.io.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/maintenance-mode.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/managing-all-users.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/squads.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/set-up-your-profile.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/manageengine-opmanager.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/manually-creating-an-incident.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/adfs-sso.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/mongodb-atlas-cloud-manager.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/nagios.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/new-relic.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/nixstats.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/notification-rules.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/okta-sso-integration.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/squadcast-organizations.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/overops.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/papertrail.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/pin-messages-from-warroom-to-timeline-1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/pin-messages-from-warroom-to-timeline.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/pingdom.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/postmortems.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/prometheus.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/getting-started</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/rapid7-insightidr.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/runscope.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/saml-sso.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/schedule-overrides.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/scout-apm.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/sematext.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/sensu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/sentryio.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/server-density.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/service-levels.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/signalfx.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/site24x7.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/slack.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/slack-as-an-alert-source.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/slo-dashboard.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/solarwinds-appoptics.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/splunk.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/sqreen.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/squadcast-public-api.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/squadcast-runbooks.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/stackdriver.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/statuscake.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/statuspage.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/sumo-logic.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/schedule-types.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/suppression-rules.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/sysdig-monitor.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/take-bulk-actions.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/threat-stack.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/upgrading-to-a-paid-plan.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/uptime-robot.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/using-the-mobile-app.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/mobile-app-see-who-is-on-call.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/what-are-squadcast-actions.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/who-is-on-call.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/zabbix-integration-guide.html</loc>
+  </url>
+  
+  
+</urlset>
