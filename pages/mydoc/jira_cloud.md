@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Create tickets in JIRA with the incidents from Squadcast and sync status bidirectionally"
 sidebar: mydoc_sidebar
-permalink: docs/jira-cloud.html
+permalink: docs/jira-cloud
 folder: mydoc
 ---
 

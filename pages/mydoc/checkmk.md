@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Get Alerts from Checkmk into Squadcast"
 sidebar: mydoc_sidebar
-permalink: docs/checkmk.html
+permalink: docs/checkmk
 folder: mydoc
 ---
 
@@ -24,7 +24,7 @@ Please drop our **[Support Team](mailto:support@squadcast.com)** a line if you h
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

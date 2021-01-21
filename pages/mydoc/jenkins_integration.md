@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "This document shows you how you can integrate Squadcast with the Jenkins build pipeline"
 sidebar: mydoc_sidebar
-permalink: docs/jenkins.html
+permalink: docs/jenkins
 folder: mydoc
 ---
 

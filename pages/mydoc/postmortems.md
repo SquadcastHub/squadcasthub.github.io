@@ -5,7 +5,7 @@ summary: "Postmortems are a way to summarize the resolution for an incident once
 last_updated:
 tags: [postmortems]
 sidebar: mydoc_sidebar
-permalink: docs/postmortems.html
+permalink: docs/postmortems
 folder: mydoc
 ---
 

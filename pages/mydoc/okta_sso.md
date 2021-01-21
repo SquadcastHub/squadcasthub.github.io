@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Enable Okta Single Sign On (SSO) for your Squadcast organisation"
 sidebar: mydoc_sidebar
-permalink: docs/okta-sso-integration.html
+permalink: docs/okta-sso-integration
 folder: mydoc
 ---
 

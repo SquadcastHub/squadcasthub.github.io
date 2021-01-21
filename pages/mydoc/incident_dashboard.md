@@ -3,7 +3,7 @@ title: Incident Dashboard
 tags: [incident dashboard]
 summary: "One centralized dashboard to rule them all"
 sidebar: mydoc_sidebar
-permalink: docs/incident-dashboard.html
+permalink: docs/incident-dashboard
 folder: mydoc
 ---
 

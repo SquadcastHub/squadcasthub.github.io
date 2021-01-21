@@ -1,6 +1,6 @@
 ---
 title: Supported On-call Schedules & Rotations
-permalink: docs/schedule-types.html
+permalink: docs/schedule-types
 tags: [schedules, rotations]
 keywords:
 last_updated:

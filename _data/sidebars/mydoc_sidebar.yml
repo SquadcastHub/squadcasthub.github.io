@@ -48,8 +48,20 @@ entries:
       url: /docs/managing-all-users
       output: web, pdf
 
+    - title: Add Users
+      url: /docs/add-users
+      output: web, pdf
+
+    - title: Import Users
+      url: /docs/import-users
+      output: web, pdf
+
     - title: Notification Rules
       url: /docs/notification-rules
+      output: web, pdf
+
+    - title: Change Account Owner
+      url: /docs/transfer-ownership
       output: web, pdf
 
   - title: Squads

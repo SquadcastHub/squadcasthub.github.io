@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Adding your team & defining their roles">
-<meta name="keywords" content="manage users,  ">
+<meta name="keywords" content="Add-UsersImport-UsersSquads,  ">
 <title>Manage All Users | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -246,7 +246,21 @@
           
           
           
-          <li><a title="Manage All Users" href="/docs/managing-all-users">Manage All Users</a></li>
+          <li class="active"><a title="Manage All Users" href="/docs/managing-all-users">Manage All Users</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Add Users" href="/docs/add-users">Add Users</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Import Users" href="/docs/import-users">Import Users</a></li>
           
           
           
@@ -254,6 +268,13 @@
           
           
           <li><a title="Notification Rules" href="/docs/notification-rules">Notification Rules</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Change Account Owner" href="/docs/transfer-ownership">Change Account Owner</a></li>
           
           
           
@@ -1309,27 +1330,27 @@ li.sidebarTitle{
 
             <h2 id="user-roles-and-privileges">User Roles and privileges</h2>
 
-<p>Squadcast has four different user roles:</p>
+<p>Squadcast has four different User Roles:</p>
 
 <p><strong>Account Owner</strong></p>
 
-<p>Squadcast allows only one Account Owner per organization. She has all the privileges in that organization and will be responsible for the billing of the account.</p>
+<p>Squadcast allows only one Account Owner per organization. An Account Owner has all the privileges in that organization and will be responsible for the billing of the account.</p>
 
 <p><strong>Admin</strong></p>
 
-<p>Admin has all the privileges of the account other than Billing. Typically Admin can be Engineering Managers, Technical Lead or the person responsible for the engineering or DevOps team.</p>
+<p>Admin has all the privileges of the account other than Billing. Typically Admins can be Engineering Managers, Technical Leads or the people responsible for the Engineering or DevOps teams.</p>
 
 <p><strong>User</strong></p>
 
-<p>Users only have the privilege to edit their own profile but can see all the incidents happening in an organization. Typically Users are the engineers or support staff in a team</p>
+<p>Users only have the privilege to edit their own profile but can see all the incidents happening in an organization. Typically Users are the engineers or support staff in a team.</p>
 
-<p><strong>Stakeholders</strong></p>
+<p><strong>Stakeholder</strong></p>
 
 <p>As the name implies, these are typically other participants from the organization who may have an interest in the incident management process. They could be Product Managers, Customer Support representatives, CxOs and so on.</p>
 
-<p>Stakeholders have view-only access to all Incidents. Additionally, they will be automatically subscribed to receive e-mail and push notifications for any incidents that they are associated with..</p>
+<p>Stakeholders have view-only access to all Incidents.</p>
 
-<p><img src="images/stakeholders.png" alt="" style="border: 1px solid #cccccc" /></p>
+<p><img src="images/stakeholders.png" alt="" /></p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
 <b>Note: </b>
@@ -1415,24 +1436,6 @@ th{
   </tbody>
 </table>
 
-<h2 id="add-or-remove-a-user">Add or Remove a user</h2>
-
-<p>You can access the users page by clicking on the Users tab from the sidebar and view all the users of your organisation.</p>
-
-<p><img src="images/add_remove_user.png" alt="" style="border: 1px solid #cccccc" /></p>
-
-<p>Click on <strong>Add Users</strong> button and type in the First Name, Last Name and Email id of the user whom you wish to add to your organisation. Choose the role from the drop down that is most appropriate for each new user.</p>
-
-<p>You can also remove an user by clicking on the red delete icon.</p>
-
-<h2 id="alert-forwarding">Alert Forwarding</h2>
-
-<p>This is a setting that allows you to excuse users from getting alerts from Squadcast and instead forward it to someone else. You can set the Alert Forwarding status for any particular user and select a replacement user (forward to) who will be contacted for any incidents in that time.</p>
-
-<p>This ensures that critical alerts are not missed or delayed due to the engineer being super busy or away on holiday.</p>
-
-<p><img src="images/alert_forwarding.png" alt="" style="border: 1px solid #cccccc" /></p>
-
 
                 <div class="tags">
                     
@@ -1441,7 +1444,17 @@ th{
                     
                     
                     
-                    <a href="manage users.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">manage users<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    <a href="Add-Users.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Add Users<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    
+                    
+                    
+                    
+                    <a href="Import-Users.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Import Users<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    
+                    
+                    
+                    
+                    <a href="Squads.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Squads<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
@@ -1511,8 +1524,8 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
-               &copy;2021 Squadcast. All rights reserved. <br />
-<!--  Site last generated: Jan 15, 2021 <br /> -->
+               Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
+<!--  Site last generated: Jan 21, 2021 <br /> -->
                 </div>
             </div>
             <script>

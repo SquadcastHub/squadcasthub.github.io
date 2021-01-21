@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "If you have decided to permanently delete your subscription to Squadcast, this document will help you understand how to do so"
 sidebar: mydoc_sidebar
-permalink: docs/deleting-your-squadcast-account.html
+permalink: docs/deleting-your-squadcast-account
 folder: mydoc
 ---
 

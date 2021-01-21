@@ -6,7 +6,7 @@ last_updated:
 datatable:
 summary: "Find out who is on-call at any given instant"
 sidebar: mydoc_sidebar
-permalink: docs/who-is-on-call.html
+permalink: docs/who-is-on-call
 folder: mydoc
 ---
 

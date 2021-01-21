@@ -3,7 +3,7 @@ title: Schedule Overrides
 tags: [schedules, overrides]
 summary: "Rotations for your customer support engineers or on-call teams"
 sidebar: mydoc_sidebar
-permalink: docs/schedule-overrides.html
+permalink: docs/schedule-overrides
 folder: mydoc
 ---
 

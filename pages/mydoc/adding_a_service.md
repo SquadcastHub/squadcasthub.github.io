@@ -7,7 +7,7 @@ summary: "Service - The core components of your infrastructure from which alerts
 series:
 weight:
 sidebar: mydoc_sidebar
-permalink: docs/adding-a-service-1.html
+permalink: docs/adding-a-service-1
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ last_updated:
 keywords:
 summary: "Send events to Squadcast using version 2 of the alerts API (APIv2)"
 sidebar: mydoc_sidebar
-permalink: docs/apiv2.html
+permalink: docs/apiv2
 folder: mydoc
 ---
 
@@ -15,7 +15,7 @@ You can use the version 2 of our API integration (APIv2) to trigger and resolve 
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Get alerts to Squadcast from Graylog"
 sidebar: mydoc_sidebar
-permalink: docs/graylog.html
+permalink: docs/graylog
 folder: mydoc
 ---
 
@@ -15,7 +15,7 @@ Squadcast will then process this information to create incidents for this servic
 
 ## Using Graylog as an Alert Source
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

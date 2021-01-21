@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Get alerts from Buildkite into Squadcast"
 sidebar: mydoc_sidebar
-permalink: docs/buildkite.html
+permalink: docs/buildkite
 folder: mydoc
 ---
 
@@ -17,7 +17,7 @@ Squadcast will then process this information to create incidents for this servic
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

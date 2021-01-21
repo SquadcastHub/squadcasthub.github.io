@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "See who is on-call on the Squadcast Mobile App"
 sidebar: mydoc_sidebar
-permalink: docs/mobile-app-see-who-is-on-call.html
+permalink: docs/mobile-app-see-who-is-on-call
 folder: mydoc
 ---
 

@@ -3,7 +3,7 @@ title: Create and Manage On-call Schedules & Rotations
 tags: [schedules, rotations]
 summary: "Rotations for your customer support engineers or on-call teams"
 sidebar: mydoc_sidebar
-permalink: docs/schedules.html
+permalink: docs/schedules
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Squadcast Actions lets you take actions directly from Squadcast as a response to incidents."
 sidebar: mydoc_sidebar
-permalink: docs/what-are-squadcast-actions.html
+permalink: docs/what-are-squadcast-actions
 folder: mydoc
 ---
 

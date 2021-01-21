@@ -5,21 +5,21 @@ keywords:
 last_updated:
 summary: "Get CloudTrail log creation alerts into Squadcast using SNS endpoints"
 sidebar: mydoc_sidebar
-permalink: docs/aws-cloudtrail-logs.html
+permalink: docs/aws-cloudtrail-logs
 folder: mydoc
 ---
 
 Please use this integration guide to configure CloudTrail log alerts so they can be received in Squadcast. This integration should be used only for getting CloudTrail log alerts via a SNS endpoint.
 
-For CloudTrail alerts, use the [AWS CloudTrail via CloudWatch integration](aws-cloudtrail-via-cloudwatch.html).
+For CloudTrail alerts, use the [AWS CloudTrail via CloudWatch integration](aws-cloudtrail-via-cloudwatch).
 
-For regular AWS CloudWatch alarms (like EC2 alerts), use the [AWS CloudWatch Integration](amazon-cloudwatch-aws.html).
+For regular AWS CloudWatch alarms (like EC2 alerts), use the [AWS CloudWatch Integration](amazon-cloudwatch-aws).
 
 ## Using AWS CloudTrail Logs via SNS as an Alert Source
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service-1.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

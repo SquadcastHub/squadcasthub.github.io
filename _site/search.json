@@ -4,10 +4,21 @@
 
 
 {
+"title": "Add Users",
+"tags": "Import-UsersTransfer-Ownership",
+"keywords": "",
+"url": "/docs/add-users",
+"summary": "Add multiple Users to your organization"
+}
+,
+
+
+
+{
 "title": "Adding a Service",
 "tags": "service",
 "keywords": "",
-"url": "/docs/adding-a-service-1.html",
+"url": "/docs/adding-a-service-1",
 "summary": "Service - The core components of your infrastructure from which alerts are generated"
 }
 ,
@@ -18,7 +29,7 @@
 "title": "Alert Routing",
 "tags": "alert routing",
 "keywords": "",
-"url": "/docs/alert-routing.html",
+"url": "/docs/alert-routing",
 "summary": "Help route notifications to the right responder based on event tags"
 }
 ,
@@ -29,7 +40,7 @@
 "title": "Amazon Cloudwatch (AWS)",
 "tags": "integrationamazon cloudwatch",
 "keywords": "",
-"url": "/docs/amazon-cloudwatch-aws.html",
+"url": "/docs/amazon-cloudwatch-aws",
 "summary": "Send events to Squadcast from AWS Cloudwatch (Amazon Web Services)"
 }
 ,
@@ -40,7 +51,7 @@
 "title": "Analyze Metrics",
 "tags": "analyze metrics",
 "keywords": "",
-"url": "/docs/analytics.html",
+"url": "/docs/analytics",
 "summary": "Analytics for measuring your organisations performance"
 }
 ,
@@ -51,7 +62,7 @@
 "title": "API",
 "tags": "integrationapi",
 "keywords": "",
-"url": "/docs/api.html",
+"url": "/docs/api",
 "summary": "Send events to Squadcast using an API"
 }
 ,
@@ -62,7 +73,7 @@
 "title": "APIv2",
 "tags": "integrationapi",
 "keywords": "",
-"url": "/docs/apiv2.html",
+"url": "/docs/apiv2",
 "summary": "Send events to Squadcast using version 2 of the alerts API (APIv2)"
 }
 ,
@@ -73,7 +84,7 @@
 "title": "AppDynamics",
 "tags": "integrationappdynamics",
 "keywords": "",
-"url": "/docs/appdynamics.html",
+"url": "/docs/appdynamics",
 "summary": "Get Alerts into Squadcast from AppDynamics"
 }
 ,
@@ -84,7 +95,7 @@
 "title": "AWS CloudTrail Logs",
 "tags": "integrationaws cloudtrail logs",
 "keywords": "",
-"url": "/docs/aws-cloudtrail-logs.html",
+"url": "/docs/aws-cloudtrail-logs",
 "summary": "Get CloudTrail log creation alerts into Squadcast using SNS endpoints"
 }
 ,
@@ -95,7 +106,7 @@
 "title": "AWS CloudTrail via CloudWatch",
 "tags": "integrationaws cloudtrail via cloudwatch",
 "keywords": "",
-"url": "/docs/aws-cloudtrail-via-cloudwatch.html",
+"url": "/docs/aws-cloudtrail-via-cloudwatch",
 "summary": "Get CloudTrail alerts into Squadcast using CloudWatch and SNS endpoints"
 }
 ,
@@ -106,7 +117,7 @@
 "title": "AWS CloudWatch Event Rules",
 "tags": "Amazon-Cloudwatch-AWSAWS-CloudTrail-Logs",
 "keywords": "",
-"url": "/docs/aws-cloudwatch-event-rules.html",
+"url": "/docs/aws-cloudwatch-event-rules",
 "summary": "Send alerts from CloudWatch Event Rules and SNS endpoints to Squadcast"
 }
 ,
@@ -117,7 +128,7 @@
 "title": "Azure Active Directory SSO",
 "tags": "ssoazure active directory",
 "keywords": "",
-"url": "/docs/azure-active-directory-sso.html",
+"url": "/docs/azure-active-directory-sso",
 "summary": "Enable Azure Active Directory Single Sign On (SSO) for your Squadcast organisation"
 }
 ,
@@ -128,7 +139,7 @@
 "title": "Azure Monitor",
 "tags": "integrationazure monitor",
 "keywords": "",
-"url": "/docs/azure-monitor.html",
+"url": "/docs/azure-monitor",
 "summary": "Get alerts from Azure Monitor into Squadcast"
 }
 ,
@@ -139,7 +150,7 @@
 "title": "Bugsnag",
 "tags": "Azure-MonitorBuildkite",
 "keywords": "",
-"url": "/docs/bugsnag.html",
+"url": "/docs/bugsnag",
 "summary": "Send error alerts to Squadcast from Bugsnag"
 }
 ,
@@ -150,8 +161,19 @@
 "title": "Buildkite",
 "tags": "integrationbuildkite",
 "keywords": "",
-"url": "/docs/buildkite.html",
+"url": "/docs/buildkite",
 "summary": "Get alerts from Buildkite into Squadcast"
+}
+,
+
+
+
+{
+"title": "Change Account Owner",
+"tags": "Set-up-your-profileManaging-all-Users",
+"keywords": "",
+"url": "/docs/transfer-ownership",
+"summary": "Transfer your Account Ownership to someone else from your Organization"
 }
 ,
 
@@ -161,7 +183,7 @@
 "title": "Checkmk",
 "tags": "integrationcheckmk",
 "keywords": "",
-"url": "/docs/checkmk.html",
+"url": "/docs/checkmk",
 "summary": "Get Alerts from Checkmk into Squadcast"
 }
 ,
@@ -172,7 +194,7 @@
 "title": "CircleCI Actions",
 "tags": "circleci actions",
 "keywords": "",
-"url": "/docs/circleci-actions.html",
+"url": "/docs/circleci-actions",
 "summary": "Take CircleCI actions directly from incidents"
 }
 ,
@@ -183,7 +205,7 @@
 "title": "CircleCI Integration",
 "tags": "integrationcircleci",
 "keywords": "",
-"url": "/docs/circleci-integration.html",
+"url": "/docs/circleci-integration",
 "summary": "Integrate CircleCI to perform actions directly from Squadcast"
 }
 ,
@@ -194,7 +216,7 @@
 "title": "Cisco DNAC",
 "tags": "integrationcicso dnac",
 "keywords": "",
-"url": "/docs/cisco-dnac.html",
+"url": "/docs/cisco-dnac",
 "summary": "Get Cisco DNAC alerts into Squadcast"
 }
 ,
@@ -205,7 +227,7 @@
 "title": "CopperEgg",
 "tags": "integrationcopperegg",
 "keywords": "",
-"url": "/docs/copperegg.html",
+"url": "/docs/copperegg",
 "summary": "Send events to Squadcast from CopperEgg"
 }
 ,
@@ -216,7 +238,7 @@
 "title": "Coralogix",
 "tags": "CopperEggCrashlytics",
 "keywords": "",
-"url": "/docs/coralogix.html",
+"url": "/docs/coralogix",
 "summary": "Get alerts from Coralogix into Squadcast"
 }
 ,
@@ -227,7 +249,7 @@
 "title": "Crashlytics",
 "tags": "integrationcrashlytics",
 "keywords": "",
-"url": "/docs/crashlytics.html",
+"url": "/docs/crashlytics",
 "summary": "Send issues to Squadcast from Crashlytics (Fabric SDK)"
 }
 ,
@@ -238,7 +260,7 @@
 "title": "Create &amp; Manage Escalation Policies",
 "tags": "escalation policies",
 "keywords": "",
-"url": "/docs/escalation-policies.html",
+"url": "/docs/escalation-policies",
 "summary": "Define rules on when and how alerts escalate to various Users, Squads and (or) Schedules within your organization."
 }
 ,
@@ -249,7 +271,7 @@
 "title": "Create and Manage On-call Schedules &amp; Rotations",
 "tags": "schedulesrotations",
 "keywords": "",
-"url": "/docs/schedules.html",
+"url": "/docs/schedules",
 "summary": "Rotations for your customer support engineers or on-call teams"
 }
 ,
@@ -260,7 +282,7 @@
 "title": "Create Smart Squads",
 "tags": "smart squads",
 "keywords": "",
-"url": "/docs/create-smart-squads.html",
+"url": "/docs/create-smart-squads",
 "summary": "Smart Squads allow you to dynamically add users to a Squad by integrating with your Version Control Tool"
 }
 ,
@@ -271,7 +293,7 @@
 "title": "Dashboard Metrics",
 "tags": "dashboard metrics",
 "keywords": "",
-"url": "/docs/dashboard-metrics.html",
+"url": "/docs/dashboard-metrics",
 "summary": "What do these metrics mean and how are the dashboard metrics calculated?"
 }
 ,
@@ -282,7 +304,7 @@
 "title": "Datadog",
 "tags": "CrashlyticsElastic",
 "keywords": "",
-"url": "/docs/datadog.html",
+"url": "/docs/datadog",
 "summary": "Send events to Squadcast from Datadog"
 }
 ,
@@ -293,7 +315,7 @@
 "title": "De-duplication Rules",
 "tags": "deduplication",
 "keywords": "",
-"url": "/docs/de-duplication-rules.html",
+"url": "/docs/de-duplication-rules",
 "summary": "Reduce alert noise by grouping similar alerts together"
 }
 ,
@@ -304,7 +326,7 @@
 "title": "Deactivating your  Squadcast Account",
 "tags": "deactivatingaccount",
 "keywords": "",
-"url": "/docs/deactivating-your-squadcast-account.html",
+"url": "/docs/deactivating-your-squadcast-account",
 "summary": "If you have decided to cancel your subscription to Squadcast, this document will help you understand how to do so"
 }
 ,
@@ -315,7 +337,7 @@
 "title": "Deleting a Service",
 "tags": "deleting servicedeletingservice",
 "keywords": "",
-"url": "/docs/deleting-a-service.html",
+"url": "/docs/deleting-a-service",
 "summary": "Deleting a Service"
 }
 ,
@@ -326,7 +348,7 @@
 "title": "Deleting your Squadcast Account",
 "tags": "deletingaccount",
 "keywords": "",
-"url": "/docs/deleting-your-squadcast-account.html",
+"url": "/docs/deleting-your-squadcast-account",
 "summary": "If you have decided to permanently delete your subscription to Squadcast, this document will help you understand how to do so"
 }
 ,
@@ -337,7 +359,7 @@
 "title": "Editing an Existing Escalation Policy",
 "tags": "escalation policies",
 "keywords": "",
-"url": "/docs/editing-an-existing-escalation-policy.html",
+"url": "/docs/editing-an-existing-escalation-policy",
 "summary": "Making changes to an Escalation Policy"
 }
 ,
@@ -348,7 +370,7 @@
 "title": "ElastAlert",
 "tags": "integrationelastalert",
 "keywords": "",
-"url": "/docs/elastalert.html",
+"url": "/docs/elastalert",
 "summary": "Get alerts from Elastic into Squadcast (using ElastAlert)"
 }
 ,
@@ -359,7 +381,7 @@
 "title": "Elastic",
 "tags": "integrationelastic",
 "keywords": "",
-"url": "/docs/elastic.html",
+"url": "/docs/elastic",
 "summary": "Get alerts from Elastic into Squadcast (using Watcher Alerting)"
 }
 ,
@@ -370,7 +392,7 @@
 "title": "Email",
 "tags": "integrationemail",
 "keywords": "",
-"url": "/docs/email.html",
+"url": "/docs/email",
 "summary": "Send events to Squadcast from Email"
 }
 ,
@@ -381,7 +403,7 @@
 "title": "Event Tagging",
 "tags": "event tagging",
 "keywords": "",
-"url": "/docs/event-tagging.html",
+"url": "/docs/event-tagging",
 "summary": "Event tagging can help you add relevant information to incoming incidents to make it more context-rich for the user"
 }
 ,
@@ -390,9 +412,9 @@
 
 {
 "title": "FAQs",
-"tags": "faq",
+"tags": "Getting-Started",
 "keywords": "",
-"url": "/docs/squadcast-faq.html",
+"url": "/docs/squadcast-faq",
 "summary": "Frequently Asked Questions"
 }
 ,
@@ -405,7 +427,7 @@
 "title": "Freshping",
 "tags": "integrationfreshping",
 "keywords": "",
-"url": "/docs/freshping.html",
+"url": "/docs/freshping",
 "summary": "Get alerts from Freshping into Squadcast"
 }
 ,
@@ -429,7 +451,7 @@
 "title": "Ghost Inspector",
 "tags": "integrationghost inspector",
 "keywords": "",
-"url": "/docs/ghost-inspector.html",
+"url": "/docs/ghost-inspector",
 "summary": "Trigger a Squadcast Incident for any failed UI tests from Ghost Inspector"
 }
 ,
@@ -440,7 +462,7 @@
 "title": "GitHub",
 "tags": "integrationgithub",
 "keywords": "",
-"url": "/docs/github.html",
+"url": "/docs/github",
 "summary": "Enable Squadcast to track user activity (commits) on Github"
 }
 ,
@@ -449,7 +471,7 @@
 
 {
 "title": "Glossary",
-"tags": "troubleshooting",
+"tags": "Getting-StartedSet-up-your-profile",
 "keywords": "",
 "url": "/docs/glossary",
 "summary": "This guide will walk you through the terminologies and their meanings used in Squadcast."
@@ -462,7 +484,7 @@
 "title": "Google Hangouts",
 "tags": "integrationgoogle hangouts",
 "keywords": "",
-"url": "/docs/hangouts.html",
+"url": "/docs/hangouts",
 "summary": "Ack, Resolve, Re-assign, Snooze, Escalate - everything from Google Hangouts."
 }
 ,
@@ -473,7 +495,7 @@
 "title": "Google SSO",
 "tags": "ssogoogle",
 "keywords": "",
-"url": "/docs/google-sso.html",
+"url": "/docs/google-sso",
 "summary": "Use G Suite credentials to sign in to Squadcast via Single Sign-On (SSO)."
 }
 ,
@@ -495,7 +517,7 @@
 "title": "Graylog",
 "tags": "integrationgraylog",
 "keywords": "",
-"url": "/docs/graylog.html",
+"url": "/docs/graylog",
 "summary": "Get alerts to Squadcast from Graylog"
 }
 ,
@@ -506,7 +528,7 @@
 "title": "Honeybadger",
 "tags": "integrationhoneybadger",
 "keywords": "",
-"url": "/docs/honeybadger.html",
+"url": "/docs/honeybadger",
 "summary": "Get alerts from Honeybadger into Squadcast"
 }
 ,
@@ -517,8 +539,19 @@
 "title": "How to Video - Squadcast Actions",
 "tags": "how to videosquadcast actions",
 "keywords": "",
-"url": "/docs/how-to-video-squadcast-actions.html",
+"url": "/docs/how-to-video-squadcast-actions",
 "summary": "Here's a how-to-video on how you can use Squadcast Actions & Runbooks for faster incident resolution"
+}
+,
+
+
+
+{
+"title": "Import Users",
+"tags": "Add-UsersTransfer-Ownership",
+"keywords": "",
+"url": "/docs/import-users",
+"summary": "Import users into Squadcast using a .csv file"
 }
 ,
 
@@ -528,7 +561,7 @@
 "title": "Incident Dashboard",
 "tags": "incident dashboard",
 "keywords": "",
-"url": "/docs/incident-dashboard.html",
+"url": "/docs/incident-dashboard",
 "summary": "One centralized dashboard to rule them all"
 }
 ,
@@ -539,7 +572,7 @@
 "title": "Incident Details",
 "tags": "incident",
 "keywords": "",
-"url": "/docs/incident-details.html",
+"url": "/docs/incident-details",
 "summary": "Get more details about the incident"
 }
 ,
@@ -550,7 +583,7 @@
 "title": "Incident Rate Limiting",
 "tags": "rate limiting",
 "keywords": "",
-"url": "/docs/incident-rate-limiting.html",
+"url": "/docs/incident-rate-limiting",
 "summary": "Limit the number of requests a client can make"
 }
 ,
@@ -561,7 +594,7 @@
 "title": "Incident Timeline",
 "tags": "incident timeline",
 "keywords": "",
-"url": "/docs/incident-timeline.html",
+"url": "/docs/incident-timeline",
 "summary": "View Timelines of the Incident"
 }
 ,
@@ -572,7 +605,7 @@
 "title": "Incident War Room",
 "tags": "war room",
 "keywords": "",
-"url": "/docs/warroom.html",
+"url": "/docs/warroom",
 "summary": "Push important notes into the Incident War Room for easier information sharing"
 }
 ,
@@ -590,11 +623,13 @@
 
 
 
+
+
 {
 "title": "InsightOps (LogEntries)",
 "tags": "integrationinsightops",
 "keywords": "",
-"url": "/docs/insightops-logentries.html",
+"url": "/docs/insightops-logentries",
 "summary": "Send events to Squadcast from insightOps (LogEntries)"
 }
 ,
@@ -605,7 +640,7 @@
 "title": "Instana",
 "tags": "integrationinstana",
 "keywords": "",
-"url": "/docs/instana.html",
+"url": "/docs/instana",
 "summary": "Get alerts from Instana into Squadcast"
 }
 ,
@@ -616,7 +651,7 @@
 "title": "Invoke an Escalation Policy for an Existing Incident",
 "tags": "escalation policies",
 "keywords": "",
-"url": "/docs/invoke-an-escalation-policy-for-an-existing-incident.html",
+"url": "/docs/invoke-an-escalation-policy-for-an-existing-incident",
 "summary": "Invoking an Escalation Policy"
 }
 ,
@@ -627,7 +662,7 @@
 "title": "Jenkins Integration",
 "tags": "integrationjenkins",
 "keywords": "",
-"url": "/docs/jenkins.html",
+"url": "/docs/jenkins",
 "summary": "This document shows you how you can integrate Squadcast with the Jenkins build pipeline"
 }
 ,
@@ -638,7 +673,7 @@
 "title": "Jira Cloud",
 "tags": "integrationjira cloud",
 "keywords": "",
-"url": "/docs/jira-cloud.html",
+"url": "/docs/jira-cloud",
 "summary": "Create tickets in JIRA with the incidents from Squadcast and sync status bidirectionally"
 }
 ,
@@ -649,7 +684,7 @@
 "title": "Jira Cloud Alert Source",
 "tags": "integrationjira cloud",
 "keywords": "",
-"url": "/docs/jira-cloud-alert-source.html",
+"url": "/docs/jira-cloud-alert-source",
 "summary": "Get alerts from Jira Cloud into Squadcast"
 }
 ,
@@ -660,7 +695,7 @@
 "title": "Jira Server (On-Premise)",
 "tags": "integrationjira server",
 "keywords": "",
-"url": "/docs/jira-server-on-premise.html",
+"url": "/docs/jira-server-on-premise",
 "summary": "Create issues in JIRA with the incidents from Squadcast and vice versa and also sync the status bidirectionally."
 }
 ,
@@ -671,7 +706,7 @@
 "title": "Jira Server Alert Source",
 "tags": "integrationjira server",
 "keywords": "",
-"url": "/docs/jira-server-alert-source.html",
+"url": "/docs/jira-server-alert-source",
 "summary": "Get alerts from Jira Server into Squadcast"
 }
 ,
@@ -682,7 +717,7 @@
 "title": "Kapacitor",
 "tags": "Jira-Server-Alert-SourceLogDNA",
 "keywords": "",
-"url": "/docs/kapacitor.html",
+"url": "/docs/kapacitor",
 "summary": "Send alerts from to Squadcast from Kapacitor"
 }
 ,
@@ -693,7 +728,7 @@
 "title": "LogDNA",
 "tags": "integrationlogdna",
 "keywords": "",
-"url": "/docs/logdna.html",
+"url": "/docs/logdna",
 "summary": "Get alerts from LogDNA into Squadcast"
 }
 ,
@@ -704,7 +739,7 @@
 "title": "Loggly",
 "tags": "integrationloggly",
 "keywords": "",
-"url": "/docs/loggly.html",
+"url": "/docs/loggly",
 "summary": "Send events to Squadcast from Loggly"
 }
 ,
@@ -715,7 +750,7 @@
 "title": "Logstash",
 "tags": "integrationlogstash",
 "keywords": "",
-"url": "/docs/logstash-integration-guide.html",
+"url": "/docs/logstash-integration-guide",
 "summary": "Squadcast - Logstash Integration guide"
 }
 ,
@@ -726,7 +761,7 @@
 "title": "Logz.io",
 "tags": "LogstashManageEngine-Opmanager",
 "keywords": "",
-"url": "/docs/logz.io.html",
+"url": "/docs/logz.io",
 "summary": "Send log alerts to Squadcast from Logz.io (ELK stack)"
 }
 ,
@@ -737,7 +772,7 @@
 "title": "Maintenance Mode",
 "tags": "maintenance mode",
 "keywords": "",
-"url": "/docs/maintenance-mode.html",
+"url": "/docs/maintenance-mode",
 "summary": "Maintenance Work"
 }
 ,
@@ -746,9 +781,9 @@
 
 {
 "title": "Manage All Users",
-"tags": "manage users",
+"tags": "Add-UsersImport-UsersSquads",
 "keywords": "",
-"url": "/docs/managing-all-users.html",
+"url": "/docs/managing-all-users",
 "summary": "Adding your team & defining their roles"
 }
 ,
@@ -759,7 +794,7 @@
 "title": "Manage Squads",
 "tags": "squads",
 "keywords": "",
-"url": "/docs/squads.html",
+"url": "/docs/squads",
 "summary": "Everything you need to know about Squads"
 }
 ,
@@ -768,9 +803,9 @@
 
 {
 "title": "Manage Your Profile",
-"tags": "manage profile",
+"tags": "Notification-RulesManaging-all-Users",
 "keywords": "",
-"url": "/docs/set-up-your-profile.html",
+"url": "/docs/set-up-your-profile",
 "summary": "Edit your account details and notification preferences"
 }
 ,
@@ -781,7 +816,7 @@
 "title": "ManageEngine Opmanager",
 "tags": "Logz.ioMongoDB-Atlas-/-Cloud-Manager",
 "keywords": "",
-"url": "/docs/manageengine-opmanager.html",
+"url": "/docs/manageengine-opmanager",
 "summary": "Send alerts from ManageEngine OpManager to Squadcast"
 }
 ,
@@ -792,7 +827,7 @@
 "title": "Manually Creating an Incident",
 "tags": "manually creating incident",
 "keywords": "",
-"url": "/docs/manually-creating-an-incident.html",
+"url": "/docs/manually-creating-an-incident",
 "summary": "This is a how-to document to create manual incidents on the incident dashboard"
 }
 ,
@@ -803,7 +838,7 @@
 "title": "Microsoft ADFS SSO",
 "tags": "ssomicrosoft adfs",
 "keywords": "",
-"url": "/docs/adfs-sso.html",
+"url": "/docs/adfs-sso",
 "summary": "Enable Microsoft ADFS Single Sign On (SSO) for your Squadcast organisation"
 }
 ,
@@ -814,7 +849,7 @@
 "title": "MongoDB Atlas / Cloud Manager",
 "tags": "integrationmongodb atlascloud manager",
 "keywords": "",
-"url": "/docs/mongodb-atlas-cloud-manager.html",
+"url": "/docs/mongodb-atlas-cloud-manager",
 "summary": "Route your MongoDB Atlas / Cloud manager alerts to Squadcast"
 }
 ,
@@ -825,7 +860,7 @@
 "title": "Nagios",
 "tags": "integrationnagios",
 "keywords": "",
-"url": "/docs/nagios.html",
+"url": "/docs/nagios",
 "summary": "Get alerts from Nagios into Squadcast"
 }
 ,
@@ -836,7 +871,7 @@
 "title": "New Relic",
 "tags": "integrationnew relic",
 "keywords": "",
-"url": "/docs/new-relic.html",
+"url": "/docs/new-relic",
 "summary": "Send events to Squadcast from New Relic"
 }
 ,
@@ -847,7 +882,7 @@
 "title": "Nixstats",
 "tags": "New-RelicOverOps",
 "keywords": "",
-"url": "/docs/nixstats.html",
+"url": "/docs/nixstats",
 "summary": "Send alerts to Squadcast from Nixstats"
 }
 ,
@@ -856,9 +891,9 @@
 
 {
 "title": "Notification Rules",
-"tags": "notification",
+"tags": "Set-up-your-profileEscalation-PoliciesSchedules",
 "keywords": "",
-"url": "/docs/notification-rules.html",
+"url": "/docs/notification-rules",
 "summary": "Notification rules define how and when you are notified when an incident is assigned to you."
 }
 ,
@@ -869,7 +904,7 @@
 "title": "Okta SSO",
 "tags": "ssookta",
 "keywords": "",
-"url": "/docs/okta-sso-integration.html",
+"url": "/docs/okta-sso-integration",
 "summary": "Enable Okta Single Sign On (SSO) for your Squadcast organisation"
 }
 ,
@@ -882,7 +917,7 @@
 "title": "Organizations",
 "tags": "organizations",
 "keywords": "",
-"url": "/docs/squadcast-organizations.html",
+"url": "/docs/squadcast-organizations",
 "summary": "Organizations in Squadcast"
 }
 ,
@@ -893,7 +928,7 @@
 "title": "OverOps",
 "tags": "integrationoverops",
 "keywords": "",
-"url": "/docs/overops.html",
+"url": "/docs/overops",
 "summary": "Get alerts from OverOps into Squadcast"
 }
 ,
@@ -904,7 +939,7 @@
 "title": "Papertrail",
 "tags": "integrationpapertrail",
 "keywords": "",
-"url": "/docs/papertrail.html",
+"url": "/docs/papertrail",
 "summary": "Send events to Squadcast from Papertrail"
 }
 ,
@@ -915,7 +950,7 @@
 "title": "Pin Messages from War Room to the Incident Timeline",
 "tags": "mobile appwar room",
 "keywords": "",
-"url": "/docs/pin-messages-from-warroom-to-timeline-1.html",
+"url": "/docs/pin-messages-from-warroom-to-timeline-1",
 "summary": "Pin and unpin your War Room messages to the Incident Timeline."
 }
 ,
@@ -926,7 +961,7 @@
 "title": "Pin messages from War Room to the Incident Timeline",
 "tags": "pin messages",
 "keywords": "",
-"url": "/docs/pin-messages-from-warroom-to-timeline.html",
+"url": "/docs/pin-messages-from-warroom-to-timeline",
 "summary": "Pin and unpin your War Room messages to the Incident Timeline."
 }
 ,
@@ -937,7 +972,7 @@
 "title": "Pingdom",
 "tags": "integrationpingdom",
 "keywords": "",
-"url": "/docs/pingdom.html",
+"url": "/docs/pingdom",
 "summary": "Send events to Squadcast from Pingdom"
 }
 ,
@@ -948,7 +983,7 @@
 "title": "Postmortems",
 "tags": "postmortems",
 "keywords": "",
-"url": "/docs/postmortems.html",
+"url": "/docs/postmortems",
 "summary": "Postmortems are a way to summarize the resolution for an incident once it is resolved"
 }
 ,
@@ -961,7 +996,7 @@
 "title": "Prometheus",
 "tags": "integrationprometheus",
 "keywords": "",
-"url": "/docs/prometheus.html",
+"url": "/docs/prometheus",
 "summary": "Send events to Squadcast from Prometheus"
 }
 ,
@@ -970,7 +1005,7 @@
 
 {
 "title": "Quickstart Guide",
-"tags": "getting startedtroubleshooting",
+"tags": "GlossarySet-up-your-profile",
 "keywords": "",
 "url": "/docs/getting-started",
 "summary": "Take your first steps towards incident management using Squadcast."
@@ -983,7 +1018,7 @@
 "title": "Rapid7 InsightIDR",
 "tags": "integrationrapid7 insightidr",
 "keywords": "",
-"url": "/docs/rapid7-insightidr.html",
+"url": "/docs/rapid7-insightidr",
 "summary": "Get alerts from Rapid7 InsightIDR into Squadcast"
 }
 ,
@@ -994,7 +1029,7 @@
 "title": "Runscope",
 "tags": "integrationrunscope",
 "keywords": "",
-"url": "/docs/runscope.html",
+"url": "/docs/runscope",
 "summary": "Trigger a Squadcast Incident for any failed tests from Runscope"
 }
 ,
@@ -1005,7 +1040,7 @@
 "title": "SAML 2.0 based SSO",
 "tags": "ssosaml 2.0",
 "keywords": "",
-"url": "/docs/saml-sso.html",
+"url": "/docs/saml-sso",
 "summary": "Enable Single Sign On (SSO) for your organization with any SAML 2.0 based SSO"
 }
 ,
@@ -1016,7 +1051,7 @@
 "title": "Schedule Overrides",
 "tags": "schedulesoverrides",
 "keywords": "",
-"url": "/docs/schedule-overrides.html",
+"url": "/docs/schedule-overrides",
 "summary": "Rotations for your customer support engineers or on-call teams"
 }
 ,
@@ -1027,7 +1062,7 @@
 "title": "Scout APM",
 "tags": "integrationscout apm",
 "keywords": "",
-"url": "/docs/scout-apm.html",
+"url": "/docs/scout-apm",
 "summary": "Get Alerts from Scout APM into Squadcast"
 }
 ,
@@ -1042,7 +1077,7 @@
 "title": "Sematext",
 "tags": "Scout-APMSensu",
 "keywords": "",
-"url": "/docs/sematext.html",
+"url": "/docs/sematext",
 "summary": "Send alerts to Squadcast from Sematext"
 }
 ,
@@ -1053,7 +1088,7 @@
 "title": "Sensu",
 "tags": "integrationsensu",
 "keywords": "",
-"url": "/docs/sensu.html",
+"url": "/docs/sensu",
 "summary": "Send events to Squadcast from Sensu"
 }
 ,
@@ -1064,7 +1099,7 @@
 "title": "Sentry.io",
 "tags": "integrationsentry",
 "keywords": "",
-"url": "/docs/sentryio.html",
+"url": "/docs/sentryio",
 "summary": "Send events to Squadcast from Sentry"
 }
 ,
@@ -1075,7 +1110,7 @@
 "title": "Server Density",
 "tags": "integrationserver density",
 "keywords": "",
-"url": "/docs/server-density.html",
+"url": "/docs/server-density",
 "summary": "Send events to Squadcast from Server Density"
 }
 ,
@@ -1086,7 +1121,7 @@
 "title": "Service Levels",
 "tags": "service levels",
 "keywords": "",
-"url": "/docs/service-levels.html",
+"url": "/docs/service-levels",
 "summary": "Track SLIs and match them against the SLOs to improve SRE"
 }
 ,
@@ -1097,7 +1132,7 @@
 "title": "SignalFx",
 "tags": "integrationsignalfx",
 "keywords": "",
-"url": "/docs/signalfx.html",
+"url": "/docs/signalfx",
 "summary": "Get SignalFx alerts into Squadcast"
 }
 ,
@@ -1108,7 +1143,7 @@
 "title": "Site24x7",
 "tags": "integrationsite24x7",
 "keywords": "",
-"url": "/docs/site24x7.html",
+"url": "/docs/site24x7",
 "summary": "Get alerts from Site24x7 (a service by Zoho Corp) into Squadcast"
 }
 ,
@@ -1121,7 +1156,7 @@
 "title": "Slack",
 "tags": "integrationslack",
 "keywords": "",
-"url": "/docs/slack.html",
+"url": "/docs/slack",
 "summary": "Trigger, Ack, Resolve, Re-assign, Snooze, Escalate - everything from Slack."
 }
 ,
@@ -1132,7 +1167,7 @@
 "title": "Slack Alert Source Integration",
 "tags": "integrationslack",
 "keywords": "",
-"url": "/docs/slack-as-an-alert-source.html",
+"url": "/docs/slack-as-an-alert-source",
 "summary": "Slack Alert Source"
 }
 ,
@@ -1143,7 +1178,7 @@
 "title": "SLO Dashboard",
 "tags": "slo dashboard",
 "keywords": "",
-"url": "/docs/slo-dashboard.html",
+"url": "/docs/slo-dashboard",
 "summary": "Service Level Objective Dashboard"
 }
 ,
@@ -1154,7 +1189,7 @@
 "title": "SolarWinds AppOptics",
 "tags": "Slack-as-an-Alert-SourceSplunk",
 "keywords": "",
-"url": "/docs/solarwinds-appoptics.html",
+"url": "/docs/solarwinds-appoptics",
 "summary": "Send alerts from SolarWinds AppOptics to Squadcast"
 }
 ,
@@ -1165,7 +1200,7 @@
 "title": "Splunk",
 "tags": "Slack-as-an-Alert-SourceSqreen",
 "keywords": "",
-"url": "/docs/splunk.html",
+"url": "/docs/splunk",
 "summary": "Route alerts from Splunk into Squadcast"
 }
 ,
@@ -1176,7 +1211,7 @@
 "title": "Sqreen",
 "tags": "integrationsqreen",
 "keywords": "",
-"url": "/docs/sqreen.html",
+"url": "/docs/sqreen",
 "summary": "Get alerts from Sqreen into Squadcast"
 }
 ,
@@ -1187,7 +1222,7 @@
 "title": "Squadcast Public API - Refresh Token",
 "tags": "api",
 "keywords": "",
-"url": "/docs/squadcast-public-api.html",
+"url": "/docs/squadcast-public-api",
 "summary": "Generate Refresh token to access Squadcast API"
 }
 ,
@@ -1198,7 +1233,7 @@
 "title": "Squadcast Runbooks (Deprecated)",
 "tags": "runbooks",
 "keywords": "",
-"url": "/docs/squadcast-runbooks.html",
+"url": "/docs/squadcast-runbooks",
 "summary": "Execute Squadcast Runbooks on your servers directly from an incident"
 }
 ,
@@ -1209,7 +1244,7 @@
 "title": "Stackdriver",
 "tags": "integrationstackdriver",
 "keywords": "",
-"url": "/docs/stackdriver.html",
+"url": "/docs/stackdriver",
 "summary": "Send events to Squadcast from Google Stackdriver"
 }
 ,
@@ -1220,7 +1255,7 @@
 "title": "StatusCake",
 "tags": "integrationstatuscake",
 "keywords": "",
-"url": "/docs/statuscake.html",
+"url": "/docs/statuscake",
 "summary": "Get alerts from StatusCake into Squadcast"
 }
 ,
@@ -1231,7 +1266,7 @@
 "title": "StatusPage",
 "tags": "status page",
 "keywords": "",
-"url": "/docs/statuspage.html",
+"url": "/docs/statuspage",
 "summary": "Let your customers know how your service is doing without them having to ask you about it"
 }
 ,
@@ -1242,7 +1277,7 @@
 "title": "Sumo Logic",
 "tags": "integrationsumo logic",
 "keywords": "",
-"url": "/docs/sumo-logic.html",
+"url": "/docs/sumo-logic",
 "summary": "Get alerts from Sumo Logic into Squadcast"
 }
 ,
@@ -1253,7 +1288,7 @@
 "title": "Supported On-call Schedules &amp; Rotations",
 "tags": "schedulesrotations",
 "keywords": "",
-"url": "/docs/schedule-types.html",
+"url": "/docs/schedule-types",
 "summary": "This document will help you create daily, weekly and custom schedules and will also help you understand how to create recurring or one-off schedules on Squadcast"
 }
 ,
@@ -1264,7 +1299,7 @@
 "title": "Suppression Rules",
 "tags": "alert suppression",
 "keywords": "",
-"url": "/docs/suppression-rules.html",
+"url": "/docs/suppression-rules",
 "summary": "Avoid Alert Fatigue with Suppression Rules"
 }
 ,
@@ -1275,7 +1310,7 @@
 "title": "Sysdig Monitor",
 "tags": "integrationsysdig monitor",
 "keywords": "",
-"url": "/docs/sysdig-monitor.html",
+"url": "/docs/sysdig-monitor",
 "summary": "Get alerts from Sysdig Monitor into Squadcast"
 }
 ,
@@ -1308,7 +1343,7 @@
 "title": "Take Bulk Actions",
 "tags": "bulk actions",
 "keywords": "",
-"url": "/docs/take-bulk-actions.html",
+"url": "/docs/take-bulk-actions",
 "summary": "Bulk actions help you change the incident states of multiple incidents at one go"
 }
 ,
@@ -1319,7 +1354,7 @@
 "title": "Threat Stack",
 "tags": "Sysdig-MonitorUptime-Robot",
 "keywords": "",
-"url": "/docs/threat-stack.html",
+"url": "/docs/threat-stack",
 "summary": "Send notifications to Squadcast from Threat Stack"
 }
 ,
@@ -1340,7 +1375,7 @@
 "title": "Upgrading to a Paid Plan",
 "tags": "upgradeaccount",
 "keywords": "",
-"url": "/docs/upgrading-to-a-paid-plan.html",
+"url": "/docs/upgrading-to-a-paid-plan",
 "summary": "If you love the platform and want to bring in more of your team to make use of all the features, this document will help you do just that"
 }
 ,
@@ -1351,7 +1386,7 @@
 "title": "Uptime Robot",
 "tags": "integrationuptime robot",
 "keywords": "",
-"url": "/docs/uptime-robot.html",
+"url": "/docs/uptime-robot",
 "summary": "Get Alerts from Uptime Robot into Squadcast"
 }
 ,
@@ -1362,7 +1397,7 @@
 "title": "Using the Mobile App",
 "tags": "mobile app",
 "keywords": "",
-"url": "/docs/using-the-mobile-app.html",
+"url": "/docs/using-the-mobile-app",
 "summary": "This document briefly explains all that you can do on our native mobile application available for both iOS and Android."
 }
 ,
@@ -1373,7 +1408,7 @@
 "title": "View Schedules on the Mobile App",
 "tags": "mobile appschedules",
 "keywords": "",
-"url": "/docs/mobile-app-see-who-is-on-call.html",
+"url": "/docs/mobile-app-see-who-is-on-call",
 "summary": "See who is on-call on the Squadcast Mobile App"
 }
 ,
@@ -1384,7 +1419,7 @@
 "title": "What are Squadcast Actions?",
 "tags": "squadcast actions",
 "keywords": "",
-"url": "/docs/what-are-squadcast-actions.html",
+"url": "/docs/what-are-squadcast-actions",
 "summary": "Squadcast Actions lets you take actions directly from Squadcast as a response to incidents."
 }
 ,
@@ -1395,7 +1430,7 @@
 "title": "Who is On-Call?",
 "tags": "on call",
 "keywords": "",
-"url": "/docs/who-is-on-call.html",
+"url": "/docs/who-is-on-call",
 "summary": "Find out who is on-call at any given instant"
 }
 ,
@@ -1406,7 +1441,7 @@
 "title": "Zabbix",
 "tags": "integrationzabbix",
 "keywords": "",
-"url": "/docs/zabbix-integration-guide.html",
+"url": "/docs/zabbix-integration-guide",
 "summary": "Send events to Squadcast from Zabbix"
 }
 

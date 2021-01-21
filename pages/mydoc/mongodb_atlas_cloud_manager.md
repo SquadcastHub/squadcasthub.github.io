@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Route your MongoDB Atlas / Cloud manager alerts to Squadcast"
 sidebar: mydoc_sidebar
-permalink: docs/mongodb-atlas-cloud-manager.html
+permalink: docs/mongodb-atlas-cloud-manager
 folder: mydoc
 ---
 
@@ -17,7 +17,7 @@ Follow the below steps to configure routing of your MongoDB Atlas / Cloud manage
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Slack Alert Source"
 sidebar: mydoc_sidebar
-permalink: docs/slack-as-an-alert-source.html
+permalink: docs/slack-as-an-alert-source
 folder: mydoc
 ---
 

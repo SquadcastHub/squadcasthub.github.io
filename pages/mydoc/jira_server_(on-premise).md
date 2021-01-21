@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Create issues in JIRA with the incidents from Squadcast and vice versa and also sync the status bidirectionally."
 sidebar: mydoc_sidebar
-permalink: docs/jira-server-on-premise.html
+permalink: docs/jira-server-on-premise
 folder: mydoc
 ---
 

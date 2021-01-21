@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "View Timelines of the Incident"
 sidebar: mydoc_sidebar
-permalink: docs/incident-timeline.html
+permalink: docs/incident-timeline
 folder: mydoc
 ---
 

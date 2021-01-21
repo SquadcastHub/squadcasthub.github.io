@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send notifications to Squadcast from Threat Stack"
 sidebar: mydoc_sidebar
-permalink: docs/threat-stack.html
+permalink: docs/threat-stack
 folder: mydoc
 ---
 
@@ -50,7 +50,7 @@ Route detailed events from Threat Stack to the right users in Squadcast.
 
 {{site.data.alerts.blue-note}}
 <b>Pro Tip:</b>
-<br/><br/><p>While choosing an option from the *Alert Severity* dropdown, in order to ensure all alerts reach Squadcast and you do not miss out on any by mistake, choose the option *Fire Webhook for all alerts*. This will ensure all alerts are reaching Squadcast.<br/><br/>Within Squadcast, you can choose how you want each of these alerts to be treated (i.e., you can choose to <a href="event-tagging.html">tag</a> and <a href="alert-routing.html">route</a> them to the right people based on severity, <a href="de-duplication-rules.html">deduplicate</a> or <a href="alert-suppression.html">suppress</a> them to control alert noise).</p>
+<br/><br/><p>While choosing an option from the *Alert Severity* dropdown, in order to ensure all alerts reach Squadcast and you do not miss out on any by mistake, choose the option *Fire Webhook for all alerts*. This will ensure all alerts are reaching Squadcast.<br/><br/>Within Squadcast, you can choose how you want each of these alerts to be treated (i.e., you can choose to <a href="event-tagging">tag</a> and <a href="alert-routing">route</a> them to the right people based on severity, <a href="de-duplication-rules">deduplicate</a> or <a href="alert-suppression">suppress</a> them to control alert noise).</p>
 {{site.data.alerts.end}}
 
 That is it, you are good to go! Based on the "Alert Severity" value chosen while creating the Webhook, only notifications with those severity values would be created as incidents in Squadcast. You can then manually resolve incidents in Squadcast. 

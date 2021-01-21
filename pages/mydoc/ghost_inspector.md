@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Trigger a Squadcast Incident for any failed UI tests from Ghost Inspector"
 sidebar: mydoc_sidebar
-permalink: docs/ghost-inspector.html
+permalink: docs/ghost-inspector
 folder: mydoc
 ---
 
@@ -15,7 +15,7 @@ Follow the steps below to configure a Ghost Inspector service so an alert can be
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

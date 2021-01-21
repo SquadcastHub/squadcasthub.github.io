@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Enable Microsoft ADFS Single Sign On (SSO) for your Squadcast organisation"
 sidebar: mydoc_sidebar
-permalink: docs/adfs-sso.html
+permalink: docs/adfs-sso
 folder: mydoc
 ---
 

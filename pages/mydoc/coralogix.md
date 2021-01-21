@@ -5,7 +5,7 @@ last_updated:
 keywords:
 summary: "Get alerts from Coralogix into Squadcast"
 sidebar: mydoc_sidebar
-permalink: docs/coralogix.html
+permalink: docs/coralogix
 folder: mydoc
 ---
 

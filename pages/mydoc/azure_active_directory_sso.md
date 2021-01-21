@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Enable Azure Active Directory Single Sign On (SSO) for your Squadcast organisation"
 sidebar: mydoc_sidebar
-permalink: docs/azure-active-directory-sso.html
+permalink: docs/azure-active-directory-sso
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Analytics for measuring your organisations performance"
 sidebar: mydoc_sidebar
-permalink: docs/analytics.html
+permalink: docs/analytics
 folder: mydoc
 ---
 

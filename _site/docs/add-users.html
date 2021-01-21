@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Send log alerts to Squadcast from Logz.io (ELK stack)">
-<meta name="keywords" content="LogstashManageEngine-Opmanager,  ">
-<title>Logz.io | Incident Management using Squadcast</title>
+<meta name="description" content="Add multiple Users to your organization">
+<meta name="keywords" content="Import-UsersTransfer-Ownership,  ">
+<title>Add Users | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -153,7 +153,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Logz.io page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Add Users page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -171,7 +171,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Logz.io">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Add Users">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -253,7 +253,28 @@
           
           
           
+          <li class="active"><a title="Add Users" href="/docs/add-users">Add Users</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Import Users" href="/docs/import-users">Import Users</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Notification Rules" href="/docs/notification-rules">Notification Rules</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Change Account Owner" href="/docs/transfer-ownership">Change Account Owner</a></li>
           
           
           
@@ -1299,121 +1320,60 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Logz.io</h1>
+            <h1 class="post-title-main">Add Users</h1>
         </div>
             
-                <div class="summary">Send log alerts to Squadcast from Logz.io (ELK stack)</div>
+                <div class="summary">Add multiple Users to your organization</div>
             
 
                 
 
-            <p>This document will help you integrate Logz.io with Squadcast.</p>
+            <p>You can invite multiple users to your organization using the new Add Users page.</p>
 
-<p><a href="https://logz.io/">Logz.io</a> allows engineers to look into their stack with powerful log, metric, and tracing analytics based on the cloud-native tools they use. 
-Route detailed monitoring alerts from Logz.io to the right users in Squadcast.</p>
+<p>You can access the page by clicking on the Users tab from the sidebar and pressing the <code class="highlighter-rouge">Add Users</code> button on the top right side of the page.</p>
 
-<h2 id="how-to-integrate-logzio-with-squadcast">How to integrate Logz.io with Squadcast</h2>
+<p><img src="images/add_users_1.png" alt="" /></p>
 
-<h3 id="in-squadcast-using-logzio-as-an-alert-source">In Squadcast: Using Logz.io as an Alert Source</h3>
-
-<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong>.</p>
-
-<p><img src="images/integration_1-1.png" alt="" /></p>
-
-<p><strong>(2)</strong> Select an existing Service or <strong>Add service</strong></p>
-
-<p><img src="images/integration_1-2.png" alt="" /></p>
-
-<p><strong>(3)</strong> Click the corresponding <strong>Alert Sources</strong></p>
-
-<p><img src="images/integration_1.png" alt="" /></p>
-
-<p><strong>(4)</strong> Search for <strong>Logz.io</strong> from  the <strong>Alert Source</strong> drop down menu and copy the webhook</p>
-
-<p><img src="images/logzio_1.png" alt="" /></p>
-
-<h3 id="in-logzio-create-a-squadcast-webhook-alert">In Logz.io: Create a Squadcast webhook alert</h3>
-
-<p><strong>(1)</strong> In the app, go to <strong>Alerts &amp; Events &gt; Notification endpoints</strong> to create the webhook</p>
-
-<p><img src="images/logzio_2.png" alt="" /></p>
-
-<p><strong>(2)</strong> Click on <strong>Add endpoint</strong></p>
-
-<p><img src="images/logzio_3.png" alt="" /></p>
-
-<p><strong>(3)</strong> Fill in the form as shown below:</p>
+<p><img src="images/add_users_2.png" alt="" /></p>
 
 <ul>
-  <li><strong>Type</strong>: Custom</li>
-  <li><strong>Name</strong>: Squadcast Webhook</li>
-  <li><strong>Description</strong> (optional)</li>
-  <li><strong>URL</strong>: Paste the URL endpoint that was copied from Squadcast Service for Logz.io</li>
-  <li><strong>Method</strong>: POST</li>
-  <li>Run the test to see if you received a test alert in Squadcast</li>
-  <li>Click on <strong>Save</strong></li>
+  <li>
+    <p>Fill in the First Name, Last Name, and Email ID of the users whom you wish to invite into your organization.</p>
+  </li>
+  <li>
+    <p>Choose the most appropriate role for the new user from the <code class="highlighter-rouge">User Type</code> drop-down.</p>
+  </li>
+  <li>
+    <p>A new row will be created automatically when you start filling the fields.</p>
+  </li>
 </ul>
 
-<p>Find more details on how each of these parameters can be configured <a href="https://docs.logz.io/user-guide/integrations/custom-endpoints.html">here</a></p>
-
-<p><img src="images/logzio_4.png" alt="" /></p>
-
-<p><strong>(4)</strong> Next, to create the alert itself, you can either:</p>
+<p><img src="images/add_users_3.png" alt="" /></p>
 
 <ul>
-  <li>Go to <strong>Alerts &amp; Events &gt; New Alert</strong> or,</li>
-  <li>Click on <strong>Create Alert</strong> from the <strong>Kibana dashboard</strong></li>
+  <li>
+    <p>You can delete a row by clicking on the <code class="highlighter-rouge">Trash</code> icon on the right side of the row.</p>
+  </li>
+  <li>
+    <p>If you deleted a row by accident click on the <code class="highlighter-rouge">Undo</code> button, that pops up at the bottom, to restore the deleted row.</p>
+  </li>
 </ul>
 
-<p><img src="images/logzio_5.png" alt="" /></p>
-
-<p>Find more details on how each of these parameters can be configured <a href="https://docs.logz.io/user-guide/alerts/configure-an-alert.html">here</a></p>
-
-<p><strong>(5)</strong> Give the alert a <strong>title</strong></p>
-
-<p>Now, you will have to fill out the 3 sections:</p>
-
-<p>(a) <strong>Search for…</strong> section:</p>
+<p><img src="images/add_users_4.png" alt="" /></p>
 
 <ul>
-  <li>Either enter your <strong>Search</strong> query or verify that the query present is correct</li>
-  <li>Choose to <strong>Group By</strong> certain fields</li>
-  <li>Select <strong>Accounts to Search</strong></li>
-  <li>Choose to repeat this (by adding another query), join the queries, etc.</li>
+  <li>
+    <p>Once you have entered all the user’s details click on the <code class="highlighter-rouge">Send Invites</code> button, on the bottom left, to invite them to your organization.</p>
+  </li>
+  <li>
+    <p>The invited user will receive an email for verification. Until the user has been successfully verified, you will notice an icon indicating that <code class="highlighter-rouge">Verification Is Pending</code> against that User on the <code class="highlighter-rouge">User Page</code>. 
+You can also choose to resend the verification email by clicking on the <code class="highlighter-rouge">Verification Is Pending</code>  icon should that be necessary.</p>
+  </li>
 </ul>
 
-<p><img src="images/logzio_6.png" alt="" /></p>
-
-<p><strong>(5)</strong> (b) <strong>Trigger if…</strong> section:</p>
-
-<ul>
-  <li>Add <strong>Trigger conditions</strong> for the alert and add one or more thresholds for the trigger</li>
-</ul>
-
-<p><img src="images/logzio_7.png" alt="" /></p>
-
-<p><strong>(5)</strong> (c) <strong>Notify</strong> section:</p>
-
-<ul>
-  <li>Add a <strong>Description</strong> for the alert (which will be visible for these incidents in Squadcast)</li>
-  <li>Associate <strong>Tags</strong> (if any)</li>
-  <li><strong>Who to send it to</strong> -&gt; choose <strong>Squadcast Webhook</strong></li>
-  <li>Choose a <strong>wait time</strong> between notifications as needed</li>
-  <li><strong>Output format</strong> -&gt; choose <strong>JSON</strong></li>
-  <li>You can choose to either send <strong>all log fields</strong> or <strong>custom fields</strong></li>
-</ul>
-
-<p><img src="images/logzio_8.png" alt="" /></p>
-
-<p><strong>(6)</strong> Click on <strong>Save</strong></p>
-
-<p><img src="images/logzio_9.png" alt="" /></p>
-
-<p>That is it, you are now good to go! Whenever a log alert is triggered in Logz.io, an incident will be created automatically in Squadcast.</p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>FAQ:</b>
-<br /><br /><p>Q: If an alert gets resolved in Logz.io, does Logz.io send auto-resolve signals to Squadcast?<br /><br />A: No, Logz.io does not send auto-resolve signals to Squadcast. Hence, Squadcast incidents from Logz.io should be resolved manually.</p>
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+<br /><br /><p>You will not be able to transfer <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Account Ownership</code> with the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Add User</code> flow.</p>
 </div>
 
 
@@ -1424,12 +1384,12 @@ Route detailed monitoring alerts from Logz.io to the right users in Squadcast.</
                     
                     
                     
-                    <a href="Logstash.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Logstash<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    <a href="Import-Users.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Import Users<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
                     
-                    <a href="ManageEngine-Opmanager.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">ManageEngine Opmanager<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    <a href="Transfer-Ownership.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Transfer Ownership<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
@@ -1499,8 +1459,8 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
-               &copy;2021 Squadcast. All rights reserved. <br />
-<!--  Site last generated: Jan 15, 2021 <br /> -->
+               Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
+<!--  Site last generated: Jan 21, 2021 <br /> -->
                 </div>
             </div>
             <script>

@@ -2,7 +2,7 @@
 title: Datadog
 tags: [Crashlytics, Elastic]
 sidebar: mydoc_sidebar
-permalink: docs/datadog.html
+permalink: docs/datadog
 summary: "Send events to Squadcast from Datadog"
 folder: mydoc
 ---

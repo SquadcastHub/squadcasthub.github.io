@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Execute Squadcast Runbooks on your servers directly from an incident"
 sidebar: mydoc_sidebar
-permalink: docs/squadcast-runbooks.html
+permalink: docs/squadcast-runbooks
 folder: mydoc
 ---
 
@@ -48,7 +48,7 @@ squadcast-agent -key YOUR-API-KEY-HERE
 
 You can configure as many agents in as many systems as you want using the same API key. Each agent will be identified using their unique hostname.
 
-Now your Squadcast Runbooks Integration is good to go. You can setup Squadcast Runbooks and execute them as part of [Squadcast Actions](squadcast-actions.html).
+Now your Squadcast Runbooks Integration is good to go. You can setup Squadcast Runbooks and execute them as part of [Squadcast Actions](squadcast-actions).
 
 ## Create Runbooks
 

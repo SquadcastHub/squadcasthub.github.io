@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send error alerts to Squadcast from Bugsnag"
 sidebar: mydoc_sidebar
-permalink: docs/bugsnag.html
+permalink: docs/bugsnag
 folder: mydoc
 ---
 

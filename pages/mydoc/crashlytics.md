@@ -4,7 +4,7 @@ keywords:
 tags: [integration, crashlytics]
 summary: "Send issues to Squadcast from Crashlytics (Fabric SDK)"
 sidebar: mydoc_sidebar
-permalink: docs/crashlytics.html
+permalink: docs/crashlytics
 ---
 
 Follow the steps below to configure a service so as to get alerts from Crashlytics. Squadcast will then process the incidents for the service as per the users preferences.
@@ -13,7 +13,7 @@ Follow the steps below to configure a service so as to get alerts from Crashlyti
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

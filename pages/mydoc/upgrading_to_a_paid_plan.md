@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "If you love the platform and want to bring in more of your team to make use of all the features, this document will help you do just that"
 sidebar: mydoc_sidebar
-permalink: docs/upgrading-to-a-paid-plan.html
+permalink: docs/upgrading-to-a-paid-plan
 folder: mydoc
 ---
 

@@ -4,7 +4,7 @@ summary: "This is a how-to document to create manual incidents on the incident d
 tags: [manually creating incident]
 last_updated:
 sidebar: mydoc_sidebar
-permalink: docs/manually-creating-an-incident.html
+permalink: docs/manually-creating-an-incident
 folder: mydoc
 ---
 

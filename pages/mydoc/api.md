@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Send events to Squadcast using an API"
 sidebar: mydoc_sidebar
-permalink: docs/api.html
+permalink: docs/api
 folder: mydoc
 ---
 
@@ -13,14 +13,14 @@ You can use our API integration to send alerts to Squadcast in HTTP POST format.
 
 {{site.data.alerts.red-note}}
 <b>Notice for API:</b>
-<br/><br/><p>APIv2 is the new version of our alert source API. This also carries the option to resolve through the API call.<br/><br/><b>API</b> will soon be deprecated in favour of <b>APIv2</b> but is currently still functional.<br/><br/>Please use APIv2 from the Integration Type dropdown for any new alert source API integrations and not API.  If you are using the old API, please migrate it to the latest API (APIv2) and update your Webhook URLs.<br/><br/>To know more about APIv2, refer to this <a href="apiv2.html">documentation</a>.</p>
+<br/><br/><p>APIv2 is the new version of our alert source API. This also carries the option to resolve through the API call.<br/><br/><b>API</b> will soon be deprecated in favour of <b>APIv2</b> but is currently still functional.<br/><br/>Please use APIv2 from the Integration Type dropdown for any new alert source API integrations and not API.  If you are using the old API, please migrate it to the latest API (APIv2) and update your Webhook URLs.<br/><br/>To know more about APIv2, refer to this <a href="apiv2">documentation</a>.</p>
 {{site.data.alerts.end}}
 
 ## Using API as an Alert Source
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

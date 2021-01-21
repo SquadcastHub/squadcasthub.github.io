@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Push important notes into the Incident War Room for easier information sharing"
 sidebar: mydoc_sidebar
-permalink: docs/warroom.html
+permalink: docs/warroom
 folder: mydoc
 ---
 

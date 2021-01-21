@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send alerts from SolarWinds AppOptics to Squadcast"
 sidebar: mydoc_sidebar
-permalink: docs/solarwinds-appoptics.html
+permalink: docs/solarwinds-appoptics
 folder: mydoc
 ---
 

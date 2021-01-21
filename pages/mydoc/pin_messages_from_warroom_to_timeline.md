@@ -4,7 +4,7 @@ tags: [pin messages]
 summary: "Pin and unpin your War Room messages to the Incident Timeline."
 last_updated:
 sidebar: mydoc_sidebar
-permalink: docs/pin-messages-from-warroom-to-timeline.html
+permalink: docs/pin-messages-from-warroom-to-timeline
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Generate Refresh token to access Squadcast API"
 sidebar: mydoc_sidebar
-permalink: docs/squadcast-public-api.html
+permalink: docs/squadcast-public-api
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Help route notifications to the right responder based on event tags"
 sidebar: mydoc_sidebar
-permalink: docs/alert-routing.html
+permalink: docs/alert-routing
 folder: mydoc
 ---
 

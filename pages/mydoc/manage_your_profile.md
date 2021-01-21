@@ -1,11 +1,11 @@
 ---
 title: Manage Your Profile
-tags: [manage profile]
+tags: [Notification-Rules, Managing-all-Users]
 keywords:
 last_updated:
 summary: "Edit your account details and notification preferences"
 sidebar: mydoc_sidebar
-permalink: docs/set-up-your-profile.html
+permalink: docs/set-up-your-profile
 folder: mydoc
 ---
 

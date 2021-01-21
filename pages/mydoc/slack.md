@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Trigger, Ack, Resolve, Re-assign, Snooze, Escalate - everything from Slack."
 sidebar: mydoc_sidebar
-permalink: docs/slack.html
+permalink: docs/slack
 folder: mydoc
 ---
 
@@ -40,7 +40,7 @@ Also, whenever an action is taken on Squadcast like **Acknowledge**, **Re-assign
 
 You can also bi-directionally sync warroom conversation with any Slack channel for the duration of the incident i.e., until the incident gets resolved.
 
-To enable this, check out [**Incident War Room**](warroom.html)
+To enable this, check out [**Incident War Room**](warroom)
 
 ![](images/slack_squadcast_4.png)
 
@@ -48,7 +48,7 @@ To enable this, check out [**Incident War Room**](warroom.html)
 
 You can create or send incidents into Squadcast from within Slack. 
 
-To know more about how to create incidents from Slack, check out [Create incidents from Slack](slack-as-an-alert-source.html) in the Alert Source Integrations section in the Support Page.
+To know more about how to create incidents from Slack, check out [Create incidents from Slack](slack-as-an-alert-source) in the Alert Source Integrations section in the Support Page.
 
 ![](images/slack_squadcast_5.png)
 

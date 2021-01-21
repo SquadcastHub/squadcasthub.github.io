@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send alerts to Squadcast from Nixstats"
 sidebar: mydoc_sidebar
-permalink: docs/nixstats.html
+permalink: docs/nixstats
 folder: mydoc
 ---
 

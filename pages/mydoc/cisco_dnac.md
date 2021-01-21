@@ -4,7 +4,7 @@ summary: "Get Cisco DNAC alerts into Squadcast"
 tags: [integration, cicso dnac]
 keywords:
 sidebar: mydoc_sidebar
-permalink: docs/cisco-dnac.html
+permalink: docs/cisco-dnac
 folder: mydoc
 ---
 
@@ -16,7 +16,7 @@ You can integrate Cisco DNAC with Squadcast and get those alerts into Squadcast 
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

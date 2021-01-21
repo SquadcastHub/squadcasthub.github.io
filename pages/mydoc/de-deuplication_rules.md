@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Reduce alert noise by grouping similar alerts together"
 sidebar: mydoc_sidebar
-permalink: docs/de-duplication-rules.html
+permalink: docs/de-duplication-rules
 folder: mydoc
 ---
 

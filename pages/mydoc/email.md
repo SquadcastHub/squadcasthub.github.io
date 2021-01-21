@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Email"
 sidebar: mydoc_sidebar
-permalink: docs/email.html
+permalink: docs/email
 folder: mydoc
 ---
 
@@ -13,7 +13,7 @@ folder: mydoc
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

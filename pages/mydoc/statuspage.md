@@ -4,7 +4,7 @@ summary: "Let your customers know how your service is doing without them having 
 tags: [status page]
 last_updated: 
 sidebar: mydoc_sidebar
-permalink: docs/statuspage.html
+permalink: docs/statuspage
 folder: mydoc
 ---
 

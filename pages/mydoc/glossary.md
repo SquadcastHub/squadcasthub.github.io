@@ -1,6 +1,6 @@
 ---
 title: Glossary
-tags: [troubleshooting]
+tags: [Getting-Started, Set-up-your-profile]
 keywords: 
 last_updated: 
 summary: "This guide will walk you through the terminologies and their meanings used in Squadcast."
@@ -167,7 +167,7 @@ Multiple escalation rules make an escalation policy. Typically, each escalation 
 If the incident still remains in the triggered state after the notifications have gone through to the users/squad/schedule and the time period closes from the first escalation rule, then the user/squad/schedule on the second rule on the escalation policy will be notified and so on. 
 
 ### Services
-**[Services](adding-a-service)** are at the core of Squadcast. A service represents an application or component that is crucial for your product or service.  
+**[Services](adding-a-service-1)** are at the core of Squadcast. A service represents an application or component that is crucial for your product or service.  
 Services are created with an alert source integration through which incidents are triggered. Services also holds the configuration engine that determines the suppression, tagging and routing rules for incidents triggered for that service. You can also set a service on Maintenance mode to disable incidents and notifications for a period of time that your service will be under maintenance. 
 
 ### Alert Source Integrations

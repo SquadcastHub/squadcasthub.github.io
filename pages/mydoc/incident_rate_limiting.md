@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Limit the number of requests a client can make"
 sidebar: mydoc_sidebar
-permalink: docs/incident-rate-limiting.html
+permalink: docs/incident-rate-limiting
 folder: mydoc
 ---
 
@@ -40,7 +40,7 @@ There are a few ways to control the kind of alerts/ incidents that come into Squ
 
 - Configure your third party tools to send in only the alerts that you will need to take action on as opposed to sending in all the alerts that come in. For example, you don't need all of the warning alerts and will probably need just the ones that impact customer SLAs or your internally set SLOs. 
 
-- Set [**De-duplication Rules**](de-duplication-rules.html) to automatically suppress similar alerts. Especially useful to suppress warning alerts from your tool, should you want to send all kinds of alerts into Squadcast just for information. 
+- Set [**De-duplication Rules**](de-duplication-rules) to automatically suppress similar alerts. Especially useful to suppress warning alerts from your tool, should you want to send all kinds of alerts into Squadcast just for information. 
 
 ## How to increase my Rate Limits? 
 

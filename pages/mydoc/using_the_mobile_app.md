@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "This document briefly explains all that you can do on our native mobile application available for both iOS and Android."
 sidebar: mydoc_sidebar
-permalink: docs/using-the-mobile-app.html
+permalink: docs/using-the-mobile-app
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Pin and unpin your War Room messages to the Incident Timeline."
 sidebar: mydoc_sidebar
-permalink: docs/pin-messages-from-warroom-to-timeline-1.html
+permalink: docs/pin-messages-from-warroom-to-timeline-1
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Bulk actions help you change the incident states of multiple incidents at one go"
 sidebar: mydoc_sidebar
-permalink: docs/take-bulk-actions.html
+permalink: docs/take-bulk-actions
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Avoid Alert Fatigue with Suppression Rules"
 sidebar: mydoc_sidebar
-permalink: docs/suppression-rules.html
+permalink: docs/suppression-rules
 toc:
 folder: mydoc
 ---

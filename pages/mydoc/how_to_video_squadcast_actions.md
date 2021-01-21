@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Here's a how-to-video on how you can use Squadcast Actions & Runbooks for faster incident resolution"
 sidebar: mydoc_sidebar
-permalink: docs/how-to-video-squadcast-actions.html
+permalink: docs/how-to-video-squadcast-actions
 folder: mydoc
 ---
 

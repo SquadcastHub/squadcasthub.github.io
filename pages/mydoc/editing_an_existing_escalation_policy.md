@@ -4,7 +4,7 @@ tags: [escalation policies]
 keywords:
 summary: "Making changes to an Escalation Policy"
 sidebar: mydoc_sidebar
-permalink: docs/editing-an-existing-escalation-policy.html
+permalink: docs/editing-an-existing-escalation-policy
 folder: mydoc
 ---
 

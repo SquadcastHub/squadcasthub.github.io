@@ -4,7 +4,7 @@ tags: [escalation policies]
 keywords: 
 summary: "Invoking an Escalation Policy"
 sidebar: mydoc_sidebar
-permalink: docs/invoke-an-escalation-policy-for-an-existing-incident.html
+permalink: docs/invoke-an-escalation-policy-for-an-existing-incident
 folder: mydoc
 ---
 

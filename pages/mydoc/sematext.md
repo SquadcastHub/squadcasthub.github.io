@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send alerts to Squadcast from Sematext"
 sidebar: mydoc_sidebar
-permalink: docs/sematext.html
+permalink: docs/sematext
 folder: mydoc
 ---
 

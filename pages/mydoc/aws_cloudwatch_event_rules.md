@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send alerts from CloudWatch Event Rules and SNS endpoints to Squadcast"
 sidebar: mydoc_sidebar
-permalink: docs/aws-cloudwatch-event-rules.html
+permalink: docs/aws-cloudwatch-event-rules
 folder: mydoc
 ---
 

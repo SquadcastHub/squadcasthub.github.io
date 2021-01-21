@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send alerts from to Squadcast from Kapacitor"
 sidebar: mydoc_sidebar
-permalink: docs/kapacitor.html
+permalink: docs/kapacitor
 folder: mydoc
 ---
 

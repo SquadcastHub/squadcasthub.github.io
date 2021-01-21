@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send events to Squadcast from Loggly"
 sidebar: mydoc_sidebar
-permalink: docs/loggly.html
+permalink: docs/loggly
 folder: mydoc
 ---
 
@@ -15,7 +15,7 @@ Follow the steps below to configure a service so as to extract its related alert
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 

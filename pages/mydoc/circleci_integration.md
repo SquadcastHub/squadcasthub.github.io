@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Integrate CircleCI to perform actions directly from Squadcast"
 sidebar: mydoc_sidebar
-permalink: docs/circleci-integration.html
+permalink: docs/circleci-integration
 folder: mydoc
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Quickstart Guide
-tags: [getting started, troubleshooting]
+tags: [Glossary, Set-up-your-profile]
 keywords: 
 summary: "Take your first steps towards incident management using Squadcast."
 sidebar: mydoc_sidebar
@@ -108,7 +108,7 @@ Examples:
 ⏳ **Create escalation policies**
 
 Squadcast enables you to add time-based escalation rules for Users, [Squads](squads) (a group
-of Users) or [Schedules](adding-a-service) (on-call schedules). See how to [Manage Escalation Policies](escalation-policies).
+of Users) or [Schedules](adding-a-service-1) (on-call schedules). See how to [Manage Escalation Policies](escalation-policies).
 
 Escalation policies are attached to services. So, any alert or incident triggered for a service will notify based on the escalation policy attached to it.
 
@@ -120,7 +120,7 @@ Examples:
 
 🔩 **Add services**
 
-[Services](adding-a-service) are at the core of Squadcast. A service represents an application or component that is crucial for your product or service. Services are created with an alert source integration through which incidents are triggered. Squadcast provides a Webhook URL to integrate with the tools you use. See how to [Manage Services](adding-a-service).
+[Services](adding-a-service-1) are at the core of Squadcast. A service represents an application or component that is crucial for your product or service. Services are created with an alert source integration through which incidents are triggered. Squadcast provides a Webhook URL to integrate with the tools you use. See how to [Manage Services](adding-a-service-1).
 
 You can search through our documentation to find helpful alert source integration guides to walk you through any particular integration.
 
@@ -203,7 +203,7 @@ You can create an incident postmortem from within an incident page once the inci
 
 💯 **Setup Service Level Objectives (SLOs)**
 
-The [Service Levels](service-levels) feature allows you to create Service Level Objectives (SLOs) for Service Level Indicators (SLIs) like latency,  memory and status codes. Any breach of SLOs for Services will trigger an incident and notify the relevant Users, [Squads](squads) (a group of Users) or [Schedules](adding-a-service) (on-call schedules). See how to configure [Service Levels →](service-levels).
+The [Service Levels](service-levels) feature allows you to create Service Level Objectives (SLOs) for Service Level Indicators (SLIs) like latency,  memory and status codes. Any breach of SLOs for Services will trigger an incident and notify the relevant Users, [Squads](squads) (a group of Users) or [Schedules](adding-a-service-1) (on-call schedules). See how to configure [Service Levels →](service-levels).
 
 📊 **Use Analytics and Reports to Improve your Incident Response**
 

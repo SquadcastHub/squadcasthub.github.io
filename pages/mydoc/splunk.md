@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Route alerts from Splunk into Squadcast"
 sidebar: mydoc_sidebar
-permalink: docs/splunk.html
+permalink: docs/splunk
 folder: mydoc
 ---
 

@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Squadcast - Logstash Integration guide"
 sidebar: mydoc_sidebar
-permalink: docs/logstash-integration-guide.html
+permalink: docs/logstash-integration-guide
 folder: mydoc
 ---
 
@@ -17,7 +17,7 @@ Squadcast will then process this information to create incidents for this servic
 
 On the **Sidebar**, click on **Services**.
 
-You can either choose to use existing service or [create a new service](adding-a-service.html)
+You can either choose to use existing service or [create a new service](adding-a-service-1)
 
 Now, click on the corresponding **Alert Sources** button.
 
