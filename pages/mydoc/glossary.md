@@ -1,6 +1,6 @@
 ---
 title: Glossary
-tags: [Getting-Started, Set-up-your-profile]
+tags: [getting-started, set-up-your-profile]
 keywords: 
 last_updated: 
 summary: "This guide will walk you through the terminologies and their meanings used in Squadcast."
