@@ -1,5 +1,5 @@
 ---
-title: APIv2
+title: Incident API
 tags: [integration, api]
 last_updated:
 keywords:

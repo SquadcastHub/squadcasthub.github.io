@@ -37,6 +37,17 @@
 
 
 {
+"title": "Alert Suppression",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/alert-suppression",
+"summary": "Avoid alert fatigue by setting up suppression rules"
+}
+,
+
+
+
+{
 "title": "Amazon Cloudwatch (AWS)",
 "tags": "integrationamazon cloudwatch",
 "keywords": "",
@@ -59,18 +70,7 @@
 
 
 {
-"title": "API (Deprecated)",
-"tags": "integrationapi",
-"keywords": "",
-"url": "/docs/api",
-"summary": "Send events to Squadcast using an API"
-}
-,
-
-
-
-{
-"title": "APIv2",
+"title": "Incident API",
 "tags": "integrationapi",
 "keywords": "",
 "url": "/docs/apiv2",
@@ -312,7 +312,7 @@
 
 
 {
-"title": "De-duplication Rules",
+"title": "Alert Deduplication Rules",
 "tags": "deduplication",
 "keywords": "",
 "url": "/docs/de-duplication-rules",
@@ -585,6 +585,17 @@
 "keywords": "",
 "url": "/docs/incident-rate-limiting",
 "summary": "Limit the number of requests a client can make"
+}
+,
+
+
+
+{
+"title": "Incident Status Based Deduplication",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/status-based-deduplication",
+"summary": "Use Incident Status Based Deduplication to deduplicate all open events to an existing open Incident for a service"
 }
 ,
 
@@ -1118,6 +1129,17 @@
 
 
 {
+"title": "Service Dependency Based Deduplication",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/service-dependency-based-deduplication",
+"summary": "Deduplicate incoming events for a service against the latest incident of its service dependencies"
+}
+,
+
+
+
+{
 "title": "Service Levels (Deprecated)",
 "tags": "service levels",
 "keywords": "",
@@ -1290,17 +1312,6 @@
 "keywords": "",
 "url": "/docs/schedule-types",
 "summary": "This document will help you create daily, weekly and custom schedules and will also help you understand how to create recurring or one-off schedules on Squadcast"
-}
-,
-
-
-
-{
-"title": "Suppression Rules",
-"tags": "alert suppression",
-"keywords": "",
-"url": "/docs/suppression-rules",
-"summary": "Avoid Alert Fatigue with Suppression Rules"
 }
 ,
 

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Send events to Squadcast using an API">
-<meta name="keywords" content="integrationapi,  ">
-<title>API (Deprecated) | Incident Management using Squadcast</title>
+<meta name="description" content="Avoid alert fatigue by setting up suppression rules">
+<meta name="keywords" content="set-up-your-profilemanaging-all-users,  ">
+<title>Alert Suppression | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the API (Deprecated) page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Alert Suppression page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="API (Deprecated)">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Alert Suppression">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -337,21 +337,34 @@
           
           
           
-          <li><a title="Suppression Rules" href="/docs/suppression-rules">Suppression Rules</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Service Levels (Deprecated)" href="/docs/service-levels">Service Levels (Deprecated)</a></li>
           
           
           
-          
-          
-          
-          <li><a title="De-duplication Rules" href="/docs/de-duplication-rules">De-duplication Rules</a></li>
+          <li class="subfolders">
+              <a title="Alert Deduplication Rules" href="#">Alert Deduplication Rules</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Alert Deduplication Rules" href="de-duplication-rules">Alert Deduplication Rules</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Incident Status Based Deduplication" href="status-based-deduplication">Incident Status Based Deduplication</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Service Dependency Based Deduplication" href="service-dependency-based-deduplication">Service Dependency Based Deduplication</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
           
           
           
@@ -373,6 +386,13 @@
           
           
           <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
           
@@ -610,14 +630,7 @@
           
           
           
-          <li class="active"><a title="API (Deprecated)" href="/docs/api">API (Deprecated)</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="APIv2" href="/docs/apiv2">APIv2</a></li>
+          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
           
           
           
@@ -1330,115 +1343,135 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">API (Deprecated)</h1>
+            <h1 class="post-title-main">Alert Suppression</h1>
         </div>
             
-                <div class="summary">Send events to Squadcast using an API</div>
+                <div class="summary">Avoid alert fatigue by setting up suppression rules</div>
             
 
                 
 
-            <p>You can use our API integration to send alerts to Squadcast in HTTP POST format.</p>
+            <p>Alert suppression can help you avoid alert fatigue by suppressing notifications for non-actionable alerts.</p>
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>
-<b>Notice for API:</b>
-<br /><br /><p>APIv2 is the new version of our alert source API. This also carries the option to resolve through the API call.<br /><br /><b>API</b> will soon be deprecated in favour of <b>APIv2</b> but is currently still functional.<br /><br />Please use APIv2 from the Integration Type dropdown for any new alert source API integrations and not API.  If you are using the old API, please migrate it to the latest API (APIv2) and update your Webhook URLs.<br /><br />To know more about APIv2, refer to this <a href="apiv2">documentation</a>.</p>
-</div>
+<p>Squadcast will suppress the incidents that match any Suppression rules you create. These incidents will go into <code class="highlighter-rouge">Suppressed</code> state and you won’t get any notifications for them.</p>
 
-<h2 id="using-api-as-an-alert-source">Using API as an Alert Source</h2>
+<p>These are useful in situations where you’d like to view your all your informational alerts in Squadcast but don’t want to be notified for them.</p>
 
-<p>On the <strong>Sidebar</strong>, click on <strong>Services</strong>.</p>
+<h2 id="creating-a-suppression-rule">Creating a Suppression rule</h2>
 
-<p>You can either choose to use existing service or <a href="adding-a-service-1">create a new service</a></p>
+<p>For each service, you can define your suppression rules.</p>
 
-<p>Now, click on the corresponding <strong>Alert Sources</strong> button.</p>
-
-<p><img src="images/integration_1.png" alt="" /></p>
-
-<p>Select <strong>API</strong> from  <strong>Alert Source</strong> drop down and copy the Webhook URL shown.</p>
-
-<p><img src="images/api_1.png" alt="" /></p>
-
+<p>You can set this up by going to <a href="https://app.squadcast.com">your Squadcast account</a></p>
 <ul>
-  <li>Use the Webhook URL to send a HTTP POST request</li>
+  <li>Go to the relevant service</li>
+  <li>Click on the options dropdown</li>
+  <li>Choose “Suppression Rules”</li>
 </ul>
 
-<p>For example:
-<code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important; overflow-wrap: break-word;">https://api.squadcast.com/v1/incidents/create/d3c3208e86b787faf2ec01c154ed024081dc0fda</code></p>
+<p><img src="images/alert-suppression_1.png" alt="" /></p>
 
-<p>Please make sure that the request header is “<strong>Content-type</strong>”:”<strong>application/json</strong>”</p>
+<ul>
+  <li>Choose Alert Source from the Dropdown</li>
+</ul>
 
-<p>The body of the POST request should contains the details of your incidents in the following format:</p>
+<p><img src="images/alert-suppression_2.png" alt="" /></p>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-   </span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"This will be the incident message"</span><span class="p">,</span><span class="w">
-   </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This will be the incident description"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
+<ul>
+  <li>Click on <strong>Add new rule</strong> to start configuring a rule</li>
+</ul>
 
-<h2 id="add-a-tag-from-incident-json">Add a Tag From Incident JSON</h2>
+<p><img src="images/alert-suppression_3.png" alt="" /></p>
 
-<p>This section will give you an understanding of how you can add tags to an incidents straight from the Incident JSON using our API.</p>
+<p>By default, when a new rule is being created, a user is prompted to use the <em>drop-down blocks</em> for convenience. As you build the expression from these drop-downs, you can also see the corresponding suppression expression <em>raw string</em> being auto-added for the same.</p>
 
-<h3 id="typical-incident-json">Typical Incident JSON:</h3>
+<p>The drop-down blocks are beginner friendly for sure, but they aren’t as flexible as raw string method.
+If you want more flexibility while building your expressions, you may opt anytime to switch to use the raw string mode by clicking the edit button as shown.</p>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-   </span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"This will be the incident message"</span><span class="p">,</span><span class="w">
-   </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This will be the incident description"</span><span class="p">,</span><span class="w">
-   </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-     </span><span class="s2">"tagname1"</span><span class="p">:</span><span class="s2">"Tag value#1"</span><span class="p">,</span><span class="w">
-     </span><span class="s2">"tagname2"</span><span class="p">:</span><span class="s2">"Tag value#2"</span><span class="p">,</span><span class="w">
-     </span><span class="s2">"tagname3"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-       </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Valid HTML HEX Colour Notation goes here"</span><span class="p">,</span><span class="w">
-       </span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"Tag value#3"</span><span class="w">
-     </span><span class="p">}</span><span class="w">
-   </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
+<p><img src="images/alert-suppression_4.png" alt="" /></p>
 
-<h3 id="example-tagging-rules">Example Tagging Rules</h3>
-
-<p>Using Tags to Set Severity:</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  	</span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Error rates higher than usual"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HTTP Error rates for srv_90 is above 90 counts/hour"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    	</span><span class="s2">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"high"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-<br /><br /><p>If a colour code isn't explicitly mentioned,  then the system takes the default colour "<b>#808080</b>" for the tag</p>
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+<br /><br /><p>1. You will have the option to choose either the  *drop-down block* mode or the *raw-string*  for every rule you create. <br /><br />
+2. Once you opt for the raw-string method, you can't revert back to the drop-down blocks for that specific rule. You can delete the rule and create a new one to have the option to use the drop-down blocks.<br /><br />
+3. The drop-down blocks only support logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operator between 2 expressions. If you want to have a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">OR</code> operation between 2 expressions, then you would have to create a new tagging rule instead and have the copy over the same tags for the other rule.</p>
 </div>
 
-<p>Assigning Colours to Tags:</p>
+<p>You can add as many Suppression Rules as you want for a service.</p>
+
+<p><img src="images/alert-suppression_5.png" alt="" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Multiple Alert Sources:</b>
+<br /><br /><p>We can see alert payloads of past events from different alert sources for the service by selecting the respective alert source from the dropdown in the right-half side.
+<br /><br />
+Since the payload format is fixed for a given alert source, it is usually preferrable to have suppression rules on a per-alert source basis. This can be done by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.
+<br /><br />
+For example, if you want to have a suppression rule for a service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'jira-plugin' &amp;&amp; (&lt;your_suppression_rule&gt;)</code></p>
+</div>
+
+<h2 id="syntax-for-writing-rules-for-raw-string-method">Syntax for Writing Rules (For Raw String method)</h2>
+
+<p>The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this <a href="https://regex101.com/">link</a> to get an idea of all the expression types accepted in Squadcast.</p>
+<ul>
+  <li>Basic expression: <code class="highlighter-rouge">10 &gt; 0</code>, <code class="highlighter-rouge">1+2</code>, <code class="highlighter-rouge">100/3</code></li>
+  <li>Parameterized expression: <code class="highlighter-rouge">payload.metric == "disk"</code>
+ The available parameters are <code class="highlighter-rouge">payload</code>, <code class="highlighter-rouge">incident_details</code>, <code class="highlighter-rouge">source</code>
+    <ul>
+      <li><code class="highlighter-rouge">payload</code> : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source.</li>
+      <li><code class="highlighter-rouge">incident_details</code>: This contains the content of <code class="highlighter-rouge">message</code> and <code class="highlighter-rouge">description</code> of the incoming event.</li>
+      <li><code class="highlighter-rouge">source</code>: This denotes the associated alert source for the current / incoming event.</li>
+    </ul>
+  </li>
+  <li>Regular expression: <code class="highlighter-rouge">re(payload.metric, "disk.*")</code></li>
+  <li>Parsing JSON content: <code class="highlighter-rouge">jsonPath(payload.message, "a.b.c")</code>
+   This can be used to parse JSON formatted strings and get the <code class="highlighter-rouge">jsonPath</code> from the resulting JSON object.</li>
+</ul>
+
+<h2 id="example">Example</h2>
+
+<p>For a sample content shown in the right panel of the configuration space</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-	</span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Error rates higher than usual"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HTTP Error rates for srv_90 is above 90 counts/hour"</span><span class="p">,</span><span class="w">
-	</span><span class="s2">"severity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-  	</span><span class="s2">"colour"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#FF0000"</span><span class="p">,</span><span class="w">
-  	</span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"backend"</span><span class="w">
-  </span><span class="p">}</span><span class="w">
+  </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"issue_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bug - 2"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10029"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HYD-30"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue_labels"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+    </span><span class="s2">"issue_link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://13.233.254.18:8080/browse/HYD/issues/HYD-30"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue_priority"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Medium"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue_summary"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bug - 2"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"issue_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bug"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"project_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10000"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"project_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HYD"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hydra"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"incident_details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[Bug] bug - 2"</span><span class="w">
+    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+ Project: HYDRA </span><span class="se">\n</span><span class="s2">+Issue Type: Bug ..."</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jira-plugin"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p>Different ways of tagging incident:</p>
+<p>Suppress any incoming alert if,</p>
+<ul>
+  <li>The incident message contains: <code class="highlighter-rouge">[Bug]</code></li>
+  <li>The alert source is jira-plugin
+<strong>Rule</strong>
+<code class="highlighter-rouge">re(payload.incident_details.message, "[Bug]") &amp;&amp; source == "jira-plugin"</code></li>
+</ul>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-	</span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Error rates higher than usual"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HTTP Error rates for srv_90 is above 90 counts/hour"</span><span class="p">,</span><span class="w">
-	</span><span class="s2">"tags"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-   	</span><span class="s2">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"high"</span><span class="p">,</span><span class="w">
-	  </span><span class="s2">"impact_level"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-   	</span><span class="s2">"classification"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    	</span><span class="s2">"color"</span><span class="p">:</span><span class="s2">"#FF0000"</span><span class="p">,</span><span class="w">
-     	</span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"backend"</span><span class="w">
-     </span><span class="p">}</span><span class="w">
- 	</span><span class="p">}</span><span class="w">
- </span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
+<h2 id="viewing-suppressed-alerts">Viewing Suppressed Alerts</h2>
+
+<p>You can view Suppressed incidents on the Incident List page by clicking on All Incidents and choosing <strong>Suppressed</strong> as highlighted in the screenshot below.</p>
+
+<p><img src="images/alert-suppression_6.png" alt="" /></p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+<br /><br /><p><ul><li>Suppressed and Resolved are the final states for incidents in Squadcast. You will not be able to take any action on incidents in these states.</li>
+<li>Incident information will be available on the Squadcast platform even if they are suppressed.</li></ul></p>
+</div>
 
 
                 <!--div class="tags">
@@ -1448,6 +1481,12 @@ li.sidebarTitle{
                     
                     
                     
+                    <a href="set-up-your-profile.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">set up your profile<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    
+                    
+                    
+                    
+                    <a href="managing-all-users.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">managing all users<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     

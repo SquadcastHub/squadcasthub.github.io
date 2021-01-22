@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Avoid Alert Fatigue with Suppression Rules">
-<meta name="keywords" content="alert suppression,  ">
-<title>Suppression Rules | Incident Management using Squadcast</title>
+<meta name="description" content="Use Incident Status Based Deduplication to deduplicate all open events to an existing open Incident for a service">
+<meta name="keywords" content="set-up-your-profilemanaging-all-users,  ">
+<title>Incident Status Based Deduplication | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Suppression Rules page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident Status Based Deduplication page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Suppression Rules">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Incident Status Based Deduplication">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -337,21 +337,34 @@
           
           
           
-          <li class="active"><a title="Suppression Rules" href="/docs/suppression-rules">Suppression Rules</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Service Levels (Deprecated)" href="/docs/service-levels">Service Levels (Deprecated)</a></li>
           
           
           
-          
-          
-          
-          <li><a title="De-duplication Rules" href="/docs/de-duplication-rules">De-duplication Rules</a></li>
+          <li class="subfolders">
+              <a title="Alert Deduplication Rules" href="#">Alert Deduplication Rules</a>
+              <ul>
+                  
+                  
+                  
+                  <li><a title="Alert Deduplication Rules" href="de-duplication-rules">Alert Deduplication Rules</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Incident Status Based Deduplication" href="status-based-deduplication">Incident Status Based Deduplication</a></li>
+                  
+                  
+                  
+                  
+                  
+                  <li><a title="Service Dependency Based Deduplication" href="service-dependency-based-deduplication">Service Dependency Based Deduplication</a></li>
+                  
+                  
+                  
+              </ul>
+          </li>
           
           
           
@@ -373,6 +386,13 @@
           
           
           <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
           
@@ -610,14 +630,7 @@
           
           
           
-          <li><a title="API (Deprecated)" href="/docs/api">API (Deprecated)</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="APIv2" href="/docs/apiv2">APIv2</a></li>
+          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
           
           
           
@@ -1330,29 +1343,49 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Suppression Rules</h1>
+            <h1 class="post-title-main">Incident Status Based Deduplication</h1>
         </div>
             
-                <div class="summary">Avoid Alert Fatigue with Suppression Rules</div>
+                <div class="summary">Use Incident Status Based Deduplication to deduplicate all open events to an existing open Incident for a service</div>
             
 
                 
 
-            <p>Now you can enable Suppression Rules for any service and choose to ignore or notify alerts based on the text that the incident contains or doesn’t contain. You can configure it the way you want.</p>
+            <p>Incident Status Based Deduplication works on the logic that all incidents that come in for a service is related to the same cause. So, if there is an open (Triggered or Acknowledged state) incident for a service, any and all incidents that come in for this service will get deduplicated against this open incident.</p>
 
-<p>To get started with Suppression Rules, log in to <a href="https://app.squadcast.com">Squadcast</a> and click on the Services from the sidebar and click on the edit (3 dots) button on the service in which you want to suppress alerts and select Suppression Rules.</p>
+<h2 id="enabling-the-incident-status-based-deduplication">Enabling the Incident Status Based Deduplication</h2>
 
-<p><img src="images/suppression_1.png" alt="" /></p>
+<ul>
+  <li>
+    <p>You can enable this while adding a service using the <code class="highlighter-rouge">Add Service</code> button.</p>
+  </li>
+  <li>
+    <p>Check the box with the information message and choose the appropriate time window for which you’d like this deduplication rule to hold true.</p>
+  </li>
+</ul>
 
-<p>Then you can proceed to add the suppression rule based on the text that the Incident Message or Description, contains or doesn’t contain and you can choose to suppress the incident.</p>
+<p><img src="images/status-based-deduplication_1.png" alt="" /></p>
 
-<p><img src="images/suppression_2.png" alt="" /></p>
+<ul>
+  <li>
+    <p>By default, this will remain unchecked.</p>
+  </li>
+  <li>
+    <p>If enabled, you will be seeing the Deduplication rule below in the Deduplication UI.</p>
+  </li>
+</ul>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-<p><ul><li>Suppression and Resolved are final states in Squadcast. You will not be able to take any action on alerts in these states. </li><li>Incident information will be available on the Squadcast platform even if they are suppressed.</li></ul></p>
+<p><img src="images/status-based-deduplication_2.png" alt="" /></p>
+
+<ul>
+  <li>You can edit, change the execution priority or delete this rule based on your requirements.</li>
+</ul>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note:</b>
+<br /><br /><p>This option can be enabled only at the start of a Service Creation. If you leave this box unchecked and want to add this as a Deduplication rule later, you can copy paste the rule below and change the execution priority accordingly. <br />
+<code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">past_incident.is_suppressed == false</code> with the appropriate deduplication time window.</p>
 </div>
-
-<p>You can add as many suppression rules as you want and save it and Squadcast will suppress the incidents that matches these rules. The Incidents will go into Suppressed state and you won’t get any notifications for those incidents.</p>
 
 
                 <!--div class="tags">
@@ -1360,6 +1393,14 @@ li.sidebarTitle{
                     <h2>Related Documents </h2>
                     
                     
+                    
+                    
+                    <a href="set-up-your-profile.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">set up your profile<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    
+                    
+                    
+                    
+                    <a href="managing-all-users.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">managing all users<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     

@@ -7,6 +7,8 @@ summary: "Send events to Squadcast using an API"
 sidebar: mydoc_sidebar
 permalink: docs/api
 folder: mydoc
+published: false
+search: exclude
 ---
 
 You can use our API integration to send alerts to Squadcast in HTTP POST format. 

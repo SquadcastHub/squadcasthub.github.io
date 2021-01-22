@@ -6,7 +6,8 @@ last_updated:
 summary: "Avoid Alert Fatigue with Suppression Rules"
 sidebar: mydoc_sidebar
 permalink: docs/suppression-rules
-toc:
+published: false
+search: exclude
 folder: mydoc
 ---
 

@@ -1,0 +1,121 @@
+---
+title: Alert Suppression
+tags: [set-up-your-profile, managing-all-users]
+keywords: 
+last_updated: 
+datatable: 
+summary: "Avoid alert fatigue by setting up suppression rules"
+sidebar: mydoc_sidebar
+permalink: docs/alert-suppression
+folder: mydoc
+---
+
+Alert suppression can help you avoid alert fatigue by suppressing notifications for non-actionable alerts. 
+
+Squadcast will suppress the incidents that match any Suppression rules you create. These incidents will go into `Suppressed` state and you won't get any notifications for them.
+
+These are useful in situations where you'd like to view your all your informational alerts in Squadcast but don't want to be notified for them. 
+
+## Creating a Suppression rule
+
+For each service, you can define your suppression rules.
+
+You can set this up by going to [your Squadcast account](https://app.squadcast.com)
+ - Go to the relevant service
+ - Click on the options dropdown 
+ - Choose "Suppression Rules"
+
+![](images/alert-suppression_1.png)
+
+- Choose Alert Source from the Dropdown
+
+![](images/alert-suppression_2.png)
+
+- Click on **Add new rule** to start configuring a rule
+
+![](images/alert-suppression_3.png)
+
+By default, when a new rule is being created, a user is prompted to use the *drop-down blocks* for convenience. As you build the expression from these drop-downs, you can also see the corresponding suppression expression *raw string* being auto-added for the same. 
+
+The drop-down blocks are beginner friendly for sure, but they aren't as flexible as raw string method.
+If you want more flexibility while building your expressions, you may opt anytime to switch to use the raw string mode by clicking the edit button as shown.
+
+![](images/alert-suppression_4.png)
+
+{{site.data.alerts.yellow-note-i}}
+<b>Note:</b>
+<br/><br/><p>1. You will have the option to choose either the  *drop-down block* mode or the *raw-string*  for every rule you create. <br/><br/>
+2. Once you opt for the raw-string method, you can't revert back to the drop-down blocks for that specific rule. You can delete the rule and create a new one to have the option to use the drop-down blocks.<br/><br/>
+3. The drop-down blocks only support logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operator between 2 expressions. If you want to have a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">OR</code> operation between 2 expressions, then you would have to create a new tagging rule instead and have the copy over the same tags for the other rule.</p>
+{{site.data.alerts.end}}
+
+You can add as many Suppression Rules as you want for a service. 
+
+![](images/alert-suppression_5.png)
+
+{{site.data.alerts.blue-note}}
+<b>Multiple Alert Sources:</b>
+<br/><br/><p>We can see alert payloads of past events from different alert sources for the service by selecting the respective alert source from the dropdown in the right-half side.
+<br/><br/>
+Since the payload format is fixed for a given alert source, it is usually preferrable to have suppression rules on a per-alert source basis. This can be done by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.
+<br/><br/>
+For example, if you want to have a suppression rule for a service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'jira-plugin' && (&lt;your_suppression_rule&gt;)</code></p>
+{{site.data.alerts.end}}
+
+## Syntax for Writing Rules (For Raw String method)
+
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this [link](https://regex101.com/) to get an idea of all the expression types accepted in Squadcast. 
+ - Basic expression: `10 > 0`, `1+2`, `100/3`
+ - Parameterized expression: `payload.metric == "disk"`
+    The available parameters are `payload`, `incident_details`, `source`
+      + `payload` : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source. 
+      + `incident_details`: This contains the content of `message` and `description` of the incoming event.
+      + `source`: This denotes the associated alert source for the current / incoming event.
+ - Regular expression: `re(payload.metric, "disk.*")`
+- Parsing JSON content: `jsonPath(payload.message, "a.b.c")`
+     This can be used to parse JSON formatted strings and get the `jsonPath` from the resulting JSON object.
+
+## Example
+
+For a sample content shown in the right panel of the configuration space
+
+```json
+{
+  "payload": {
+    "issue_description": "bug - 2",
+    "issue_id": "10029",
+    "issue_key": "HYD-30",
+    "issue_labels": [],
+    "issue_link": "http://13.233.254.18:8080/browse/HYD/issues/HYD-30",
+    "issue_priority": "Medium",
+    "issue_summary": "bug - 2",
+    "issue_type": "Bug",
+    "project_id": "10000",
+    "project_key": "HYD",
+    "project_name": "hydra"
+  },
+  "incident_details": {
+    "message": "[Bug] bug - 2"
+    "description": "+ Project: HYDRA \n+Issue Type: Bug ..."
+  },
+  "source": "jira-plugin"
+}
+```
+
+Suppress any incoming alert if,
+ - The incident message contains: `[Bug]`
+ - The alert source is jira-plugin
+**Rule**
+`re(payload.incident_details.message, "[Bug]") && source == "jira-plugin"`
+
+## Viewing Suppressed Alerts
+
+You can view Suppressed incidents on the Incident List page by clicking on All Incidents and choosing **Suppressed** as highlighted in the screenshot below.
+
+![](images/alert-suppression_6.png)
+
+{{site.data.alerts.yellow-note-i}}
+<b>Note:</b>
+<br/><br/><p><ul><li>Suppressed and Resolved are the final states for incidents in Squadcast. You will not be able to take any action on incidents in these states.</li>
+<li>Incident information will be available on the Squadcast platform even if they are suppressed.</li></ul></p>
+{{site.data.alerts.end}}

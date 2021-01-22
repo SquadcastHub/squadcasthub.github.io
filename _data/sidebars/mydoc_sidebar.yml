@@ -78,7 +78,7 @@ entries:
 
   - title: Services
     output: web, pdf
-
+    
     folderitems:
     - title: Adding a Service
       url: /docs/adding-a-service-1
@@ -88,17 +88,25 @@ entries:
       url: /docs/maintenance-mode
       output: web, pdf
 
-    - title: Suppression Rules
-      url: /docs/suppression-rules
-      output: web, pdf
-
     - title: Service Levels (Deprecated)
       url: /docs/service-levels
       output: web, pdf
 
-    - title: De-duplication Rules
-      url: /docs/de-duplication-rules
-      output: web, pdf
+      subfolders:
+      - title: Alert Deduplication Rules
+        output: web
+        subfolderitems:
+        - title: Alert Deduplication Rules
+          url: /de-duplication-rules
+          output: web, pdf
+
+        - title: Incident Status Based Deduplication
+          url: /status-based-deduplication
+          output: web, pdf
+
+        - title: Service Dependency Based Deduplication
+          url: /service-dependency-based-deduplication
+          output: web, pdf
 
     - title: Event Tagging
       url: /docs/event-tagging
@@ -110,6 +118,10 @@ entries:
 
     - title: Deleting a Service
       url: /docs/deleting-a-service
+      output: web, pdf
+
+    - title: Alert Suppression
+      url: /docs/alert-suppression
       output: web, pdf
 
   - title: Schedules
@@ -248,11 +260,7 @@ entries:
       url: /docs/appdynamics
       output: web, pdf
 
-    - title: API (Deprecated)
-      url: /docs/api
-      output: web, pdf
-
-    - title: APIv2
+    - title: Incident API
       url: /docs/apiv2
       output: web, pdf
 

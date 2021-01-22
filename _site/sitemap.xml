@@ -26,6 +26,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/alert-suppression</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/amazon-cloudwatch-aws</loc>
   </url>
   
@@ -33,12 +39,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/analytics</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/api</loc>
   </url>
   
   
@@ -325,6 +325,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/incident-rate-limiting</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/status-based-deduplication</loc>
   </url>
   
   
@@ -622,6 +628,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/service-dependency-based-deduplication</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/service-levels</loc>
   </url>
   
@@ -715,12 +727,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/schedule-types</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/suppression-rules</loc>
   </url>
   
   

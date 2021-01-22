@@ -1,5 +1,5 @@
 ---
-title: De-duplication Rules
+title: Alert Deduplication Rules
 tags: [deduplication]
 keywords:
 last_updated:
