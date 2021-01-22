@@ -1,5 +1,5 @@
 ---
-title: API
+title: API (Deprecated)
 tags: [integration, api]
 keywords:
 last_updated:

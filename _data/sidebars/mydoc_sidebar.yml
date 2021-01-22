@@ -92,7 +92,7 @@ entries:
       url: /docs/suppression-rules
       output: web, pdf
 
-    - title: Service Levels
+    - title: Service Levels (Deprecated)
       url: /docs/service-levels
       output: web, pdf
 
@@ -160,7 +160,7 @@ entries:
       url: /docs/dashboard-metrics
       output: web, pdf
 
-    - title: SLO Dashboard
+    - title: SLO Dashboard (Deprecated)
       url: /docs/slo-dashboard
       output: web, pdf
 
@@ -248,7 +248,7 @@ entries:
       url: /docs/appdynamics
       output: web, pdf
 
-    - title: API
+    - title: API (Deprecated)
       url: /docs/api
       output: web, pdf
 
@@ -560,7 +560,7 @@ entries:
       url: /docs/circleci-actions
       output: web, pdf
 
-    - title: Squadcast Runbooks (Depricated)
+    - title: Squadcast Runbooks (Deprecated)
       url: /docs/squadcast-runbooks
       output: web, pdf
 

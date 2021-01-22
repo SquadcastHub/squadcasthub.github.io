@@ -59,7 +59,7 @@
 
 
 {
-"title": "API",
+"title": "API (Deprecated)",
 "tags": "integrationapi",
 "keywords": "",
 "url": "/docs/api",
@@ -1118,7 +1118,7 @@
 
 
 {
-"title": "Service Levels",
+"title": "Service Levels (Deprecated)",
 "tags": "service levels",
 "keywords": "",
 "url": "/docs/service-levels",
@@ -1175,7 +1175,7 @@
 
 
 {
-"title": "SLO Dashboard",
+"title": "SLO Dashboard (Deprecated)",
 "tags": "slo dashboard",
 "keywords": "",
 "url": "/docs/slo-dashboard",

@@ -1,5 +1,5 @@
 ---
-title: Service Levels
+title: Service Levels (Deprecated)
 keywords:
 last_updated:
 tags: [service levels]
@@ -8,6 +8,11 @@ sidebar: mydoc_sidebar
 permalink: docs/service-levels
 folder: mydoc
 ---
+
+{{site.data.alerts.red-note}}
+<b>Feature Deprecated</b>
+<br/><br/><p>This feature has been deprecated for public access and is currently in private beta</p>
+{{site.data.alerts.end}}
 
 For each Squadcast service, you can set Service Level Objectives (SLOs) to measure the Service Level Indicators (SLIs) and monitor SLO breaches to improve SRE of your organization.
 

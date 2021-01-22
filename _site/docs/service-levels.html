@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Track SLIs and match them against the SLOs to improve SRE">
 <meta name="keywords" content="service levels,  ">
-<title>Service Levels | Incident Management using Squadcast</title>
+<title>Service Levels (Deprecated) | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Service Levels page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Service Levels (Deprecated) page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Service Levels">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Service Levels (Deprecated)">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -344,7 +344,7 @@
           
           
           
-          <li class="active"><a title="Service Levels" href="/docs/service-levels">Service Levels</a></li>
+          <li class="active"><a title="Service Levels (Deprecated)" href="/docs/service-levels">Service Levels (Deprecated)</a></li>
           
           
           
@@ -469,7 +469,7 @@
           
           
           
-          <li><a title="SLO Dashboard" href="/docs/slo-dashboard">SLO Dashboard</a></li>
+          <li><a title="SLO Dashboard (Deprecated)" href="/docs/slo-dashboard">SLO Dashboard (Deprecated)</a></li>
           
           
           
@@ -610,7 +610,7 @@
           
           
           
-          <li><a title="API" href="/docs/api">API</a></li>
+          <li><a title="API (Deprecated)" href="/docs/api">API (Deprecated)</a></li>
           
           
           
@@ -1164,7 +1164,7 @@
           
           
           
-          <li><a title="Squadcast Runbooks (Depricated)" href="/docs/squadcast-runbooks">Squadcast Runbooks (Depricated)</a></li>
+          <li><a title="Squadcast Runbooks (Deprecated)" href="/docs/squadcast-runbooks">Squadcast Runbooks (Deprecated)</a></li>
           
           
           
@@ -1330,7 +1330,7 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Service Levels</h1>
+            <h1 class="post-title-main">Service Levels (Deprecated)</h1>
         </div>
             
                 <div class="summary">Track SLIs and match them against the SLOs to improve SRE</div>
@@ -1338,7 +1338,12 @@ li.sidebarTitle{
 
                 
 
-            <p>For each Squadcast service, you can set Service Level Objectives (SLOs) to measure the Service Level Indicators (SLIs) and monitor SLO breaches to improve SRE of your organization.</p>
+            <div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>
+<b>Feature Deprecated</b>
+<br /><br /><p>This feature has been deprecated for public access and is currently in private beta</p>
+</div>
+
+<p>For each Squadcast service, you can set Service Level Objectives (SLOs) to measure the Service Level Indicators (SLIs) and monitor SLO breaches to improve SRE of your organization.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
 <b>Important Note:</b>

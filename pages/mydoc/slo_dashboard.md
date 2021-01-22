@@ -1,5 +1,5 @@
 ---
-title: SLO Dashboard
+title: SLO Dashboard (Deprecated)
 tags: [slo dashboard]
 keywords:
 last_updated:
@@ -8,6 +8,11 @@ sidebar: mydoc_sidebar
 permalink: docs/slo-dashboard
 folder: mydoc
 ---
+
+{{site.data.alerts.red-note}}
+<b>Feature Deprecated</b>
+<br/><br/><p>This feature has been deprecated for public access and is currently in private beta</p>
+{{site.data.alerts.end}}
 
 You can switch to the SLO Dashboard from the main dashboard.
 
