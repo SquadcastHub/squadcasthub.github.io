@@ -1,6 +1,6 @@
 ---
 title: Change Account Owner
-tags: [Set-up-your-profile, Managing-all-Users]
+tags: [set-up-your-profile, managing-all-users]
 keywords: 
 last_updated: 
 datatable: 

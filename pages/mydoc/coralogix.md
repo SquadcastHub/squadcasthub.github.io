@@ -1,6 +1,6 @@
 ---
 title: Coralogix
-tags: [CopperEgg, Crashlytics]
+tags: [copperegg, crashlytics]
 last_updated:
 keywords:
 summary: "Get alerts from Coralogix into Squadcast"

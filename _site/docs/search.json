@@ -5,7 +5,7 @@
 
 {
 "title": "Add Users",
-"tags": "Import-UsersTransfer-Ownership",
+"tags": "import-userstransfer-ownership",
 "keywords": "",
 "url": "/docs/add-users",
 "summary": "Add multiple Users to your organization"
@@ -115,7 +115,7 @@
 
 {
 "title": "AWS CloudWatch Event Rules",
-"tags": "Amazon-Cloudwatch-AWSAWS-CloudTrail-Logs",
+"tags": "amazon-cloudwatch-awsaws-cloudtrail-logs",
 "keywords": "",
 "url": "/docs/aws-cloudwatch-event-rules",
 "summary": "Send alerts from CloudWatch Event Rules and SNS endpoints to Squadcast"
@@ -148,7 +148,7 @@
 
 {
 "title": "Bugsnag",
-"tags": "Azure-MonitorBuildkite",
+"tags": "azure-monitorbuildkite",
 "keywords": "",
 "url": "/docs/bugsnag",
 "summary": "Send error alerts to Squadcast from Bugsnag"
@@ -170,7 +170,7 @@
 
 {
 "title": "Change Account Owner",
-"tags": "Set-up-your-profileManaging-all-Users",
+"tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/transfer-ownership",
 "summary": "Transfer your Account Ownership to someone else from your Organization"
@@ -236,7 +236,7 @@
 
 {
 "title": "Coralogix",
-"tags": "CopperEggCrashlytics",
+"tags": "coppereggcrashlytics",
 "keywords": "",
 "url": "/docs/coralogix",
 "summary": "Get alerts from Coralogix into Squadcast"

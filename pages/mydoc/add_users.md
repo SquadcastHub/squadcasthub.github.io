@@ -1,6 +1,6 @@
 ---
 title: Add Users
-tags: [Import-Users, Transfer-Ownership]
+tags: [import-users, transfer-ownership]
 keywords:
 last_updated:
 summary: "Add multiple Users to your organization"

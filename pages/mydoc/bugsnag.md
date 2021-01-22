@@ -1,6 +1,6 @@
 ---
 title: Bugsnag
-tags: [Azure-Monitor, Buildkite]
+tags: [azure-monitor, buildkite]
 keywords: 
 last_updated: 
 summary: "Send error alerts to Squadcast from Bugsnag"

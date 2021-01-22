@@ -1448,23 +1448,17 @@ Route detailed monitoring alerts from Logz.io to the right users in Squadcast.</
 </div>
 
 
-                <div class="tags">
+                <!--div class="tags">
                     
                     <h2>Related Documents </h2>
                     
                     
                     
                     
-                    <a href="Logstash.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">Logstash<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
-                    
-                    <a href="ManageEngine-Opmanager.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">ManageEngine Opmanager<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
-                    
-                    
-                    
-                </div>
+                </div-->
 
             <!--hr class="shaded"/--><div style="box-shadow: inset 0 6px 6px -6px rgba(0,0,0,0.5);height: 12px;border: 0;margin-top: 70px;background: white;width: 100%;margin-bottom: 10px;"></div>
             

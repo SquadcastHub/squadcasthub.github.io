@@ -1,6 +1,6 @@
 ---
 title: AWS CloudWatch Event Rules
-tags: [Amazon-Cloudwatch-AWS, AWS-CloudTrail-Logs]
+tags: [amazon-cloudwatch-aws, aws-cloudtrail-logs]
 keywords: 
 last_updated: 
 summary: "Send alerts from CloudWatch Event Rules and SNS endpoints to Squadcast"
