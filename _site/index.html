@@ -50,6 +50,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<!-- Calendly Scripts -->
+
+<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -145,9 +150,14 @@
                 
                 
                 
+                <li><a href="https://app.squadcast.com/register" target="_blank" rel="noopener">Try for Free</a></li>
+                
+                
+                
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
                 
+                <li><a href="#" onclick="javascript:Calendly.showPopupWidget('https://calendly.com/renuka-squadcast/30min');" rel="noopener">Schedule a Demo</a></li>
                 
 			<li>
 
@@ -162,7 +172,7 @@
                 <li>
                     <!--start search-->
                     <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="Find anything">
+                        <input type="text" id="search-input" placeholder="Search">
                         <ul id="results-container"></ul>
                     </div>
                     <script src="js/jekyll-search.js" type="text/javascript"></script>
@@ -403,6 +413,10 @@ li.sidebarTitle{
             background-color: #00162d;
             border-bottom: 0px;
         }
+        .navbar-right{
+            display: flex;
+            align-items: flex-end;
+        }
         #envel{
           visibility: hidden;
         }
@@ -460,7 +474,7 @@ li.sidebarTitle{
             width: 60%;
             position: relative;
             left: 21%;
-            text-align: left;
+            text-align: center;
         }
         .col-md-9{
             padding-left: 0px;
@@ -470,7 +484,7 @@ li.sidebarTitle{
             width: 100%;
         }
         .nav > li {
-            width: 20%;
+            padding-right: 20px;
         }
         .nav > li > a {
             font-size: 18px;
@@ -504,7 +518,7 @@ li.sidebarTitle{
                 <h1 style="color: white; margin-bottom: 30px;">Squadcast Support Hub</h1>
                 <p class="para">Welcome to the Squadcast Support Hub. You’ll find comprehensive guides and documentation to help you start working with Squadcast as quickly as possible. Let’s jump right in! &#128640;</p>
                 <div id="search-demo-container">
-                    <input type="text" id="search-input1" placeholder="Find anything">
+                    <input type="text" id="search-input1" placeholder="Search">
                     <div class="par">
                         <div id="results-container1" style="position: absolute; z-index: 1; font-size: 14px; background-color: white;"></div>
                     </div>
@@ -594,7 +608,7 @@ li.sidebarTitle{
               <tr>
                 <td><a href="docs/getting-started" style="text-decoration: none; color: #020c45;"><div class="box" id="box" style="border:1px solid #e7e9ed; height: 250px; width: 300px; padding: 20px;box-shadow:0 5px 20px 0 #c4e1ff; background-color:white; margin-bottom:20px; margin-right:20px; border-radius:4px">
                   <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
-                    <img src="/images/get_started.svg" width="100" height="100">
+                    <img src="/images/get_started.svg" class="lp_im" width="100" height="100">
                   </div>
                   <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     Getting Started
@@ -602,7 +616,7 @@ li.sidebarTitle{
                   </div></a></td>
                 <td><a href="docs/set-up-your-profile" style="text-decoration: none; color: #020c45;"><div class="box" style="border: 1px solid #e7e9ed; height: 250px; width: 300px; padding: 20px;box-shadow:0 5px 20px 0 #c4e1ff; background-color:white; margin-bottom:20px; margin-right:20px; border-radius:4px">
                   <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
-                    <img src="/images/using_squadcast.svg" width="100" height="100">
+                    <img src="/images/using_squadcast.svg" class="lp_im" width="100" height="100">
                   </div>
                   <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     Using Squadcast
@@ -610,7 +624,7 @@ li.sidebarTitle{
                   </div></a></td>
                 <td><a href="https://www.squadcast.com/how-to-videos" style="text-decoration: none; color: #020c45;"><div class="box" style="border: 1px solid #e7e9ed; height: 250px; width: 300px; padding: 20px;box-shadow:0 5px 20px 0 #c4e1ff; background-color:white; margin-bottom:20px; margin-right:0px; border-radius:4px">
                   <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
-                    <img src="/images/videos.svg" width="100" height="100">
+                    <img src="/images/videos.svg" class="lp_im" width="100" height="100">
                   </div>
                   <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     How to Videos
@@ -620,7 +634,7 @@ li.sidebarTitle{
               <tr>
                 <td><a href="docs/adding-a-service-1" style="text-decoration: none; color: #020c45;"><div class="box" style="border:1px solid #e7e9ed;height:250px;width:300px;padding:20px;box-shadow:0 5px 20px 0 #c4e1ff;background-color:white;margin-right:20px;border-radius:4px">
                   <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
-                    <img src="/images/services.svg" width="100" height="100">
+                    <img src="/images/services.svg" class="lp_im" width="100" height="100">
                   </div>
                   <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     Services
@@ -628,7 +642,7 @@ li.sidebarTitle{
                   </div></a></td>
                 <td><a href="docs/amazon-cloudwatch-aws" style="text-decoration: none; color: #020c45;"><div class="box" style="border:1px solid #e7e9ed;height:250px;width:300px;padding:20px;box-shadow:0 5px 20px 0 #c4e1ff;background-color:white;margin-right:20px;border-radius:4px">
                   <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
-                    <img src="/images/integrations.svg" width="100" height="100">
+                    <img src="/images/integrations.svg" class="lp_im" width="100" height="100">
                   </div>
                   <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     Integrations & Extensions
@@ -636,7 +650,7 @@ li.sidebarTitle{
                   </div></a></td>
                 <td><a href="docs/incident-dashboard" style="text-decoration: none; color: #020c45;"><div class="box" style="border:1px solid #e7e9ed;height:250px;width:300px;padding:20px;box-shadow:0 5px 20px 0 #c4e1ff;background-color:white;margin-right:0px;border-radius:4px">
                   <div class="image-box" style="display: flex; justify-content: center; align-items: center; padding-top: 0px;">
-                    <img src="/images/incidents.svg" width="100" height="100">
+                    <img src="/images/incidents.svg" class="lp_im" width="100" height="100">
                   </div>
                   <div class="heading-box" style="font-size: 18px; line-height: 30px; font-weight: 700; text-align: center; margin-top: 15px; margin-bottom: 15px;">
                     Alerts & Incidents
@@ -645,11 +659,22 @@ li.sidebarTitle{
               </tr>
             </table>
           </div>
+          <script>document.getElementById('search-demo-container').style = 'display: none';</script>
+          <script>
+            if (typeof InstallTrigger !== 'undefined'){
+              //Then it is firefox browser
+                var items = document.getElementsByClassName('lp_im');
+                for (i=0; i<items.length; i++){
+                  items[i].style = 'width: 160px !important';
+                }
+            }
+          </script>
 
                 <div class="tags">
                     
                 </div>
 
+            <!--hr class="shaded"/--><div style="box-shadow: inset 0 6px 6px -6px rgba(0,0,0,0.5);height: 12px;border: 0;margin-top: 70px;background: white;width: 100%;margin-bottom: 10px;"></div>
             
 
     </div>
@@ -685,14 +710,19 @@ li.sidebarTitle{
     }
 </script>
 
-<hr class="shaded"/>
+<script>
+    if (typeof InstallTrigger !== 'undefined'){
+      //Then it is firefox browser
+        document.getElementById('mysidebar').style = 'position: relative !important';
+    }
+  </script>
 
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Jan 21, 2021 <br /> -->
+<!--  Site last generated: Jan 22, 2021 <br /> -->
                 </div>
             </div>
             <script>

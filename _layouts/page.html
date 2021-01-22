@@ -114,6 +114,7 @@ li.sidebarTitle{
                     {% endif %}
                 </div>
 
+            {{site.data.alerts.hr_shaded}}
             {% include commento.html %}
     </div>
     <div class="col-md-4">
@@ -150,6 +151,11 @@ li.sidebarTitle{
     }
 </script>
 
-{{site.data.alerts.hr_shaded}}
+<script>
+    if (typeof InstallTrigger !== 'undefined'){
+      //Then it is firefox browser
+        document.getElementById('mysidebar').style = 'position: relative !important';
+    }
+  </script>
 
 {% include footer.html %}

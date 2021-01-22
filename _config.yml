@@ -120,6 +120,6 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 
 github: [metadata]
 
-algolia: 
-  application_id: '0HZJ2GPOMD'
-  index_name: 'test'
+# algolia: 
+#   application_id: '0HZJ2GPOMD'
+#   index_name: 'test'
