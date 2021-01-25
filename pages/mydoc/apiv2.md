@@ -3,36 +3,41 @@ title: Incident API
 tags: [integration, api]
 last_updated:
 keywords:
-summary: "Send events to Squadcast using version 2 of the alerts API (APIv2)"
+summary: "Send events to Squadcast using Incident API - Squadcast’s generic API Webhook"
 sidebar: mydoc_sidebar
 permalink: docs/apiv2
 folder: mydoc
 ---
 
-You can use the version 2 of our API integration (APIv2) to trigger and resolve incidents in Squadcast through HTTP POST.
+This document will help you configure Incident API to route alerts from monitoring tools or your internal (bespoke) systems into Squadcast. Incident API can do both, trigger and resolve incidents in Squadcast, through HTTP POST requests.
+Route detailed monitoring alerts coming in via Incident API to the right users in Squadcast.
 
-## Using APIv2 as an Alert Source
+## How to configure Incident API
 
-On the **Sidebar**, click on **Services**.
+### In Squadcast: Using Incident API as an Alert Source
 
-You can either choose to use existing service or [create a new service](adding-a-service-1)
+**(1)** On the **Sidebar**, click on **Services**.
 
-Now, click on the corresponding **Alert Sources** button.
+![](images/integration_1-1.png)
+
+**(2)** Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+**(3)** Click the corresponding **Alert Sources**
 
 ![](images/integration_1.png)
 
-Select **APIv2** from  **Alert Source** drop down and copy the Webhook URL shown.
+**(4)** Search for **Incident API** from  the **Alert Source** drop down menu and copy the webhook. Use this webhook to send HTTP POST requests
 
 ![](images/apiv2_1.png)
 
-- Use the integration Webhook URL shown to send a HTTP POST request
+{{site.data.alerts.blue-note}}
+<b>Add header before making POST request</b>
+<br/><br/><p>Ensure that you add a header <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Content-Type</code> with value <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">application/json</code> while making the HTTP POST request</p>
+{{site.data.alerts.end}}
 
-For example:
-<code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important; overflow-wrap: break-word;">https://api.squadcast.com/v2/incidents/api/d3c3208e86b787faf2ec01c154ed024081dc0fda</code>
-
-Please make sure to add a header `Content-Type` with the value `application/json`
-
-The body of the POST request should contains the details of your incidents in the following format:
+The body of the POST request should contain the details of your incident in the following format:
 
 ```json
 {
@@ -52,15 +57,21 @@ The body of the POST request should contains the details of your incidents in th
 ```
 
 {{site.data.alerts.blue-note}}
-<b>Mandatory Fields: </b>
-<br/><br/><p>The <b>message</b> and <b>description</b> fields are mandatory to create an incident. You can choose to add the other details to add more context to the incident.</p>
+<b>Mandatory fields within the JSON</b>
+<br/><br/><p>Kindly note that the <b>message</b> and <b>description</b> fields in the JSON are mandatory to trigger an incident in Squadcast. You can enrich your incidents by adding other details optionally, in the same format as seen above in the example JSON</p>
 {{site.data.alerts.end}}
 
-## Event Identification & Resolution
+{{site.data.alerts.red-note}}
+<b>Payload Size Limitation</b>
+<br/><br/><p></p>The payload size is limited to 30KB. Any payload that crosses this limit will not be processed. <br/>You will receive [HTTP Status Code 413](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413) to notify you of this.
+{{site.data.alerts.end}}
 
-This section will give you an understanding of how one can associate alerts with Squadcast incidents and resolve them with an API call. 
+## Event Identification and Resolution
 
-### Typical Incident JSON:
+This section will give you an understanding of how one can associate alerts with Squadcast incidents and resolve them with an API call.
+
+### Typical Incident JSON
+
 
 ```json
 {
@@ -71,9 +82,9 @@ This section will give you an understanding of how one can associate alerts with
 }
 ```
 
-This creates an incident and associates that incident with the `event_id` value . This `event_id` can be used to resolve the above created incident with an API call.
+ This triggers an incident and associates the incident with the `event_id` value as specified. This `event_id` can be used to resolve the above created incident with an API call.
 
-To resolve an incident, the following JSON payload should be sent. 
+To resolve an incident, a JSON with the format as shown below should be sent.
 
 ```json
 {
@@ -82,18 +93,17 @@ To resolve an incident, the following JSON payload should be sent.
 }
 ```
 
-- The `status` field should be `"resolve"` 
+- The `status` field should be set to value `"resolve"` 
 - The associated `event_id` should also be sent along with this
-
 
 {{site.data.alerts.blue-note}}
 <b>Resolving an Incident with an API call: </b>
 <br/><br/><p>To resolve an incident, <b>message</b> and <b>description</b> fields are not required to be sent.</p>
 {{site.data.alerts.end}}
 
-## Add a Tag From Incident JSON
+## Add a Tag From directly Incident JSON
 
-This section will give you an understanding of how you can add tags to an incidents straight from the Incident JSON using our APIv2.
+This section will give you an understanding of how you can add tags to an incident straight from the Incident JSON using the Incident API.
 
 ### Typical Incident JSON:
 
@@ -112,9 +122,7 @@ This section will give you an understanding of how you can add tags to an incide
 }
 ```
 
-### Example Tagging Rules
-
-Using Tags to Set Severity:
+### Example 1: Using `tags` to set *Severity* for the incident
 
 ```json
 {
@@ -128,10 +136,10 @@ Using Tags to Set Severity:
 
 {{site.data.alerts.blue-note}}
 <b>Default colour for Tags: </b>
-<br/><br/><p>If a colour code isn't explicitly mentioned, then the system takes the default colour "<b>#808080</b>" for the tag</p>
+<br/><br/><p>If a colour code is not mentioned explicitly, then the system takes the default colour "<b>#808080</b>" (gray) for tags</p>
 {{site.data.alerts.end}}
 
-Assigning Colours to Tags:
+To specify a colour explicitly for `tags`:
 
 ```json
 {
@@ -144,14 +152,14 @@ Assigning Colours to Tags:
 }
 ```
 
-Different ways of tagging incident:
+### Example 2: Adding different tags to an incident
 
 ```json
 {
 	"message": "Error rates higher than usual",
   "description": "HTTP Error rates for srv_90 is above 90 counts/hour",
 	"tags" : {
-   	"severity": "high",
+   	"priority": "P1",
 	  "impact_level": 5,
    	"classification": {
     	"color":"#FF0000",

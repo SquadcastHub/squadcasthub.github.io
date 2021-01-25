@@ -3,67 +3,75 @@ title: Event Tagging
 audience:
 tags: [event tagging]
 keywords:
-summary: "Event tagging can help you add relevant information to incoming incidents to make it more context-rich for the user"
+summary: "Auto-add relevant information like priority, severity or alert type to make incoming incidents context-rich"
 last_updated:
 sidebar: mydoc_sidebar
 permalink: docs/event-tagging
 folder: mydoc
 ---
 
-Event tagging can help you add relevant information to incoming incidents to make it more context-rich for the user. 
+Tagging Rules can be defined for each Service in Squadcast. These rules, when evaluated to *true*, will add the defined tags to the incoming incident.
 
-## Auto Tagging Events
+## Create Tagging Rules 
 
-For each service, you can define your rule for event tagging.
+**(1)** Click on Services 
 
-You can set this up by going to app.squadcast.com. 
- - Go to the relevant service
- - Click on the options dropdown 
- - Choose Tagging Rules 
+**(2)** Select a Service and click on the 3 dots beside the service name
+
+**(3)** Click on Tagging Rules
 
 ![](images/tagging_1.png)
 
- - Choose Alert Source from the Dropdown
+**(4)** Select an alert source from the drop-down 
+
+{{site.data.alerts.blue-note}}
+<b>Note: Integrate with an alert source first</b>
+<br/><br/><p>Ensure that you have integrated with an alert source before you set up Tagging Rules</p>
+{{site.data.alerts.end}}
+
+**(5)** Click on “Add new rule”
 
 ![](images/tagging_2.png)
 
-You can add your tagging rule expression in the field "Tagging rule" and then add the tag key value pairs. You can select a colour of your choice for a tag key value by clicking on the circular colour button at the start of the map row. You can add as many tags by clicking on the "Add new mapping" button. 
+**(6)** Tagging Rules can be added in three ways:
 
-You can also add as many rules and configure as many key value mappings for each of these rules. 
+### (A) User-friendly drop-down method
+
+(a) See the payload of the latest alert for the chosen alert source 
+
+(b) Use the dropdown to use the values from the payload to create rules
 
 ![](images/tagging_3.png)
 
-{{site.data.alerts.blue-note}}
-<b>UPDATE: Multiple Alert Source:</b>
-<br/><br/><p>We can see alert payloads of past events from different alert sources for the service by selecting the respective alert source from the dropdown in the right-half side.<br/><br/>
-Now you can have tagging rules for a service specific to an alert source by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.<br/><br/>
-For example, if you want to have a tagging rule for a service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'jira-plugin' && (&lt;your_tagging_rule&gt;)</code></p>
-{{site.data.alerts.end}}
+(c) Use “Add Condition” to add multiple conditions in the same rule
 
-The tags will be visible against an incident in the incident dashboard and the incident details page.
+(d) Map any “Key” and “Value” pair as a tag. Multiple tags can be defined for each rule. Each tag can have a different colour.
 
 ![](images/tagging_4.png)
 
+### (B) Raw string method
+
+(a) See the payload of the latest alert for the chosen alert source
+
+(b) Click on Edit to enable raw string method
+
 ![](images/tagging_5.png)
 
-{{site.data.alerts.blue-note}}
-<b>Rule Evaluation Method:</b>
-<br/><br/><p>Every rule will be evaluated and all the tags of the matching rules will be attached to the incident.</p>
-{{site.data.alerts.end}}
-
-## Syntax for rules
+(c) Use the syntax below to write your custom Tagging Rule expression
 
 The rule engine supports expressions with parameters, arithmetic, logical, and string operations.
- - Basic expression: `10 > 0`, `1+2`, `100/3`
- - Parameterized expression: `payload.metric == "disk"`
-    The available parameters are `payload`
-      + `payload` : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events. 
- - Regular expression: `re(payload.metric, "disk.*")`
-     This can be used to check if a particular JSON payload field matches a regular expression.
+- Basic expression: `10 > 0`, `1+2`, `100/3`
+- Parameterized expression: `payload.metric == "disk"`
+   The available parameters are `payload`
+   + `payload` : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source. 
+- Regular expression: `re(payload.metric, "disk.*")`
+   This can be used to check if a particular JSON payload field matches a regular expression.
 - Parsing JSON content: `jsonPath(payload.message, "a.b.c")`
-     This can be used to parse JSON formatted strings and get the `jsonPath` from the resulting JSON object.
+   This can be used to parse JSON formatted strings and get the `jsonPath` from the resulting JSON object.
+- Adding multiple tags from the payload: `addTag( "severity", payload.severity, "#037916")`
+- Adding a tag from the payload: `addTags(payload.labels)`
 
-## Example
+#### Example
 
 For a sample content shown in the right panel of the configuration space
 
@@ -90,68 +98,146 @@ For a sample content shown in the right panel of the configuration space
 
 Assuming a case where disk usage events need to be prioritised: 
 
-When the disk usage is greater than 90% - `critical` and `state` tag is `alerting`
-When the disk usage is between 60 - 90% - `high`
-When the disk usage is less than 60% - `low`
-
+- When the disk usage is greater than 90% - `critical` and `state` tag is `alerting`
+- When the disk usage is between 60 - 90% - `high`
+- When the disk usage is less than 60% - `low`
 
 Create 3 rules with the following configuration
 
 **Rules**
 
-Critical: `payload.value  > 90 && jsonPath(payload.tags, "state") == "alerting"` 
-High: `payload.value > 60 && payload.value < 90`
-Low: `payload.value < 60`
+- Critical: `payload.value  > 90 && jsonPath(payload.tags, "state") == "alerting"` 
+- High: `payload.value > 60 && payload.value < 90`
+- Low: `payload.value < 60`
 
-## Manual Tagging
+### (C) Manual method
 
-### Adding Tags to a Manually Triggered Incident 
-
-When you create an incident manually via the **+** button, by default, you will have the option to add **Tags** to an incident. You can do so by assigning the `tag name` and `tag value` in the text fields provided and you can also change the tag color by clicking on the blue circle. You can also add multiple tags by clicking on the **Add Tag** option provided on the screen.
+Associate a tag while creating an incident manually from the Incident Dashboard
 
 ![](images/tagging_6.png)
 
-### Updating Tags to an Existing Incident
+## Delete Tagging Rules
 
-You can choose to update tags for an existing incidents as well. 
+**(1)** Click on the Tagging Rule for a selected Service 
 
-In order to do this, go to the Incident details page and click on the **More Icon** (three dots) against the Incident Message space of the page and click on **Update Tags**. 
+**(2)** Click on the “Bin” icon to delete that rule and click on **Save** 
 
 ![](images/tagging_7.png)
 
-You can then assign the `tag name` and `tag value` in the text fields provided and you can also change the tag color by clicking on the color circle. You can also add multiple tags by clicking on the **Add Tag** option provided on the screen. 
+## Updating Tags
+
+Use “+Update Tags” within an incident to update tags for a specific incident
 
 ![](images/tagging_8.png)
 
-The updated tags will now reflect on the Incident Details page. 
+## FAQ
+
+**(1)** Where can I see the tags associated with incidents?
+	
+You will be able to clearly view tags associated with incidents in the [Incident List](incident-list-table-view) page.
 
 ![](images/tagging_9.png)
 
-### Add a Tag From Incident JSON
+**(2)** Can I add tags from the payload automatically ?
 
-This section will give you an understanding of how you can add tags to an incidents straight from the Incident JSON using our API. 
+Yes, you can.
+
+**(a) Add a single tag**
+
+General Format:
+
+```
+addTag ( <tag key as string>, <payload selector or string>, [ <color> ])
+```
+
+- tag key: The key of the Tag label. Only letters and numbers allowed. Anything else will be ignored.
+- payload selector or string: You can choose to set a tag value from the payload or you can set any custom string as the tag value.
+- color: You can set color as a valid HEX code. This is optional. If this parameter is omitted, the default colour - #0F61DD will be used.
+
+For this example, we're using 
+
+```
+addTag( "severity", payload.labels.severity, "#037916")
+```
+
+as the tag rule.
+You will see that the tags are added automatically with the associated key value pair.
+
+{{site.data.alerts.blue-note}}
+<b>Note</b>
+<br/><br/><p>The addTag function always returns a truevalue. So, this can be chained with other logical operators to set multiple tags from the payload.</p>
+{{site.data.alerts.end}}
+
+**(b) Add multiple tags**
+
+General Format: 
+
+```
+addTags( <payload selector>)
+```
+
+- payload selector: You can choose to set an object with key value pairs as tags from the payload.
+
+For this example, we're using 
+
+```
+addTags( payload.labels)
+```
+
+as the tag rule.
+You will see every key value pair within 
+
+```
+labels
+```
+
+added as a separate tag for the incident.
+
+{{site.data.alerts.blue-note}}
+<b>Note</b>
+<br/><br/><p><ul><li>The key of the Tag label, <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">tag key</code> can only contain letters (both lowercase and uppercase) and numbers. Anything else will be ignored.</li>
+<li>The <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">addTags</code> function will add all the tags with the default colour only - #0F61DD</li></ul></p>
+{{site.data.alerts.end}}
+
+**(3)** Can a Tagging Rule be created for a specific alert source?
+
+By default, any rule added for a service will be executed for all its active alert source integrations.You can choose to isolate Tagging Rules for specific alert sources based on the source field provided in the right JSON panel.
+
+Example:
+
+```
+source == "api" && addTags(payload.labels)
+```
+
+This will ensure that this Tagging rule will only be active for incidents triggered via that alert source for the service. This rule will not function for any other alert source.
+
+**(4)** Can I create OR rules?
+
+Yes, you can. The evaluation between different Tagging Rules is OR.
+
+**(5)** How do I add a tag from the incident JSON?
+
+This section will give you an understanding of how you can add tags to an incident straight from the Incident JSON using the Incident API.
 
 **Typical Incident JSON:**
 
-```
+```json
 {
    "message":"This will be the incident message",
-   "description": "This will be the incident description"
+   "description": "This will be the incident description",
    "tags": {
-     "tagname1":"Tag value#1"
-     "tagname2":"Tag value#2"
+     "tagname1":"Tag value#1",
+     "tagname2":"Tag value#2",
      "tagname3": {
-       "color": "Valid HTML HEX Colour Notation goes here"
+       "color": "Valid HTML HEX Colour Notation goes here",
        "value":"Tag value#3"
    }
 }
 ```
 
-**Example Tagging Rules**
+**Example 1: Using `tags` to set *Severity* for the incident**
 
-Using Tags to Set Severity:
-
-```
+```json
 {
    "message": "Error rates higher than usual",
    "description": "HTTP Error rates for srv_90 is above 90 counts/hour",
@@ -162,13 +248,13 @@ Using Tags to Set Severity:
 ```
 
 {{site.data.alerts.blue-note}}
-<b>Note:</b>
-<br/><br/><p>If a colour code isn't explicitly mentioned,  then the system takes the default colour "<b>#808080</b>" for the tag</p>
+<b>Default colour for tags</b>
+<br/><br/><p>If a colour code is not mentioned explicitly, then the system takes the default colour "<b>#808080</b>" (gray) for the tag</p>
 {{site.data.alerts.end}}
 
-Assigning Colours to Tags:
+To specify a colour explicitly for `tags`:
 
-```
+```json
 {
    "message": "Error rates higher than usual",
    "description": "HTTP Error rates for srv_90 is above 90 counts/hour",
@@ -179,9 +265,9 @@ Assigning Colours to Tags:
 }
 ```
 
-Different ways of tagging incident:
+**Example 2: Adding different tags to an incident**
 
-```
+```json
 {
    "message": "Error rates higher than usual",
    "description": "HTTP Error rates for srv_90 is above 90 counts/hour",
@@ -195,7 +281,3 @@ Different ways of tagging incident:
  	}
  }
 ```
-
-## How-to-Video: Update Tags Manually
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xsvaIHqyjjQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

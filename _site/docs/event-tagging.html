@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Event tagging can help you add relevant information to incoming incidents to make it more context-rich for the user">
+<meta name="description" content="Auto-add relevant information like priority, severity or alert type to make incoming incidents context-rich">
 <meta name="keywords" content="event tagging,  ">
 <title>Event Tagging | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -507,6 +507,43 @@
       
   
   <li>
+      <a title="Incident List" href="#">Incident List</a>
+      <ul>
+          
+          
+          
+          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Filter Incidents" href="/docs/filter-incidents">Filter Incidents</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Export Incidents" href="/docs/export-incidents">Export Incidents</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Save Filter View" href="/docs/save-filter-view">Save Filter View</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
       <a title="Incidents Page" href="#">Incidents Page</a>
       <ul>
           
@@ -672,6 +709,13 @@
           
           
           
+          <li><a title="Conviva" href="/docs/conviva">Conviva</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="CopperEgg" href="/docs/copperegg">CopperEgg</a></li>
           
           
@@ -743,6 +787,13 @@
           
           
           <li><a title="Graylog" href="/docs/graylog">Graylog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
           
@@ -1027,13 +1078,20 @@
           
           
           
+          
+          
+          <li><a title="Zabbix 5.0" href="/docs/zabbix-5">Zabbix 5.0</a></li>
+          
+          
+          
+          
       </ul>
    </li>
      
       
   
   <li>
-      <a title="Integrations (Extensions)" href="#">Integrations (Extensions)</a>
+      <a title="Extensions" href="#">Extensions</a>
       <ul>
           
           
@@ -1346,57 +1404,59 @@ li.sidebarTitle{
             <h1 class="post-title-main">Event Tagging</h1>
         </div>
             
-                <div class="summary">Event tagging can help you add relevant information to incoming incidents to make it more context-rich for the user</div>
+                <div class="summary">Auto-add relevant information like priority, severity or alert type to make incoming incidents context-rich</div>
             
 
                 
 
-            <p>Event tagging can help you add relevant information to incoming incidents to make it more context-rich for the user.</p>
+            <p>Tagging Rules can be defined for each Service in Squadcast. These rules, when evaluated to <em>true</em>, will add the defined tags to the incoming incident.</p>
 
-<h2 id="auto-tagging-events">Auto Tagging Events</h2>
+<h2 id="create-tagging-rules">Create Tagging Rules</h2>
 
-<p>For each service, you can define your rule for event tagging.</p>
+<p><strong>(1)</strong> Click on Services</p>
 
-<p>You can set this up by going to app.squadcast.com.</p>
-<ul>
-  <li>Go to the relevant service</li>
-  <li>Click on the options dropdown</li>
-  <li>Choose Tagging Rules</li>
-</ul>
+<p><strong>(2)</strong> Select a Service and click on the 3 dots beside the service name</p>
+
+<p><strong>(3)</strong> Click on Tagging Rules</p>
 
 <p><img src="images/tagging_1.png" alt="" /></p>
 
-<ul>
-  <li>Choose Alert Source from the Dropdown</li>
-</ul>
+<p><strong>(4)</strong> Select an alert source from the drop-down</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note: Integrate with an alert source first</b>
+<br /><br /><p>Ensure that you have integrated with an alert source before you set up Tagging Rules</p>
+</div>
+
+<p><strong>(5)</strong> Click on “Add new rule”</p>
 
 <p><img src="images/tagging_2.png" alt="" /></p>
 
-<p>You can add your tagging rule expression in the field “Tagging rule” and then add the tag key value pairs. You can select a colour of your choice for a tag key value by clicking on the circular colour button at the start of the map row. You can add as many tags by clicking on the “Add new mapping” button.</p>
+<p><strong>(6)</strong> Tagging Rules can be added in three ways:</p>
 
-<p>You can also add as many rules and configure as many key value mappings for each of these rules.</p>
+<h3 id="a-user-friendly-drop-down-method">(A) User-friendly drop-down method</h3>
+
+<p>(a) See the payload of the latest alert for the chosen alert source</p>
+
+<p>(b) Use the dropdown to use the values from the payload to create rules</p>
 
 <p><img src="images/tagging_3.png" alt="" /></p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>UPDATE: Multiple Alert Source:</b>
-<br /><br /><p>We can see alert payloads of past events from different alert sources for the service by selecting the respective alert source from the dropdown in the right-half side.<br /><br />
-Now you can have tagging rules for a service specific to an alert source by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.<br /><br />
-For example, if you want to have a tagging rule for a service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'jira-plugin' &amp;&amp; (&lt;your_tagging_rule&gt;)</code></p>
-</div>
+<p>(c) Use “Add Condition” to add multiple conditions in the same rule</p>
 
-<p>The tags will be visible against an incident in the incident dashboard and the incident details page.</p>
+<p>(d) Map any “Key” and “Value” pair as a tag. Multiple tags can be defined for each rule. Each tag can have a different colour.</p>
 
 <p><img src="images/tagging_4.png" alt="" /></p>
 
+<h3 id="b-raw-string-method">(B) Raw string method</h3>
+
+<p>(a) See the payload of the latest alert for the chosen alert source</p>
+
+<p>(b) Click on Edit to enable raw string method</p>
+
 <p><img src="images/tagging_5.png" alt="" /></p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Rule Evaluation Method:</b>
-<br /><br /><p>Every rule will be evaluated and all the tags of the matching rules will be attached to the incident.</p>
-</div>
-
-<h2 id="syntax-for-rules">Syntax for rules</h2>
+<p>(c) Use the syntax below to write your custom Tagging Rule expression</p>
 
 <p>The rule engine supports expressions with parameters, arithmetic, logical, and string operations.</p>
 <ul>
@@ -1404,16 +1464,18 @@ For example, if you want to have a tagging rule for a service, only for alerts c
   <li>Parameterized expression: <code class="highlighter-rouge">payload.metric == "disk"</code>
  The available parameters are <code class="highlighter-rouge">payload</code>
     <ul>
-      <li><code class="highlighter-rouge">payload</code> : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events.</li>
+      <li><code class="highlighter-rouge">payload</code> : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source.</li>
     </ul>
   </li>
   <li>Regular expression: <code class="highlighter-rouge">re(payload.metric, "disk.*")</code>
-  This can be used to check if a particular JSON payload field matches a regular expression.</li>
+ This can be used to check if a particular JSON payload field matches a regular expression.</li>
   <li>Parsing JSON content: <code class="highlighter-rouge">jsonPath(payload.message, "a.b.c")</code>
-   This can be used to parse JSON formatted strings and get the <code class="highlighter-rouge">jsonPath</code> from the resulting JSON object.</li>
+ This can be used to parse JSON formatted strings and get the <code class="highlighter-rouge">jsonPath</code> from the resulting JSON object.</li>
+  <li>Adding multiple tags from the payload: <code class="highlighter-rouge">addTag( "severity", payload.severity, "#037916")</code></li>
+  <li>Adding a tag from the payload: <code class="highlighter-rouge">addTags(payload.labels)</code></li>
 </ul>
 
-<h2 id="example">Example</h2>
+<h4 id="example">Example</h4>
 
 <p>For a sample content shown in the right panel of the configuration space</p>
 
@@ -1439,110 +1501,187 @@ For example, if you want to have a tagging rule for a service, only for alerts c
 
 <p>Assuming a case where disk usage events need to be prioritised:</p>
 
-<p>When the disk usage is greater than 90% - <code class="highlighter-rouge">critical</code> and <code class="highlighter-rouge">state</code> tag is <code class="highlighter-rouge">alerting</code>
-When the disk usage is between 60 - 90% - <code class="highlighter-rouge">high</code>
-When the disk usage is less than 60% - <code class="highlighter-rouge">low</code></p>
+<ul>
+  <li>When the disk usage is greater than 90% - <code class="highlighter-rouge">critical</code> and <code class="highlighter-rouge">state</code> tag is <code class="highlighter-rouge">alerting</code></li>
+  <li>When the disk usage is between 60 - 90% - <code class="highlighter-rouge">high</code></li>
+  <li>When the disk usage is less than 60% - <code class="highlighter-rouge">low</code></li>
+</ul>
 
 <p>Create 3 rules with the following configuration</p>
 
 <p><strong>Rules</strong></p>
 
-<p>Critical: <code class="highlighter-rouge">payload.value  &gt; 90 &amp;&amp; jsonPath(payload.tags, "state") == "alerting"</code> 
-High: <code class="highlighter-rouge">payload.value &gt; 60 &amp;&amp; payload.value &lt; 90</code>
-Low: <code class="highlighter-rouge">payload.value &lt; 60</code></p>
+<ul>
+  <li>Critical: <code class="highlighter-rouge">payload.value  &gt; 90 &amp;&amp; jsonPath(payload.tags, "state") == "alerting"</code></li>
+  <li>High: <code class="highlighter-rouge">payload.value &gt; 60 &amp;&amp; payload.value &lt; 90</code></li>
+  <li>Low: <code class="highlighter-rouge">payload.value &lt; 60</code></li>
+</ul>
 
-<h2 id="manual-tagging">Manual Tagging</h2>
+<h3 id="c-manual-method">(C) Manual method</h3>
 
-<h3 id="adding-tags-to-a-manually-triggered-incident">Adding Tags to a Manually Triggered Incident</h3>
-
-<p>When you create an incident manually via the <strong>+</strong> button, by default, you will have the option to add <strong>Tags</strong> to an incident. You can do so by assigning the <code class="highlighter-rouge">tag name</code> and <code class="highlighter-rouge">tag value</code> in the text fields provided and you can also change the tag color by clicking on the blue circle. You can also add multiple tags by clicking on the <strong>Add Tag</strong> option provided on the screen.</p>
+<p>Associate a tag while creating an incident manually from the Incident Dashboard</p>
 
 <p><img src="images/tagging_6.png" alt="" /></p>
 
-<h3 id="updating-tags-to-an-existing-incident">Updating Tags to an Existing Incident</h3>
+<h2 id="delete-tagging-rules">Delete Tagging Rules</h2>
 
-<p>You can choose to update tags for an existing incidents as well.</p>
+<p><strong>(1)</strong> Click on the Tagging Rule for a selected Service</p>
 
-<p>In order to do this, go to the Incident details page and click on the <strong>More Icon</strong> (three dots) against the Incident Message space of the page and click on <strong>Update Tags</strong>.</p>
+<p><strong>(2)</strong> Click on the “Bin” icon to delete that rule and click on <strong>Save</strong></p>
 
 <p><img src="images/tagging_7.png" alt="" /></p>
 
-<p>You can then assign the <code class="highlighter-rouge">tag name</code> and <code class="highlighter-rouge">tag value</code> in the text fields provided and you can also change the tag color by clicking on the color circle. You can also add multiple tags by clicking on the <strong>Add Tag</strong> option provided on the screen.</p>
+<h2 id="updating-tags">Updating Tags</h2>
+
+<p>Use “+Update Tags” within an incident to update tags for a specific incident</p>
 
 <p><img src="images/tagging_8.png" alt="" /></p>
 
-<p>The updated tags will now reflect on the Incident Details page.</p>
+<h2 id="faq">FAQ</h2>
+
+<p><strong>(1)</strong> Where can I see the tags associated with incidents?</p>
+
+<p>You will be able to clearly view tags associated with incidents in the <a href="incident-list-table-view">Incident List</a> page.</p>
 
 <p><img src="images/tagging_9.png" alt="" /></p>
 
-<h3 id="add-a-tag-from-incident-json">Add a Tag From Incident JSON</h3>
+<p><strong>(2)</strong> Can I add tags from the payload automatically ?</p>
 
-<p>This section will give you an understanding of how you can add tags to an incidents straight from the Incident JSON using our API.</p>
+<p>Yes, you can.</p>
+
+<p><strong>(a) Add a single tag</strong></p>
+
+<p>General Format:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>addTag ( &lt;tag key as string&gt;, &lt;payload selector or string&gt;, [ &lt;color&gt; ])
+</code></pre></div></div>
+
+<ul>
+  <li>tag key: The key of the Tag label. Only letters and numbers allowed. Anything else will be ignored.</li>
+  <li>payload selector or string: You can choose to set a tag value from the payload or you can set any custom string as the tag value.</li>
+  <li>color: You can set color as a valid HEX code. This is optional. If this parameter is omitted, the default colour - #0F61DD will be used.</li>
+</ul>
+
+<p>For this example, we’re using</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>addTag( "severity", payload.labels.severity, "#037916")
+</code></pre></div></div>
+
+<p>as the tag rule.
+You will see that the tags are added automatically with the associated key value pair.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
+<br /><br /><p>The addTag function always returns a truevalue. So, this can be chained with other logical operators to set multiple tags from the payload.</p>
+</div>
+
+<p><strong>(b) Add multiple tags</strong></p>
+
+<p>General Format:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>addTags( &lt;payload selector&gt;)
+</code></pre></div></div>
+
+<ul>
+  <li>payload selector: You can choose to set an object with key value pairs as tags from the payload.</li>
+</ul>
+
+<p>For this example, we’re using</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>addTags( payload.labels)
+</code></pre></div></div>
+
+<p>as the tag rule.
+You will see every key value pair within</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>labels
+</code></pre></div></div>
+
+<p>added as a separate tag for the incident.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
+<br /><br /><p><ul><li>The key of the Tag label, <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">tag key</code> can only contain letters (both lowercase and uppercase) and numbers. Anything else will be ignored.</li>
+<li>The <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">addTags</code> function will add all the tags with the default colour only - #0F61DD</li></ul></p>
+</div>
+
+<p><strong>(3)</strong> Can a Tagging Rule be created for a specific alert source?</p>
+
+<p>By default, any rule added for a service will be executed for all its active alert source integrations.You can choose to isolate Tagging Rules for specific alert sources based on the source field provided in the right JSON panel.</p>
+
+<p>Example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source == "api" &amp;&amp; addTags(payload.labels)
+</code></pre></div></div>
+
+<p>This will ensure that this Tagging rule will only be active for incidents triggered via that alert source for the service. This rule will not function for any other alert source.</p>
+
+<p><strong>(4)</strong> Can I create OR rules?</p>
+
+<p>Yes, you can. The evaluation between different Tagging Rules is OR.</p>
+
+<p><strong>(5)</strong> How do I add a tag from the incident JSON?</p>
+
+<p>This section will give you an understanding of how you can add tags to an incident straight from the Incident JSON using the Incident API.</p>
 
 <p><strong>Typical Incident JSON:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-   "message":"This will be the incident message",
-   "description": "This will be the incident description"
-   "tags": {
-     "tagname1":"Tag value#1"
-     "tagname2":"Tag value#2"
-     "tagname3": {
-       "color": "Valid HTML HEX Colour Notation goes here"
-       "value":"Tag value#3"
-   }
-}
-</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"message"</span><span class="p">:</span><span class="s2">"This will be the incident message"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This will be the incident description"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+     </span><span class="s2">"tagname1"</span><span class="p">:</span><span class="s2">"Tag value#1"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"tagname2"</span><span class="p">:</span><span class="s2">"Tag value#2"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"tagname3"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+       </span><span class="s2">"color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Valid HTML HEX Colour Notation goes here"</span><span class="p">,</span><span class="w">
+       </span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"Tag value#3"</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
-<p><strong>Example Tagging Rules</strong></p>
+<p><strong>Example 1: Using <code class="highlighter-rouge">tags</code> to set <em>Severity</em> for the incident</strong></p>
 
-<p>Using Tags to Set Severity:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-   "message": "Error rates higher than usual",
-   "description": "HTTP Error rates for srv_90 is above 90 counts/hour",
-   "tags": {
-      "severity": "high"
-    }
-}
-</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Error rates higher than usual"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HTTP Error rates for srv_90 is above 90 counts/hour"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"high"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note:</b>
-<br /><br /><p>If a colour code isn't explicitly mentioned,  then the system takes the default colour "<b>#808080</b>" for the tag</p>
+<b>Default colour for tags</b>
+<br /><br /><p>If a colour code is not mentioned explicitly, then the system takes the default colour "<b>#808080</b>" (gray) for the tag</p>
 </div>
 
-<p>Assigning Colours to Tags:</p>
+<p>To specify a colour explicitly for <code class="highlighter-rouge">tags</code>:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-   "message": "Error rates higher than usual",
-   "description": "HTTP Error rates for srv_90 is above 90 counts/hour",
-   "severity": {
-      "colour": "#FF0000",
-      "value":"backend"
-  }
-}
-</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Error rates higher than usual"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HTTP Error rates for srv_90 is above 90 counts/hour"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"severity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"colour"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#FF0000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"backend"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
-<p>Different ways of tagging incident:</p>
+<p><strong>Example 2: Adding different tags to an incident</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-   "message": "Error rates higher than usual",
-   "description": "HTTP Error rates for srv_90 is above 90 counts/hour",
-   "tags" : {
-      "severity": "high",
-      "impact_level": 5,
-   "classification": {
-      "color":"#FF0000",
-      "value":"backend"
-    }
- 	}
- }
-</code></pre></div></div>
-
-<h2 id="how-to-video-update-tags-manually">How-to-Video: Update Tags Manually</h2>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xsvaIHqyjjQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Error rates higher than usual"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HTTP Error rates for srv_90 is above 90 counts/hour"</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"tags"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"high"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"impact_level"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+   </span><span class="s2">"classification"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"color"</span><span class="p">:</span><span class="s2">"#FF0000"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"backend"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+ 	</span><span class="p">}</span><span class="w">
+ </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
 
                 <!--div class="tags">

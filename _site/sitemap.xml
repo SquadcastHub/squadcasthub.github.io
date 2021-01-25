@@ -128,6 +128,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/conviva</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/copperegg</loc>
   </url>
   
@@ -230,10 +236,22 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/export-incidents</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/squadcast-faq</loc>
   </url>
   
   
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/filter-incidents</loc>
+  </url>
   
   
   
@@ -282,13 +300,19 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/grafana.html</loc>
+    <loc>http://localhost:4000/docs/grafana</loc>
   </url>
   
   
   
   <url>
     <loc>http://localhost:4000/docs/graylog</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/hetrixtools</loc>
   </url>
   
   
@@ -319,6 +343,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/incident-details</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/incident-list-table-view</loc>
   </url>
   
   
@@ -588,6 +618,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/save-filter-view</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/schedule-overrides</loc>
   </url>
   
@@ -819,6 +855,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/zabbix-integration-guide</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/zabbix-5</loc>
   </url>
   
   

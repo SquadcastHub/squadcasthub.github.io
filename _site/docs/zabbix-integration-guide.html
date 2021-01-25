@@ -507,6 +507,43 @@
       
   
   <li>
+      <a title="Incident List" href="#">Incident List</a>
+      <ul>
+          
+          
+          
+          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Filter Incidents" href="/docs/filter-incidents">Filter Incidents</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Export Incidents" href="/docs/export-incidents">Export Incidents</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Save Filter View" href="/docs/save-filter-view">Save Filter View</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
       <a title="Incidents Page" href="#">Incidents Page</a>
       <ul>
           
@@ -672,6 +709,13 @@
           
           
           
+          <li><a title="Conviva" href="/docs/conviva">Conviva</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="CopperEgg" href="/docs/copperegg">CopperEgg</a></li>
           
           
@@ -743,6 +787,13 @@
           
           
           <li><a title="Graylog" href="/docs/graylog">Graylog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
           
@@ -1027,13 +1078,20 @@
           
           
           
+          
+          
+          <li><a title="Zabbix 5.0" href="/docs/zabbix-5">Zabbix 5.0</a></li>
+          
+          
+          
+          
       </ul>
    </li>
      
       
   
   <li>
-      <a title="Integrations (Extensions)" href="#">Integrations (Extensions)</a>
+      <a title="Extensions" href="#">Extensions</a>
       <ul>
           
           
@@ -1351,42 +1409,52 @@ li.sidebarTitle{
 
                 
 
-            <p>Follow the steps below to configure a service so as to extract its related alert data from Zabbix.</p>
+            <p>This document will help you integrate Zabbix with Squadcast.</p>
 
-<p>Squadcast will then process this information to create incidents for this service as per your preferences.</p>
+<p><a href="https://www.zabbix.com/">Zabbix</a> is a mature, enterprise-level platform that allows you to monitor large-scale IT environments comprising servers, networks, applications and services.
+Route detailed monitoring alerts from Zabbix to the right users in Squadcast.</p>
 
-<h2 id="using-zabbix-as-an-alert-source">Using Zabbix as an Alert Source</h2>
+<h2 id="how-to-integrate-zabbix-with-squadcast">How to integrate Zabbix with Squadcast</h2>
 
-<p>On the <strong>Sidebar</strong>, click on <strong>Services</strong>.</p>
+<h3 id="in-squadcast-using-zabbix-as-an-alert-source">In Squadcast: Using Zabbix as an Alert Source</h3>
 
-<p>You can either choose to use existing service or <a href="adding-a-service-1">create a new service</a></p>
+<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong></p>
 
-<p>Now, click on the corresponding <strong>Alert Sources</strong> button.</p>
+<p><img src="images/integration_1-1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Select an existing Service or <strong>Add service</strong></p>
+
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p><strong>(3)</strong> Click the corresponding <strong>Alert Sources</strong></p>
 
 <p><img src="images/integration_1.png" alt="" /></p>
 
-<p>Select <strong>Zabbix</strong> from  <strong>Alert Source</strong> drop down and copy the Webhook URL shown.</p>
+<p><strong>(4)</strong> Search for <strong>Zabbix</strong> from the <strong>Alert Source</strong> drop-down menu and copy the Webhook</p>
 
 <p><img src="images/zabbix_1.png" alt="" /></p>
 
-<p>Go to the your Zabbix’s <code class="highlighter-rouge">AlertScriptsPath</code> directory. This is usually <code class="highlighter-rouge">/etc/zabbix/alert.d</code> or <code class="highlighter-rouge">/usr/local/share/zabbix/alertscripts</code> but it can be changed. Check your <code class="highlighter-rouge">zabbix_server.conf</code> file to see how this option is configured.</p>
+<h3 id="in-zabbix-create-a-squadcast-webhook">In Zabbix: Create a Squadcast Webhook</h3>
 
-<p>Once inside the directory run the following command:</p>
+<p><strong>(1)</strong> Navigate to Zabbix’s <code class="highlighter-rouge">AlertScriptsPath</code> directory. This is usually <code class="highlighter-rouge">/etc/zabbix/alert.d</code> or <code class="highlighter-rouge">/usr/local/share/zabbix/alertscripts</code>.
+Check your <code class="highlighter-rouge">zabbix_server.conf</code> file to see how this option is configured.</p>
+
+<p><strong>(2)</strong> In this directory, run the following command:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo wget https://raw.githubusercontent.com/squadcastHub/squadcast-zabbix-script/master/sq-zabbix.py
 </code></pre></div></div>
 
-<p>Once the file is downloaded please make sure that the file has execute permissions for your Zabbix user. If not then please provide the same using the following command:</p>
+<p>Once the file is downloaded, ensure that it has <em>executable permissions for your Zabbix user</em>. If not then please provide the same using the following command:</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x sq-zabbix.py
 </code></pre></div></div>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note: </b>
-<br /><br /><p>The Squadcast script for Zabbix requires Python 3 to be installed on the machine running Zabbix.</p>
+<div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>
+<b>Important</b>
+<br /><br /><p>The Squadcast script for Zabbix requires Python 3 to be installed on the machine running Zabbix. Any other version of Python (other than Python 3) will not support this script.</p>
 </div>
 
-<p>Go to “<strong>Administration</strong>” tab and then click on “<strong>Media types</strong>”. Click on “<strong>Create Media type</strong>” and create a new media type with the following configuration.</p>
+<p><strong>(3)</strong> Head over to the <strong>Administration</strong> tab and then click on <strong>Media types</strong>. Click on <strong>Create Media type</strong> to create a new Media Type with the following configuration</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Name: Squadcast 
 AlertType: Script
@@ -1397,46 +1465,35 @@ Script Parameters:
     {ALERT.MESSAGE}
 </code></pre></div></div>
 
+<p>Additionally, ensure <strong>Enabled</strong> checkbox is selected and then click on <strong>Add</strong></p>
+
 <p><img src="images/zabbix_2.png" alt="" /></p>
 
-<p>Before clicking “<strong>Add</strong>” make sure that the media type is enabled.</p>
+<p><strong>(4)</strong> Now you can add this Media Type to any User/s of Zabbix. To do so, navigate to <strong>Administration</strong> tab and select <strong>Users</strong> from the drop-down. Here, select <strong>Media</strong> tab and click on <strong>Add</strong></p>
 
-<p>Now you can add this media type to any user you want. For example, click on “<strong>Users</strong>” tab under the “<strong>Administration</strong>” tab and select the user you want to add this media type to.</p>
-
-<p>Under “<strong>Media</strong>” tab click on “<strong>Add</strong>” and enter the following details:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Type: Squadcast Alert
-Send To: The Webhook URL you obtained above
-</code></pre></div></div>
+<ul>
+  <li><em>Type</em>: Either pick Squadcast or add a name, such as <em>Squadcast</em></li>
+  <li><em>Send to</em>: Paste the copied Zabbix Webhook URL from Squadcast</li>
+  <li><em>When active</em>: Specify suitable values</li>
+  <li><em>Use if severity</em>: Select appropriate checkboxes</li>
+  <li>Click on <strong>Add</strong> to save the Media for the User</li>
+</ul>
 
 <p><img src="images/zabbix_3.png" alt="" /></p>
 
-<p>Finally click on “<strong>Add</strong>” to save the media for the user and make sure you click on “<strong>Update</strong>” button on the “<strong>Media</strong>” page to save the details.</p>
+<p><strong>(5)</strong> Make sure you click on <strong>Update</strong> button in the <strong>Media</strong> page to save these details</p>
 
 <p><img src="images/zabbix_4.png" alt="" /></p>
 
-<p>Now go to the “<strong>Configuration</strong>” tab and click on “<strong>Actions</strong>” tab. Click on “<strong>Create Action</strong>” to create a new action.</p>
-
-<p>Enter the name as “<strong>Squadcast Notifications</strong>”.</p>
+<p><strong>(6)</strong> Navigate to the <strong>Configuration</strong> tab and click on <strong>Actions</strong>. Click on <strong>Create Action</strong> and enter a meaningful name, such as <strong>Squadcast Notifications</strong></p>
 
 <p><img src="images/zabbix_5.png" alt="" /></p>
 
-<p>Click on “<strong>Operations</strong>” tab and configure it as per your requirements. In the Default Message field enter the following:</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">name:{TRIGGER.NAME}</span>
-<span class="s">id:{TRIGGER.ID}</span>
-<span class="s">status:{TRIGGER.STATUS}</span>
-<span class="s">hostname:{HOSTNAME}</span>
-<span class="s">ip:{IPADDRESS}</span>
-<span class="s">value:{TRIGGER.VALUE}</span>
-<span class="s">event_id:{EVENT.ID}</span>
-<span class="s">severity:{TRIGGER.SEVERITY}</span>
-<span class="s">url:{TRIGGER.URL}</span>
-</code></pre></div></div>
+<p><strong>(7)</strong> Switch to <strong>Operations</strong>” tab on the same page and configure the parameters as per your requirements</p>
 
 <p><img src="images/zabbix_6.png" alt="" /></p>
 
-<p>Similarly configure the “<strong>Recovery operations</strong>”. Make sure that you enter the following in the Default Message field:</p>
+<p>Copy-paste the following in the ‘Default Message’ field:</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">name:{TRIGGER.NAME}</span>
 <span class="s">id:{TRIGGER.ID}</span>
@@ -1451,12 +1508,45 @@ Send To: The Webhook URL you obtained above
 
 <p><img src="images/zabbix_7.png" alt="" /></p>
 
-<p>Finally click on “<strong>Add</strong>” to save “<strong>Squadcast Notifications</strong>”.</p>
+<p><strong>(8)</strong> Similarly, switch to <strong>Recovery operations</strong> tab and configure the following: 
+Copy-paste the following in the ‘Default Message’ field:</p>
 
-<p>That’s it! Your Zabbix integration is now good to go.</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">name:{TRIGGER.NAME}</span>
+<span class="s">id:{TRIGGER.ID}</span>
+<span class="s">status:{TRIGGER.STATUS}</span>
+<span class="s">hostname:{HOSTNAME}</span>
+<span class="s">ip:{IPADDRESS}</span>
+<span class="s">value:{TRIGGER.VALUE}</span>
+<span class="s">event_id:{EVENT.ID}</span>
+<span class="s">severity:{TRIGGER.SEVERITY}</span>
+<span class="s">url:{TRIGGER.URL}</span>
+</code></pre></div></div>
+
+<p><img src="images/zabbix_8.png" alt="" /></p>
+
+<p><strong>(9)</strong> Finally click on <strong>Add</strong> to save <strong>Squadcast Notifications</strong></p>
+
+<p>That’s it, our Zabbix integration is now good to go! Whenever Zabbix fires an alert, an incident is created in Squadcast for the same.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>FAQ: </b>
+<br /><br /><p>Q: If an alert gets resolved in Zabbix, does Zabbix send auto-resolve signals to Squadcast?<br /><br />
+A: Yes, Zabbix sends alert auto-resolve signals to Squadcast, thus supporting auto-resolution of incidents in Squadcast.
+</p>
+</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Important</b>
+<br /><br /><p>The user whose <b>media</b> is configured to send alerts to Squadcast must belong to a <b>user-group</b> having read permission on the <b>Host Group</b> which needs to be monitored by Squadcast inorder to send the alerts.</p>
+</div>
+
+<h2 id="how-to-zabbix-integration">How-to: Zabbix Integration</h2>
+
+<div class="wistia_responsive_padding" style="padding:49.58% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/ca7wssflfv?videoFoam=true" title="zabbix-intg_01 Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen="" msallowfullscreen="" width="100%" height="100%"></iframe></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async=""></script>
 
 <style>.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}</style>
-<div style="height: 100%;width: 100%;display: flex;margin-top: 40px;"><div style="margin: auto;"><div style="height: 100%;width: 100%;display: flex;padding: 20px;border: 1px solid #e7e9ed;border-radius: 8px;"><div style="margin: auto;"><div style="text-align: center;padding-bottom: 20px;font-size: 18px;line-height: 24px;font-family: Metropolis, sans-serif;color: #0d2149;">Ready to try Squadcast?</div><a href="https://app.squadcast.com/register" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #0f61dd;font-family: Metropolis,sans-serif;color: #fff;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #fff;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Start Now For Free!</a>   <a href="https://calendly.com/amiya-squadcast/website?month=2019-08&amp;back=1" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #fff;font-family: Metropolis,sans-serif;color: #0f61dd;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #0f61dd;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;border: 1px solid #0f61dd;margin-left: 20px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Schedule a Demo</a></div></div></div></div>
+<div style="height: 100%;width: 100%;display: flex;margin-top: 40px;"><div style="margin: auto;"><div style="height: 100%;width: 100%;display: flex;padding: 20px;border: 1px solid #e7e9ed;border-radius: 8px;"><div style="margin: auto;"><div style="text-align: center;padding-bottom: 20px;font-size: 18px;line-height: 24px;font-family: Metropolis, sans-serif;color: #0d2149;">Ready to try Squadcast?</div><a href="https://app.squadcast.com/register" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #0f61dd;font-family: Metropolis,sans-serif;color: #fff;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #fff;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Start Now For Free!</a>   <a href="https://calendly.com/renuka-squadcast/30min" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #fff;font-family: Metropolis,sans-serif;color: #0f61dd;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #0f61dd;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;border: 1px solid #0f61dd;margin-left: 20px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Schedule a Demo</a></div></div></div></div>
 
 
                 <!--div class="tags">

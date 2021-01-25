@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Maintenance Work">
+<meta name="description" content="Create Maintenance Mode windows for Services">
 <meta name="keywords" content="maintenance mode,  ">
 <title>Maintenance Mode | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -507,6 +507,43 @@
       
   
   <li>
+      <a title="Incident List" href="#">Incident List</a>
+      <ul>
+          
+          
+          
+          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Filter Incidents" href="/docs/filter-incidents">Filter Incidents</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Export Incidents" href="/docs/export-incidents">Export Incidents</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Save Filter View" href="/docs/save-filter-view">Save Filter View</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
       <a title="Incidents Page" href="#">Incidents Page</a>
       <ul>
           
@@ -672,6 +709,13 @@
           
           
           
+          <li><a title="Conviva" href="/docs/conviva">Conviva</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="CopperEgg" href="/docs/copperegg">CopperEgg</a></li>
           
           
@@ -743,6 +787,13 @@
           
           
           <li><a title="Graylog" href="/docs/graylog">Graylog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
           
@@ -1027,13 +1078,20 @@
           
           
           
+          
+          
+          <li><a title="Zabbix 5.0" href="/docs/zabbix-5">Zabbix 5.0</a></li>
+          
+          
+          
+          
       </ul>
    </li>
      
       
   
   <li>
-      <a title="Integrations (Extensions)" href="#">Integrations (Extensions)</a>
+      <a title="Extensions" href="#">Extensions</a>
       <ul>
           
           
@@ -1346,29 +1404,59 @@ li.sidebarTitle{
             <h1 class="post-title-main">Maintenance Mode</h1>
         </div>
             
-                <div class="summary">Maintenance Work</div>
+                <div class="summary">Create Maintenance Mode windows for Services</div>
             
 
                 
 
-            <p>Maintenance Mode allows you to suppress the alerts from Services. Once you add a time window on Maintenance Mode during which the maintenance work will be carried out, all of the information in the alerts generated in this time will be in the system but in a suppressed state.</p>
+            <p>Maintenance Mode enables you to reduce alert noise during the scheduled maintenance window. Alerts generated during maintenance windows would be automatically suppressed hence, no notifications are generated for these suppressed alerts. One can quickly list incidents that are in the suppressed state by simply filtering them in the <a href="incident-list-table-view#quick-filter-by-incident-status">Incident List</a> page.</p>
+
+<h2 id="setting-up-a-maintenance-mode-window-for-a-service">Setting up a Maintenance Mode window for a Service</h2>
+
+<p><strong>(1)</strong> Click on <strong>Services</strong> on the sidebar</p>
 
 <p><img src="images/maintenance_1.png" alt="" /></p>
 
-<p>You can access the <strong>Maintenance Mode</strong> by clicking the 3 dots on the top right corner of each service.</p>
+<p><strong>(2)</strong> Click on “more options” for the Service of your choice and select <strong>Maintenance Mode</strong> from the drop-down</p>
 
 <p><img src="images/maintenance_2.png" alt="" /></p>
 
-<p>You can setup the time period during which the maintenance mode will be on and you can also choose to repeat it every day or every 7 or 30 days.</p>
+<p><strong>(3)</strong> Toggle the button <strong>on</strong> to enable Maintenance Mode window</p>
 
 <p><img src="images/maintenance_3.png" alt="" /></p>
 
-<p>When a service is in maintenance mode, you can see the “<strong>Under Maintenance</strong>” tag on the Service cards in the “<strong>Services</strong>” page.</p>
+<p><strong>(4)</strong>  Enter the Date and Time range during which maintenance would be carried out. Maintenance windows can also be scheduled i.e. you can also choose to repeat it every day, every 7 days or 30 days. <strong>Save</strong> the set configuration</p>
+
+<p><img src="images/maintenance_4.png" alt="" /></p>
+
+<p>That’s it! The maintenance window has now been created for the Service</p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note:</b>
-<p><br />Any alerts that come in for service during the maintenance window will be automatically <b>Suppressed</b></p>
+<b>Indication of Services under Maintenance</b>
+<p><br />A Service in Maintenance Mode is indicated with an "Under Maintenance" tag on the Service card as seen in the screenshot below</p>
 </div>
+
+<p><img src="images/maintenance_5.png" alt="" /></p>
+
+<h2 id="faq">FAQ</h2>
+
+<p><strong>(1)</strong> Where can I see the suppressed incidents?</p>
+
+<p>Suppressed incidents can be viewed on the Incident Dashboard by clicking on the <strong>Suppressed</strong> tab as shown below:</p>
+
+<p><img src="images/maintenance_6.png" alt="" /></p>
+
+<p>On the Incident List page, suppressed incidents can be viewed under the Suppressed state as shown below:</p>
+
+<p><img src="images/maintenance_7.png" alt="" /></p>
+
+<p><strong>(2)</strong> Is Maintenance window global to the selected Service?</p>
+
+<p>Yes, it is global to a Service.</p>
+
+<p><strong>(3)</strong> Can I change the state of a suppressed incident?</p>
+
+<p>No, <code class="highlighter-rouge">suppressed</code> would be the final state of an incident. It cannot be changed.</p>
 
 
                 <!--div class="tags">

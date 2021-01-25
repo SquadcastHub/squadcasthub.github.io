@@ -507,6 +507,43 @@
       
   
   <li>
+      <a title="Incident List" href="#">Incident List</a>
+      <ul>
+          
+          
+          
+          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Filter Incidents" href="/docs/filter-incidents">Filter Incidents</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Export Incidents" href="/docs/export-incidents">Export Incidents</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Save Filter View" href="/docs/save-filter-view">Save Filter View</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
       <a title="Incidents Page" href="#">Incidents Page</a>
       <ul>
           
@@ -672,6 +709,13 @@
           
           
           
+          <li><a title="Conviva" href="/docs/conviva">Conviva</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="CopperEgg" href="/docs/copperegg">CopperEgg</a></li>
           
           
@@ -743,6 +787,13 @@
           
           
           <li><a title="Graylog" href="/docs/graylog">Graylog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
           
@@ -1027,13 +1078,20 @@
           
           
           
+          
+          
+          <li><a title="Zabbix 5.0" href="/docs/zabbix-5">Zabbix 5.0</a></li>
+          
+          
+          
+          
       </ul>
    </li>
      
       
   
   <li>
-      <a title="Integrations (Extensions)" href="#">Integrations (Extensions)</a>
+      <a title="Extensions" href="#">Extensions</a>
       <ul>
           
           
@@ -1351,73 +1409,84 @@ li.sidebarTitle{
 
                 
 
-            <p>Services can refer to specific systems, applications, or tools that generate alerts. You will be able to quickly communicate with all concerned users whenever a service is impacted by an incident.</p>
+            <p>Services represent specific systems, applications, components, products, or teams for which an incident is created.</p>
 
-<div class="alert alert-info" role="alert">
-    <i class="fa fa-info-circle"></i> 
-    <b>Note:</b> 
-    <br /><br />You need to have at least one escalation policy before you can add a Service.
-    <br /><br />
-    The escalation policy that you assign to a service is its default escalation policy. If routing rules are configured for this service, it can override the default policy and will escalate based on the configured rules.
-</div>
+<h2 id="create-a-service">Create a Service</h2>
+
+<h3 id="prerequisite">Prerequisite</h3>
+<p>You need to have at least one <a href="escalation-policies">Escalation Policy</a> before you can add a Service.</p>
+
+<p><strong>(1)</strong> Click on <strong>Services</strong></p>
+
+<p><strong>(2)</strong> Click on <strong>Add Service</strong></p>
 
 <p><img src="images/adding_a_service_1.png" alt="" /></p>
 
-<p>You can create a service under <strong>Services (Sidebar) → Add Service</strong>.</p>
+<p><strong>(3)</strong> Add the following information:</p>
+<ul>
+  <li>Service Name - Corresponds to the name of your business service</li>
+  <li>Service Description (optional) - Service Description</li>
+  <li>Escalation Policy - The Escalation Policy that you assign to a service will be its default Escalation Policy.</li>
+  <li>Email Prefix (optional) - You can choose to add an <a href="email">email address prefix</a> to the Service for it to function as an alternative alert source for that Service. If you leave it blank, Squadcast will automatically fill in the prefix-key which you can use.</li>
+  <li><a href="de-duplication-rules#status-based-deduplication">Status Based Deduplication</a> (optional) can be enabled by checking the box with the information message and choosing the appropriate time window for which you’d like this deduplication rule to hold true.</li>
+</ul>
 
-<p>Give your service a name and a description.</p>
+<p><strong>(4)</strong> Click on <strong>Save</strong></p>
 
-<p>Then search for and assign the relevant escalation policy to the service.</p>
-
-<div class="alert alert-warning" role="alert">
-    <i class="fa fa-info-circle"></i> 
-    <b>Optional:</b> 
-    <br /><br />You can choose to add an email address prefix to the service for it to function as an alternative alert source for the particular service. 
-    <br /><br />
-    If you leave it blank, Squadcast will automatically fill in the prefix-key which you can use.
-</div>
+<p><strong>(5)</strong> That’s it! The service has been created.</p>
 
 <p><img src="images/adding_a_service_2.png" alt="" /></p>
 
-<p>Once you have created a service, you can send alerts for this service from multiple sources.</p>
+<h2 id="delete-a-service">Delete a Service</h2>
 
-<h2 id="adding-multiple-alert-sources-for-one-service">Adding Multiple Alert Sources for one Service</h2>
-
-<p>To get trigger endpoints of different alert sources for a given service, click on the <strong>Alert Sources</strong> button of the service as shown below.</p>
+<p><strong>(1)</strong> Move over to the service that you wish to delete. Click on the <code class="highlighter-rouge">More Options</code> icon and select <code class="highlighter-rouge">Delete</code> from the dropdown</p>
 
 <p><img src="images/adding_a_service_3.png" alt="" /></p>
 
-<p>Select the type of <strong>Alert Source</strong> from the dropdown and you’ll get the corresponding triggering endpoint as well as a link to documentation on how to setup that alert source.</p>
-
-<div class="alert alert-info" role="alert">
-    <i class="fa fa-info-circle"></i> 
-    <b>Note:</b> 
-    <br /><br />The dropdown has all the available active endpoints that can be used to send in alerts into Squadcast.
-    <br /><br />
-    The details of the alert source can be accessed in the Incident Dashboard and Incident Details pages.
-</div>
+<p><strong>(2)</strong> You will then see a confirmation pop-up and you can click on <code class="highlighter-rouge">Delete</code> to delete the service forever.</p>
 
 <p><img src="images/adding_a_service_4.png" alt="" /></p>
 
-<p>So, now when the incident comes for a service via a given alert source, you can see the <strong>Service</strong> in the <strong>Impact On</strong> column and <strong>Alert Source</strong> in <strong>Via</strong> column, in incident listing page:</p>
+<h2 id="alert-sources-integrations">Alert Sources (Integrations)</h2>
+
+<p>A single service can receive alerts from multiple sources</p>
+
+<h3 id="adding-multiple-alert-sources-for-one-service">Adding Multiple Alert Sources for one Service</h3>
+
+<p><strong>(1)</strong> Click on <strong>Alert Sources</strong> for a <strong>Service</strong></p>
 
 <p><img src="images/adding_a_service_5.png" alt="" /></p>
 
-<p>and on the incident details page:</p>
+<p><strong>(2)</strong> Follow the steps below to integrate with an alert source:</p>
+
+<p>(a) Select the type of Alert Source from the dropdown that lists our native integrations</p>
+
+<p>(b) Copy the end point</p>
+
+<p>(c) Click on integration guide to set integrate with the alert source</p>
 
 <p><img src="images/adding_a_service_6.png" alt="" /></p>
 
-<h2 id="pro-tip">Pro Tip</h2>
-
-<div class="alert alert-success" role="alert">
-    <i class="fa fa-check-square-o"></i> 
-    <b>Pro Tip:</b> 
-    <br /><br />We are currently working on improving the UI to show you the list of integrated alert sources for each service.
-</div>
-
-<p>We recommend adding the names of the integrated alert sources under the Service Description so as to keep a note of all the end-points.</p>
+<p>So, now when the incident comes for a Service via a given Alert Source, you can see the <strong>Service</strong> in the <strong>Impact On</strong> column and <strong>Alert Source</strong> in <strong>Via</strong> column, in the Incident Dashboard:</p>
 
 <p><img src="images/adding_a_service_7.png" alt="" /></p>
+
+<p>and on the Incident Details page:</p>
+
+<p><img src="images/adding_a_service_8.png" alt="" /></p>
+
+<p>Similarly, on the Incident List page, for every incoming incident, the Service affected is listed under <strong>Service</strong> and the Alert Source is listed under <strong>Alert source</strong>.</p>
+
+<p><img src="images/adding_a_service_9.png" alt="" /></p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>
+<b>Pro Tip</b>
+<br /><br /><p>We are currently working on improving the UI to show you the list of integrated Alert Sources for each Service.</p>
+</div>
+
+<p>We recommend adding the names of the integrated Alert Sources under the Service description so as to easily keep a note of all the configured end-points.</p>
+
+<p><img src="images/adding_a_service_10.png" alt="" /></p>
 
 
                 <!--div class="tags">

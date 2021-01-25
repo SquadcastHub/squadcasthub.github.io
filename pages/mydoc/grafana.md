@@ -5,68 +5,101 @@ last_updated:
 keywords:
 summary: "Send alerts to Squadcast from Grafana"
 sidebar: mydoc_sidebar
-permalink: docs/grafana.html
+permalink: docs/grafana
 folder: mydoc
 ---
 
-Follow the steps below to configure a service so as to extract its related alert data from Grafana.
+This document will help you integrate [Grafana](https://grafana.com) with Squadcast.
+
+Grafana is a Data Visualization platform that allows you to query, visualize and alert on metrics no matter where they are stored. 
  
-Squadcast will then process this information to create incidents for this service as per your preferences.
+Route detailed alerts from Grafana to the right users in Squadcast.
 
-## Using Grafana as an Alert Source
+## How to integrate Grafana with Squadcast
 
-On the **Sidebar**, click on **Services**.
+### In Squadcast: Using Grafana as an Alert Source
 
-You can either choose to use existing service or [create a new service](adding-a-service-1.html)
+**(1)** On the **Sidebar**, click on **Services**.
 
-Now, click on the corresponding **Alert Sources** button.
+![](images/integration_1-1.png)
+
+**(2)** Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+**(3)** Click the corresponding **Alert Sources**
 
 ![](images/integration_1.png)
 
-Select **Grafana** from  **Alert Source** drop down and copy the Webhook URL shown.
+**(4)** Search for **Grafana** from the Alert Source drop down menu and copy the Webhook URL
 
 ![](images/grafana_1.png)
 
-## Create Squadcast Webhook in Grafana dashboard
+### In Grafana: Create a Squadcast Webhook as a Notification Channel
 
-Login to your Grafana dashboard, Click on the **Alerting (Bell) icon** and select **Notification channels**.
+**(1)** Login to your Grafana dashboard, click on the **Alerting (Bell) icon** and select **Notification Channels**
 
 ![](images/grafana_2.png)
 
-Click on **Add Channel** or **New Channel** and enter the Notification channel name as **Squadcast**, Type as **Webhook**, and enable **Send on all alerts** checkbox as below.
+**(2)** Click on **Add Channel** or **New Channel** and enter the Notification Channel `Name` as **Squadcast** and under `Type`, select **webhook**
+
+**(3)** Under `url`, enter the Webhook URL we have got from the Squadcast Service you copied before 
 
 ![](images/grafana_3.png)
 
-Enter the webhook url we have got from the Squadcast service under **URL** in Webhook settings and select the Http Method as **POST** and click **Save**.
-
-If you'd like to include images to your incident, check the **Include Image** box and you should see it as a part of your incident description in Squadcast. 
-
-If you would like to enable **Auto-Resolve** in Squadcast, then make sure the **Disable Resolve Message** is unchecked.
-
 ![](images/grafana_4.png)
+
+**(4)** Expand `Optional Webhook Settings` and select **POST** under `Http method`. 
 
 ![](images/grafana_5.png)
 
-<p align='center'><img src="images/grafana_6.jpg" style="max-width: 35%"></p>
+**(5)** Under `Notification Settings`, check  **Default** to send all alert data to Squadcast. You can uncheck this if you want only specific Grafana Panels to send alerts to Squadcast. [Move over to this section of our documentation to set up alerting for Specific Grafana Panels](grafana#setup-alerting-for-specific-grafana-panels). 
 
-{{site.data.alerts.blue-note}}
-<b>Sending Grafana Images into Squadcast: </b>
-<br/><br/><p>The Image URL must be public or accessible from your computer for it to be visible on Squadcast. <br/><br/>Even if the Image is not accessible, the Image URL will be provided in the Incident Description.</p>
+{{site.data.alerts.yellow-note-i}}
+<b>Sending Grafana Images into Squadcast</b>
+<br/><p><ul><li>If you'd like to include images to your incident, check <b>Include Image</b>  and you should see it as a part of your incident description in Squadcast.</li><li>The Image URL must be public or accessible from your computer for it to be visible on Squadcast.</li><li>Even if the Image is not accessible, the Image URL will be provided in the Incident Description.</li></ul></p>
 {{site.data.alerts.end}}
 
-## Setup Alerts in Grafana
+{{site.data.alerts.green-note-check}}
+<b>Helpful Grafana Links</b>
+<br/><p><ul><li><a href="https://grafana.com/docs/grafana/latest/installation/configuration/#external-image-storage" target="_blank">Configuring External Image Storage in Grafana</a></li><li><a href="https://grafana.com/docs/grafana/latest/alerting/notifications/#external-image-store" target="_blank">Sending Images to your Incident Alerting Tool</a></li></ul></p>
+{{site.data.alerts.end}}
 
-To setup alerts for a Panel, go to your Grafana dashboard, under options choose **Edit**.
+{{site.data.alerts.yellow-note-i}}
+<b>Important: Auto Resolve</b>
+<br/><br/><p>If you would like to enable <b>Auto-Resolve</b> in Squadcast, then make sure the <b>Disable Resolve Message</b> is unchecked.</p>
+{{site.data.alerts.end}}
+
+![](images/grafana_6.png)
+
+**(5)** Click on **Save** to enable the integration. You can test the integration by clicking on **Test**. This will trigger a test incident in Squadcast. 
 
 ![](images/grafana_7.png)
 
-Then under **Alerts**, click **Create Alert** button.
-
 ![](images/grafana_8.png)
 
-In the Alert Config, under **Notifications**, Add Squadcast webhook as the **Send to** field and enter a Message for the alert and save it.
-
 ![](images/grafana_9.png)
+
+## Setup Alerting for Specific Grafana Panels 
+
+{{site.data.alerts.yellow-note-i}}
+<b>Pre-requisite</b>
+<br/><br/><p>Squadcast should be added as a Notification Channel in your Grafana account. <a href="grafana#in-grafana-create-a-squadcast-webhook-as-a-notification-channel">Follow steps 1-5 here</a> and ensure the following:<br/><ul><li><b>Default</b> is unchecked to allow only specific alerts of your choosing</li><li><b>Include image</b> is checked if you want to add images to your Squadcast incidents</li></ul></p>
+{{site.data.alerts.end}}
+
+**(1)** After you've saved **Squadcast Webhook** as a Notification Channel for your Grafana account, navigate to the panel from your Grafana Dashboard and under options select **Edit**
+
+![](images/grafana_10.png)
+
+**(2)** Under **Alerts**, click **Create Alert** button
+
+![](images/grafana_11.png)
+
+**(3)** To configure your alerts, set rules for when you want an alert triggered in the **Rules** section  
+
+**(4)** In the **Notifications** section , under **Send to**, search and add your previously saved **Squadcast Webhook** and enter a Message for the alert and save it. The message here will be your Incident Message in Squadcast. Ensure that this message is meaningful and provides immediate context in an on-call scenario
+
+![](images/grafana_12.png)
 
 Now, whenever an alert is triggered in Grafana for that particular panel, an incident will be created in Squadcast. When it is resolved in Grafana, it will automatically get Resolved in Squadcast, provided the **Disable Resolve Message** checkbox is **unchecked**.
 

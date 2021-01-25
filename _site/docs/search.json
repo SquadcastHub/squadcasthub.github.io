@@ -74,7 +74,7 @@
 "tags": "integrationapi",
 "keywords": "",
 "url": "/docs/apiv2",
-"summary": "Send events to Squadcast using version 2 of the alerts API (APIv2)"
+"summary": "Send events to Squadcast using Incident API - Squadcast’s generic API Webhook"
 }
 ,
 
@@ -218,6 +218,17 @@
 "keywords": "",
 "url": "/docs/cisco-dnac",
 "summary": "Get Cisco DNAC alerts into Squadcast"
+}
+,
+
+
+
+{
+"title": "Conviva",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/conviva",
+"summary": "Send in your AI & Manual Alerts from Conviva into Squadcast"
 }
 ,
 
@@ -404,7 +415,18 @@
 "tags": "event tagging",
 "keywords": "",
 "url": "/docs/event-tagging",
-"summary": "Event tagging can help you add relevant information to incoming incidents to make it more context-rich for the user"
+"summary": "Auto-add relevant information like priority, severity or alert type to make incoming incidents context-rich"
+}
+,
+
+
+
+{
+"title": "Export Incidents",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/export-incidents",
+"summary": "Export Incidents"
 }
 ,
 
@@ -420,6 +442,17 @@
 ,
 
 
+
+
+
+{
+"title": "Filter Incidents",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/filter-incidents",
+"summary": "Filter Incidents"
+}
+,
 
 
 
@@ -506,7 +539,7 @@
 "title": "Grafana",
 "tags": "integrationgrafana",
 "keywords": "",
-"url": "/docs/grafana.html",
+"url": "/docs/grafana",
 "summary": "Send alerts to Squadcast from Grafana"
 }
 ,
@@ -519,6 +552,17 @@
 "keywords": "",
 "url": "/docs/graylog",
 "summary": "Get alerts to Squadcast from Graylog"
+}
+,
+
+
+
+{
+"title": "HetrixTools",
+"tags": "integrationgrafana",
+"keywords": "",
+"url": "/docs/hetrixtools",
+"summary": "Send alerts to Squadcast from HetrixTools"
 }
 ,
 
@@ -574,6 +618,17 @@
 "keywords": "",
 "url": "/docs/incident-details",
 "summary": "Get more details about the incident"
+}
+,
+
+
+
+{
+"title": "Incident List Table View",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/incident-list-table-view",
+"summary": "List view for all your incidents"
 }
 ,
 
@@ -784,7 +839,7 @@
 "tags": "maintenance mode",
 "keywords": "",
 "url": "/docs/maintenance-mode",
-"summary": "Maintenance Work"
+"summary": "Create Maintenance Mode windows for Services"
 }
 ,
 
@@ -1053,6 +1108,17 @@
 "keywords": "",
 "url": "/docs/saml-sso",
 "summary": "Enable Single Sign On (SSO) for your organization with any SAML 2.0 based SSO"
+}
+,
+
+
+
+{
+"title": "Save Filter View",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/save-filter-view",
+"summary": "Build your filters and save them as views for quick access"
 }
 ,
 
@@ -1454,6 +1520,17 @@
 "keywords": "",
 "url": "/docs/zabbix-integration-guide",
 "summary": "Send events to Squadcast from Zabbix"
+}
+,
+
+
+
+{
+"title": "Zabbix 5.0",
+"tags": "integrationzabbix",
+"keywords": "",
+"url": "/docs/zabbix-5",
+"summary": "Route alerts from Zabbix 5.0 into Squadcast"
 }
 
 

@@ -184,6 +184,26 @@ entries:
 #      url: /mydoc_git_collaboration
 #      output: web, pdf
 
+  - title: Incident List
+    output: web, pdf
+
+    folderitems:
+    - title: Incident List Table View
+      url: /docs/incident-list-table-view
+      output: web, pdf
+
+    - title: Filter Incidents
+      url: /docs/filter-incidents
+      output: web, pdf
+
+    - title: Export Incidents
+      url: /docs/export-incidents
+      output: web, pdf
+
+    - title: Save Filter View
+      url: /docs/save-filter-view
+      output: web, pdf
+
   - title: Incidents Page
     output: web, pdf
 
@@ -284,6 +304,10 @@ entries:
       url: /docs/cisco-dnac
       output: web, pdf
 
+    - title: Conviva
+      url: /docs/conviva
+      output: web, pdf
+
     - title: CopperEgg
       url: /docs/copperegg
       output: web, pdf
@@ -326,6 +350,10 @@ entries:
 
     - title: Graylog
       url: /docs/graylog
+      output: web, pdf
+
+    - title: HetrixTools
+      url: /docs/hetrixtools
       output: web, pdf
 
     - title: Honeybadger
@@ -488,7 +516,11 @@ entries:
       url: /docs/zabbix-integration-guide
       output: web, pdf
 
-  - title: Integrations (Extensions)
+    - title: Zabbix 5.0
+      url: /docs/zabbix-5
+      output: web, pdf
+
+  - title: Extensions
     output: web, pdf
 
     folderitems:
