@@ -38,29 +38,29 @@ You can reach out to us via the Intercom Chat Widget in the bottom right corner 
 
 - Move over to `My Profile` from the `Person` icon on the top right corner of the screen. 
 
-![](images/change_password_1.png){: style="border: 1px solid #cccccc; max-width: 70%;"}
+![](images/change_password_1.png){: style="max-width: 70%;"}
 
 - Click on `More` icon and choose `Change Password` from the dropdown. 
 
-![](images/change_password_2.png){: style="border: 1px solid #cccccc; max-width: 70%;"}
+![](images/change_password_2.png){: style="max-width: 70%;"}
 
 - Fill in the fields and your password will be changed. 
 
-![](images/change_password_3.png){: style="border: 1px solid #cccccc; max-width: 70%;"}
+![](images/change_password_3.png){: style="max-width: 70%;"}
 
 ## 5. I have forgotten my password. How to reset my password? 
 
 - Click on `Forgot Password`
 
-![](images/forgot_password_1.png){: style="border: 1px solid #cccccc; max-width: 70%;"}
+![](images/forgot_password_1.png){: style="max-width: 70%;"}
 
 - Enter in the email address associated with your Squadcast account
 
-![](images/forgot_password_2.png){: style="border: 1px solid #cccccc; max-width: 70%;"}
+![](images/forgot_password_2.png){: style="max-width: 70%;"}
 
 - You'll now receive a `Reset Password Link` to the email address entered. You can enter in your new password and log in again. 
 
-![](images/forgot_password_3.png){: style="border: 1px solid #cccccc; max-width: 70%;"}
+![](images/forgot_password_3.png){: style="max-width: 70%;"}
 
 ## 6. Do I still get billed when I deactivate my organization?
 
@@ -134,7 +134,7 @@ However, right now, we support SAML 2.0 based SSOs.
 
 - Upgrade to a plan of your choice. 
 
-![](images/upgrade_2.png){: style="border: 1px solid #cccccc;"}
+![](images/upgrade_2.png)
 
 <div markdown="span" class="alert alert-info" role="alert">
     <i class="fa fa-info-circle"></i> 
@@ -185,7 +185,7 @@ Squadcast offers a Technical Writer Program and we'd love to get you on-board! Y
 
 - Change your User Role from `Account Owner` to `Admin` or any of the other roles. You can then change the User Role of the intended person to `Account Owner` and then hit `Save`. 
 
-![](images/users_2.png){: style="border: 1px solid #cccccc;"}
+![](images/users_2.png)
 
 <div markdown="span" class="alert alert-info" role="alert">
     <i class="fa fa-info-circle"></i> 
