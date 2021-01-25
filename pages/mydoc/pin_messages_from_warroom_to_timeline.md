@@ -6,6 +6,8 @@ last_updated:
 sidebar: mydoc_sidebar
 permalink: docs/pin-messages-from-warroom-to-timeline
 folder: mydoc
+published: false
+search: exclude
 ---
 
 You can use this feature to pin important messages from the War Room to the Incident Timeline to ensure that any important notes or suggestions are saved for future reference. 

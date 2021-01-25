@@ -5,7 +5,7 @@ keywords:
 last_updated: 
 summary: "Send log alerts to Squadcast from Logz.io (ELK stack)"
 sidebar: mydoc_sidebar
-permalink: docs/logz.io
+permalink: docs/logzio
 folder: mydoc
 ---
 

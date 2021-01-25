@@ -180,6 +180,10 @@ entries:
       url: /docs/take-bulk-actions
       output: web, pdf
 
+    - title: Squadcast Search
+      url: /docs/squadcast-search
+      output: web, pdf
+
 #    - title: Git collaboration
 #      url: /mydoc_git_collaboration
 #      output: web, pdf
@@ -218,10 +222,6 @@ entries:
 
     - title: Incident War Room
       url: /docs/warroom
-      output: web, pdf
-
-    - title: Pin messages from War Room to the Incident Timeline
-      url: /docs/pin-messages-from-warroom-to-timeline
       output: web, pdf
 
     - title: Manually Creating an Incident
@@ -284,6 +284,10 @@ entries:
       url: /docs/apiv2
       output: web, pdf
 
+    - title: AppSignal
+      url: /docs/appsignal
+      output: web, pdf
+
     - title: Azure Monitor
       url: /docs/azure-monitor
       output: web, pdf
@@ -324,6 +328,10 @@ entries:
       url: /docs/datadog
       output: web, pdf
 
+    - title: Dynatrace
+      url: /docs/dynatrace
+      output: web, pdf
+
     - title: Elastic
       url: /docs/elastic
       output: web, pdf
@@ -358,6 +366,10 @@ entries:
 
     - title: Honeybadger
       url: /docs/honeybadger
+      output: web, pdf
+
+    - title: Icinga2
+      url: /docs/icinga2
       output: web, pdf
 
     - title: InsightOps (LogEntries)
@@ -397,7 +409,7 @@ entries:
       output: web, pdf
 
     - title: Logz.io
-      url: /docs/logz.io
+      url: /docs/logzio
       output: web, pdf
 
     - title: ManageEngine Opmanager
@@ -436,8 +448,16 @@ entries:
       url: /docs/prometheus
       output: web, pdf
 
+    - title: PRTG Network Monitor
+      url: /docs/prtg-network-monitor
+      output: web, pdf
+
     - title: Rapid7 InsightIDR
       url: /docs/rapid7-insightidr
+      output: web, pdf
+
+    - title: Rollbar
+      url: /docs/rollbar
       output: web, pdf
 
     - title: Runscope
@@ -454,6 +474,10 @@ entries:
 
     - title: Sensu
       url: /docs/sensu
+      output: web, pdf
+
+    - title: Sensu Go
+      url: /docs/sensu-go
       output: web, pdf
 
     - title: Sentry.io
@@ -490,6 +514,10 @@ entries:
 
     - title: Stackdriver
       url: /docs/stackdriver
+      output: web, pdf
+      
+    - title: Stackify Retrace
+      url: /docs/stackify-retrace
       output: web, pdf
 
     - title: StatusCake
@@ -642,6 +670,10 @@ entries:
 
     - title: Upgrading to a Paid Plan
       url: /docs/upgrading-to-a-paid-plan
+      output: web, pdf
+
+    - title: Terraform Provider for Squadcast
+      url: /docs/terraform-provider-for-squadcast
       output: web, pdf
 
     #- title: Glossary layout

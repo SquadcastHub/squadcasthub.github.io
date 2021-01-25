@@ -56,6 +56,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/appsignal</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/aws-cloudtrail-logs</loc>
   </url>
   
@@ -206,6 +212,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/dynatrace</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/editing-an-existing-escalation-policy</loc>
   </url>
   
@@ -325,6 +337,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/how-to-video-squadcast-actions</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/icinga2</loc>
   </url>
   
   
@@ -458,7 +476,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/logz.io</loc>
+    <loc>http://localhost:4000/docs/logzio</loc>
   </url>
   
   
@@ -568,12 +586,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/pin-messages-from-warroom-to-timeline</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/pingdom</loc>
   </url>
   
@@ -594,6 +606,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/prtg-network-monitor</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/getting-started</loc>
   </url>
   
@@ -601,6 +619,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/rapid7-insightidr</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/rollbar</loc>
   </url>
   
   
@@ -647,6 +671,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/sensu</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/sensu-go</loc>
   </url>
   
   
@@ -738,7 +768,19 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/squadcast-search</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/stackdriver</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/stackify-retrace</loc>
   </url>
   
   
@@ -797,6 +839,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/take-bulk-actions</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/terraform-provider-for-squadcast</loc>
   </url>
   
   

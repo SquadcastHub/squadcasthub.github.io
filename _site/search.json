@@ -92,6 +92,17 @@
 
 
 {
+"title": "AppSignal",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/appsignal",
+"summary": "Get alerts from AppSignal into Squadcast"
+}
+,
+
+
+
+{
 "title": "AWS CloudTrail Logs",
 "tags": "integrationaws cloudtrail logs",
 "keywords": "",
@@ -367,6 +378,17 @@
 
 
 {
+"title": "Dynatrace",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/dynatrace",
+"summary": "Send in your problem notifications from Dynatrace into Squadcast"
+}
+,
+
+
+
+{
 "title": "Editing an Existing Escalation Policy",
 "tags": "escalation policies",
 "keywords": "",
@@ -585,6 +607,17 @@
 "keywords": "",
 "url": "/docs/how-to-video-squadcast-actions",
 "summary": "Here's a how-to-video on how you can use Squadcast Actions & Runbooks for faster incident resolution"
+}
+,
+
+
+
+{
+"title": "Icinga2",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/icinga2",
+"summary": "Get alerts from Icinga2 into Squadcast"
 }
 ,
 
@@ -827,7 +860,7 @@
 "title": "Logz.io",
 "tags": "LogstashManageEngine-Opmanager",
 "keywords": "",
-"url": "/docs/logz.io",
+"url": "/docs/logzio",
 "summary": "Send log alerts to Squadcast from Logz.io (ELK stack)"
 }
 ,
@@ -1024,17 +1057,6 @@
 
 
 {
-"title": "Pin messages from War Room to the Incident Timeline",
-"tags": "pin messages",
-"keywords": "",
-"url": "/docs/pin-messages-from-warroom-to-timeline",
-"summary": "Pin and unpin your War Room messages to the Incident Timeline."
-}
-,
-
-
-
-{
 "title": "Pingdom",
 "tags": "integrationpingdom",
 "keywords": "",
@@ -1070,6 +1092,17 @@
 
 
 {
+"title": "PRTG Network Monitor",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/prtg-network-monitor",
+"summary": "Get alerts from PRTG Network Monitor into Squadcast"
+}
+,
+
+
+
+{
 "title": "Quickstart Guide",
 "tags": "GlossarySet-up-your-profile",
 "keywords": "",
@@ -1086,6 +1119,17 @@
 "keywords": "",
 "url": "/docs/rapid7-insightidr",
 "summary": "Get alerts from Rapid7 InsightIDR into Squadcast"
+}
+,
+
+
+
+{
+"title": "Rollbar",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/rollbar",
+"summary": "Get alerts from Rollbar into Squadcast"
 }
 ,
 
@@ -1167,6 +1211,17 @@
 "keywords": "",
 "url": "/docs/sensu",
 "summary": "Send events to Squadcast from Sensu"
+}
+,
+
+
+
+{
+"title": "Sensu Go",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/sensu-go",
+"summary": "Get alerts from Sensu Go into Squadcast"
 }
 ,
 
@@ -1329,11 +1384,33 @@
 
 
 {
+"title": "Squadcast Search",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/squadcast-search",
+"summary": "Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + K</code> for search. Search also supports GOTO for instant navigation. GOTO can be accessed directly with <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'CMD/CTRL + SHIFT + K</code>. (use CTRL for windows and CMD as meta keys for mac)."
+}
+,
+
+
+
+{
 "title": "Stackdriver",
 "tags": "integrationstackdriver",
 "keywords": "",
 "url": "/docs/stackdriver",
 "summary": "Send events to Squadcast from Google Stackdriver"
+}
+,
+
+
+
+{
+"title": "Stackify Retrace",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/stackify-retrace",
+"summary": "Get alerts from Stackify's Retrace into Squadcast"
 }
 ,
 
@@ -1422,6 +1499,17 @@
 "keywords": "",
 "url": "/docs/take-bulk-actions",
 "summary": "Bulk actions help you change the incident states of multiple incidents at one go"
+}
+,
+
+
+
+{
+"title": "Terraform Provider for Squadcast",
+"tags": "set-up-your-profilemanaging-all-users",
+"keywords": "",
+"url": "/docs/terraform-provider-for-squadcast",
+"summary": "Use Terraform to configure your services in Squadcast"
 }
 ,
 

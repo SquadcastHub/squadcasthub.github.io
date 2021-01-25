@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Pin and unpin your War Room messages to the Incident Timeline.">
-<meta name="keywords" content="pin messages,  ">
-<title>Pin messages from War Room to the Incident Timeline | Incident Management using Squadcast</title>
+<meta name="description" content="Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use CMD/CTRL + K for search. Search also supports GOTO fo...">
+<meta name="keywords" content="set-up-your-profilemanaging-all-users,  ">
+<title>Squadcast Search | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Pin messages from War Room to the Incident Timeline page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Squadcast Search page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Pin messages from War Room to the Incident Timeline">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Squadcast Search">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -501,6 +501,13 @@
           
           
           
+          
+          
+          <li class="active"><a title="Squadcast Search" href="/docs/squadcast-search">Squadcast Search</a></li>
+          
+          
+          
+          
       </ul>
    </li>
      
@@ -564,13 +571,6 @@
           
           
           <li><a title="Incident War Room" href="/docs/warroom">Incident War Room</a></li>
-          
-          
-          
-          
-          
-          
-          <li class="active"><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline">Pin messages from War Room to the Incident Timeline</a></li>
           
           
           
@@ -674,6 +674,13 @@
           
           
           
+          <li><a title="AppSignal" href="/docs/appsignal">AppSignal</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Azure Monitor" href="/docs/azure-monitor">Azure Monitor</a></li>
           
           
@@ -744,6 +751,13 @@
           
           
           
+          <li><a title="Dynatrace" href="/docs/dynatrace">Dynatrace</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Elastic" href="/docs/elastic">Elastic</a></li>
           
           
@@ -801,6 +815,13 @@
           
           
           <li><a title="Honeybadger" href="/docs/honeybadger">Honeybadger</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Icinga2" href="/docs/icinga2">Icinga2</a></li>
           
           
           
@@ -870,7 +891,7 @@
           
           
           
-          <li><a title="Logz.io" href="/docs/logz.io">Logz.io</a></li>
+          <li><a title="Logz.io" href="/docs/logzio">Logz.io</a></li>
           
           
           
@@ -940,7 +961,21 @@
           
           
           
+          <li><a title="PRTG Network Monitor" href="/docs/prtg-network-monitor">PRTG Network Monitor</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Rapid7 InsightIDR" href="/docs/rapid7-insightidr">Rapid7 InsightIDR</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Rollbar" href="/docs/rollbar">Rollbar</a></li>
           
           
           
@@ -969,6 +1004,13 @@
           
           
           <li><a title="Sensu" href="/docs/sensu">Sensu</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Sensu Go" href="/docs/sensu-go">Sensu Go</a></li>
           
           
           
@@ -1032,6 +1074,13 @@
           
           
           <li><a title="Stackdriver" href="/docs/stackdriver">Stackdriver</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Stackify Retrace" href="/docs/stackify-retrace">Stackify Retrace</a></li>
           
           
           
@@ -1314,6 +1363,13 @@
           
           
           
+          
+          
+          <li><a title="Terraform Provider for Squadcast" href="/docs/terraform-provider-for-squadcast">Terraform Provider for Squadcast</a></li>
+          
+          
+          
+          
       </ul>
    </li>
      
@@ -1401,48 +1457,70 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Pin messages from War Room to the Incident Timeline</h1>
+            <h1 class="post-title-main">Squadcast Search</h1>
         </div>
             
-                <div class="summary">Pin and unpin your War Room messages to the Incident Timeline.</div>
+                <div class="summary">Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + K</code> for search. Search also supports GOTO for instant navigation. GOTO can be accessed directly with <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'CMD/CTRL + SHIFT + K</code>. (use CTRL for windows and CMD as meta keys for mac).</div>
             
 
                 
 
-            <p>You can use this feature to pin important messages from the War Room to the Incident Timeline to ensure that any important notes or suggestions are saved for future reference.</p>
+            <h2 id="basic-commands">Basic commands</h2>
 
-<h2 id="pinning-messages-to-the-incident-timeline">Pinning Messages to the Incident Timeline</h2>
+<p>Search requires some basic commands to work with. Once in search, autocompletes can be provided with <code class="highlighter-rouge">Tab</code>. use <code class="highlighter-rouge">CTRL + SPACE</code> to view autocomplete. Access search helps within search by typing in <code class="highlighter-rouge">?:</code>. To execute a command use <code class="highlighter-rouge">CMD + ENTER</code> for Mac and <code class="highlighter-rouge">CTRL + ENTER</code> for windows.</p>
 
-<ul>
-  <li>Move over to the War Room in the Incident Details page</li>
-</ul>
+<p><img src="images/search_1.png" alt="" /></p>
 
-<p><img src="images/pin1.png" alt="" /></p>
+<h2 id="goto">GOTO</h2>
 
-<ul>
-  <li>When you hover over a message you can see a <code class="highlighter-rouge">pin</code> icon using which you can pin a message to the Incident Timeline.</li>
-</ul>
+<p>GOTO enables for instant navigation. Open up goto with (CMD/CTRL + SHIFT + K) and type in the route you want to navigate. GOTO has a profile section, you can add in the team members’ email and it will navigate to respective profile.</p>
 
-<p><img src="images/pin2.png" alt="" /></p>
+<p><img src="images/search_2.png" alt="" /></p>
 
-<p><img src="images/pin3.png" alt="" /></p>
+<p><img src="images/search_3.png" alt="" /></p>
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>
-Messages cannot be pinned from Slack to the Incident Timeline even if Slack is integrated today.
+<h2 id="help">Help</h2>
+
+<p>Now you can navigate to integration documents directly through the search. Type in <code class="highlighter-rouge">help:</code> and the docs you want to search.</p>
+
+<p><img src="images/search_4.png" alt="" /></p>
+
+<h2 id="search-through-incidents">Search through Incidents</h2>
+
+<p>Search incidents with queries. We support a set of tokens to fine-tune the results. Supported tokens can be viewed in the search help by typing <code class="highlighter-rouge">?:</code></p>
+
+<p><img src="images/search_5.png" alt="" /></p>
+
+<h2 id="search-through-postmortems">Search through Postmortems</h2>
+
+<p>Search postmortems with queries from the <strong>Global  Search Bar</strong></p>
+
+<p>We support a set of tokens to fine-tune the results. Supported tokens can be viewed in the search help by typing <code class="highlighter-rouge">?:</code></p>
+
+<p><img src="images/search_6.png" alt="" /></p>
+
+<p>You can search for Postmortems through Incident Number, Incident Message and Description, Impacted Service, Created After, Created Before and Postmortem Content.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note: The <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">message</code> query</b>
+<br /><br /><p>The <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">message</code> query looks for a string match in the Incident Title and the Postmortem Content.</p>
 </div>
 
-<h2 id="unpinning-messages-to-the-incident-timeline">Unpinning Messages to the Incident Timeline</h2>
+<p>Example Use Case:</p>
 
-<p>You can unpin a message from the Incident Timeline by following the steps below.</p>
+<p>I want to look for a postmortem that contains the string <code class="highlighter-rouge">jira</code> in its Incident Message.</p>
 
 <ul>
-  <li>Hover over the message in timeline</li>
-  <li>Click the <code class="highlighter-rouge">unpin</code> icon .</li>
+  <li>Type in <code class="highlighter-rouge">?:</code> if you want to look up the query token</li>
+  <li>Type in <code class="highlighter-rouge">in: postmortem message "jira"</code></li>
+  <li>Hit <code class="highlighter-rouge">Command + Enter</code></li>
 </ul>
 
-<p><img src="images/pin4.png" alt="" /></p>
+<p>Your search results that match this query will be populated as shown below</p>
 
-<p><img src="images/pin5.png" alt="" /></p>
+<p><img src="images/search_7.png" alt="" /></p>
+
+<p>Search also provides history of queries. Search history is specific to a user with respect to the organization.</p>
 
 
                 <!--div class="tags">
@@ -1450,6 +1528,14 @@ Messages cannot be pinned from Slack to the Incident Timeline even if Slack is i
                     <h2>Related Documents </h2>
                     
                     
+                    
+                    
+                    <a href="set-up-your-profile.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">set up your profile<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
+                    
+                    
+                    
+                    
+                    <a href="managing-all-users.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">managing all users<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
