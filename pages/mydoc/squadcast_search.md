@@ -4,7 +4,7 @@ tags: [set-up-your-profile, managing-all-users]
 keywords: 
 last_updated: 
 datatable: 
-summary: "Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + K</code> for search. Search also supports GOTO for instant navigation. GOTO can be accessed directly with <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'CMD/CTRL + SHIFT + K</code>.
+summary: "Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + K</code> for search. Search also supports GOTO for instant navigation. GOTO can be accessed directly with <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + SHIFT + K</code>.
 (use CTRL for windows and CMD as meta keys for mac)."
 sidebar: mydoc_sidebar
 permalink: docs/squadcast-search
