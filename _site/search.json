@@ -1179,7 +1179,7 @@
 "tags": "integrationslack",
 "keywords": "",
 "url": "/docs/slack",
-"summary": "Trigger, Ack, Resolve, Re-assign, Snooze, Escalate - everything from Slack."
+"summary": "Trigger, Ack, Resolve incidents from Slack."
 }
 ,
 
