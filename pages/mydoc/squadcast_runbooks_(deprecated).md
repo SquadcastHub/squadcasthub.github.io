@@ -48,7 +48,7 @@ squadcast-agent -key YOUR-API-KEY-HERE
 
 You can configure as many agents in as many systems as you want using the same API key. Each agent will be identified using their unique hostname.
 
-Now your Squadcast Runbooks Integration is good to go. You can setup Squadcast Runbooks and execute them as part of [Squadcast Actions](squadcast-actions).
+Now your Squadcast Runbooks Integration is good to go. You can setup Squadcast Runbooks and execute them as part of [Squadcast Actions](what-are-squadcast-actions).
 
 ## Create Runbooks
 

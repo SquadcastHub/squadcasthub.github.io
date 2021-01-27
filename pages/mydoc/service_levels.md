@@ -29,8 +29,8 @@ In the Service levels, add a group name and select the DEX SDK for your service 
 
 {{site.data.alerts.blue-note}}
 <b>DEX SDK Links:</b>
-<br/><br/><p>DEX SDK for Golang: <a href="https://github.com/squadcastHQ/dex-go" target=_blank>https://github.com/squadcastHQ/dex-go</a>
-<br/>DEX SDK for NodeJS: <a href="https://github.com/squadcastHQ/dex-node" target=_blank>https://github.com/squadcastHQ/dex-node</a></p>
+<br/><br/><p>DEX SDK for Golang: <a href="https://github.com/squadcastHQ/dex-go" target="_blank">https://github.com/squadcastHQ/dex-go</a>
+<br/>DEX SDK for NodeJS: <a href="https://github.com/squadcastHQ/dex-node" target="_blank">https://github.com/squadcastHQ/dex-node</a></p>
 {{site.data.alerts.end}}
 
 ![](images/service_levels_2.png)

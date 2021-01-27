@@ -217,7 +217,7 @@ At Squadcast, we pride ourselves in the kind of support we offer to our users an
 - In-App Chat
 - [Support Email](mailto:support@squadcast.com)
 - Phone Number: [+1 650 670 3104](tel:+16506703104)
-- [Documentation Support Hub](support.squadcast.com)
+- [Documentation Support Hub](/)
 - [GitHub Support](https://github.com/SquadcastHub/squadcast-support/issues)
 
 ### 7. ✨ Latest Product Updates

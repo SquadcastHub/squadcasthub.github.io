@@ -102,7 +102,7 @@ The dashboard functionalities:
 - Bulk Actions: You can take actions to bulk acknowledge or resolve incidents from the **Actions** button the incident section from the dashboard page. 
 
 ### Alert
-An alert is an incoming JSON sent to Squadcast from any alerting tool. Alerts are sent into Squadcast through **[alert source integrations](https://www.squadcast.com/integrations)** that you can find here. Alerts can be of different types - informational, warnings or actionable. You will also be able to send in alerts through our **[API](api)** or **[Email integration](email)**.
+An alert is an incoming JSON sent to Squadcast from any alerting tool. Alerts are sent into Squadcast through **[alert source integrations](https://www.squadcast.com/integrations)** that you can find here. Alerts can be of different types - informational, warnings or actionable. You will also be able to send in alerts through our **[API](apiv2)** or **[Email integration](email)**.
 
 ### Incident 
 An incident can be made up of multiple alerts or can be a standalone incident that is service / customer impacting. An incident is triggered within a service via the alert source integration. This then sets off the notification for the on-call user as per its escalation policy. When an incident is triggered, it will be in the **Triggered** state until the on-call user acknowledges it. 

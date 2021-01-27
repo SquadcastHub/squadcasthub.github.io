@@ -11,7 +11,7 @@ folder: mydoc
 
 Squadcast provides a completely customizable schedules feature where you can configure almost any regular or complex schedules that are followed by organizations today. 
 
-This document walks you through some popularly used schedules and how you can set them up on Squadcast. For more information on some basics of schedule creation on Squadcast, please go through **[this](https://support.squadcast.com/schedules)**. 
+This document walks you through some popularly used schedules and how you can set them up on Squadcast. For more information on some basics of schedule creation on Squadcast, please go through **[this](schedules)**. 
 
 Squadcast Schedules is built to address any kind of complex shifts, even those that are not mentioned in this article. We'd be happy to walk you through setting this up if your use case is not covered here or is too complex.  Do drop us a line [here](mailto:support@squadcast.com) and we'll get back to you shortly.
 
