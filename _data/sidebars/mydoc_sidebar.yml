@@ -116,10 +116,6 @@ entries:
       url: /docs/alert-routing
       output: web, pdf
 
-    - title: Deleting a Service
-      url: /docs/deleting-a-service
-      output: web, pdf
-
     - title: Alert Suppression
       url: /docs/alert-suppression
       output: web, pdf
