@@ -47,6 +47,18 @@ You need to have at least one [Escalation Policy](escalation-policies) before yo
 
 ![](images/adding_a_service_4.png)
 
+### Unable to delete Service and an error message is thrown
+
+In cases where there are open (Triggered / Acknowledged) incidents for a service, the system will not allow you to delete the service without resolving these incidents. 
+
+You will be able to see a similar error message in cases like these. 
+
+![](images/deleting_service_4.png)
+
+You will have to resolve all the open incidents and then follow the same process stated above to delete the service. 
+
+To resolve multiple incidents at one shot, check out the [Take Bulk Actions](take-bulk-actions) documentation.
+
 ## Alert Sources (Integrations)
 
 A single service can receive alerts from multiple sources 
