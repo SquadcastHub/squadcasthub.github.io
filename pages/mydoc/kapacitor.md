@@ -3,7 +3,7 @@ title: Kapacitor
 tags: [Jira-Server-Alert-Source, LogDNA]
 keywords: 
 last_updated: 
-summary: "Send alerts from to Squadcast from Kapacitor"
+summary: "Send alerts to Squadcast from Kapacitor"
 sidebar: mydoc_sidebar
 permalink: docs/kapacitor
 folder: mydoc
