@@ -415,7 +415,7 @@
 "tags": "integrationemail",
 "keywords": "",
 "url": "/docs/email",
-"summary": "Send events to Squadcast from Email"
+"summary": "Send alerts to Squadcast via Email"
 }
 ,
 
