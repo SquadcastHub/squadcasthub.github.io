@@ -228,9 +228,9 @@ entries:
       url: /docs/postmortems
       output: web, pdf
       
-    - title: Incident Notes
-      url: /docs/incident-notes
-      output: web, pdf
+    # - title: Incident Notes
+    #   url: /docs/incident-notes
+    #   output: web, pdf
 
     #- title: Pushing builds to server
     #  url: /mydoc_push_build_to_server
