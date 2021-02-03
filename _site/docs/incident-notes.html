@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="See who is on-call on the Squadcast Mobile App">
-<meta name="keywords" content="mobile appschedules,  ">
-<title>View Schedules on the Mobile App | Incident Management using Squadcast</title>
+<meta name="description" content="Push important notes here for easier information sharing">
+<meta name="keywords" content="incident,  ">
+<title>Incident Notes | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the View Schedules on the Mobile App page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident Notes page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="View Schedules on the Mobile App">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Incident Notes">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -584,7 +584,7 @@
           
           
           
-          <li><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
+          <li class="active"><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -1261,7 +1261,7 @@
           
           
           
-          <li class="active"><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
+          <li><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
           
           
           
@@ -1464,31 +1464,119 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">View Schedules on the Mobile App</h1>
+            <h1 class="post-title-main">Incident Notes</h1>
         </div>
             
-                <div class="summary">See who is on-call on the Squadcast Mobile App</div>
+                <div class="summary">Push important notes here for easier information sharing</div>
             
 
                 
 
-            <p>You can see any and all schedules created for your organization from within your Squadcast Mobile App.</p>
+            <p>Incident Notes enables you to add important notes and pointers that can help mitigate the incident faster.</p>
 
-<p>To know how to view schedules on your mobile app, follow the steps below:</p>
+<p>You can use this to:</p>
+<ul>
+  <li>Collaborate and resolve the incident</li>
+  <li>Use it to store important pointers that will help with the mitigation</li>
+  <li>Use it to store notes that can be populated in the postmortem report</li>
+  <li>Share organization wide information like Resolution Reason, Follow-up Tasks and so on</li>
+</ul>
 
-<ol>
-  <li>You can click on <strong>Schedules</strong> from the left side navigation sidebar to view the ongoing and upcoming schedules along with sift length and details of members on the shift.</li>
-</ol>
+<p><img src="images/incident_notes_1.png" alt="" /></p>
 
-<p><img src="images/schedules_mobile_1.png" alt="" style="max-width: 30%" /></p>
+<h2 id="features">Features</h2>
 
-<p><img src="images/schedules_mobile_2.png" alt="" style="max-width: 30%" /></p>
+<h3 id="tagging-user">Tagging User</h3>
 
-<p>The screenshots used here are from the iOS App and are similar to the view provided on the Android App.</p>
+<ul>
+  <li>One can address users using “@” symbol. This can be used while adding in user specific notes.</li>
+</ul>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-<br /><br /><p>Only a view access is provided for schedules on the mobile app. To create a schedule on the Web App only.</p>
+<p><img src="images/incident_notes_2.png" alt="" /></p>
+
+<ul>
+  <li>Users who are on-call at that instant are indicated by a green dot against their name. In the above screenshot, you can see that <strong>Diane Nyugen</strong> is on-call.</li>
+</ul>
+
+<p><br /></p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Who is On-call?</b>
+<br /><br /><p>Users who are on-call across all schedules in the organization are indicated with the green dot.</p>
 </div>
+<p><br /></p>
+
+<ul>
+  <li>The user addressed would get notified instantly via email as well as push notification.</li>
+</ul>
+
+<p><br /></p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>NOTE</b>
+<br /><br />
+<p>Only users who have verified their email would be receiving any kind of notification. For getting push notification, you also need to the latest version of the Squadcast mobile app installed.</p>
+</div>
+
+<p><img src="images/incident_notes_3.png" alt="" /></p>
+
+<p><img src="images/incident_notes_4.png" alt="" /></p>
+
+<h3 id="adding-images-in-notes">Adding Images in Notes</h3>
+
+<ul>
+  <li>Incident Notes supports markdown text. So, one can add in Images as URLs, Links among other important data as well.</li>
+</ul>
+
+<p><img src="images/incident_notes_5.png" alt="" /></p>
+
+<p><img src="images/incident_notes_6.png" alt="" /></p>
+
+<h3 id="editing-or-deleting-a-note">Editing or Deleting a Note</h3>
+
+<ul>
+  <li>One can edit or delete existing notes as well as by clicking on the 3 dots corresponding to a particular note that appear on hover</li>
+</ul>
+
+<p><img src="images/incident_notes_7.png" alt="" /></p>
+
+<h3 id="starring-and-un-starring-notes">Starring and Un-starring Notes</h3>
+
+<ul>
+  <li>
+    <p>In addition to editing / deleting, one can star important notes by clicking on the star button as shown in the above screenshot beside the 3 dots.</p>
+  </li>
+  <li>
+    <p>There is a view to see only the starred notes as well, which can be viewed by clicking the <strong>View Starred Notes</strong> button.</p>
+  </li>
+</ul>
+
+<p><img src="images/incident_notes_8.png" alt="" /></p>
+
+<p><img src="images/incident_notes_9.png" alt="" /></p>
+
+<ul>
+  <li>At any later point of time, if you feel a Starred note is not that important and hence want to un-star it, that’s also doable by clicking back again on the Star icon.</li>
+</ul>
+
+<p><img src="images/incident_notes_10.png" alt="" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Permissions</b>
+<br /><br />
+<p>
+The permissions for performing actions on notes is as follows:<br />
+<ul><li><b>Note Creation</b>: Any user can create a note.</li>
+<li><b>Note Updation</b>: Only the author of the note can update it.</li>
+<li><b>Note Deletion</b>: Only the author of the note can delete it.</li>
+<li><b>Note Starring</b>: Any user can star any note.</li>
+<li><b>Note Un-starring</b>: Any user can un-star any note.</li></ul>
+</p>
+</div>
+
+<ul>
+  <li>Only the note starring activity would be captured in the activity timeline. You can click on a particular note starring activity in the timeline to see that particular note highlighted in the notes window as well.</li>
+</ul>
+
+<p><img src="images/incident_notes_11.png" alt="" /></p>
 
 
                 <!--div class="tags">
@@ -1496,11 +1584,6 @@ li.sidebarTitle{
                     <h2>Related Documents </h2>
                     
                     
-                    
-                    
-                    
-                    
-                    <a href="schedules.html" class="btn btn-default navbar-btn cursorNorm" role="button"style="min-width: 120px; height: 120px; text-align: left; margin-right: 20px; font-weight: 600;">schedules<br/><ul style="padding-left: 20px;"><li>----</li><li>----</li><li>----</li></ul></a>
                     
                     
                     
