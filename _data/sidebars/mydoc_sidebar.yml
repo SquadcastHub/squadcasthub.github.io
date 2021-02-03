@@ -180,10 +180,6 @@ entries:
       url: /docs/squadcast-search
       output: web, pdf
 
-#    - title: Git collaboration
-#      url: /mydoc_git_collaboration
-#      output: web, pdf
-
   - title: Incident List
     output: web, pdf
 
@@ -671,4 +667,3 @@ entries:
     - title: Terraform Provider for Squadcast
       url: /docs/terraform-provider-for-squadcast
       output: web, pdf
-      
