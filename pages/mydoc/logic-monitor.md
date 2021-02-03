@@ -62,7 +62,13 @@ Route detailed monitoring alerts from LogicMonitor to the right users in Squadca
 
 ![](images/logic-monitor5.png)
 
-- Within **Alert Data**, you can either manually specify all the data that your alert payload should contain or use the **Insert Token** drop-down to add data variables. Select **Raw**. Additionally, from the **Format** drop-down, select **Form Data**
+- Within **Alert Data**, paste the following template:
+
+```
+service=##SERVICE##&alertid=##ALERTID##&alerttype=##ALERTTYPE##&alertstatus=##ALERTSTATUS##&level=##LEVEL##&host=##HOST##&datasource=##DATASOURCE##&eventsource=##EVENTSOURCE##&batchjob=##BATCHJOB##&group=##GROUP##&datapoint=##DATAPOINT##&start=##START##&finish=##FINISH##&duration=##DURATION##&value=##VALUE##&threshold=##THRESHOLD##&userdata=##USERDATA##&cmdline=##CMDLINE##&exitCode=##EXITCODE##&stdout=##STDOUT##&stderr=##STDERR##&agent=##AGENT_DESCRIPTION##&checkpoint=##CHECKPOINT##&datapointdesc=##DPDESCRIPTION##&hostdesc=##HOSTDESCRIPTION##&hostinfo=##system.sysinfo##&hostips=##system.ips##&hosturl=##DEVICEURL##&instance=##INSTANCE##&dsidesc=##DSIDESCRIPTION##&batchdesc=##BJDESCRIPTION##&hostname=##system.hostname##&dsdesc=##DSDESCRIPTION##&eventmsg=##LIMITEDMESSAGE##&eventlogmsg=##MESSAGE##&eventcode=##EVENTCODE##&eventtype=##TYPE##&eventuser=##USER##&eventlogfile=##LOGFILE##&servicedetail=##DETAIL##&serviceurl=##URL##&servicegroup=##SERVICEGROUP##&date=##DATE##&clearvalue=##CLEARVALUE##&internalid=##INTERNALID##&alerturl=##ALERTDETAILURL##
+```
+
+Enable **Raw**. Additionally, from the **Format** drop-down, select **Form Data**
 - Do *not* enable the checkbox for **Include an ID provided in HTTP response when updating alert status**
 
 **(5)** Click on **Test Alert Delivery**. This is will send a *Test* alert to Squadcast, triggering a *Test* incident. Verify this to ensure the integration is working as expected
