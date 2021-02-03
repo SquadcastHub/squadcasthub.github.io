@@ -657,6 +657,17 @@
 
 
 {
+"title": "Incident Notes",
+"tags": "incident",
+"keywords": "",
+"url": "/docs/incident-notes",
+"summary": "Push important notes here for easier information sharing"
+}
+,
+
+
+
+{
 "title": "Incident Rate Limiting",
 "tags": "rate limiting",
 "keywords": "",
@@ -829,6 +840,17 @@
 "keywords": "",
 "url": "/docs/loggly",
 "summary": "Send events to Squadcast from Loggly"
+}
+,
+
+
+
+{
+"title": "LogicMonitor",
+"tags": "",
+"keywords": "",
+"url": "/docs/logic-monitor",
+"summary": "Send alerts to Squadcast from LogicMonitor"
 }
 ,
 
