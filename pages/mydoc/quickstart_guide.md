@@ -126,11 +126,7 @@ You can search through our documentation to find helpful alert source integratio
 
 📅 **Create schedules**
 
-Schedules can be used to create on-call schedules based on different time-zones, configurable rotations, and multiple hand-offs. You can create unique Schedules for each Services, having only the relevant engineers. See how to [Manage Schedules](schedules)
-
-🏖️ **Use Vacation mode for scheduled overrides**
-
-Vacation mode/ Alert Forwarding is used to forward one's alerts to another on-call user for a period of time. It can be accessed from the  [Users](https://app.squadcast.com/users) page on the navigation sidebar. Alert Forwarding is typically used if the on-call user is sick, on vacation or had to step away due to an emergency and want another user to fill in for them. All the alerts that are assigned to him from his shifts, rotations or event directly, will be sent to the user that is stepping in. Alert forwarding is also known as Vacation Mode. To know more about how to set this up, [click here](alert-forwarding)
+Schedules can be used to create on-call schedules based on different time-zones, configurable rotations, and multiple hand-offs. You can create unique Schedules for each Services, having only the relevant engineers. See how to [Manage Schedules](schedules) and add [overrides](schedule-overrides)
 
 ### 2. ⚡ Incident Response - Reduce MTTR with Faster Response
 
@@ -182,8 +178,8 @@ Note that this rule will override the escalation policy attached to the service.
 
 🔕  **Suppress non-actionable alerts**
 
-[Suppression rules](suppression-rules) is a part of the Squadcast Rules Engine that allows you to configure rules to automatically suppress non-actionable alerts such as warning, informational or test alerts. Based on your configuration, alerts will be suppressed and you will not be unnecessary notified. All suppressed data will still be available on the platform.
-See how to configure your [Suppression Rules](suppression-rules).
+[Suppression rules](alert-suppression) is a part of the Squadcast Rules Engine that allows you to configure rules to automatically suppress non-actionable alerts such as warning, informational or test alerts. Based on your configuration, alerts will be suppressed and you will not be unnecessary notified. All suppressed data will still be available on the platform.
+See how to configure your [Suppression Rules](alert-suppression).
 
 ### 4. 🔊 Incident communication 
 

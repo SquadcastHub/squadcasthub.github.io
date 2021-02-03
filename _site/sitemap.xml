@@ -200,12 +200,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/deleting-a-service</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/deleting-your-squadcast-account</loc>
   </url>
   
@@ -367,6 +361,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/incident-list-table-view</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/incident-notes</loc>
   </url>
   
   

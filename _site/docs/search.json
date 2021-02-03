@@ -356,17 +356,6 @@
 
 
 {
-"title": "Deleting a Service",
-"tags": "deleting servicedeletingservice",
-"keywords": "",
-"url": "/docs/deleting-a-service",
-"summary": "Deleting a Service"
-}
-,
-
-
-
-{
 "title": "Deleting your Squadcast Account",
 "tags": "deletingaccount",
 "keywords": "",
@@ -426,7 +415,7 @@
 "tags": "integrationemail",
 "keywords": "",
 "url": "/docs/email",
-"summary": "Send events to Squadcast from Email"
+"summary": "Send alerts to Squadcast via Email"
 }
 ,
 
@@ -668,6 +657,17 @@
 
 
 {
+"title": "Incident Notes",
+"tags": "incident",
+"keywords": "",
+"url": "/docs/incident-notes",
+"summary": "Push important notes here for easier information sharing"
+}
+,
+
+
+
+{
 "title": "Incident Rate Limiting",
 "tags": "rate limiting",
 "keywords": "",
@@ -817,7 +817,7 @@
 "tags": "Jira-Server-Alert-SourceLogDNA",
 "keywords": "",
 "url": "/docs/kapacitor",
-"summary": "Send alerts from to Squadcast from Kapacitor"
+"summary": "Send alerts to Squadcast from Kapacitor"
 }
 ,
 

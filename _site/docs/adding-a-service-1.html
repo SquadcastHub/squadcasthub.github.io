@@ -385,13 +385,6 @@
           
           
           
-          <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
@@ -585,6 +578,13 @@
           
           
           <li><a title="Postmortems" href="/docs/postmortems">Postmortems</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -1509,6 +1509,18 @@ li.sidebarTitle{
 <p><strong>(2)</strong> You will then see a confirmation pop-up and you can click on <code class="highlighter-rouge">Delete</code> to delete the service forever.</p>
 
 <p><img src="images/adding_a_service_4.png" alt="" /></p>
+
+<h3 id="unable-to-delete-service-and-an-error-message-is-thrown">Unable to delete Service and an error message is thrown</h3>
+
+<p>In cases where there are open (Triggered / Acknowledged) incidents for a service, the system will not allow you to delete the service without resolving these incidents.</p>
+
+<p>You will be able to see a similar error message in cases like these.</p>
+
+<p><img src="images/deleting_service_4.png" alt="" /></p>
+
+<p>You will have to resolve all the open incidents and then follow the same process stated above to delete the service.</p>
+
+<p>To resolve multiple incidents at one shot, check out the <a href="take-bulk-actions">Take Bulk Actions</a> documentation.</p>
 
 <h2 id="alert-sources-integrations">Alert Sources (Integrations)</h2>
 
