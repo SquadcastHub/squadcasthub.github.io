@@ -7,8 +7,6 @@ summary: "Push important notes here for easier information sharing"
 sidebar: mydoc_sidebar
 permalink: docs/incident-notes
 folder: mydoc
-published: false
-search: exclude
 ---
 
 Incident Notes enables you to add important notes and pointers that can help mitigate the incident faster. 

@@ -1,674 +1,669 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: sidebar
-  product: 
-  version: 
-  folders:
-
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage
-      output: pdf
-      type: frontmatter
-
-  - title: Getting Started
-    output: web, pdf
-    folderitems:
-
-    - title: Quickstart Guide
-      url: /docs/getting-started
-      output: web, pdf
-      type: homepage
-
-    - title: Glossary
-      url: /docs/glossary
-      output: web, pdf
-
-    - title: FAQs
-      url: /docs/squadcast-faq
-      output: web, pdf
-
-  - title: User Management
-    output: web, pdf
-    folderitems:
-
-    - title: Manage Your Profile
-      url: /docs/set-up-your-profile
-      output: web, pdf
-
-    - title: Manage All Users
-      url: /docs/managing-all-users
-      output: web, pdf
-
-    - title: Add Users
-      url: /docs/add-users
-      output: web, pdf
-
-    - title: Import Users
-      url: /docs/import-users
-      output: web, pdf
-
-    - title: Notification Rules
-      url: /docs/notification-rules
-      output: web, pdf
-
-    - title: Change Account Owner
-      url: /docs/transfer-ownership
-      output: web, pdf
-
-  - title: Squads
-    output: web, pdf
-    folderitems:
-
-    - title: Manage Squads
-      url: /docs/squads
-      output: web, pdf
-
-    - title: Create Smart Squads
-      url: /docs/create-smart-squads
-      output: web, pdf
-
-  - title: Services
-    output: web, pdf
-    
-    folderitems:
-    - title: Adding a Service
-      url: /docs/adding-a-service-1
-      output: web, pdf
-
-    - title: Maintenance Mode
-      url: /docs/maintenance-mode
-      output: web, pdf
-
-    - title: Service Levels (Deprecated)
-      url: /docs/service-levels
-      output: web, pdf
-
-      subfolders:
-      - title: Alert Deduplication Rules
-        output: web
-        subfolderitems:
-        - title: Alert Deduplication Rules
-          url: /de-duplication-rules
-          output: web, pdf
-
-        - title: Incident Status Based Deduplication
-          url: /status-based-deduplication
-          output: web, pdf
-
-        - title: Service Dependency Based Deduplication
-          url: /service-dependency-based-deduplication
-          output: web, pdf
-
-    - title: Event Tagging
-      url: /docs/event-tagging
-      output: web, pdf
-
-    - title: Alert Routing
-      url: /docs/alert-routing
-      output: web, pdf
-
-    - title: Alert Suppression
-      url: /docs/alert-suppression
-      output: web, pdf
-
-  - title: Schedules
-    output: web, pdf
-
-    folderitems:
-    - title: Create and Manage On-call Schedules & Rotations
-      url: /docs/schedules
-      output: web, pdf
-
-    - title: Supported On-call Schedules & Rotations
-      url: /docs/schedule-types
-      output: web, pdf
-
-    - title: Who is On-Call?
-      url: /docs/who-is-on-call
-      output: web, pdf
-
-    - title: Schedule Overrides
-      url: /docs/schedule-overrides
-      output: web, pdf
-
-  - title: Escalation Policies
-    output: web, pdf
-
-    folderitems:
-    - title: Create & Manage Escalation Policies
-      url: /docs/escalation-policies
-      output: web, pdf
-    
-    - title: Editing an Existing Escalation Policy
-      url: /docs/editing-an-existing-escalation-policy
-      output: web, pdf
-
-    - title: Invoke an Escalation Policy for an Existing Incident
-      url: /docs/invoke-an-escalation-policy-for-an-existing-incident
-      output: web, pdf
-
-  - title: Dashboards
-    output: web, pdf
-
-    folderitems:
-    - title: Incident Dashboard
-      url: /docs/incident-dashboard
-      output: web, pdf
-
-    - title: Dashboard Metrics
-      url: /docs/dashboard-metrics
-      output: web, pdf
-
-    - title: SLO Dashboard (Deprecated)
-      url: /docs/slo-dashboard
-      output: web, pdf
-
-    - title: Take Bulk Actions
-      url: /docs/take-bulk-actions
-      output: web, pdf
-
-    - title: Squadcast Search
-      url: /docs/squadcast-search
-      output: web, pdf
-
-#    - title: Git collaboration
-#      url: /mydoc_git_collaboration
-#      output: web, pdf
-
-  - title: Incident List
-    output: web, pdf
-
-    folderitems:
-    - title: Incident List Table View
-      url: /docs/incident-list-table-view
-      output: web, pdf
-
-    - title: Filter Incidents
-      url: /docs/filter-incidents
-      output: web, pdf
-
-    - title: Export Incidents
-      url: /docs/export-incidents
-      output: web, pdf
-
-    - title: Save Filter View
-      url: /docs/save-filter-view
-      output: web, pdf
-
-  - title: Incidents Page
-    output: web, pdf
-
-    folderitems:
-    - title: Incident Details
-      url: /docs/incident-details
-      output: web, pdf
-
-    - title: Incident Timeline
-      url: /docs/incident-timeline
-      output: web, pdf
-
-    - title: Incident War Room
-      url: /docs/warroom
-      output: web, pdf
-
-    - title: Manually Creating an Incident
-      url: /docs/manually-creating-an-incident
-      output: web, pdf
-
-    - title: Postmortems
-      url: /docs/postmortems
-      output: web, pdf
-      
-    # - title: Incident Notes
-    #   url: /docs/incident-notes
-    #   output: web, pdf
-
-  - title: StatusPage
-    output: web, pdf
-
-    folderitems:
-    - title: StatusPage
-      url: /docs/statuspage
-      output: web, pdf
-
-  - title: Analytics
-    output: web, pdf
-
-    folderitems:
-    - title: Analyze Metrics
-      url: /docs/analytics
-      output: web, pdf
-
-  - title: Alert Source Integrations
-    output: web, pdf
-
-    folderitems:
-    - title: Amazon Cloudwatch (AWS)
-      url: /docs/amazon-cloudwatch-aws
-      output: web, pdf
-
-    - title: AWS CloudWatch Event Rules
-      url: /docs/aws-cloudwatch-event-rules
-      output: web, pdf
-
-    - title: AWS CloudTrail Logs
-      url: /docs/aws-cloudtrail-logs
-      output: web, pdf
-
-    - title: AWS CloudTrail via CloudWatch
-      url: /docs/aws-cloudtrail-via-cloudwatch
-      output: web, pdf
-
-    - title: AppDynamics
-      url: /docs/appdynamics
-      output: web, pdf
-
-    - title: Incident API
-      url: /docs/apiv2
-      output: web, pdf
-
-    - title: AppSignal
-      url: /docs/appsignal
-      output: web, pdf
-
-    - title: Azure Monitor
-      url: /docs/azure-monitor
-      output: web, pdf
-
-    - title: Bugsnag
-      url: /docs/bugsnag
-      output: web, pdf
-
-    - title: Buildkite
-      url: /docs/buildkite
-      output: web, pdf
-
-    - title: Checkmk
-      url: /docs/checkmk
-      output: web, pdf
-
-    - title: Cisco DNAC
-      url: /docs/cisco-dnac
-      output: web, pdf
-
-    - title: Conviva
-      url: /docs/conviva
-      output: web, pdf
-
-    - title: CopperEgg
-      url: /docs/copperegg
-      output: web, pdf
-
-    - title: Coralogix
-      url: /docs/coralogix
-      output: web, pdf
-
-    - title: Crashlytics
-      url: /docs/crashlytics
-      output: web, pdf
-
-    - title: Datadog
-      url: /docs/datadog
-      output: web, pdf
-
-    - title: Dynatrace
-      url: /docs/dynatrace
-      output: web, pdf
-
-    - title: Elastic
-      url: /docs/elastic
-      output: web, pdf
-
-    - title: ElastAlert
-      url: /docs/elastalert
-      output: web, pdf
-
-    - title: Email
-      url: /docs/email
-      output: web, pdf
-
-    - title: Freshping
-      url: /docs/freshping
-      output: web, pdf
-
-    - title: Ghost Inspector
-      url: /docs/ghost-inspector
-      output: web, pdf
-
-    - title: Grafana
-      url: /docs/grafana
-      output: web, pdf
-
-    - title: Graylog
-      url: /docs/graylog
-      output: web, pdf
-
-    - title: HetrixTools
-      url: /docs/hetrixtools
-      output: web, pdf
-
-    - title: Honeybadger
-      url: /docs/honeybadger
-      output: web, pdf
-
-    - title: Icinga2
-      url: /docs/icinga2
-      output: web, pdf
-
-    - title: InsightOps (LogEntries)
-      url: /docs/insightops-logentries
-      output: web, pdf
-
-    - title: Instana
-      url: /docs/instana
-      output: web, pdf
-
-    - title: Jenkins Integration
-      url: /docs/jenkins
-      output: web, pdf
-
-    - title: Jira Cloud Alert Source
-      url: /docs/jira-cloud-alert-source
-      output: web, pdf
-
-    - title: Jira Server Alert Source
-      url: /docs/jira-server-alert-source
-      output: web, pdf
-
-    - title: Kapacitor
-      url: /docs/kapacitor
-      output: web, pdf
-
-    - title: LogDNA
-      url: /docs/logdna
-      output: web, pdf
-
-    - title: Loggly
-      url: /docs/loggly
-      output: web, pdf
-
-    - title: LogicMonitor
-      url: /docs/logic-monitor
-      output: web, pdf
-
-    - title: Logstash
-      url: /docs/logstash-integration-guide
-      output: web, pdf
-
-    - title: Logz.io
-      url: /docs/logzio
-      output: web, pdf
-
-    - title: ManageEngine Opmanager
-      url: /docs/manageengine-opmanager
-      output: web, pdf
-
-    - title: MongoDB Atlas / Cloud Manager
-      url: /docs/mongodb-atlas-cloud-manager
-      output: web, pdf
-
-    - title: Nagios
-      url: /docs/nagios
-      output: web, pdf
-
-    - title: New Relic
-      url: /docs/new-relic
-      output: web, pdf
-
-    - title: Nixstats
-      url: /docs/nixstats
-      output: web, pdf
-
-    - title: OverOps
-      url: /docs/overops
-      output: web, pdf
-    
-    - title: Papertrail
-      url: /docs/papertrail
-      output: web, pdf
-
-    - title: Pingdom
-      url: /docs/pingdom
-      output: web, pdf
-
-    - title: Prometheus
-      url: /docs/prometheus
-      output: web, pdf
-
-    - title: PRTG Network Monitor
-      url: /docs/prtg-network-monitor
-      output: web, pdf
-
-    - title: Rapid7 InsightIDR
-      url: /docs/rapid7-insightidr
-      output: web, pdf
-
-    - title: Rollbar
-      url: /docs/rollbar
-      output: web, pdf
-
-    - title: Runscope
-      url: /docs/runscope
-      output: web, pdf
-
-    - title: Scout APM
-      url: /docs/scout-apm
-      output: web, pdf
-
-    - title: Sematext
-      url: /docs/sematext
-      output: web, pdf
-
-    - title: Sensu
-      url: /docs/sensu
-      output: web, pdf
-
-    - title: Sensu Go
-      url: /docs/sensu-go
-      output: web, pdf
-
-    - title: Sentry.io
-      url: /docs/sentryio
-      output: web, pdf
-
-    - title: Server Density
-      url: /docs/server-density
-      output: web, pdf
-
-    - title: SignalFx
-      url: /docs/signalfx
-      output: web, pdf
-
-    - title: Site24x7
-      url: /docs/site24x7
-      output: web, pdf
-
-    - title: Slack Alert Source Integration
-      url: /docs/slack-as-an-alert-source
-      output: web, pdf
-
-    - title: SolarWinds AppOptics
-      url: /docs/solarwinds-appoptics
-      output: web, pdf
-
-    - title: Splunk
-      url: /docs/splunk
-      output: web, pdf
-
-    - title: Sqreen
-      url: /docs/sqreen
-      output: web, pdf
-
-    - title: Stackdriver
-      url: /docs/stackdriver
-      output: web, pdf
-      
-    - title: Stackify Retrace
-      url: /docs/stackify-retrace
-      output: web, pdf
-
-    - title: StatusCake
-      url: /docs/statuscake
-      output: web, pdf
-
-    - title: Sumo Logic
-      url: /docs/sumo-logic
-      output: web, pdf
-
-    - title: Sysdig Monitor
-      url: /docs/sysdig-monitor
-      output: web, pdf
-
-    - title: Threat Stack
-      url: /docs/threat-stack
-      output: web, pdf
-
-    - title: Uptime Robot
-      url: /docs/uptime-robot
-      output: web, pdf
-
-    - title: Zabbix
-      url: /docs/zabbix-integration-guide
-      output: web, pdf
-
-    - title: Zabbix 5.0
-      url: /docs/zabbix-5
-      output: web, pdf
-
-  - title: Extensions
-    output: web, pdf
-
-    folderitems:
-    - title: CircleCI Integration
-      url: /docs/circleci-integration
-      output: web, pdf
-
-    - title: GitHub
-      url: /docs/github
-      output: web, pdf
-
-    - title: Google Hangouts
-      url: /docs/hangouts
-      output: web, pdf
-
-    - title: Jira Cloud
-      url: /docs/jira-cloud
-      output: web, pdf
-    
-    - title: Jira Server (On-Premise)
-      url: /docs/jira-server-on-premise
-      output: web, pdf
-
-    - title: Slack
-      url: /docs/slack
-      output: web, pdf
-
-  - title: SSO
-    output: web, pdf
-
-    folderitems:
-    - title: Azure Active Directory SSO
-      url: /docs/azure-active-directory-sso
-      output: web, pdf
-
-    - title: Google SSO
-      url: /docs/google-sso
-      output: web, pdf
-
-    - title: Microsoft ADFS SSO
-      url: /docs/adfs-sso
-      output: web, pdf
-
-    - title: Okta SSO
-      url: /docs/okta-sso-integration
-      output: web, pdf
-
-    - title: SAML 2.0 based SSO
-      url: /docs/saml-sso
-      output: web, pdf
-
-  - title: Mobile App
-    output: web, pdf
-
-    folderitems:
-    - title: Using the Mobile App
-      url: /docs/using-the-mobile-app
-      output: web, pdf
-
-    - title: Pin messages from War Room to the Incident Timeline
-      url: /docs/pin-messages-from-warroom-to-timeline-1
-      output: web, pdf
-
-    - title: View Schedules on the Mobile App
-      url: /docs/mobile-app-see-who-is-on-call
-      output: web, pdf
-
-  - title: Squadcast Actions
-    output: web, pdf
-
-    folderitems:
-    - title: What are Squadcast Actions?
-      url: /docs/what-are-squadcast-actions
-      output: web, pdf
-
-    - title: CircleCI Actions
-      url: /docs/circleci-actions
-      output: web, pdf
-
-    - title: Squadcast Runbooks (Deprecated)
-      url: /docs/squadcast-runbooks
-      output: web, pdf
-
-    - title: How to Video - Squadcast Actions
-      url: /docs/how-to-video-squadcast-actions
-      output: web, pdf
-
-  - title: Squadcast API Documentation
-    output: web, pdf
-
-    folderitems:
-    - title: Squadcast Public API - Refresh Token
-      url: /docs/squadcast-public-api
-      output: web, pdf
-
-    - title: Squadcast API Documentation
-      external_url: https://apidocs.squadcast.com
-      output: web, pdf
-
-  - title: Managing your Squadcast Account
-    output: web, pdf
-
-    folderitems:
-    - title: Deactivating your Squadcast Account
-      url: /docs/deactivating-your-squadcast-account
-      output: web, pdf
-    
-    - title: Deleting your Squadcast Account
-      url: /docs/deleting-your-squadcast-account
-      output: web, pdf
-
-    - title: Incident Rate Limiting
-      url: /docs/incident-rate-limiting
-      output: web, pdf
-
-    - title: Organizations
-      url: /docs/squadcast-organizations
-      output: web, pdf
-
-    - title: Upgrading to a Paid Plan
-      url: /docs/upgrading-to-a-paid-plan
-      output: web, pdf
-
-    - title: Terraform Provider for Squadcast
-      url: /docs/terraform-provider-for-squadcast
-      output: web, pdf
-      
+  - title: sidebar
+    product:
+    version:
+    folders:
+      - title:
+        output: pdf
+        type: frontmatter
+        folderitems:
+          - title:
+            url: /titlepage
+            output: pdf
+            type: frontmatter
+          - title:
+            url: /tocpage
+            output: pdf
+            type: frontmatter
+
+      - title: Getting Started
+        output: web, pdf
+        folderitems:
+          - title: Quickstart Guide
+            url: /docs/getting-started
+            output: web, pdf
+            type: homepage
+
+          - title: Glossary
+            url: /docs/glossary
+            output: web, pdf
+
+          - title: FAQs
+            url: /docs/squadcast-faq
+            output: web, pdf
+
+      - title: User Management
+        output: web, pdf
+        folderitems:
+          - title: Manage Your Profile
+            url: /docs/set-up-your-profile
+            output: web, pdf
+
+          - title: Manage All Users
+            url: /docs/managing-all-users
+            output: web, pdf
+
+          - title: Add Users
+            url: /docs/add-users
+            output: web, pdf
+
+          - title: Import Users
+            url: /docs/import-users
+            output: web, pdf
+
+          - title: Notification Rules
+            url: /docs/notification-rules
+            output: web, pdf
+
+          - title: Change Account Owner
+            url: /docs/transfer-ownership
+            output: web, pdf
+
+      - title: Squads
+        output: web, pdf
+        folderitems:
+          - title: Manage Squads
+            url: /docs/squads
+            output: web, pdf
+
+          - title: Create Smart Squads
+            url: /docs/create-smart-squads
+            output: web, pdf
+
+      - title: Services
+        output: web, pdf
+
+        folderitems:
+          - title: Adding a Service
+            url: /docs/adding-a-service-1
+            output: web, pdf
+
+          - title: Maintenance Mode
+            url: /docs/maintenance-mode
+            output: web, pdf
+
+          - title: Service Levels (Deprecated)
+            url: /docs/service-levels
+            output: web, pdf
+
+            subfolders:
+              - title: Alert Deduplication Rules
+                output: web
+                subfolderitems:
+                  - title: Alert Deduplication Rules
+                    url: /de-duplication-rules
+                    output: web, pdf
+
+                  - title: Incident Status Based Deduplication
+                    url: /status-based-deduplication
+                    output: web, pdf
+
+                  - title: Service Dependency Based Deduplication
+                    url: /service-dependency-based-deduplication
+                    output: web, pdf
+
+          - title: Event Tagging
+            url: /docs/event-tagging
+            output: web, pdf
+
+          - title: Alert Routing
+            url: /docs/alert-routing
+            output: web, pdf
+
+          - title: Alert Suppression
+            url: /docs/alert-suppression
+            output: web, pdf
+
+      - title: Schedules
+        output: web, pdf
+
+        folderitems:
+          - title: Create and Manage On-call Schedules & Rotations
+            url: /docs/schedules
+            output: web, pdf
+
+          - title: Supported On-call Schedules & Rotations
+            url: /docs/schedule-types
+            output: web, pdf
+
+          - title: Who is On-Call?
+            url: /docs/who-is-on-call
+            output: web, pdf
+
+          - title: Schedule Overrides
+            url: /docs/schedule-overrides
+            output: web, pdf
+
+      - title: Escalation Policies
+        output: web, pdf
+
+        folderitems:
+          - title: Create & Manage Escalation Policies
+            url: /docs/escalation-policies
+            output: web, pdf
+
+          - title: Editing an Existing Escalation Policy
+            url: /docs/editing-an-existing-escalation-policy
+            output: web, pdf
+
+          - title: Invoke an Escalation Policy for an Existing Incident
+            url: /docs/invoke-an-escalation-policy-for-an-existing-incident
+            output: web, pdf
+
+      - title: Dashboards
+        output: web, pdf
+
+        folderitems:
+          - title: Incident Dashboard
+            url: /docs/incident-dashboard
+            output: web, pdf
+
+          - title: Dashboard Metrics
+            url: /docs/dashboard-metrics
+            output: web, pdf
+
+          - title: SLO Dashboard (Deprecated)
+            url: /docs/slo-dashboard
+            output: web, pdf
+
+          - title: Take Bulk Actions
+            url: /docs/take-bulk-actions
+            output: web, pdf
+
+          - title: Squadcast Search
+            url: /docs/squadcast-search
+            output: web, pdf
+
+      #    - title: Git collaboration
+      #      url: /mydoc_git_collaboration
+      #      output: web, pdf
+
+      - title: Incident List
+        output: web, pdf
+
+        folderitems:
+          - title: Incident List Table View
+            url: /docs/incident-list-table-view
+            output: web, pdf
+
+          - title: Filter Incidents
+            url: /docs/filter-incidents
+            output: web, pdf
+
+          - title: Export Incidents
+            url: /docs/export-incidents
+            output: web, pdf
+
+          - title: Save Filter View
+            url: /docs/save-filter-view
+            output: web, pdf
+
+      - title: Incidents Page
+        output: web, pdf
+
+        folderitems:
+          - title: Incident Details
+            url: /docs/incident-details
+            output: web, pdf
+
+          - title: Incident Timeline
+            url: /docs/incident-timeline
+            output: web, pdf
+
+          - title: Incident War Room
+            url: /docs/warroom
+            output: web, pdf
+
+          - title: Manually Creating an Incident
+            url: /docs/manually-creating-an-incident
+            output: web, pdf
+
+          - title: Postmortems
+            url: /docs/postmortems
+            output: web, pdf
+
+          - title: Incident Notes
+            url: /docs/incident-notes
+            output: web, pdf
+
+      - title: StatusPage
+        output: web, pdf
+
+        folderitems:
+          - title: StatusPage
+            url: /docs/statuspage
+            output: web, pdf
+
+      - title: Analytics
+        output: web, pdf
+
+        folderitems:
+          - title: Analyze Metrics
+            url: /docs/analytics
+            output: web, pdf
+
+      - title: Alert Source Integrations
+        output: web, pdf
+
+        folderitems:
+          - title: Amazon Cloudwatch (AWS)
+            url: /docs/amazon-cloudwatch-aws
+            output: web, pdf
+
+          - title: AWS CloudWatch Event Rules
+            url: /docs/aws-cloudwatch-event-rules
+            output: web, pdf
+
+          - title: AWS CloudTrail Logs
+            url: /docs/aws-cloudtrail-logs
+            output: web, pdf
+
+          - title: AWS CloudTrail via CloudWatch
+            url: /docs/aws-cloudtrail-via-cloudwatch
+            output: web, pdf
+
+          - title: AppDynamics
+            url: /docs/appdynamics
+            output: web, pdf
+
+          - title: Incident API
+            url: /docs/apiv2
+            output: web, pdf
+
+          - title: AppSignal
+            url: /docs/appsignal
+            output: web, pdf
+
+          - title: Azure Monitor
+            url: /docs/azure-monitor
+            output: web, pdf
+
+          - title: Bugsnag
+            url: /docs/bugsnag
+            output: web, pdf
+
+          - title: Buildkite
+            url: /docs/buildkite
+            output: web, pdf
+
+          - title: Checkmk
+            url: /docs/checkmk
+            output: web, pdf
+
+          - title: Cisco DNAC
+            url: /docs/cisco-dnac
+            output: web, pdf
+
+          - title: Conviva
+            url: /docs/conviva
+            output: web, pdf
+
+          - title: CopperEgg
+            url: /docs/copperegg
+            output: web, pdf
+
+          - title: Coralogix
+            url: /docs/coralogix
+            output: web, pdf
+
+          - title: Crashlytics
+            url: /docs/crashlytics
+            output: web, pdf
+
+          - title: Datadog
+            url: /docs/datadog
+            output: web, pdf
+
+          - title: Dynatrace
+            url: /docs/dynatrace
+            output: web, pdf
+
+          - title: Elastic
+            url: /docs/elastic
+            output: web, pdf
+
+          - title: ElastAlert
+            url: /docs/elastalert
+            output: web, pdf
+
+          - title: Email
+            url: /docs/email
+            output: web, pdf
+
+          - title: Freshping
+            url: /docs/freshping
+            output: web, pdf
+
+          - title: Ghost Inspector
+            url: /docs/ghost-inspector
+            output: web, pdf
+
+          - title: Grafana
+            url: /docs/grafana
+            output: web, pdf
+
+          - title: Graylog
+            url: /docs/graylog
+            output: web, pdf
+
+          - title: HetrixTools
+            url: /docs/hetrixtools
+            output: web, pdf
+
+          - title: Honeybadger
+            url: /docs/honeybadger
+            output: web, pdf
+
+          - title: Icinga2
+            url: /docs/icinga2
+            output: web, pdf
+
+          - title: InsightOps (LogEntries)
+            url: /docs/insightops-logentries
+            output: web, pdf
+
+          - title: Instana
+            url: /docs/instana
+            output: web, pdf
+
+          - title: Jenkins Integration
+            url: /docs/jenkins
+            output: web, pdf
+
+          - title: Jira Cloud Alert Source
+            url: /docs/jira-cloud-alert-source
+            output: web, pdf
+
+          - title: Jira Server Alert Source
+            url: /docs/jira-server-alert-source
+            output: web, pdf
+
+          - title: Kapacitor
+            url: /docs/kapacitor
+            output: web, pdf
+
+          - title: LogDNA
+            url: /docs/logdna
+            output: web, pdf
+
+          - title: Loggly
+            url: /docs/loggly
+            output: web, pdf
+
+          - title: LogicMonitor
+            url: /docs/logic-monitor
+            output: web, pdf
+
+          - title: Logstash
+            url: /docs/logstash-integration-guide
+            output: web, pdf
+
+          - title: Logz.io
+            url: /docs/logzio
+            output: web, pdf
+
+          - title: ManageEngine Opmanager
+            url: /docs/manageengine-opmanager
+            output: web, pdf
+
+          - title: MongoDB Atlas / Cloud Manager
+            url: /docs/mongodb-atlas-cloud-manager
+            output: web, pdf
+
+          - title: Nagios
+            url: /docs/nagios
+            output: web, pdf
+
+          - title: New Relic
+            url: /docs/new-relic
+            output: web, pdf
+
+          - title: Nixstats
+            url: /docs/nixstats
+            output: web, pdf
+
+          - title: OverOps
+            url: /docs/overops
+            output: web, pdf
+
+          - title: Papertrail
+            url: /docs/papertrail
+            output: web, pdf
+
+          - title: Pingdom
+            url: /docs/pingdom
+            output: web, pdf
+
+          - title: Prometheus
+            url: /docs/prometheus
+            output: web, pdf
+
+          - title: PRTG Network Monitor
+            url: /docs/prtg-network-monitor
+            output: web, pdf
+
+          - title: Rapid7 InsightIDR
+            url: /docs/rapid7-insightidr
+            output: web, pdf
+
+          - title: Rollbar
+            url: /docs/rollbar
+            output: web, pdf
+
+          - title: Runscope
+            url: /docs/runscope
+            output: web, pdf
+
+          - title: Scout APM
+            url: /docs/scout-apm
+            output: web, pdf
+
+          - title: Sematext
+            url: /docs/sematext
+            output: web, pdf
+
+          - title: Sensu
+            url: /docs/sensu
+            output: web, pdf
+
+          - title: Sensu Go
+            url: /docs/sensu-go
+            output: web, pdf
+
+          - title: Sentry.io
+            url: /docs/sentryio
+            output: web, pdf
+
+          - title: Server Density
+            url: /docs/server-density
+            output: web, pdf
+
+          - title: SignalFx
+            url: /docs/signalfx
+            output: web, pdf
+
+          - title: Site24x7
+            url: /docs/site24x7
+            output: web, pdf
+
+          - title: Slack Alert Source Integration
+            url: /docs/slack-as-an-alert-source
+            output: web, pdf
+
+          - title: SolarWinds AppOptics
+            url: /docs/solarwinds-appoptics
+            output: web, pdf
+
+          - title: Splunk
+            url: /docs/splunk
+            output: web, pdf
+
+          - title: Sqreen
+            url: /docs/sqreen
+            output: web, pdf
+
+          - title: Stackdriver
+            url: /docs/stackdriver
+            output: web, pdf
+
+          - title: Stackify Retrace
+            url: /docs/stackify-retrace
+            output: web, pdf
+
+          - title: StatusCake
+            url: /docs/statuscake
+            output: web, pdf
+
+          - title: Sumo Logic
+            url: /docs/sumo-logic
+            output: web, pdf
+
+          - title: Sysdig Monitor
+            url: /docs/sysdig-monitor
+            output: web, pdf
+
+          - title: Threat Stack
+            url: /docs/threat-stack
+            output: web, pdf
+
+          - title: Uptime Robot
+            url: /docs/uptime-robot
+            output: web, pdf
+
+          - title: Zabbix
+            url: /docs/zabbix-integration-guide
+            output: web, pdf
+
+          - title: Zabbix 5.0
+            url: /docs/zabbix-5
+            output: web, pdf
+
+      - title: Extensions
+        output: web, pdf
+
+        folderitems:
+          - title: CircleCI Integration
+            url: /docs/circleci-integration
+            output: web, pdf
+
+          - title: GitHub
+            url: /docs/github
+            output: web, pdf
+
+          - title: Google Hangouts
+            url: /docs/hangouts
+            output: web, pdf
+
+          - title: Jira Cloud
+            url: /docs/jira-cloud
+            output: web, pdf
+
+          - title: Jira Server (On-Premise)
+            url: /docs/jira-server-on-premise
+            output: web, pdf
+
+          - title: Slack
+            url: /docs/slack
+            output: web, pdf
+
+      - title: SSO
+        output: web, pdf
+
+        folderitems:
+          - title: Azure Active Directory SSO
+            url: /docs/azure-active-directory-sso
+            output: web, pdf
+
+          - title: Google SSO
+            url: /docs/google-sso
+            output: web, pdf
+
+          - title: Microsoft ADFS SSO
+            url: /docs/adfs-sso
+            output: web, pdf
+
+          - title: Okta SSO
+            url: /docs/okta-sso-integration
+            output: web, pdf
+
+          - title: SAML 2.0 based SSO
+            url: /docs/saml-sso
+            output: web, pdf
+
+      - title: Mobile App
+        output: web, pdf
+
+        folderitems:
+          - title: Using the Mobile App
+            url: /docs/using-the-mobile-app
+            output: web, pdf
+
+          - title: Pin messages from War Room to the Incident Timeline
+            url: /docs/pin-messages-from-warroom-to-timeline-1
+            output: web, pdf
+
+          - title: View Schedules on the Mobile App
+            url: /docs/mobile-app-see-who-is-on-call
+            output: web, pdf
+
+      - title: Squadcast Actions
+        output: web, pdf
+
+        folderitems:
+          - title: What are Squadcast Actions?
+            url: /docs/what-are-squadcast-actions
+            output: web, pdf
+
+          - title: CircleCI Actions
+            url: /docs/circleci-actions
+            output: web, pdf
+
+          - title: Squadcast Runbooks (Deprecated)
+            url: /docs/squadcast-runbooks
+            output: web, pdf
+
+          - title: How to Video - Squadcast Actions
+            url: /docs/how-to-video-squadcast-actions
+            output: web, pdf
+
+      - title: Squadcast API Documentation
+        output: web, pdf
+
+        folderitems:
+          - title: Squadcast Public API - Refresh Token
+            url: /docs/squadcast-public-api
+            output: web, pdf
+
+          - title: Squadcast API Documentation
+            external_url: https://apidocs.squadcast.com
+            output: web, pdf
+
+      - title: Managing your Squadcast Account
+        output: web, pdf
+
+        folderitems:
+          - title: Deactivating your Squadcast Account
+            url: /docs/deactivating-your-squadcast-account
+            output: web, pdf
+
+          - title: Deleting your Squadcast Account
+            url: /docs/deleting-your-squadcast-account
+            output: web, pdf
+
+          - title: Incident Rate Limiting
+            url: /docs/incident-rate-limiting
+            output: web, pdf
+
+          - title: Organizations
+            url: /docs/squadcast-organizations
+            output: web, pdf
+
+          - title: Upgrading to a Paid Plan
+            url: /docs/upgrading-to-a-paid-plan
+            output: web, pdf
+
+          - title: Terraform Provider for Squadcast
+            url: /docs/terraform-provider-for-squadcast
+            output: web, pdf
