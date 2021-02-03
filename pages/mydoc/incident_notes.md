@@ -7,6 +7,8 @@ summary: "Push important notes here for easier information sharing"
 sidebar: mydoc_sidebar
 permalink: docs/incident-notes
 folder: mydoc
+published: false
+search: exclude
 ---
 
 Incident Notes enables you to add important notes and pointers that can help mitigate the incident faster. 
@@ -29,16 +31,16 @@ You can use this to:
 
 - Users who are on-call at that instant are indicated by a green dot against their name. In the above screenshot, you can see that **Diane Nyugen** is on-call.
 
+<br/>
 {{site.data.alerts.blue-note}}
 <b>Who is On-call?</b>
-<br/>
-<br/>
-
-<p>Users who are on-call across all schedules in the organization are indicated with the green dot.</p>
+<br/><br/><p>Users who are on-call across all schedules in the organization are indicated with the green dot.</p>
 {{site.data.alerts.end}}
+<br/>
 
 - The user addressed would get notified instantly via email as well as push notification.
 
+<br/>
 {{site.data.alerts.blue-note}}
 <b>NOTE</b>
 <br/><br/>
