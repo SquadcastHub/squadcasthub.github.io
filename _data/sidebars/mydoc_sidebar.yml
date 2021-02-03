@@ -404,6 +404,10 @@ entries:
       url: /docs/loggly
       output: web, pdf
 
+    - title: LogicMonitor
+      url: /docs/logic-monitor
+      output: web, pdf
+
     - title: Logstash
       url: /docs/logstash-integration-guide
       output: web, pdf

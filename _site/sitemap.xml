@@ -464,6 +464,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/logic-monitor</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/logstash-integration-guide</loc>
   </url>
   

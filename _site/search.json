@@ -835,6 +835,17 @@
 
 
 {
+"title": "LogicMonitor",
+"tags": "",
+"keywords": "",
+"url": "/docs/logic-monitor",
+"summary": "Send alerts to Squadcast from LogicMonitor"
+}
+,
+
+
+
+{
 "title": "Logstash",
 "tags": "integrationlogstash",
 "keywords": "",
