@@ -283,7 +283,7 @@
 "tags": "escalation policies",
 "keywords": "",
 "url": "/docs/escalation-policies",
-"summary": "Define rules on when and how alerts escalate to various Users, Squads and (or) Schedules within your organization."
+"summary": "Define rules indicating when and how alerts will escalate to various Users, Squads and (or) Schedules within your Organization"
 }
 ,
 
@@ -372,17 +372,6 @@
 "keywords": "",
 "url": "/docs/dynatrace",
 "summary": "Send in your problem notifications from Dynatrace into Squadcast"
-}
-,
-
-
-
-{
-"title": "Editing an Existing Escalation Policy",
-"tags": "escalation policies",
-"keywords": "",
-"url": "/docs/editing-an-existing-escalation-policy",
-"summary": "Making changes to an Escalation Policy"
 }
 ,
 
@@ -894,7 +883,7 @@
 "tags": "squads",
 "keywords": "",
 "url": "/docs/squads",
-"summary": "Everything you need to know about Squads"
+"summary": "A Squad is a group of users corresponding to a team or a project"
 }
 ,
 
@@ -905,7 +894,7 @@
 "tags": "Notification-RulesManaging-all-Users",
 "keywords": "",
 "url": "/docs/set-up-your-profile",
-"summary": "Edit your account details and notification preferences"
+"summary": "Edit your account details and set up notification preferences"
 }
 ,
 
@@ -993,7 +982,7 @@
 "tags": "Set-up-your-profileEscalation-PoliciesSchedules",
 "keywords": "",
 "url": "/docs/notification-rules",
-"summary": "Notification rules define how and when you are notified when an incident is assigned to you."
+"summary": "Notification rules define how and when you are notified when an incident is assigned to you"
 }
 ,
 
