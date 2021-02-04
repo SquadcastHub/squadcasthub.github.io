@@ -6,6 +6,8 @@ summary: "Making changes to an Escalation Policy"
 sidebar: mydoc_sidebar
 permalink: docs/editing-an-existing-escalation-policy
 folder: mydoc
+published: false
+search: exclude
 ---
 
 If you need to make changes to your escalation policy, you can do so by following the steps in this article. 

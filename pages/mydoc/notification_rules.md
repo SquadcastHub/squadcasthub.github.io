@@ -4,47 +4,47 @@ tags: [Set-up-your-profile, Escalation-Policies, Schedules]
 keywords: 
 last_updated: 
 datatable: 
-summary: "Notification rules define how and when you are notified when an incident is assigned to you."
+summary: "Notification rules define how and when you are notified when an incident is assigned to you"
 sidebar: mydoc_sidebar
 permalink: docs/notification-rules
 folder: mydoc
 ---
 
-Notification Rules are rules that determine how an individual user is notified for an incident assigned to them. 
-You can set up rules to notify you on any of the following notification channels: 
+Notification Rules determine how an individual user is notified for an incident that is assigned to them. You can set up rules to be notified notify on any of the following notification channels: 
 
-- Phone Call
-- SMS
 - Email
-- Push Notification from the Squadcast mobile app
+- [Push notification on the Squadcast mobile app](using-the-mobile-app)
+- SMS
+- Phone
 
-{{site.data.alerts.note}}
-<p><br/>Irrespective of your User Role in Squadcast, you will only be able to set/edit your own Notification Rules. You will not be able to do it for any other member on Squadcast.</p>
+{{site.data.alerts.blue-note}}
+<b>Edit Notification Rules for other users of Squadcast</b><br/><br/>
+<p>Irrespective of your User Role in Squadcast, you will only be able to set/edit your own Notification Rules. You will not be able to do it for any other member of Squadcast.</p>
 {{site.data.alerts.end}}
 
-You can access this by following the steps below: 
+## Edit Notification Rules
 
-- Click on the **Profile** icon on the top right corner of the platform. 
+**(1)** Click on the user icon in the upper right corner and select **Profile** 
 
 ![](images/notification_rules_1.png)
 
-- You will be taken into the **My Profile** section where you can see the contact information on the left and **Notification Rules** on the right. 
-
-- Click on the **Options** icon to edit the rules. 
+**(2)** You will be taken into the **My Profile** section where you can see the User Details on the left and the **Notification Rules** on the right. Click on the **Options** icon to edit the rules 
 
 ![](images/notification_rules_2.png)
 
-- Enter the amount of time after the incident trigger when you wish to get notified by a particular method and choose that method from the drop-down at the end of the rule. 
+**(3)** Enter the amount of time after the incident trigger when you wish to get notified by a particular medium and choose that medium from the drop-down at the end of the rule
 
-- You can also add new rules by clicking **Add More Rules** at the bottom.
+**(4)** You can also add new rules by clicking **Add More Rules** at the bottom
 
-- Click **Save** after making changes.
+**(5)** Select **Save** after making changes to save the configuration
 
 ![](images/notification_rules_3.png)
 
-You're good to go. Now, when an incident is assigned to you, you will be notified based on your preferences set in the **Notification Rules** section.
+By default, every new user’s **Notification Rules** would be defined by Squadcast as indicated by the screenshot below:
 
-Below the Notification Preferences, you can view the [Escalation Policies](escalation-policies.html), [Squads](squads.html), and [Schedules](schedules.html) that you are part of.
+![](images/notification_rules_4.png)
+
+You're good to go. Now, when an incident is assigned to **you**, you will be notified based on your preferences set in the **Notification Rules** section.
 
 {{site.data.alerts.green-note-check}}
 <b>Pro Tip: </b>

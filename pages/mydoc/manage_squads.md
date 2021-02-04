@@ -3,38 +3,43 @@ title: Manage Squads
 tags: [squads]
 keywords: 
 last_updated: 
-summary: "Everything you need to know about Squads"
+summary: "A Squad is a group of users corresponding to a team or a project"
 sidebar: mydoc_sidebar
 permalink: docs/squads
 folder: mydoc
 ---
 
-## What are Squads?
+## Defining a Squad
 
-A Squad is a group of users that can refer to a team or a project. Squads are handy when you need to notify the whole group together. For instance, when coordinated response is required for high-urgency high-complexity incidents, or at the end of an escalation policy when nobody has acknowledged.
+A Squad is a group of users corresponding to a team or a project. Squads are handy when you need to notify the entire group together. For instance, when coordinated responses are required for high-urgency, high-complexity incidents, or as the last level of an Escalation Policy when an incident is still un-Acknowledged at that point.
+
+## Create Squads
+
+**Prerequisite**
+[Add Users](add-users) on the platform before defining Squads
+
+**(1)** Navigate to **Squads** from the sidebar
 
 ![](images/manage_squads_1.png)
 
-## Add or Remove a Squad Member
-
-User can create a Squads under **Squads (Sidebar) → Add Squad**.
-
-Type in a Squad name and add or remove users as needed and Click **Save**. 
+**(2)** Click on **Add Squad** to add a new Squad
 
 ![](images/manage_squads_2.png)
 
-## Using Smart Squads
-
-You can also create a Smart Squad by adding a code repository to the Squad. This is only possible after integrating SCM tools like GitHub under the Integrations tab.
+**(3)** Add a **Squad Name** and map the **Users**
 
 ![](images/manage_squads_3.png)
 
-The list of available repositories will appear in the drop-down with a GitHub icon. 
-
-Smart Squads are useful to escape configuration hell for products that several different people work on at different times. 
-
-Our system tracks everybody who is committing code to that repository based on your preferences and engineering velocity (you can currently choose commits in last 'n' days or last 'n' commits). Then, the relevant users are dynamically added to that squad based on user selection.
+**(4)** Click on **Save** to view the Squad
 
 ![](images/manage_squads_4.png)
 
-Normal Squads and Smart Squads can be differentiated by a glowing light bulb symbol which appears only for Smart Squads and also by the GitHub repo tag in the Squad cards.
+## Edit or Delete a Squad
+
+**(1)** To edit an existing Squad, click on **More Options** for that particular Squad
+
+**(2)** Choose **Edit** to modify the existing Squad or **Delete** to delete the Squad entirely
+
+**(3)** After modifying the Squad, click on **Save**
+
+![](images/manage_squads_5.png)
