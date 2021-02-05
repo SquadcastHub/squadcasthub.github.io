@@ -445,13 +445,6 @@
           
           
           
-          <li><a title="Editing an Existing Escalation Policy" href="/docs/editing-an-existing-escalation-policy">Editing an Existing Escalation Policy</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Invoke an Escalation Policy for an Existing Incident" href="/docs/invoke-an-escalation-policy-for-an-existing-incident">Invoke an Escalation Policy for an Existing Incident</a></li>
           
           
@@ -1528,7 +1521,14 @@ Route detailed monitoring alerts from LogicMonitor to the right users in Squadca
 <p><img src="images/logic-monitor5.png" alt="" /></p>
 
 <ul>
-  <li>Within <strong>Alert Data</strong>, you can either manually specify all the data that your alert payload should contain or use the <strong>Insert Token</strong> drop-down to add data variables. Select <strong>Raw</strong>. Additionally, from the <strong>Format</strong> drop-down, select <strong>Form Data</strong></li>
+  <li>Within <strong>Alert Data</strong>, paste the following template:</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service=##SERVICE##&amp;alertid=##ALERTID##&amp;alerttype=##ALERTTYPE##&amp;alertstatus=##ALERTSTATUS##&amp;level=##LEVEL##&amp;host=##HOST##&amp;datasource=##DATASOURCE##&amp;eventsource=##EVENTSOURCE##&amp;batchjob=##BATCHJOB##&amp;group=##GROUP##&amp;datapoint=##DATAPOINT##&amp;start=##START##&amp;finish=##FINISH##&amp;duration=##DURATION##&amp;value=##VALUE##&amp;threshold=##THRESHOLD##&amp;userdata=##USERDATA##&amp;cmdline=##CMDLINE##&amp;exitCode=##EXITCODE##&amp;stdout=##STDOUT##&amp;stderr=##STDERR##&amp;agent=##AGENT_DESCRIPTION##&amp;checkpoint=##CHECKPOINT##&amp;datapointdesc=##DPDESCRIPTION##&amp;hostdesc=##HOSTDESCRIPTION##&amp;hostinfo=##system.sysinfo##&amp;hostips=##system.ips##&amp;hosturl=##DEVICEURL##&amp;instance=##INSTANCE##&amp;dsidesc=##DSIDESCRIPTION##&amp;batchdesc=##BJDESCRIPTION##&amp;hostname=##system.hostname##&amp;dsdesc=##DSDESCRIPTION##&amp;eventmsg=##LIMITEDMESSAGE##&amp;eventlogmsg=##MESSAGE##&amp;eventcode=##EVENTCODE##&amp;eventtype=##TYPE##&amp;eventuser=##USER##&amp;eventlogfile=##LOGFILE##&amp;servicedetail=##DETAIL##&amp;serviceurl=##URL##&amp;servicegroup=##SERVICEGROUP##&amp;date=##DATE##&amp;clearvalue=##CLEARVALUE##&amp;internalid=##INTERNALID##&amp;alerturl=##ALERTDETAILURL##
+</code></pre></div></div>
+
+<p>Enable <strong>Raw</strong>. Additionally, from the <strong>Format</strong> drop-down, select <strong>Form Data</strong></p>
+<ul>
   <li>Do <em>not</em> enable the checkbox for <strong>Include an ID provided in HTTP response when updating alert status</strong></li>
 </ul>
 
@@ -1643,7 +1643,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 3, 2021 <br /> -->
+<!--  Site last generated: Feb 4, 2021 <br /> -->
                 </div>
             </div>
             <script>
