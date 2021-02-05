@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Service - The core components of your infrastructure from which alerts are generated">
-<meta name="keywords" content="service,  ">
-<title>Adding a Service | Incident Management using Squadcast</title>
+<meta name="description" content="Push important Notes for easier information sharing">
+<meta name="keywords" content="incident,  ">
+<title>Incident Notes | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Adding a Service page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident Notes page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Adding a Service">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Incident Notes">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -323,7 +323,7 @@
           
           
           
-          <li class="active"><a title="Adding a Service" href="/docs/adding-a-service-1">Adding a Service</a></li>
+          <li><a title="Adding a Service" href="/docs/adding-a-service-1">Adding a Service</a></li>
           
           
           
@@ -584,7 +584,7 @@
           
           
           
-          <li><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
+          <li class="active"><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -1464,104 +1464,119 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Adding a Service</h1>
+            <h1 class="post-title-main">Incident Notes</h1>
         </div>
             
-                <div class="summary">Service - The core components of your infrastructure from which alerts are generated</div>
+                <div class="summary">Push important Notes for easier information sharing</div>
             
 
                 
 
-            <p>Services represent specific systems, applications, components, products, or teams for which an incident is created.</p>
+            <p>Incident Notes enable you to add important Notes and pointers that can help mitigate the incident faster</p>
 
-<h2 id="create-a-service">Create a Service</h2>
-
-<h3 id="prerequisite">Prerequisite</h3>
-<p>You need to have at least one <a href="escalation-policies">Escalation Policy</a> before you can add a Service.</p>
-
-<p><strong>(1)</strong> Click on <strong>Services</strong></p>
-
-<p><strong>(2)</strong> Click on <strong>Add Service</strong></p>
-
-<p><img src="images/adding_a_service_1.png" alt="" /></p>
-
-<p><strong>(3)</strong> Add the following information:</p>
+<p>You can use this to:</p>
 <ul>
-  <li>Service Name - Corresponds to the name of your business service</li>
-  <li>Service Description (optional) - Service Description</li>
-  <li>Escalation Policy - The Escalation Policy that you assign to a service will be its default Escalation Policy.</li>
-  <li>Email Prefix (optional) - You can choose to add an <a href="email">email address prefix</a> to the Service for it to function as an alternative alert source for that Service. If you leave it blank, Squadcast will automatically fill in the prefix-key which you can use.</li>
-  <li><a href="de-duplication-rules#status-based-deduplication">Status Based Deduplication</a> (optional) can be enabled by checking the box with the information message and choosing the appropriate time window for which you’d like this deduplication rule to hold true.</li>
+  <li>Collaborate with your team and resolve the incident</li>
+  <li>Use it to store important pointers that will help with the mitigation</li>
+  <li>Use it to store Notes that can be populated in the Postmortem report</li>
+  <li>Share Organization-wide information like Resolution reason, Follow-up Tasks and so on</li>
 </ul>
 
-<p><strong>(4)</strong> Click on <strong>Save</strong></p>
+<p><img src="images/incident_notes_1.png" alt="" /></p>
 
-<p><strong>(5)</strong> That’s it! The service has been created.</p>
+<h2 id="features">Features</h2>
 
-<p><img src="images/adding_a_service_2.png" alt="" /></p>
+<h3 id="tagging-users">Tagging Users</h3>
 
-<h2 id="delete-a-service">Delete a Service</h2>
+<ul>
+  <li>One can callout users using “@” symbol for user specific Notes</li>
+</ul>
 
-<p><strong>(1)</strong> Move over to the service that you wish to delete. Click on the <code class="highlighter-rouge">More Options</code> icon and select <code class="highlighter-rouge">Delete</code> from the dropdown</p>
+<p><img src="images/incident_notes_2.png" alt="" /></p>
 
-<p><img src="images/adding_a_service_3.png" alt="" /></p>
+<ul>
+  <li>Users who are currently on-call are indicated with a green dot against their name. In the above screenshot, you can see that <strong>Diane Nyugen</strong> is currently on-call</li>
+</ul>
 
-<p><strong>(2)</strong> You will then see a confirmation pop-up and you can click on <code class="highlighter-rouge">Delete</code> to delete the service forever.</p>
+<p><br /></p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Who is on-call?</b>
+<br /><br /><p>Users who are on-call across all Schedules in the Organization are indicated with a green dot against their name</p>
+</div>
+<p><br /></p>
 
-<p><img src="images/adding_a_service_4.png" alt="" /></p>
+<ul>
+  <li>The user who is called out will get notified instantly via Email and Push notification(<a href="https://support.squadcast.com/docs/using-the-mobile-app">on the Squadcast mobile app</a>)</li>
+</ul>
 
-<h3 id="unable-to-delete-service-and-an-error-message-is-thrown">Unable to delete Service and an error message is thrown</h3>
-
-<p>In cases where there are open (Triggered / Acknowledged) incidents for a service, the system will not allow you to delete the service without resolving these incidents.</p>
-
-<p>You will be able to see a similar error message in cases like these.</p>
-
-<p><img src="images/deleting_service_4.png" alt="" /></p>
-
-<p>You will have to resolve all the open incidents and then follow the same process stated above to delete the service.</p>
-
-<p>To resolve multiple incidents at one shot, check out the <a href="take-bulk-actions">Take Bulk Actions</a> documentation.</p>
-
-<h2 id="alert-sources-integrations">Alert Sources (Integrations)</h2>
-
-<p>A single service can receive alerts from multiple sources</p>
-
-<h3 id="adding-multiple-alert-sources-for-one-service">Adding Multiple Alert Sources for one Service</h3>
-
-<p><strong>(1)</strong> Click on <strong>Alert Sources</strong> for a <strong>Service</strong></p>
-
-<p><img src="images/adding_a_service_5.png" alt="" /></p>
-
-<p><strong>(2)</strong> Follow the steps below to integrate with an alert source:</p>
-
-<p>(a) Select the type of Alert Source from the dropdown that lists our native integrations</p>
-
-<p>(b) Copy the end point</p>
-
-<p>(c) Click on integration guide to set integrate with the alert source</p>
-
-<p><img src="images/adding_a_service_6.png" alt="" /></p>
-
-<p>So, now when the incident comes for a Service via a given Alert Source, you can see the <strong>Service</strong> in the <strong>Impact On</strong> column and <strong>Alert Source</strong> in <strong>Via</strong> column, in the Incident Dashboard:</p>
-
-<p><img src="images/adding_a_service_7.png" alt="" /></p>
-
-<p>and on the Incident Details page:</p>
-
-<p><img src="images/adding_a_service_8.png" alt="" /></p>
-
-<p>Similarly, on the Incident List page, for every incoming incident, the Service affected is listed under <strong>Service</strong> and the Alert Source is listed under <strong>Alert source</strong>.</p>
-
-<p><img src="images/adding_a_service_9.png" alt="" /></p>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>
-<b>Pro Tip</b>
-<br /><br /><p>We are currently working on improving the UI to show you the list of integrated Alert Sources for each Service.</p>
+<p><br /></p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>NOTE</b>
+<br /><br />
+<p>Only verified users would be receiving any kind of notifications from Squadcast. For recieving Push notifications, users also need to have latest version of the Squadcast mobile app installed</p>
 </div>
 
-<p>We recommend adding the names of the integrated Alert Sources under the Service description so as to easily keep a note of all the configured end-points.</p>
+<p><img src="images/incident_notes_3.png" alt="" /></p>
 
-<p><img src="images/adding_a_service_10.png" alt="" /></p>
+<p><img src="images/incident_notes_4.png" alt="" /></p>
+
+<h3 id="adding-images">Adding Images</h3>
+
+<ul>
+  <li>Incident Notes support Markdown text. So, one can add images as URLs, links among other important data</li>
+</ul>
+
+<p><img src="images/incident_notes_5.png" alt="" /></p>
+
+<p><img src="images/incident_notes_6.png" alt="" /></p>
+
+<h3 id="editing-or-deleting-a-note">Editing or Deleting a Note</h3>
+
+<ul>
+  <li>One can edit or delete existing Notes as well by clicking on the <em>More</em> option corresponding to a particular Note which would appear on hovering over it</li>
+</ul>
+
+<p><img src="images/incident_notes_7.png" alt="" /></p>
+
+<h3 id="starring-and-un-starring-notes">Starring and Un-starring Notes</h3>
+
+<ul>
+  <li>
+    <p>In addition to editing / deleting, one can Star important Notes by clicking on the Star icon as shown in the screenshot above beside the <em>More</em> option</p>
+  </li>
+  <li>
+    <p>When you have a bulk of Notes and want to simply take a look at all the important, Starred Notes, you can do so by clicking on <strong>View Starred Notes</strong></p>
+  </li>
+</ul>
+
+<p><img src="images/incident_notes_8.png" alt="" /></p>
+
+<p><img src="images/incident_notes_9.png" alt="" /></p>
+
+<ul>
+  <li>At a later point in time, if you feel a Starred Note is not that important and want to Un-star it, that’s also doable. You can simply click on the <strong>Star</strong> icon for the Note again, that will Un-star the Note</li>
+</ul>
+
+<p><img src="images/incident_notes_10.png" alt="" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Permissions</b>
+<br /><br />
+<p>
+Different actions that can be carried out by different User Roles:<br />
+<ul><li><b>Note Creation</b> Any user can add a Note</li>
+<li><b>Note Updation</b> Only the author of the Note can update it</li>
+<li><b>Note Deletion</b> Only the author of the Note can delete it</li>
+<li><b>Note Starring</b> Any user can Star any Note</li>
+<li><b>Note Un-starring</b> Any user can Un-star any Note</li></ul>
+</p>
+</div>
+
+<ul>
+  <li>Only the Note Starring activity would be captured in the Activity Timeline. You can click on a particular Note Starring Activity in the Timeline to see that particular Note highlighted in the Notes window</li>
+</ul>
+
+<p><img src="images/incident_notes_11.png" alt="" /></p>
 
 
                 <!--div class="tags">
