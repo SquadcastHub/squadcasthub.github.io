@@ -208,10 +208,6 @@ entries:
             url: /docs/incident-timeline
             output: web, pdf
 
-          - title: Incident War Room
-            url: /docs/warroom
-            output: web, pdf
-
           - title: Manually Creating an Incident
             url: /docs/manually-creating-an-incident
             output: web, pdf
