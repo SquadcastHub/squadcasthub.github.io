@@ -360,6 +360,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/incident-notes</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/incident-rate-limiting</loc>
   </url>
   
