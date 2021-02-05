@@ -7,6 +7,8 @@ summary: "Push important notes into the Incident War Room for easier information
 sidebar: mydoc_sidebar
 permalink: docs/warroom
 folder: mydoc
+published: false
+search: exclude
 ---
 
 Incident War Room is an incident specific commenting system where you can add in important notes and pointers that can help mitigate the incident faster. 
