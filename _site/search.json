@@ -650,7 +650,7 @@
 "tags": "incident",
 "keywords": "",
 "url": "/docs/incident-notes",
-"summary": "Push important Notes for easier information sharing"
+"summary": "Share notes and collaborate with your team during incident resolution"
 }
 ,
 
@@ -1029,17 +1029,6 @@
 "keywords": "",
 "url": "/docs/papertrail",
 "summary": "Send events to Squadcast from Papertrail"
-}
-,
-
-
-
-{
-"title": "Pin Messages from War Room to the Incident Timeline",
-"tags": "mobile appwar room",
-"keywords": "",
-"url": "/docs/pin-messages-from-warroom-to-timeline-1",
-"summary": "Pin and unpin your War Room messages to the Incident Timeline."
 }
 ,
 

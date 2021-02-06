@@ -592,10 +592,6 @@ entries:
             url: /docs/using-the-mobile-app
             output: web, pdf
 
-          - title: Pin messages from War Room to the Incident Timeline
-            url: /docs/pin-messages-from-warroom-to-timeline-1
-            output: web, pdf
-
           - title: View Schedules on the Mobile App
             url: /docs/mobile-app-see-who-is-on-call
             output: web, pdf
