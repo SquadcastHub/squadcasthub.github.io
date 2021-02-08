@@ -547,6 +547,17 @@
 
 
 {
+"title": "Graylog v4",
+"tags": "",
+"keywords": "",
+"url": "/docs/graylog-v4",
+"summary": "Send alerts to Squadcast from Graylog v4"
+}
+,
+
+
+
+{
 "title": "Graylog",
 "tags": "integrationgraylog",
 "keywords": "",

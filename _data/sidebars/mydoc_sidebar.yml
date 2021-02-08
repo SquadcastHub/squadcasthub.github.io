@@ -340,6 +340,10 @@ entries:
             url: /docs/graylog
             output: web, pdf
 
+          - title: Graylog v4
+            url: /docs/graylog-v4
+            output: web, pdf
+
           - title: HetrixTools
             url: /docs/hetrixtools
             output: web, pdf
