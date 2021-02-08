@@ -52,7 +52,7 @@ Route detailed monitoring alerts from Graylog v4 to the right users in Squadcast
 
 ![](images/graylog-v4-5.png)
 
-(a) A meaning **Title**
+(a) A meaningful **Title**
 (b) An optional **Description**
 (c) **Notification Type**: Select **HTTP Notification**
 (d) **URL**: Paste the copied Squadcast Webhook URL
