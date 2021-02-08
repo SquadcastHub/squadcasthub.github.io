@@ -172,20 +172,30 @@
                 <li>
                     <!--start search-->
                     <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="Search">
-                        <ul id="results-container"></ul>
+                        <input type="text" id="search-input" style="outline: none;" placeholder="Search">
+                        <ul id="results-container" style="height: 500px; overflow: scroll;"></ul>
                     </div>
-                    <script src="js/jekyll-search.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Manage Squads">{title}</a></li>',
-                    noResultsText: 'No results found',
-                            limit: 10,
-                            fuzzy: true,
-                    })
+                    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script>
+                    <script>
+                    const client = algoliasearch('M0XX7ZMBFN', '0d12377b218ea5a0ef4e2acd4b518ab1');
+                    const index = client.initIndex('squadcast_support');
+                    const field = document.getElementById('search-input');
+                    const rest = document.getElementById('results-container');
+                    rest.style.display = 'none';
+                    field.onkeyup = function(){
+                        var val = field.value;
+                        index.search(val).then(({ hits }) => {
+                        if(hits.length > 0 && val != ''){
+                            rest.style.display = 'block';
+                            rest.innerHTML = '';
+                            for(i = 0; i < hits.length; i++){
+                            rest.innerHTML = rest.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">Title: '+hits[i].title+'<br/>Summary: '+hits[i].summary+'<br/>Content: '+hits[i].content+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
+                            }
+                        }else{
+                            rest.style.display = 'none';
+                        }
+                        });
+                    }
                     </script>
                     <!--end search-->
                 </li>
