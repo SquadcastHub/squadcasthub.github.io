@@ -54,3 +54,14 @@
 
 <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+<!-- Algolia Scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script>
+
+<!-- Initialize -->
+
+<script>
+    const client = algoliasearch('M0XX7ZMBFN', '0d12377b218ea5a0ef4e2acd4b518ab1');
+    const index = client.initIndex('squadcast_support');
+</script>

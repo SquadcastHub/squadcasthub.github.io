@@ -55,6 +55,17 @@
 
 <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+<!-- Algolia Scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script>
+
+<!-- Initialize -->
+
+<script>
+    const client = algoliasearch('M0XX7ZMBFN', '0d12377b218ea5a0ef4e2acd4b518ab1');
+    const index = client.initIndex('squadcast_support');
+</script>
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -175,24 +186,23 @@
                         <input type="text" id="search-input" style="outline: none;" placeholder="Search">
                         <ul id="results-container" style="height: 500px; overflow: scroll;"></ul>
                     </div>
-                    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script>
-                    <script>
-                    const client = algoliasearch('M0XX7ZMBFN', '0d12377b218ea5a0ef4e2acd4b518ab1');
-                    const index = client.initIndex('squadcast_support');
-                    const field = document.getElementById('search-input');
-                    const rest = document.getElementById('results-container');
-                    rest.style.display = 'none';
-                    field.onkeyup = function(){
-                        var val = field.value;
+                    <script>                    
+                    const field1 = document.getElementById('search-input');
+                    const rest1 = document.getElementById('results-container');
+                    rest1.style.display = 'none';
+                    field1.onkeyup = function(){
+                        var val = field1.value;
                         index.search(val).then(({ hits }) => {
                         if(hits.length > 0 && val != ''){
-                            rest.style.display = 'block';
-                            rest.innerHTML = '';
+                            rest1.style.display = 'block';
+                            rest1.innerHTML = '';
                             for(i = 0; i < hits.length; i++){
-                            rest.innerHTML = rest.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">Title: '+hits[i].title+'<br/>Summary: '+hits[i].summary+'<br/>Content: '+hits[i].content+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
+                                if(hits[i].search != 'exclude'){
+                                    rest1.innerHTML = rest1.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">Title: '+hits[i].title+'<br/>Summary: '+hits[i].summary+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
+                                }
                             }
                         }else{
-                            rest.style.display = 'none';
+                            rest1.style.display = 'none';
                         }
                         });
                     }
