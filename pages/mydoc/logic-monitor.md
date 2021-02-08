@@ -32,7 +32,7 @@ Route detailed monitoring alerts from LogicMonitor to the right users in Squadca
 
 **(4)** Search for **LogicMonitor** from  the **Alert Source** drop-down menu and copy the webhook 
 
-![](images/logic_monitor11.png)
+![](images/logic-monitor11.png)
 
 ### In LogicMonitor: Add a webhook for Squadcast
 

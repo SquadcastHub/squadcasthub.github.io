@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Push important notes into the Incident War Room for easier information sharing">
-<meta name="keywords" content="war room,  ">
-<title>Incident War Room | Incident Management using Squadcast</title>
+<meta name="description" content="Share notes and collaborate with your team during incident resolution">
+<meta name="keywords" content="incident,  ">
+<title>Incident Notes | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident War Room page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident Notes page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Incident War Room">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Incident Notes">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -385,13 +385,6 @@
           
           
           
-          <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
@@ -570,13 +563,6 @@
           
           
           
-          <li class="active"><a title="Incident War Room" href="/docs/warroom">Incident War Room</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
           
           
@@ -585,6 +571,13 @@
           
           
           <li><a title="Postmortems" href="/docs/postmortems">Postmortems</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -885,6 +878,13 @@
           
           
           <li><a title="Loggly" href="/docs/loggly">Loggly</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LogicMonitor" href="/docs/logic-monitor">LogicMonitor</a></li>
           
           
           
@@ -1254,13 +1254,6 @@
           
           
           
-          <li><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline-1">Pin messages from War Room to the Incident Timeline</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
           
           
@@ -1464,55 +1457,176 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Incident War Room</h1>
+            <h1 class="post-title-main">Incident Notes</h1>
         </div>
             
-                <div class="summary">Push important notes into the Incident War Room for easier information sharing</div>
+                <div class="summary">Share notes and collaborate with your team during incident resolution</div>
             
 
                 
 
-            <p>Incident War Room is an incident specific commenting system where you can add in important notes and pointers that can help mitigate the incident faster.</p>
+            <p>Incident Notes enable you to add important notes that can help mitigate an incident faster.</p>
 
 <p>You can use this to:</p>
 <ul>
-  <li>Collaborate and resolve the incident</li>
+  <li>Collaborate with your team and resolve the incident</li>
   <li>Use it to store important pointers that will help with the mitigation</li>
-  <li>Use it to store notes that can be populated in the postmortem report</li>
-</ul>
-
-<h2 id="using-your-war-room-during-downtime">Using your War Room During Downtime</h2>
-
-<ul>
-  <li>You can add or address Users in the War Room using “@” symbol. This can be used while adding in user specific notes.</li>
-</ul>
-
-<p><img src="images/warroom_1.png" alt="" /></p>
-
-<h2 id="see-who-is-on-call">See Who is On-call</h2>
-
-<ul>
-  <li>Users who are on-call at that instant are indicated by a green dot against their name.</li>
+  <li>Use it to store Notes that can be populated in the Postmortem report</li>
+  <li>Share Organization-wide information like resolution reason, Follow-up Tasks, etc.</li>
 </ul>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Who is On-Call? </b>
-<br /><br /><p>Users who are on-call across all schedules in the organization are indicated with the green dot.</p>
+<b>Prerequisite</b>
+<br /><br />
+<p>
+Click on Profile &gt; Previews &gt; Enable to switch to the new Incident Details view.
+</p>
 </div>
 
-<p><img src="images/warroom_2.png" alt="" /></p>
+<h2 id="to-get-started">To get started</h2>
 
-<h2 id="markdown-support-in-war-room">Markdown Support in War Room</h2>
+<p><strong>(1)</strong> Click on <strong>Incident List</strong> or the <strong>Dashboard</strong> from the sidebar</p>
 
-<p>The Incident War Room supports Markdown.</p>
+<p><img src="images/incident_notes_1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Open an incident to view the <strong>Incident Details</strong></p>
+
+<p><img src="images/incident_notes_1_1.png" alt="" /></p>
+
+<h3 id="tagging-users">Tagging Users</h3>
 
 <ul>
-  <li>You can add in Images as URLs, Links among other important data as a comment within the War Room.</li>
+  <li>One can callout users using “@” symbol for user specific notes</li>
 </ul>
 
-<p><img src="images/warroom_3.png" alt="" /></p>
+<p><img src="images/incident_notes_2.png" alt="" /></p>
 
-<p><img src="images/warroom_4.png" alt="" /></p>
+<ul>
+  <li>
+    <p>Users who are currently on-call are indicated with a green dot against their name. In the above screenshot, you can see that <strong>Diane Nyugen</strong> is currently on-call</p>
+  </li>
+  <li>
+    <p>The user who is called out will get notified instantly via Email and Push notification on the Squadcast mobile app</p>
+  </li>
+</ul>
+
+<p><img src="images/incident_notes_3.png" alt="" /></p>
+
+<p><img src="images/incident_notes_4.png" alt="" /></p>
+
+<p><br /></p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>NOTE</b>
+<br /><br />
+<p>Only verified users would be receiving any kind of notifications from Squadcast. </p>
+<p>For receiving Push notifications, users should have the <a href="using-the-mobile-app">Squadcast mobile app</a> (Version 2.10.71 and above) installed</p>
+</div>
+
+<h3 id="adding-images">Adding Images</h3>
+
+<ul>
+  <li>Incident Notes support Markdown text format. Hence, images can be added as URLs or links</li>
+</ul>
+
+<p><img src="images/incident_notes4_1.png" alt="" /></p>
+
+<p><strong>Command to add an image</strong>:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![image_name](image_url)
+</code></pre></div></div>
+
+<p><img src="images/incident_notes_6.png" alt="" /></p>
+
+<h3 id="editing-or-deleting-a-note">Editing or Deleting a Note</h3>
+
+<ul>
+  <li>One can edit or delete existing notes as well by clicking on the <em>More</em> option corresponding to a particular note which would appear on hovering over it</li>
+</ul>
+
+<p><img src="images/incident_notes_7.png" alt="" /></p>
+
+<h3 id="starring-and-un-starring-notes">Starring and Un-starring Notes</h3>
+
+<ul>
+  <li>Star important notes by clicking on the <code class="highlighter-rouge">star</code> icon as shown in the screenshot above beside the <code class="highlighter-rouge">More</code> option</li>
+</ul>
+
+<p><img src="images/incident_notes_8.png" alt="" /></p>
+
+<ul>
+  <li>When you have a bulk of Notes and want to simply take a look at all the important, Starred Notes, you can do so by clicking on <em>*View Starred Notes</em></li>
+</ul>
+
+<p><img src="images/incident_notes_9.png" alt="" /></p>
+
+<ul>
+  <li>To un-star, click on the <strong>Star</strong> icon for that note</li>
+</ul>
+
+<p><img src="images/incident_notes_10.png" alt="" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Permissions</b>
+<br /><br />
+<p>
+Different actions that can be carried out by different User Roles:<br />
+<ul><li><b>Note Creation</b> Any user can add a Note</li>
+<li><b>Note Updation</b> Only the author of the Note can update it</li>
+<li><b>Note Deletion</b> Only the author of the Note can delete it</li>
+<li><b>Note Starring</b> Any user can Star any Note</li>
+<li><b>Note Un-starring</b> Any user can Un-star any Note</li></ul>
+</p>
+</div>
+
+<ul>
+  <li>Starred notes would be captured in the Activity Timeline. Clicking on the starred note activity in the Activity Timeline will take you to that specific note in the Incident Notes section</li>
+</ul>
+
+<p><img src="images/incident_notes10_1.png" alt="" /></p>
+
+<h2 id="faqs">FAQs</h2>
+
+<p><strong>(1)</strong> What actions can be taken by the different User Roles?</p>
+
+<ul>
+  <li><strong>Note Creation</strong>: Any user can add a note</li>
+  <li><strong>Note Updation</strong>: Only the author of the note can update it</li>
+  <li><strong>Note Deletion</strong>: Only the author of the note can delete it</li>
+  <li><strong>Note Starring and Un-starring</strong>: Any user can star/un-star any note</li>
+</ul>
+
+<p><strong>(2)</strong> Can I add and star notes from the Squadcast mobile app?</p>
+
+<p>Yes, users can add, edit, delete, star and unstar notes for an incident from the Squadcast mobile app.</p>
+
+<p>To do so:</p>
+
+<ul>
+  <li>Login to your Organization on the Squadcast mobile app and open an incident</li>
+</ul>
+
+<p><img src="images/incident_notes_11.png" alt="" /></p>
+
+<ul>
+  <li>“@” mention a user and/or add notes</li>
+</ul>
+
+<p><img src="images/incident_notes_12.png" alt="" /></p>
+
+<ul>
+  <li>A long press on a note authored by you will give you an option to <em>star, un-star, edit and delete</em> it. A long press on a note authored by others will give you an option to only <em>star, un-star</em> it</li>
+</ul>
+
+<p><img src="images/incident_notes_13.png" alt="" /></p>
+
+<ul>
+  <li>View only starred notes by switching to <strong>Starred Notes</strong> tab</li>
+</ul>
+
+<p><img src="images/incident_notes_14.png" alt="" /></p>
+
+<p><strong>(3)</strong> Can I call Stakeholders in the Notes section and notify them?</p>
+
+<p>Yes, you can “@” mention Stakeholders and they would be notified for your comment via Email and Push.</p>
 
 
                 <!--div class="tags">

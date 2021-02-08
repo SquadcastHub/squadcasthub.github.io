@@ -283,7 +283,7 @@
 "tags": "escalation policies",
 "keywords": "",
 "url": "/docs/escalation-policies",
-"summary": "Define rules on when and how alerts escalate to various Users, Squads and (or) Schedules within your organization."
+"summary": "Define rules indicating when and how alerts will escalate to various Users, Squads and (or) Schedules within your Organization"
 }
 ,
 
@@ -356,17 +356,6 @@
 
 
 {
-"title": "Deleting a Service",
-"tags": "deleting servicedeletingservice",
-"keywords": "",
-"url": "/docs/deleting-a-service",
-"summary": "Deleting a Service"
-}
-,
-
-
-
-{
 "title": "Deleting your Squadcast Account",
 "tags": "deletingaccount",
 "keywords": "",
@@ -383,17 +372,6 @@
 "keywords": "",
 "url": "/docs/dynatrace",
 "summary": "Send in your problem notifications from Dynatrace into Squadcast"
-}
-,
-
-
-
-{
-"title": "Editing an Existing Escalation Policy",
-"tags": "escalation policies",
-"keywords": "",
-"url": "/docs/editing-an-existing-escalation-policy",
-"summary": "Making changes to an Escalation Policy"
 }
 ,
 
@@ -426,7 +404,7 @@
 "tags": "integrationemail",
 "keywords": "",
 "url": "/docs/email",
-"summary": "Send events to Squadcast from Email"
+"summary": "Send alerts to Squadcast via Email"
 }
 ,
 
@@ -679,6 +657,17 @@
 
 
 {
+"title": "Incident Notes",
+"tags": "incident",
+"keywords": "",
+"url": "/docs/incident-notes",
+"summary": "Share notes and collaborate with your team during incident resolution"
+}
+,
+
+
+
+{
 "title": "Incident Rate Limiting",
 "tags": "rate limiting",
 "keywords": "",
@@ -706,17 +695,6 @@
 "keywords": "",
 "url": "/docs/incident-timeline",
 "summary": "View Timelines of the Incident"
-}
-,
-
-
-
-{
-"title": "Incident War Room",
-"tags": "war room",
-"keywords": "",
-"url": "/docs/warroom",
-"summary": "Push important notes into the Incident War Room for easier information sharing"
 }
 ,
 
@@ -828,7 +806,7 @@
 "tags": "Jira-Server-Alert-SourceLogDNA",
 "keywords": "",
 "url": "/docs/kapacitor",
-"summary": "Send alerts from to Squadcast from Kapacitor"
+"summary": "Send alerts to Squadcast from Kapacitor"
 }
 ,
 
@@ -916,7 +894,7 @@
 "tags": "squads",
 "keywords": "",
 "url": "/docs/squads",
-"summary": "Everything you need to know about Squads"
+"summary": "A Squad is a group of users corresponding to a team or a project"
 }
 ,
 
@@ -927,7 +905,7 @@
 "tags": "Notification-RulesManaging-all-Users",
 "keywords": "",
 "url": "/docs/set-up-your-profile",
-"summary": "Edit your account details and notification preferences"
+"summary": "Edit your account details and set up notification preferences"
 }
 ,
 
@@ -1015,7 +993,7 @@
 "tags": "Set-up-your-profileEscalation-PoliciesSchedules",
 "keywords": "",
 "url": "/docs/notification-rules",
-"summary": "Notification rules define how and when you are notified when an incident is assigned to you."
+"summary": "Notification rules define how and when you are notified when an incident is assigned to you"
 }
 ,
 
@@ -1062,17 +1040,6 @@
 "keywords": "",
 "url": "/docs/papertrail",
 "summary": "Send events to Squadcast from Papertrail"
-}
-,
-
-
-
-{
-"title": "Pin Messages from War Room to the Incident Timeline",
-"tags": "mobile appwar room",
-"keywords": "",
-"url": "/docs/pin-messages-from-warroom-to-timeline-1",
-"summary": "Pin and unpin your War Room messages to the Incident Timeline."
 }
 ,
 

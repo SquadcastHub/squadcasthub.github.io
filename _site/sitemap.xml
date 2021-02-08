@@ -200,12 +200,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/deleting-a-service</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/deleting-your-squadcast-account</loc>
   </url>
   
@@ -213,12 +207,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/dynatrace</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/editing-an-existing-escalation-policy</loc>
   </url>
   
   
@@ -378,6 +366,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/incident-notes</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/incident-rate-limiting</loc>
   </url>
   
@@ -391,12 +385,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/incident-timeline</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/warroom</loc>
   </url>
   
   
@@ -587,12 +575,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/papertrail</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/pin-messages-from-warroom-to-timeline-1</loc>
   </url>
   
   

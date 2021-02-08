@@ -7,6 +7,8 @@ summary: "Pin and unpin your War Room messages to the Incident Timeline."
 sidebar: mydoc_sidebar
 permalink: docs/pin-messages-from-warroom-to-timeline-1
 folder: mydoc
+published: false
+search: exclude
 ---
 
 You can use this feature to pin important messages from the War Room to the Incident Timeline to ensure that any important notes or suggestions are saved for future reference. 

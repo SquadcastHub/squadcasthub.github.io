@@ -7,6 +7,8 @@ summary: "Deleting a Service"
 sidebar: mydoc_sidebar
 permalink: docs/deleting-a-service
 folder: mydoc
+published: false
+search: exclude
 ---
 
 You can delete a service by following the steps below. 
