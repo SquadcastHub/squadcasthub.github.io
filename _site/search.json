@@ -569,6 +569,17 @@
 
 
 {
+"title": "Graylog v4",
+"tags": "",
+"keywords": "",
+"url": "/docs/graylog-v4",
+"summary": "Send alerts to Squadcast from Graylog v4"
+}
+,
+
+
+
+{
 "title": "Graylog",
 "tags": "integrationgraylog",
 "keywords": "",
@@ -840,6 +851,17 @@
 "keywords": "",
 "url": "/docs/loggly",
 "summary": "Send events to Squadcast from Loggly"
+}
+,
+
+
+
+{
+"title": "LogicMonitor",
+"tags": "",
+"keywords": "",
+"url": "/docs/logic-monitor",
+"summary": "Send alerts to Squadcast from LogicMonitor"
 }
 ,
 

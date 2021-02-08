@@ -318,6 +318,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/graylog-v4</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/graylog</loc>
   </url>
   
@@ -465,6 +471,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/loggly</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/logic-monitor</loc>
   </url>
   
   
