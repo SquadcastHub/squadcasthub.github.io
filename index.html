@@ -206,6 +206,44 @@ toc: false
             })
             </script>
         </div>
+        <style>
+          #res{
+            position: absolute;
+            z-index: 1;
+            background-color: white;
+            width: 40%;
+            height: 400px;
+            overflow: scroll;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 4px;
+            margin-top: 5px;
+          }
+        </style>
+        <input type="text" id="algo">
+        <div id="res"></div>
+        <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script>
+        <script>
+          const client = algoliasearch('M0XX7ZMBFN', '0d12377b218ea5a0ef4e2acd4b518ab1');
+          const index = client.initIndex('squadcast_support');
+          const field = document.getElementById('algo');
+          const rest = document.getElementById('res');
+          rest.style.display = 'none';
+          field.onkeyup = function(){
+            var val = field.value;
+            index.search(val).then(({ hits }) => {
+              if(hits.length > 0 && val != ''){
+                rest.style.display = 'block';
+                rest.innerHTML = '';
+                for(i = 0; i < hits.length; i++){
+                  rest.innerHTML = rest.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">Title: '+hits[i].title+'<br/>Summary: '+hits[i].summary+'<br/>Content: '+hits[i].content+'<br/><div style="border-bottom: 1px solid black"></div></a><br/>';
+                }
+              }else{
+                rest.style.display = 'none';
+              }
+            });
+          }
+        </script>
         <!-- <div style="padding-left: 16%; padding-right: 16%; margin-bottom: 20px;">
             <ul id="profileTabs" class="nav nav-tabs">
                 <li class="active"><a href="#learn" data-toggle="tab">Learn</a></li>
