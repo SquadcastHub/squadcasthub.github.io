@@ -75,9 +75,9 @@ Route detailed monitoring alerts from Graylog v4 to the right users in Squadcast
 
 ![](images/graylog-v4-8.png)
 
-That is it, you are now good to go! Whenever an alert is triggered in LogicMonitor, an incident will be created automatically in Squadcast.
+That is it, you are now good to go! Whenever an alert is triggered in Graylog v4, an incident will be created automatically in Squadcast.
 
 {{site.data.alerts.blue-note}}
 <b>FAQ:</b>
-<br/><br/><p>Q: If an alert gets resolved in LogicMonitor, does LogicMonitor send auto-resolve signals to Squadcast?<br/><br/>A: Yes, LogicMonitor sends auto-resolve signals to Squadcast.</p>
+<br/><br/><p>Q: If an alert gets resolved in Graylog v4, does Graylog v4 send auto-resolve signals to Squadcast?<br/><br/>A: No, Graylog v4 does not send any auto-resolve signals to Squadcast. Incidents for alerts from Graylog v4 need to be manually resolved in Squadcast.</p>
 {{site.data.alerts.end}}
