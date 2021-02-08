@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Making changes to an Escalation Policy">
-<meta name="keywords" content="escalation policies,  ">
-<title>Editing an Existing Escalation Policy | Incident Management using Squadcast</title>
+<meta name="description" content="Send alerts to Squadcast from Graylog v4">
+<meta name="keywords" content=" ">
+<title>Graylog v4 | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Editing an Existing Escalation Policy page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Graylog v4 page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Editing an Existing Escalation Policy">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Graylog v4">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -385,13 +385,6 @@
           
           
           
-          <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
@@ -452,7 +445,7 @@
           
           
           
-          <li class="active"><a title="Editing an Existing Escalation Policy" href="/docs/editing-an-existing-escalation-policy">Editing an Existing Escalation Policy</a></li>
+          <li><a title="Editing an Existing Escalation Policy" href="/docs/editing-an-existing-escalation-policy">Editing an Existing Escalation Policy</a></li>
           
           
           
@@ -570,13 +563,6 @@
           
           
           
-          <li><a title="Incident War Room" href="/docs/warroom">Incident War Room</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
           
           
@@ -585,6 +571,13 @@
           
           
           <li><a title="Postmortems" href="/docs/postmortems">Postmortems</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -807,6 +800,13 @@
           
           
           
+          <li class="active"><a title="Graylog v4" href="/docs/graylog-v4">Graylog v4</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
@@ -878,6 +878,13 @@
           
           
           <li><a title="Loggly" href="/docs/loggly">Loggly</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LogicMonitor" href="/docs/logic-monitor">LogicMonitor</a></li>
           
           
           
@@ -1247,13 +1254,6 @@
           
           
           
-          <li><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline-1">Pin messages from War Room to the Incident Timeline</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
           
           
@@ -1457,44 +1457,89 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Editing an Existing Escalation Policy</h1>
+            <h1 class="post-title-main">Graylog v4</h1>
         </div>
             
-                <div class="summary">Making changes to an Escalation Policy</div>
+                <div class="summary">Send alerts to Squadcast from Graylog v4</div>
             
 
                 
 
-            <p>If you need to make changes to your escalation policy, you can do so by following the steps in this article.</p>
+            <p>This document will help you integrate Graylog v4 with Squadcast.</p>
 
-<ul>
-  <li>Move over to <strong>Escalation Policy</strong> from the navigation sidebar.</li>
-</ul>
+<p><a href="https://www.graylog.org/products/latestversion">Graylog v4</a> is a leading centralized log management solution built to open standards for capturing, storing, and enabling real-time analysis of terabytes of machine data. They deliver a better user experience by making analysis ridiculously fast and efficient using a more cost-effective and flexible architecture.
+Route detailed monitoring alerts from Graylog v4 to the right users in Squadcast.</p>
 
-<p><img src="images/edit_escalation_1.png" alt="" style="max-width: 20%;" /></p>
+<h2 id="how-to-integrate-graylog-v4-with-squadcast">How to integrate Graylog v4 with Squadcast</h2>
 
-<ul>
-  <li>Click on the <strong>More Options</strong> (3 dots) button on the top right corner of the escalation policy.</li>
-</ul>
+<h3 id="in-squadcast-using-graylog-v4-as-an-alert-source">In Squadcast: Using Graylog v4 as an Alert Source</h3>
 
-<p><img src="images/edit_escalation_2.png" alt="" /></p>
+<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong></p>
 
-<ul>
-  <li>You can update the escalation rules and click <strong>Save</strong>.</li>
-</ul>
+<p><img src="images/integration_1-1.png" alt="" /></p>
 
-<p><img src="images/edit_escalation_3.png" alt="" /></p>
+<p><strong>(2)</strong> Select an existing Service or <strong>Add service</strong></p>
 
-<p>Your escalation policy will now be updated.</p>
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p><strong>(3)</strong> Click the corresponding <strong>Alert Sources</strong></p>
+
+<p><img src="images/integration_1.png" alt="" /></p>
+
+<p><strong>(4)</strong> Search for <strong>Graylog v4</strong> from  the <strong>Alert Source</strong> drop-down menu and copy the webhook</p>
+
+<p><img src="images/graylog-v4-1.png" alt="" /></p>
+
+<h3 id="in-graylog-v4-add-a-webhook-for-squadcast">In Graylog v4: Add a Webhook for Squadcast</h3>
+
+<p><strong>(1)</strong> After logging in, select <strong>Alerts</strong> from the navigation bar on the top</p>
+
+<p><img src="images/graylog-v4-2.png" alt="" /></p>
+
+<p><strong>(2)</strong> Select <strong>Notifications</strong></p>
+
+<p><img src="images/graylog-v4-3.png" alt="" /></p>
+
+<p><strong>(3)</strong> If you do not have any existing Notifications set up, select <strong>Get Started</strong>. Else, select <strong>Create Notification</strong></p>
+
+<p><img src="images/graylog-v4-4.png" alt="" /></p>
+
+<p><strong>(4)</strong> Fill in the details:</p>
+
+<p><img src="images/graylog-v4-5.png" alt="" /></p>
+
+<p>(a) A meaningful <strong>Title</strong>
+(b) An optional <strong>Description</strong>
+(c) <strong>Notification Type</strong>: Select <strong>HTTP Notification</strong>
+(d) <strong>URL</strong>: Paste the copied Squadcast Webhook URL
+(e) Select <strong>Add to URL Whitelist</strong>. Here, click on <strong>Add URL</strong> and add:
+    - A meaningful <strong>Title</strong>
+    - <strong>URL</strong>: Paste <code class="highlighter-rouge">api.squadcast.com</code>
+    - <strong>Type</strong>: <code class="highlighter-rouge">Regex</code>
+    - <strong>Save</strong> the configuration
+<img src="images/graylog-v4-6.png" alt="" /></p>
+
+<p>(f) Now, click on <strong>Execute Test Notification</strong> to generate a test alert and trigger a test incident in Squadcast</p>
+
+<p>(g) <strong>Save</strong> the configuration</p>
+
+<p><strong>(5)</strong> Within <strong>Alerts</strong>, head over to <strong>Event Definitions</strong>. If there are no existing Event Definitions, you can create one or pick an existing Event Definition</p>
+
+<p><img src="images/graylog-v4-7.png" alt="" /></p>
+
+<p><strong>(6)</strong> Navigate to <strong>Notifications</strong> in the set-up flow and select <strong>Add Notification</strong> and select the <em>Squadcast notification</em> added previously and <strong>Save</strong> the entire configuration in the end</p>
+
+<p><img src="images/graylog-v4-8.png" alt="" /></p>
+
+<p>That is it, you are now good to go! Whenever an alert is triggered in Graylog v4, an incident will be created automatically in Squadcast.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>FAQ:</b>
+<br /><br /><p>Q: If an alert gets resolved in Graylog v4, does Graylog v4 send auto-resolve signals to Squadcast?<br /><br />A: No, Graylog v4 does not send any auto-resolve signals to Squadcast. Incidents for alerts from Graylog v4 need to be manually resolved in Squadcast.</p>
+</div>
 
 
                 <!--div class="tags">
-                    
-                    <h2>Related Documents </h2>
-                    
-                    
-                    
-                    
                     
                 </div-->
 
@@ -1569,7 +1614,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Jan 27, 2021 <br /> -->
+<!--  Site last generated: Feb 8, 2021 <br /> -->
                 </div>
             </div>
             <script>

@@ -385,13 +385,6 @@
           
           
           
-          <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
@@ -570,13 +563,6 @@
           
           
           
-          <li><a title="Incident War Room" href="/docs/warroom">Incident War Room</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
           
           
@@ -585,6 +571,13 @@
           
           
           <li><a title="Postmortems" href="/docs/postmortems">Postmortems</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -807,6 +800,13 @@
           
           
           
+          <li><a title="Graylog v4" href="/docs/graylog-v4">Graylog v4</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
@@ -878,6 +878,13 @@
           
           
           <li><a title="Loggly" href="/docs/loggly">Loggly</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LogicMonitor" href="/docs/logic-monitor">LogicMonitor</a></li>
           
           
           
@@ -1247,13 +1254,6 @@
           
           
           
-          <li><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline-1">Pin messages from War Room to the Incident Timeline</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
           
           
@@ -1471,48 +1471,43 @@ li.sidebarTitle{
 
 <h2 id="connecting-squadcast-to-g-suite">Connecting Squadcast to G Suite</h2>
 
-<p>1.Log in to your admin.google.com account with your G Suite account.</p>
+<p><strong>(1)</strong> Log in to your admin.google.com account with your G Suite account</p>
 
-<p>2.Select Apps on the main page.</p>
-
-<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note for Mobile App Users: </b>
-<br /><br /><p>Today, SSO does not work with our mobile applications.</p>
-</div>
+<p><strong>(2)</strong> Select Apps on the main page</p>
 
 <p><img src="images/google_1.png" alt="" /></p>
 
-<p>3.Select SAML apps</p>
+<p><strong>(3)</strong> Select SAML apps</p>
 
 <p><img src="images/google_2.png" alt="" /></p>
 
-<p>4.Create a new application by clicking the “<strong>+</strong>” button and then select <strong>SETUP MY OWN CUSTOM APP</strong></p>
+<p><strong>(4)</strong> Create a new application by clicking the “<strong>+</strong>” button and then select <strong>SETUP MY OWN CUSTOM APP</strong></p>
 
 <p><img src="images/google_3.png" alt="" /></p>
 
-<p>5.<strong>Download</strong> Certificate, copy <strong>SSO URL</strong> and keep them safe and click <strong>NEXT</strong>.</p>
+<p><strong>(5)</strong> <strong>Download</strong> Certificate, copy <strong>SSO URL</strong> and keep them safe and click <strong>NEXT</strong></p>
 
 <p><img src="images/google_4.png" alt="" /></p>
 
-<p>6.Enter the Application name as <strong>Squadcast</strong> and optionally provide a description and upload the logo and click <strong>NEXT</strong>.</p>
+<p><strong>(6)</strong> Enter the Application name as <strong>Squadcast</strong> and optionally provide a description and upload the logo and click <strong>NEXT</strong></p>
 
 <p><img src="images/google_5.png" alt="" /></p>
 
-<p>7.Login to app.squadcast.com and go to the <strong>Integrations</strong> tab and click the <strong>Integrate</strong> button under SSO and select the Google tab.</p>
+<p><strong>(7)</strong> Login to app.squadcast.com and go to the <strong>Integrations</strong> tab and click the <strong>Integrate</strong> button under SSO and select the Google tab</p>
 
 <p><img src="images/google_6.png" alt="" /></p>
 
 <p><img src="images/google_7.png" alt="" /></p>
 
-<p>8.Click Show configuration guide for Google and copy the ACS URL displayed.</p>
+<p><strong>(8)</strong> Click <strong>Show configuration guide for Google</strong> and copy the ACS URL displayed</p>
 
 <p><img src="images/google_8.png" alt="" /></p>
 
-<p>9.Go back to the Google custom app and in the Service Provider Details page and paste the copied <strong>ACS URL</strong> in both the <strong>ACS URL</strong> and <strong>Entity ID</strong> fields. Also select <strong>Name ID</strong> as <strong>Basic Information</strong> and <strong>Primary Email</strong> and <strong>Name ID **Format as **EMAIL</strong> and click <strong>Next</strong>.</p>
+<p><strong>(9)</strong> Go back to the Google custom app and in the Service Provider Details page and paste the copied <strong>ACS URL</strong> in both the <strong>ACS URL</strong> and <strong>Entity ID</strong> fields. Also select <strong>Name ID</strong> as <strong>Basic Information</strong> and <strong>Primary Email</strong> and <strong>Name ID **Format as **EMAIL</strong> and click <strong>Next</strong></p>
 
 <p><img src="images/google_9.png" alt="" /></p>
 
-<p>10.In the Attribute Mapping page, click the <strong>ADD NEW MAPPING</strong> button and add the following attributes and click <strong>Finish</strong> and <strong>OK</strong> in the next popup.</p>
+<p><strong>(10)</strong> In the Attribute Mapping page, click the <strong>ADD NEW MAPPING</strong> button and add the following attributes and click <strong>Finish</strong> and <strong>OK</strong> in the next popup</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Required
 
@@ -1538,15 +1533,17 @@ role | Custom Attribute | Stakeholder
 
 <p><img src="images/google_11.png" alt="" /></p>
 
-<p>11.Enable Squadcast application for all users.</p>
+<p><strong>(11)</strong> Enable Squadcast application for all users.</p>
 
 <p><img src="images/google_12.png" alt="" /></p>
 
-<p>12.Go back to the Squadcast Google SSO page and paste the SSO URL we have obtained from Step 5 above in the <strong>SAML 2.0 Endpoint</strong> text box and the certificate details in the <strong>X.509 Certificate</strong> field. Configure other options like the default User role and make sure to check the Provision new users on first login checkbox and click Save.</p>
+<p><strong>(12)</strong> Go back to the Squadcast Google SSO page and paste the SSO URL we have obtained from Step 5 above in the <strong>SAML 2.0 Endpoint</strong> text box and the certificate details in the <strong>X.509 Certificate</strong> field. Configure other options like the default User role and make sure to check the Provision new users on first login checkbox and click Save</p>
 
 <p>You can enable the toggle button on the top to <strong>Enable Google SSO</strong> for Squadcast and you are good to go and your users will be able to use Google SSO to log in to Squadcast without needing a password.</p>
 
 <p><img src="images/google_13.png" alt="" /></p>
+
+<p>That is it, you are good to go! Users can now use their G Suite credentials to sign in to Squadcast via Single Sign-On (SSO).</p>
 
 
                 <!--div class="tags">
@@ -1632,7 +1629,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Jan 27, 2021 <br /> -->
+<!--  Site last generated: Feb 8, 2021 <br /> -->
                 </div>
             </div>
             <script>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Define rules on when and how alerts escalate to various Users, Squads and (or) Schedules within your organization.">
+<meta name="description" content="Define rules indicating when and how alerts will escalate to various Users, Squads and (or) Schedules within your Organization">
 <meta name="keywords" content="escalation policies,  ">
 <title>Create & Manage Escalation Policies | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -385,13 +385,6 @@
           
           
           
-          <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
@@ -570,13 +563,6 @@
           
           
           
-          <li><a title="Incident War Room" href="/docs/warroom">Incident War Room</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
           
           
@@ -585,6 +571,13 @@
           
           
           <li><a title="Postmortems" href="/docs/postmortems">Postmortems</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -807,6 +800,13 @@
           
           
           
+          <li><a title="Graylog v4" href="/docs/graylog-v4">Graylog v4</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
@@ -878,6 +878,13 @@
           
           
           <li><a title="Loggly" href="/docs/loggly">Loggly</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LogicMonitor" href="/docs/logic-monitor">LogicMonitor</a></li>
           
           
           
@@ -1247,13 +1254,6 @@
           
           
           
-          <li><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline-1">Pin messages from War Room to the Incident Timeline</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
           
           
@@ -1460,84 +1460,87 @@ li.sidebarTitle{
             <h1 class="post-title-main">Create & Manage Escalation Policies</h1>
         </div>
             
-                <div class="summary">Define rules on when and how alerts escalate to various Users, Squads and (or) Schedules within your organization.</div>
+                <div class="summary">Define rules indicating when and how alerts will escalate to various Users, Squads and (or) Schedules within your Organization</div>
             
 
                 
 
-            <p>Escalation Policies make sure the right people are notified at the right time. The incident notifications can be configured to escalate to Users, Squads or Schedules in a given order and time. You can create different Escalation Policies for different Services.</p>
+            <p>Escalation Policies ensure that the right people are notified at the right time. Incident notifications can be configured to escalate to Users, Squads or Schedules in a given order and time. You can create different Escalation Policies for different Services.</p>
 
 <h2 id="creating-an-escalation-policy">Creating an Escalation Policy</h2>
 
-<ul>
-  <li>
-    <p>You can create a Escalation Policy under <strong>Escalation Policies</strong> from the navigation sidebar.</p>
-  </li>
-  <li>
-    <p>Click on <strong>Add Escalation Policy</strong> to create one from scratch or choose to edit an existing one by clicking on the <strong>More Options</strong> button for the specific escalation policy.</p>
-  </li>
-</ul>
+<p><strong>(1)</strong> Click on <strong>Escalation Policies</strong> from the navigation sidebar</p>
 
 <p><img src="images/create_escalation_1.png" alt="" /></p>
 
+<p><strong>(2)</strong> Click on <strong>Add Escalation Policy</strong> to create one from scratch</p>
+
 <p><img src="images/create_escalation_2.png" alt="" /></p>
 
-<ul>
-  <li>
-    <p>Give the Escalation Policy a Name and a Description.</p>
-  </li>
-  <li>
-    <p>You can add <code class="highlighter-rouge">Users</code>, <code class="highlighter-rouge">Squads</code> or <code class="highlighter-rouge">Schedules</code> as recipients at any level.</p>
-  </li>
-  <li>
-    <p>Enter the appropriate time, giving enough notice for your recipients to acknowledge the alert after which it will escalate to the next level.</p>
-  </li>
-  <li>
-    <p>You can also choose to override the user’s notifications by turning off the  <code class="highlighter-rouge">Personal Notification Rules</code> toggle and adding in the notification modes of your choice.</p>
-  </li>
-  <li>
-    <p>In this case, we have chosen to retain the personal notification rules for Escalation Rules 1 and 3 and have added our notification overrides for Escalation Rule 2.</p>
-  </li>
-</ul>
+<p><strong>(3)</strong> Give the Escalation Policy a Name and a Description</p>
 
 <p><img src="images/create_escalation_3.png" alt="" /></p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Escalation After and the Order of Rules: </b>
-<br /><br /><p>The time in (mins) input in the `Escalation After` text box takes the absolute time.<br /><br />That is, the time input in all the levels of escalation is calculated from the time of the incident trigger.<br /><br />The order of the rules will be carried out based on the time input. That is, from the shortest time to the longest, irrespective of the order in which the rules are placed.</p>
-</div>
-
-<ul>
-  <li>By clicking <strong>Add Rule</strong> you can add any number of level of recipients to your escalation policy.</li>
-</ul>
+<p><strong>(4)</strong> Add <code class="highlighter-rouge">Users</code>, <code class="highlighter-rouge">Squads</code> or <code class="highlighter-rouge">Schedules</code> as recipients at any level of the Escalation Rule</p>
 
 <p><img src="images/create_escalation_4.png" alt="" /></p>
 
+<p><strong>(5)</strong> Enter the appropriate time for <strong>Escalate After</strong>, giving enough notice for your recipients to acknowledge the alert after which it will escalate to the next level (if defined)</p>
+
 <p><img src="images/create_escalation_5.png" alt="" /></p>
 
-<h2 id="repeating-escalation-policy">Repeating Escalation Policy</h2>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Escalation After and the Order of Rules</b>
+<br /><br /><p>The time in (mins) input in the `Escalation After` text box takes the absolute time. <br />That is, the time input in all the levels of escalation is calculated from the time of the incident trigger.<br />The order of the rules will be carried out based on the time input. That is, from the shortest to the longest time, irrespective of the order in which the rules are placed while defining.</p>
+</div>
 
-<p>There is an option to repeat an policy a given number of times if the incident is still in the <strong>Triggered</strong> state, that is, if no one acknowledges it even after the escalation policy has been executed fully once.</p>
+<p><strong>(6)</strong> There are two ways to add the medium of notification:</p>
 
-<ul>
-  <li>
-    <p>You can do this by entering an accepted value (1,2 or 3) in the <code class="highlighter-rouge">Repeat</code> box at the bottom of the UI pop-up while creating the escalation policy.</p>
-  </li>
-  <li>
-    <p>Click on the <strong>Save</strong> button to update the escalation policy.</p>
-  </li>
-</ul>
+<p>(a) Select one or more options from <strong>Via</strong> drop-down for every Escalation Rule</p>
 
 <p><img src="images/create_escalation_6.png" alt="" /></p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Maximum Repeats Possible: </b>
-<br /><br /><p>You can repeat any escalation policy a maximum of 3 times only</p>
-</div>
+<p>(b) <a href="notification-rules">Personal Notification Rules</a> - Allow users to set-up their preferred medium of notification</p>
+
+<p><img src="images/create_escalation_7.png" alt="" /></p>
+
+<p><strong>(7)</strong> Use <strong>Add Rule</strong> to add a new escalation layer in a policy</p>
+
+<p><img src="images/create_escalation_8.png" alt="" /></p>
+
+<p><strong>(8)</strong> Repeat the entire policy if no one acknowledges the incident even after the Escalation Policy has been executed fully once</p>
+
+<p><img src="images/create_escalation_9.png" alt="" /></p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note: </b>
-<br /><br /><p>If the incident has transitioned away from the **Triggered** state when it was assigned to a specific escalation policy, then the rest of the rules in the escalation policy will not be carried out.</p>
+<b>Maximum Repeats Possible</b>
+<br /><br /><p>You can repeat any Escalation Policy for a maximum of 3 times only</p>
+</div>
+
+<p><strong>(9)</strong> Click on <strong>Save</strong> to view the Escalation policy</p>
+
+<p><img src="images/create_escalation_10.png" alt="" /></p>
+
+<p><img src="images/create_escalation_11.png" alt="" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
+<br /><br /><p>If the incident has transitioned away from the **Triggered** state when it was assigned to a specific Escalation Policy, then the rest of the rules in the Escalation Policy will not be carried out.</p>
+</div>
+
+<h2 id="edit-or-delete-an-escalation-policy">Edit or Delete an Escalation Policy</h2>
+
+<p><strong>(1)</strong> To edit an existing Escalation Policy, click on <strong>More Options</strong> for that particular Escalation Policy</p>
+
+<p><strong>(2)</strong> Choose <strong>Edit</strong> to modify the existing Escalation Policy or <strong>Delete</strong> to delete the Escalation Policy entirely</p>
+
+<p><img src="images/edit_escalation_1.png" alt="" /></p>
+
+<p><strong>(3)</strong> After modifying the Escalation Policy, click on <strong>Save</strong></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
+<br /><br /><p>Before deleting an Escalation Policy, ensure that it is not associated with any of the Services or that there are no open incidents associated with the Escalation Policy, otherwise you will be prohibited from deleting it.</p>
 </div>
 
 
@@ -1622,7 +1625,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Jan 27, 2021 <br /> -->
+<!--  Site last generated: Feb 8, 2021 <br /> -->
                 </div>
             </div>
             <script>

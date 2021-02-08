@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Push important notes into the Incident War Room for easier information sharing">
-<meta name="keywords" content="war room,  ">
-<title>Incident War Room | Incident Management using Squadcast</title>
+<meta name="description" content="Send alerts to Squadcast from LogicMonitor">
+<meta name="keywords" content=" ">
+<title>LogicMonitor | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident War Room page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the LogicMonitor page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Incident War Room">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="LogicMonitor">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -385,13 +385,6 @@
           
           
           
-          <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
@@ -570,13 +563,6 @@
           
           
           
-          <li class="active"><a title="Incident War Room" href="/docs/warroom">Incident War Room</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
           
           
@@ -585,6 +571,13 @@
           
           
           <li><a title="Postmortems" href="/docs/postmortems">Postmortems</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -807,6 +800,13 @@
           
           
           
+          <li><a title="Graylog v4" href="/docs/graylog-v4">Graylog v4</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
@@ -878,6 +878,13 @@
           
           
           <li><a title="Loggly" href="/docs/loggly">Loggly</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a title="LogicMonitor" href="/docs/logic-monitor">LogicMonitor</a></li>
           
           
           
@@ -1247,13 +1254,6 @@
           
           
           
-          <li><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline-1">Pin messages from War Room to the Incident Timeline</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
           
           
@@ -1457,64 +1457,118 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Incident War Room</h1>
+            <h1 class="post-title-main">LogicMonitor</h1>
         </div>
             
-                <div class="summary">Push important notes into the Incident War Room for easier information sharing</div>
+                <div class="summary">Send alerts to Squadcast from LogicMonitor</div>
             
 
                 
 
-            <p>Incident War Room is an incident specific commenting system where you can add in important notes and pointers that can help mitigate the incident faster.</p>
+            <p>This document will help you integrate LogicMonitor with Squadcast.</p>
 
-<p>You can use this to:</p>
+<p><a href="https://www.logicmonitor.com/">LogicMonitor</a> is a fully-automated, cloud-based infrastructure monitoring platform for Enterprise IT and Managed Service Providers giving full-stack visibility into networks, cloud, servers with one unified view.
+Route detailed monitoring alerts from LogicMonitor to the right users in Squadcast.</p>
+
+<h2 id="how-to-integrate-logicmonitor-with-squadcast">How to integrate LogicMonitor with Squadcast</h2>
+
+<h3 id="in-squadcast-using-logicmonitor-as-an-alert-source">In Squadcast: Using LogicMonitor as an Alert Source</h3>
+
+<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong></p>
+
+<p><img src="images/integration_1-1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Select an existing Service or <strong>Add service</strong></p>
+
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p><strong>(3)</strong> Click the corresponding <strong>Alert Sources</strong></p>
+
+<p><img src="images/integration_1.png" alt="" /></p>
+
+<p><strong>(4)</strong> Search for <strong>LogicMonitor</strong> from  the <strong>Alert Source</strong> drop-down menu and copy the webhook</p>
+
+<p><img src="images/logic-monitor11.png" alt="" /></p>
+
+<h3 id="in-logicmonitor-add-a-webhook-for-squadcast">In LogicMonitor: Add a webhook for Squadcast</h3>
+
+<p><strong>(1)</strong> From the dashboard, navigate to <strong>Settings</strong></p>
+
+<p><img src="images/logic-monitor1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Select <strong>Integrations</strong> from the sidebar</p>
+
+<p><img src="images/logic-monitor2.png" alt="" /></p>
+
+<p><strong>(3)</strong> Select <strong>Add</strong> to add the new endpoint</p>
+
+<p><img src="images/logic-monitor3.png" alt="" /></p>
+
+<p><strong>(4)</strong> Select <strong>Custom HTTP Delivery</strong> since we want to configure a custom webhook</p>
+
+<p><img src="images/logic-monitor4.png" alt="" /></p>
+
 <ul>
-  <li>Collaborate and resolve the incident</li>
-  <li>Use it to store important pointers that will help with the mitigation</li>
-  <li>Use it to store notes that can be populated in the postmortem report</li>
+  <li>Give the integration a meaningul <strong>Name</strong>, such as, <em>Squadcast Webhook</em></li>
+  <li>Provide an <em>optional</em> <strong>Description</strong></li>
+  <li>You can either choose to <strong>Use the same URL and data to notify on various alert activity</strong> (one single Squadcast Service webhook) or <strong>Use differents URLs or data formats to notify on various alert activity</strong> (multiple Squadcast Services webhooks). Either of the options you choose, you can follow the steps below, as many times as required (per each webhook)</li>
+  <li>Choose <strong>Cleared</strong> checkbox since this will enable <strong>auto-resolution</strong> for incidents in Squadcast</li>
+  <li><strong>HTTP Method</strong>: From the drop-down, choose <strong>HTTP Post</strong>. Do <em>not</em> enable/use Custom Headers</li>
+  <li>In the <strong>URL</strong> field, first select <strong>https://</strong> from the drop-down on the left and paste the copied Squadcast webhook by removing the <em>https://</em> prefix from the URL</li>
+  <li>Provide <strong>Username</strong> and <strong>Password</strong> if applicable</li>
 </ul>
 
-<h2 id="using-your-war-room-during-downtime">Using your War Room During Downtime</h2>
+<p><img src="images/logic-monitor5.png" alt="" /></p>
 
 <ul>
-  <li>You can add or address Users in the War Room using “@” symbol. This can be used while adding in user specific notes.</li>
+  <li>Within <strong>Alert Data</strong>, paste the following template:</li>
 </ul>
 
-<p><img src="images/warroom_1.png" alt="" /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service=##SERVICE##&amp;alertid=##ALERTID##&amp;alerttype=##ALERTTYPE##&amp;alertstatus=##ALERTSTATUS##&amp;level=##LEVEL##&amp;host=##HOST##&amp;datasource=##DATASOURCE##&amp;eventsource=##EVENTSOURCE##&amp;batchjob=##BATCHJOB##&amp;group=##GROUP##&amp;datapoint=##DATAPOINT##&amp;start=##START##&amp;finish=##FINISH##&amp;duration=##DURATION##&amp;value=##VALUE##&amp;threshold=##THRESHOLD##&amp;userdata=##USERDATA##&amp;cmdline=##CMDLINE##&amp;exitCode=##EXITCODE##&amp;stdout=##STDOUT##&amp;stderr=##STDERR##&amp;agent=##AGENT_DESCRIPTION##&amp;checkpoint=##CHECKPOINT##&amp;datapointdesc=##DPDESCRIPTION##&amp;hostdesc=##HOSTDESCRIPTION##&amp;hostinfo=##system.sysinfo##&amp;hostips=##system.ips##&amp;hosturl=##DEVICEURL##&amp;instance=##INSTANCE##&amp;dsidesc=##DSIDESCRIPTION##&amp;batchdesc=##BJDESCRIPTION##&amp;hostname=##system.hostname##&amp;dsdesc=##DSDESCRIPTION##&amp;eventmsg=##LIMITEDMESSAGE##&amp;eventlogmsg=##MESSAGE##&amp;eventcode=##EVENTCODE##&amp;eventtype=##TYPE##&amp;eventuser=##USER##&amp;eventlogfile=##LOGFILE##&amp;servicedetail=##DETAIL##&amp;serviceurl=##URL##&amp;servicegroup=##SERVICEGROUP##&amp;date=##DATE##&amp;clearvalue=##CLEARVALUE##&amp;internalid=##INTERNALID##&amp;alerturl=##ALERTDETAILURL##
+</code></pre></div></div>
 
-<h2 id="see-who-is-on-call">See Who is On-call</h2>
-
+<p>Enable <strong>Raw</strong>. Additionally, from the <strong>Format</strong> drop-down, select <strong>Form Data</strong></p>
 <ul>
-  <li>Users who are on-call at that instant are indicated by a green dot against their name.</li>
+  <li>Do <em>not</em> enable the checkbox for <strong>Include an ID provided in HTTP response when updating alert status</strong></li>
 </ul>
+
+<p><strong>(5)</strong> Click on <strong>Test Alert Delivery</strong>. This is will send a <em>Test</em> alert to Squadcast, triggering a <em>Test</em> incident. Verify this to ensure the integration is working as expected</p>
+
+<p><strong>(6)</strong> <strong>Save</strong> the integration configuration</p>
+
+<p><img src="images/logic-monitor6.png" alt="" /></p>
+
+<p>Find more details on how each of these parameters for <strong>Custom HTTP Endpoints</strong> can be configured <a href="https://www.logicmonitor.com/support/alerts/integrations/custom-http-delivery">here</a></p>
+
+<p><strong>(7)</strong> Select <strong>Escalation Chains</strong> from the sidebar. Either <strong>Add</strong> a new Escalation Chain or edit an existing one</p>
+
+<p><img src="images/logic-monitor7.png" alt="" /></p>
+
+<p><strong>(8)</strong> Configure the <em>Squadcast Webhook</em> within your Escalation Chain and <strong>Save</strong> it</p>
+
+<p><img src="images/logic-monitor8.png" alt="" /></p>
+
+<p>Find more details on how each of these parameters for <strong>Escalation Chains</strong> can be configured <a href="https://www.logicmonitor.com/support/alerts/alert-delivery/escalation-chains">here</a></p>
+
+<p><strong>(9)</strong> Select <strong>Alert Rules</strong> from the sidebar from under <strong>Alert Settings</strong>. Either <strong>Add</strong> a new Alert Rule or edit an existing one</p>
+
+<p><img src="images/logic-monitor9.png" alt="" /></p>
+
+<p><strong>(10)</strong> Fill in all the relevant details. <em>Enable</em> the checkbox <strong>Send notification when alerts clear</strong>. Choose the configured <strong>Escalation Chain</strong> from the drop-down and <strong>Save</strong> it</p>
+
+<p><img src="images/logic-monitor10.png" alt="" /></p>
+
+<p>Find more details on how each of these parameters for <strong>Alert Rules</strong> can be configured <a href="https://www.logicmonitor.com/support/alerts/alert-delivery/alert-rules">here</a></p>
+
+<p>That is it, you are now good to go! Whenever an alert is triggered in LogicMonitor, an incident will be created automatically in Squadcast.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Who is On-Call? </b>
-<br /><br /><p>Users who are on-call across all schedules in the organization are indicated with the green dot.</p>
+<b>FAQ:</b>
+<br /><br /><p>Q: If an alert gets resolved in LogicMonitor, does LogicMonitor send auto-resolve signals to Squadcast?<br /><br />A: Yes, LogicMonitor sends auto-resolve signals to Squadcast.</p>
 </div>
-
-<p><img src="images/warroom_2.png" alt="" /></p>
-
-<h2 id="markdown-support-in-war-room">Markdown Support in War Room</h2>
-
-<p>The Incident War Room supports Markdown.</p>
-
-<ul>
-  <li>You can add in Images as URLs, Links among other important data as a comment within the War Room.</li>
-</ul>
-
-<p><img src="images/warroom_3.png" alt="" /></p>
-
-<p><img src="images/warroom_4.png" alt="" /></p>
 
 
                 <!--div class="tags">
-                    
-                    <h2>Related Documents </h2>
-                    
-                    
-                    
-                    
                     
                 </div-->
 
@@ -1589,7 +1643,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Jan 27, 2021 <br /> -->
+<!--  Site last generated: Feb 8, 2021 <br /> -->
                 </div>
             </div>
             <script>

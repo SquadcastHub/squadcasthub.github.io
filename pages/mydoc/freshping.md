@@ -9,32 +9,59 @@ permalink: docs/freshping
 folder: mydoc
 ---
 
-Follow the steps below to configure a service so as to push related alert data from Freshping onto Squadcast.
+This document will help you integrate Freshping with Squadcast.
 
-Squadcast will then process this information to create incidents for this service as per your preferences.
+[Freshping](https://www.freshworks.com/website-monitoring/) is a simple Uptime and Performance monitoring tool which keeps track of performance and downtime of websites, APIs, web services and web applications with real-time alerts.
+Route detailed monitoring alerts from Freshping to the right users in Squadcast.
 
-## Using Freshping as an Alert Source
+## How to integrate Freshping with Squadcast
 
-On the **Sidebar**, click on **Services**.
+### In Squadcast: Using Freshping as an Alert Source
 
-You can either choose to use existing service or [create a new service](adding-a-service-1)
+**(1)** On the **Sidebar**, click on **Services**.
 
-Now, click on the corresponding **Alert Sources** button.
+![](images/integration_1-1.png)
+
+**(2)** Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+**(3)** Click the corresponding **Alert Sources**
 
 ![](images/integration_1.png)
 
-Select **Freshping** from  **Alert Source** drop down and copy the Webhook URL shown.
+**(4)** Search for **Freshping** from the **Alert Source** drop down menu and copy the Webhook
 
 ![](images/freshping_1.png)
 
 ## Create a Squadcast Webhook in Freshping
 
-1.Login to your Freshping web console and go to **Settings** then **Integrations**
+### In Freshping: Create a Squadcast Webhook
+
+**(1)** Login to your Freshping web console and go to **Settings** 
 
 ![](images/freshping_2.png)
 
-2.In **Webhook** click **Create Integration**  and paste Freshping webhook url which you initially copied from Squadcast Dashboard and click **Create**.
+**(2)** From the Settings menu, select **Integrations**
 
 ![](images/freshping_3.png)
 
-Now whenever an event is triggered in Freshping, an incident will be created automatically in Squadcast. And once the event that triggered the incident(s) is resolved in Freshping, the relevant Squadcast incidents created would get resolved automatically.
+**(3)** Scroll down to the **Webhook** section and select **+ Create Integration**
+
+![](images/freshping_4.png)
+
+**(4)** Paste the copied webhook URL from Squadcast under **Domain URL** and click on **Create** to save the integration
+
+![](images/freshping_5.png)
+
+**(5)** You can verify the same on the **Integrations** page
+
+![](images/freshping_6.png)
+
+**NOTE**: When you click on the **Test** button, Freshping sends out **Resolve** alerts which do *not* create any new incidents in Squadcast. Please simulate real-time alerts to verify that the integration is working as expected.
+
+![](images/freshping_7.png)
+
+That is it, you are good to go! 
+
+Now, whenever Freshping generates an alert, an incident will be triggered for it in Squadcast. Additionally, once the alert that triggered the incident(s) is resolved in Freshping, the corresponding Squadcast incident would get **resolved automatically.**

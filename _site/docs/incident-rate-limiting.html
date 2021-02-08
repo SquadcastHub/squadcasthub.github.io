@@ -385,13 +385,6 @@
           
           
           
-          <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
@@ -570,13 +563,6 @@
           
           
           
-          <li><a title="Incident War Room" href="/docs/warroom">Incident War Room</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
           
           
@@ -585,6 +571,13 @@
           
           
           <li><a title="Postmortems" href="/docs/postmortems">Postmortems</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -807,6 +800,13 @@
           
           
           
+          <li><a title="Graylog v4" href="/docs/graylog-v4">Graylog v4</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
@@ -878,6 +878,13 @@
           
           
           <li><a title="Loggly" href="/docs/loggly">Loggly</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LogicMonitor" href="/docs/logic-monitor">LogicMonitor</a></li>
           
           
           
@@ -1247,13 +1254,6 @@
           
           
           
-          <li><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline-1">Pin messages from War Room to the Incident Timeline</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
           
           
@@ -1465,7 +1465,7 @@ li.sidebarTitle{
 
                 
 
-            <p>Squadcast limits the number of requests a client can make within a certain period of time.</p>
+            <p>Squadcast limits the number of Incidents a client can create within a certain period of time.</p>
 
 <p>This Rate Limiting is done for a few reasons:</p>
 <ol>
@@ -1475,41 +1475,13 @@ li.sidebarTitle{
   <li>To ensure that only meaningful and actionable alerts are sent into Squadcast</li>
 </ol>
 
-<p>If a request exceeds the defined Rate Limits, the system will stop accepting new requests. Which means, after exceeding the limit, you will not receive any more incidents for that time period.</p>
-
-<p>You will start receiving incidents again post this time period.</p>
-
-<h2 id="rate-limits-calculation-and-how-it-works">Rate Limits Calculation and How it Works</h2>
-
-<p>Squadcast considers a time period of <strong>1 minute</strong> during which a maximum of only 15 incidents are allowed into the system.</p>
-
-<p>When ever a new incident is created, before creating an incident Squadcast checks if the count of incidents in the last 1 minute has exceeded the incoming incident limit or not.</p>
-
-<ul>
-  <li>If <code class="highlighter-rouge">Not</code>: Squadcast creates an incident</li>
-  <li>If <code class="highlighter-rouge">Yes</code>: Squadcast does not create an incident and hence, you will not see any incidents come in for that period of time.</li>
-</ul>
-
-<p>Also, the system will freeze for next 15 minutes, and disregard any incoming alerts, this not allowing any new incidents to be created during this period.</p>
-
-<p>Post this freeze period of 15 minutes, Squadcast will again process incoming events from all alert sources and allow new incidents to be created. The Rate Limits will again be in effect, and considered from the time of unfreeze.</p>
+<p>For calculating rate limits, all incidents including <a href="alert-suppression">Suppressed</a> incidents and <a href="de-duplication-rules">Duplicates</a> will be counted.</p>
 
 <h2 id="how-can-i-ensure-that-i-dont-exceed-the-rate-limit">How can I ensure that I don’t exceed the Rate Limit?</h2>
 
 <p>There are a few ways to control the kind of alerts/ incidents that come into Squadcast. This is also done to ensure that you reduce alert fatigue and send in actionable incidents only.</p>
 
-<ul>
-  <li>
-    <p>Configure your third party tools to send in only the alerts that you will need to take action on as opposed to sending in all the alerts that come in. For example, you don’t need all of the warning alerts and will probably need just the ones that impact customer SLAs or your internally set SLOs.</p>
-  </li>
-  <li>
-    <p>Set <a href="de-duplication-rules"><strong>De-duplication Rules</strong></a> to automatically suppress similar alerts. Especially useful to suppress warning alerts from your tool, should you want to send all kinds of alerts into Squadcast just for information.</p>
-  </li>
-</ul>
-
-<h2 id="how-to-increase-my-rate-limits">How to increase my Rate Limits?</h2>
-
-<p>If you have done everything to reduce the number of meaningful alerts coming into Squadcast but still see that this exceeds our Rate Limits, then you can reach out to our <strong><a href="mailto:support@squadcast.com">Support</a></strong> and we can help by increasing the Rate Limits for your organization.</p>
+<p>Configure your third party tools to send in only the alerts that you will need to take action on as opposed to sending in all the alerts that come in. For example, you don’t need all of the warning alerts and will probably need just the ones that impact customer SLAs or your internally set SLOs.</p>
 
 
                 <!--div class="tags">
@@ -1593,7 +1565,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Jan 27, 2021 <br /> -->
+<!--  Site last generated: Feb 8, 2021 <br /> -->
                 </div>
             </div>
             <script>

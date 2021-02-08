@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Send events to Squadcast from Email">
+<meta name="description" content="Send alerts to Squadcast via Email">
 <meta name="keywords" content="integrationemail,  ">
 <title>Email | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -385,13 +385,6 @@
           
           
           
-          <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
@@ -570,13 +563,6 @@
           
           
           
-          <li><a title="Incident War Room" href="/docs/warroom">Incident War Room</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
           
           
@@ -585,6 +571,13 @@
           
           
           <li><a title="Postmortems" href="/docs/postmortems">Postmortems</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -807,6 +800,13 @@
           
           
           
+          <li><a title="Graylog v4" href="/docs/graylog-v4">Graylog v4</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
@@ -878,6 +878,13 @@
           
           
           <li><a title="Loggly" href="/docs/loggly">Loggly</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LogicMonitor" href="/docs/logic-monitor">LogicMonitor</a></li>
           
           
           
@@ -1247,13 +1254,6 @@
           
           
           
-          <li><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline-1">Pin messages from War Room to the Incident Timeline</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
           
           
@@ -1460,45 +1460,88 @@ li.sidebarTitle{
             <h1 class="post-title-main">Email</h1>
         </div>
             
-                <div class="summary">Send events to Squadcast from Email</div>
+                <div class="summary">Send alerts to Squadcast via Email</div>
             
 
                 
 
-            <h1 id="using-email-as-an-alert-source">Using Email as an Alert Source</h1>
+            <p>Route alerts into Squadcast using Email endpoints of Services from platforms that support Email integrations.</p>
 
-<p>On the <strong>Sidebar</strong>, click on <strong>Services</strong>.</p>
+<h2 id="in-squadcast-using-email-as-an-alert-source">In Squadcast: Using Email as an Alert Source</h2>
 
-<p>You can either choose to use existing service or <a href="adding-a-service-1">create a new service</a></p>
+<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong></p>
 
-<p>Now, click on the corresponding <strong>Alert Sources</strong> button.</p>
+<p><img src="images/integration_1-1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Select an existing Service or <strong>Add service</strong></p>
+
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p><strong>(3)</strong> Click the corresponding <strong>Alert Sources</strong></p>
 
 <p><img src="images/integration_1.png" alt="" /></p>
 
-<p>Select <strong>Email</strong> from  <strong>Alert Source</strong> drop down and copy the Email Address shown.</p>
+<p><strong>(4)</strong> Search for <strong>Email</strong> from the <strong>Alert Source</strong> drop down menu and copy the Email address</p>
 
 <p><img src="images/email_1.png" alt="" /></p>
 
-<p>That’s it your Email integration is now good to go.</p>
+<h2 id="in-the-external-platform-which-you-are-using-configure-the-email-endpoint">In the external platform which you are using: Configure the Email endpoint</h2>
 
-<p>The incident’s message will be the subject of the email and the description will be the body of the email.</p>
+<p>Head over to the platform from where you want to route alerts into Squadcast. Navigate to the section where you can <em>configure the Email endpoint/integration</em>. Then, paste the copied Email address in the right placeholder and test this integration, if there is a provision to do so, and validate that the integration works.</p>
 
-<h2 id="renaming-the-email-prefix">Renaming the Email Prefix</h2>
+<p>That’s it, your Email integration is now good to go!</p>
 
-<ul>
-  <li>
-    <p>You can click on the <strong>Edit</strong> button for the specific service.</p>
-  </li>
-  <li>
-    <p>You can change the default email address you see to what is easier for you.</p>
-  </li>
-</ul>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
+<br /><br /><p>The Incident Message will be the subject of the Email and the Incident Description will contain the body of the Email</p>
+</div>
+
+<h2 id="how-to-configure-the-email-prefix-for-a-new-service">How-to: Configure the Email Prefix for a new Service</h2>
+
+<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong></p>
+
+<p><img src="images/integration_1-1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Select <strong>Add service</strong></p>
+
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p><strong>(3)</strong> Add the details in the box as required along with configuring the <strong>Email Prefix</strong></p>
 
 <p><img src="images/email_2.png" alt="" /></p>
 
-<p>Now whenever you send an Email to that integration email, an incident will be created in Squadcast.</p>
+<p><strong>(4)</strong> Click on <strong>Save</strong> to create the new Service with an Email Prefix of your choice</p>
 
-<p>The incident’s message will be the subject of the email and the description will be the body of the email.</p>
+<p><img src="images/email_3.png" alt="" /></p>
+
+<h2 id="how-to-rename-the-email-prefix-for-an-existing-service">How-to: Rename the Email Prefix for an existing Service</h2>
+
+<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong></p>
+
+<p><img src="images/integration_1-1.png" alt="" /></p>
+
+<p><strong>(2)</strong> For the Service for which you want to rename the Email prefix, click on the <strong>Edit</strong> option</p>
+
+<p><img src="images/email_4.png" alt="" /></p>
+
+<p><strong>(3)</strong> Select <strong>Edit</strong> in the drop-down</p>
+
+<p><img src="images/email_5.png" alt="" /></p>
+
+<p><strong>(4)</strong> Replace the existing prefix with the prefix of your choice in the placeholder for <strong>Email Prefix</strong></p>
+
+<p><img src="images/email_6.png" alt="" /></p>
+
+<p><strong>(5)</strong> Click on <strong>Save</strong></p>
+
+<p><img src="images/email_7.png" alt="" /></p>
+
+<p>Now, whenever an Email is sent to the Email address of the Service, Squadcast will trigger an incident for it.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
+<br /><br /><p>This integration does not support <b>auto-resolution</b> of incidents. If the platform you are using resolves an alert, you will have to manually resolve the corresponding incident in Squadcast via the <a href="https://www.app.squadcast.com">web app</a> or the <a href="using-the-mobile-app">Squadcast mobile app</a></p>
+</div>
 
 
                 <!--div class="tags">
@@ -1584,7 +1627,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Jan 27, 2021 <br /> -->
+<!--  Site last generated: Feb 8, 2021 <br /> -->
                 </div>
             </div>
             <script>

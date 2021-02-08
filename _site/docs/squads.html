@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Everything you need to know about Squads">
+<meta name="description" content="A Squad is a group of users corresponding to a team or a project">
 <meta name="keywords" content="squads,  ">
 <title>Manage Squads | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -385,13 +385,6 @@
           
           
           
-          <li><a title="Deleting a Service" href="/docs/deleting-a-service">Deleting a Service</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Alert Suppression" href="/docs/alert-suppression">Alert Suppression</a></li>
           
           
@@ -570,13 +563,6 @@
           
           
           
-          <li><a title="Incident War Room" href="/docs/warroom">Incident War Room</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
           
           
@@ -585,6 +571,13 @@
           
           
           <li><a title="Postmortems" href="/docs/postmortems">Postmortems</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident Notes" href="/docs/incident-notes">Incident Notes</a></li>
           
           
           
@@ -807,6 +800,13 @@
           
           
           
+          <li><a title="Graylog v4" href="/docs/graylog-v4">Graylog v4</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="HetrixTools" href="/docs/hetrixtools">HetrixTools</a></li>
           
           
@@ -878,6 +878,13 @@
           
           
           <li><a title="Loggly" href="/docs/loggly">Loggly</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LogicMonitor" href="/docs/logic-monitor">LogicMonitor</a></li>
           
           
           
@@ -1247,13 +1254,6 @@
           
           
           
-          <li><a title="Pin messages from War Room to the Incident Timeline" href="/docs/pin-messages-from-warroom-to-timeline-1">Pin messages from War Room to the Incident Timeline</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="View Schedules on the Mobile App" href="/docs/mobile-app-see-who-is-on-call">View Schedules on the Mobile App</a></li>
           
           
@@ -1460,40 +1460,45 @@ li.sidebarTitle{
             <h1 class="post-title-main">Manage Squads</h1>
         </div>
             
-                <div class="summary">Everything you need to know about Squads</div>
+                <div class="summary">A Squad is a group of users corresponding to a team or a project</div>
             
 
                 
 
-            <h2 id="what-are-squads">What are Squads?</h2>
+            <h2 id="defining-a-squad">Defining a Squad</h2>
 
-<p>A Squad is a group of users that can refer to a team or a project. Squads are handy when you need to notify the whole group together. For instance, when coordinated response is required for high-urgency high-complexity incidents, or at the end of an escalation policy when nobody has acknowledged.</p>
+<p>A Squad is a group of users corresponding to a team or a project. Squads are handy when you need to notify the entire group together. For instance, when coordinated responses are required for high-urgency, high-complexity incidents, or as the last level of an Escalation Policy when an incident is still un-Acknowledged at that point.</p>
+
+<h2 id="create-squads">Create Squads</h2>
+
+<p><strong>Prerequisite</strong>
+<a href="add-users">Add Users</a> on the platform before defining Squads</p>
+
+<p><strong>(1)</strong> Navigate to <strong>Squads</strong> from the sidebar</p>
 
 <p><img src="images/manage_squads_1.png" alt="" /></p>
 
-<h2 id="add-or-remove-a-squad-member">Add or Remove a Squad Member</h2>
-
-<p>User can create a Squads under <strong>Squads (Sidebar) → Add Squad</strong>.</p>
-
-<p>Type in a Squad name and add or remove users as needed and Click <strong>Save</strong>.</p>
+<p><strong>(2)</strong> Click on <strong>Add Squad</strong> to add a new Squad</p>
 
 <p><img src="images/manage_squads_2.png" alt="" /></p>
 
-<h2 id="using-smart-squads">Using Smart Squads</h2>
-
-<p>You can also create a Smart Squad by adding a code repository to the Squad. This is only possible after integrating SCM tools like GitHub under the Integrations tab.</p>
+<p><strong>(3)</strong> Add a <strong>Squad Name</strong> and map the <strong>Users</strong></p>
 
 <p><img src="images/manage_squads_3.png" alt="" /></p>
 
-<p>The list of available repositories will appear in the drop-down with a GitHub icon.</p>
-
-<p>Smart Squads are useful to escape configuration hell for products that several different people work on at different times.</p>
-
-<p>Our system tracks everybody who is committing code to that repository based on your preferences and engineering velocity (you can currently choose commits in last ‘n’ days or last ‘n’ commits). Then, the relevant users are dynamically added to that squad based on user selection.</p>
+<p><strong>(4)</strong> Click on <strong>Save</strong> to view the Squad</p>
 
 <p><img src="images/manage_squads_4.png" alt="" /></p>
 
-<p>Normal Squads and Smart Squads can be differentiated by a glowing light bulb symbol which appears only for Smart Squads and also by the GitHub repo tag in the Squad cards.</p>
+<h2 id="edit-or-delete-a-squad">Edit or Delete a Squad</h2>
+
+<p><strong>(1)</strong> To edit an existing Squad, click on <strong>More Options</strong> for that particular Squad</p>
+
+<p><strong>(2)</strong> Choose <strong>Edit</strong> to modify the existing Squad or <strong>Delete</strong> to delete the Squad entirely</p>
+
+<p><strong>(3)</strong> After modifying the Squad, click on <strong>Save</strong></p>
+
+<p><img src="images/manage_squads_5.png" alt="" /></p>
 
 
                 <!--div class="tags">
@@ -1580,7 +1585,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Jan 27, 2021 <br /> -->
+<!--  Site last generated: Feb 8, 2021 <br /> -->
                 </div>
             </div>
             <script>
