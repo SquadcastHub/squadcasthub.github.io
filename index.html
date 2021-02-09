@@ -190,7 +190,7 @@ toc: false
                 <div id="search-demo-container">
                     <input type="text" id="search-input1" placeholder="{{site.data.strings.search_placeholder_text}}">
                     <div class="par">
-                        <div id="results-container1" style="position: absolute; box-shadow: 0 5px 20px 0 #c4e1ff; padding: 20px; overflow: scroll; height: 400px; z-index: 1; font-size: 14px; background-color: white;"></div>
+                        <div id="results-container1" style="position: absolute; box-shadow: 0 5px 20px 0 #c4e1ff; padding: 20px; overflow: scroll; max-height: 400px; z-index: 1; font-size: 14px; background-color: white;"></div>
                     </div>
                 </div>
             </div>
@@ -207,7 +207,7 @@ toc: false
                 rest.innerHTML = '';
                 for(i = 0; i < hits.length; i++){
                   if(hits[i].search != 'exclude'){
-                    rest.innerHTML = rest.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">Title: '+hits[i].title+'<br/>Summary: '+hits[i].summary+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
+                    rest.innerHTML = rest.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">'+hits[i]._highlightResult.title.value+'<br/>'+hits[i]._highlightResult.content.value+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
                   }
                 }
               }else{

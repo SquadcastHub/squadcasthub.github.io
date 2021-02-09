@@ -68,7 +68,7 @@
                     <!--start search-->
                     <div id="search-demo-container">
                         <input type="text" id="search-input" style="outline: none;" placeholder="{{site.data.strings.search_placeholder_text}}">
-                        <ul id="results-container" style="height: 500px; overflow: scroll;"></ul>
+                        <ul id="results-container" style="max-height: 500px; overflow: scroll;"></ul>
                     </div>
                     <script>                    
                     const field1 = document.getElementById('search-input');
@@ -82,7 +82,7 @@
                             rest1.innerHTML = '';
                             for(i = 0; i < hits.length; i++){
                                 if(hits[i].search != 'exclude'){
-                                    rest1.innerHTML = rest1.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">Title: '+hits[i].title+'<br/>Summary: '+hits[i].summary+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
+                                    rest1.innerHTML = rest1.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">'+hits[i]._highlightResult.title.value+'<br/>'+hits[i]._highlightResult.content.value+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
                                 }
                             }
                         }else{
