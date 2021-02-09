@@ -912,11 +912,11 @@
 
 
 {
-"title": "Manually Creating an Incident",
+"title": "Create Incident Manually",
 "tags": "manually creating incident",
 "keywords": "",
 "url": "/docs/manually-creating-an-incident",
-"summary": "This is a how-to document to create manual incidents on the incident dashboard"
+"summary": "Tigger incidents manually"
 }
 ,
 

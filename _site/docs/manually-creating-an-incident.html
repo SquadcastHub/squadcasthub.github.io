@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="This is a how-to document to create manual incidents on the incident dashboard">
+<meta name="description" content="Tigger incidents manually">
 <meta name="keywords" content="manually creating incident,  ">
-<title>Manually Creating an Incident | Incident Management using Squadcast</title>
+<title>Create Incident Manually | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Manually Creating an Incident page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Create Incident Manually page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Manually Creating an Incident">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Create Incident Manually">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -563,7 +563,7 @@
           
           
           
-          <li class="active"><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
+          <li class="active"><a title="Create Incident Manually" href="/docs/manually-creating-an-incident">Create Incident Manually</a></li>
           
           
           
@@ -1450,33 +1450,50 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Manually Creating an Incident</h1>
+            <h1 class="post-title-main">Create Incident Manually</h1>
         </div>
             
-                <div class="summary">This is a how-to document to create manual incidents on the incident dashboard</div>
+                <div class="summary">Tigger incidents manually</div>
             
 
                 
 
-            <h2 id="triggering-incidents-manually">Triggering Incidents Manually</h2>
+            <p>Incidents can be triggered manually either from the <strong>Incident Dashboard</strong> or the <strong>Incident List</strong>.</p>
 
-<p>Move over to the <strong>Incident Dashboard</strong>, click on <strong>+</strong> right next to the <strong>Actions</strong> dropdown tab to create a manual incident.</p>
+<h3 id="via-incident-dashboard">Via <strong>Incident Dashboard</strong></h3>
+
+<p>Click on <strong>+</strong> right next to the <strong>Actions</strong> dropdown tab</p>
 
 <p><img src="images/manual1.png" alt="" /></p>
 
-<p>Add in all the relevant incident details in the pop-up.</p>
+<h3 id="via-list">Via <strong>List</strong></h3>
 
-<h2 id="adding-tags-to-an-incident">Adding Tags to an Incident</h2>
-
-<p>By default, you will have the option to add <strong>Tags</strong> to an incident. You can do so by assigning the <code class="highlighter-rouge">tag name</code> and <code class="highlighter-rouge">tag value</code> in the text fields provided and you can also change the tag color by clicking on the blue circle. You can also add multiple tags by clicking on the <strong>Add Tag</strong> option provided on the screen.</p>
+<p><strong>(1)</strong> Click on <strong>Create an Incident</strong></p>
 
 <p><img src="images/manual2.png" alt="" /></p>
 
-<h2 id="creating-an-incident-without-tags">Creating an Incident without Tags</h2>
-
-<p>If however, you want to create an incident without adding any tags to it, you can click on the red collapse icon at the end of the tag row and create the incident as is.</p>
+<p><strong>(2)</strong> Add the relevant fields:</p>
 
 <p><img src="images/manual3.png" alt="" /></p>
+
+<ul>
+  <li>Incident Title - This would be the title/message of the incident being created</li>
+  <li>Incident Description - This would be the description of the Incident being created. This is an optional field</li>
+  <li>Service - Specify the business Service to which this incident would be mapped</li>
+  <li>Assigned To - Upon choosing the Service, the default Escalation Policy associated with the Service would be auto-filled. You can also manually update Assigned To value to <strong>User</strong> or <strong>Squad</strong></li>
+  <li>Tags</li>
+</ul>
+
+<p><img src="images/manual4.png" alt="" /></p>
+
+<ul>
+  <li>By default, you will have the option to add <strong>Tags</strong> to an incident</li>
+  <li>You can do so by assigning the <code class="highlighter-rouge">tag name (key)</code> and <code class="highlighter-rouge">tag value</code> in the text fields provided and you can also change the tag color by clicking on the colour of your choice</li>
+  <li>You can also add multiple tags by clicking on the <strong>+</strong> option</li>
+  <li>Adding a Tag is an optional field</li>
+</ul>
+
+<p><strong>(3)</strong> Click on <strong>Create new incident</strong> to trigger the incident</p>
 
 
                 <!--div class="tags">
@@ -1560,7 +1577,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 8, 2021 <br /> -->
+<!--  Site last generated: Feb 9, 2021 <br /> -->
                 </div>
             </div>
             <script>

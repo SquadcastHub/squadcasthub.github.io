@@ -10,61 +10,81 @@ permalink: docs/filter-incidents
 folder: mydoc
 ---
 
-Customize your incident list by applying multiple filters. You can filter your incidents by Date & Time, Service, Assigned To, and Alert Source by clicking on the Add Filter button on the top next to the status dropdown.  
+Filter Incidents by different parameters like Date & Time of creation, affected business Service, Alert Source, to whom an incident is Assigned To or custom Tags. 
+
+## Getting Started
+
+**(1)** Click on **Incident List** on the sidebar
 
 ![](images/filter_1.png)
 
-Here choose the type of filter you would like to apply to your incidents. You can search for your relevant option to narrow down the choices.
+**(2)** Click on **Add Filter** to customize your incident list by applying multiple filters
 
-The filters that available at the moment are:
+![](images/filter_2.png)
+
+**(3)** The filters that are available at the moment are:
 - Date & Time
 - Service
 - Alert Source
 - Assigned To
 - Tags
-
-![](images/filter_2.png)
-
-If you want to remove a filter just press the cross icon next to the filter name.
+- Status
 
 ![](images/filter_3.png)
 
-## Date & Time
+### Date & Time
 
-The date & time filter allows you to filter down incidents to a specific time range. By default, the incidents within the last week are displayed. Change the filter by choosing a different option.
+This filter allows you to filter down incidents to a specific time range. By default, the incidents within the last 365 days are displayed. Change the filter by choosing a different option.
 
 ![](images/filter_4.png)
 
-### Custom Range
+#### Custom Range
 
-The custom range options allow you to give a custom time range within which you would like to view your incidents. Here you can also select the exact time within which you would like to filter by.
+This option allows you to give a custom time range within which you would like to view your incidents. Here you can also select the exact time with which you would like to filter by.
 
 ![](images/filter_5.png)
 
-## Service
+### Service
 
-For Service filters, you can choose to filter by multiple values, so use the checkbox to select all the values you would like to filter by. You can use the search box to narrow down your options.
+Filter incidents by *[Services](adding-a-service-1)*.
+
+You can choose to filter by multiple values, so use the checkbox to select all the values. You can also use the search box to narrow down your options.
 
 ![](images/filter_6.png)
 
-## Alert Source
+### Alert Source
 
-For Alert Source filters, you can choose to filter by multiple values, so use the checkbox to select all the values you would like to filter by. You can use the search box to narrow down your options.
+Filter incidents by *[Alert Sources](adding-a-service-1#alert-sources-integrations)*.
+
+You can choose to filter by multiple values, so use the checkbox to select all the values. You can also use the search box to narrow down your options.
 
 ![](images/filter_7.png)
 
-## Assigned To
+### Assigned To
 
-For Assigned To filters, you can choose to filter by multiple values, so use the checkbox to select all the values you would like to filter by. You can use the search box to narrow down your options.
+Filter incidents by the *[Users](add-users)*, *[Squads](squads)* or *[Escalation Policies](escalation-policies)* using this filter.
+
+You can choose to filter by multiple values, so use the checkbox to select all the values. You can also use the search box to narrow down your options.
 
 ![](images/filter_8.png)
 
-## Tags
+### Tags
 
-You can use the `Tags` filter to filter incidents by the tags associated with them. You can use the search box to narrow it down or check the relevant ones from the list shown. 
+Filter Incidents by *[Tags](event-tagging)*.
 
-Choosing multiple Tag values will serve as a logical `AND` operation. Should you want to see the list of incidents for each tag, make sure to do so in multiple steps.  
-
-When you are not filtering by any services, tags across all the services will be displayed. To narrow down your tags by service make sure to apply the service filter first.
+You can use the search box to narrow it down or check the relevant ones from the list shown. When you are not filtering by any services, tags across all the services will be displayed. To narrow down your Tags by Service, make sure to apply the Service filter first.
 
 ![](images/filter_9.png)
+
+{{site.data.alerts.yellow-note-i}}
+<b>Multiple Tag Filters</b><br/><br/>
+<p>Choosing multiple Tag values will serve as a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operation. Should you want to see the list of incidents for each tag, make sure to do so in multiple steps.</p>
+{{site.data.alerts.end}}
+
+### Status
+
+Filter Incident by *[Incident Status](dashboard-metrics#incident-state-metric)*.
+
+Use the checkbox to select the value of your choice. 
+
+![](images/filter_10.png)

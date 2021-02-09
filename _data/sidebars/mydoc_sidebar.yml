@@ -208,7 +208,7 @@ entries:
             url: /docs/incident-timeline
             output: web, pdf
 
-          - title: Manually Creating an Incident
+          - title: Create Incident Manually
             url: /docs/manually-creating-an-incident
             output: web, pdf
 
