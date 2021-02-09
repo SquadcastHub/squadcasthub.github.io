@@ -15,48 +15,43 @@ This page describes how to add Squadcast to G Suite and configure SSO-support wi
 
 ## Connecting Squadcast to G Suite
 
-1.Log in to your admin.google.com account with your G Suite account.
+**(1)** Log in to your admin.google.com account with your G Suite account
 
-2.Select Apps on the main page.
-
-{{site.data.alerts.yellow-note-i}}
-<b>Note for Mobile App Users: </b>
-<br/><br/><p>Today, SSO does not work with our mobile applications.</p>
-{{site.data.alerts.end}}
+**(2)** Select Apps on the main page
 
 ![](images/google_1.png)
 
-3.Select SAML apps
+**(3)** Select SAML apps
 
 ![](images/google_2.png)
 
-4.Create a new application by clicking the "**+**" button and then select **SETUP MY OWN CUSTOM APP**
+**(4)** Create a new application by clicking the "**+**" button and then select **SETUP MY OWN CUSTOM APP**
 
 ![](images/google_3.png)
 
-5.**Download** Certificate, copy **SSO URL** and keep them safe and click **NEXT**. 
+**(5)** **Download** Certificate, copy **SSO URL** and keep them safe and click **NEXT**
 
 ![](images/google_4.png)
 
-6.Enter the Application name as **Squadcast** and optionally provide a description and upload the logo and click **NEXT**.
+**(6)** Enter the Application name as **Squadcast** and optionally provide a description and upload the logo and click **NEXT**
 
 ![](images/google_5.png)
 
-7.Login to app.squadcast.com and go to the **Integrations** tab and click the **Integrate** button under SSO and select the Google tab.
+**(7)** Login to app.squadcast.com and go to the **Integrations** tab and click the **Integrate** button under SSO and select the Google tab
 
 ![](images/google_6.png)
 
 ![](images/google_7.png)
 
-8.Click Show configuration guide for Google and copy the ACS URL displayed.
+**(8)** Click **Show configuration guide for Google** and copy the ACS URL displayed
 
 ![](images/google_8.png)
 
-9.Go back to the Google custom app and in the Service Provider Details page and paste the copied **ACS URL** in both the **ACS URL** and **Entity ID** fields. Also select **Name ID** as **Basic Information** and **Primary Email** and **Name ID **Format as **EMAIL** and click **Next**.
+**(9)** Go back to the Google custom app and in the Service Provider Details page and paste the copied **ACS URL** in both the **ACS URL** and **Entity ID** fields. Also select **Name ID** as **Basic Information** and **Primary Email** and **Name ID **Format as **EMAIL** and click **Next**
 
 ![](images/google_9.png)
 
-10.In the Attribute Mapping page, click the **ADD NEW MAPPING** button and add the following attributes and click **Finish** and **OK** in the next popup.
+**(10)** In the Attribute Mapping page, click the **ADD NEW MAPPING** button and add the following attributes and click **Finish** and **OK** in the next popup
 
 ```
 Required
@@ -83,12 +78,14 @@ By default Squadcast lets you create a user via SSO with a configured default Ro
 
 ![](images/google_11.png)
 
-11.Enable Squadcast application for all users.
+**(11)** Enable Squadcast application for all users.
 
 ![](images/google_12.png)
 
-12.Go back to the Squadcast Google SSO page and paste the SSO URL we have obtained from Step 5 above in the **SAML 2.0 Endpoint** text box and the certificate details in the **X.509 Certificate** field. Configure other options like the default User role and make sure to check the Provision new users on first login checkbox and click Save.
+**(12)** Go back to the Squadcast Google SSO page and paste the SSO URL we have obtained from Step 5 above in the **SAML 2.0 Endpoint** text box and the certificate details in the **X.509 Certificate** field. Configure other options like the default User role and make sure to check the Provision new users on first login checkbox and click Save
 
 You can enable the toggle button on the top to **Enable Google SSO** for Squadcast and you are good to go and your users will be able to use Google SSO to log in to Squadcast without needing a password.
 
 ![](images/google_13.png)
+
+That is it, you are good to go! Users can now use their G Suite credentials to sign in to Squadcast via Single Sign-On (SSO).
