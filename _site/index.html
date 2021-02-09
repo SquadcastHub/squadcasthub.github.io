@@ -202,6 +202,7 @@
                                     rest1.innerHTML = rest1.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">'+hits[i]._highlightResult.title.value+'<br/>'+hits[i]._highlightResult.content.value+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
                                 }
                             }
+                            rest1.innerHTML = rest1.innerHTML+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }else{
                             rest1.style.display = 'none';
                         }
@@ -562,6 +563,7 @@ li.sidebarTitle{
                     rest.innerHTML = rest.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">'+hits[i]._highlightResult.title.value+'<br/>'+hits[i]._highlightResult.content.value+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
                   }
                 }
+                rest.innerHTML = rest.innerHTML+'<div style="display: flex; justify-content: flex-end"><img src="images/algolia-blue-mark.svg" style="width: 20px;"></div>';
               }else{
                 rest.style.display = 'none';
               }

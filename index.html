@@ -210,6 +210,7 @@ toc: false
                     rest.innerHTML = rest.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">'+hits[i]._highlightResult.title.value+'<br/>'+hits[i]._highlightResult.content.value+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
                   }
                 }
+                rest.innerHTML = rest.innerHTML+'<div style="display: flex; justify-content: flex-end"><img src="images/algolia-blue-mark.svg" style="width: 20px;"></div>';
               }else{
                 rest.style.display = 'none';
               }
