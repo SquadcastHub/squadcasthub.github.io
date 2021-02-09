@@ -134,5 +134,5 @@ To create incidents automatically in Squadcast from Slack, check out [Slack as a
 
 {{site.data.alerts.blue-note}}
 <b>FAQ</b>
-<br/><br/><p><b>Q:</b> I have integrated Slack with Squadcast. When I try to acknowledge/resolve an incident from my Slack channel, it throws an error "You've not linked your Slack account with your Squadcast account". How can I resolve this?</p><br/><img src="images/slack_squadcast_18.png"><br/><p><b>A:</b> The email address associated with your user in Squadcast must be the <b>same</b> email address that is associated with your user in Slack, else, you will not be able to take any actions on incidents from Slack and will receive an error as stated in the screenshot above.</p>
+<br/><br/><p><b>Q:</b> I have integrated Slack with Squadcast. When I try to acknowledge/resolve an incident from my Slack channel, it throws an error "You've not linked your Slack account with your Squadcast account". How can I resolve this?</p><img src="images/slack_squadcast_18.png"><p><b>A:</b> The email address associated with your user in Squadcast must be the <b>same</b> email address that is associated with your user in Slack, else, you will not be able to take any actions on incidents from Slack and will receive an error as stated in the screenshot above.</p>
 {{site.data.alerts.end}}
