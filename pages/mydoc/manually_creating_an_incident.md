@@ -1,6 +1,6 @@
 ---
-title:  Manually Creating an Incident
-summary: "This is a how-to document to create manual incidents on the incident dashboard"
+title:  Create Incident Manually
+summary: "Tigger incidents manually"
 tags: [manually creating incident]
 last_updated:
 sidebar: mydoc_sidebar
@@ -8,22 +8,35 @@ permalink: docs/manually-creating-an-incident
 folder: mydoc
 ---
 
-## Triggering Incidents Manually
+Incidents can be triggered manually either from the **Incident Dashboard** or the **Incident List**.
 
-Move over to the **Incident Dashboard**, click on **+** right next to the **Actions** dropdown tab to create a manual incident. 
+### Via **Incident Dashboard**
+
+Click on **+** right next to the **Actions** dropdown tab 
 
 ![](images/manual1.png)
 
-Add in all the relevant incident details in the pop-up. 
+### Via **List**
 
-## Adding Tags to an Incident
-
-By default, you will have the option to add **Tags** to an incident. You can do so by assigning the `tag name` and `tag value` in the text fields provided and you can also change the tag color by clicking on the blue circle. You can also add multiple tags by clicking on the **Add Tag** option provided on the screen. 
+**(1)** Click on **Create an Incident**
 
 ![](images/manual2.png)
 
-## Creating an Incident without Tags
-
-If however, you want to create an incident without adding any tags to it, you can click on the red collapse icon at the end of the tag row and create the incident as is. 
+**(2)** Add the relevant fields:
 
 ![](images/manual3.png)
+
+- Incident Title - This would be the title/message of the incident being created
+- Incident Description - This would be the description of the Incident being created. This is an optional field
+- Service - Specify the business Service to which this incident would be mapped
+- Assigned To - Upon choosing the Service, the default Escalation Policy associated with the Service would be auto-filled. You can also manually update Assigned To value to **User** or **Squad**
+- Tags 
+
+![](images/manual4.png)
+
+- By default, you will have the option to add **Tags** to an incident 
+- You can do so by assigning the `tag name (key)` and `tag value` in the text fields provided and you can also change the tag color by clicking on the colour of your choice
+- You can also add multiple tags by clicking on the **+** option
+- Adding a Tag is an optional field
+
+**(3)** Click on **Create new incident** to trigger the incident
