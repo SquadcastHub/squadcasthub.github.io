@@ -185,13 +185,15 @@
                     <!--start search-->
                     <div id="search-demo-container">
                         <input type="text" id="search-input" style="outline: none;" placeholder="Search">
+                        <button id="search-button1" style="height: 30px; background-color: #3670fe; color: white; outline: none; border-color: #3670fe;">Search</button>
                         <ul id="results-container" style="max-height: 500px; overflow: scroll;"></ul>
                     </div>
                     <script>                    
                     const field1 = document.getElementById('search-input');
                     const rest1 = document.getElementById('results-container');
+                    const find1 = document.getElementById('search-button1');
                     rest1.style.display = 'none';
-                    field1.onkeyup = function(){
+                    find1.onclick = function(){
                         var val = field1.value;
                         index.search(val).then(({ hits }) => {
                         if(hits.length > 0 && val != ''){
@@ -207,6 +209,12 @@
                             rest1.style.display = 'none';
                         }
                         });
+                    }
+                    field1.onkeyup = function(){
+                        if(field1.value == ''){
+                        rest1.innerHTML = '';
+                        rest1.style.display = 'none';
+                        }
                     }
                     </script>
                     <!--end search-->
@@ -482,7 +490,7 @@ li.sidebarTitle{
             text-align: left;
         }
         #search-input1{
-            width: 55%;
+            width: 44%;
             height: 50px;
             border-radius: 10px;
             padding: 20px;
@@ -542,6 +550,7 @@ li.sidebarTitle{
                 <p class="para">Welcome to the Squadcast Support Hub. You’ll find comprehensive guides and documentation to help you start working with Squadcast as quickly as possible. Let’s jump right in! &#128640;</p>
                 <div id="search-demo-container">
                     <input type="text" id="search-input1" placeholder="Search">
+                    <button id="search-button" style="height: 48px; border-radius: 10px; width: 130px; background-color: #3670fe; color: white; outline: none; border-color: #3670fe;">Search</button>
                     <div class="par">
                         <div id="results-container1" style="position: absolute; box-shadow: 0 5px 20px 0 #c4e1ff; padding: 20px; overflow: scroll; max-height: 400px; z-index: 1; font-size: 14px; background-color: white;"></div>
                     </div>
@@ -551,8 +560,9 @@ li.sidebarTitle{
         <script>
           const field = document.getElementById('search-input1');
           const rest = document.getElementById('results-container1');
+          const find = document.getElementById('search-button');
           rest.style.display = 'none';
-          field.onkeyup = function(){
+          find.onclick = function(){
             var val = field.value;
             index.search(val).then(({ hits }) => {
               if(hits.length > 0 && val != ''){
@@ -568,6 +578,12 @@ li.sidebarTitle{
                 rest.style.display = 'none';
               }
             });
+          }
+          field.onkeyup = function(){
+            if(field.value == ''){
+              rest.innerHTML = '';
+              rest.style.display = 'none';
+            }
           }
         </script>
         <!-- <div style="padding-left: 16%; padding-right: 16%; margin-bottom: 20px;">
@@ -755,7 +771,7 @@ li.sidebarTitle{
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 9, 2021 <br /> -->
+<!--  Site last generated: Feb 11, 2021 <br /> -->
                 </div>
             </div>
             <script>

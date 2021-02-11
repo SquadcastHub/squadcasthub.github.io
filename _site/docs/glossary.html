@@ -185,13 +185,15 @@
                     <!--start search-->
                     <div id="search-demo-container">
                         <input type="text" id="search-input" style="outline: none;" placeholder="Search">
+                        <button id="search-button1" style="height: 30px; background-color: #3670fe; color: white; outline: none; border-color: #3670fe;">Search</button>
                         <ul id="results-container" style="max-height: 500px; overflow: scroll;"></ul>
                     </div>
                     <script>                    
                     const field1 = document.getElementById('search-input');
                     const rest1 = document.getElementById('results-container');
+                    const find1 = document.getElementById('search-button1');
                     rest1.style.display = 'none';
-                    field1.onkeyup = function(){
+                    find1.onclick = function(){
                         var val = field1.value;
                         index.search(val).then(({ hits }) => {
                         if(hits.length > 0 && val != ''){
@@ -207,6 +209,12 @@
                             rest1.style.display = 'none';
                         }
                         });
+                    }
+                    field1.onkeyup = function(){
+                        if(field1.value == ''){
+                        rest1.innerHTML = '';
+                        rest1.style.display = 'none';
+                        }
                     }
                     </script>
                     <!--end search-->
@@ -1888,7 +1896,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 9, 2021 <br /> -->
+<!--  Site last generated: Feb 11, 2021 <br /> -->
                 </div>
             </div>
             <script>
