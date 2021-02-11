@@ -144,10 +144,6 @@ entries:
             url: /docs/escalation-policies
             output: web, pdf
 
-          - title: Editing an Existing Escalation Policy
-            url: /docs/editing-an-existing-escalation-policy
-            output: web, pdf
-
           - title: Invoke an Escalation Policy for an Existing Incident
             url: /docs/invoke-an-escalation-policy-for-an-existing-incident
             output: web, pdf
