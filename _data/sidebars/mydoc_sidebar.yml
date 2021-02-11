@@ -208,7 +208,7 @@ entries:
             url: /docs/incident-timeline
             output: web, pdf
 
-          - title: Manually Creating an Incident
+          - title: Create Incident Manually
             url: /docs/manually-creating-an-incident
             output: web, pdf
 
@@ -338,6 +338,10 @@ entries:
 
           - title: Graylog
             url: /docs/graylog
+            output: web, pdf
+
+          - title: Graylog v4
+            url: /docs/graylog-v4
             output: web, pdf
 
           - title: HetrixTools

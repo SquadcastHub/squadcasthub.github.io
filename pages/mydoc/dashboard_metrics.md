@@ -10,7 +10,9 @@ folder: mydoc
 ---
 
 Squadcast dashboard is the first screen that your Web App and Mobile App open into. 
-This document will guide you through how these metrics are calculated and what they mean. 
+This document will guide you through how these metrics are calculated and what they mean.
+
+![](images/dashboard_metrics_1.png)
 
 ## Incident State Metrics
 
@@ -54,20 +56,19 @@ That is, if you have chosen the `Last Week` dashboard view, the percentages show
 
 {{site.data.alerts.blue-note}}
 <b>Example Percentage Calculation:</b>
-<br/><br/><p>If you have 6 incidents in the Triggered state this week and you still have 2 incidents from last week which are still in the Triggered state when you are viewing the dashboard, then the percentage under Triggered should be: <br/>
-Triggered% = 6 (This week) / 2 (Last Week) * 100 = 300%</p>
+<br/><br/><p>If you have 6 incidents in the Triggered state this week and you still have 2 incidents from last week which are still in the Triggered state when you are viewing the dashboard, then the percentage under Triggered should be: <br/>Triggered% = 6 (This week) / 2 (Last Week) * 100 = 300%</p>
 {{site.data.alerts.end}}
 
 - Response Metrics Percentages = (MTTR/MTTA recorded for this week / MTTR/MTTA recorded for last week) * 100
 
 {{site.data.alerts.blue-note}}
 <b>Metrics Change with Dashboard View:</b>
-<br/><br/><p>Based on the dashboard view that you have chosen, that is, Last week, Last Month, Last Year or a Custom Date Range, the metrics change as per the calculation stated above. <br/><br/>If a custom range view is chosen, the percentage are calculated the same way keeping in mind that the window of time period that is selected by the user (in days) is considered as the window of past metric comparison. <br/><br/>That is, if custom date range chosen is between 14th Feb - 17th Feb, then the time period selected here would be 4 days. So, this will be compared against the volume of incidents that have come in, in the past 4 days, that is, 10th Feb - 13th Feb. <br/><br/>The calculations would be as follows: <br/><br/>
+<br/><br/><p>Based on the dashboard view that you have chosen, that is, Last week, Last Month, Last Year or a Custom Date Range, the metrics change as per the calculation stated above.<br/><br/>If a custom range view is chosen, the percentage are calculated the same way keeping in mind that the window of time period that is selected by the user (in days) is considered as the window of past metric comparison.<br/><br/>That is, if custom date range chosen is between 14th Feb - 17th Feb, then the time period selected here would be 4 days. So, this will be compared against the volume of incidents that have come in, in the past 4 days, that is, 10th Feb - 13th Feb.<br/><br/>The calculations would be as follows:<br/>
 <ul><li>Incident States Percentages = (Total number of incidents from 14th Feb - 17th Feb / Total number of incidents from 10th - 13th) * 100</li>
 <li>Response Metrics Percentages = (MTTR/ MTTA recorded for 14th Feb - 17th Feb / MTTR/ MTTA recorded for 10th - 13th) * 100</li></ul></p>
 {{site.data.alerts.end}}
 
 {{site.data.alerts.red-note}}
-<b>What does it mean when a response metric percentage is in red?:</b>
-<br/><br/><p>Typically, the aim of an incident response system is to ensure that your MTTR and MTTA reduce. When an MTTR or MTTA percentage is in red, it means that there is an increase in the time taken to Resolve or Acknowledge incidents in comparison to the MTTR and MTTA performances in the past (same time duration considered as chosen in the dashboard view). <br/><br/>This is shown in order to improve the response times and is not meant to alarm the user or squads.</p>
+<b>What does it mean when a response metric percentage is in red?</b>
+<br/><br/><p>Typically, the aim of an incident response system is to ensure that your MTTR and MTTA reduce. When an MTTR or MTTA percentage is in red, it means that there is an increase in the time taken to Resolve or Acknowledge incidents in comparison to the MTTR and MTTA performances in the past (same time duration considered as chosen in the dashboard view).<br/><br/>This is shown in order to improve the response times and is not meant to alarm the user or squads.</p>
 {{site.data.alerts.end}}

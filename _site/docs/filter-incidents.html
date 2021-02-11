@@ -593,7 +593,7 @@
           
           
           
-          <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
+          <li><a title="Create Incident Manually" href="/docs/manually-creating-an-incident">Create Incident Manually</a></li>
           
           
           
@@ -824,6 +824,13 @@
           
           
           <li><a title="Graylog" href="/docs/graylog">Graylog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Graylog v4" href="/docs/graylog-v4">Graylog v4</a></li>
           
           
           
@@ -1488,66 +1495,86 @@ li.sidebarTitle{
 
                 
 
-            <p>Customize your incident list by applying multiple filters. You can filter your incidents by Date &amp; Time, Service, Assigned To, and Alert Source by clicking on the Add Filter button on the top next to the status dropdown.</p>
+            <p>Filter Incidents by different parameters like Date &amp; Time of creation, affected business Service, Alert Source, to whom an incident is Assigned To or custom Tags.</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p><strong>(1)</strong> Click on <strong>Incident List</strong> on the sidebar</p>
 
 <p><img src="images/filter_1.png" alt="" /></p>
 
-<p>Here choose the type of filter you would like to apply to your incidents. You can search for your relevant option to narrow down the choices.</p>
+<p><strong>(2)</strong> Click on <strong>Add Filter</strong> to customize your incident list by applying multiple filters</p>
 
-<p>The filters that available at the moment are:</p>
+<p><img src="images/filter_2.png" alt="" /></p>
+
+<p><strong>(3)</strong> The filters that are available at the moment are:</p>
 <ul>
   <li>Date &amp; Time</li>
   <li>Service</li>
   <li>Alert Source</li>
   <li>Assigned To</li>
   <li>Tags</li>
+  <li>Status</li>
 </ul>
-
-<p><img src="images/filter_2.png" alt="" /></p>
-
-<p>If you want to remove a filter just press the cross icon next to the filter name.</p>
 
 <p><img src="images/filter_3.png" alt="" /></p>
 
-<h2 id="date--time">Date &amp; Time</h2>
+<h3 id="date--time">Date &amp; Time</h3>
 
-<p>The date &amp; time filter allows you to filter down incidents to a specific time range. By default, the incidents within the last week are displayed. Change the filter by choosing a different option.</p>
+<p>This filter allows you to filter down incidents to a specific time range. By default, the incidents within the last 365 days are displayed. Change the filter by choosing a different option.</p>
 
 <p><img src="images/filter_4.png" alt="" /></p>
 
-<h3 id="custom-range">Custom Range</h3>
+<h4 id="custom-range">Custom Range</h4>
 
-<p>The custom range options allow you to give a custom time range within which you would like to view your incidents. Here you can also select the exact time within which you would like to filter by.</p>
+<p>This option allows you to give a custom time range within which you would like to view your incidents. Here you can also select the exact time with which you would like to filter by.</p>
 
 <p><img src="images/filter_5.png" alt="" /></p>
 
-<h2 id="service">Service</h2>
+<h3 id="service">Service</h3>
 
-<p>For Service filters, you can choose to filter by multiple values, so use the checkbox to select all the values you would like to filter by. You can use the search box to narrow down your options.</p>
+<p>Filter incidents by <em><a href="adding-a-service-1">Services</a></em>.</p>
+
+<p>You can choose to filter by multiple values, so use the checkbox to select all the values. You can also use the search box to narrow down your options.</p>
 
 <p><img src="images/filter_6.png" alt="" /></p>
 
-<h2 id="alert-source">Alert Source</h2>
+<h3 id="alert-source">Alert Source</h3>
 
-<p>For Alert Source filters, you can choose to filter by multiple values, so use the checkbox to select all the values you would like to filter by. You can use the search box to narrow down your options.</p>
+<p>Filter incidents by <em><a href="adding-a-service-1#alert-sources-integrations">Alert Sources</a></em>.</p>
+
+<p>You can choose to filter by multiple values, so use the checkbox to select all the values. You can also use the search box to narrow down your options.</p>
 
 <p><img src="images/filter_7.png" alt="" /></p>
 
-<h2 id="assigned-to">Assigned To</h2>
+<h3 id="assigned-to">Assigned To</h3>
 
-<p>For Assigned To filters, you can choose to filter by multiple values, so use the checkbox to select all the values you would like to filter by. You can use the search box to narrow down your options.</p>
+<p>Filter incidents by the <em><a href="add-users">Users</a></em>, <em><a href="squads">Squads</a></em> or <em><a href="escalation-policies">Escalation Policies</a></em> using this filter.</p>
+
+<p>You can choose to filter by multiple values, so use the checkbox to select all the values. You can also use the search box to narrow down your options.</p>
 
 <p><img src="images/filter_8.png" alt="" /></p>
 
-<h2 id="tags">Tags</h2>
+<h3 id="tags">Tags</h3>
 
-<p>You can use the <code class="highlighter-rouge">Tags</code> filter to filter incidents by the tags associated with them. You can use the search box to narrow it down or check the relevant ones from the list shown.</p>
+<p>Filter Incidents by <em><a href="event-tagging">Tags</a></em>.</p>
 
-<p>Choosing multiple Tag values will serve as a logical <code class="highlighter-rouge">AND</code> operation. Should you want to see the list of incidents for each tag, make sure to do so in multiple steps.</p>
-
-<p>When you are not filtering by any services, tags across all the services will be displayed. To narrow down your tags by service make sure to apply the service filter first.</p>
+<p>You can use the search box to narrow it down or check the relevant ones from the list shown. When you are not filtering by any services, tags across all the services will be displayed. To narrow down your Tags by Service, make sure to apply the Service filter first.</p>
 
 <p><img src="images/filter_9.png" alt="" /></p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Multiple Tag Filters</b><br /><br />
+<p>Choosing multiple Tag values will serve as a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operation. Should you want to see the list of incidents for each tag, make sure to do so in multiple steps.</p>
+</div>
+
+<h3 id="status">Status</h3>
+
+<p>Filter Incident by <em><a href="dashboard-metrics#incident-state-metric">Incident Status</a></em>.</p>
+
+<p>Use the checkbox to select the value of your choice.</p>
+
+<p><img src="images/filter_10.png" alt="" /></p>
 
 
                 <!--div class="tags">

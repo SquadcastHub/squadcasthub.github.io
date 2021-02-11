@@ -40,7 +40,7 @@ This completes the integration process between Squadcast and Slack. You can veri
 <br/><br/><p>You can simply click on <b>Revoke</b> to remove the configured Slack integration at any given time</p>
 {{site.data.alerts.end}}
 
-### Configuring a global Slack channel for all Services in Squadcast
+## Configuring a global Slack channel for all Services in Squadcast
 
 **(1)** Click on **Select Channel**
 
@@ -66,7 +66,7 @@ Now, you will start receiving alert notifications for *all* Squadcast incidents 
 <br/><br/><p>By default, the configured global Slack channel is applicable to every Service in Squadcast. This means, all the alerts coming for every Service in Squadcast will be routed to the default Slack channel, <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">#incidents</code></p>
 {{site.data.alerts.end}}
 
-### Configuring Service Specific Slack Channels
+## Configuring Service Specific Slack Channels
 
 Additionally, you can associate one Slack channel per Service so as to receive notifications for incidents affecting only that Service in this Slack channel.
 
@@ -96,11 +96,11 @@ You will be able to see the associated Slack channel on the bottom-right corner 
 
 ![](images/slack_squadcast_13.png)
 
-### Triggering Incidents from Slack
+## Triggering Incidents from Slack
 
 You can trigger incidents in Squadcast directly from a Slack channel. 
 
-**(1)** To trigger an incident from Slack, within the Slack channel, type **/create_incident** and select the first option as seen in the screenshot
+**(1)** To trigger an incident from Slack, within the Slack channel, type `/create_incident` and select the first option as seen in the screenshot
 
 ![](images/slack_squadcast_14.png)
 
@@ -128,5 +128,11 @@ Click on **Create** to trigger the incident
 
 ![](images/slack_squadcast_17.png)
 
-### Using Slack as an Alert Source
-To create incidents automatically in Squadcast from Slack, check out “[Slack as an alert source](slack-as-an-alert-source)”.
+## Using Slack as an Alert Source
+To create incidents automatically in Squadcast from Slack, check out [Slack as an alert source](slack-as-an-alert-source).
+
+
+{{site.data.alerts.blue-note}}
+<b>FAQ</b>
+<br/><br/><p><b>Q:</b> I have integrated Slack with Squadcast. When I try to acknowledge/resolve an incident from my Slack channel, it throws an error "You've not linked your Slack account with your Squadcast account". How can I resolve this?</p><img src="images/slack_squadcast_18.png"><p><b>A:</b> The email address associated with your user in Squadcast must be the <b>same</b> email address that is associated with your user in Slack, else, you will not be able to take any actions on incidents from Slack and will receive an error as stated in the screenshot above.</p>
+{{site.data.alerts.end}}

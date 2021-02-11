@@ -593,7 +593,7 @@
           
           
           
-          <li><a title="Manually Creating an Incident" href="/docs/manually-creating-an-incident">Manually Creating an Incident</a></li>
+          <li><a title="Create Incident Manually" href="/docs/manually-creating-an-incident">Create Incident Manually</a></li>
           
           
           
@@ -824,6 +824,13 @@
           
           
           <li><a title="Graylog" href="/docs/graylog">Graylog</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Graylog v4" href="/docs/graylog-v4">Graylog v4</a></li>
           
           
           
@@ -1519,7 +1526,7 @@ li.sidebarTitle{
 <br /><br /><p>You can simply click on <b>Revoke</b> to remove the configured Slack integration at any given time</p>
 </div>
 
-<h3 id="configuring-a-global-slack-channel-for-all-services-in-squadcast">Configuring a global Slack channel for all Services in Squadcast</h3>
+<h2 id="configuring-a-global-slack-channel-for-all-services-in-squadcast">Configuring a global Slack channel for all Services in Squadcast</h2>
 
 <p><strong>(1)</strong> Click on <strong>Select Channel</strong></p>
 
@@ -1545,7 +1552,7 @@ li.sidebarTitle{
 <br /><br /><p>By default, the configured global Slack channel is applicable to every Service in Squadcast. This means, all the alerts coming for every Service in Squadcast will be routed to the default Slack channel, <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">#incidents</code></p>
 </div>
 
-<h3 id="configuring-service-specific-slack-channels">Configuring Service Specific Slack Channels</h3>
+<h2 id="configuring-service-specific-slack-channels">Configuring Service Specific Slack Channels</h2>
 
 <p>Additionally, you can associate one Slack channel per Service so as to receive notifications for incidents affecting only that Service in this Slack channel.</p>
 
@@ -1575,11 +1582,11 @@ li.sidebarTitle{
 
 <p><img src="images/slack_squadcast_13.png" alt="" /></p>
 
-<h3 id="triggering-incidents-from-slack">Triggering Incidents from Slack</h3>
+<h2 id="triggering-incidents-from-slack">Triggering Incidents from Slack</h2>
 
 <p>You can trigger incidents in Squadcast directly from a Slack channel.</p>
 
-<p><strong>(1)</strong> To trigger an incident from Slack, within the Slack channel, type <strong>/create_incident</strong> and select the first option as seen in the screenshot</p>
+<p><strong>(1)</strong> To trigger an incident from Slack, within the Slack channel, type <code class="highlighter-rouge">/create_incident</code> and select the first option as seen in the screenshot</p>
 
 <p><img src="images/slack_squadcast_14.png" alt="" /></p>
 
@@ -1607,8 +1614,13 @@ Click on <strong>Create</strong> to trigger the incident</p>
 
 <p><img src="images/slack_squadcast_17.png" alt="" /></p>
 
-<h3 id="using-slack-as-an-alert-source">Using Slack as an Alert Source</h3>
-<p>To create incidents automatically in Squadcast from Slack, check out “<a href="slack-as-an-alert-source">Slack as an alert source</a>”.</p>
+<h2 id="using-slack-as-an-alert-source">Using Slack as an Alert Source</h2>
+<p>To create incidents automatically in Squadcast from Slack, check out <a href="slack-as-an-alert-source">Slack as an alert source</a>.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>FAQ</b>
+<br /><br /><p><b>Q:</b> I have integrated Slack with Squadcast. When I try to acknowledge/resolve an incident from my Slack channel, it throws an error "You've not linked your Slack account with your Squadcast account". How can I resolve this?</p><img src="images/slack_squadcast_18.png" /><p><b>A:</b> The email address associated with your user in Squadcast must be the <b>same</b> email address that is associated with your user in Slack, else, you will not be able to take any actions on incidents from Slack and will receive an error as stated in the screenshot above.</p>
+</div>
 
 
                 <!--div class="tags">
