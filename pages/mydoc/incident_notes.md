@@ -90,19 +90,6 @@ Click on Profile > Previews > Enable to switch to the new Incident Details view.
 
 ![](images/incident_notes_10.png)
 
-{{site.data.alerts.blue-note}}
-<b>Permissions</b>
-<br/><br/>
-<p>
-Different actions that can be carried out by different User Roles:<br/>
-<ul><li><b>Note Creation</b> Any user can add a Note</li>
-<li><b>Note Updation</b> Only the author of the Note can update it</li>
-<li><b>Note Deletion</b> Only the author of the Note can delete it</li>
-<li><b>Note Starring</b> Any user can Star any Note</li>
-<li><b>Note Un-starring</b> Any user can Un-star any Note</li></ul>
-</p>
-{{site.data.alerts.end}}
-
 - Starred notes would be captured in the Activity Timeline. Clicking on the starred note activity in the Activity Timeline will take you to that specific note in the Incident Notes section
 
 ![](images/incident_notes10_1.png)
