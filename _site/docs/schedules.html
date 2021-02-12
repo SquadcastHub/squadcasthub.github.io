@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Rotations for your customer support engineers or on-call teams">
+<meta name="description" content="Roosters for your customer support engineers or on-call teams">
 <meta name="keywords" content="schedulesrotations,  ">
 <title>Create and Manage On-call Schedules & Rotations | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -1483,133 +1483,112 @@ li.sidebarTitle{
             <h1 class="post-title-main">Create and Manage On-call Schedules & Rotations</h1>
         </div>
             
-                <div class="summary">Rotations for your customer support engineers or on-call teams</div>
+                <div class="summary">Roosters for your customer support engineers or on-call teams</div>
             
 
                 
 
-            <p>Schedules allow you to create time-based rotations/repetitions for on-call schedules. You can see who is on-call on which day with monthly, weekly, daily and agenda views.</p>
+            <p>On-call schedules are used to determine who will be notified when an incident is triggered. When an incident is impacting a Service, notifications are sent to that user in the Service’s associated <a href="escalation-policies">Escalation Policy</a>.</p>
+
+<h2 id="creating-an-on-call-schedule">Creating an On-call Schedule</h2>
+
+<p><strong>(1)</strong> Click on <strong>Schedules</strong> on the sidebar</p>
 
 <p><img src="images/schedules_1.png" alt="" /></p>
 
-<p>In this documentation, we’ll be going through the following :-</p>
-<ul>
-  <li>Creating a Schedule</li>
-  <li>Creating on-call person/squad for a schedule</li>
-  <li>Updating an existing on-call</li>
-  <li>Deleting an on-call</li>
-  <li>Updating/Deleting a Schedule</li>
-</ul>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-<br /><br /><p>If you have configured routing rules for a service, they will override the schedule and will be given priority.</p>
-</div>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Adding Schedules to Escalation Policies</b>
-<br /><br /><p>Note that you will need to add a created schedule to a service for them to be notified when an incident.</p>
-</div>
-
-<h2 id="creating-an-on-call-shift--schedule">Creating an On-call Shift / Schedule</h2>
-
-<p>1.You can create a schedule under <strong>Schedules</strong> → <strong>+</strong> button at the right hand side of the screen.</p>
+<p><strong>(2)</strong> Click on <strong>Add Schedule</strong> at the right hand side of the screen</p>
 
 <p><img src="images/schedules_2.png" alt="" /></p>
 
-<p><strong>Schedule Name</strong>: Give the schedule a name which you can use while adding the on-call schedule to the calendar.</p>
+<p><strong>(3)</strong> Enter the following information:</p>
 
-<p><strong>Schedule Description</strong>: This is a short description of the schedule explaining what it is and why it exists.</p>
+<p><strong>(a) Schedule Name</strong>: Give the schedule a name which you can use while adding the on-call schedule to the calendar</p>
 
-<p><strong>Schedule Color</strong>: You can also set a color for a specific schedule, which will be used while rendering the on-call on the calendar.</p>
+<p><strong>(b) Schedule Description</strong>: This is a short description of the schedule explaining what it is and why it exists</p>
 
-<p>2.You can click on any day of the calendar to create an on-call starting from that day. You can also drag from a day to another to automatically set the <em>Start date</em> and <em>End date</em></p>
+<p><strong>(c) Schedule Color</strong>: You can also set a color for a specific schedule, which will be used while rendering the on-call on the calendar</p>
 
-<p><img src="images/schedules_15.png" alt="" /></p>
+<p><img src="images/schedules_3.png" alt="" /></p>
 
-<ul>
-  <li>
-    <p>Every on-call shift must be a part of some pre-defined schedule. You need to choose which <em>schedule</em> you want to create this on-call shift for.</p>
-  </li>
-  <li>
-    <p>Input the <em>Start date</em>, <em>Start time</em>, <em>End date</em> and <em>End time</em> to determine when the shift begins and when it ends respectively.</p>
-  </li>
-  <li>
-    <p>Do not check the <code class="highlighter-rouge">Is Override</code> box if you want to create a normal shift.</p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">Repeats</code>:</p>
+<p><strong>(4)</strong> Pick <strong>any day</strong> of the calendar by clicking on it, to create an on-call shift starting from that day. You can also drag your cursor from one day to another, to automatically set the <strong>Start date</strong> and <strong>End date</strong></p>
 
-    <p>Every Day - Use this to create a daily schedule</p>
+<p><img src="images/schedules_4.png" alt="" /></p>
 
-    <p>Weekly – Once a week: Use this to create a schedule that occurs on one day of the week</p>
+<p><strong>(5)</strong> <strong>Shift Name</strong> corresponds to the name of the on-call engineer and would be auto-filled by the system. Hence, you can <em>skip this field</em></p>
 
-    <p>Weekly – Particular Days Of a Week: Use this to create a schedule that occurs on particular days of the week</p>
+<p><img src="images/schedules_5.png" alt="" /></p>
 
-    <p>Custom: Use this to create any other custom schedule of your choice.</p>
-  </li>
-</ul>
+<p><strong>(6)</strong> Choose the <strong>Schedule</strong> you want to create this on-call shift for, from the drop-down</p>
 
-<p>In this example we are creating a daily schedule.</p>
+<p><img src="images/schedules_6.png" alt="" /></p>
 
-<p><img src="images/schedules_16.png" alt="" /></p>
+<p><strong>(7)</strong> Input the <strong>Start date</strong>, <strong>Start time</strong>, <strong>End date</strong> and <strong>End time</strong> to determine when the shift begins and when it ends respectively</p>
 
-<p>Add in the users who would be on call for this shift under the <code class="highlighter-rouge">Assignee Groups</code> section.
-Each group behaves as a different rotation.</p>
+<p><img src="images/schedules_7.png" alt="" /></p>
 
-<p>In this example we have two rotations:</p>
-
-<p>1st rotation - Tony Stark</p>
-
-<p>2nd rotation - BoJack Horseman and Diane Nyugen</p>
-
-<ul>
-  <li>Select the number of shifts after which you want to change the assignee group.</li>
-</ul>
-
-<p>In this example we have chosen the assignee group after every shift. Since we have picked a daily rotation each day for the specified time interval will be considered one shift. So, every day this schedule will alternate between <code class="highlighter-rouge">Tony Stark</code>  and <code class="highlighter-rouge">BoJack Horseman and Diane Nyugen</code>.</p>
-
-<p><img src="images/schedules_17.png" alt="" /></p>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>
-<b>Localized Timezones:</b>
-<br /><br /><p>The selected timezone will default to the local machine timezone. This is especially beneficial for geography-based on-call rotations. <br /><br />The teams will be able to view any created on-call schedule in their local time.</p>
+<div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>
+<b>Warning</b><br /><br />
+<p>Do not check the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Is Override</code> box if you want to create a normal shift.</p>
 </div>
+
+<p><strong>(8)</strong> <strong>Repeats</strong>- Repetitions can be daily, weekly or monthly. You can also restrict the schedules to specific times of the day or during specific days of the week, based on your need</p>
+
+<p>Now, choose the appropriate option:</p>
+
+<ul>
+  <li><strong>Everyday</strong> - Use this to create a daily schedule (applicable for all 7 days of the week)</li>
+</ul>
+
+<p><img src="images/schedules_8.png" alt="" /></p>
+
+<ul>
+  <li><strong>Weekly – Once a week</strong> - Select this option to create a schedule that occurs only on one day of the week. You can select the day on which this shift will be active</li>
+</ul>
+
+<p><img src="images/schedules_9.png" alt="" /></p>
+
+<ul>
+  <li><strong>Weekly – Particular Days Of a Week</strong> - Select this option to create a schedule that occurs on particular days of the week. You can select the days on which this shift will be active</li>
+</ul>
+
+<p><img src="images/schedules_10.png" alt="" /></p>
+
+<ul>
+  <li><strong>Custom</strong> - Select this option to create any other custom shift of your choice. You can customize the number of days/weeks/months you want the on-call to repeat for</li>
+</ul>
+
+<p><img src="images/schedules_11.png" alt="" /></p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Notifications to On-call Team</b>
-<br /><br /><p>All members in an on-call shift will be notified via email 1 hour before the start of their shift.<br /><br />
-If the created override shift has less than an hour to begin, email notification will go out immediately after creation.</p>
+<b>Info</b><br /><br />
+<p>To create a <i>recurring schedule</i>, mark <b>Ends on</b> as <b>Never</b> (enable the checkbox). <b>Never</b> is enabled by default. If you do not want a recurring schedule, disable the checkbox and specify the end date.</p>
 </div>
 
-<h3 id="how-to-use-repetitions">How to use Repetitions</h3>
+<p><strong>(9)</strong> Add in the users who would be on call for this shift under the <strong>Assignee Groups</strong> section. Each group behaves as a different rotation. Use <strong>Add Group</strong> to add multiple such groups</p>
 
-<p>Repetitions can be daily, weekly or monthly. You can customize the number of days/weeks/months you want the on-call to repeat for. You can also restrict the schedules to specific times of the day or during specific days of the week, based on your need.</p>
+<p><img src="images/schedules_12.png" alt="" /></p>
 
-<h4 id="daily">Daily</h4>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b><br /><br />
+<p>Adding <b>Squads</b> within an <b>Assignee Group</b> would mean every member of the Squad is on-call based on the shift defined. Squadcast does not pick members one by one from within a Squad and rotate between them. For a rotation to happen <i>between 1 or more entities (Users or Squads)</i>, add them in different Assignee Groups instead.</p>
+</div>
 
-<p>Check the <code class="highlighter-rouge">Every Day</code> option to create a daily schedule.</p>
+<p><strong>(10)</strong> Select the number of shifts after which you want to switch between the Assigned Groups</p>
 
-<p><img src="images/schedules_18.png" alt="" /></p>
+<p><strong>Example 1</strong>: <code class="highlighter-rouge">Buzz Lightyear</code> is part of <code class="highlighter-rouge">#1 Group</code> and <code class="highlighter-rouge">Charlie Stark</code> is part of <code class="highlighter-rouge">#2 Group</code>.</p>
+<ul>
+  <li>If <strong>Every Shift</strong> is chosen then <code class="highlighter-rouge">#1 Group</code> and <code class="highlighter-rouge">#2 Group</code> would be on-call on alternate days</li>
+  <li>If <strong>Every 7 Shifts</strong> is chosen then <code class="highlighter-rouge">#1 Group</code> would be on-call the first 7 days and <code class="highlighter-rouge">#2 Group</code> would on-call the following 7 days and so on</li>
+</ul>
 
-<h4 id="once-a-week">Once a Week</h4>
+<p><img src="images/schedules_13.png" alt="" /></p>
 
-<p>Check <code class="highlighter-rouge">Weekly -- Once a week</code> option  to create a schedule that occurs only on one day of the week. 
-You can select the day on which this shift will be active.</p>
+<p><strong>(11)</strong> That’s it! Click on <strong>Create</strong> to save the schedule</p>
 
-<p><img src="images/schedules_19.png" alt="" /></p>
-
-<h4 id="multiple-days-of-the-week">Multiple Days of the Week</h4>
-
-<p>Select the <code class="highlighter-rouge">Weekly -- Particular Days Of a Week</code> option to create a schedule that occurs on particular days of the week 
-You can select the days on which this shift will be active.</p>
-
-<p><img src="images/schedules_20.png" alt="" /></p>
-
-<h4 id="custom">Custom</h4>
-
-<p>Select the <code class="highlighter-rouge">Custom</code> option to create any other custom shift of your choice.</p>
-
-<p><img src="images/schedules_21.png" alt="" /></p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Adding Schedules to Escalation Policies</b><br /><br />
+<p>You will need to add a Schedule to an Escalation Policy for the on-call users to be notified when an incident is triggered for a Service</p>
+</div>
 
 <h2 id="gaps-in-your-schedule">Gaps in your Schedule</h2>
 
@@ -1617,59 +1596,75 @@ You can select the days on which this shift will be active.</p>
 
 <ul>
   <li>
-    <p>If you have any gaps in your schedules configuration, the system will prompt the banner <strong>You have gaps in your schedule</strong> right above the Schedules calendar view.</p>
+    <p>If you have any gaps in your Schedules configuration, the system will prompt the banner <strong>You have gaps in your schedule</strong> right above the Schedules calendar view</p>
   </li>
   <li>
-    <p>To know more details about the gaps, you can click on the <strong>You have gaps in your schedule</strong> banner and it will show you the Name of the Schedule along with the Data and Time during which there is a gap.</p>
+    <p>To know more details about the gaps, you can click on the <strong>You have gaps in your schedule</strong> banner and it will show you the name of the Schedule along with the date and time during which the gap has been detected</p>
   </li>
 </ul>
 
 <p><img src="images/schedules_14.png" alt="" /></p>
 
-<h2 id="updating-an-existing-on-call">Updating an Existing on-call</h2>
+<h2 id="manage-an-existing-on-call">Manage an Existing On-call</h2>
 
-<p>You can update an already existing on-call by clicking over any assigned user/squad on the calendar.</p>
+<h3 id="update">Update</h3>
 
-<p><img src="images/schedules_8.png" alt="" /></p>
+<p><strong>(1)</strong> Select an existing on-call by clicking over any assigned User/Squad on the calendar</p>
 
-<p>You can update the on-call configuration as per your need and you can select <strong>Update method</strong> as:</p>
+<p><img src="images/schedules_15.png" alt="" /></p>
+
+<p><strong>(2)</strong> Click on <strong>Edit</strong></p>
+
+<p><img src="images/schedules_16.png" alt="" /></p>
+
+<p><strong>(3)</strong> Select the appropriate <strong>Update method</strong>:</p>
+
+<p><img src="images/schedules_17.png" alt="" /></p>
+
 <ul>
-  <li><strong>This Event Only</strong>: to update that particular event.</li>
-  <li><strong>This and proceeding events</strong>: to update the selected event and all the events that comes afterwards.</li>
-  <li><strong>All events in this series</strong>: to update all the events of that series irrespective of which event you clicked on.</li>
+  <li><strong>This Event Only</strong> - to update only that particular event 
+When this choice is made, you will not see the option to <em>Repeat</em> as this is considered a one-off necessity to update. Also, this will only show the assignees of the current event picked for the update</li>
+  <li><strong>This and proceeding events</strong> - to update the selected event and all the events that come afterwards</li>
+  <li><strong>All events in this series</strong> - to update all the events of that series irrespective of which event you clicked on</li>
 </ul>
 
-<p><img src="images/schedules_22.png" alt="" /></p>
+<p>In the last two <strong>Update methods</strong>, the modal shows the <strong>Repeats</strong> checkbox and also, shows all the Assignee Groups in the series.</p>
 
-<h2 id="deleting-an-on-call">Deleting an on-call</h2>
+<div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>
+<b>Warning</b><br /><br />
+<p>The user cannot update past events as it is meant to serve as an accurate record of the past on-call Schedule.</p>
+</div>
 
-<p>You can delete an existing on-call by clicking the <strong>Delete</strong> button at the bottom right corner of the <strong>Update on-call</strong> dialog box.
-You have to choose between:</p>
+<h3 id="deleting-an-on-call">Deleting an On-call</h3>
+
+<p><strong>(1)</strong> Delete an existing on-call by clicking the <strong>Delete</strong> button at the bottom right corner of the <strong>Update on-call shift</strong> dialog box</p>
+
+<p><img src="images/schedules_18.png" alt="" /></p>
+
+<p><strong>(2)</strong> Choose the appropriate option:</p>
 <ul>
-  <li><strong>This event only</strong>: It will delete only the selected event of the series.</li>
-  <li><strong>This and proceeding events</strong>: It will delete the event selected as well as all the future events belonging to that series.</li>
-  <li><strong>All events</strong>: It will delete all the events belonging to that series.</li>
+  <li><strong>This event only</strong> - It will delete only the selected event of the series</li>
+  <li><strong>This and proceeding events</strong> - It will delete the event selected as well as all the future events belonging to that series</li>
+  <li><strong>All events</strong> - It will delete all the events belonging to that series</li>
 </ul>
 
-<p><img src="images/schedules_23.png" alt="" /></p>
+<p><img src="images/schedules_19.png" alt="" /></p>
 
-<h2 id="updatingdeleting-a-schedule">Updating/Deleting a Schedule</h2>
+<h2 id="faqs">FAQs</h2>
 
-<p>You can update/delete a schedule by clicking the the Schedule name you want to delete at the right hand side of the page. You can update the schedule details as per your needs or you may delete it by clicking the <em>bin</em> icon at the bottom right corner of the dialog box.</p>
+<p><strong>Q:</strong> How can I add users in different time zones to the Schedule?</p>
 
-<p><img src="images/schedules_11.png" alt="" /></p>
+<p><strong>A:</strong> The selected timezone will default to the local machine timezone. This is especially beneficial for geography-based on-call rotations. The teams will be able to view any created on-call schedule in their local time.</p>
 
-<h2 id="creating-a-one-off-schedule--irregular-schedule">Creating a One-off Schedule / Irregular Schedule</h2>
+<p><strong>Q:</strong> Can I send on-call reminder notifications?</p>
 
-<p>One-off or non-recurring schedules are used to cover on-call for a short period of time but are not a part of the usual recurring rotations.</p>
+<p><strong>A:</strong> All members in an on-call shift will be notified via email 1 hour before the start of their shift. If the created override shift has less than an hour to begin, email notification will go out immediately after the override creation.</p>
 
-<p>In some one-off cases where one member of your team is asked to step in for another, cases where there’s an unavoidable emergency or even in the case of planned vacations, you can create one-off  schedules.</p>
+<p><strong>Q:</strong> Why cannot Stakeholders be added in the on-call Schedules?</p>
 
-<p>To setup a one-off schedule on Squadcast, you can just untick the <code class="highlighter-rouge">Repeats</code> box in the pop-up and complete the rest of the schedule configuration as per your need.</p>
+<p><strong>A:</strong> Stakeholders are read-only users in Squadcast. Hence they cannot be added in an on-call schedule. When you try adding them you would see an error message as shown below.</p>
 
-<p>Click on <code class="highlighter-rouge">Create</code> to save this.</p>
-
-<p><img src="images/schedules_24.png" alt="" /></p>
+<p><img src="images/schedules_20.png" alt="" /></p>
 
 
                 <!--div class="tags">
@@ -1758,7 +1753,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 11, 2021 <br /> -->
+<!--  Site last generated: Feb 12, 2021 <br /> -->
                 </div>
             </div>
             <script>

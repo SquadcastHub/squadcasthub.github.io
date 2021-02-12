@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Rotations for your customer support engineers or on-call teams">
+<meta name="description" content="This feature allows you to create schedules which will override your normal schedules">
 <meta name="keywords" content="schedulesoverrides,  ">
 <title>Schedule Overrides | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -1483,172 +1483,56 @@ li.sidebarTitle{
             <h1 class="post-title-main">Schedule Overrides</h1>
         </div>
             
-                <div class="summary">Rotations for your customer support engineers or on-call teams</div>
+                <div class="summary">This feature allows you to create schedules which will override your normal schedules</div>
             
 
                 
 
-            <p>Using scheduled overrides, you can override existing schedules with the new ones. This way, only the users in override schedules will get notified on incidents for the scheduled time period.</p>
+            <p>Make one-time adjustments to existing on-call schedules and help on-call engineers with planned vacations, unplanned illnesses, or other events that happen during their on-call shifts. 
+This way, only the users in override schedules will get notified for incidents during the scheduled time period.</p>
 
-<h2 id="some-points-about-scheduled-overrides">Some points about scheduled overrides</h2>
-<ol>
-  <li>Creating an override shift is identical to normal shifts, except the fact that they are marked as <strong><code class="highlighter-rouge">Override</code></strong>.</li>
-  <li>If an override shift overlaps with one or more shifts in the same on-call schedule, <strong>only the assignees in the override shift are notified</strong>.</li>
-  <li>If it does not overlap with any other shift, it behaves like a normal shift. It will still be marked as an <strong><code class="highlighter-rouge">Override</code></strong>. If a new normal schedule is created during an existing override shift period, the override shift will continue to override the new schedule for the scheduled override period.</li>
-  <li>If two or more override shifts overlap, assignees from all of the override shifts will be notified when an incident is triggered.</li>
-</ol>
+<h2 id="creating-a-schedule-override">Creating a Schedule Override</h2>
 
-<h2 id="creating-a-scheduled-override">Creating a Scheduled Override</h2>
+<p><strong>(1)</strong> Click on <strong>Schedules</strong> on the sidebar</p>
 
-<p>1.Move over to the <strong>Schedules</strong> section from the left side navigation panel.</p>
+<p><img src="images/schedules_1.png" alt="" /></p>
 
-<p><img src="images/schedule_overrides_1.png" alt="" style="max-width: 13%;" /></p>
+<p><strong>(2)</strong> On the calendar, click on a date or drag over the date(s) on which you’d like to create the override shift</p>
 
-<p>2.On the Calendar, click and drag over the date(s) on which you’d like to create the override shift.</p>
+<p><img src="images/schedule_overrides_1.png" alt="" /></p>
+
+<p><strong>(3)</strong> Select the Schedule for which this override shift will be implemented from the dropdown</p>
 
 <p><img src="images/schedule_overrides_2.png" alt="" /></p>
 
-<p>3.Fill in the Override Shift details and select the Schedule for which this override shift will be implemented. Click on <strong>Next</strong>.</p>
+<p><strong>(4)</strong> Fill in the Override Shift details i.e. Start date, Start time, End date and End time</p>
 
 <p><img src="images/schedule_overrides_3.png" alt="" /></p>
 
-<p>4.Fill in the repetition configuration as per requirement. Check the <strong>Is Override</strong> box and click on <strong>Next</strong></p>
+<p><strong>(5)</strong> Check the <strong>Is Override</strong> box</p>
 
 <p><img src="images/schedule_overrides_4.png" alt="" /></p>
 
-<p>5.Prepare the rotations for the Override Shifts. Click <strong>Create</strong> to save the override shift.</p>
+<p><strong>(6)</strong> <strong>Optional</strong> - Fill in the repetition configuration as per requirement</p>
 
 <p><img src="images/schedule_overrides_5.png" alt="" /></p>
 
-<h2 id="convert-a-normal-shift-to-an-override-shift">Convert a Normal Shift to an Override Shift</h2>
-
-<p>1.On the calendar, click on the existing shift that you would like to convert into an Override Shift.</p>
+<p><strong>(7)</strong> Add the User(s) who would take over the shift</p>
 
 <p><img src="images/schedule_overrides_6.png" alt="" /></p>
 
-<p>2.Click on Edit button</p>
+<p><strong>(8)</strong> Click on <strong>Create</strong> to save this as an override shift. The Override shift would be displayed for the selected date(s)</p>
 
 <p><img src="images/schedule_overrides_7.png" alt="" /></p>
 
-<p>3.Make the necessary changes to the shift timing details and move over to <strong>Repeats</strong>.</p>
+<h3 id="points-to-note-about-scheduled-overrides">Points to note about Scheduled Overrides</h3>
 
-<p><img src="images/schedule_overrides_8.png" alt="" /></p>
-
-<p>4.Check the <strong>Is Override</strong> box. Click on <strong>Next</strong>.</p>
-
-<p><img src="images/schedule_overrides_9.png" alt="" /></p>
-
-<p>5.Change the rotation configurations if necessary and click on <strong>Create</strong>.</p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Check</b>
-<br /><br /><p>1. This Event only: If this is a one-time only override shift <br />
-2. This and proceeding events: If this override applies for all the upcoming days. (This will make changes in the upcoming days only)<br />
-3. All events in this series: If this needs to be reflected throughout the entire schedule, on all the scheduled days (This will make changes in both the past and upcoming days)</p>
-</div>
-
-<p><img src="images/schedule_overrides_10.png" alt="" /></p>
-
-<p>This will now convert the existing normal shift to an Override Shift.</p>
-
-<p><img src="images/schedule_overrides_11.png" alt="" /></p>
-
-<h2 id="example">Example</h2>
-
-<p>For demonstrating this feature, we’re going through an example in the section below.</p>
-
-<p>In this example, we go through the process of creating 2 normal shifts with two different users. We then convert one normal shift into an override shift.</p>
-
-<p>1.Create a new Schedule</p>
-
-<p><img src="images/schedule_overrides_12.png" alt="" /></p>
-
-<p>2.We’re using the shift timing 2PM - 5PM in this example and create this schedule. Then, click <strong>Next</strong>.</p>
-
-<p><img src="images/schedule_overrides_13.png" alt="" /></p>
-
-<p>3.Check the <strong>Does not repeat</strong> box &amp; leave the <strong>Is Override</strong> box unchecked. Click <strong>Next</strong>.</p>
-
-<p><img src="images/schedule_overrides_14.png" alt="" /></p>
-
-<p>4.Add a user to the Rotation. In this case, we’ve added <strong>Tony Stark</strong>. 
-Then, click <strong>Create</strong>.</p>
-
-<p><img src="images/schedule_overrides_15.png" alt="" /></p>
-
-<p>Now, you can see there is a shift created from 2PM - 5PM in all 4 different views.</p>
-
-<p><strong>I. Monthly</strong></p>
-
-<p><img src="images/schedule_overrides_16.png" alt="" /></p>
-
-<p><strong>II. Weekly</strong></p>
-
-<p><img src="images/schedule_overrides_17.png" alt="" /></p>
-
-<p><strong>III. Daily</strong></p>
-
-<p><img src="images/schedule_overrides_18.png" alt="" /></p>
-
-<p><strong>IV. Agenda</strong></p>
-
-<p><img src="images/schedule_overrides_19.png" alt="" /></p>
-
-<p>5.Similarly, we’ve created another Normal Shift from 3PM - 4PM with Bruce Banner in the rotation.</p>
-
-<p><strong>Agenda View</strong></p>
-
-<p><img src="images/schedule_overrides_20.png" alt="" /></p>
-
-<p>We see that from 3PM - 4PM, both <strong>Tony Stark</strong> &amp; <strong>Bruce Banner</strong> are on-call.</p>
-
-<p>So, when an incident hits during that time period, both Tony and Bruce would get notified.</p>
-
-<p>Let’s assume that we require Bruce Banner to get notified instead of Tony Stark during the 3PM - 4PM window.</p>
-
-<p>To make that happen, we just need to mark the 2nd shift, the one with <strong>Bruce Banner</strong> as an Override Shift.</p>
-
-<p>6.Click on the shift that has just <strong>Bruce Banner</strong> in the rotation.</p>
-
-<p><img src="images/schedule_overrides_21.png" alt="" /></p>
-
-<p>7.Click on the Edit button.</p>
-
-<p><img src="images/schedule_overrides_22.png" alt="" /></p>
-
-<p>8.Go to the <strong>Repeats</strong> tab.</p>
-
-<p><img src="images/schedule_overrides_23.png" alt="" /></p>
-
-<p>9.Check the <strong>Is Override</strong> box. Click <strong>Next</strong></p>
-
-<p><img src="images/schedule_overrides_24.png" alt="" /></p>
-
-<p>10.Click <strong>Update</strong>.</p>
-
-<p><img src="images/schedule_overrides_25.png" alt="" /></p>
-
-<p>Now, if we again see all the views, we’ll observe the following:</p>
-
-<p><strong>I. Monthly</strong></p>
-
-<p><img src="images/schedule_overrides_26.png" alt="" /></p>
-
-<p><strong>II. Weekly</strong></p>
-
-<p><img src="images/schedule_overrides_27.png" alt="" /></p>
-
-<p><strong>III. Daily</strong>*</p>
-
-<p><img src="images/schedule_overrides_28.png" alt="" /></p>
-
-<p><strong>IV. Agenda</strong>*</p>
-
-<p><img src="images/schedule_overrides_29.png" alt="" /></p>
-
-<p>So, now after the override is enabled, we see that only <strong>Bruce Banner</strong> is on-call from 3PM - 4PM. In this example, for any incident that comes in during the 3PM - 4PM window, <strong>Bruce Banner</strong> will get notified.</p>
-
-<p>This feature is primarily useful in cases where a member of the on-call team is on a short vacation and the notifications during that period must go to someone else on the team.</p>
+<ul>
+  <li>Creating an override shift is identical to normal shifts, except the fact that they are marked as <strong>Override</strong></li>
+  <li>If an override shift overlaps with one or more shifts in the same on-call schedule, <strong>only the assignees in the override shift are notified</strong></li>
+  <li>If an override shift does not overlap with any other shift, it behaves like a normal shift. It will still be marked as an <strong>Override</strong>. If a new normal schedule is created during an existing override shift period, the override shift will continue to override the new schedule for the scheduled override period</li>
+  <li>If two or more override shifts overlap, assignees from all of the override shifts will be notified when an incident is triggered</li>
+</ul>
 
 
                 <!--div class="tags">
@@ -1737,7 +1621,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 11, 2021 <br /> -->
+<!--  Site last generated: Feb 12, 2021 <br /> -->
                 </div>
             </div>
             <script>

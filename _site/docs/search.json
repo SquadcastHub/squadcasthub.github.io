@@ -294,7 +294,7 @@
 "tags": "schedulesrotations",
 "keywords": "",
 "url": "/docs/schedules",
-"summary": "Rotations for your customer support engineers or on-call teams"
+"summary": "Roosters for your customer support engineers or on-call teams"
 }
 ,
 
@@ -1162,7 +1162,7 @@
 "tags": "schedulesoverrides",
 "keywords": "",
 "url": "/docs/schedule-overrides",
-"summary": "Rotations for your customer support engineers or on-call teams"
+"summary": "This feature allows you to create schedules which will override your normal schedules"
 }
 ,
 

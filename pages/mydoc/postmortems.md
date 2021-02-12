@@ -9,61 +9,82 @@ permalink: docs/postmortems
 folder: mydoc
 ---
 
-Postmortems are a way to summarize the resolution for an incident once it is resolved. Postmortems are a way for you to create a knowledge-base of failures and fixes that can be shared across your organization to help build a culture of shared learning and learning from your failures. 
+Postmortems are a way to summarize the resolution for an incident once it is resolved. It is also a way for you to create a knowledge-base of failures and fixes that can be shared across your organization to help build a culture of shared learning and learning from failures. 
 
-In this documentation, we'll be going through the following  :- 
+In this documentation, we'll be going through the following:
 
-* Postmortem Templates
-* Creating a Postmortem
+- Postmortem Templates
+- Creating a Postmortem
 
 ### Postmortem Templates
 
-* Each organization gets a few pre-defined postmortem templates from **Squadcast**. You can choose to create new templates / modify existing ones, based on how you do postmortems within your organization. To do so, click on the organization settings button as shown in the image below.
+Each organization gets a few predefined Postmortem Templates from **Squadcast**. You can choose to create new templates/modify existing ones, based on how you do postmortems within your organization.
 
-![](images/postmortem_1.png){: style="max-width: 40%;" }
+To do so:
 
-* This will take you to organization settings page. Go the **Postmortem Settings** tab. 
+**(1)** Click on **Settings** on the sidebar
+
+![](images/postmortem_1.png)
+
+**(2)** Click on **Postmortem Settings**. Here you'll find the ready-to-use templates
 
 ![](images/postmortem_2.png)
 
-Here you'll find postmortem templates for the organization.
+**(3)** You can either make use of the existing templates or add new templates
 
 ![](images/postmortem_3.png)
 
-* You also get the feature of to inherit existing templates from the dropdown while creating a new template.
+**(4)** There is a set of `incident-variables`, which can be used while creating Postmortem Templates. These `incident-variables` will dynamically get populated with the incident's data for which the Postmortem is being created. You can see all the available `incident-variables` on the right-half while creating templates. The variables need to be specified using [MustacheJS syntax](https://github.com/janl/mustache.js/). Refer to the pre-defined templates for the templating syntax.
 
 ![](images/postmortem_4.png)
 
-* You can mark one of the existing templates as **default** so that this template would automatically be the default template, as the name suggests, the next time a postmortem is created.
-
-* There is a set of `incident-variables`, which one can make use of while creating postmortem templates. These `incident-variables` will dynamically get populated with the incident's data for which the postmortem is being created. You can see all the available `incident-variables` on the right-half while creating templates. The variables need to be specified using [MustacheJS syntax](https://github.com/janl/mustache.js/). Refer to the pre-defined templates for the templating syntax.
+**(5)** A template can be marked **default**. While filling a Postmortem report for an incident, the default template would pop up automatically
 
 ![](images/postmortem_5.png)
 
-{{site.data.alerts.blue-note}}
-<b>Access Control For Template Creation:</b>
-<br/><br/><p>Only <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">account-owner/admin</code> of an organization has the access to modify the templates</p>
-{{site.data.alerts.end}}
+Click on **Add** to save the new template or **Update** to save the changes in an existing template
 
 ### How-to-video: Creating a Postmortem Template
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qr3Rz0J3VHE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="wistia_responsive_padding" style="padding:53.75% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/yz4mmxhi31?videoFoam=true" title="Create Postmortem Template Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async></script>
 
 ### Creating a Postmortem
 
-* Note: Apart from **Stakeholder**, all other roles have write access to postmortems. **Stakeholder** will have a read access only. 
-* The postmortem feature is enabled for an incident only after it has been resolved.
-* To create a postmortem for a resolved incident, go into the **Incident Details Page**, click on the **More Options** icon (3 dots), click on **Start Postmortem**. 
+Prerequisites: 
+The Postmortem feature is enabled for an incident only after it has been resolved. Hence, an incident first needs to be **Resolved**
+Only the *account-owner/admin* of an organization has the access to modify the templates and/or create new templates for the organization
+
+**(1)** To create a Postmortem for a resolved incident, go into the **Incident Details Page**and Click on **Start Postmortem**
 
 ![](images/postmortem_6.png)
 
-* You can select one of the postmortem templates from the dropdown for your organization and start documenting the postmortem. 
+**(2)** You can select one of the Postmortem Templates from the drop-down and start documenting the Postmortem 
 
-**Note**: Only `account-owner/admin` of an organization has the access to modify the templates and/or create new templates for the organization.
+**Note**: The `incident-variables` will get auto-populated as per the data available for that particular incident. Remaining details need to be manually filled by the user by **Editing** the Postmortem.
 
-**Note**: The incident variables will get auto-populated as per the data of that particular incident. Remaining details need to be manually filled by the user.
+![](images/postmortem_7.png){: style="max-width: 30%" }
 
-* Apart from the markdown body, in a postmortem, you can also create a check-list of follow-ups that can be used to keep track of further actions that need to be done for that incident.
-* Once a postmortem is created, all the users (including Stakeholders) can view the postmortem and download it in MD and PDF formats.
+**(3)** Apart from the Markdown body, in a Postmortem, you can also create a check-list of follow-ups that can be used to keep track of further actions that need to be done for that incident
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j2pF-ow_uQ0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![](images/postmortem_8.png){: style="max-width: 30%" }
+
+**(4)** Click on **Create** to save the Postmortem
+
+**(5)** Once a Postmortem is created, all the users (including Stakeholders) can view the Postmortem and download it in Markdown (MD) and PDF formats
+
+![](images/postmortem_9.png){: style="max-width: 30%" }
+
+### FAQs
+
+**Q:** Who can create Postmortem templates?
+
+**A:** Only `account-owner and admins` of an organization have the access to modify or create the templates.
+
+**Q:** Can Stakeholders create Postmortem templates?
+
+**A:** No, Stakeholders cannot create Postmortem templates.
+
+**Q:** When can Postmortems be created?
+
+**A:** The Postmortem feature is enabled for an incident only after the incident has been resolved.
