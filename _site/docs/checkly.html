@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Get SignalFx alerts into Squadcast">
-<meta name="keywords" content="integrationsignalfx,  ">
-<title>SignalFx | Incident Management using Squadcast</title>
+<meta name="description" content="Send alerts to Squadcast from Checkly">
+<meta name="keywords" content=" ">
+<title>Checkly | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -163,7 +163,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the SignalFx page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Checkly page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -181,7 +181,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="SignalFx">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Checkly">{title}</a></li>',
                     noResultsText: 'No results found',
                             limit: 10,
                             fuzzy: true,
@@ -688,7 +688,7 @@
           
           
           
-          <li><a title="Checkly" href="/docs/checkly">Checkly</a></li>
+          <li class="active"><a title="Checkly" href="/docs/checkly">Checkly</a></li>
           
           
           
@@ -1038,7 +1038,7 @@
           
           
           
-          <li class="active"><a title="SignalFx" href="/docs/signalfx">SignalFx</a></li>
+          <li><a title="SignalFx" href="/docs/signalfx">SignalFx</a></li>
           
           
           
@@ -1457,60 +1457,97 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">SignalFx</h1>
+            <h1 class="post-title-main">Checkly</h1>
         </div>
             
-                <div class="summary">Get SignalFx alerts into Squadcast</div>
+                <div class="summary">Send alerts to Squadcast from Checkly</div>
             
 
                 
 
-            <p>Follow the steps below to configure a service so as to extract its related alert data from SignalFx. Squadcast will then process this information to create incidents for this service as per your preferences.</p>
+            <p>This document will help you integrate Checkly with Squadcast.</p>
 
-<h2 id="using-signalfx-as-an-alert-source">Using SignalFx as an Alert Source</h2>
+<p><a href="https://checklyhq.com/">Checkly</a> is an API monitoring and synthetic monitoring solution aimed at development and operations teams, giving teams a broad, deep and exact control over how APIs and web apps should be monitored.
+Route detailed monitoring alerts from Checkly to the right users in Squadcast.</p>
 
-<p>On the <strong>Sidebar</strong>, click on <strong>Services</strong>.</p>
+<h2 id="how-to-integrate-checkly-with-squadcast">How to integrate Checkly with Squadcast</h2>
 
-<p>You can either choose to use existing service or <a href="adding-a-service-1">create a new service</a></p>
+<h3 id="in-squadcast-using-checkly-as-an-alert-source">In Squadcast: Using Checkly as an Alert Source</h3>
 
-<p>Now, click on the corresponding <strong>Alert Sources</strong> button.</p>
+<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong></p>
+
+<p><img src="images/integration_1-1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Select an existing Service or <strong>Add service</strong></p>
+
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p><strong>(3)</strong> Click the corresponding <strong>Alert Sources</strong></p>
 
 <p><img src="images/integration_1.png" alt="" /></p>
 
-<p>Select <strong>SignalFx</strong> from  <strong>Alert Source</strong> drop down and copy the Webhook URL shown.</p>
+<p><strong>(4)</strong> Search for <strong>Checkly</strong> from  the <strong>Alert Source</strong> drop down menu and copy the webhook</p>
 
-<p><img src="images/signalfx_1.png" alt="" /></p>
+<p><img src="images/checkly_1.png" alt="" /></p>
 
-<h2 id="setup-alerts-to-send-notification-to-squadcast-webhook">Setup alerts to send notification to Squadcast webhook</h2>
+<h3 id="in-checkly-create-a-squadcast-webhook">In Checkly: Create a Squadcast Webhook</h3>
 
-<p>Go to your SignalFx dashboard and setup a detector for the metric for which you want to get alerts for.</p>
+<p><strong>(1)</strong> In the app, navigate to <strong>Alert Settings</strong> on the sidebar</p>
 
-<p>Then create a <strong>New Alert rule</strong> for the detector and define Alert Signal, Alert condition, Alert settings and Alert message.</p>
+<p><img src="images/checkly_2.png" alt="" /></p>
 
-<p><img src="images/signalfx_2.png" alt="" /></p>
+<p><strong>(2)</strong> Click on <strong>Add more channels</strong> to add the Webhook. Additionally, configure other Alert Settings that are available on this page based on your requirements</p>
 
-<p>For <strong>Alert recipients</strong>, click on the <strong>Add Recipient</strong> button and then select <strong>Webhook</strong> and proceed to add a custom webhook.</p>
+<p><img src="images/checkly_3.png" alt="" /></p>
 
-<p><img src="images/signalfx_3.png" alt="" /></p>
+<p><strong>(3)</strong> Select <strong>Add channel</strong> for <strong>Webhook</strong></p>
 
-<p>In the custom <strong>Webhook Notification</strong>, under <strong>URL</strong>, add the SignalFx API URL that you have got from the previous step and click <strong>Update</strong> button and then click on <strong>PROCEED TO ALERT ACTIVATION</strong> button.</p>
+<p><img src="images/checkly_4.png" alt="" /></p>
 
-<p><img src="images/signalfx_4.png" alt="" /></p>
+<p><strong>(4)</strong> Fill in the details as indicated below:</p>
 
-<p>That’s it! Now your SignalFx integration is good to go and whenever an alert is triggered in SignalFx, an incident will automatically get created in Squadcast.</p>
+<p><strong>(a)</strong> Give it a meaningful name, such as <em>Squadcast Webhook</em></p>
 
-<p>The SignalFx Integration comes with an <strong>Auto-Resolve</strong> feature, meaning, when an alert goes under the threshold and gets resolved in SignalFx will automatically get resolved in Squadcast as well.</p>
+<p><strong>(b)</strong> Choose <strong>POST</strong> from the <strong>Method</strong> drop-down and paste the Webhook URL copied from Squadcast in the <strong>URL</strong> placeholder</p>
+
+<p><strong>(c)</strong> Copy and paste the below template in <strong>Body</strong></p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"check_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{CHECK_NAME}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"check_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{CHECK_ID}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"check_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{CHECK_TYPE}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{ALERT_TITLE}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"alert_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{ALERT_TYPE}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"check_result_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{CHECK_RESULT_ID}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"response_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{RESPONSE_TIME}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"api_check_response_status_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{API_CHECK_RESPONSE_STATUS_CODE}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"api_check_response_status_text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{API_CHECK_RESPONSE_STATUS_TEXT}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"run_location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{RUN_LOCATION}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"link"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{RESULT_LINK}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ssl_days_remaining"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{SSL_DAYS_REMAINING}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ssl_check_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{SSL_CHECK_DOMAIN}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"started_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{STARTED_AT}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[{{</span><span class="err">#each</span><span class="w"> </span><span class="err">TAGS</span><span class="p">}}</span><span class="w"> </span><span class="s2">"{{this}}"</span><span class="w"> </span><span class="p">{{</span><span class="err">#unless</span><span class="w"> </span><span class="err">@last</span><span class="p">}},{{</span><span class="err">/unless</span><span class="p">}}</span><span class="w"> </span><span class="p">{{</span><span class="err">/each</span><span class="p">}}],</span><span class="w">
+    </span><span class="s2">"region"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{REGION}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"uuid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{$UUID}}"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"random_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{$RANDOM_NUMBER}}"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>(d)</strong> Now, you can verify if the integration works fine by clicking on <strong>Test webhook</strong> which will create an incident in Squadcast</p>
+
+<p><strong>(e)</strong> In the <strong>Send when</strong> section, choose <strong><code class="highlighter-rouge">a check fails</code></strong>, <strong><code class="highlighter-rouge">a check recovers</code></strong> without fail. The other two options, <strong><code class="highlighter-rouge">a check degrades</code></strong> and <strong><code class="highlighter-rouge">an SSL certificate is due to expire in a few days</code></strong> are optional, based on your requirement</p>
+
+<p><strong>(f)</strong> Select the <code class="highlighter-rouge">checks</code> and <code class="highlighter-rouge">groups</code> that you want to add to this webhook channel as <strong>Subscribers</strong></p>
+
+<p><strong>(g)</strong> <strong>Save webhook</strong> configuration</p>
+
+<p><img src="images/checkly_5.png" alt="" /></p>
+
+<p>That is it, you are now good to go! Whenever an alert is triggered in Checkly, an incident will be created automatically in Squadcast. When an alert is resolved in Checkly, the corresponding incident will get <strong>auto-resolved in Squadcast.</strong></p>
 
 
                 <!--div class="tags">
-                    
-                    <h2>Related Documents </h2>
-                    
-                    
-                    
-                    
-                    
-                    
                     
                 </div-->
 

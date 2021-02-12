@@ -49,35 +49,44 @@ Route detailed monitoring alerts from Checkly to the right users in Squadcast.
 ![](images/checkly_4.png)
 
 **(4)** Fill in the details as indicated below:
-    (a) Give it a meaningful name, such as *Squadcast Webhook*
-    (b) Choose **POST** from the **Method** drop-down and paste the Webhook URL copied from Squadcast in the **URL** placeholder
-    (c) Copy and paste the below template in **Body**
-    ```
-    {
-        "check_name": "{{CHECK_NAME}}",
-        "check_id": "{{CHECK_ID}}",
-        "check_type": "{{CHECK_TYPE}}",
-        "message": "{{ALERT_TITLE}}",
-        "alert_type": "{{ALERT_TYPE}}",
-        "check_result_id": "{{CHECK_RESULT_ID}}",
-        "response_time": "{{RESPONSE_TIME}}",
-        "api_check_response_status_code": "{{API_CHECK_RESPONSE_STATUS_CODE}}",
-        "api_check_response_status_text": "{{API_CHECK_RESPONSE_STATUS_TEXT}}",
-        "run_location": "{{RUN_LOCATION}}",
-        "link": "{{RESULT_LINK}}",
-        "ssl_days_remaining": "{{SSL_DAYS_REMAINING}}",
-        "ssl_check_domain": "{{SSL_CHECK_DOMAIN}}",
-        "started_at": "{{STARTED_AT}}",
-        "tags": [{{#each TAGS}} "{{this}}" {{#unless @last}},{{/unless}} {{/each}}],
-        "region": "{{REGION}}",
-        "uuid": "{{$UUID}}",
-        "random_number": "{{$RANDOM_NUMBER}}"
-    }
-    ```
-    (d) Now, you can verify if the integration works fine by clicking on **Test webhook** which will create an incident in Squadcast
-    (e) In the **Send when** section, choose `a check fails`, `a check recovers` without fail. The other two options, `a check degrades` and `an SSL certificate is due to expire in a few days` are optional, based on your requirement
-    (f) Select the `checks` and `groups` that you want to add to this webhook channel as **Subscribers**
-    (g) **Save webhook** configuration
+
+  **(a)** Give it a meaningful name, such as *Squadcast Webhook*
+  
+  
+  **(b)** Choose **POST** from the **Method** drop-down and paste the Webhook URL copied from Squadcast in the **URL** placeholder
+  
+  **(c)** Copy and paste the below template in **Body**
+{% raw %}
+```json
+{
+    "check_name": "{{CHECK_NAME}}",
+    "check_id": "{{CHECK_ID}}",
+    "check_type": "{{CHECK_TYPE}}",
+    "message": "{{ALERT_TITLE}}",
+    "alert_type": "{{ALERT_TYPE}}",
+    "check_result_id": "{{CHECK_RESULT_ID}}",
+    "response_time": "{{RESPONSE_TIME}}",
+    "api_check_response_status_code": "{{API_CHECK_RESPONSE_STATUS_CODE}}",
+    "api_check_response_status_text": "{{API_CHECK_RESPONSE_STATUS_TEXT}}",
+    "run_location": "{{RUN_LOCATION}}",
+    "link": "{{RESULT_LINK}}",
+    "ssl_days_remaining": "{{SSL_DAYS_REMAINING}}",
+    "ssl_check_domain": "{{SSL_CHECK_DOMAIN}}",
+    "started_at": "{{STARTED_AT}}",
+    "tags": [{{#each TAGS}} "{{this}}" {{#unless @last}},{{/unless}} {{/each}}],
+    "region": "{{REGION}}",
+    "uuid": "{{$UUID}}",
+    "random_number": "{{$RANDOM_NUMBER}}"
+}
+```
+{% endraw %}
+  **(d)** Now, you can verify if the integration works fine by clicking on **Test webhook** which will create an incident in Squadcast
+  
+  **(e)** In the **Send when** section, choose **`a check fails`**, **`a check recovers`** without fail. The other two options, **`a check degrades`** and **`an SSL certificate is due to expire in a few days`** are optional, based on your requirement
+  
+  **(f)** Select the `checks` and `groups` that you want to add to this webhook channel as **Subscribers**
+  
+  **(g)** **Save webhook** configuration
 
 ![](images/checkly_5.png)
 
