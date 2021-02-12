@@ -191,6 +191,17 @@
 
 
 {
+"title": "Checkly",
+"tags": "",
+"keywords": "",
+"url": "/docs/checkly",
+"summary": "Send alerts to Squadcast from Checkly"
+}
+,
+
+
+
+{
 "title": "Checkmk",
 "tags": "integrationcheckmk",
 "keywords": "",

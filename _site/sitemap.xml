@@ -110,6 +110,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/checkly</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/checkmk</loc>
   </url>
   

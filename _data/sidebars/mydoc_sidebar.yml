@@ -275,6 +275,10 @@ entries:
           - title: Buildkite
             url: /docs/buildkite
             output: web, pdf
+          
+          - title: Checkly
+            url: /docs/checkly
+            output: web, pdf
 
           - title: Checkmk
             url: /docs/checkmk
