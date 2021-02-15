@@ -41,3 +41,12 @@ Squadcast Documentation
 3. To generate the pages, run `bundle exec jekyll build`.
 4. To test the page layouts and serve paths for the documentation, use `bundle exec jekyll serve` and visit http://localhost:4000
 5. Always rebase/checkout a branch from master, because page generation can override some unmerged commits from the local development branch or unupdated branch. And of course merging is going to be painful.
+
+```shell
+## Go to the latest production branch
+git checkout main
+## Pull the latest version of that brach from remote
+git pull
+## Base a new branch out from this latest prod branch
+git checkout -b FEATURE_NAME_1
+```
