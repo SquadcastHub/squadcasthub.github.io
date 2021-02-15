@@ -1417,6 +1417,17 @@
 
 
 {
+"title": "StatHat",
+"tags": "",
+"keywords": "",
+"url": "/docs/stathat",
+"summary": "Send alerts to Squadcast from Stathat"
+}
+,
+
+
+
+{
 "title": "StatusCake",
 "tags": "integrationstatuscake",
 "keywords": "",
