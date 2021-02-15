@@ -8,247 +8,247 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/add-users</loc>
+    <loc>SquadcastHub/docs/add-users</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/adding-a-service-1</loc>
+    <loc>SquadcastHub/docs/adding-a-service-1</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/alert-routing</loc>
+    <loc>SquadcastHub/docs/alert-routing</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/alert-suppression</loc>
+    <loc>SquadcastHub/docs/alert-suppression</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/amazon-cloudwatch-aws</loc>
+    <loc>SquadcastHub/docs/amazon-cloudwatch-aws</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/analytics</loc>
+    <loc>SquadcastHub/docs/analytics</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/apiv2</loc>
+    <loc>SquadcastHub/docs/apiv2</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/appdynamics</loc>
+    <loc>SquadcastHub/docs/appdynamics</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/appsignal</loc>
+    <loc>SquadcastHub/docs/appsignal</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/aws-cloudtrail-logs</loc>
+    <loc>SquadcastHub/docs/aws-cloudtrail-logs</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/aws-cloudtrail-via-cloudwatch</loc>
+    <loc>SquadcastHub/docs/aws-cloudtrail-via-cloudwatch</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/aws-cloudwatch-event-rules</loc>
+    <loc>SquadcastHub/docs/aws-cloudwatch-event-rules</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/azure-active-directory-sso</loc>
+    <loc>SquadcastHub/docs/azure-active-directory-sso</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/azure-monitor</loc>
+    <loc>SquadcastHub/docs/azure-monitor</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/bugsnag</loc>
+    <loc>SquadcastHub/docs/bugsnag</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/buildkite</loc>
+    <loc>SquadcastHub/docs/buildkite</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/transfer-ownership</loc>
+    <loc>SquadcastHub/docs/transfer-ownership</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/checkly</loc>
+    <loc>SquadcastHub/docs/checkly</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/checkmk</loc>
+    <loc>SquadcastHub/docs/checkmk</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/circleci-actions</loc>
+    <loc>SquadcastHub/docs/circleci-actions</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/circleci-integration</loc>
+    <loc>SquadcastHub/docs/circleci-integration</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/cisco-dnac</loc>
+    <loc>SquadcastHub/docs/cisco-dnac</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/conviva</loc>
+    <loc>SquadcastHub/docs/conviva</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/copperegg</loc>
+    <loc>SquadcastHub/docs/copperegg</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/coralogix</loc>
+    <loc>SquadcastHub/docs/coralogix</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/crashlytics</loc>
+    <loc>SquadcastHub/docs/crashlytics</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/escalation-policies</loc>
+    <loc>SquadcastHub/docs/escalation-policies</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/schedules</loc>
+    <loc>SquadcastHub/docs/schedules</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/create-smart-squads</loc>
+    <loc>SquadcastHub/docs/create-smart-squads</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/dashboard-metrics</loc>
+    <loc>SquadcastHub/docs/dashboard-metrics</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/datadog</loc>
+    <loc>SquadcastHub/docs/datadog</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/de-duplication-rules</loc>
+    <loc>SquadcastHub/docs/de-duplication-rules</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/deactivating-your-squadcast-account</loc>
+    <loc>SquadcastHub/docs/deactivating-your-squadcast-account</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/deleting-your-squadcast-account</loc>
+    <loc>SquadcastHub/docs/deleting-your-squadcast-account</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/dynatrace</loc>
+    <loc>SquadcastHub/docs/dynatrace</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/elastalert</loc>
+    <loc>SquadcastHub/docs/elastalert</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/elastic</loc>
+    <loc>SquadcastHub/docs/elastic</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/email</loc>
+    <loc>SquadcastHub/docs/email</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/event-tagging</loc>
+    <loc>SquadcastHub/docs/event-tagging</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/export-incidents</loc>
+    <loc>SquadcastHub/docs/export-incidents</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/squadcast-faq</loc>
+    <loc>SquadcastHub/docs/squadcast-faq</loc>
   </url>
   
   
@@ -256,19 +256,19 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/filter-incidents</loc>
+    <loc>SquadcastHub/docs/filter-incidents</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/freshping</loc>
+    <loc>SquadcastHub/docs/freshping</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/getting-started.html</loc>
+    <loc>SquadcastHub/getting-started.html</loc>
   </url>
   
   
@@ -276,127 +276,127 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/ghost-inspector</loc>
+    <loc>SquadcastHub/docs/ghost-inspector</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/github</loc>
+    <loc>SquadcastHub/docs/github</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/glossary</loc>
+    <loc>SquadcastHub/docs/glossary</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/hangouts</loc>
+    <loc>SquadcastHub/docs/hangouts</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/google-sso</loc>
+    <loc>SquadcastHub/docs/google-sso</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/grafana</loc>
+    <loc>SquadcastHub/docs/grafana</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/graylog-v4</loc>
+    <loc>SquadcastHub/docs/graylog-v4</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/graylog</loc>
+    <loc>SquadcastHub/docs/graylog</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/hetrixtools</loc>
+    <loc>SquadcastHub/docs/hetrixtools</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/honeybadger</loc>
+    <loc>SquadcastHub/docs/honeybadger</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/how-to-video-squadcast-actions</loc>
+    <loc>SquadcastHub/docs/how-to-video-squadcast-actions</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/icinga2</loc>
+    <loc>SquadcastHub/docs/icinga2</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/import-users</loc>
+    <loc>SquadcastHub/docs/import-users</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/incident-dashboard</loc>
+    <loc>SquadcastHub/docs/incident-dashboard</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/incident-details</loc>
+    <loc>SquadcastHub/docs/incident-details</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/incident-list-table-view</loc>
+    <loc>SquadcastHub/docs/incident-list-table-view</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/incident-notes</loc>
+    <loc>SquadcastHub/docs/incident-notes</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/incident-rate-limiting</loc>
+    <loc>SquadcastHub/docs/incident-rate-limiting</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/status-based-deduplication</loc>
+    <loc>SquadcastHub/docs/status-based-deduplication</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/incident-timeline</loc>
+    <loc>SquadcastHub/docs/incident-timeline</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/index.html</loc>
+    <loc>SquadcastHub/index.html</loc>
   </url>
   
   
@@ -404,163 +404,163 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/insightops-logentries</loc>
+    <loc>SquadcastHub/docs/insightops-logentries</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/instana</loc>
+    <loc>SquadcastHub/docs/instana</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/invoke-an-escalation-policy-for-an-existing-incident</loc>
+    <loc>SquadcastHub/docs/invoke-an-escalation-policy-for-an-existing-incident</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/jenkins</loc>
+    <loc>SquadcastHub/docs/jenkins</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/jira-cloud</loc>
+    <loc>SquadcastHub/docs/jira-cloud</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/jira-cloud-alert-source</loc>
+    <loc>SquadcastHub/docs/jira-cloud-alert-source</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/jira-server-on-premise</loc>
+    <loc>SquadcastHub/docs/jira-server-on-premise</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/jira-server-alert-source</loc>
+    <loc>SquadcastHub/docs/jira-server-alert-source</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/kapacitor</loc>
+    <loc>SquadcastHub/docs/kapacitor</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/logdna</loc>
+    <loc>SquadcastHub/docs/logdna</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/loggly</loc>
+    <loc>SquadcastHub/docs/loggly</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/logic-monitor</loc>
+    <loc>SquadcastHub/docs/logic-monitor</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/logstash-integration-guide</loc>
+    <loc>SquadcastHub/docs/logstash-integration-guide</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/logzio</loc>
+    <loc>SquadcastHub/docs/logzio</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/maintenance-mode</loc>
+    <loc>SquadcastHub/docs/maintenance-mode</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/managing-all-users</loc>
+    <loc>SquadcastHub/docs/managing-all-users</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/squads</loc>
+    <loc>SquadcastHub/docs/squads</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/set-up-your-profile</loc>
+    <loc>SquadcastHub/docs/set-up-your-profile</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/manageengine-opmanager</loc>
+    <loc>SquadcastHub/docs/manageengine-opmanager</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/manually-creating-an-incident</loc>
+    <loc>SquadcastHub/docs/manually-creating-an-incident</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/adfs-sso</loc>
+    <loc>SquadcastHub/docs/adfs-sso</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/mongodb-atlas-cloud-manager</loc>
+    <loc>SquadcastHub/docs/mongodb-atlas-cloud-manager</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/nagios</loc>
+    <loc>SquadcastHub/docs/nagios</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/new-relic</loc>
+    <loc>SquadcastHub/docs/new-relic</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/nixstats</loc>
+    <loc>SquadcastHub/docs/nixstats</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/notification-rules</loc>
+    <loc>SquadcastHub/docs/notification-rules</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/okta-sso-integration</loc>
+    <loc>SquadcastHub/docs/okta-sso-integration</loc>
   </url>
   
   
@@ -568,31 +568,31 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/squadcast-organizations</loc>
+    <loc>SquadcastHub/docs/squadcast-organizations</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/overops</loc>
+    <loc>SquadcastHub/docs/overops</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/papertrail</loc>
+    <loc>SquadcastHub/docs/papertrail</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/pingdom</loc>
+    <loc>SquadcastHub/docs/pingdom</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/postmortems</loc>
+    <loc>SquadcastHub/docs/postmortems</loc>
   </url>
   
   
@@ -600,61 +600,61 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/prometheus</loc>
+    <loc>SquadcastHub/docs/prometheus</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/prtg-network-monitor</loc>
+    <loc>SquadcastHub/docs/prtg-network-monitor</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/getting-started</loc>
+    <loc>SquadcastHub/docs/getting-started</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/rapid7-insightidr</loc>
+    <loc>SquadcastHub/docs/rapid7-insightidr</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/rollbar</loc>
+    <loc>SquadcastHub/docs/rollbar</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/runscope</loc>
+    <loc>SquadcastHub/docs/runscope</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/saml-sso</loc>
+    <loc>SquadcastHub/docs/saml-sso</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/save-filter-view</loc>
+    <loc>SquadcastHub/docs/save-filter-view</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/schedule-overrides</loc>
+    <loc>SquadcastHub/docs/schedule-overrides</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/scout-apm</loc>
+    <loc>SquadcastHub/docs/scout-apm</loc>
   </url>
   
   
@@ -664,55 +664,55 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/sematext</loc>
+    <loc>SquadcastHub/docs/sematext</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/sensu</loc>
+    <loc>SquadcastHub/docs/sensu</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/sensu-go</loc>
+    <loc>SquadcastHub/docs/sensu-go</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/sentryio</loc>
+    <loc>SquadcastHub/docs/sentryio</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/server-density</loc>
+    <loc>SquadcastHub/docs/server-density</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/service-dependency-based-deduplication</loc>
+    <loc>SquadcastHub/docs/service-dependency-based-deduplication</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/service-levels</loc>
+    <loc>SquadcastHub/docs/service-levels</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/signalfx</loc>
+    <loc>SquadcastHub/docs/signalfx</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/site24x7</loc>
+    <loc>SquadcastHub/docs/site24x7</loc>
   </url>
   
   
@@ -720,101 +720,107 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/slack</loc>
+    <loc>SquadcastHub/docs/slack</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/slack-as-an-alert-source</loc>
+    <loc>SquadcastHub/docs/slack-as-an-alert-source</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/slo-dashboard</loc>
+    <loc>SquadcastHub/docs/slo-dashboard</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/solarwinds-appoptics</loc>
+    <loc>SquadcastHub/docs/solarwinds-appoptics</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/splunk</loc>
+    <loc>SquadcastHub/docs/splunk</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/sqreen</loc>
+    <loc>SquadcastHub/docs/sqreen</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/squadcast-public-api</loc>
+    <loc>SquadcastHub/docs/squadcast-public-api</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/squadcast-runbooks</loc>
+    <loc>SquadcastHub/docs/squadcast-runbooks</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/squadcast-search</loc>
+    <loc>SquadcastHub/docs/squadcast-search</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/stackdriver</loc>
+    <loc>SquadcastHub/docs/stackdriver</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/stackify-retrace</loc>
+    <loc>SquadcastHub/docs/stackify-retrace</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/statuscake</loc>
+    <loc>SquadcastHub/docs/stathat</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/statuspage</loc>
+    <loc>SquadcastHub/docs/statuscake</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/sumo-logic</loc>
+    <loc>SquadcastHub/docs/statuspage</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/schedule-types</loc>
+    <loc>SquadcastHub/docs/sumo-logic</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/sysdig-monitor</loc>
+    <loc>SquadcastHub/docs/schedule-types</loc>
   </url>
   
   
   
+  <url>
+    <loc>SquadcastHub/docs/sysdig-monitor</loc>
+  </url>
+  
+  
+  
   
   
   
@@ -838,19 +844,19 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/take-bulk-actions</loc>
+    <loc>SquadcastHub/docs/take-bulk-actions</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/terraform-provider-for-squadcast</loc>
+    <loc>SquadcastHub/docs/terraform-provider-for-squadcast</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/threat-stack</loc>
+    <loc>SquadcastHub/docs/threat-stack</loc>
   </url>
   
   
@@ -866,49 +872,49 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/upgrading-to-a-paid-plan</loc>
+    <loc>SquadcastHub/docs/upgrading-to-a-paid-plan</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/uptime-robot</loc>
+    <loc>SquadcastHub/docs/uptime-robot</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/using-the-mobile-app</loc>
+    <loc>SquadcastHub/docs/using-the-mobile-app</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/mobile-app-see-who-is-on-call</loc>
+    <loc>SquadcastHub/docs/mobile-app-see-who-is-on-call</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/what-are-squadcast-actions</loc>
+    <loc>SquadcastHub/docs/what-are-squadcast-actions</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/who-is-on-call</loc>
+    <loc>SquadcastHub/docs/who-is-on-call</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/zabbix-integration-guide</loc>
+    <loc>SquadcastHub/docs/zabbix-integration-guide</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/zabbix-5</loc>
+    <loc>SquadcastHub/docs/zabbix-5</loc>
   </url>
   
   

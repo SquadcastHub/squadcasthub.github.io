@@ -508,8 +508,8 @@ entries:
             url: /docs/stackify-retrace
             output: web, pdf
 
-            - title: StatHat
-            url: /docs/statuscake
+          - title: StatHat
+            url: /docs/stathat
             output: web, pdf
 
           - title: StatusCake
