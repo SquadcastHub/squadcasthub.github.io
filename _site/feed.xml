@@ -3,10 +3,10 @@
     <channel>
         <title></title>
         <description>Welcome to the Squadcast Support Hub. You’ll find comprehensive guides and documentation to help you start working with Squadcast as quickly as possible. Let’s jump right in!</description>
-        <link>SquadcastHub/</link>
-        <atom:link href="SquadcastHub/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 15 Feb 2021 20:49:19 +0530</pubDate>
-        <lastBuildDate>Mon, 15 Feb 2021 20:49:19 +0530</lastBuildDate>
+        <link>https://support.squadcast.com/</link>
+        <atom:link href="https://support.squadcast.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Mon, 15 Feb 2021 21:05:43 +0530</pubDate>
+        <lastBuildDate>Mon, 15 Feb 2021 21:05:43 +0530</lastBuildDate>
         <generator>Jekyll v3.8.5</generator>
         
     </channel>
