@@ -42,11 +42,11 @@ Route detailed monitoring alerts from StatHat to the right users in Squadcast.
 
 **(2)** Click on **Manage Alert Destinations** to add the Webhook
 
-![](images/stathat_3.png)
+![](images/stathat_4.png)
 
 **(3)** Under **Webhooks**, give it a meaningful *Name* and paste the copied Webhook *URL* from Squadcast and click on **Add**
 
-![](images/stathat_4.png)
+![](images/stathat_3.png)
 
 **(4)** Now, navigate back to **Settings**. You can enable *Squadcast Webhook* to be triggered for *Automatic Alerts* and *Manual Alerts* on a global level.
 
