@@ -180,10 +180,6 @@ entries:
             url: /docs/filter-incidents
             output: web, pdf
 
-          - title: Export Incidents
-            url: /docs/export-incidents
-            output: web, pdf
-
           - title: Save Filter View
             url: /docs/save-filter-view
             output: web, pdf

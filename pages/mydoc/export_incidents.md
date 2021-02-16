@@ -8,6 +8,8 @@ summary: "Export Incidents"
 sidebar: mydoc_sidebar
 permalink: docs/export-incidents
 folder: mydoc
+published: false
+search: exclude
 ---
 
 You can now export your incidents in CSV format to be used for further processing. Just add the filters you would like to apply and press the download icon to download the exported incidents.
