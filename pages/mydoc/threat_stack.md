@@ -16,7 +16,7 @@ Route detailed events from Threat Stack to the right users in Squadcast.
 
 ## How to integrate Threat Stack with Squadcast
 
-### In Squadcast: Using Datadog as an Alert Source
+### In Squadcast: Using Threat Stack as an Alert Source
 
 **(1)** On the **Sidebar**, click on **Services**.
 
