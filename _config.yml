@@ -120,6 +120,6 @@ description: "Welcome to the Squadcast Support Hub. You’ll find comprehensive 
 
 github: [metadata]
 
-# algolia: 
-#   application_id: '0HZJ2GPOMD'
-#   index_name: 'test'
+algolia: 
+  application_id: 'M0XX7ZMBFN'
+  index_name: 'squadcast_support'

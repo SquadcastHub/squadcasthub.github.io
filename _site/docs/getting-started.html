@@ -43,7 +43,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="https://support.squadcast.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 
 <!-- Fonts (Nunitosans & Opensans) -->
 
@@ -55,6 +55,18 @@
 
 <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+<!-- Algolia Scripts -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script> Only Search -->
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script> <!-- All Features -->
+
+<!-- Initialize -->
+
+<script>
+    const client = algoliasearch('M0XX7ZMBFN', '15ca191d233b51e77561d5d1e18a7157');
+    const index = client.initIndex('squadcast_support');
+</script>
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -172,20 +184,38 @@
                 <li>
                     <!--start search-->
                     <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="Search">
-                        <ul id="results-container"></ul>
+                        <input type="text" id="search-input" style="outline: none;" placeholder="Search for...">
+                        <button id="search-button1" style="height: 30px; background-color: #3670fe; color: white; outline: none; border-color: #3670fe;">Search</button>
+                        <ul id="results-container" style="max-height: 500px; overflow: scroll;"></ul>
                     </div>
-                    <script src="js/jekyll-search.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Quickstart Guide">{title}</a></li>',
-                    noResultsText: 'No results found',
-                            limit: 10,
-                            fuzzy: true,
-                    })
+                    <script>                    
+                    const field1 = document.getElementById('search-input');
+                    const rest1 = document.getElementById('results-container');
+                    const find1 = document.getElementById('search-button1');
+                    rest1.style.display = 'none';
+                    find1.onclick = function(){
+                        var val = field1.value;
+                        index.search(val).then(({ hits }) => {
+                        if(hits.length > 0 && val != ''){
+                            rest1.style.display = 'block';
+                            rest1.innerHTML = '';
+                            for(i = 0; i < hits.length; i++){
+                                if(hits[i].search != 'exclude'){
+                                    rest1.innerHTML = rest1.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">'+hits[i]._highlightResult.title.value+'<br/>'+hits[i]._highlightResult.content.value+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
+                                }
+                            }
+                            rest1.innerHTML = rest1.innerHTML+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
+                        }else{
+                            rest1.style.display = 'none';
+                        }
+                        });
+                    }
+                    field1.onkeyup = function(){
+                        if(field1.value == ''){
+                        rest1.innerHTML = '';
+                        rest1.style.display = 'none';
+                        }
+                    }
                     </script>
                     <!--end search-->
                 </li>
@@ -402,13 +432,6 @@
           
           
           <li><a title="Create and Manage On-call Schedules & Rotations" href="/docs/schedules">Create and Manage On-call Schedules & Rotations</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Supported On-call Schedules & Rotations" href="/docs/schedule-types">Supported On-call Schedules & Rotations</a></li>
           
           
           
@@ -1814,7 +1837,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 15, 2021 <br /> -->
+<!--  Site last generated: Feb 16, 2021 <br /> -->
                 </div>
             </div>
             <script>

@@ -43,7 +43,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="https://support.squadcast.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 
 <!-- Fonts (Nunitosans & Opensans) -->
 
@@ -55,6 +55,18 @@
 
 <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+<!-- Algolia Scripts -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script> Only Search -->
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script> <!-- All Features -->
+
+<!-- Initialize -->
+
+<script>
+    const client = algoliasearch('M0XX7ZMBFN', '15ca191d233b51e77561d5d1e18a7157');
+    const index = client.initIndex('squadcast_support');
+</script>
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -172,20 +184,38 @@
                 <li>
                     <!--start search-->
                     <div id="search-demo-container">
-                        <input type="text" id="search-input" placeholder="Search">
-                        <ul id="results-container"></ul>
+                        <input type="text" id="search-input" style="outline: none;" placeholder="Search for...">
+                        <button id="search-button1" style="height: 30px; background-color: #3670fe; color: white; outline: none; border-color: #3670fe;">Search</button>
+                        <ul id="results-container" style="max-height: 500px; overflow: scroll;"></ul>
                     </div>
-                    <script src="js/jekyll-search.js" type="text/javascript"></script>
-                    <script type="text/javascript">
-                            SimpleJekyllSearch.init({
-                                searchInput: document.getElementById('search-input'),
-                                resultsContainer: document.getElementById('results-container'),
-                                dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Postmortems">{title}</a></li>',
-                    noResultsText: 'No results found',
-                            limit: 10,
-                            fuzzy: true,
-                    })
+                    <script>                    
+                    const field1 = document.getElementById('search-input');
+                    const rest1 = document.getElementById('results-container');
+                    const find1 = document.getElementById('search-button1');
+                    rest1.style.display = 'none';
+                    find1.onclick = function(){
+                        var val = field1.value;
+                        index.search(val).then(({ hits }) => {
+                        if(hits.length > 0 && val != ''){
+                            rest1.style.display = 'block';
+                            rest1.innerHTML = '';
+                            for(i = 0; i < hits.length; i++){
+                                if(hits[i].search != 'exclude'){
+                                    rest1.innerHTML = rest1.innerHTML+'<a href="'+hits[i].url+'" style="text-decoration: none;">'+hits[i]._highlightResult.title.value+'<br/>'+hits[i]._highlightResult.content.value+'<br/><div style="border-bottom: 2px solid #e7e9ed"></div></a><br/>';
+                                }
+                            }
+                            rest1.innerHTML = rest1.innerHTML+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
+                        }else{
+                            rest1.style.display = 'none';
+                        }
+                        });
+                    }
+                    field1.onkeyup = function(){
+                        if(field1.value == ''){
+                        rest1.innerHTML = '';
+                        rest1.style.display = 'none';
+                        }
+                    }
                     </script>
                     <!--end search-->
                 </li>
@@ -402,13 +432,6 @@
           
           
           <li><a title="Create and Manage On-call Schedules & Rotations" href="/docs/schedules">Create and Manage On-call Schedules & Rotations</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Supported On-call Schedules & Rotations" href="/docs/schedule-types">Supported On-call Schedules & Rotations</a></li>
           
           
           
@@ -1472,9 +1495,9 @@ li.sidebarTitle{
 
                 
 
-            <p>Postmortems are a way to summarize the resolution for an incident once it is resolved. Postmortems are a way for you to create a knowledge-base of failures and fixes that can be shared across your organization to help build a culture of shared learning and learning from your failures.</p>
+            <p>Postmortems are a way to summarize the resolution for an incident once it is resolved. It is also a way for you to create a knowledge-base of failures and fixes that can be shared across your organization to help build a culture of shared learning and learning from failures.</p>
 
-<p>In this documentation, we’ll be going through the following  :-</p>
+<p>In this documentation, we’ll be going through the following:</p>
 
 <ul>
   <li>Postmortem Templates</li>
@@ -1483,72 +1506,76 @@ li.sidebarTitle{
 
 <h3 id="postmortem-templates">Postmortem Templates</h3>
 
-<ul>
-  <li>Each organization gets a few pre-defined postmortem templates from <strong>Squadcast</strong>. You can choose to create new templates / modify existing ones, based on how you do postmortems within your organization. To do so, click on the organization settings button as shown in the image below.</li>
-</ul>
+<p>Each organization gets a few predefined Postmortem Templates from <strong>Squadcast</strong>. You can choose to create new templates/modify existing ones, based on how you do postmortems within your organization.</p>
 
-<p><img src="images/postmortem_1.png" alt="" style="max-width: 40%;" /></p>
+<p>To do so:</p>
 
-<ul>
-  <li>This will take you to organization settings page. Go the <strong>Postmortem Settings</strong> tab.</li>
-</ul>
+<p><strong>(1)</strong> Click on <strong>Settings</strong> on the sidebar</p>
+
+<p><img src="images/postmortem_1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Click on <strong>Postmortem Settings</strong>. Here you’ll find the ready-to-use templates</p>
 
 <p><img src="images/postmortem_2.png" alt="" /></p>
 
-<p>Here you’ll find postmortem templates for the organization.</p>
+<p><strong>(3)</strong> You can either make use of the existing templates or add new templates</p>
 
 <p><img src="images/postmortem_3.png" alt="" /></p>
 
-<ul>
-  <li>You also get the feature of to inherit existing templates from the dropdown while creating a new template.</li>
-</ul>
+<p><strong>(4)</strong> There is a set of <code class="highlighter-rouge">incident-variables</code>, which can be used while creating Postmortem Templates. These <code class="highlighter-rouge">incident-variables</code> will dynamically get populated with the incident’s data for which the Postmortem is being created. You can see all the available <code class="highlighter-rouge">incident-variables</code> on the right-half while creating templates. The variables need to be specified using <a href="https://github.com/janl/mustache.js/">MustacheJS syntax</a>. Refer to the pre-defined templates for the templating syntax.</p>
 
 <p><img src="images/postmortem_4.png" alt="" /></p>
 
-<ul>
-  <li>
-    <p>You can mark one of the existing templates as <strong>default</strong> so that this template would automatically be the default template, as the name suggests, the next time a postmortem is created.</p>
-  </li>
-  <li>
-    <p>There is a set of <code class="highlighter-rouge">incident-variables</code>, which one can make use of while creating postmortem templates. These <code class="highlighter-rouge">incident-variables</code> will dynamically get populated with the incident’s data for which the postmortem is being created. You can see all the available <code class="highlighter-rouge">incident-variables</code> on the right-half while creating templates. The variables need to be specified using <a href="https://github.com/janl/mustache.js/">MustacheJS syntax</a>. Refer to the pre-defined templates for the templating syntax.</p>
-  </li>
-</ul>
+<p><strong>(5)</strong> A template can be marked <strong>default</strong>. While filling a Postmortem report for an incident, the default template would pop up automatically</p>
 
 <p><img src="images/postmortem_5.png" alt="" /></p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Access Control For Template Creation:</b>
-<br /><br /><p>Only <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">account-owner/admin</code> of an organization has the access to modify the templates</p>
-</div>
+<p>Click on <strong>Add</strong> to save the new template or <strong>Update</strong> to save the changes in an existing template</p>
 
 <h3 id="how-to-video-creating-a-postmortem-template">How-to-video: Creating a Postmortem Template</h3>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qr3Rz0J3VHE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="wistia_responsive_padding" style="padding:53.75% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/yz4mmxhi31?videoFoam=true" title="Create Postmortem Template Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen="" msallowfullscreen="" width="100%" height="100%"></iframe></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async=""></script>
 
 <h3 id="creating-a-postmortem">Creating a Postmortem</h3>
 
-<ul>
-  <li>Note: Apart from <strong>Stakeholder</strong>, all other roles have write access to postmortems. <strong>Stakeholder</strong> will have a read access only.</li>
-  <li>The postmortem feature is enabled for an incident only after it has been resolved.</li>
-  <li>To create a postmortem for a resolved incident, go into the <strong>Incident Details Page</strong>, click on the <strong>More Options</strong> icon (3 dots), click on <strong>Start Postmortem</strong>.</li>
-</ul>
+<p>Prerequisites: 
+The Postmortem feature is enabled for an incident only after it has been resolved. Hence, an incident first needs to be <strong>Resolved</strong>
+Only the <em>account-owner/admin</em> of an organization has the access to modify the templates and/or create new templates for the organization</p>
+
+<p><strong>(1)</strong> To create a Postmortem for a resolved incident, go into the <strong>Incident Details Page</strong>and Click on <strong>Start Postmortem</strong></p>
 
 <p><img src="images/postmortem_6.png" alt="" /></p>
 
-<ul>
-  <li>You can select one of the postmortem templates from the dropdown for your organization and start documenting the postmortem.</li>
-</ul>
+<p><strong>(2)</strong> You can select one of the Postmortem Templates from the drop-down and start documenting the Postmortem</p>
 
-<p><strong>Note</strong>: Only <code class="highlighter-rouge">account-owner/admin</code> of an organization has the access to modify the templates and/or create new templates for the organization.</p>
+<p><strong>Note</strong>: The <code class="highlighter-rouge">incident-variables</code> will get auto-populated as per the data available for that particular incident. Remaining details need to be manually filled by the user by <strong>Editing</strong> the Postmortem.</p>
 
-<p><strong>Note</strong>: The incident variables will get auto-populated as per the data of that particular incident. Remaining details need to be manually filled by the user.</p>
+<p><img src="images/postmortem_7.png" alt="" style="max-width: 30%" /></p>
 
-<ul>
-  <li>Apart from the markdown body, in a postmortem, you can also create a check-list of follow-ups that can be used to keep track of further actions that need to be done for that incident.</li>
-  <li>Once a postmortem is created, all the users (including Stakeholders) can view the postmortem and download it in MD and PDF formats.</li>
-</ul>
+<p><strong>(3)</strong> Apart from the Markdown body, in a Postmortem, you can also create a check-list of follow-ups that can be used to keep track of further actions that need to be done for that incident</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j2pF-ow_uQ0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><img src="images/postmortem_8.png" alt="" style="max-width: 30%" /></p>
+
+<p><strong>(4)</strong> Click on <strong>Create</strong> to save the Postmortem</p>
+
+<p><strong>(5)</strong> Once a Postmortem is created, all the users (including Stakeholders) can view the Postmortem and download it in Markdown (MD) and PDF formats</p>
+
+<p><img src="images/postmortem_9.png" alt="" style="max-width: 30%" /></p>
+
+<h3 id="faqs">FAQs</h3>
+
+<p><strong>Q:</strong> Who can create Postmortem templates?</p>
+
+<p><strong>A:</strong> Only <code class="highlighter-rouge">account-owner and admins</code> of an organization have the access to modify or create the templates.</p>
+
+<p><strong>Q:</strong> Can Stakeholders create Postmortem templates?</p>
+
+<p><strong>A:</strong> No, Stakeholders cannot create Postmortem templates.</p>
+
+<p><strong>Q:</strong> When can Postmortems be created?</p>
+
+<p><strong>A:</strong> The Postmortem feature is enabled for an incident only after the incident has been resolved.</p>
 
 
                 <!--div class="tags">
@@ -1632,7 +1659,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 15, 2021 <br /> -->
+<!--  Site last generated: Feb 16, 2021 <br /> -->
                 </div>
             </div>
             <script>

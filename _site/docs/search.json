@@ -305,7 +305,7 @@
 "tags": "schedulesrotations",
 "keywords": "",
 "url": "/docs/schedules",
-"summary": "Rotations for your customer support engineers or on-call teams"
+"summary": "Roosters for your customer support engineers or on-call teams"
 }
 ,
 
@@ -1173,7 +1173,7 @@
 "tags": "schedulesoverrides",
 "keywords": "",
 "url": "/docs/schedule-overrides",
-"summary": "Rotations for your customer support engineers or on-call teams"
+"summary": "This feature allows you to create schedules which will override your normal schedules"
 }
 ,
 
@@ -1455,17 +1455,6 @@
 "keywords": "",
 "url": "/docs/sumo-logic",
 "summary": "Get alerts from Sumo Logic into Squadcast"
-}
-,
-
-
-
-{
-"title": "Supported On-call Schedules &amp; Rotations",
-"tags": "schedulesrotations",
-"keywords": "",
-"url": "/docs/schedule-types",
-"summary": "This document will help you create daily, weekly and custom schedules and will also help you understand how to create recurring or one-off schedules on Squadcast"
 }
 ,
 

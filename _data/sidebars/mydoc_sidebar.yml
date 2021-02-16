@@ -124,10 +124,6 @@ entries:
             url: /docs/schedules
             output: web, pdf
 
-          - title: Supported On-call Schedules & Rotations
-            url: /docs/schedule-types
-            output: web, pdf
-
           - title: Who is On-Call?
             url: /docs/who-is-on-call
             output: web, pdf

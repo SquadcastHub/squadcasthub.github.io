@@ -7,6 +7,8 @@ last_updated:
 summary: "This document will help you create daily, weekly and custom schedules and will also help you understand how to create recurring or one-off schedules on Squadcast"
 sidebar: mydoc_sidebar
 folder: mydoc
+published: false
+search: exclude
 ---
 
 Squadcast provides a completely customizable schedules feature where you can configure almost any regular or complex schedules that are followed by organizations today. 
