@@ -20,4 +20,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Updating Algolia Index
-        run: ALGOLIA_API_KEY='0d12377b218ea5a0ef4e2acd4b518ab1' bundle exec jekyll algolia
+        run: ALGOLIA_API_KEY='0d12377b218ea5a0ef4e2acd4b518ab1' jekyll algolia
