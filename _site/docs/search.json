@@ -1461,17 +1461,6 @@
 
 
 {
-"title": "Supported On-call Schedules &amp; Rotations",
-"tags": "schedulesrotations",
-"keywords": "",
-"url": "/docs/schedule-types",
-"summary": "This document will help you create daily, weekly and custom schedules and will also help you understand how to create recurring or one-off schedules on Squadcast"
-}
-,
-
-
-
-{
 "title": "Sysdig Monitor",
 "tags": "integrationsysdig monitor",
 "keywords": "",
