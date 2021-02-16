@@ -275,6 +275,10 @@ entries:
           - title: Buildkite
             url: /docs/buildkite
             output: web, pdf
+          
+          - title: Checkly
+            url: /docs/checkly
+            output: web, pdf
 
           - title: Checkmk
             url: /docs/checkmk
@@ -502,6 +506,10 @@ entries:
 
           - title: Stackify Retrace
             url: /docs/stackify-retrace
+            output: web, pdf
+
+          - title: StatHat
+            url: /docs/stathat
             output: web, pdf
 
           - title: StatusCake

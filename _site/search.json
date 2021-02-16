@@ -191,6 +191,17 @@
 
 
 {
+"title": "Checkly",
+"tags": "",
+"keywords": "",
+"url": "/docs/checkly",
+"summary": "Send alerts to Squadcast from Checkly"
+}
+,
+
+
+
+{
 "title": "Checkmk",
 "tags": "integrationcheckmk",
 "keywords": "",
@@ -1400,6 +1411,17 @@
 "keywords": "",
 "url": "/docs/stackify-retrace",
 "summary": "Get alerts from Stackify's Retrace into Squadcast"
+}
+,
+
+
+
+{
+"title": "StatHat",
+"tags": "",
+"keywords": "",
+"url": "/docs/stathat",
+"summary": "Send alerts to Squadcast from Stathat"
 }
 ,
 
