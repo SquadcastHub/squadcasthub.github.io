@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Add multiple Users to your organization">
+<meta name="description" content="Adding multiple Users to your organization">
 <meta name="keywords" content="import-userstransfer-ownership,  ">
 <title>Add Users | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -122,6 +122,10 @@
 <style>
     li, .post-header, .summary, p, .post-content, #search-input {
         font-family: 'Nunito Sans', sans-serif;
+    }
+    .ais-Highlight{
+        background-color: yellow !important;
+        font-style: normal !important;
     }
 </style>
 <!-- Navigation -->
@@ -536,13 +540,6 @@
           
           
           <li><a title="Filter Incidents" href="/docs/filter-incidents">Filter Incidents</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Export Incidents" href="/docs/export-incidents">Export Incidents</a></li>
           
           
           
@@ -1490,58 +1487,99 @@ li.sidebarTitle{
             <h1 class="post-title-main">Add Users</h1>
         </div>
             
-                <div class="summary">Add multiple Users to your organization</div>
+                <div class="summary">Adding multiple Users to your organization</div>
             
 
                 
 
-            <p>You can invite multiple users to your organization using the new Add Users page.</p>
+            <h3 id="follow-the-steps-below-to-add-users">Follow the steps below to add users</h3>
 
-<p>You can access the page by clicking on the Users tab from the sidebar and pressing the <code class="highlighter-rouge">Add Users</code> button on the top right side of the page.</p>
+<p><strong>(1)</strong> Click on <strong>Users</strong> on the sidebar</p>
 
 <p><img src="images/add_users_1.png" alt="" /></p>
 
+<p><strong>(2)</strong> Click on <strong>Add Users</strong></p>
+
 <p><img src="images/add_users_2.png" alt="" /></p>
 
-<ul>
-  <li>
-    <p>Fill in the First Name, Last Name, and Email ID of the users whom you wish to invite into your organization.</p>
-  </li>
-  <li>
-    <p>Choose the most appropriate role for the new user from the <code class="highlighter-rouge">User Type</code> drop-down.</p>
-  </li>
-  <li>
-    <p>A new row will be created automatically when you start filling the fields.</p>
-  </li>
-</ul>
+<p><strong>(3)</strong>  Fill in the First Name, Last Name, Email ID and User Type of the <a href="managing-all-users">users</a> whom you wish to invite into your Organization</p>
 
 <p><img src="images/add_users_3.png" alt="" /></p>
 
-<ul>
-  <li>
-    <p>You can delete a row by clicking on the <code class="highlighter-rouge">Trash</code> icon on the right side of the row.</p>
-  </li>
-  <li>
-    <p>If you deleted a row by accident click on the <code class="highlighter-rouge">Undo</code> button, that pops up at the bottom, to restore the deleted row.</p>
-  </li>
-</ul>
+<p>New rows will auto-populate as you start filling the fields.</p>
+
+<p><strong>(4)</strong> To import multiple users to your organization, you can simply drag and drop a <code class="highlighter-rouge">.csv file</code> or click on <strong>select a file from your computer</strong> on the top of the page to bulk import users</p>
 
 <p><img src="images/add_users_4.png" alt="" /></p>
 
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
+<br /><br /><p><ul><li>Before you import make sure your CSV file is in the following format:</li></ul><br />
+<table>
+    <tr>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>email</th>
+        <th>user_type</th>
+    </tr>
+    <tr>
+        <td>Todd</td>
+        <td>Chavez</td>
+        <td>todd@squadcast.com</td>
+        <td>stakeholder</td>
+    </tr>
+    <tr>
+        <td>Diane</td>
+        <td>Nguyen</td>
+        <td>diane@squadcast.com</td>
+        <td>admin</td>
+    </tr>
+    <tr>
+        <td>Princess</td>
+        <td>Carolyn</td>
+        <td>carolyn@squadcast.com</td>
+        <td>admin</td>
+    </tr>
+</table>
 <ul>
-  <li>
-    <p>Once you have entered all the user’s details click on the <code class="highlighter-rouge">Send Invites</code> button, on the bottom left, to invite them to your organization.</p>
-  </li>
-  <li>
-    <p>The invited user will receive an email for verification. Until the user has been successfully verified, you will notice an icon indicating that <code class="highlighter-rouge">Verification Is Pending</code> against that User on the <code class="highlighter-rouge">User Page</code>. 
-You can also choose to resend the verification email by clicking on the <code class="highlighter-rouge">Verification Is Pending</code>  icon should that be necessary.</p>
-  </li>
-</ul>
+    <li>You can skip the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">user_type</code> field if you wish to fill that field later, post import. By default, the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">user_type</code> chosen will be <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">User</code>.</li>
+    <li>If you already have filled fields and choose to merge the CSV file data with existing rows, click on the Continue button in the modal for confirmation.</li>
+    <li>Once the import is successful, you will see all the user details populated in the list</li>
+    <li>You cannot change an <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Account Owner</code> using the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Import Users</code> flow.  If an invalid <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">user_type</code> is detected, the system automatically changes the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">user_type</code> to <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">User</code></li>
+    <li>Ensure that there are no <i>spaces</i> before/after the data in the cells, especially the mail addresses of the users</li>
+</ul></p>
+</div>
+
+<p><strong>(5)</strong> You can delete a row by clicking on the <code class="highlighter-rouge">Trash</code> icon on the right side of the row</p>
+
+<p><img src="images/add_users_5.png" alt="" /></p>
+
+<p><strong>(6)</strong> If you have deleted a row by accident, click on the <code class="highlighter-rouge">Undo</code> button, that pops up at the bottom, to restore the deleted row</p>
+
+<p><img src="images/add_users_6.png" alt="" /></p>
+
+<p><strong>(7)</strong> Click on <code class="highlighter-rouge">Send Invite(s)</code>, to invite the users to your Organization. The invited user will receive an email for verification</p>
+
+<p><img src="images/add_users_7.png" alt="" /></p>
+
+<p><strong>(8)</strong> Until the user has been successfully verified, you will notice a message that says <code class="highlighter-rouge">Email is not verified</code> against that user on the <strong>User Page</strong>. You can also choose to resend the verification email by clicking on the <strong>Resend Invite</strong> icon should that be necessary</p>
+
+<p><img src="images/add_users_8.png" alt="" /></p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note:</b>
+<b>Note</b>
 <br /><br /><p>You will not be able to transfer <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Account Ownership</code> with the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Add User</code> flow.</p>
 </div>
+
+<h3 id="faqs">FAQs</h3>
+
+<p><strong>Q</strong>: Can I add more than one Account Owner?
+<strong>A</strong>: No, there can be only one Account Owner per account</p>
+
+<p><strong>Q</strong>: How can I transfer ownership?
+<strong>A</strong>: Click on Transfer Ownership beside the name of the current owner to make the changes.</p>
+
+<p><img src="images/add_users_9.png" alt="" /></p>
 
 
                 <!--div class="tags">
@@ -1633,7 +1671,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 16, 2021 <br /> -->
+<!--  Site last generated: Feb 17, 2021 <br /> -->
                 </div>
             </div>
             <script>

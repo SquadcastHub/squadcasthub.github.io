@@ -8,7 +8,7 @@
 "tags": "import-userstransfer-ownership",
 "keywords": "",
 "url": "/docs/add-users",
-"summary": "Add multiple Users to your organization"
+"summary": "Adding multiple Users to your organization"
 }
 ,
 
@@ -427,17 +427,6 @@
 "keywords": "",
 "url": "/docs/event-tagging",
 "summary": "Auto-add relevant information like priority, severity or alert type to make incoming incidents context-rich"
-}
-,
-
-
-
-{
-"title": "Export Incidents",
-"tags": "set-up-your-profilemanaging-all-users",
-"keywords": "",
-"url": "/docs/export-incidents",
-"summary": "Export Incidents"
 }
 ,
 

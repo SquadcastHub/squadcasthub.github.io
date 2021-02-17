@@ -25,11 +25,21 @@ Squadcast sends a notification to the configured Slack channel as soon as an inc
 
 ![](images/slack_squadcast_2.png)
 
-**(3)** You will be redirected to Slack for approval of certain permissions that Squadcast would need for this integration. Click on **Allow**
+**(3)** Please ensure that you have the permission to create Public Channels in your Slack workspace. If you have the permission, then click on **Continue**
+
+![](images/slack_squadcast_18.png)
+
+**(4)** You will be redirected to Slack for approval of certain permissions that Squadcast would need for this integration. Click on **Allow**
 
 ![](images/slack_squadcast_3.png)
 
-**(4)** Upon doing this, you will receive an email notification from Slack about your Squadcast installation
+{{site.data.alerts.blue-note}}
+<b>Permission in Slack to add Public Channel</b>
+<br/><br/><p>If you do not have the permission to create Public channels in your Slack workspace then you would see following error message:
+<img src="images/slack_squadcast_19.png"></p>
+{{site.data.alerts.end}}
+
+**(5)** Upon doing this, you will receive an email notification from Slack about your Squadcast installation
 
 This completes the integration process between Squadcast and Slack. You can verify the same with the presence of the **Integrated** banner on the Slack tile.
 
@@ -48,9 +58,20 @@ This completes the integration process between Squadcast and Slack. You can veri
 
 **(2)** Pick a Slack channel where you would wish to receive notifications for *all* the incidents in Squadcast
 
-![](images/slack_squadcast_6.png)
+**(3)** ![](images/slack_squadcast_6.png)
 
-**(3)** Click on **Save**
+{{site.data.alerts.blue-note}}
+<b>List of channel shown</b>
+<br/><br/><p>By default all the Public Channels and only the Private channels in which Squadcast bot is already called in your Slack workspace would be listed in Squadcast. If you do not see your channel in the list, then:
+<ol>
+  <li>Move to your Slack Workspace</li>
+  <li>Open the channel that you wish to map in Squadcast</li>
+  <li>Call Squadcast by using <b>@squadcast</b></li>
+  <li>Now, map the channel in Squadcast under the Service of your choice</li>
+</ol></p>
+{{site.data.alerts.end}}
+
+**(4)** Click on **Save**
 
 ![](images/slack_squadcast_7.png)
 
@@ -87,6 +108,17 @@ Follow the steps below to configure the same:
 **(4)** By default, the configured global Slack channel is populated. Now, select a channel from the drop-down to which incident notifications should be sent for this Service and click on **save**
 
 ![](images/slack_squadcast_11.png)
+
+{{site.data.alerts.blue-note}}
+<b>List of channel shown</b>
+<br/><br/><p>By default all the Public Channels and only the Private channels in which Squadcast bot is already called in your Slack workspace would be listed in Squadcast. If you do not see your channel in the list, then:
+<ol>
+  <li>Move to your Slack Workspace</li>
+  <li>Open the channel that you wish to map in Squadcast</li>
+  <li>Call Squadcast by using <b>@squadcast</b></li>
+  <li>Now, map the channel in Squadcast under the Service of your choice</li>
+</ol></p>
+{{site.data.alerts.end}}
 
 **(5)** **Save** the configuration
 
@@ -131,8 +163,8 @@ Click on **Create** to trigger the incident
 ## Using Slack as an Alert Source
 To create incidents automatically in Squadcast from Slack, check out [Slack as an alert source](slack-as-an-alert-source).
 
-
 {{site.data.alerts.blue-note}}
 <b>FAQ</b>
-<br/><br/><p><b>Q:</b> I have integrated Slack with Squadcast. When I try to acknowledge/resolve an incident from my Slack channel, it throws an error "You've not linked your Slack account with your Squadcast account". How can I resolve this?</p><img src="images/slack_squadcast_18.png"><p><b>A:</b> The email address associated with your user in Squadcast must be the <b>same</b> email address that is associated with your user in Slack, else, you will not be able to take any actions on incidents from Slack and will receive an error as stated in the screenshot above.</p>
+<br/><br/><p><b>Q: </b>How to give access to a user in Slack to add Public Channels?<br/>
+<b>A: </b>Please follow the <a href="https://slack.com/intl/en-nl/help/articles/360017938993-What-is-a-channel" target="_blank">documentation by Slack</a> to give access to your user.</p>
 {{site.data.alerts.end}}
