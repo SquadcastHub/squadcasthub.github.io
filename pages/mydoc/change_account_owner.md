@@ -10,22 +10,28 @@ permalink: docs/transfer-ownership
 folder: mydoc
 ---
 
-If you wish to transfer the ownership of your organization, you can do so using the `Transfer Ownership` section in the settings.
+## Follow the steps below to transfer ownership of your organization:
 
-You can get to the section by clicking on the `Settings` icon on the sidebar or by clicking on the `Transfer Ownership` button on the Users page.
+### Via the Users section
+
+**(1)** Move to the **Users** section
+
+**(2)** Click on Transfer Ownership beside your name 
 
 ![](images/ownership_1.png)
 
-In the Organization Settings, click on the `Transfer Ownership` button to get started.
+### Via Organization Settings
+
+**(1)** Move to **Organizations Settings**, click on the **Transfer Ownership** 
 
 ![](images/ownership_2.png)
 
-- From the `Users` drop-down select the user you would like to transfer your organization to. 
-
-- Check the checkbox confirming your action to proceed. 
-
-- Once you have confirmed, click on the `Save` button to transfer your account to the user.
+**(2)** From the **Users** drop-down, select the user you would like to transfer your Organization to
 
 ![](images/ownership_3.png)
 
-- Once the Ownership transfer is successful, your `user_type` within the organization will be changed to `Admin` from `Account Owner`.
+**(3)** Enable the checkbox confirming your action to proceed. Once you have confirmed, click on the **Save** button to transfer your account to the user
+
+![](images/ownership_4.png)
+
+**(4)** Once the ownership transfer is successful, your **User Type** within the Organization will be changed to `Admin` from `Account Owner`

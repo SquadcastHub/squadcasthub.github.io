@@ -123,6 +123,10 @@
     li, .post-header, .summary, p, .post-content, #search-input {
         font-family: 'Nunito Sans', sans-serif;
     }
+    .ais-Highlight{
+        background-color: yellow !important;
+        font-style: normal !important;
+    }
 </style>
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -1504,11 +1508,21 @@ li.sidebarTitle{
 
 <p><img src="images/slack_squadcast_2.png" alt="" /></p>
 
-<p><strong>(3)</strong> You will be redirected to Slack for approval of certain permissions that Squadcast would need for this integration. Click on <strong>Allow</strong></p>
+<p><strong>(3)</strong> Please ensure that you have the permission to create Public Channels in your Slack workspace. If you have the permission, then click on <strong>Continue</strong></p>
+
+<p><img src="images/slack_squadcast_18.png" alt="" /></p>
+
+<p><strong>(4)</strong> You will be redirected to Slack for approval of certain permissions that Squadcast would need for this integration. Click on <strong>Allow</strong></p>
 
 <p><img src="images/slack_squadcast_3.png" alt="" /></p>
 
-<p><strong>(4)</strong> Upon doing this, you will receive an email notification from Slack about your Squadcast installation</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Permission in Slack to add Public Channel</b>
+<br /><br /><p>If you do not have the permission to create Public channels in your Slack workspace then you would see following error message:
+<img src="images/slack_squadcast_19.png" /></p>
+</div>
+
+<p><strong>(5)</strong> Upon doing this, you will receive an email notification from Slack about your Squadcast installation</p>
 
 <p>This completes the integration process between Squadcast and Slack. You can verify the same with the presence of the <strong>Integrated</strong> banner on the Slack tile.</p>
 
@@ -1527,9 +1541,20 @@ li.sidebarTitle{
 
 <p><strong>(2)</strong> Pick a Slack channel where you would wish to receive notifications for <em>all</em> the incidents in Squadcast</p>
 
-<p><img src="images/slack_squadcast_6.png" alt="" /></p>
+<p><strong>(3)</strong> <img src="images/slack_squadcast_6.png" alt="" /></p>
 
-<p><strong>(3)</strong> Click on <strong>Save</strong></p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>List of channel shown</b>
+<br /><br /><p>By default all the Public Channels and only the Private channels in which Squadcast bot is already called in your Slack workspace would be listed in Squadcast. If you do not see your channel in the list, then:
+<ol>
+  <li>Move to your Slack Workspace</li>
+  <li>Open the channel that you wish to map in Squadcast</li>
+  <li>Call Squadcast by using <b>@squadcast</b></li>
+  <li>Now, map the channel in Squadcast under the Service of your choice</li>
+</ol></p>
+</div>
+
+<p><strong>(4)</strong> Click on <strong>Save</strong></p>
 
 <p><img src="images/slack_squadcast_7.png" alt="" /></p>
 
@@ -1566,6 +1591,17 @@ li.sidebarTitle{
 <p><strong>(4)</strong> By default, the configured global Slack channel is populated. Now, select a channel from the drop-down to which incident notifications should be sent for this Service and click on <strong>save</strong></p>
 
 <p><img src="images/slack_squadcast_11.png" alt="" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>List of channel shown</b>
+<br /><br /><p>By default all the Public Channels and only the Private channels in which Squadcast bot is already called in your Slack workspace would be listed in Squadcast. If you do not see your channel in the list, then:
+<ol>
+  <li>Move to your Slack Workspace</li>
+  <li>Open the channel that you wish to map in Squadcast</li>
+  <li>Call Squadcast by using <b>@squadcast</b></li>
+  <li>Now, map the channel in Squadcast under the Service of your choice</li>
+</ol></p>
+</div>
 
 <p><strong>(5)</strong> <strong>Save</strong> the configuration</p>
 
@@ -1612,7 +1648,8 @@ Click on <strong>Create</strong> to trigger the incident</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
 <b>FAQ</b>
-<br /><br /><p><b>Q:</b> I have integrated Slack with Squadcast. When I try to acknowledge/resolve an incident from my Slack channel, it throws an error "You've not linked your Slack account with your Squadcast account". How can I resolve this?</p><img src="images/slack_squadcast_18.png" /><p><b>A:</b> The email address associated with your user in Squadcast must be the <b>same</b> email address that is associated with your user in Slack, else, you will not be able to take any actions on incidents from Slack and will receive an error as stated in the screenshot above.</p>
+<br /><br /><p><b>Q: </b>How to give access to a user in Slack to add Public Channels?<br />
+<b>A: </b>Please follow the <a href="https://slack.com/intl/en-nl/help/articles/360017938993-What-is-a-channel" target="_blank">documentation by Slack</a> to give access to your user.</p>
 </div>
 
 
@@ -1699,7 +1736,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 16, 2021 <br /> -->
+<!--  Site last generated: Feb 17, 2021 <br /> -->
                 </div>
             </div>
             <script>
