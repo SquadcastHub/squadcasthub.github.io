@@ -330,6 +330,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/how-to-video-schedules</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/how-to-video-squadcast-actions</loc>
   </url>
   
