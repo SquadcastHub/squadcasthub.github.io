@@ -41,7 +41,7 @@ This page describes how to add Squadcast to G Suite and configure SSO-support wi
 
 ![](images/google_6.png)
 
-![](images/google_7.png)
+![](images/google_7_new.png)
 
 **(8)** Click **Show configuration guide for Google** and copy the ACS URL displayed
 
@@ -86,6 +86,6 @@ By default Squadcast lets you create a user via SSO with a configured default Ro
 
 You can enable the toggle button on the top to **Enable Google SSO** for Squadcast and you are good to go and your users will be able to use Google SSO to log in to Squadcast without needing a password.
 
-![](images/google_13.png)
+![](images/google_13_new.png)
 
 That is it, you are good to go! Users can now use their G Suite credentials to sign in to Squadcast via Single Sign-On (SSO).
