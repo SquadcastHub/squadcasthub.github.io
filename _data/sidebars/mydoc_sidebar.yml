@@ -412,6 +412,10 @@ entries:
             url: /docs/nixstats
             output: web, pdf
 
+          - title: Observium
+            url: /docs/observium
+            output: web, pdf
+
           - title: OverOps
             url: /docs/overops
             output: web, pdf
