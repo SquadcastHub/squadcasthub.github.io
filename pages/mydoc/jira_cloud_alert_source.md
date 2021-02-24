@@ -53,4 +53,9 @@ Select **Jira Server** from  **Alert Source** drop down and copy the Webhook URL
 
 ![](images/jira_cloud_6.png)
 
+{{site.data.alerts.yellow-note-i}}
+<b>Note</b><br/><br/>
+<p>Enable only the highlighted <b>Issue related events</b> as shown in the screenshot above. Squadcast will ignore any other Issue event type.</p>
+{{site.data.alerts.end}}
+
 Now whenever an issue goes to status-category with key **new** in Jira, an incident will be triggered in Squadcast . Also when that issue goes to status-category with key **done** in Jira, it will be resolved in Squadcast.
