@@ -36,7 +36,7 @@ Route detailed monitoring alerts from HetrixTools to the right users in Squadcas
 
 ### In HetrixTools: Create a Squadcast Webhook
 
-**(1)** From the dashboard, click on your **<username>** which is at the top-right corner. From the drop-down, select **Contact Lists**
+**(1)** From the dashboard, click on your **&lt;username&gt;** which is at the top-right corner. From the drop-down, select **Contact Lists**
 
 ![](images/hetrixtools_2.png)
 
