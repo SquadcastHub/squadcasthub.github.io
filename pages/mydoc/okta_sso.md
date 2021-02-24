@@ -38,7 +38,7 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 2.In the opened modal, select the **Okta** tab and click **Show configuration guide for Okta**.
 
-![](images/okta_2.png)
+![](images/okta_2_new.png)
 
 ![](images/okta_3.png)
 
@@ -58,7 +58,7 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 5.You can turn On / Off Okta SSO by toggling the button at the top. Configure other options like the default User role and make sure to check the Provision new users on first login checkbox and click Save.
 
-![](images/okta_7.png)
+![](images/okta_7_new.png)
 
 6.Your Okta SSO Integration is good to go and anyone in your organisation can now use Okta SSO to login into Squadcast.
 

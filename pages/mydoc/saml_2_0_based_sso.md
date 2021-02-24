@@ -30,7 +30,7 @@ Squadcast supports any SAML 2.0 based Single Sign On (SSO) and you can set it fo
 
 2.In the pop-up GUI, select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**
 
-![](images/saml_2.png)
+![](images/saml_2_new.png)
 
 Now, copy the ACS URL and paste it in your SSO provider system
 
@@ -38,7 +38,7 @@ Now, copy the ACS URL and paste it in your SSO provider system
 
 3.From your SSO dashboard, copy the SAML 2.0 Endpoint and X.509 Certificate and paste it in the relevant fields
 
-![](images/saml_4.png)
+![](images/saml_4_new.png)
 
 {{site.data.alerts.note}}
 <br/><br/><p>For members trying to log into Squadcast through SSO who aren't already added to the Squadcast platform, will be added to the platform by default as <b>Users</b>.</p>

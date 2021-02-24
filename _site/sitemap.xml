@@ -560,6 +560,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/observium</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/okta-sso-integration</loc>
   </url>
   

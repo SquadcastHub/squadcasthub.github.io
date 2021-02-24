@@ -981,6 +981,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+          <li><a title="Observium" href="/docs/observium">Observium</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="OverOps" href="/docs/overops">OverOps</a></li>
           
           
@@ -1513,70 +1520,76 @@ li.sidebarTitle{
 
                 
 
-            <p>You can use this integration guide to install and configure the Squadcast extension in JIRA Cloud to create issues in JIRA projects when there is an incident in Squadcast either Automatically or Manually and sync the status bidirectionally.</p>
+            <p>You can use this integration guide to install and configure the Squadcast extension in JIRA Cloud to <em>create issues in JIRA projects</em> when there is an incident in Squadcast either <em>Automatically</em> or <em>Manually</em> and <em>sync the status bidirectionally</em>.</p>
 
 <h2 id="pre-requisites">Pre-requisites</h2>
 
-<ol>
+<ul>
   <li>
-    <p>A valid Squadcast cloud subscription or a trial account</p>
+    <p>A valid Squadcast cloud subscription or a trial account (in either the Pro or Enterprise plans)</p>
   </li>
   <li>
-    <p>An user account in JIRA Cloud version with Administrator privileges.</p>
+    <p>A user account in JIRA Cloud version with <code class="highlighter-rouge">Administrator</code> privileges</p>
   </li>
-</ol>
+</ul>
 
 <h2 id="integration-steps">Integration Steps</h2>
 
-<p>1.Login to your Jira cloud account and install <a href="https://marketplace.atlassian.com/apps/1221041/squadcast-for-jira-cloud?hosting=cloud&amp;tab=overview">Squadcast Jira cloud plugin</a> and click on <strong>Configure</strong> button.</p>
+<p><strong>(1)</strong> Login to your Jira Cloud account and install <a href="https://marketplace.atlassian.com/apps/1221041/squadcast-for-jira-cloud?hosting=cloud&amp;tab=overview">Squadcast Jira Cloud plugin</a> by clicking on <strong>Get it now</strong></p>
 
 <p><img src="images/jira_cloud_squadcast_1.png" alt="" /></p>
 
-<p>2.Copy the Jira API token from the configuration page.</p>
+<p><strong>(2)</strong> Click on <strong>Configure</strong> once the app has been installed</p>
 
-<p>3.Go back to Squadcast Integrations page and click on <strong>Integrate</strong> button under Jira cloud.</p>
+<p><img src="images/jira_cloud_squadcast_12.png" alt="" /></p>
+
+<p><strong>(3)</strong> Copy the <code class="highlighter-rouge">JIRA Client Token</code> that is available in <em>Step 2</em> of the <em>Configuration page</em></p>
+
+<p><img src="images/jira_cloud_squadcast_13.png" alt="" /></p>
+
+<p><strong>(3)</strong> Go back to Squadcast, navigate to <strong>Extensions</strong> from the sidebar and click on <strong>Integrate</strong> under Jira cloud</p>
 
 <p><img src="images/jira_cloud_squadcast_2.png" alt="" /></p>
 
-<p>4.Paste the Jira API token from the 2nd step and click on <strong>Save &amp; Next</strong> button.</p>
+<p><strong>(4)</strong> Paste the previously copied <code class="highlighter-rouge">Jira Client Token</code> and click on <strong>Save &amp; Next</strong></p>
 
 <p><img src="images/jira_cloud_squadcast_3.png" alt="" /></p>
 
-<p>5.Select the Jira project in which tickets needs to be created and select the issue type and click <strong>Next</strong>.</p>
+<p><strong>(5)</strong> Select the <code class="highlighter-rouge">Jira Project</code> in which tickets need to be created, select the <code class="highlighter-rouge">Issue Type</code> and click <strong>Next</strong></p>
 
 <p><img src="images/jira_cloud_squadcast_4.png" alt="" /></p>
 
-<p>6.Then map the Jira ticket status to the available Squadcast statuses and click <strong>Next</strong>.</p>
+<p><strong>(6)</strong> Then, map the <code class="highlighter-rouge">Jira Issue Status</code> to the available <em>Squadcast incident statuses</em> and click <strong>Next</strong></p>
 
 <p><img src="images/jira_cloud_squadcast_5.png" alt="" /></p>
 
-<p>7.Then select the mode in which you want to add incident to Jira: <strong>Manually</strong> or <strong>Automatically</strong> and then select the service(s) for which you want to enable the Jira cloud integration and click on the <strong>Save &amp; Integrate</strong> button.</p>
+<p><strong>(7)</strong> Select the <strong>Mode</strong> in which you want to add tickets to Jira for incidents in Squadcast: <strong>Manually</strong> or <strong>Automatically</strong> and then, select the <em>Service(s)</em>, for whose incidents JIRA tickets must be created by Squadcast and click on  <strong>Save &amp; Integrate</strong></p>
 
 <p><img src="images/jira_cloud_squadcast_6.png" alt="" /></p>
 
-<p>That’s it! Your Jira cloud integration is good to go.</p>
+<p>That’s it! Your Jira Cloud integration is good to go.</p>
 
 <h2 id="usage-of-the-automatic-and-manual-modes">Usage of the Automatic and Manual Modes</h2>
 
 <h3 id="automatic-mode">Automatic mode</h3>
 
-<p>If you have chosen the Automatic mode while configuring Jira cloud then you need not do anything. Any incident triggered for the selected service will automatically create an issue in the selected Jira project with the configured issue type.</p>
+<p>If you have chosen the <strong>Automatic mode</strong> while configuring Jira cloud then you need not do anything. Any incident triggered for the selected Service(s) will automatically <em>create an issue</em> in the <em>selected Jira Project</em> with the <em>configured Issue Type</em>.</p>
 
 <h3 id="manual-mode">Manual mode</h3>
 
-<p>If the chosen mode is Manual, follow the below steps to create a ticket in Jira.</p>
+<p>If <strong>Manual Mode</strong> is chosen, follow the below steps to create a ticket in Jira:</p>
 
-<p>1.Open the incident in Squadcast and click on <strong>More Actions</strong> button.</p>
+<p><strong>(1)</strong> Open the incident in Squadcast and click on <strong>More Actions</strong> button in the <strong>Incident Details</strong> page</p>
 
 <p><img src="images/jira_cloud_squadcast_7.png" alt="" /></p>
 
-<p>2.Select <strong>Jira Cloud</strong> action and click on <strong>Create a ticket in Jira</strong> button.</p>
+<p><strong>(2)</strong> Select <strong>Jira Cloud</strong> action and click on <strong>Create a ticket in Jira</strong></p>
 
 <p><img src="images/jira_cloud_squadcast_8.png" alt="" /></p>
 
 <p><img src="images/jira_cloud_squadcast_9.png" alt="" /></p>
 
-<p>A ticket will be created in the selected Jira project with the configured issue type and this action will be recorded in the incident timeline with a hyperlink to the created Jira ticket.</p>
+<p>A ticket will be created in the <em>selected Jira Project</em> with the <em>configured Issue Type</em>. This action will be recorded in the <em>Incident Timeline with a hyperlink to the created Jira ticket</em>.</p>
 
 <p><img src="images/jira_cloud_squadcast_10.png" alt="" /></p>
 
@@ -1666,7 +1679,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 22, 2021 <br /> -->
+<!--  Site last generated: Feb 24, 2021 <br /> -->
                 </div>
             </div>
             <script>

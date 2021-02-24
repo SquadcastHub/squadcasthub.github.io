@@ -1011,6 +1011,17 @@
 
 
 {
+"title": "Observium",
+"tags": "",
+"keywords": "",
+"url": "/docs/observium",
+"summary": "Send alerts to Squadcast from Observium"
+}
+,
+
+
+
+{
 "title": "Okta SSO",
 "tags": "ssookta",
 "keywords": "",
