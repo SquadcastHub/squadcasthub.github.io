@@ -181,7 +181,7 @@ Note that this list is not exhaustive. Feel free to add in other terminologies t
 
 ### Describing UI elements and Icons: 
 
-- Navigation Sidebar : ![](images/readme_5.png){: style="max-width: 20%" }
+- Navigation Sidebar : <img src="images/readme_5.png" style="max-width: 20%">
 
 - More Options Icon: ![](images/readme_6.png)
 
