@@ -42,12 +42,12 @@ Route detailed monitoring alerts from Rapid7 InsightIDR to the right users in Sq
 **(2)** When the **Data Collection** page appears, click the **Setup Event Source** drop-down and choose **Add Event Source**<br/>
 **(3)** From the **Security Data** section, click the **Data Exporter** icon<br/>
 The **Add Event Source** panel appears<br/>
-- (a) Choose your **Collector** and select **Universal Webhook** for **Data Exporter**.  Give the Event Source a meaningful name
-- (b) Paste the previously copied Squadcast URL under **URL**
-- (c) If the secret is not already provided, enter in the **Secret** field
-- (d) There is no requirement by Squadcast to add any additional headers. **Note** that, sending **NULL** headers will create issues, for example, incidents will get triggered in Squadcast
-- (e) Enable the checkbox option **Alerts** under **Data Export Types**
-- (f) Click **Save**
+- Choose your **Collector** and select **Universal Webhook** for **Data Exporter**.  Give the Event Source a meaningful name
+- Paste the previously copied Squadcast URL under **URL**
+- If the secret is not already provided, enter in the **Secret** field
+- There is no requirement by Squadcast to add any Additional Headers
+- Enable the checkbox option **Alerts** under **Data Export Types**
+- Click **Save**
 
 ![](images/rapid7_2.png)
 
