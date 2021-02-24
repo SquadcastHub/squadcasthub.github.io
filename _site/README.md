@@ -36,7 +36,7 @@ Squadcast Documentation
 
 ## Before commit & push
 
-1. We dont't have a CI/CD enabled for this, and the serving is done from the Repo directly.
+1. We don't have a CI/CD enabled for this, and the serving is done from the Repo directly.
 2. So the pages need to be generated before `git commit`.
 3. To generate the pages, run `bundle exec jekyll build`.
 4. To test the page layouts and serve paths for the documentation, use `bundle exec jekyll serve` and visit http://localhost:4000
@@ -181,7 +181,7 @@ Note that this list is not exhaustive. Feel free to add in other terminologies t
 
 ### Describing UI elements and Icons: 
 
-- Navigation Sidebar : ![](images/readme_5.png)
+- Navigation Sidebar : ![](images/readme_5.png){: style="max-width: 20%" }
 
 - More Options Icon: ![](images/readme_6.png)
 
