@@ -43,7 +43,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="https://support.squadcast.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 
 <!-- Fonts (Nunitosans & Opensans) -->
 
@@ -61,12 +61,22 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script> Only Search -->
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script> <!-- All Features -->
 
-<!-- Initialize -->
+<!-- Initialize Algolia -->
 
 <script>
     const client = algoliasearch('M0XX7ZMBFN', '15ca191d233b51e77561d5d1e18a7157');
     const index = client.initIndex('squadcast_support');
 </script>
+
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZKZ5FV');</script>
+
+<!-- End Google Tag Manager -->
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -210,14 +220,18 @@
                             }
                             rest1.innerHTML = rest1.innerHTML+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }else{
-                            rest1.style.display = 'none';
+                            rest1.style.display = 'block';
+                            rest1.innerHTML = 'No Results to display'+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }
                         });
                     }
-                    field1.onkeyup = function(){
+                    field1.onkeyup = function(event1){
                         if(field1.value == ''){
                         rest1.innerHTML = '';
                         rest1.style.display = 'none';
+                        }
+                        if(event1.keyCode == 13){
+                            find1.click();
                         }
                     }
                     </script>
@@ -450,6 +464,13 @@
           
           
           <li><a title="Schedule Overrides" href="/docs/schedule-overrides">Schedule Overrides</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="How to Video - Schedules" href="/docs/how-to-video-schedules">How to Video - Schedules</a></li>
           
           
           
@@ -1499,34 +1520,88 @@ li.sidebarTitle{
 
                 
 
-            <p>By clicking on any incident, you will be taken to its dedicated incident page which shows all the details of the incident.</p>
+            <h3 id="get-more-details-for-an-incident">Get more details for an incident</h3>
 
-<p>The incident message and number are at the top of the page. It also shows the current status, the incident description, opened time when it got first triggered, to whom it is currently assigned, at what time it got assigned to that Squad or Schedule or any individual user and the service impacted due to the incident.</p>
-
-<p>It will also have War Room at the bottom and Incident Timeline at the right.</p>
+<p><strong>(1)</strong> Move to the <strong><a href="incident-dashboard">Dashboard</a></strong> or the <strong><a href="incident-list-table-view">Incident List</a></strong> to view and open incidents</p>
 
 <p><img src="images/incident_1.png" alt="" /></p>
 
-<h3 id="status-of-the-incident">Status of the incident</h3>
+<p><img src="images/incident_1_1.png" alt="" /></p>
 
-<p>There are four types of states an Incident can have:</p>
+<p><strong>(2)</strong> By clicking on any incident, you will be taken to its dedicated incident page which shows all the details of the incident. You can see:</p>
 
-<h4 id="triggered"><strong>Triggered</strong></h4>
-<p>When an incident is open, it will be in the triggered state. Concerned users will get notified when an incident is in triggered state. It will remain in this state until someone acknowledges it.</p>
+<p><strong>(a)</strong> Incident Number, Message on the top</p>
 
-<h4 id="acknowledged"><strong>Acknowledged</strong></h4>
-<p>Incident shifts from Triggered to Acknowledged state when any user acknowledges it. The user can now look into the incident and try to solve it. If the incident is reassigned or escalated to another user, it will go back to a triggered state, until the new user takes responsibility for it and acknowledged the incident.</p>
+<p><strong>(b)</strong> Associated Tags below the Message. Tags can also be added/updated here</p>
 
-<h4 id="resolved"><strong>Resolved</strong></h4>
+<p><strong>(c)</strong> Incident Description i.e. the alert information along with images and links sent by the Alert Source</p>
+
+<p><strong>(d)</strong> Incident Status</p>
+
+<h4 id="triggered">Triggered</h4>
+<p>When an incident is open, it will be in the Triggered state. Concerned users will get notified when an incident is in Triggered state. It will remain in this state until someone acknowledges it.</p>
+
+<p><img src="images/incident_2.png" alt="" /></p>
+
+<h4 id="acknowledged">Acknowledged</h4>
+<p>Incident shifts from Triggered to Acknowledged state when any user acknowledges it. The user can now look into the incident and try to solve it. If the incident is reassigned or escalated to another user, it will go back to a triggered state, until the new user takes responsibility for it and acknowledges the incident.</p>
+
+<h4 id="resolved">Resolved</h4>
 <p>Incidents can be marked as Resolved to close them.</p>
 
-<h4 id="suppressed"><strong>Suppressed</strong></h4>
-<p>Sometimes, the incidents can be in a suppressed state - this happens when the alert notification was not meant to go out for some reason like the service was under maintenance.</p>
+<h4 id="suppressed">Suppressed</h4>
+<p>Sometimes, the incidents can be in a Suppressed state - this happens when the alert notification was not meant to go out for some reason like the service was under maintenance.</p>
+
+<p><strong>(e)</strong> <a href="incident-notes">Incident Notes</a> to collaborate with your team</p>
+
+<p><strong>(f)</strong> Incident Details displaying:</p>
+<ul>
+  <li>Created Date and Time</li>
+  <li>Alert Source</li>
+  <li>Affected Service</li>
+  <li>Elapsed time</li>
+</ul>
+
+<p><strong>(g)</strong> Responders</p>
+
+<p><strong>(h)</strong> <a href="incident-timeline">Activity Timeline</a></p>
+
+<p><strong>(i)</strong> Ability to:</p>
+<ul>
+  <li>Acknowledge</li>
+  <li>Reassign to a User, Squad or an Escalation Policy</li>
+  <li>Action to create JIRA tickets or take actions via <a href="circleci-actions">Circle CI</a></li>
+  <li>Resolve</li>
+</ul>
+
+<p><strong>(j)</strong> <a href="statuspage#updating-your-statuspage">Update Status Page</a></p>
+
+<p><img src="images/incident_3.png" alt="" /></p>
+
+<p><strong>(k)</strong> <a href="postmortems#creating-a-postmortem">Create Postmortem</a></p>
+
+<p><img src="images/incident_4.png" alt="" /></p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Important Note: </b>
-<br /><br /><p>Squadcast allows a maximum of 10 notifications every 15 minutes for an organization.</p>
+<b>Important Note</b>
+<br /><br /><p>Squadcast allows a maximum of 10 notifications every 15 minutes for an organization. Any incident that crosses these limits will be automatically truncated in the platform</p>
 </div>
+
+<h3 id="incident-field-limitations">Incident Field Limitations</h3>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"0-0"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Incident Message"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"1-0"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Incident Description"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"0-1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"250"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"h-1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Character Limit"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"h-0"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Incident Field"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"1-1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15000"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"cols"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"rows"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
 
                 <!--div class="tags">
@@ -1610,7 +1685,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 23, 2021 <br /> -->
+<!--  Site last generated: Feb 24, 2021 <br /> -->
                 </div>
             </div>
             <script>
@@ -1630,7 +1705,12 @@ $('#toc').on('click', 'a', function() {
 </div>
 <!-- /#main -->
     </div>
+<!-- Google Tag Manager (noscript) -->
 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZKZ5FV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>

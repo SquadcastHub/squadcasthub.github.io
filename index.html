@@ -218,14 +218,18 @@ toc: false
                 }
                 rest.innerHTML = rest.innerHTML+'<div style="display: flex; justify-content: flex-end"><img src="images/algolia-blue-mark.svg" style="width: 20px;"></div>';
               }else{
-                rest.style.display = 'none';
+                rest.style.display = 'block';
+                rest.innerHTML = 'No Results to display'+'<div style="display: flex; justify-content: flex-end"><img src="images/algolia-blue-mark.svg" style="width: 20px;"></div>';
               }
             });
           }
-          field.onkeyup = function(){
+          field.onkeyup = function(event){
             if(field.value == ''){
               rest.innerHTML = '';
               rest.style.display = 'none';
+            }
+            if(event.keyCode == 13){
+              find.click();
             }
           }
         </script>

@@ -43,7 +43,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="https://support.squadcast.com/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
 
 <!-- Fonts (Nunitosans & Opensans) -->
 
@@ -61,12 +61,22 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script> Only Search -->
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script> <!-- All Features -->
 
-<!-- Initialize -->
+<!-- Initialize Algolia -->
 
 <script>
     const client = algoliasearch('M0XX7ZMBFN', '15ca191d233b51e77561d5d1e18a7157');
     const index = client.initIndex('squadcast_support');
 </script>
+
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZKZ5FV');</script>
+
+<!-- End Google Tag Manager -->
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -210,14 +220,18 @@
                             }
                             rest1.innerHTML = rest1.innerHTML+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }else{
-                            rest1.style.display = 'none';
+                            rest1.style.display = 'block';
+                            rest1.innerHTML = 'No Results to display'+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }
                         });
                     }
-                    field1.onkeyup = function(){
+                    field1.onkeyup = function(event1){
                         if(field1.value == ''){
                         rest1.innerHTML = '';
                         rest1.style.display = 'none';
+                        }
+                        if(event1.keyCode == 13){
+                            find1.click();
                         }
                     }
                     </script>
@@ -450,6 +464,13 @@
           
           
           <li><a title="Schedule Overrides" href="/docs/schedule-overrides">Schedule Overrides</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="How to Video - Schedules" href="/docs/how-to-video-schedules">How to Video - Schedules</a></li>
           
           
           
@@ -1499,7 +1520,7 @@ li.sidebarTitle{
 
                 
 
-            <p>You can use this integration guide to install and configure the Squadcast extension in JIRA Cloud to create issues in JIRA projects when there is an incident in Squadcast either Automatically or Manually and sync the status bidirectionally.</p>
+            <p>You can use this extension guide to install and configure the Squadcast extension in JIRA Cloud to create issues in JIRA projects when there is an incident in Squadcast either Automatically or Manually and sync the status bidirectionally.</p>
 
 <h2 id="pre-requisites">Pre-requisites</h2>
 
@@ -1508,39 +1529,39 @@ li.sidebarTitle{
     <p>A valid Squadcast cloud subscription or a trial account</p>
   </li>
   <li>
-    <p>An user account in JIRA Cloud version with Administrator privileges.</p>
+    <p>A user account in JIRA Cloud version with Administrator privileges</p>
   </li>
 </ol>
 
 <h2 id="integration-steps">Integration Steps</h2>
 
-<p>1.Login to your Jira cloud account and install <a href="https://marketplace.atlassian.com/apps/1221041/squadcast-for-jira-cloud?hosting=cloud&amp;tab=overview">Squadcast Jira cloud plugin</a> and click on <strong>Configure</strong> button.</p>
+<p><strong>(1)</strong> Login to your Jira cloud account and install <a href="https://marketplace.atlassian.com/apps/1221041/squadcast-for-jira-cloud?hosting=cloud&amp;tab=overview">Squadcast Jira cloud plugin</a> and click on <strong>Configure</strong> button.</p>
 
 <p><img src="images/jira_cloud_squadcast_1.png" alt="" /></p>
 
-<p>2.Copy the Jira API token from the configuration page.</p>
+<p><strong>(2)</strong> Copy the Jira API token from the configuration page.</p>
 
-<p>3.Go back to Squadcast Integrations page and click on <strong>Integrate</strong> button under Jira cloud.</p>
+<p><strong>(3)</strong> Go back to Squadcast <strong>Extensions</strong> page and click on <strong>Integrate</strong> button under Jira cloud.</p>
 
 <p><img src="images/jira_cloud_squadcast_2.png" alt="" /></p>
 
-<p>4.Paste the Jira API token from the 2nd step and click on <strong>Save &amp; Next</strong> button.</p>
+<p><strong>(4)</strong> Paste the Jira API token from the 2nd step and click on <strong>Save &amp; Next</strong> button.</p>
 
 <p><img src="images/jira_cloud_squadcast_3.png" alt="" /></p>
 
-<p>5.Select the Jira project in which tickets needs to be created and select the issue type and click <strong>Next</strong>.</p>
+<p><strong>(5)</strong> Select the Jira project in which tickets need to be created and select the issue type and click <strong>Next</strong>.</p>
 
 <p><img src="images/jira_cloud_squadcast_4.png" alt="" /></p>
 
-<p>6.Then map the Jira ticket status to the available Squadcast statuses and click <strong>Next</strong>.</p>
+<p><strong>(6)</strong> Then map the Jira ticket status to the available Squadcast statuses and click <strong>Next</strong>.</p>
 
 <p><img src="images/jira_cloud_squadcast_5.png" alt="" /></p>
 
-<p>7.Then select the mode in which you want to add incident to Jira: <strong>Manually</strong> or <strong>Automatically</strong> and then select the service(s) for which you want to enable the Jira cloud integration and click on the <strong>Save &amp; Integrate</strong> button.</p>
+<p><strong>(7)</strong> Then select the mode in which you want to add incident to Jira: <strong>Manually</strong> or <strong>Automatically</strong> and then select the service(s) for which you want to enable the Jira cloud integration and click on the <strong>Save &amp; Integrate</strong> button.</p>
 
 <p><img src="images/jira_cloud_squadcast_6.png" alt="" /></p>
 
-<p>That’s it! Your Jira cloud integration is good to go.</p>
+<p>That’s it! Your Jira cloud extension is good to go.</p>
 
 <h2 id="usage-of-the-automatic-and-manual-modes">Usage of the Automatic and Manual Modes</h2>
 
@@ -1552,11 +1573,11 @@ li.sidebarTitle{
 
 <p>If the chosen mode is Manual, follow the below steps to create a ticket in Jira.</p>
 
-<p>1.Open the incident in Squadcast and click on <strong>More Actions</strong> button.</p>
+<p><strong>(1)</strong> Open the incident in Squadcast and click on <strong>More Actions</strong> button.</p>
 
 <p><img src="images/jira_cloud_squadcast_7.png" alt="" /></p>
 
-<p>2.Select <strong>Jira Cloud</strong> action and click on <strong>Create a ticket in Jira</strong> button.</p>
+<p><strong>(2)</strong> Select <strong>Jira Cloud</strong> action and click on <strong>Create a ticket in Jira</strong> button.</p>
 
 <p><img src="images/jira_cloud_squadcast_8.png" alt="" /></p>
 
@@ -1567,6 +1588,16 @@ li.sidebarTitle{
 <p><img src="images/jira_cloud_squadcast_10.png" alt="" /></p>
 
 <p><img src="images/jira_cloud_squadcast_11.png" alt="" /></p>
+
+<p>Similarly, if there was an error in creating a ticket in Jira, it will be reflected in the Incident Timeline.</p>
+
+<p><img src="images/jira_cloud_squadcast_12.png" alt="" /></p>
+
+<h2 id="how-to-video">How-to Video</h2>
+
+<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/ldkmvj4z9e?videoFoam=true" title="JIRA Cloud Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen="" msallowfullscreen="" width="100%" height="100%"></iframe></div></div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async=""></script>
+
 
 
                 <!--div class="tags">
@@ -1652,7 +1683,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 23, 2021 <br /> -->
+<!--  Site last generated: Feb 24, 2021 <br /> -->
                 </div>
             </div>
             <script>
@@ -1672,7 +1703,12 @@ $('#toc').on('click', 'a', function() {
 </div>
 <!-- /#main -->
     </div>
+<!-- Google Tag Manager (noscript) -->
 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZKZ5FV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
