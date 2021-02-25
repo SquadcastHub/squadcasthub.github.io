@@ -132,7 +132,7 @@ entries:
             url: /docs/schedule-overrides
             output: web, pdf
 
-          - title: Videos - Common Schedule Use-cases
+          - title: Videos - How to set up common use-cases?
             url: /docs/how-to-video-schedules
             output: web, pdf
 

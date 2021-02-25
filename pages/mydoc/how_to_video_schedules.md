@@ -1,5 +1,5 @@
 ---
-title: Videos - Common Schedule Use-cases
+title: Videos - How to set up common use-cases?
 tags: [integration, honeybadger]
 keywords: 
 last_updated: 
