@@ -37,11 +37,16 @@ Route detailed monitoring alerts from Rapid7 InsightIDR to the right users in Sq
 
 ### In Rapid7 InsightIDR: Create a Squadcast Webhook
 
-#### Configure your <a href="https://docs.rapid7.com/insightidr/webhook/#section-how-to-configure-this-data-exporter">Universal Webhook Data Exporter</a>
-**(1)** From your InsightIDR dashboard, select **Data Collection** on the left hand menu<br/>
-**(2)** When the **Data Collection** page appears, click the **Setup Event Source** drop-down and choose **Add Event Source**<br/>
-**(3)** From the **Security Data** section, click the **Data Exporter** icon<br/>
-The **Add Event Source** panel appears<br/>
+#### Configure your [Universal Webhook Data Exporter](https://docs.rapid7.com/insightidr/webhook/#section-how-to-configure-this-data-exporter)
+
+**(1)** From your InsightIDR dashboard, select **Data Collection** on the left hand menu
+
+**(2)** When the **Data Collection** page appears, click the **Setup Event Source** drop-down and choose **Add Event Source**
+
+**(3)** From the **Security Data** section, click the **Data Exporter** icon
+
+The **Add Event Source** panel appears
+
 - Choose your **Collector** and select **Universal Webhook** for **Data Exporter**.  Give the Event Source a meaningful name
 - Paste the previously copied Squadcast URL under **URL**
 - If the secret is not already provided, enter in the **Secret** field
