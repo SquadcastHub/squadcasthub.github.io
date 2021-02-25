@@ -1520,35 +1520,62 @@ li.sidebarTitle{
 
                 
 
-            <p>Follow the steps below to configure a service so as to extract its related alert data from Rapid7 insightIDR.</p>
+            <p>This document will help you integrate Rapid7 InsightIDR with Squadcast.</p>
 
-<p>Squadcast will then process this information to create incidents for this service as per your preferences.</p>
+<p><a href="https://www.rapid7.com/products/insightidr/">Rapid7 InsightIDR</a> is your security center for incident detection and response, authentication monitoring, and endpoint visibility. InsightIDR identifies unauthorized access from external and internal threats and highlights suspicious activity so you don’t have to weed through thousands of data streams.</p>
 
-<h2 id="using-rapid7-insightidr-as-an-alert-source">Using Rapid7 insightIDR as an Alert Source</h2>
+<p>Route detailed monitoring alerts from Rapid7 InsightIDR to the right users in Squadcast.</p>
 
-<p>On the <strong>Sidebar</strong>, click on <strong>Services</strong>.</p>
+<h2 id="how-to-integrate-rapid7-insightidr-with-squadcast">How to integrate Rapid7 InsightIDR with Squadcast</h2>
 
-<p>You can either choose to use existing service or <a href="adding-a-service-1">create a new service</a></p>
+<h3 id="in-squadcast-using-rapid7-insightidr-as-an-alert-source">In Squadcast: Using Rapid7 InsightIDR as an Alert Source</h3>
 
-<p>Now, click on the corresponding <strong>Alert Sources</strong> button.</p>
+<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong></p>
+
+<p><img src="images/integration_1-1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Select an existing Service or <strong>Add service</strong></p>
+
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p><strong>(3)</strong> Click the corresponding <strong>Alert Sources</strong></p>
 
 <p><img src="images/integration_1.png" alt="" /></p>
 
-<p>Select <strong>Rapid7 insightIDR</strong> from  <strong>Alert Source</strong> drop down and copy the Webhook URL shown.</p>
+<p><strong>(4)</strong> Search for <strong>Rapid7InsightIDR</strong> from  the <strong>Alert Source</strong> drop-down menu and copy the Webhook URL</p>
 
 <p><img src="images/rapid7_1.png" alt="" /></p>
 
-<h2 id="create-squadcast-webhook-in-rapid7-insightidr">Create Squadcast Webhook in Rapid7 insightIDR</h2>
+<h3 id="in-rapid7-insightidr-create-a-squadcast-webhook">In Rapid7 InsightIDR: Create a Squadcast Webhook</h3>
 
-<p>Refer to <a href="https://insightidr.help.rapid7.com/docs/webhook#section-how-to-configure-this-data-exporter">Universal Webhook</a> for details of how to setup a webhook in Rapid7 insightIDR.</p>
+<h4 id="configure-your-universal-webhook-data-exporter">Configure your <a href="https://docs.rapid7.com/insightidr/webhook/#section-how-to-configure-this-data-exporter">Universal Webhook Data Exporter</a></h4>
+
+<p><strong>(1)</strong> From your InsightIDR dashboard, select <strong>Data Collection</strong> on the left hand menu</p>
+
+<p><strong>(2)</strong> When the <strong>Data Collection</strong> page appears, click the <strong>Setup Event Source</strong> drop-down and choose <strong>Add Event Source</strong></p>
+
+<p><strong>(3)</strong> From the <strong>Security Data</strong> section, click the <strong>Data Exporter</strong> icon</p>
+
+<p>The <strong>Add Event Source</strong> panel appears</p>
 
 <ul>
-  <li>Paste the Rapid7 insightIDR Webhook URL copied from Squadcast dashboard in the URL field.</li>
+  <li>Choose your <strong>Collector</strong> and select <strong>Universal Webhook</strong> for <strong>Data Exporter</strong>.  Give the Event Source a meaningful name</li>
+  <li>Paste the previously copied Squadcast URL under <strong>URL</strong></li>
+  <li>If the secret is not already provided, enter in the <strong>Secret</strong> field</li>
+  <li>There is no requirement by Squadcast to add any Additional Headers</li>
+  <li>Enable the checkbox option <strong>Alerts</strong> under <strong>Data Export Types</strong></li>
+  <li>Click <strong>Save</strong></li>
 </ul>
 
-<p>Now, whenever there is an alert in the Rapid7 insightIDR dashboard, an incident will be triggered in Squadcast.</p>
+<p><img src="images/rapid7_2.png" alt="" /></p>
 
-<p>The incident needs to be resolved manually in Squadcast, once they are done in insightIDR dashboard since the platform doesn’t send any webhook trigger for resolve.</p>
+<p>That is it, you are good to go! Now, whenever there is an alert in the Rapid7 InsightIDR, an incident will be triggered in Squadcast for the same.</p>
+
+<h2 id="faq">FAQ</h2>
+
+<p><strong>Q:</strong> If an alert gets resolved in Rapid7 InsightIDR, does it send auto-resolve signals to Squadcast?</p>
+
+<p><strong>A:</strong> No, Rapid7 InsightIDR does not send auto-resolve signals for resolved alerts to Squadcast. Hence, Squadcast incidents from Rapid7 InsightIDR should be resolved manually.</p>
 
 
                 <!--div class="tags">
@@ -1634,7 +1661,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 24, 2021 <br /> -->
+<!--  Site last generated: Feb 25, 2021 <br /> -->
                 </div>
             </div>
             <script>
