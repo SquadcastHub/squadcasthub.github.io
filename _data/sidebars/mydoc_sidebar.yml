@@ -132,6 +132,10 @@ entries:
             url: /docs/schedule-overrides
             output: web, pdf
 
+          - title: How to Video - Schedules
+            url: /docs/how-to-video-schedules
+            output: web, pdf
+
       - title: Escalation Policies
         output: web, pdf
 
@@ -410,6 +414,10 @@ entries:
 
           - title: Nixstats
             url: /docs/nixstats
+            output: web, pdf
+
+          - title: Observium
+            url: /docs/observium
             output: web, pdf
 
           - title: OverOps

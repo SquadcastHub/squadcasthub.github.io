@@ -591,6 +591,17 @@
 
 
 {
+"title": "How to Video - Schedules",
+"tags": "integrationhoneybadger",
+"keywords": "",
+"url": "/docs/how-to-video-schedules",
+"summary": "Here are some how-to-video on how you can use Schedules"
+}
+,
+
+
+
+{
 "title": "How to Video - Squadcast Actions",
 "tags": "how to videosquadcast actions",
 "keywords": "",
@@ -994,6 +1005,17 @@
 "keywords": "",
 "url": "/docs/notification-rules",
 "summary": "Notification rules define how and when you are notified when an incident is assigned to you"
+}
+,
+
+
+
+{
+"title": "Observium",
+"tags": "",
+"keywords": "",
+"url": "/docs/observium",
+"summary": "Send alerts to Squadcast from Observium"
 }
 ,
 

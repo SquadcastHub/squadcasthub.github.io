@@ -61,12 +61,22 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script> Only Search -->
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script> <!-- All Features -->
 
-<!-- Initialize -->
+<!-- Initialize Algolia -->
 
 <script>
     const client = algoliasearch('M0XX7ZMBFN', '15ca191d233b51e77561d5d1e18a7157');
     const index = client.initIndex('squadcast_support');
 </script>
+
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZKZ5FV');</script>
+
+<!-- End Google Tag Manager -->
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -210,14 +220,18 @@
                             }
                             rest1.innerHTML = rest1.innerHTML+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }else{
-                            rest1.style.display = 'none';
+                            rest1.style.display = 'block';
+                            rest1.innerHTML = 'No Results to display'+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }
                         });
                     }
-                    field1.onkeyup = function(){
+                    field1.onkeyup = function(event1){
                         if(field1.value == ''){
                         rest1.innerHTML = '';
                         rest1.style.display = 'none';
+                        }
+                        if(event1.keyCode == 13){
+                            find1.click();
                         }
                     }
                     </script>
@@ -450,6 +464,13 @@
           
           
           <li><a title="Schedule Overrides" href="/docs/schedule-overrides">Schedule Overrides</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="How to Video - Schedules" href="/docs/how-to-video-schedules">How to Video - Schedules</a></li>
           
           
           
@@ -954,6 +975,13 @@
           
           
           <li><a title="Nixstats" href="/docs/nixstats">Nixstats</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Observium" href="/docs/observium">Observium</a></li>
           
           
           
@@ -1492,7 +1520,7 @@ li.sidebarTitle{
 
                 
 
-            <p>You can use this integration guide to install and configure the Squadcast extension in JIRA Server (On-Premise) in order to automatically create issues in JIRA projects from Squadcast and vice versa. The status of the issues on JIRA and incidents in Squadcast will automatically be in sync.</p>
+            <p>You can use this extension guide to install and configure the Squadcast extension in JIRA Server (On-Premise) in order to automatically create issues in JIRA projects from Squadcast and vice versa. The status of the issues on JIRA and incidents in Squadcast will automatically be in sync.</p>
 
 <h2 id="pre-requisites">Pre-requisites</h2>
 
@@ -1516,33 +1544,33 @@ li.sidebarTitle{
 
 <h2 id="integration-steps">Integration Steps</h2>
 
-<p>1.Move over to the <strong>Integrations</strong> from the sidebar and choose to <strong>Integrate</strong> with JIRA Server.</p>
+<p><strong>(1)</strong> Move over to the <strong>Extensions</strong> from the sidebar and choose to <strong>Integrate</strong> with JIRA Server.</p>
 
 <p><img src="images/jira_server_squadcast_1.png" alt="" /></p>
 
-<p>2.Now click on <strong>Configure</strong> to receive a <strong>token</strong></p>
+<p><strong>(2)</strong> Now click on <strong>Configure</strong> to receive a <strong>token</strong></p>
 
 <p><img src="images/jira_server_squadcast_2.png" alt="" /></p>
 
-<p>3.Copy the displayed <strong>token</strong>.</p>
+<p><strong>(3)</strong> Copy the displayed <strong>token</strong>.</p>
 
-<p>4.Go to <strong>Manage Apps</strong> page on your JIRA Server Account from the <strong>Settings</strong> dropdown.</p>
+<p><strong>(4)</strong> Go to <strong>Manage Apps</strong> page on your JIRA Server Account from the <strong>Settings</strong> dropdown.</p>
 
 <p><img src="images/jira_server_squadcast_3.png" alt="" /></p>
 
-<p>5.Select the Squadcast Plugin from the <strong>User-installed apps</strong>. Click <strong>Configure</strong>.</p>
+<p><strong>(5)</strong> Select the Squadcast Plugin from the <strong>User-installed apps</strong>. Click <strong>Configure</strong>.</p>
 
 <p><img src="images/jira_server_squadcast_4.png" alt="" /></p>
 
-<p>6.In the configuration page, paste the Squadcast token in the <strong>JIRA Integration Key</strong> text box. Then click <strong>Integrate</strong>.</p>
+<p><strong>(6)</strong> In the configuration page, paste the Squadcast token in the <strong>JIRA Integration Key</strong> text box. Then click <strong>Integrate</strong>.</p>
 
 <p><img src="images/jira_server_squadcast_5.png" alt="" /></p>
 
-<p>7.Move over to Squadcast and click on <strong>Test Connection</strong>. You will then receive a success message right below the text box. Post this, click on <strong>Next</strong></p>
+<p><strong>(7)</strong> Move over to Squadcast and click on <strong>Test Connection</strong>. You will then receive a success message right below the text box. Post this, click on <strong>Next</strong></p>
 
 <p><img src="images/jira_server_squadcast_6.png" alt="" /></p>
 
-<p>8.Select the Jira project in which issue needs to be created and select the issue type and click <strong>Next</strong>.</p>
+<p><strong>(8)</strong> Select the Jira project in which issue needs to be created and select the issue type and click <strong>Next</strong>.</p>
 
 <p><img src="images/jira_server_squadcast_7.png" alt="" /></p>
 
@@ -1550,15 +1578,12 @@ li.sidebarTitle{
 
 <p><img src="images/jira_server_squadcast_9.png" alt="" /></p>
 
-<p>9.Then map the Jira issue status to the available Squadcast statuses and click <strong>Next</strong>.</p>
+<p><strong>(9)</strong> Then map the Jira issue status to the available Squadcast statuses and click <strong>Next</strong>.</p>
 
 <p><img src="images/jira_server_squadcast_10.png" alt="" /></p>
 
-<ol>
-  <li>Then select the mode in which you want to add an incident to Jira: <strong>Manually</strong> or <strong>Automatically</strong>.</li>
-</ol>
-
-<p>Now, there are 2 sections:</p>
+<p><strong>(10)</strong> Then select the mode in which you want to add an incident to Jira: <strong>Manually</strong> or <strong>Automatically</strong>.
+Now, there are 2 sections:</p>
 
 <ul>
   <li>
@@ -1576,7 +1601,7 @@ li.sidebarTitle{
 <p><strong>JQL - Service Mapping:</strong> If a ticket is created in Jira, then the mappings defined in this section would be iterated one-by-one and incident would be created for the service corresponding to the first JQL that evaluated to be true for that Jira ticket. If none of the JQL matched, then no incident would be created in Squadcast.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-<br /><br /><p>The issue must be in the same Jira project and be the same Jira Issue type. If you are using Jira Service Desk, incidents are created from JQL before &lt;a href="https://confluence.atlassian.com/servicedeskserver041/automating-your-service-desk-969530933.html" target=_blank&gt;automation rules&lt;/a&gt; are applied.</p>
+<br /><br /><p>The issue must be in the same Jira project and be the same Jira Issue type. If you are using Jira Service Desk, incidents are created from JQL before <a href="https://confluence.atlassian.com/servicedeskserver041/automating-your-service-desk-969530933.html" target="_blank">automation rules</a> are applied.</p>
 </div>
 
 <p>So, to summarize,</p>
@@ -1603,11 +1628,11 @@ li.sidebarTitle{
 
 <p>If the chosen mode is Manual, follow the below steps to create a issue in Jira.</p>
 
-<p>1.Open the incident in Squadcast and click on <strong>More Actions</strong> button.</p>
+<p><strong>(1)</strong> Open the incident in Squadcast and click on <strong>More Actions</strong> button.</p>
 
 <p><img src="images/jira_server_squadcast_12.png" alt="" /></p>
 
-<p>2.Select <strong>Jira Server</strong> action and click on <strong>Create a issue in Jira</strong> button.</p>
+<p><strong>(2)</strong> Select <strong>Jira Server</strong> action and click on <strong>Create a issue in Jira</strong> button.</p>
 
 <p><img src="images/jira_server_squadcast_13.png" alt="" /></p>
 
@@ -1615,6 +1640,56 @@ li.sidebarTitle{
 
 <p><img src="images/jira_server_squadcast_14.png" alt="" /></p>
 
+<p>Similarly, if there was an error in creating a ticket in Jira, it will be reflected in the Incident Timeline.</p>
+
+<p><img src="images/jira_server_squadcast_15.png" alt="" /></p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>
+<b>Note</b><br /><br />
+<p>Ensure to check the permissions associated with Squadcast user. To do this, go to System &gt; Admin Helper &gt; Permission Helper. Choose Squadcast in the User drop down and validate if permissions - Browse Project, Create Issue, Transition Issue, Resolve Issue  exist. If not, then add these permissions to the user group that Squadcast user is a part of. This information can be checked under System &gt; User Management.</p>
+</div>
+
+<h2 id="using-tags-to-configure-jira-project-and-issue-priority">Using tags to configure Jira project and issue priority</h2>
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>
+<b>Note</b><br /><br />
+<p>Currently to use multiple Jira projects your status mappings need to be the same for all your Jira projects. We will be using the status mapping you configured in the `Map Status` section of the configuration.</p>
+</div>
+
+<p>You can use tagging rules to map your issue priority and project by following the steps below :</p>
+
+<p><strong>(1)</strong> Create a tagging rule that helps you set the priority and configure Jira project for an incident in Squadcast by using the tags :</p>
+
+<ul>
+  <li><code class="highlighter-rouge">priority</code>- <code class="highlighter-rouge">Jira Priority</code></li>
+  <li><code class="highlighter-rouge">issuetype</code> - <code class="highlighter-rouge">Issue Type Name</code></li>
+  <li><code class="highlighter-rouge">project</code>- <code class="highlighter-rouge">Project Key</code></li>
+</ul>
+
+<p>Now the Jira ticket will be created based on the tag values</p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Tags are Case Sensitive</b><br /><br />
+<p>The values of all the tags are case sensitive. Use the same case which has been used in Jira.</p>
+</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b><br /><br />
+<p><ul>
+<li>The <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">project</code> and <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">issuetype</code> tags configured for a service in Squadcast will override your default <a href="jira-server-on-premise#integration-steps">Jira configurations</a> for the same.</li>
+<li>Make sure to use both <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">project</code> and <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">issuetype</code> tags for creating your issue in a project different from the mapped one. If both tags are not configured then it will use your default <a href="jira-server-on-premise#integration-steps">Jira configuration</a></li>
+</ul></p>
+</div>
+
+<h3 id="example-of-configuring-the-tags-using-tagging-rules">Example of configuring the tags using tagging rules</h3>
+
+<p><img src="images/jira_server_squadcast_16.png" alt="" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b><br /><br />
+<p>Setting <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">project</code> and <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">issuetype</code> for your configured service will override your mapped project and issuetype configuration for that particular service. <br />
+Also make sure to use both <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">project</code> and <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">issuetype</code> tags for creating your issue in a project different from the mapped one.</p>
+</div>
 
 
                 <!--div class="tags">
@@ -1700,7 +1775,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 17, 2021 <br /> -->
+<!--  Site last generated: Feb 24, 2021 <br /> -->
                 </div>
             </div>
             <script>
@@ -1720,7 +1795,12 @@ $('#toc').on('click', 'a', function() {
 </div>
 <!-- /#main -->
     </div>
+<!-- Google Tag Manager (noscript) -->
 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZKZ5FV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>

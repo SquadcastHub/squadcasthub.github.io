@@ -15,9 +15,9 @@ This page describes how to add Squadcast to G Suite and configure SSO-support wi
 
 ## Connecting Squadcast to G Suite
 
-**(1)** Log in to your admin.google.com account with your G Suite account
+**(1)** Log in to your admin.google.com account with your G Suite account.
 
-**(2)** Select Apps on the main page
+**(2)** Select Apps on the main page.
 
 ![](images/google_1.png)
 
@@ -37,7 +37,7 @@ This page describes how to add Squadcast to G Suite and configure SSO-support wi
 
 ![](images/google_5.png)
 
-**(7)** Login to app.squadcast.com and go to the **Integrations** tab and click the **Integrate** button under SSO and select the Google tab
+**(7)** Login to `app.squadcast.com` and go to the **Integrations** tab and click the **Integrate** button under SSO and select the Google tab
 
 ![](images/google_6.png)
 
@@ -47,7 +47,7 @@ This page describes how to add Squadcast to G Suite and configure SSO-support wi
 
 ![](images/google_8.png)
 
-**(9)** Go back to the Google custom app and in the Service Provider Details page and paste the copied **ACS URL** in both the **ACS URL** and **Entity ID** fields. Also select **Name ID** as **Basic Information** and **Primary Email** and **Name ID **Format as **EMAIL** and click **Next**
+**(9)** Go back to the Google custom app and in the Service Provider Details page and paste the copied **ACS URL** in both the **ACS URL** and **Entity ID** fields. Also select **Name ID** as **Basic Information** and **Primary Email** and **Name ID Format** as **EMAIL** and click **Next**.
 
 ![](images/google_9.png)
 
@@ -82,10 +82,21 @@ By default Squadcast lets you create a user via SSO with a configured default Ro
 
 ![](images/google_12.png)
 
-**(12)** Go back to the Squadcast Google SSO page and paste the SSO URL we have obtained from Step 5 above in the **SAML 2.0 Endpoint** text box and the certificate details in the **X.509 Certificate** field. Configure other options like the default User role and make sure to check the Provision new users on first login checkbox and click Save
-
-You can enable the toggle button on the top to **Enable Google SSO** for Squadcast and you are good to go and your users will be able to use Google SSO to log in to Squadcast without needing a password.
+**(12)** Go back to the Squadcast Google SSO page and paste the SSO URL we have obtained from Step 5 above in the **SAML 2.0 Endpoint** text box and the certificate details in the **X.509 Certificate** field. Configure other options like the default User role and click Save.
 
 ![](images/google_13_new.png)
 
-That is it, you are good to go! Users can now use their G Suite credentials to sign in to Squadcast via Single Sign-On (SSO).
+**(13)** You can allow Account owners and Admins to also login using their email credentials in addition to SSO. This can be done by checking the box as shown in the screenshot below.
+
+![](images/google_14.png)
+
+**(14)** You can enable the toggle button on the top to Enable Google SSO for Squadcast and you are good to go and your users will be able to use Google SSO to log in to Squadcast without needing a password.
+
+**(15)** Your users can access SSO from the Google Board.
+
+![](images/google_15.png)
+
+{{site.data.alerts.blue-note}}
+<b>Note</b><br/><br/>
+<p>After enabling SSO, if you are facing an issue to login using the SSO, we advise you to do the following: on the webpage, go to Inspect -> Application -> Clear Storage</p>
+{{site.data.alerts.end}}

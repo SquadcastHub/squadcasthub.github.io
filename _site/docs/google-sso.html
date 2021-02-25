@@ -61,12 +61,22 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script> Only Search -->
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script> <!-- All Features -->
 
-<!-- Initialize -->
+<!-- Initialize Algolia -->
 
 <script>
     const client = algoliasearch('M0XX7ZMBFN', '15ca191d233b51e77561d5d1e18a7157');
     const index = client.initIndex('squadcast_support');
 </script>
+
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZKZ5FV');</script>
+
+<!-- End Google Tag Manager -->
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -210,14 +220,18 @@
                             }
                             rest1.innerHTML = rest1.innerHTML+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }else{
-                            rest1.style.display = 'none';
+                            rest1.style.display = 'block';
+                            rest1.innerHTML = 'No Results to display'+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }
                         });
                     }
-                    field1.onkeyup = function(){
+                    field1.onkeyup = function(event1){
                         if(field1.value == ''){
                         rest1.innerHTML = '';
                         rest1.style.display = 'none';
+                        }
+                        if(event1.keyCode == 13){
+                            find1.click();
                         }
                     }
                     </script>
@@ -450,6 +464,13 @@
           
           
           <li><a title="Schedule Overrides" href="/docs/schedule-overrides">Schedule Overrides</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="How to Video - Schedules" href="/docs/how-to-video-schedules">How to Video - Schedules</a></li>
           
           
           
@@ -954,6 +975,13 @@
           
           
           <li><a title="Nixstats" href="/docs/nixstats">Nixstats</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Observium" href="/docs/observium">Observium</a></li>
           
           
           
@@ -1498,9 +1526,9 @@ li.sidebarTitle{
 
 <h2 id="connecting-squadcast-to-g-suite">Connecting Squadcast to G Suite</h2>
 
-<p><strong>(1)</strong> Log in to your admin.google.com account with your G Suite account</p>
+<p><strong>(1)</strong> Log in to your admin.google.com account with your G Suite account.</p>
 
-<p><strong>(2)</strong> Select Apps on the main page</p>
+<p><strong>(2)</strong> Select Apps on the main page.</p>
 
 <p><img src="images/google_1.png" alt="" /></p>
 
@@ -1520,17 +1548,17 @@ li.sidebarTitle{
 
 <p><img src="images/google_5.png" alt="" /></p>
 
-<p><strong>(7)</strong> Login to app.squadcast.com and go to the <strong>Integrations</strong> tab and click the <strong>Integrate</strong> button under SSO and select the Google tab</p>
+<p><strong>(7)</strong> Login to <code class="highlighter-rouge">app.squadcast.com</code> and go to the <strong>Integrations</strong> tab and click the <strong>Integrate</strong> button under SSO and select the Google tab</p>
 
 <p><img src="images/google_6.png" alt="" /></p>
 
-<p><img src="images/google_7.png" alt="" /></p>
+<p><img src="images/google_7_new.png" alt="" /></p>
 
 <p><strong>(8)</strong> Click <strong>Show configuration guide for Google</strong> and copy the ACS URL displayed</p>
 
 <p><img src="images/google_8.png" alt="" /></p>
 
-<p><strong>(9)</strong> Go back to the Google custom app and in the Service Provider Details page and paste the copied <strong>ACS URL</strong> in both the <strong>ACS URL</strong> and <strong>Entity ID</strong> fields. Also select <strong>Name ID</strong> as <strong>Basic Information</strong> and <strong>Primary Email</strong> and <strong>Name ID **Format as **EMAIL</strong> and click <strong>Next</strong></p>
+<p><strong>(9)</strong> Go back to the Google custom app and in the Service Provider Details page and paste the copied <strong>ACS URL</strong> in both the <strong>ACS URL</strong> and <strong>Entity ID</strong> fields. Also select <strong>Name ID</strong> as <strong>Basic Information</strong> and <strong>Primary Email</strong> and <strong>Name ID Format</strong> as <strong>EMAIL</strong> and click <strong>Next</strong>.</p>
 
 <p><img src="images/google_9.png" alt="" /></p>
 
@@ -1564,13 +1592,24 @@ role | Custom Attribute | Stakeholder
 
 <p><img src="images/google_12.png" alt="" /></p>
 
-<p><strong>(12)</strong> Go back to the Squadcast Google SSO page and paste the SSO URL we have obtained from Step 5 above in the <strong>SAML 2.0 Endpoint</strong> text box and the certificate details in the <strong>X.509 Certificate</strong> field. Configure other options like the default User role and make sure to check the Provision new users on first login checkbox and click Save</p>
+<p><strong>(12)</strong> Go back to the Squadcast Google SSO page and paste the SSO URL we have obtained from Step 5 above in the <strong>SAML 2.0 Endpoint</strong> text box and the certificate details in the <strong>X.509 Certificate</strong> field. Configure other options like the default User role and click Save.</p>
 
-<p>You can enable the toggle button on the top to <strong>Enable Google SSO</strong> for Squadcast and you are good to go and your users will be able to use Google SSO to log in to Squadcast without needing a password.</p>
+<p><img src="images/google_13_new.png" alt="" /></p>
 
-<p><img src="images/google_13.png" alt="" /></p>
+<p><strong>(13)</strong> You can allow Account owners and Admins to also login using their email credentials in addition to SSO. This can be done by checking the box as shown in the screenshot below.</p>
 
-<p>That is it, you are good to go! Users can now use their G Suite credentials to sign in to Squadcast via Single Sign-On (SSO).</p>
+<p><img src="images/google_14.png" alt="" /></p>
+
+<p><strong>(14)</strong> You can enable the toggle button on the top to Enable Google SSO for Squadcast and you are good to go and your users will be able to use Google SSO to log in to Squadcast without needing a password.</p>
+
+<p><strong>(15)</strong> Your users can access SSO from the Google Board.</p>
+
+<p><img src="images/google_15.png" alt="" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b><br /><br />
+<p>After enabling SSO, if you are facing an issue to login using the SSO, we advise you to do the following: on the webpage, go to Inspect -&gt; Application -&gt; Clear Storage</p>
+</div>
 
 
                 <!--div class="tags">
@@ -1656,7 +1695,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 17, 2021 <br /> -->
+<!--  Site last generated: Feb 24, 2021 <br /> -->
                 </div>
             </div>
             <script>
@@ -1676,7 +1715,12 @@ $('#toc').on('click', 'a', function() {
 </div>
 <!-- /#main -->
     </div>
+<!-- Google Tag Manager (noscript) -->
 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZKZ5FV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>

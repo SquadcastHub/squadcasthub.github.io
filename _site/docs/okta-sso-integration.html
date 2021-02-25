@@ -61,12 +61,22 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script> Only Search -->
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script> <!-- All Features -->
 
-<!-- Initialize -->
+<!-- Initialize Algolia -->
 
 <script>
     const client = algoliasearch('M0XX7ZMBFN', '15ca191d233b51e77561d5d1e18a7157');
     const index = client.initIndex('squadcast_support');
 </script>
+
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZKZ5FV');</script>
+
+<!-- End Google Tag Manager -->
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -210,14 +220,18 @@
                             }
                             rest1.innerHTML = rest1.innerHTML+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }else{
-                            rest1.style.display = 'none';
+                            rest1.style.display = 'block';
+                            rest1.innerHTML = 'No Results to display'+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }
                         });
                     }
-                    field1.onkeyup = function(){
+                    field1.onkeyup = function(event1){
                         if(field1.value == ''){
                         rest1.innerHTML = '';
                         rest1.style.display = 'none';
+                        }
+                        if(event1.keyCode == 13){
+                            find1.click();
                         }
                     }
                     </script>
@@ -450,6 +464,13 @@
           
           
           <li><a title="Schedule Overrides" href="/docs/schedule-overrides">Schedule Overrides</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="How to Video - Schedules" href="/docs/how-to-video-schedules">How to Video - Schedules</a></li>
           
           
           
@@ -954,6 +975,13 @@
           
           
           <li><a title="Nixstats" href="/docs/nixstats">Nixstats</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Observium" href="/docs/observium">Observium</a></li>
           
           
           
@@ -1494,18 +1522,12 @@ li.sidebarTitle{
 
             <p>Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can set it for your organisation by following this integration guide.</p>
 
-<h3 id="pre-requisites">Pre-requisites</h3>
+<h2 id="pre-requisites">Pre-requisites</h2>
 
 <ol>
-  <li>
-    <p>Valid Okta SSO account &amp; subscription</p>
-  </li>
-  <li>
-    <p>Account Owner / Administrator account in Squadcast</p>
-  </li>
-  <li>
-    <p>A valid Squadcast subscription (<a href="https://www.squadcast.com/pricing">Pro &amp; Enterprise</a>)</p>
-  </li>
+  <li>Valid Okta SSO account &amp; subscription</li>
+  <li>Account Owner / Administrator account in Squadcast</li>
+  <li>A valid Squadcast subscription (<a href="https://www.squadcast.com/pricing">Enterprise</a>)</li>
 </ol>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
@@ -1516,42 +1538,80 @@ li.sidebarTitle{
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
 <b>Note for Mobile App Users: </b>
-<br /><br /><p>Today, SSO does not work with our mobile applications.</p>
+<br /><br /><p>Check out this <a href="using-the-mobile-app#section-sso-login-support-for-mobile-apps">documentation</a> to login to your Squadcast Mobile application.</p>
 </div>
 
-<h3 id="setup-instructions">Setup Instructions</h3>
+<h2 id="setting-up-okta-sso">Setting up Okta SSO</h2>
 
-<p>1.Go to the Integrations tab from your Squadcast account sidebar and click on <strong>Integrate</strong> under SSO card.</p>
+<p><strong>(1)</strong> Go to the Integrations tab from your Squadcast account sidebar and click on <strong>Integrate</strong> under SSO card.</p>
 
 <p><img src="images/okta_1.png" alt="" /></p>
 
-<p>2.In the opened modal, select the <strong>Okta</strong> tab and click <strong>Show configuration guide for Okta</strong>.</p>
+<p><strong>(2)</strong> In the opened modal, select the <strong>Okta</strong> tab and click <strong>Show configuration guide for Okta</strong>.</p>
 
-<p><img src="images/okta_2.png" alt="" /></p>
+<p><img src="images/okta_2_new.png" alt="" /></p>
+
+<p><strong>(3)</strong> Copy the ID highlighted in the instructions.</p>
 
 <p><img src="images/okta_3.png" alt="" /></p>
 
-<p>3.As given in the displayed guide, go to your Okta dashboard and click on <strong>Add Application</strong></p>
+<p><strong>(4)</strong> Move to your Okta Dashboard and navigate to <strong>Applications</strong></p>
 
 <p><img src="images/okta_4.png" alt="" /></p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-<br /><br /><p>For members trying to log into Squadcast through SSO who aren't already added to the Squadcast platform, will be added to the platform by default as <b>Users</b>.</p>
-</div>
-
-<p>4.Search for <strong>Squadcast</strong> application and click <strong>Add</strong> to add it to your Okta account.</p>
+<p><strong>(5)</strong> Search for <strong>Squadcast</strong> application and click <strong>Add</strong> to add it to your Okta account.</p>
 
 <p><img src="images/okta_5.png" alt="" /></p>
 
+<p><strong>(6)</strong> Under the <code class="highlighter-rouge">Sign-On</code> tab, navigate to the <code class="highlighter-rouge">Advanced Sign-On Settings</code> and paste the Customer ID that was copied in Step 3 in the <code class="highlighter-rouge">Customer ID</code> field.</p>
+
+<p><img src="images/okta_5_1.png" alt="" /></p>
+
+<p><strong>(7)</strong> Now click on <code class="highlighter-rouge">View Setup Instructions</code> to view the SAML 2.0 Endpoint and X.509 Certificate.</p>
+
 <p><img src="images/okta_6.png" alt="" /></p>
 
-<p>5.You can turn On / Off Okta SSO by toggling the button at the top. Configure other options like the default User role and make sure to check the Provision new users on first login checkbox and click Save.</p>
+<p><strong>(8)</strong> Paste the SAML 2.0 Endpoint and X.509 Certificates in the respective fields in Squadcast</p>
 
-<p><img src="images/okta_7.png" alt="" /></p>
+<p><img src="images/okta_7_new.png" alt="" /></p>
 
-<p>6.Your Okta SSO Integration is good to go and anyone in your organisation can now use Okta SSO to login into Squadcast.</p>
+<p><img src="images/okta_8.png" alt="" /></p>
 
-<p>7.By default, the SSO provider will send Firstname, Lastname and Email ID to Squadcast. If you can send a optional custom key called <code class="highlighter-rouge">role</code>  with one of these values <code class="highlighter-rouge">Admin</code>, <code class="highlighter-rouge">User</code> and <code class="highlighter-rouge">Stakeholder</code>, the user will be created with these roles instead of the default user role configured in the SSO modal in Squadcast.</p>
+<p><strong>(9)</strong> In Squadcast, enable the toggle above within the modal and click on <code class="highlighter-rouge">Save</code> to enable Okta SSO for your Squadcast Account.</p>
+
+<p><img src="images/okta_9.png" alt="" /></p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b><br /><br />
+<p>You can turn On / Off Okta SSO by toggling the button at the top. Configure other options like the default User role and click Save.</p>
+</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b><br /><br />
+<p>For members trying to log into Squadcast through SSO who aren't already added to the Squadcast platform, will be added to the platform by default as <b>Users</b>.</p>
+</div>
+
+<p><strong>(10)</strong> The Okta-Squadcast integration also supports user provisioning. To enable that, you can navigate to the <code class="highlighter-rouge">Assignments</code> tab, assign this to <code class="highlighter-rouge">people</code> or <code class="highlighter-rouge">groups</code> (based on your requirement) to enable access to Squadcast.</p>
+
+<p><img src="images/okta_10.png" alt="" /></p>
+
+<p>In this example, we have chosen <code class="highlighter-rouge">Assign to People</code> and added a user as shown below.</p>
+
+<p><img src="images/okta_11.png" alt="" /></p>
+
+<p><strong>(11)</strong> By default, the SSO provider will send Firstname, Lastname and Email ID to Squadcast. If you can send an optional custom key called <code class="highlighter-rouge">role</code>  with one of these values <code class="highlighter-rouge">Admin</code>, <code class="highlighter-rouge">User</code> and <code class="highlighter-rouge">Stakeholder</code>, the user will be created with these roles instead of the default user role configured in the SSO modal in Squadcast.</p>
+
+<p>Your Okta SSO Integration is good to go and anyone in your organisation can now use Okta SSO to login into Squadcast.</p>
+
+<h2 id="logging-into-squadcast-via-okta">Logging into Squadcast via Okta</h2>
+
+<p><strong>(1)</strong> You can login to Squadcast by navigating to <code class="highlighter-rouge">My Apps</code> in your Okta Dashboard.</p>
+
+<p><img src="images/okta_12.png" alt="" /></p>
+
+<p><strong>(2)</strong> Find <code class="highlighter-rouge">Squadcast</code> in this list of saved applications and just click on the <code class="highlighter-rouge">Squadcast</code> card and you will be automatically directed into your Squadcast account.</p>
+
+<p><img src="images/okta_13.png" alt="" /></p>
 
 
                 <!--div class="tags">
@@ -1637,7 +1697,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Feb 17, 2021 <br /> -->
+<!--  Site last generated: Feb 24, 2021 <br /> -->
                 </div>
             </div>
             <script>
@@ -1657,7 +1717,12 @@ $('#toc').on('click', 'a', function() {
 </div>
 <!-- /#main -->
     </div>
+<!-- Google Tag Manager (noscript) -->
 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZKZ5FV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
