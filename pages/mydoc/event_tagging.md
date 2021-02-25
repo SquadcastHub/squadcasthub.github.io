@@ -16,6 +16,7 @@ You can define tags as `key:value` pairs. For example, the `key` could be `sever
 Event Tagging can be achieved by defining Tagging Rules for each Service in Squadcast. When these rules evaluate to *true* for an incoming incident, the defined tag pairs are added to it.
 
 ## Prerequisites
+
 - Only the Account Owner and Admins have Create, Read, Update and Delete capabilities for Tagging Rules
 - First, integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast
 
