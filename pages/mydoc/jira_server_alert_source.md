@@ -10,7 +10,7 @@ folder: mydoc
 ---
 
 ## Pre-requisites
-1.  A valid Squadcast cloud / On-Premise subscription 
+1. A valid Squadcast Pro or Enterprise subscription
 2. A user account in JIRA Server with Administrator privileges
 
 Follow the steps below to configure a service so as to push related alert data from Jira onto Squadcast.
@@ -37,7 +37,7 @@ Select **Jira Server** from  **Alert Source** drop down and copy the Webhook URL
 
 ![](images/jira_server_2.png)
 
-2.Click on **Create a Webhook** . Paste the **Jira Server** webhook url you copied from squadcast and check the  **created** And **updated** check boxes under issues.
+2.Click on **Create a Webhook**. Paste the **Jira Server** Webhook URL you copied from Squadcast and check the  **created** And **updated** check boxes under issues.
 
 ![](images/jira_server_3.png)
 

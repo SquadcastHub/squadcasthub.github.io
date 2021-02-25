@@ -10,7 +10,7 @@ folder: mydoc
 ---
 
 ## Pre-requisites
-1.  A valid Squadcast cloud / On-Premise subscription 
+1. A valid Squadcast cloud / On-Premise subscription 
 2. A user account in JIRA Cloud with Administrator privileges
 
 Follow the steps below to configure a service so as to push related alert data from Jira onto Squadcast.
@@ -27,11 +27,11 @@ Now, click on the corresponding **Alert Sources** button.
 
 ![](images/integration_1.png)
 
-Select **Jira Server** from  **Alert Source** drop down and copy the Webhook URL shown.
+Select **Jira Cloud** from  **Alert Source** drop down and copy the Webhook URL shown.
 
 ![](images/jira_cloud_1.png)
 
-## Create a Squadcast Webhook in Jira Server
+## Create a Squadcast Webhook in Jira Cloud
 
 1.Login to Jira Cloud and go to **Settings** in left-side pannel.
 
@@ -52,5 +52,10 @@ Select **Jira Server** from  **Alert Source** drop down and copy the Webhook URL
 5.Paste the **Jira Cloud Webhook URL** copied from Squadcast Dashboard in the **URL** field and check the  **created** And **updated** check boxes under issues. Click on **Create** to finally save the webhook.
 
 ![](images/jira_cloud_6.png)
+
+{{site.data.alerts.yellow-note-i}}
+<b>Note</b><br/><br/>
+<p>Enable only the highlighted <b>Issue related events</b> as shown in the screenshot above. Squadcast will ignore any other Issue event type.</p>
+{{site.data.alerts.end}}
 
 Now whenever an issue goes to status-category with key **new** in Jira, an incident will be triggered in Squadcast . Also when that issue goes to status-category with key **done** in Jira, it will be resolved in Squadcast.

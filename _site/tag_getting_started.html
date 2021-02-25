@@ -61,12 +61,22 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script> Only Search -->
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script> <!-- All Features -->
 
-<!-- Initialize -->
+<!-- Initialize Algolia -->
 
 <script>
     const client = algoliasearch('M0XX7ZMBFN', '15ca191d233b51e77561d5d1e18a7157');
     const index = client.initIndex('squadcast_support');
 </script>
+
+<!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZKZ5FV');</script>
+
+<!-- End Google Tag Manager -->
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -210,14 +220,18 @@
                             }
                             rest1.innerHTML = rest1.innerHTML+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }else{
-                            rest1.style.display = 'none';
+                            rest1.style.display = 'block';
+                            rest1.innerHTML = 'No Results to display'+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }
                         });
                     }
-                    field1.onkeyup = function(){
+                    field1.onkeyup = function(event1){
                         if(field1.value == ''){
                         rest1.innerHTML = '';
                         rest1.style.display = 'none';
+                        }
+                        if(event1.keyCode == 13){
+                            find1.click();
                         }
                     }
                     </script>
@@ -450,6 +464,13 @@
           
           
           <li><a title="Schedule Overrides" href="/docs/schedule-overrides">Schedule Overrides</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="How to Video - Schedules" href="/docs/how-to-video-schedules">How to Video - Schedules</a></li>
           
           
           
@@ -954,6 +975,13 @@
           
           
           <li><a title="Nixstats" href="/docs/nixstats">Nixstats</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Observium" href="/docs/observium">Observium</a></li>
           
           
           
@@ -1808,14 +1836,6 @@ li.sidebarTitle{
     
         
      
-   
-    
-        
-     
-   
-    
-        
-     
         
      
    
@@ -1838,6 +1858,20 @@ li.sidebarTitle{
      
    
     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
+        
+     
+   
+    
    
     
    
@@ -1854,18 +1888,6 @@ li.sidebarTitle{
      
    
     
-        
-     
-   
-    
-        
-     
-        
-     
-   
-    
-        
-     
         
      
    
@@ -1906,6 +1928,18 @@ li.sidebarTitle{
      
    
     
+        
+     
+        
+     
+   
+    
+        
+     
+        
+     
+   
+    
    
     
         
@@ -1990,6 +2024,8 @@ li.sidebarTitle{
      
         
      
+   
+    
    
     
         
@@ -2441,7 +2477,12 @@ $('#toc').on('click', 'a', function() {
 </div>
 <!-- /#main -->
     </div>
+<!-- Google Tag Manager (noscript) -->
 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZKZ5FV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
