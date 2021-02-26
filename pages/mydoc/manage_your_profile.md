@@ -14,7 +14,7 @@ folder: mydoc
 ![](images/manage_account_1.png)
 
 **(2)** On your Profile page, you can
-- Edit Email ID and Mobile Number 
+- Edit your First Name, Last Name and Mobile Number 
 - Change password
 - [Update Personal Notification Rules](notification-rules). If your Squadcast Organization is integrated with Slack/Google Hangouts, the same will be indicated here as well
 - View the Escalation Policies, Squads and Schedules you are part of
