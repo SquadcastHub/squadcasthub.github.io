@@ -13,12 +13,12 @@ folder: mydoc
 
 ![](images/manage_account_1.png)
 
-**(2)** On your Profile page, you can
-- Edit your First Name, Last Name and Mobile Number 
-- Change password
-- [Update Personal Notification Rules](notification-rules). If your Squadcast Organization is integrated with Slack/Google Hangouts, the same will be indicated here as well
-- View the Escalation Policies, Squads and Schedules you are part of
-- [Generate and view existing API Refresh Tokens](squadcast-public-api)
-- For the past week, view the number of incidents Acknowledged and Resolved by you, along with MTTA and MTTR
+**(2)** On your **Profile** page, you can
+- (a) Edit your *First Name*, *Last Name* and *Mobile Number* 
+- (b) *Change Password*
+- (c) [Update Personal Notification Rules](notification-rules). Additionally, if your Squadcast Organization is integrated with Slack/Google Hangouts, the same will be indicated here as well
+- (d) View the Escalation Policies, Squads and Schedules you are a part of
+- (e) [Generate and view existing API Refresh Tokens](squadcast-public-api)
+- (f) For the past week, view the number of incidents Acknowledged and Resolved by you, along with MTTA and MTTR
 
 ![](images/manage_account_2.png)
