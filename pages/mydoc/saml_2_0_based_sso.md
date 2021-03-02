@@ -9,12 +9,12 @@ permalink: docs/saml-sso
 folder: mydoc
 ---
 
-Squadcast supports any SAML 2.0 based Single Sign On (SSO) and you can set it for your organisation by following this integration guide.
+Squadcast supports any SAML 2.0 based Single Sign On (SSO) and you can set it for your Organisation by following this integration guide.
 
 {{site.data.alerts.blue-note}}
 <b>Points to Note: </b>
-<br/><br/><p>1. Only an Administrator / Account owner can enable and configure SAML SSO for an organisation in Squadcast.<br/><br/>
-2. Once enabled, only the Account owner can use email-password based login by default although it can be configured to enable email based login for Administrators as well.</p>
+<br/><br/><p>1. Only an Administrator / Account Owner can enable and configure SAML SSO for an organisation in Squadcast.<br/><br/>
+2. Once enabled, only the Account Owner can use *email-password based login* by default although it can be configured to enable email based login for Administrators as well.</p>
 {{site.data.alerts.end}}
 
 {{site.data.alerts.yellow-note-i}}
@@ -24,19 +24,19 @@ Squadcast supports any SAML 2.0 based Single Sign On (SSO) and you can set it fo
 
 ### Setup Instructions
 
-1.Go to the Integrations tab from your Squadcast account sidebar and click on **Integrate** under SSO card
+**(1)** Navigate to the **Extensions** tab from your Squadcast account sidebar and click on **Integrate** under SSO card
 
 ![](images/saml_1.png)
 
-2.In the pop-up GUI, select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**
+**(2)** Select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**
 
 ![](images/saml_2_new.png)
 
-Now, copy the ACS URL and paste it in your SSO provider system
+Now, copy the *ACS URL* and paste it in your SSO provider system
 
 ![](images/saml_3.png)
 
-3.From your SSO dashboard, copy the SAML 2.0 Endpoint and X.509 Certificate and paste it in the relevant fields
+**(3)** From your SSO provider's dashboard, copy the *SAML 2.0 Endpoint* and *X.509 Certificate* and paste it in the relevant fields in the Squadcast set-up modal. Configure other options like the *default* `User role`. You can *allow Account Owners and Admins* to also login using their email credentials *in addition* to SSO. This can be done by checking the box as shown in the screenshot below and make sure to click **Save**
 
 ![](images/saml_4_new.png)
 
@@ -44,13 +44,13 @@ Now, copy the ACS URL and paste it in your SSO provider system
 <br/><br/><p>For members trying to log into Squadcast through SSO who aren't already added to the Squadcast platform, will be added to the platform by default as <b>Users</b>.</p>
 {{site.data.alerts.end}}
 
-5.You can turn On / Off SSO by toggling the button at the top. Configure other options like the default User role and make sure to check the Provision new users on first login checkbox and click **Save**.
+**(4)** You can turn On/Off SSO by *toggling* the button at the top
 
 ![](images/saml_5.png)
 
-6.By default, the SSO provider will send Firstname, Lastname and Email ID to Squadcast. If you can send a custom key called `role`  with one of these values `Admin`, `User` and `Stakeholder`, the user will be created with these roles instead of the default user role configured in the SSO modal in Squadcast.
+**(5)** By default, the SSO provider will send *Firstname*, *Lastname* and *Email ID* to Squadcast. If you can send a custom key called `role`  with one of these values `Admin`, `User` and `Stakeholder`, the user will be created with these roles instead of the default user role configured in the SSO modal in Squadcast
 
-Your SSO Integration is good to go and anyone in your organisation can now use SSO to login into Squadcast.
+Your SSO Integration is good to go and anyone in your Organisation can now use SSO to login into Squadcast.
 
 The following SAML 2.0 based SSO logins were officially tested and found to be working either by our team or the SSO providers but it should work with all SAML 2.0 based SSO providers.
 
