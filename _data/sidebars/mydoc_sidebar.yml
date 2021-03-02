@@ -232,7 +232,7 @@ entries:
         output: web, pdf
 
         folderitems:
-          - title: Amazon Cloudwatch (AWS)
+          - title: Amazon CloudWatch (AWS)
             url: /docs/amazon-cloudwatch-aws
             output: web, pdf
 
@@ -246,6 +246,10 @@ entries:
 
           - title: AWS CloudTrail via CloudWatch
             url: /docs/aws-cloudtrail-via-cloudwatch
+            output: web, pdf
+          
+          - title: AWS Elastic Beanstalk via CloudWatch
+            url: /docs/aws-elastic-beanstalk-via-cloudwatch
             output: web, pdf
 
           - title: AppDynamics
