@@ -468,19 +468,6 @@
 
 
 {
-"title": "Getting Started",
-"tags": "",
-"keywords": "",
-"url": "/getting-started.html",
-"summary": "A quick run-through of the platform"
-}
-,
-
-
-
-
-
-{
 "title": "Ghost Inspector",
 "tags": "integrationghost inspector",
 "keywords": "",
@@ -1544,17 +1531,6 @@
 
 
 
-
-
-
-{
-"title": "Upgrading to a Paid Plan",
-"tags": "upgradeaccount",
-"keywords": "",
-"url": "/docs/upgrading-to-a-paid-plan",
-"summary": "If you love the platform and want to bring in more of your team to make use of all the features, this document will help you do just that"
-}
-,
 
 
 

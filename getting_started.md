@@ -3,6 +3,8 @@ title: Getting Started
 summary: "A quick run-through of the platform"
 sidebar: mydoc_sidebar
 permalink: getting-started.html
+published: false
+search: exclude
 ---
 
 ## Squadcast Account

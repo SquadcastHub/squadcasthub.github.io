@@ -91,9 +91,9 @@ New rows will auto-populate as you start filling the fields.
 ### FAQs
 
 **Q**: Can I add more than one Account Owner?
-**A**: No, there can be only one Account Owner per account
+<p style="margin-top: -10px;"><b>A</b>: No, there can be only one Account Owner per account</p>
 
 **Q**: How can I transfer ownership?
-**A**: Click on Transfer Ownership beside the name of the current owner to make the changes.
+<p style="margin-top: -10px;"><b>A</b>: Click on Transfer Ownership beside the name of the current owner to make the changes.</p>
 
 ![](images/add_users_9.png)
