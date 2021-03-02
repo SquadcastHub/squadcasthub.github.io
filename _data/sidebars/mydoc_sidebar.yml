@@ -656,10 +656,6 @@ entries:
             url: /docs/squadcast-organizations
             output: web, pdf
 
-          - title: Upgrading to a Paid Plan
-            url: /docs/upgrading-to-a-paid-plan
-            output: web, pdf
-
           - title: Terraform Provider for Squadcast
             url: /docs/terraform-provider-for-squadcast
             output: web, pdf
