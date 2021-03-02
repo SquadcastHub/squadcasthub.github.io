@@ -572,6 +572,10 @@ entries:
         output: web, pdf
 
         folderitems:
+          - title: AWS SSO
+            url: /docs/aws-sso
+            output: web, pdf
+
           - title: Azure Active Directory SSO
             url: /docs/azure-active-directory-sso
             output: web, pdf
