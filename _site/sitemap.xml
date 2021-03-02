@@ -262,14 +262,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/getting-started.html</loc>
-  </url>
-  
-  
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/ghost-inspector</loc>
   </url>
   
@@ -868,12 +860,6 @@
   
   
   
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/upgrading-to-a-paid-plan</loc>
-  </url>
   
   
   

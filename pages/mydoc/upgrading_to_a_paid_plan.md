@@ -7,6 +7,8 @@ summary: "If you love the platform and want to bring in more of your team to mak
 sidebar: mydoc_sidebar
 permalink: docs/upgrading-to-a-paid-plan
 folder: mydoc
+published: false
+search: exclude
 ---
 
 If you're here today, thank you! This is a great validation for our existence as a company. :) 

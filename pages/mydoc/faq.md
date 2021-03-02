@@ -66,9 +66,10 @@ You can reach out to us via the Intercom Chat Widget in the bottom right corner 
 
 No, you do not get billed for when you have deactivated your account. However, if you deactivate your account on a mid-billing period, then you will get billed on a Pro-rata basis for just the active days. 
 
-## 7. How many SMSs and Calls do I get for free in the Free Plan?
+## 7. How many SMS and Calls do I get for free in the Free Plan?
 
 First 200 SMS Free; Post this, $0.1 per SMS
+
 First 200 Calls Free; Post this, $0.2 per Call
 
 {{site.data.alerts.yellow-note-i}}
