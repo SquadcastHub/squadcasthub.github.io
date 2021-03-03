@@ -147,6 +147,17 @@
 
 
 {
+"title": "AWS SSO",
+"tags": "",
+"keywords": "",
+"url": "/docs/aws-sso",
+"summary": "Enable Single Sign-On (SSO) for your Organization with AWS SSO"
+}
+,
+
+
+
+{
 "title": "Azure Active Directory SSO",
 "tags": "ssoazure active directory",
 "keywords": "",
