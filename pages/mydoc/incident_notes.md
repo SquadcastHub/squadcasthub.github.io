@@ -123,7 +123,7 @@ To do so:
 
 - View only starred notes by switching to **Starred Notes** tab
 
-![](images/incident_notes_14.png)
+![](images/incident_notes_14.png){: style="max-width: 70%" }
 
 **(3)** Can I call Stakeholders in the Notes section and notify them?
 

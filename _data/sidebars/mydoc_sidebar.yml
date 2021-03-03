@@ -30,6 +30,9 @@ entries:
             url: /docs/glossary
             output: web, pdf
 
+      - title: FAQs
+        output: web, pdf
+        folderitems:
           - title: FAQs
             url: /docs/squadcast-faq
             output: web, pdf
@@ -666,4 +669,11 @@ entries:
 
           - title: Terraform Provider for Squadcast
             url: /docs/terraform-provider-for-squadcast
+            output: web, pdf
+
+      - title: Billing
+        output: web, pdf
+        folderitems:
+          - title: Billing
+            url: /docs/billing
             output: web, pdf

@@ -279,6 +279,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a title="FAQs" href="#">FAQs</a>
+      <ul>
+          
           
           
           <li><a title="FAQs" href="/docs/squadcast-faq">FAQs</a></li>
@@ -659,7 +668,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Amazon Cloudwatch (AWS)" href="/docs/amazon-cloudwatch-aws">Amazon Cloudwatch (AWS)</a></li>
+          <li><a title="Amazon CloudWatch (AWS)" href="/docs/amazon-cloudwatch-aws">Amazon CloudWatch (AWS)</a></li>
           
           
           
@@ -681,6 +690,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="AWS CloudTrail via CloudWatch" href="/docs/aws-cloudtrail-via-cloudwatch">AWS CloudTrail via CloudWatch</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="AWS Elastic Beanstalk via CloudWatch" href="/docs/aws-elastic-beanstalk-via-cloudwatch">AWS Elastic Beanstalk via CloudWatch</a></li>
           
           
           
@@ -1258,6 +1274,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+          <li><a title="AWS SSO" href="/docs/aws-sso">AWS SSO</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Azure Active Directory SSO" href="/docs/azure-active-directory-sso">Azure Active Directory SSO</a></li>
           
           
@@ -1422,6 +1445,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    </li>
      
       
+  
+  <li>
+      <a title="Billing" href="#">Billing</a>
+      <ul>
+          
+          
+          
+          <li><a title="Billing" href="/docs/billing">Billing</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
       
       <!-- if you aren't using the accordion, uncomment this block:
          <p class="external">
@@ -1513,61 +1552,26 @@ li.sidebarTitle{
 
                 
 
-            <h2 id="downloading-the-mobile-app">Downloading the Mobile App</h2>
-
-<p>The mobile app is available on both App Store and Google Play. Please keep your apps updated at all times for new features and improvements to reflect in your app.</p>
-
-<style>
-table{
-    border: 0px;
-    max-width: 50%
-}
-table > tbody > tr > td{
-    border-top: 0px;
-}
-table > tbody > tr:nth-of-type(odd){
-    background-color: transparent;
-}
-</style>
-
-<table>
-    <tr>
-        <td style="width: 30%"><a href="https://apps.apple.com/app/id1501689101"><img src="images/app_store.png" /></a></td>
-        <td style="width: 32%"><a href="https://play.google.com/store/apps/details?id=com.squadcast.incidents&amp;hl=en"><img src="images/play_store.png" /></a></td>
-    </tr>
-</table>
-
-<h2 id="mobile-app-walkthrough">Mobile App Walkthrough</h2>
-
-<p>You can use the mobile app to Acknowledge, Reassign, take Actions and Resolve from the Mobile App. The Mobile app will walk you into the incident dashboard where you will be able to view incidents from all states; Triggered (Open), Acknowledged (Investigating), Resolved and Suppressed.</p>
+            <p>You can use our mobile app to Acknowledge, Reassign, take Actions, and Resolve from the Mobile App also a view into who is on-call schedules. The Mobile app will walk you into the incident dashboard where you will be able to view incidents organized into incident-status.</p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>
 <b>SSO login now available on Mobile App</b>
 <br /><br /><p>We have enabled SSO login for Mobile Apps as well. Check the <a href="#sso-login-support-for-mobile-apps">SSO login for mobile apps section</a> for more details.</p>
 </div>
 
-<p>You will also be able to view incident specific details like the Automated Incident Timeline and War room on the mobile app.</p>
+<h3 id="incident-list">Incident list</h3>
 
-<p>The screenshots below are from our Android app, and the iOS app is the same in functionality and very similar in design.</p>
-
-<h3 id="incident-management-dashboard">Incident Management Dashboard</h3>
-
-<p>After logging into your account, you can choose the <strong>Organization</strong> whose incidents you want to view.</p>
-
-<p>Once chosen, this will then walk you into the incident dashboard for that <strong>Organization</strong> as seen below.</p>
+<p>Once logged in the app will be navigated to the incident-list view. Incidents are organized according to incident-status. the tabs above list the count for only acknowledged and triggered incidents.</p>
 
 <p><img src="images/using_mobile_1.png" alt="" style="max-width: 30%" /></p>
 
-<p>You can see all the incidents for that particular <strong>Organization</strong> or swipe left to the <strong>YOURS</strong> tab to see all the incidents, irrespective of their state that have been assigned to you.</p>
-
-<p>You can swipe right to go back into the <strong>ALL</strong> tab to see the incidents for the <strong>Organization</strong> again.</p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Incidents Assigned to You</b>
-<br /><br /><p>The <b>ALL</b> tab will be the default dashboard view. You can swipe left to access all the incidents assigned to on the <b>YOURS</b> tab.</p>
-</div>
+<p>The incident list can be assorted into based on time by clicking the filter icon on the top right corner as mentioned below</p>
 
 <p><img src="images/using_mobile_2.png" alt="" style="max-width: 30%" /></p>
+
+<p>Incidents can be searched by clicking on search icon on the top right corner</p>
+
+<p><img src="images/using_mobile_3.png" alt="" style="max-width: 30%" /></p>
 
 <h3 id="unique-sound-for-squadcast-push-notifications">Unique sound for Squadcast push notifications</h3>
 
@@ -1575,111 +1579,72 @@ table > tbody > tr:nth-of-type(odd){
 
 <p>This should ensure that you get alerted on incidents and it doesn’t get lost in the noise of other push notifications</p>
 
-<h3 id="filtering-incidents">Filtering Incidents</h3>
+<h3 id="incident-page">Incident Page</h3>
 
-<p>You can use the <strong>Triggered</strong>, <strong>Acknowledged</strong> or <strong>Resolved</strong> buttons to filter incidents based on Incident states.</p>
-
-<p><img src="images/using_mobile_3.png" alt="" style="max-width: 30%" /></p>
-
-<h3 id="handling-an-incident">Handling an Incident</h3>
-
-<p>Clicking on the Incident from the dashboard will lead you to the <strong>Incident Details</strong> page. This page will hold all the details of the incident, same as shown on the web version.</p>
-
-<p>You can <strong>Acknowledge</strong>, <strong>Reassign</strong>, <strong>Resolve</strong> or <strong>Take Actions</strong> from the incident details page.</p>
+<p>Once on an incident page you can take all the actions that are supported on our web app. The page is categorized into 4 pages based on the incident. Details - the incident details, Timeline - incident timeline, Events - incident events (if the incident has deduped events), Warroom - chat-ops</p>
 
 <p><img src="images/using_mobile_4.png" alt="" style="max-width: 30%" /></p>
 
-<h3 id="taking-actions-from-anywhere">Taking Actions From Anywhere</h3>
-
-<p>You can take actions from anywhere with the mobile app. You can run any and all actions you’ve configured on the web app to resolve an incident as quickly as possible.</p>
+<p>Incident details page enables quick actions (Acknowledge and Resolve), and more options provide reassign and squad actions</p>
 
 <p><img src="images/using_mobile_5.png" alt="" style="max-width: 30%" /></p>
 
-<h3 id="automated-incident-timeline">Automated Incident Timeline</h3>
+<h4 id="timeline">Timeline</h4>
 
-<p>You can swipe left to access the <strong>Incident Timeline</strong> which holds the details of any and all incident activity along with the timestamp. You can click on any link on the timeline to see the status of action taken.</p>
+<p>The incident timeline provides all the recorded logs taken against the action</p>
 
 <p><img src="images/using_mobile_6.png" alt="" style="max-width: 30%" /></p>
 
-<h3 id="war-room">War Room</h3>
+<h4 id="incident-notes">Incident Notes</h4>
 
-<p>Swipe right from <strong>TIMNELINE</strong> to access the <strong>WARROOM</strong>.</p>
+<p>Each incident gets its own chat-ops channel. All the responses will be recorded. Additionally, we can add @ mentions and in a response tapping on a mention will take you to the profile</p>
 
-<p>Adding Users to the <strong>WARROOM</strong>: You can call in users  with the <code class="highlighter-rouge">@&lt;input username&gt;</code> to contribute to an incident resolution.</p>
-
-<p><img src="images/using_mobile_7.png" alt="" style="max-width: 30%" /></p>
-
-<p>Viewing Existing <strong>WARROOM</strong> Members: Click on the <strong>Users</strong> icon at the bottom left corner to view the list of existing members.</p>
-
-<p>Removing Members From the <strong>WARROOM</strong>: Click on the <strong>Users</strong> icon at the bottom left corner to view the list of existing members. You can remove an existing member by clicking the <strong>Red (-)</strong> icon against the user’s name.</p>
-
-<p><img src="images/using_mobile_8.png" alt="" style="max-width: 30%" /></p>
-
-<h2 id="managing-your-account">Managing Your Account</h2>
-
-<p>Click on the <strong>Account</strong> tab from the side bar to view your account details. This will open the default/ configured settings for your account.</p>
-
-<h3 id="add-your-name--contact-number">Add Your Name &amp; Contact Number</h3>
-
-<p>You can click on <strong>Profile Details</strong> to update your name and contact details.</p>
-
-<p><img src="images/using_mobile_9.png" alt="" style="max-width: 30%" /></p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
-<br /><br /><p>Your name &amp; contact details can be seen by everyone in your organization who are on Squadcast from the <b>People</b> tab.</p>
-</div>
+<p><img src="images/incident_notes_12.png" alt="" style="max-width: 30%" /></p>
 
 <h3 id="notification-rules">Notification Rules</h3>
 
-<p>You can configure how you want to receive incident notifications. We support Call, SMS, Email and Push notifications. You can also choose the order in which any of these notifications should come through.</p>
+<p>You can configure how you want to receive incident notifications. We support Call, SMS, Email, and Push notifications. You can also choose the order in which any of these notifications should come through.</p>
 
 <p>You can add as many rules as you see fit.</p>
 
-<p><img src="images/using_mobile_10.png" alt="" style="max-width: 30%" /></p>
+<p><img src="images/using_mobile_8.png" alt="" style="max-width: 30%" /></p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
 <br /><br /><p>If you <b>Acknowledge</b> / <b>Reassign</b> / <b>Resolve</b> an incident, the system understands that the pending notifications can be stopped. So, you will not receive any further notifications for the incident post this unless it has been reassigned to you again.</p>
 </div>
 
-<h2 id="users--call-directory">Users &amp; Call Directory</h2>
+<h3 id="teams">Teams</h3>
 
-<p>You can click on the <strong>People</strong> tab from the sidebar to view all the users in your organization. You will be able to see their <strong>Contact Number</strong>, <strong>Email Address</strong>, <strong>Notification Rules</strong> and all the <strong>Squads</strong> and <strong>Escalation Policies</strong> they are a part of.</p>
+<p>Team lists all the members of the organization. additionally, if the user is on call, there will be a small green dot against the user avatar.</p>
+
+<p><img src="images/using_mobile_9.png" alt="" style="max-width: 30%" /></p>
+
+<p>Navigating to the user will be taken into the user profile. User profile lists all the user info including the user notification rules, schedules escalation-policies and squads</p>
+
+<p><img src="images/using_mobile_10.png" alt="" style="max-width: 30%" /></p>
+
+<h3 id="schedules">Schedules</h3>
+
+<p>Schedules list’s all the schedules organized against date and time, split into time and schedule</p>
 
 <p><img src="images/using_mobile_11.png" alt="" style="max-width: 30%" /></p>
 
-<p><img src="images/using_mobile_12.png" alt="" style="max-width: 30%" /></p>
+<h3 id="sso-login-support-for-mobile-apps">SSO login support for Mobile apps</h3>
 
-<h2 id="schedules-view">Schedules view</h2>
-
-<p>You can select the Schedules by clicking on the Menu icon and then selecting Schedules from the displayed menu.</p>
-
-<p><img src="images/using_mobile_13.jpeg" alt="" style="max-width: 30%" /></p>
-
-<p>Then you can view your organisation schedules directly from the mobile app and find out who is in-call for a given day.</p>
-
-<p><img src="images/using_mobile_14.jpeg" alt="" style="max-width: 30%" /></p>
-
-<h2 id="sso-login-support-for-mobile-apps">SSO login support for Mobile apps</h2>
-
-<p>We have started supporting SSO login for mobile apps from version 2.8.37 onwards. Read below to know hoe to make it work on <a href="#section-android">Android</a> &amp; <a href="#section-i-os">iOS</a>.</p>
+<p>We have started supporting SSO login for mobile apps from version 2.8.37 onwards. Read below to know hoe to make it work on <a href="#android">Android</a> &amp; <a href="#ios">iOS</a>.</p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
-<b>Important Note: </b>
+<b>Important Note</b>
 <br /><br /><p>SSO login for Mobile app works only if you access your SSO dashboard from your web browser. Login using SSO provider apps are not supported due to limitations imposed by the SSO providers.</p>
 </div>
 
 <h3 id="android">Android</h3>
 
 <ol>
-  <li>
-    <p>Open the Squadcast Mobile App</p>
-  </li>
-  <li>
-    <p>Open your mobile browser and login to the SSO dashboard from the mobile browser.</p>
-  </li>
-  <li>
-    <p>Click on the Squadcast logo in your SSO dashboard.</p>
-  </li>
+  <li>Open the Squadcast Mobile App</li>
+  <li>Open your mobile browser and login to the SSO dashboard from the mobile browser.</li>
+  <li>Click on the Squadcast logo in your SSO dashboard.</li>
 </ol>
 
 <p>That’s it, you will be logged in to the mobile app automatically.</p>
@@ -1687,12 +1652,8 @@ table > tbody > tr:nth-of-type(odd){
 <h3 id="ios">iOS</h3>
 
 <ol>
-  <li>
-    <p>Open your mobile browser and login to the SSO dashboard from the mobile browser.</p>
-  </li>
-  <li>
-    <p>Click on the Squadcast logo in your SSO dashboard.</p>
-  </li>
+  <li>Open your mobile browser and login to the SSO dashboard from the mobile browser.</li>
+  <li>Click on the Squadcast logo in your SSO dashboard.</li>
 </ol>
 
 <p>That’s it, you will be logged in to the mobile app automatically.</p>
@@ -1779,7 +1740,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 2, 2021 <br /> -->
+<!--  Site last generated: Mar 3, 2021 <br /> -->
                 </div>
             </div>
             <script>

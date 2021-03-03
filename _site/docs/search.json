@@ -136,6 +136,28 @@
 
 
 {
+"title": "AWS Elastic Beanstalk via CloudWatch",
+"tags": "",
+"keywords": "",
+"url": "/docs/aws-elastic-beanstalk-via-cloudwatch",
+"summary": "Send monitoring alerts to Squadcast from AWS Elastic Beanstalk via Amazon CloudWatch"
+}
+,
+
+
+
+{
+"title": "AWS SSO",
+"tags": "",
+"keywords": "",
+"url": "/docs/aws-sso",
+"summary": "Enable Single Sign-On (SSO) for your Organization with AWS SSO"
+}
+,
+
+
+
+{
 "title": "Azure Active Directory SSO",
 "tags": "ssoazure active directory",
 "keywords": "",
@@ -152,6 +174,17 @@
 "keywords": "",
 "url": "/docs/azure-monitor",
 "summary": "Get alerts from Azure Monitor into Squadcast"
+}
+,
+
+
+
+{
+"title": "Billing",
+"tags": "Getting-Started",
+"keywords": "",
+"url": "/docs/billing",
+"summary": "How does Squadcast Billing work?"
 }
 ,
 
@@ -505,7 +538,7 @@
 "tags": "integrationgoogle hangouts",
 "keywords": "",
 "url": "/docs/hangouts",
-"summary": "Ack, Resolve, Re-assign, Snooze, Escalate - everything from Google Hangouts."
+"summary": "View triggered incidents on Google Hangouts"
 }
 ,
 
