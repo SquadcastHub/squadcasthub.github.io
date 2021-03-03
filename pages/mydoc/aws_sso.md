@@ -9,9 +9,9 @@ permalink: docs/aws-sso
 folder: mydoc
 ---
 
-Users can use their AWS credentials to sign in to Squadcast via Single Sign-On (SSO).
+Users can use their AWS SSO credentials to sign in to Squadcast via Single Sign-On (SSO).
 
-This page describes how to add Squadcast to AWS and configure SSO with SAML 2.0.
+This page describes how to add Squadcast in AWS SSO Dashboard and configure SSO with SAML 2.0.
 
 {{site.data.alerts.blue-note}}
 <b>Points to Note: </b>
@@ -51,7 +51,7 @@ From the sidebar, select **Applications**
 
 ![](images/aws_sso_5.png)
 
-**(6)** Within this modal:
+**(6)** Next:
 - In the *Application Details* section, provide a suitable **Name** and an optional **Description**
 
 ![](images/aws_sso_6_a.png)
@@ -75,9 +75,9 @@ Here, in the placeholders for both **Application ACS URL** and **Application SAM
 **(7)** Back in Squadcast, in the previously opened modal:
 - Paste the copied **AWS SSO sign-in URL** under **SAML 2.0 Endpoint**
 - Copy the contents of the downloaded **AWS SSO certificate** and paste it under **X.509 Certificate**
-- Pick the **Default New User Role** that a newly provisioned user in Squadcast should be assigned as, by default -> this could be either `User`, `Admin` or `Stakeholder`
+- Pick the **Default New User Role** that a newly provisioned user in Squadcast should be assigned as by default. This could be either `User`, `Admin` or `Stakeholder`
 
-    **Note:** If required, then the `User Role` attribute can be modified manually for users later on from the **Users** page in Squadcast
+    **Note:** If required, the `User Role` attribute can be modified manually for users later on from the **Users** page in Squadcast
 - If you want the Account Owner and/or Admins to be able to login to Squadcast using email-password aside from SSO, enable the checkboxes accordingly
 - Click on **Save**
 
