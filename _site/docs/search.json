@@ -136,6 +136,17 @@
 
 
 {
+"title": "AWS Elastic Beanstalk via CloudWatch",
+"tags": "",
+"keywords": "",
+"url": "/docs/aws-elastic-beanstalk-via-cloudwatch",
+"summary": "Send monitoring alerts to Squadcast from AWS Elastic Beanstalk via Amazon CloudWatch"
+}
+,
+
+
+
+{
 "title": "Azure Active Directory SSO",
 "tags": "ssoazure active directory",
 "keywords": "",

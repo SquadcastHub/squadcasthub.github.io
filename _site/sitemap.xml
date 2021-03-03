@@ -80,6 +80,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/aws-elastic-beanstalk-via-cloudwatch</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/azure-active-directory-sso</loc>
   </url>
   
