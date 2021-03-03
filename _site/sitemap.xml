@@ -104,6 +104,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/billing</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/bugsnag</loc>
   </url>
   
