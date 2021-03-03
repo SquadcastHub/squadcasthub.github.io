@@ -17,11 +17,6 @@ Squadcast supports any SAML 2.0 based Single Sign On (SSO) and you can set it fo
 2. Once enabled, only the Account Owner can use *email-password based login* by default although it can be configured to enable email based login for Administrators as well.</p>
 {{site.data.alerts.end}}
 
-{{site.data.alerts.yellow-note-i}}
-<b>Note for Mobile App Users: </b>
-<br/><br/><p>Today, SSO does not work with our mobile applications.</p>
-{{site.data.alerts.end}}
-
 ### Setup Instructions
 
 **(1)** Navigate to the **Extensions** tab from your Squadcast account sidebar and click on **Integrate** under SSO card
