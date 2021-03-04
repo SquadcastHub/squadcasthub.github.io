@@ -33,7 +33,7 @@ If you can see this banner at the top of your Squadcast screen, you will need to
 
 #### 4. How many SMS and Calls do I get for free in the Essential (Free) Plan?
 
-In the Essential Plan, only the first 200 SMS and Calls are free. This is a one-time offering for the whole account. 
+In the Essential Plan, only the first 100 SMS and Calls are free. This is a one-time offering for the whole account. 
 After the free limit is exhausted there will be a charge of $0.1 per SMS and $0.2 per Call.
 
 #### 5. What will happen after I exhaust the free SMS and Phone notifications in the Essential Plan?
