@@ -1690,7 +1690,7 @@ $('#toc').on('click', 'a', function() {
         if (images[i].src.slice(host) != 'squadcast_logo_white.png' && images[i].src.slice(host) != 'company_logo.png' && images[i].parentElement.localName != 'a'){
             var img = images[i].parentElement.innerHTML;
             var src = images[i].src;
-            var lb = "<a href='"+src+"'>"+img+"</a>";
+            var lb = "<a href='"+src+"' style='cursor: zoom-in;'>"+img+"</a>";
             images[i].parentElement.innerHTML = lb;
         }
     }
