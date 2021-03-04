@@ -1677,14 +1677,27 @@ $('#toc').on('click', 'a', function() {
       //Then it is firefox browser
         document.getElementById('mysidebar').style = 'position: relative !important';
     }
-  </script>
+</script>
+
+<script>
+    var images = document.getElementsByTagName('img');
+    var host = document.location.origin.length + 8;
+    for (i = 0; i < images.length; i++){
+        if (images[i].src.slice(host) != 'squadcast_logo_white.png' && images[i].src.slice(host) != 'company_logo.png' && images[i].parentElement.localName != 'a'){
+            var img = images[i].parentElement.innerHTML;
+            var src = images[i].src;
+            var lb = "<a href='"+src+"'>"+img+"</a>";
+            images[i].parentElement.innerHTML = lb;
+        }
+    }
+</script>
 
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 3, 2021 <br /> -->
+<!--  Site last generated: Mar 4, 2021 <br /> -->
                 </div>
             </div>
             <script>

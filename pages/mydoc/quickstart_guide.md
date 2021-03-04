@@ -86,7 +86,7 @@ table > tbody > tr:nth-of-type(odd){
 <table>
     <tr>
         <td style="width: 30%"><a href="https://apps.apple.com/app/id1501689101"><img src="images/app_store.png"></a></td>
-        <td style="width: 32%"><a href="https://play.google.com/store/apps/details?id=com.squadcast.incidents&hl=en"><img src="images/play_store.png"></a></td>
+        <td style="width: 32%"><a href="https://play.google.com/store/apps/details?id=com.squadcast.incidents&hl=en"><img src="images/play_store.png" style="width: 81%; margin-top: 14%"></a></td>
     </tr>
 </table>
 

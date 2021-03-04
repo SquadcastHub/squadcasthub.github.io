@@ -156,6 +156,19 @@ li.sidebarTitle{
       //Then it is firefox browser
         document.getElementById('mysidebar').style = 'position: relative !important';
     }
-  </script>
+</script>
+
+<script>
+    var images = document.getElementsByTagName('img');
+    var host = document.location.origin.length + 8;
+    for (i = 0; i < images.length; i++){
+        if (images[i].src.slice(host) != 'squadcast_logo_white.png' && images[i].src.slice(host) != 'company_logo.png' && images[i].parentElement.localName != 'a'){
+            var img = images[i].parentElement.innerHTML;
+            var src = images[i].src;
+            var lb = "<a href='"+src+"'>"+img+"</a>";
+            images[i].parentElement.innerHTML = lb;
+        }
+    }
+</script>
 
 {% include footer.html %}
