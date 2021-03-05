@@ -132,7 +132,7 @@ Schedules can be used to create on-call schedules based on different time-zones,
 
 🔔 **Check out the Incident Page**
 
-The [Incidents Details](incident-details) page is where engineers can take actions and respond to the triggered incidents. Squadcast provides functionalities like [War Room](warroom), [Incident Timelines](incident-timeline), and [Squadcast Actions](what-are-squadcast-actions).
+The [Incidents Details](incident-details) page is where engineers can take actions and respond to the triggered incidents. Squadcast provides functionalities like [Incident Notes](incident-notes), [Incident Timelines](incident-timeline), and [Squadcast Actions](what-are-squadcast-actions).
 
 👍 **Respond to an Incident**
 
