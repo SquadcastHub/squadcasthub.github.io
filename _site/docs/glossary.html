@@ -77,6 +77,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5ZKZ5FV');</script>
 
 <!-- End Google Tag Manager -->
+
+<!-- Lightbox -->
+
+<link rel="stylesheet" href="/css/lightbox.css">
+<script type="text/javascript" src="/js/lightbox.js"></script>
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -149,7 +154,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <span class="icon-bar"></span>
             </button>
             
-            <a class="navbar-brand" href="../index.html">&nbsp;<span class="projectTitle"> <img src="../images/squadcast_logo_white.png" style="width: 80%; margin-top: -2%;"> </span></a>
+            <a class="navbar-brand" href="../">&nbsp;<span class="projectTitle"> <img src="../images/squadcast_logo_white.png" style="width: 80%; margin-top: -2%;"> </span></a>
             
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -1811,7 +1816,7 @@ Typically, extensions augment your incident management process by connecting wit
 <p>The incident page holds all the details associated with an incident. Each incident will open into an incident page. The page holds 3 main sections:</p>
 <ul>
   <li><strong><a href="incident-details">Incident details</a></strong> - Top of the page</li>
-  <li><strong><a href="warroom">Incident War room</a></strong> - Below the incident details section</li>
+  <li><strong><a href="incident-notes">Incident Notes</a></strong> - Below the incident details section</li>
   <li><strong><a href="incident-timeline">Incident Timeline</a></strong> - Right vertical section of the page</li>
 </ul>
 
@@ -1823,13 +1828,13 @@ Typically, extensions augment your incident management process by connecting wit
   <li>More Actions</li>
 </ul>
 
-<p>Right below is the incident <strong><a href="warroom">war room</a></strong>, a chat interface where you can call in other users for help to collaboratively resolve an incident.</p>
+<p>Right below is the <strong><a href="incident-notes">Incident Notes</a></strong>, a chat interface where you can call in other users for help to collaboratively resolve an incident.</p>
 
 <p>The section on the right is the <strong><a href="incident-timeline">incident timeline</a></strong>, that holds all the activity associated with the incident resolution. This is an automated, realtime data chain that can be downloaded in PDF and MD formats.</p>
 
-<h3 id="war-room">War Room</h3>
-<p><strong><a href="warroom">War room</a></strong> is an incident specific chat room where you can call in your peers and collaboratively resolve an incident. Every person involved in the chat will also receive mobile push notifications if he is not online. You will also be able to sync your slack channel to ensure that any message on slack is on Squadcast and vice versa. 
-This can also be used when an SME or additional support is needed for some inputs during the resolution process but needn’t be an active part of the entire incident resolution. You can add and remove users from the war room once their participation comes to an end.</p>
+<h3 id="incident-notes">Incident Notes</h3>
+<p><strong><a href="incident-notes">Incident Notes</a></strong> is an incident specific chat room where you can call in your peers and collaboratively resolve an incident. Every person involved in the chat will also receive mobile push notifications if he is not online. You will also be able to sync your slack channel to ensure that any message on slack is on Squadcast and vice versa. 
+This can also be used when an SME or additional support is needed for some inputs during the resolution process but needn’t be an active part of the entire incident resolution. You can add and remove users from the room once their participation comes to an end.</p>
 
 <h3 id="incident-timeline">Incident Timeline</h3>
 <p>You can access the <strong><a href="incident-timeline">Incident Timeline</a></strong> by visiting the Incident Details page in the web app and the timeline will be displayed on the right-hand side of the page. The Incident Timeline will display the timeline of the incident in reverse chronological order as to when the incident was first Triggered and Assigned, who Acknowledged it or Re-assigned and who resolved them and when. The incident timeline can be exported in PD and MD formats.</p>
@@ -1953,14 +1958,27 @@ $('#toc').on('click', 'a', function() {
       //Then it is firefox browser
         document.getElementById('mysidebar').style = 'position: relative !important';
     }
-  </script>
+</script>
+
+<script>
+    var images = document.getElementsByTagName('img');
+    var host = document.location.origin.length + 8;
+    for (i = 0; i < images.length; i++){
+        if (images[i].src.slice(host) != 'squadcast_logo_white.png' && images[i].src.slice(host) != 'company_logo.png' && images[i].parentElement.localName != 'a' && window.location.pathname != '/'){
+            var img = images[i].parentElement.innerHTML;
+            var src = images[i].src;
+            var lb = "<a href='"+src+"' style='cursor: zoom-in;'>"+img+"</a>";
+            images[i].parentElement.innerHTML = lb;
+        }
+    }
+</script>
 
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 3, 2021 <br /> -->
+<!--  Site last generated: Mar 5, 2021 <br /> -->
                 </div>
             </div>
             <script>

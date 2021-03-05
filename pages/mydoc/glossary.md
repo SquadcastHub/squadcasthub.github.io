@@ -252,7 +252,7 @@ Typically, extensions augment your incident management process by connecting wit
 ### Incident Page 
 The incident page holds all the details associated with an incident. Each incident will open into an incident page. The page holds 3 main sections: 
 - **[Incident details](incident-details)** - Top of the page
-- **[Incident War room](warroom)** - Below the incident details section
+- **[Incident Notes](incident-notes)** - Below the incident details section
 - **[Incident Timeline](incident-timeline)** - Right vertical section of the page
 
 The **[Incident details](incident-details)** give you context of the incident by holding details such as - the name, description, impacted service, alert source and tag(s) on the top of the page. The page also holds all the actions you can take on the incident: 
@@ -261,13 +261,13 @@ The **[Incident details](incident-details)** give you context of the incident by
 - Resolve 
 - More Actions
 
-Right below is the incident **[war room](warroom)**, a chat interface where you can call in other users for help to collaboratively resolve an incident. 
+Right below is the **[Incident Notes](incident-notes)**, a chat interface where you can call in other users for help to collaboratively resolve an incident. 
 
 The section on the right is the **[incident timeline](incident-timeline)**, that holds all the activity associated with the incident resolution. This is an automated, realtime data chain that can be downloaded in PDF and MD formats. 
 
-### War Room
-**[War room](warroom)** is an incident specific chat room where you can call in your peers and collaboratively resolve an incident. Every person involved in the chat will also receive mobile push notifications if he is not online. You will also be able to sync your slack channel to ensure that any message on slack is on Squadcast and vice versa. 
-This can also be used when an SME or additional support is needed for some inputs during the resolution process but needn't be an active part of the entire incident resolution. You can add and remove users from the war room once their participation comes to an end. 
+### Incident Notes
+**[Incident Notes](incident-notes)** is an incident specific chat room where you can call in your peers and collaboratively resolve an incident. Every person involved in the chat will also receive mobile push notifications if he is not online. You will also be able to sync your slack channel to ensure that any message on slack is on Squadcast and vice versa. 
+This can also be used when an SME or additional support is needed for some inputs during the resolution process but needn't be an active part of the entire incident resolution. You can add and remove users from the room once their participation comes to an end. 
 
 ### Incident Timeline
 You can access the **[Incident Timeline](incident-timeline)** by visiting the Incident Details page in the web app and the timeline will be displayed on the right-hand side of the page. The Incident Timeline will display the timeline of the incident in reverse chronological order as to when the incident was first Triggered and Assigned, who Acknowledged it or Re-assigned and who resolved them and when. The incident timeline can be exported in PD and MD formats. 
