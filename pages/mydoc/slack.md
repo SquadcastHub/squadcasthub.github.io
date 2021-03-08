@@ -15,6 +15,10 @@ We understand that most of your work happens over Slack. You can integrate Squad
 
 Squadcast sends a notification to the configured Slack channel as soon as an incident is triggered. You can easily **Acknowledge** and **Resolve** the populated incidents from within the Slack channel itself.
 
+## Prerequisite
+
+Kindly ensure that the **email address** used with your **user in Slack** and your **user in Squadcast** are the same, if not, the integration will not work as expected.
+
 ### Follow the steps below to integrate Squadcast and Slack
 
 **(1)** From the sidebar, navigate to **Extensions**
