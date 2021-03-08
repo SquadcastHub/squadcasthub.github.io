@@ -611,10 +611,6 @@ entries:
             url: /docs/using-the-mobile-app
             output: web, pdf
 
-          - title: View Schedules on the Mobile App
-            url: /docs/mobile-app-see-who-is-on-call
-            output: web, pdf
-
       - title: Squadcast Actions
         output: web, pdf
 
