@@ -7,6 +7,8 @@ summary: "See who is on-call on the Squadcast Mobile App"
 sidebar: mydoc_sidebar
 permalink: docs/mobile-app-see-who-is-on-call
 folder: mydoc
+search: exclude
+published: false
 ---
 
 You can see any and all schedules created for your organization from within your Squadcast Mobile App. 
