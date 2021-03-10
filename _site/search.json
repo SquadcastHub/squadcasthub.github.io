@@ -246,17 +246,6 @@
 
 
 {
-"title": "CircleCI Actions",
-"tags": "circleci actions",
-"keywords": "",
-"url": "/docs/circleci-actions",
-"summary": "Take CircleCI actions directly from incidents"
-}
-,
-
-
-
-{
 "title": "CircleCI Integration",
 "tags": "integrationcircleci",
 "keywords": "",
