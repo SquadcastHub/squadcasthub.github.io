@@ -72,9 +72,29 @@ You can choose to filter by multiple values, so use the checkbox to select all t
 
 Filter Incidents by *[Tags](event-tagging)*.
 
-You can use the search box to narrow it down or check the relevant ones from the list shown. When you are not filtering by any services, tags across all the services will be displayed. To narrow down your Tags by Service, make sure to apply the Service filter first.
+In order to filter by tags, first select the key and then select the value of the tag you would like to filter by. You can use the search box to narrow down your options.
 
 ![](images/filter_9.png)
+
+![](images/filter_11.png)
+
+When you are not filtering by any services, tags across all the services will be displayed. To narrow down your Tags by Service, make sure to apply the Service filter first.
+
+#### Custom Tags
+
+If you are unable to find the option you want to filter by, then you can create custom tags. In order to do so, enter the custom key / value and click on the `+` icon to add.
+
+![](images/filter_12.png)
+
+![](images/filter_13.png)
+
+#### Delete / Add New Tags
+
+To add a new tag, open the tags filter and click on the `+ new tag` button, and select the key and value of the new tag.
+
+To delete a tag, click on the cross button of the corresponding tag.
+
+![](images/filter_14.png)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Multiple Tag Filters</b><br/><br/>

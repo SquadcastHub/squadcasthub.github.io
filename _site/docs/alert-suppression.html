@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Avoid alert fatigue by setting up suppression rules">
+<meta name="description" content="Avoid alert fatigue by setting up Suppression Rules">
 <meta name="keywords" content="set-up-your-profilemanaging-all-users,  ">
 <title>Alert Suppression | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -43,7 +43,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://support.squadcast.com/feed.xml">
 
 <!-- Fonts (Nunitosans & Opensans) -->
 
@@ -1545,62 +1545,126 @@ li.sidebarTitle{
             <h1 class="post-title-main">Alert Suppression</h1>
         </div>
             
-                <div class="summary">Avoid alert fatigue by setting up suppression rules</div>
+                <div class="summary">Avoid alert fatigue by setting up Suppression Rules</div>
             
 
                 
 
             <p>Alert suppression can help you avoid alert fatigue by suppressing notifications for non-actionable alerts.</p>
 
-<p>Squadcast will suppress the incidents that match any Suppression rules you create. These incidents will go into <code class="highlighter-rouge">Suppressed</code> state and you won’t get any notifications for them.</p>
+<p>Squadcast will suppress the incidents that match any of the Suppression Rules you create for your Services. These incidents will go into the <code class="highlighter-rouge">Suppressed</code> state and you will not get any notifications for them.</p>
 
-<p>These are useful in situations where you’d like to view your all your informational alerts in Squadcast but don’t want to be notified for them.</p>
+<p>These are useful in situations where you would like to <em>view</em> your all your informational alerts in Squadcast but do not want to get notified for them.</p>
 
-<h2 id="creating-a-suppression-rule">Creating a Suppression rule</h2>
-
-<p>For each service, you can define your suppression rules.</p>
-
-<p>You can set this up by going to <a href="https://app.squadcast.com">your Squadcast account</a></p>
-<ul>
-  <li>Go to the relevant service</li>
-  <li>Click on the options dropdown</li>
-  <li>Choose “Suppression Rules”</li>
-</ul>
-
-<p><img src="images/alert-suppression_1.png" alt="" /></p>
+<h2 id="prerequisites">Prerequisites</h2>
 
 <ul>
-  <li>Choose Alert Source from the Dropdown</li>
+  <li>Only the Account Owner and Admins have Create, Read, Update and Delete capabilities for Suppression Rules</li>
+  <li>First, integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast</li>
 </ul>
 
-<p><img src="images/alert-suppression_2.png" alt="" /></p>
+<h2 id="creating-suppression-rules">Creating Suppression Rules</h2>
 
-<ul>
-  <li>Click on <strong>Add new rule</strong> to start configuring a rule</li>
-</ul>
+<p><strong>(1)</strong> Navigate to <strong>Services</strong> from the sidebar</p>
 
-<p><img src="images/alert-suppression_3.png" alt="" /></p>
+<p><strong>(2)</strong> Select a Service and click on the <strong>More</strong> option</p>
 
-<p>By default, when a new rule is being created, a user is prompted to use the <em>drop-down blocks</em> for convenience. As you build the expression from these drop-downs, you can also see the corresponding suppression expression <em>raw string</em> being auto-added for the same.</p>
+<p><strong>(3)</strong> Click on <strong>Suppression Rules</strong></p>
 
-<p>The drop-down blocks are beginner friendly for sure, but they aren’t as flexible as raw string method.
-If you want more flexibility while building your expressions, you may opt anytime to switch to use the raw string mode by clicking the edit button as shown.</p>
+<p><img src="images/alert_suppression_1_new.png" alt="" /></p>
 
-<p><img src="images/alert-suppression_4.png" alt="" /></p>
+<p><strong>(4)</strong> Select an <strong>Alert Source</strong> from the drop-down</p>
+
+<p><strong>(5)</strong> Click on <strong>Add new rule</strong></p>
+
+<p><img src="images/alert_suppression_2_new.png" alt="" /></p>
+
+<p><strong>(6)</strong> Suppression Rules can be added in two different ways:</p>
+
+<h3 id="a-ui-based-rule-builder-beginner-friendly">(A) UI-based Rule Builder (Beginner-friendly)</h3>
+
+<p>(a) On the right, you can view the <em>payload of the <strong>latest</strong> alert</em> for the chosen Alert Source</p>
+
+<p>(b) The drop-downs in the Rule Builder contain values from the payload on the right. You can use them to easily create your Suppression Rules. As you build the expression from these drop-downs, you can also see the corresponding <em>raw string</em> being auto-populated for the same under <strong>String Expression</strong>.</p>
+
+<p><img src="images/alert_suppression_3_new.png" alt="" /></p>
+
+<p>(c) You can add more than 1 condition for a rule by selecting <strong>Add Condition</strong> (a logical AND is performed between all the conditions -&gt; the entire Suppression Rule will evaluate to <code class="highlighter-rouge">True</code> only if all the conditions evaluate to <code class="highlighter-rouge">True</code>)</p>
+
+<p><img src="images/alert_suppression_4_new.png" alt="" /></p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
 <b>Note:</b>
-<br /><br /><p>1. You will have the option to choose either the  *drop-down block* mode or the *raw-string*  for every rule you create. <br /><br />
-2. Once you opt for the raw-string method, you can't revert back to the drop-down blocks for that specific rule. You can delete the rule and create a new one to have the option to use the drop-down blocks.<br /><br />
-3. The drop-down blocks only support logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operator between 2 expressions. If you want to have a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">OR</code> operation between 2 expressions, then you would have to create a new tagging rule instead and have the copy over the same tags for the other rule.</p>
+<br /><p>The drop-down blocks only support logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operator between 2 expressions. If you want to have a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">OR</code> operation between 2 expressions, then you would have to create a new Suppression Rule.</p>
 </div>
 
-<p>You can add as many Suppression Rules as you want for a service.</p>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Comparison Operators within Suppression Rules</b>
+<br /><br /><p>You can also leverage comparison operators such as <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">==, &lt;, &lt;=, &gt;, &gt;=</code> within your rules using the drop-down blocks, when the parameter you are evaluating against, is a <b>numerical value from the payload</b> to reduce alert noise.
+<img src="images/alert_suppression_7_new.png" /></p>
+</div>
 
-<p><img src="images/alert-suppression_5.png" alt="" /></p>
+<h3 id="b-raw-string-method">(B) Raw String Method</h3>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Important</b>
+<br /><p>Once you opt for the Raw String method, you cannot revert to the UI-based Rule Builder method.</p>
+</div>
+
+<p>(a) On the right, you can view the payload of the latest alert for the chosen Alert Source</p>
+
+<p>(b) Click on <strong>Edit</strong> to enable Raw String method</p>
+
+<p><img src="images/alert_suppression_5_new.png" alt="" /></p>
+
+<p>(c) Write your custom Suppression Rule expression</p>
+
+<h3 id="syntax-for-writing-rules-the-rule-engine-supports-expressions-with-parameters-arithmetic-logical-and-string-operations">Syntax for writing rules: The rule engine supports expressions with parameters, arithmetic, logical, and string operations</h3>
+
+<p>The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this <a href="https://regex101.com/">link</a> to get an idea of all the expression types accepted in Squadcast.</p>
+
+<h4 id="basic-expressions">Basic Expressions</h4>
+
+<p><code class="highlighter-rouge">10 &gt; 0</code>, <code class="highlighter-rouge">1+2</code>, <code class="highlighter-rouge">100/3</code></p>
+
+<h4 id="parameterized-expressions">Parameterized Expressions</h4>
+
+<p><code class="highlighter-rouge">payload.metric == "disk"</code>
+      The available parameters are <code class="highlighter-rouge">payload</code>
+            <code class="highlighter-rouge">payload</code> : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source 
+            <code class="highlighter-rouge">incident_details</code>: This contains the content of <code class="highlighter-rouge">message</code> and <code class="highlighter-rouge">description</code> of the incoming event
+            <code class="highlighter-rouge">source</code>: This denotes the associated alert source for the current/incoming event</p>
+
+<h4 id="regular-expressions">Regular Expressions</h4>
+
+<p><code class="highlighter-rouge">re(payload.metric, "disk.*")</code></p>
+
+<h4 id="parse-json-content-within-the-payload-using-jsonpath-to-add-a-tag">Parse JSON content within the payload using <code class="highlighter-rouge">jsonPath</code> to add a tag</h4>
+
+<p><strong>General Format</strong> 
+<code class="highlighter-rouge">jsonPath(&lt;the JSON string that should be parsed for JSON content&gt;, &lt;"the parameter that needs to be picked from the parsed JSON object"&gt;)</code></p>
+
+<p><strong>Example</strong></p>
+
+<p>Below is an example payload:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
+      </span><span class="s2">"Type"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Notification"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"MessageId"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"5966c484-5b37-58df"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"TopicArn"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"arn:aws:sns:us-east-1:51:Test"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Message"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"{</span><span class="se">\"</span><span class="s2">AlarmName</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">Squadcast Testing - Ignore</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">AlarmDescription</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">Created from EC2 Console</span><span class="se">\"</span><span class="s2">}"</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">jsonPath</span><span class="p">(</span><span class="nx">payload</span><span class="p">.</span><span class="nx">Message</span><span class="p">,</span> <span class="s2">"AlarmName"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This will pick out the value <code class="highlighter-rouge">AlarmName</code> from the Message object in the payload based on which, you can suppress the incident.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Multiple Alert Sources:</b>
+<b>Multiple Alert Sources</b>
 <br /><br /><p>We can see alert payloads of past events from different alert sources for the service by selecting the respective alert source from the dropdown in the right-half side.
 <br /><br />
 Since the payload format is fixed for a given alert source, it is usually preferrable to have suppression rules on a per-alert source basis. This can be done by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.
@@ -1608,27 +1672,9 @@ Since the payload format is fixed for a given alert source, it is usually prefer
 For example, if you want to have a suppression rule for a service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'jira-plugin' &amp;&amp; (&lt;your_suppression_rule&gt;)</code></p>
 </div>
 
-<h2 id="syntax-for-writing-rules-for-raw-string-method">Syntax for Writing Rules (For Raw String method)</h2>
+<h3 id="example">Example</h3>
 
-<p>The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this <a href="https://regex101.com/">link</a> to get an idea of all the expression types accepted in Squadcast.</p>
-<ul>
-  <li>Basic expression: <code class="highlighter-rouge">10 &gt; 0</code>, <code class="highlighter-rouge">1+2</code>, <code class="highlighter-rouge">100/3</code></li>
-  <li>Parameterized expression: <code class="highlighter-rouge">payload.metric == "disk"</code>
- The available parameters are <code class="highlighter-rouge">payload</code>, <code class="highlighter-rouge">incident_details</code>, <code class="highlighter-rouge">source</code>
-    <ul>
-      <li><code class="highlighter-rouge">payload</code> : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source.</li>
-      <li><code class="highlighter-rouge">incident_details</code>: This contains the content of <code class="highlighter-rouge">message</code> and <code class="highlighter-rouge">description</code> of the incoming event.</li>
-      <li><code class="highlighter-rouge">source</code>: This denotes the associated alert source for the current / incoming event.</li>
-    </ul>
-  </li>
-  <li>Regular expression: <code class="highlighter-rouge">re(payload.metric, "disk.*")</code></li>
-  <li>Parsing JSON content: <code class="highlighter-rouge">jsonPath(payload.message, "a.b.c")</code>
-   This can be used to parse JSON formatted strings and get the <code class="highlighter-rouge">jsonPath</code> from the resulting JSON object.</li>
-</ul>
-
-<h2 id="example">Example</h2>
-
-<p>For a sample content shown in the right panel of the configuration space</p>
+<p>Below is an example payload for demonstration:</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -1652,23 +1698,26 @@ For example, if you want to have a suppression rule for a service, only for aler
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p>Suppress any incoming alert if,</p>
+<p>To suppress any incoming alert when:</p>
 <ul>
-  <li>The incident message contains: <code class="highlighter-rouge">[Bug]</code></li>
-  <li>The alert source is jira-plugin
-<strong>Rule</strong>
-<code class="highlighter-rouge">re(payload.incident_details.message, "[Bug]") &amp;&amp; source == "jira-plugin"</code></li>
+  <li>The alert message contains: <code class="highlighter-rouge">[Bug]</code></li>
+  <li>The alert source is <code class="highlighter-rouge">jira-plugin</code></li>
 </ul>
 
-<h2 id="viewing-suppressed-alerts">Viewing Suppressed Alerts</h2>
+<p><strong>Suppression Rule:</strong></p>
 
-<p>You can view Suppressed incidents on the Incident List page by clicking on All Incidents and choosing <strong>Suppressed</strong> as highlighted in the screenshot below.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">re</span><span class="p">(</span><span class="nx">payload</span><span class="p">.</span><span class="nx">incident_details</span><span class="p">.</span><span class="nx">message</span><span class="p">,</span> <span class="s2">"[Bug]"</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">source</span> <span class="o">==</span> <span class="s2">"jira-plugin"</span>
+</code></pre></div></div>
 
-<p><img src="images/alert-suppression_6.png" alt="" /></p>
+<h2 id="viewing-suppressed-incidents">Viewing Suppressed Incidents</h2>
+
+<p>You can view <code class="highlighter-rouge">suppressed</code> incidents in the <a href="https://support.squadcast.com/docs/incident-list-table-view">Incident List</a> page by clicking on <strong>All Incidents</strong> and choosing <strong>Suppressed</strong> as highlighted in the screenshot below.</p>
+
+<p><img src="images/alert_suppression_6_new.png" alt="" /></p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note:</b>
-<br /><br /><p><ul><li>Suppressed and Resolved are the final states for incidents in Squadcast. You will not be able to take any action on incidents in these states.</li>
+<b>Note</b>
+<br /><p><ul><li><code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Suppressed</code> and <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Resolved</code> are the final states for incidents in Squadcast. You will not be able to take any action on incidents that are in these states.</li>
 <li>Incident information will be available on the Squadcast platform even if they are suppressed.</li></ul></p>
 </div>
 
@@ -1775,7 +1824,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 9, 2021 <br /> -->
+<!--  Site last generated: Mar 10, 2021 <br /> -->
                 </div>
             </div>
             <script>
