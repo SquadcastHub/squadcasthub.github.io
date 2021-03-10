@@ -17,14 +17,6 @@ You can use this to:
 - Use it to store Notes that can be populated in the Postmortem report
 - Share Organization-wide information like resolution reason, Follow-up Tasks, etc.
 
-{{site.data.alerts.blue-note}}
-<b>Prerequisite</b>
-<br/><br/>
-<p>
-Click on Profile > Previews > Enable to switch to the new Incident Details view.
-</p>
-{{site.data.alerts.end}}
-
 ## To get started
 
 **(1)** Click on **Incident List** or the **Dashboard** from the sidebar
