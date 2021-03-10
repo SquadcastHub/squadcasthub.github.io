@@ -619,10 +619,6 @@ entries:
             url: /docs/what-are-squadcast-actions
             output: web, pdf
 
-          - title: CircleCI Actions
-            url: /docs/circleci-actions
-            output: web, pdf
-
           - title: Squadcast Runbooks (Deprecated)
             url: /docs/squadcast-runbooks
             output: web, pdf

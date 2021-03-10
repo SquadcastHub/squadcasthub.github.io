@@ -56,7 +56,7 @@ Sometimes, the incidents can be in a Suppressed state - this happens when the al
 **(i)** Ability to:
 - Acknowledge
 - Reassign to a User, Squad or an Escalation Policy
-- Action to create JIRA tickets or take actions via [Circle CI](circleci-actions)
+- Action to create JIRA tickets or take actions via [Circle CI](circleci-integration)
 - Resolve
 
 **(j)** [Update Status Page](statuspage#updating-your-statuspage)

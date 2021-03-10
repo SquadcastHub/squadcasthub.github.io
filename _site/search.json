@@ -41,7 +41,7 @@
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/alert-suppression",
-"summary": "Avoid alert fatigue by setting up suppression rules"
+"summary": "Avoid alert fatigue by setting up Suppression Rules"
 }
 ,
 
@@ -240,17 +240,6 @@
 "keywords": "",
 "url": "/docs/checkmk",
 "summary": "Get Alerts from Checkmk into Squadcast"
-}
-,
-
-
-
-{
-"title": "CircleCI Actions",
-"tags": "circleci actions",
-"keywords": "",
-"url": "/docs/circleci-actions",
-"summary": "Take CircleCI actions directly from incidents"
 }
 ,
 

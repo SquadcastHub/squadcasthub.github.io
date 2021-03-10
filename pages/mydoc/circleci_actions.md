@@ -7,6 +7,8 @@ summary: "Take CircleCI actions directly from incidents"
 sidebar: mydoc_sidebar
 permalink: docs/circleci-actions
 folder: mydoc
+published: false
+search: exclude
 ---
 
 Squadcast supports actions such as Rebuilding CircleCI projects directly from the incident page directly by clicking on the **More Actions** button.

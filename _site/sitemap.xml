@@ -140,12 +140,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/circleci-actions</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/circleci-integration</loc>
   </url>
   
