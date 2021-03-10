@@ -22,11 +22,11 @@ Event Tagging can be achieved by defining Tagging Rules for each Service in Squa
 
 ## Create Tagging Rules 
 
-**(1)** Navigate to Services from the sidebar
+**(1)** Navigate to **Services** from the sidebar
 
-**(2)** Select a Service and click on the **More** option
+**(2)** Select a **Service** and click on the **More** option
 
-**(3)** Click on Tagging Rules
+**(3)** Click on **Tagging Rules**
 
 ![](images/tagging_1.png)
 
@@ -74,17 +74,17 @@ Event Tagging can be achieved by defining Tagging Rules for each Service in Squa
 
 ### The rule engine supports expressions with parameters, arithmetic, logical, and string operations
 
-- #### Basic Expressions
+#### Basic Expressions
 
    `10 > 0`, `1+2`, `100/3`
 
-- #### Parameterized Expressions
+#### Parameterized Expressions
 
    `payload.metric == "disk"`
       The available parameters are `payload`
             `payload` : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source 
 
-- #### Regular Expressions
+#### Regular Expressions
 
    `re(payload.metric, "disk.*")`
 
