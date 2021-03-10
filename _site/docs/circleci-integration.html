@@ -1353,13 +1353,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="CircleCI Actions" href="/docs/circleci-actions">CircleCI Actions</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Squadcast Runbooks (Deprecated)" href="/docs/squadcast-runbooks">Squadcast Runbooks (Deprecated)</a></li>
           
           
@@ -1550,25 +1543,91 @@ li.sidebarTitle{
 
                 
 
-            <p>In order to perform CircleCI actions like Build or Re-Build directly from Squadcast, you need to Integrate CircleCI with Squadcast.</p>
+            <h2 id="circleci-actions">CircleCI Actions</h2>
 
-<p>To complete this integration, follow the below steps.</p>
+<p><a href="https://circleci.com/">CircleCI</a> is a modern continuous integration and continuous delivery (CI/CD) platform. CircleCI automates build, test, and deployment of software.</p>
 
-<p>Go to User settings in your CircleCI dashboard and create a new Personal API token and enter a name for the token like Squadcast.</p>
+<p>Squadcast’s <strong>Extension</strong> with CircleCI enables you to rebuild projects from within the Squadcast platform.</p>
 
-<p><img src="images/circleci_1.png" alt="" /></p>
+<p>This is primarily helpful in a situation where you want to quickly mitigate a <em>customer experience</em> issue by rolling back to an older successful build.</p>
 
-<p>Then click next to generate the API token and copy it.</p>
+<h3 id="prerequisite">Prerequisite</h3>
 
-<p><img src="images/circleci_2.png" alt="" /></p>
+<p>Only Account Owners and Admins have permission to enable or disable Extensions in Squadcast</p>
 
-<p>In Squadcast Integrations page, click the Integrate button under CircleCI and enter the API key obtained from above and click save.</p>
+<h3 id="enabling-your-circleci-extension">Enabling your CircleCI Extension</h3>
 
-<p><img src="images/circleci_3.png" alt="" /></p>
+<p><strong>(1)</strong> Navigate to the <strong>Extensions</strong> page from the left navigation sidebar</p>
 
-<p><img src="images/circleci_4.png" alt="" /></p>
+<p><strong>(2)</strong> Move over to the CircleCI extension and click on <strong>Integrate</strong></p>
 
-<p>Your CircleCI integration is good to go and you will be able to perform CircleCI actions directly from any incident.</p>
+<p><img src="images/circle_ci_actions_1.png" alt="" /></p>
+
+<p><strong>(3)</strong> In your CircleCI dashboard, move over to <strong>User Settings</strong></p>
+
+<p><img src="images/circle_ci_actions_2.png" alt="" /></p>
+
+<p><strong>(4)</strong> Click on <strong>Personal API Tokens</strong> and then, <strong>Create New Token</strong> to create a new API token for Squadcast</p>
+
+<p><img src="images/circle_ci_actions_3.png" alt="" /></p>
+
+<p><strong>(5)</strong> Use a meaningful name for the token like “Squadcast” or “Squadcast Incidents”. Click on <strong>Add API Token</strong> to save and view the API Token</p>
+
+<p><img src="images/circle_ci_actions_4.png" alt="" /></p>
+
+<p><img src="images/circle_ci_actions_5.png" alt="" /></p>
+
+<p><strong>(6)</strong> Copy the API Token shown in the CircleCI screen</p>
+
+<p><img src="images/circle_ci_actions_6.png" alt="" /></p>
+
+<p><strong>(7)</strong> Paste the copied API Token in the Squadcast CircleCI extension screen and click on <strong>Save</strong> to enable your CircleCI integration</p>
+
+<p><img src="images/circle_ci_actions_7.png" alt="" /></p>
+
+<p>Your CircleCI integration is good to go and you will be able to perform CircleCI actions directly for any incident.</p>
+
+<p><img src="images/circle_ci_actions_8.png" alt="" /></p>
+
+<h3 id="using-circleci-actions">Using CircleCI Actions</h3>
+
+<p>Now that your CircleCI extension is enabled, follow the steps below to understand how to take CircleCI actions from within Squadcast.</p>
+
+<p><strong>(1)</strong> Navigate to the <a href="incident-details">Incident Details</a> page of an incident for which you want to take the CircleCI action. In this example, we’re choosing the incident below to demonstrate.</p>
+
+<p><strong>(2)</strong> Click on <strong>Actions</strong> to see a list of allowed/enabled actions for your Organization</p>
+
+<p><img src="images/circle_ci_actions_9.png" alt="" /></p>
+
+<p><strong>(3)</strong> Select <strong>CircleCI</strong> from the list of allowed/enabled actions</p>
+
+<p><img src="images/circle_ci_actions_10.png" alt="" /></p>
+
+<p><img src="images/circle_ci_actions_11.png" alt="" /></p>
+
+<p><strong>(4)</strong> Click on <strong>Rebuild</strong>  from the <strong>Actions</strong> to see a list of projects you can take this action on</p>
+
+<p><img src="images/circle_ci_actions_12.png" alt="" /></p>
+
+<p><strong>(5)</strong> Click on a <strong>Project</strong> of your choice and the <strong>Build</strong> you want to rollback to</p>
+
+<p><img src="images/circle_ci_actions_13.png" alt="" /></p>
+
+<p><img src="images/circle_ci_actions_14.png" alt="" /></p>
+
+<p><strong>(6)</strong> Click the <strong>Rebuild</strong> button to trigger the build again and you can see the link to the CircleCI build in the resulting screen.</p>
+
+<p><img src="images/circle_ci_actions_15.png" alt="" /></p>
+
+<p><img src="images/circle_ci_actions_16.png" alt="" /></p>
+
+<p>You will also be able to see the actions performed in the <strong>Incident Activity Timeline</strong> on the right.</p>
+
+<p><img src="images/circle_ci_actions_17.png" alt="" /></p>
+
+<p>The link will take you straight to the CircleCI <strong>Jobs View</strong> screen showing the result of the triggered build action.</p>
+
+<p><img src="images/circle_ci_actions_18.png" alt="" /></p>
 
 
                 <!--div class="tags">
