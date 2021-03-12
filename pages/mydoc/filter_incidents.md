@@ -76,26 +76,6 @@ In order to filter by **Tags**, first select the `key` and then select the `valu
 
 ![](images/filter_9.png)
 
-![](images/filter_11.png)
-
-When you are not filtering by any **Services**, tags across all the **Services** will be displayed. To narrow down your **Tags** by **Service**, make sure to apply the **Service** filter first.
-
-#### Search for Custom Tags
-
-If you are unable to find the option you want to filter by, then you can input custom values for **Tag** search. In order to do so, enter the custom `key` / `value` and click on the `+` icon to add the custom **Tag** filter.
-
-![](images/filter_12.png)
-
-![](images/filter_13.png)
-
-#### Add / Delete Multiple Tag Filters
-
-To add a new **Tag** filter, open the tags filter and click on the `+ new tag` button, and select the `key` and `value` of the new **Tag**.
-
-To delete a **Tag** filter, click on the cross button of the corresponding **Tag**.
-
-![](images/filter_14.png)
-
 {{site.data.alerts.yellow-note-i}}
 <b>Multiple Tag Filters</b><br/><br/>
 <p>Choosing multiple <b>Tag</b> values will serve as a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operation. Should you want to see the list of incidents for each <b>Tag</b>, make sure to do so in multiple steps.</p>
