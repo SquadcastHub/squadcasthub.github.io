@@ -72,13 +72,33 @@ You can choose to filter by multiple values, so use the checkbox to select all t
 
 Filter Incidents by *[Tags](event-tagging)*.
 
-You can use the search box to narrow it down or check the relevant ones from the list shown. When you are not filtering by any services, tags across all the services will be displayed. To narrow down your Tags by Service, make sure to apply the Service filter first.
+In order to filter by **Tags**, first select the `key` and then select the `value` of the **Tag** you would like to filter by. You can use the search box to narrow down your options.
 
 ![](images/filter_9.png)
 
+![](images/filter_11.png)
+
+When you are not filtering by any **Services**, tags across all the **Services** will be displayed. To narrow down your **Tags** by **Service**, make sure to apply the **Service** filter first.
+
+#### Search for Custom Tags
+
+If you are unable to find the option you want to filter by, then you can input custom values for **Tag** search. In order to do so, enter the custom `key` / `value` and click on the `+` icon to add the custom **Tag** filter.
+
+![](images/filter_12.png)
+
+![](images/filter_13.png)
+
+#### Add / Delete Multiple Tag Filters
+
+To add a new **Tag** filter, open the tags filter and click on the `+ new tag` button, and select the `key` and `value` of the new **Tag**.
+
+To delete a **Tag** filter, click on the cross button of the corresponding **Tag**.
+
+![](images/filter_14.png)
+
 {{site.data.alerts.yellow-note-i}}
 <b>Multiple Tag Filters</b><br/><br/>
-<p>Choosing multiple Tag values will serve as a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operation. Should you want to see the list of incidents for each tag, make sure to do so in multiple steps.</p>
+<p>Choosing multiple <b>Tag</b> values will serve as a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operation. Should you want to see the list of incidents for each <b>Tag</b>, make sure to do so in multiple steps.</p>
 {{site.data.alerts.end}}
 
 ### Status
