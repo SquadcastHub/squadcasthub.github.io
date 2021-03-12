@@ -4,8 +4,7 @@ tags: [set-up-your-profile, managing-all-users]
 keywords: 
 last_updated: 
 datatable: 
-summary: "Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + K</code> for search. Search also supports GOTO for instant navigation. GOTO can be accessed directly with <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + SHIFT + K</code>.
-(use CTRL for windows and CMD as meta keys for mac)."
+summary: "Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + K</code> for search. Search also supports GOTO for instant navigation. GOTO can be accessed directly with <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + SHIFT + K</code>. (use CTRL for windows and CMD as meta keys for mac)."
 sidebar: mydoc_sidebar
 permalink: docs/squadcast-search
 folder: mydoc
@@ -45,7 +44,7 @@ We support a set of tokens to fine-tune the results. Supported tokens can be vie
 
 ![](images/search_6.png)
 
-You can search for Postmortems through Incident Number, Incident Message and Description, Impacted Service, Created After, Created Before and Postmortem Content. 
+You can search for Postmortems through Incident Message and Description, Impacted Service, Created After, Created Before and Postmortem Content.
 
 {{site.data.alerts.blue-note}}
 <b>Note: The <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>message</code> query</b>

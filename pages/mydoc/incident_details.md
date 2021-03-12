@@ -19,7 +19,12 @@ folder: mydoc
 
 **(2)** By clicking on any incident, you will be taken to its dedicated incident page which shows all the details of the incident. You can see:
 
-**(a)** Incident Number, Message on the top
+**(a)** Incident ID, and Incident Message
+
+{{site.data.alerts.blue-note}}
+<b>Copy Incident URL</b>
+<br/><br/><p>The copy button beside Incident ID copies the Incident URL to the clipboard</p>
+{{site.data.alerts.end}}
 
 **(b)** Associated Tags below the Message. Tags can also be added/updated here
 
@@ -30,7 +35,7 @@ folder: mydoc
 #### Triggered
 When an incident is open, it will be in the Triggered state. Concerned users will get notified when an incident is in Triggered state. It will remain in this state until someone acknowledges it.
 
-![](images/incident_2.png)
+![](images/ .png)
 
 #### Acknowledged
 Incident shifts from Triggered to Acknowledged state when any user acknowledges it. The user can now look into the incident and try to solve it. If the incident is reassigned or escalated to another user, it will go back to a triggered state, until the new user takes responsibility for it and acknowledges the incident.

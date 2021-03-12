@@ -18,7 +18,7 @@ You can use our mobile app to Acknowledge, Reassign, take Actions, and Resolve f
 
 ### Incident list
 
-Once logged in the app will be navigated to the incident-list view. Incidents are organized according to incident-status. the tabs above list the count for only acknowledged and triggered incidents.
+Once logged in the app will be navigated to the incident-list view. Incidents are organized according to incident-status. The tabs above list the count for only acknowledged and triggered incidents.
 
 ![](images/using_mobile_1.png){: style="max-width: 30%" }
 
@@ -38,7 +38,7 @@ This should ensure that you get alerted on incidents and it doesn't get lost in 
 
 ### Incident Page
 
-Once on an incident page you can take all the actions that are supported on our web app. The page is categorized into 4 pages based on the incident. Details - the incident details, Timeline - incident timeline, Events - incident events (if the incident has deduped events), Warroom - chat-ops
+On an incident page you can take all the actions that are supported on our web app. The page is categorized into 4 pages based on the incident. Details - the incident details, Timeline - incident timeline, Events - incident events (if the incident has deduped events), Incident Notes
 
 ![](images/using_mobile_4.png){: style="max-width: 30%" }
 
@@ -54,7 +54,7 @@ The incident timeline provides all the recorded logs taken against the action
 
 #### Incident Notes
 
-Each incident gets its own chat-ops channel. All the responses will be recorded. Additionally, we can add @ mentions and in a response tapping on a mention will take you to the profile
+Each incident gets its own notes section. One can @mention users and invite them to collaborate and resolve the incident. 
 
 ![](images/incident_notes_12.png){: style="max-width: 30%" }
 
@@ -73,23 +73,23 @@ You can add as many rules as you see fit.
 
 ### Teams
 
-Team lists all the members of the organization. additionally, if the user is on call, there will be a small green dot against the user avatar. 
+Team lists all the members of the organization. Additionally, if the user is on call, there will be a small green dot against the user avatar. 
 
 ![](images/using_mobile_9.png){: style="max-width: 30%" }
 
-Navigating to the user will be taken into the user profile. User profile lists all the user info including the user notification rules, schedules escalation-policies and squads
+Navigating to the user will be taken into the user profile. User profile lists all the user info including the user notification rules, schedules escalation-policies and squads.
 
 ![](images/using_mobile_10.png){: style="max-width: 30%" }
 
 ### Schedules
 
-Schedules list's all the schedules organized against date and time, split into time and schedule
+Schedules list’s all the schedules organized against date and time.
 
 ![](images/using_mobile_11.png){: style="max-width: 30%" }
 
 ### SSO login support for Mobile apps
 
-We have started supporting SSO login for mobile apps from version 2.8.37 onwards. Read below to know hoe to make it work on [Android](#android) & [iOS](#ios).
+We have started supporting SSO login for mobile apps from version 2.8.37 onwards. Read below to know how to make it work on [Android](#android) & [iOS](#ios).
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important Note</b>

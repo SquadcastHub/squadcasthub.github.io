@@ -81,7 +81,8 @@ Learn more about each filter value [here](filter-incidents).
 {{site.data.alerts.end}}
 
 **(2)** The exported CSV file will have the following fields:
-- Number
+
+- ID
 - Title
 - Description
 - Status
