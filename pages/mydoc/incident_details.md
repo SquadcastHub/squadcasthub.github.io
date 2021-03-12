@@ -35,7 +35,7 @@ folder: mydoc
 #### Triggered
 When an incident is open, it will be in the Triggered state. Concerned users will get notified when an incident is in Triggered state. It will remain in this state until someone acknowledges it.
 
-![](images/ .png)
+![](images/incident_2.png)
 
 #### Acknowledged
 Incident shifts from Triggered to Acknowledged state when any user acknowledges it. The user can now look into the incident and try to solve it. If the incident is reassigned or escalated to another user, it will go back to a triggered state, until the new user takes responsibility for it and acknowledges the incident.
