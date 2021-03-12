@@ -77,7 +77,7 @@ Team lists all the members of the organization. Additionally, if the user is on 
 
 ![](images/using_mobile_9.png){: style="max-width: 30%" }
 
-Navigating to the user will be taken into the user profile. User profile lists all the user info including the user notification rules, schedules escalation-policies and squads.
+Navigating to the user will take you into the user profile. User profile lists all the user info including the user's **Notification Rules**, **Schedules**, **Escalation Policies** and **Squads**.
 
 ![](images/using_mobile_10.png){: style="max-width: 30%" }
 
