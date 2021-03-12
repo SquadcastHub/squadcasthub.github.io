@@ -83,7 +83,7 @@ Navigating to the user will be taken into the user profile. User profile lists a
 
 ### Schedules
 
-Schedules list’s all the schedules organized against date and time.
+Schedules lists all the schedules organized against date and time.
 
 ![](images/using_mobile_11.png){: style="max-width: 30%" }
 
