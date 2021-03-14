@@ -181,3 +181,15 @@ You can view `suppressed` incidents in the [Incident List](https://support.squad
 <br/><p><ul><li><code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Suppressed</code> and <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Resolved</code> are the final states for incidents in Squadcast. You will not be able to take any action on incidents that are in these states.</li>
 <li>Incident information will be available on the Squadcast platform even if they are suppressed.</li></ul></p>
 {{site.data.alerts.end}}
+
+## FAQs
+
+**(1)** What kind of regex can be used to write custom rules?
+
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
+
+![](images/de-duplication_9.png)
+
+**(2)** Can I create OR rules?
+
+Yes, you can. The evaluation between different Suppression Rules is OR. Add multiple Suppression Rules to enable OR evaluation.
