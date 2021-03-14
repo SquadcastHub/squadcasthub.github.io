@@ -1,62 +1,81 @@
 ---
-title: Service Dependency Based Deduplication
+title: Service Dependency Based De-duplication
 tags: [set-up-your-profile, managing-all-users]
 keywords: 
 last_updated: 
 datatable: 
-summary: "Deduplicate incoming events for a service against the latest incident of its service dependencies"
+summary: "De-duplicate incoming alerts for a Service against the latest open incident of its dependent Service(s)"
 sidebar: mydoc_sidebar
 permalink: docs/service-dependency-based-deduplication
 folder: mydoc
 ---
 
-Service Dependency Based Deduplication works on the logic that the incidents coming in for a service and its dependencies have a related cause. 
+Service Dependency Based De-duplication works on the logic that the incidents coming in for a Service and its dependencies have a related cause. 
+
+It is most likely the case where, when one Service has an incident, its dependent Service(s) may also have incidents and hence, you will be notified for the incident only once. *This helps control unnecessary alert noise and notification fatigue during critical outages*.
+
+Defining dependencies between Services also helps Squadcast understand the relationship between your actual systems. 
+
+To understand this better, let us consider 3 Services: *Service A*, *Service B* and *Service C*. 
+
+If *Service A* is `dependent on` *Service B* and *Service C*, then:
+
+- **Dependent Service**: *Service A*
+- **Dependency Service(s)**: *Service B*, *Service C*
 
 ## Adding a Service Dependency 
 
-Adding Dependent services helps the system understand the relationship between your actual systems. 
+**(1)** Navigate to **Services** from the sidebar
 
-You can add a dependency for your Service by: 
-- Move over to the **Service** tab from the left side navigation panel 
-- Click on the `More Option` icon and choose `Dependencies` 
+![](images/service-dependancy-based-deduplication_0.png)
+
+**(2)** To add a dependency where, *Service A* `is dependent on` Service B, for *Service A*, click on **More** and select **Dependencies**
 
 ![](images/service-dependancy-based-deduplication_1.png)
 
-- Search and add dependency services from your Squadcast Organization.
+**(3)** Search for *Service B*, select it and click on **Save**
+
+In this example, we have considered `Backend Prometheus Service` and `Translations` Services as dependencies of the `Payment Portal` Service. 
 
 ![](images/service-dependancy-based-deduplication_2.png)
 
-In this example above, we have marked the `Backend Prometheus Service` and `Translations` services as a dependencies of the `Payment Portal` service. 
+This means that the `Payment Portal` Service is dependent on `Backend Prometheus Service` and `Translations`.
 
-This means that the  `Payment Portal` service is dependent on `Backend Prometheus Service` and `Translations`
+## Enabling Service Dependency Based De-duplication
 
-## Enabling Service Dependency Based Deduplication
+Once you have defined the Service Dependencies, you can set a Service Dependency Based De-duplication rule which would de-duplicate all incoming alerts for the chosen Service against the latest open incident of its Service Dependencies.
 
-Once you've added the Service dependencies, you can set a Service Dependency based deduplication rule which would deduplicate all incoming events for the chosen service against the latest incident of its service dependencies.
+To do so: 
 
-To enable this: 
-
-- Move over to the `Deduplication` option from the `More Options` icon for the chosen service. 
-- You will see a checkbox with the message as shown in the image below. This checkbox will be disabled by default. 
-- To enable Service Dependency based deduplication, you can check this and this will hold true for that particular rule. 
+**(1)** For the Service that has its dependencies defined, click on **More** and select **De-duplication Rules**
 
 ![](images/service-dependancy-based-deduplication_3.png)
 
+**(2)** For the De-duplication Rule that you want checked and applied for Service Dependency Based De-duplication, simply enable the checkbox **If this service and a service it depends on both have an incident, alert only once**. 
+
+**NOTE:** This checkbox for every De-duplication Rule is disabled by default. 
+
+![](images/service-dependancy-based-deduplication_4.png)
+
 {{site.data.alerts.yellow-note-i}}
 <b>Note:</b>
-<br/><br/><p>1. The Service Dependency based deduplication will deduplicate any incoming event against either a Triggered, Acknowledged or a Suppressed Incident. 
+<br/><br/><p><b>1.</b> The Service Dependency based De-duplication will de-duplicate any incoming alert against either a <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Triggered</code>, <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Acknowledged</code> or <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Suppressed</code> incident. 
 <br/><br/>
-2. Service Dependency based deduplication is rule-specific and can be enabled for any number of rules for the service.</p>
+<b>2.</b> Service Dependency based De-duplication is rule-specific and can be enabled for any number of De-duplication Rules that are defined for a Service.</p>
 {{site.data.alerts.end}}
 
-##  Enabling Service Dependency Based Deduplication for a Specific Dependency 
+## Enabling Service Dependency Based De-duplication for a Specific Service Dependency 
 
-In cases where you would like the system to consider just one of the many dependencies for a service, you can follow the method below. 
+In cases where you would like Squadcast to consider just one of the many dependencies for a Service for Service Dependency Based De-duplication, you can follow the method below. 
 
-Along with enabling  the Service Dependency checkbox as shown above, you will need to add the below condition to the rule. 
+Along with enabling the Service Dependency checkbox as shown above, you will need to add the below condition to the rule:
 
 `past_incident.service == <slug_of_the_particular_dependency_service>`
 
-The slug of a service is displayed on the Service card as shown below. 
+## FAQs
 
-![](images/service-dependancy-based-deduplication_4.png)
+**(1)** Where can one find the `slug` of a Service?
+
+The `slug` of a Service is displayed on the Service card as shown below. 
+
+![](images/service-dependancy-based-deduplication_5.png)
