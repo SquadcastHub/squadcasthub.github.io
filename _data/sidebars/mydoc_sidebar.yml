@@ -383,6 +383,10 @@ entries:
             url: /docs/kapacitor
             output: web, pdf
 
+          - title: LibreNMS
+            url: /docs/librenms
+            output: web, pdf
+
           - title: LogDNA
             url: /docs/logdna
             output: web, pdf
