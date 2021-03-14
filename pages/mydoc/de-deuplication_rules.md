@@ -20,7 +20,7 @@ This can be achieved by defining De-duplication Rules for each Service in Squadc
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b>
-<br/><br/><p>De-duplication Rules work only on incidents in the <b>Triggered</b> state.</p>
+<br/><br/><p>De-duplication Rules work only on incidents in either the <b>Triggered</b> or <b>Acknowledged</b> states.</p>
 {{site.data.alerts.end}}
 
 ## Create De-duplication Rules 
@@ -194,7 +194,7 @@ Clicking on any of the de-duplicated alerts will display will all the informatio
 
 **(1)** Will I get notified for the duplicate alerts that come in for an incident in Triggered state?
 
-No, nobody is notified for the duplicate alerts that come in for an incident in the `Triggered` state.
+No, nobody is notified for the duplicate alerts that come in for an incident in the `Triggered` or `Acknowledged` state.
 
 **(2)** Will I get notified for the duplicate alerts that come in for an incident in Resolved state?
 
