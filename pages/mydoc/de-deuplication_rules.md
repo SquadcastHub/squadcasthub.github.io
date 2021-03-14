@@ -213,3 +213,9 @@ Yes, you can. The evaluation between different De-duplication Rules is OR.
 The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
 
 ![](images/de-duplication_9.png)
+
+**(6)** Do the De-duplication Rules have priority?
+
+Yes, you can specify Execution Rule Priority for the rules defined by moving them `Up` or `Down` the list of rules. 
+
+![](images/status-based-deduplication_5.png)
