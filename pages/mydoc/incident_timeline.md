@@ -34,8 +34,3 @@ The Incident Timeline will display the timeline of the incident in reverse chron
 The automated **Incident Activity Timeline** serves as a realtime chain of incident resolution activity. You can download this create **Incident Review** or **Postmortems** of the incident. **Incident Activity Timeline** can be exported by clicking on the **Download** icon at the top right corner of the **Activity Timeline**. You can download this in PDF or CSV formats.
 
 ![](images/timeline_2.png)
-
-{{site.data.alerts.green-note-check}}
-<b>Pro Tip: </b>
-<br/><br/><p>You can reveal the exact time of the event in the Incident Timeline by clicking on the approximate time displayed.</p>
-{{site.data.alerts.end}}
