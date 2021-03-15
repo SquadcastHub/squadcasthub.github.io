@@ -199,7 +199,7 @@ entries:
             url: /docs/incident-details
             output: web, pdf
 
-          - title: Incident Timeline
+          - title: Incident Activity Timeline
             url: /docs/incident-timeline
             output: web, pdf
 
