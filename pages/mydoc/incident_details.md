@@ -17,52 +17,54 @@ folder: mydoc
 
 ![](images/incident_1_1.png)
 
-**(2)** By clicking on any incident, you will be taken to its dedicated incident page which shows all the details of the incident. You can see:
+**(2)** By clicking on any incident, you will be taken to its dedicated **Incident Details** page which shows all the details of the incident. You can see:
 
-**(a)** Incident ID, and Incident Message
+**(a)** **Incident ID**, and **Incident Message**
 
 {{site.data.alerts.blue-note}}
 <b>Copy Incident URL</b>
 <br/><br/><p>The copy button beside Incident ID copies the Incident URL to the clipboard</p>
 {{site.data.alerts.end}}
 
-**(b)** Associated Tags below the Message. Tags can also be added/updated here
+**(b)** Associated **Tags** below the **Message**. Tags can also be added/updated here
 
-**(c)** Incident Description i.e. the alert information along with images and links sent by the Alert Source
+**(c)** **Incident Description** i.e. the alert information along with images and links sent by the **Alert Source**
 
 **(d)** Incident Status
 
 #### Triggered
-When an incident is open, it will be in the Triggered state. Concerned users will get notified when an incident is in Triggered state. It will remain in this state until someone acknowledges it.
+When an incident is open, it will be in the **Triggered** state. Concerned users will get notified when an incident is in **Triggered** state. It will remain in this state until someone acknowledges it.
 
 ![](images/incident_2.png)
 
 #### Acknowledged
-Incident shifts from Triggered to Acknowledged state when any user acknowledges it. The user can now look into the incident and try to solve it. If the incident is reassigned or escalated to another user, it will go back to a triggered state, until the new user takes responsibility for it and acknowledges the incident.
+Incident shifts from **Triggered** to **Acknowledged** state when any user acknowledges it. The user can now look into the incident and try to solve it. If the incident is **Reassigned** or escalated to another user, it will go back to a triggered state, until the new user takes responsibility for it and acknowledges the incident.
 
 #### Resolved
-Incidents can be marked as Resolved to close them.
+Incidents can be marked as **Resolved** to close them.
 
 #### Suppressed
-Sometimes, the incidents can be in a Suppressed state - this happens when the alert notification was not meant to go out for some reason like the service was under maintenance. 
+Sometimes, the incidents can be in a **Suppressed** state - this happens when the alert notification was not meant to go out for some reason like the **Service** was under maintenance. 
 
 **(e)** [Incident Notes](incident-notes) to collaborate with your team 
 
-**(f)** Incident Details displaying:
+**(f)** Ability to:
+
+- Acknowledge
+- Reassign to a User, Squad or an Escalation Policy
+- Action to create JIRA tickets or take actions via [Circle CI](https://support.squadcast.com/docs/circleci-actions)
+- Resolve
+
+**(g)** Incident Details displaying:
+
 - Created Date and Time
 - Alert Source
 - Affected Service
 - Elapsed time
 
-**(g)** Responders
+**(h)** Responders
 
-**(h)** [Activity Timeline](incident-timeline)
-
-**(i)** Ability to:
-- Acknowledge
-- Reassign to a User, Squad or an Escalation Policy
-- Action to create JIRA tickets or take actions via [Circle CI](circleci-integration)
-- Resolve
+**(i)** [Activity Timeline](incident-timeline)
 
 **(j)** [Update Status Page](statuspage#updating-your-statuspage)
 
