@@ -18,27 +18,27 @@ In this documentation, we'll be going through the following:
 
 ### Postmortem Templates
 
-Each organization gets a few predefined Postmortem Templates from **Squadcast**. You can choose to create new templates/modify existing ones, based on how you do postmortems within your organization.
+Each organization has a few predefined **Postmortem Templates** from **Squadcast**. You can choose to create new templates/modify existing ones, based on how you do postmortems within your organization.
 
-To do so:
+You can follow the steps below to create a new Postmortem Template in Squadcast:
 
 **(1)** Click on **Settings** on the sidebar
 
 ![](images/postmortem_1.png)
 
-**(2)** Click on **Postmortem Settings**. Here you'll find the ready-to-use templates
+**(2)** Click on **Postmortem Settings**. Here you'll find the list of pre-defined templates
 
 ![](images/postmortem_2.png)
 
-**(3)** You can either make use of the existing templates or add new templates
+**(3)** You can either make use of the existing templates or add new templates for the rest of your Organization to use
 
 ![](images/postmortem_3.png)
 
-**(4)** There is a set of `incident-variables`, which can be used while creating Postmortem Templates. These `incident-variables` will dynamically get populated with the incident's data for which the Postmortem is being created. You can see all the available `incident-variables` on the right-half while creating templates. The variables need to be specified using [MustacheJS syntax](https://github.com/janl/mustache.js/). Refer to the pre-defined templates for the templating syntax.
+**(4)** There is a set of `incident-variables`, which can be used while creating **Postmortem Templates**. These `incident-variables` will dynamically get populated with the incident's data for which the Postmortem is being created. You can see all the available `incident-variables` on the right-half while creating templates. The variables need to be specified using [MustacheJS syntax](https://github.com/janl/mustache.js/). Refer to the pre-defined templates for the templating syntax.
 
 ![](images/postmortem_4.png)
 
-**(5)** A template can be marked **default**. While filling a Postmortem report for an incident, the default template would pop up automatically
+**(5)** A template can be marked **Default**. While filling a Postmortem report for an incident, the default template would pop up automatically when a user **Starts a Postmortem**.
 
 ![](images/postmortem_5.png)
 
@@ -51,11 +51,12 @@ Click on **Add** to save the new template or **Update** to save the changes in a
 
 ### Creating a Postmortem
 
-Prerequisites: 
-The Postmortem feature is enabled for an incident only after it has been resolved. Hence, an incident first needs to be **Resolved**
-Only the *account-owner/admin* of an organization has the access to modify the templates and/or create new templates for the organization
+#### Prerequisites:
 
-**(1)** To create a Postmortem for a resolved incident, go into the **Incident Details Page**and Click on **Start Postmortem**
+The Postmortem feature is enabled for an incident only after it has been resolved. Hence, an incident first needs to be **Resolved**
+Only the **Account Owner**/**Admin** of an Organization has the access to modify the templates and/or create new templates for the Organization
+
+**(1)** To create a Postmortem for a resolved incident, go into the **Incident Details Page** and Click on **Start Postmortem**
 
 ![](images/postmortem_6.png)
 
@@ -77,13 +78,13 @@ Only the *account-owner/admin* of an organization has the access to modify the t
 
 ### FAQs
 
-**Q:** Who can create Postmortem templates?
+**Q:** Who can create Postmortem Templates?
 
-**A:** Only `account-owner and admins` of an organization have the access to modify or create the templates.
+**A:** Only **Account Owner** and **Admins** of an organization have the access to modify or create the templates.
 
-**Q:** Can Stakeholders create Postmortem templates?
+**Q:** Can Stakeholders create Postmortem Templates?
 
-**A:** No, Stakeholders cannot create Postmortem templates.
+**A:** No, **Stakeholders** cannot create Postmortem Templates.
 
 **Q:** When can Postmortems be created?
 
