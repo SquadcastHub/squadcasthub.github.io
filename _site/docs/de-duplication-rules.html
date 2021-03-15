@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Reduce alert noise by grouping similar alerts together">
 <meta name="keywords" content="deduplication,  ">
-<title>Alert Deduplication Rules | Incident Management using Squadcast</title>
+<title>Alert De-duplication Rules | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,7 +43,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://support.squadcast.com/feed.xml">
 
 <!-- Fonts (Nunitosans & Opensans) -->
 
@@ -194,7 +194,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Alert Deduplication Rules page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Alert De-duplication Rules page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -404,24 +404,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li class="subfolders">
-              <a title="Alert Deduplication Rules" href="#">Alert Deduplication Rules</a>
+              <a title="Alert De-duplication Rules" href="#">Alert De-duplication Rules</a>
               <ul>
                   
                   
                   
-                  <li><a title="Alert Deduplication Rules" href="de-duplication-rules">Alert Deduplication Rules</a></li>
+                  <li><a title="Alert De-duplication Rules" href="de-duplication-rules">Alert De-duplication Rules</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Incident Status Based Deduplication" href="status-based-deduplication">Incident Status Based Deduplication</a></li>
+                  <li><a title="Incident Status Based De-duplication" href="status-based-deduplication">Incident Status Based De-duplication</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Service Dependency Based Deduplication" href="service-dependency-based-deduplication">Service Dependency Based Deduplication</a></li>
+                  <li><a title="Service Dependency Based De-duplication" href="service-dependency-based-deduplication">Service Dependency Based De-duplication</a></li>
                   
                   
                   
@@ -926,6 +926,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Kapacitor" href="/docs/kapacitor">Kapacitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LibreNMS" href="/docs/librenms">LibreNMS</a></li>
           
           
           
@@ -1535,7 +1542,7 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Alert Deduplication Rules</h1>
+            <h1 class="post-title-main">Alert De-duplication Rules</h1>
         </div>
             
                 <div class="summary">Reduce alert noise by grouping similar alerts together</div>
@@ -1543,78 +1550,145 @@ li.sidebarTitle{
 
                 
 
-            <p>Alert de-duplication can help you reduce alert noise by organising and grouping relevant alerts. This also provides easy access to similar alerts when needed.</p>
+            <p>Alert De-duplication can help you reduce alert noise by organising and grouping alerts. This also provides easy access to similar alerts when needed.</p>
 
-<p>For each service, you can define your rule for de-duplication.</p>
+<p>This can be achieved by defining De-duplication Rules for each Service in Squadcast. When these rules evaluate to <em>true</em> for an incoming incident, alerts will get de-duplicated.</p>
 
-<p>You can set this up by going to app.squadcast.com.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+
 <ul>
-  <li>Go to the relevant service</li>
-  <li>Click on the options dropdown</li>
-  <li>Choose De-duplication rules</li>
+  <li>Only the Account Owner and Admins have Create, Read, Update and Delete capabilities for De-duplication Rules</li>
+  <li>First, integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast</li>
 </ul>
 
-<p><img src="images/dedup_1.png" alt="" /></p>
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Important</b>
+<br /><br /><p>De-duplication Rules work only on incidents in either the <b>Triggered</b> or <b>Acknowledged</b> states.</p>
+</div>
+
+<h2 id="create-de-duplication-rules">Create De-duplication Rules</h2>
+
+<p><strong>(1)</strong> Navigate to <strong>Services</strong> from the sidebar</p>
+
+<p><strong>(2)</strong> Select a <strong>Service</strong> and click on the <strong>More</strong> option</p>
+
+<p><strong>(3)</strong> Click on <strong>De-duplication Rules</strong></p>
+
+<p><img src="images/de-duplication_1.png" alt="" /></p>
+
+<p><strong>(4)</strong> Click on <strong>Add new rule</strong></p>
+
+<p><strong>(5)</strong> Select an <strong>Alert Source</strong> from the drop-down</p>
+
+<p><img src="images/de-duplication_2.png" alt="" /></p>
+
+<p><strong>(6)</strong> De-duplication Rules can be added in three ways:</p>
+
+<h2 id="a-ui-based-rule-builder-beginner-friendly">(A) UI-based Rule Builder (Beginner-friendly)</h2>
+
+<p>(a) On the right, you can view the <em>payload of the <strong>latest</strong> alert</em> for the chosen Alert Source</p>
+
+<p>(b) The drop-downs in the Rule Builder contain values from the payload on the right. You can use them to easily create your De-duplication Rules</p>
+
+<p><img src="images/de-duplication_3.png" alt="" /></p>
+
+<p>(c) You can add more than 1 condition for a rule by selecting <strong>Add Condition</strong> (a logical AND is performed between all the conditions -&gt; the entire De-duplication Rule will evaluate to <code class="highlighter-rouge">True</code> only if all the conditions evaluate to <code class="highlighter-rouge">True</code>)</p>
+
+<p>Next, choose the <strong>De-duplication Time Window</strong>. You can de-duplicate incidents for a <strong>maximum of 48 hours</strong>.</p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Time Window</b>
+<br /><br /><p>During the set time window, incidents that occur are compared against all incidents that come in during that time period, and will then get de-duplicated against the first incident that it matches with.</p>
+</div>
+
+<p>(d) Click on <strong>Save</strong></p>
+
+<p><img src="images/de-duplication_4.png" alt="" /></p>
+
+<h2 id="b-raw-string-method">(B) Raw String Method</h2>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Important</b>
+<br /><br /><p>Once you opt for the Raw String method, you cannot revert to the UI-based Rule Builder method.</p>
+</div>
+
+<p>(a) On the right, you can view the payload of the latest alert for the chosen Alert Source</p>
+
+<p>(b) Click on <strong>Edit</strong> to enable Raw String method</p>
+
+<p><img src="images/de-duplication_5.png" alt="" /></p>
+
+<p>(c) Write your custom De-duplication Rule expression. Below are some examples to help you get started:</p>
+
+<h3 id="the-rule-engine-supports-expressions-with-parameters-arithmetic-logical-and-string-operations">The rule engine supports expressions with parameters, arithmetic, logical, and string operations</h3>
 
 <ul>
-  <li>Choose Alert Source from the Dropdown</li>
-</ul>
+  <li>
+    <h4 id="basic-expressions">Basic Expressions</h4>
 
-<p><img src="images/dedup_2.png" alt="" /></p>
-
-<p>You can add your de-duplication rule expression in the field “Deduplication rule”, select a time window for which the rule holds true. You could also choose to select the option of the maximum time window allowable, which is 48 hours.</p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
- <b>Time Window:</b>
- <br /><br /><p>During the time window set, incidents that occur are compared against all incidents that come in during that time period and will then get deduplicated against the first incident that it matches with.</p>
- </div>
-
-<p>The rules will be checked against all the incidents based on the time window set in place.</p>
-
-<p>You can add as many rules by selecting the “Add rule” button below. The deduplication will be true for the first rule that matches in the list of rules added by you.</p>
-
-<p><img src="images/dedup_3.png" alt="" /></p>
-
-<p>The count of events deduplicated against an incident will be shown in the incident dashboard and the incident details page.</p>
-
-<p><img src="images/dedup_4.png" alt="" /></p>
-
-<p><img src="images/dedup_5.png" alt="" /></p>
-
-<h2 id="syntax-for-writing-rules">Syntax for Writing Rules</h2>
-
-<p>The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this <a href="https://regex101.com/">link</a> to get an idea of all the expression types accepted in Squadcast.</p>
-
-<ul>
-  <li>Basic expression: <code class="highlighter-rouge">10 &gt; 0</code>, <code class="highlighter-rouge">1+2</code>, <code class="highlighter-rouge">100/3</code></li>
-  <li>Parameterized expression: <code class="highlighter-rouge">past.metric == current.metric</code>
- The available parameters are <code class="highlighter-rouge">past</code>, <code class="highlighter-rouge">current</code>, <code class="highlighter-rouge">event_count</code>
-    <ul>
-      <li><code class="highlighter-rouge">past</code> : This parameter contains the JSON payload of the previous incident which the current event is compared with.</li>
-      <li><code class="highlighter-rouge">current</code> : This parameter contains the JSON payload of the incoming event which will be compared with the past incidents’ JSON payload.</li>
-      <li><code class="highlighter-rouge">event_count</code> : This denotes the number of deduplicated events for a given incident</li>
-    </ul>
+    <p><code class="highlighter-rouge">10 &gt; 0</code>, <code class="highlighter-rouge">1+2</code>, <code class="highlighter-rouge">100/3</code></p>
   </li>
-  <li>Regular expression: <code class="highlighter-rouge">re(past.metric, "disk.*")</code>
- This can be used to check if a particular JSON payload field matches a regular expression.</li>
-  <li>Parsing JSON content: <code class="highlighter-rouge">jsonPath(payload.message, "a.b.c")</code>
-   This can be used to parse JSON formatted strings and get the <code class="highlighter-rouge">jsonPath</code> from the resulting JSON object</li>
+  <li>
+    <h4 id="parameterized-expressions">Parameterized Expressions</h4>
+    <p><code class="highlighter-rouge">past.metric == current.metric</code></p>
+
+    <p>The available parameters are <code class="highlighter-rouge">past</code>, <code class="highlighter-rouge">current</code> and <code class="highlighter-rouge">event_count</code>
+    + <code class="highlighter-rouge">past</code> : This parameter contains the JSON payload of the previous incident which the current event is compared with 
+    + <code class="highlighter-rouge">current</code> : This parameter contains the JSON payload of the incoming event which will be compared with the past incidents’ JSON payload
+    + <code class="highlighter-rouge">event_count</code> : This denotes the number of de-duplicated events for a given incident</p>
+  </li>
 </ul>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Use Case for event_count:</b>
-<br /><br /><p>This can be used in scenarios where you don't want to deduplicate more than <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">n</code> number of events to a particular incident.</p>
+<b>Use-case for event_count:</b>
+<br /><br /><p>This can be used in scenarios where you do not want to de-duplicate more than <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">n</code> number of alerts to a particular incident.</p>
 </div>
 
-<h2 id="examples">Examples</h2>
+<ul>
+  <li>
+    <h4 id="regular-expressions">Regular Expressions</h4>
+
+    <p>This can be used to check if a particular JSON payload field matches a regular expression.</p>
+
+    <p><code class="highlighter-rouge">re(payload.metric, "disk.*")</code></p>
+  </li>
+</ul>
+
+<h4 id="parse-json-content-within-the-payload-using-jsonpath">Parse JSON content within the payload using <code class="highlighter-rouge">jsonPath</code></h4>
+
+<p><strong>General Format</strong> 
+<code class="highlighter-rouge">jsonPath(&lt;the JSON string that should be parsed for JSON content&gt;, &lt;"the parameter that needs to be picked from the parsed JSON object"&gt;)</code></p>
+
+<p><strong>Example</strong>
+Below is an example payload:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+   </span><span class="s2">"payload"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">  
+      </span><span class="s2">"Type"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Notification"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"MessageId"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"5966c484-5b37-58df"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"TopicArn"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"arn:aws:sns:us-east-1:51:Test"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Message"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"{</span><span class="se">\"</span><span class="s2">AlarmName</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">Squadcast Testing - Ignore</span><span class="se">\"</span><span class="s2">,</span><span class="se">\"</span><span class="s2">AlarmDescription</span><span class="se">\"</span><span class="s2">:</span><span class="se">\"</span><span class="s2">Created from EC2 Console</span><span class="se">\"</span><span class="s2">}"</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">jsonPath</span><span class="p">(</span><span class="nx">payload</span><span class="p">.</span><span class="nx">Message</span><span class="p">,</span> <span class="s2">"AlarmName"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This will pick out the value <code class="highlighter-rouge">AlarmName</code> from the Message object in the payload, based on which, you can de-duplicate incidents.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>UPDATE: Multiple Alert Source:</b>
-<br /><br /><p>We can see alert payloads of past events from different alert sources for the service by selecting the respective alert source from the dropdown in the right-half side.<br /><br />
-With <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Multiple Alert Sources</code>, user now can perform de-duplication across different alert sources for a service. For example, if there is already an event that was triggered by alert source <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">sentry</code> and after sometime, there is another alert coming from <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> indicating about the same alert, then you can dedupe them by using a rule which will look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">(past.source == 'sentry' &amp;&amp; current.source == 'jira-plugin') &amp;&amp; &lt;your_de-duplication_rule&gt;</code></p>
+<b>Multiple Alert Sources</b>
+<br /><br /><p>We can see alert payloads of past events from different alert sources for the Service by selecting the respective alert source from the dropdown in the right-half side.
+<br /><br />
+Since the payload format is fixed for a given alert source, it is usually preferrable to have De-duplication Rules on a per-alert source basis. This can be done by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.
+<br /><br />
+For example, if you want to have a De-duplication Rule for a Service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'jira-plugin' &amp;&amp; (&lt;your_de-duplication_rule&gt;)</code></p>
 </div>
 
-<p>For a sample content shown in the right panel of the configuration space</p>
+<h3 id="example">Example</h3>
+
+<p>Below is an example payload for demonstration:</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"event_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
@@ -1634,9 +1708,8 @@ With <code class="highlighter-rouge" style="color: #c7254e; background-color: #f
   </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jira-plugin"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
-<p><strong>Use Case</strong></p>
+<p>To de-duplicate any incoming alert when:</p>
 
-<p>For any incoming alert, if</p>
 <ul>
   <li>The <code class="highlighter-rouge">metric</code> matches the regular expression <code class="highlighter-rouge">^disk.*</code></li>
   <li>The <code class="highlighter-rouge">past</code> incident <code class="highlighter-rouge">metric</code> and the <code class="highlighter-rouge">current</code> event <code class="highlighter-rouge">metric</code> are the same</li>
@@ -1645,9 +1718,59 @@ With <code class="highlighter-rouge" style="color: #c7254e; background-color: #f
   <li>The <code class="highlighter-rouge">context</code> value tag is same</li>
 </ul>
 
-<p><strong>Rule</strong></p>
+<p><strong>De-duplication Rule:</strong></p>
 
-<p><code class="highlighter-rouge">(past.metric == current.metric) &amp;&amp; re(current.metric, "^disk.*") &amp;&amp; (past.host == current.host) &amp;&amp; (current.value &lt; 60) &amp;&amp; jsonPath(past.tags, "context.value") == jsonPath(current.tags, "context.value") </code></p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nx">past</span><span class="p">.</span><span class="nx">metric</span> <span class="o">==</span> <span class="nx">current</span><span class="p">.</span><span class="nx">metric</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">re</span><span class="p">(</span><span class="nx">current</span><span class="p">.</span><span class="nx">metric</span><span class="p">,</span> <span class="s2">"^disk.*"</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">past</span><span class="p">.</span><span class="nx">host</span> <span class="o">==</span> <span class="nx">current</span><span class="p">.</span><span class="nx">host</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">current</span><span class="p">.</span><span class="nx">value</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">jsonPath</span><span class="p">(</span><span class="nx">past</span><span class="p">.</span><span class="nx">tags</span><span class="p">,</span> <span class="s2">"context.value"</span><span class="p">)</span> <span class="o">==</span> <span class="nx">jsonPath</span><span class="p">(</span><span class="nx">current</span><span class="p">.</span><span class="nx">tags</span><span class="p">,</span> <span class="s2">"context.value"</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="viewing-de-duplicated-incidents">Viewing De-duplicated Incidents</h2>
+
+<p>From the <a href="https://support.squadcast.com/docs/incident-list-table-view">Incident List page</a>, you can view which incidents have de-duplicated alerts when there is <strong>+&lt;number&gt;</strong> next to the Incident ID like in the screenshot below. The <strong>number</strong> indicates how many alerts were de-duplicated against this incident.</p>
+
+<p><img src="images/de-duplication_6.png" alt="" /></p>
+
+<p>Clicking on such an incident will take you its <a href="https://support.squadcast.com/docs/incident-details">Incident Details page</a> where, by clicking on <strong>Events</strong>, you will be able to see the following:</p>
+
+<ul>
+  <li>Number of de-duplicated alerts</li>
+  <li>Time when they reached Squadcast</li>
+  <li><strong>Message</strong> of the alert</li>
+</ul>
+
+<p><img src="images/de-duplication_7.png" alt="" /></p>
+
+<p>Clicking on any of the de-duplicated alerts will display will all the information that is sent for that alert from the monitoring tool.</p>
+
+<p><img src="images/de-duplication_8.png" alt="" /></p>
+
+<h2 id="faqs">FAQs</h2>
+
+<p><strong>(1)</strong> Will I get notified for the duplicate alerts that come in for an incident in Triggered state?</p>
+
+<p>No, nobody is notified for the duplicate alerts that come in for an incident in the <code class="highlighter-rouge">Triggered</code> or <code class="highlighter-rouge">Acknowledged</code> state.</p>
+
+<p><strong>(2)</strong> Will I get notified for the duplicate alerts that come in for an incident in Resolved state?</p>
+
+<p>Yes, incident de-duplication will not take place for an incident when it is in the <code class="highlighter-rouge">Resolved</code> state. Squadcast triggers a fresh incident for such an alert and notifies the right people.</p>
+
+<p><strong>(3)</strong> Why can’t I de-duplicate incidents for more than 48 hours?</p>
+
+<p>Most organizations across the world follow a best practice of resolving critial incidents within 48 hours of their creation. This is also the reason why, Squadcast allows you to de-duplicate incidents for a maximum of 48 hours.</p>
+
+<p><strong>(4)</strong> Can I create OR rules?</p>
+
+<p>Yes, you can. The evaluation between different De-duplication Rules is OR.</p>
+
+<p><strong>(5)</strong> What kind of regex can be used to write custom rules?</p>
+
+<p>The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex <a href="regex101.com">here</a> against <code class="highlighter-rouge">Golang</code> flavour as shown in the screenshot below and then, set them up in Squadcast:</p>
+
+<p><img src="images/de-duplication_9.png" alt="" /></p>
+
+<p><strong>(6)</strong> Do the De-duplication Rules have priority?</p>
+
+<p>Yes, you can specify Execution Rule Priority for the rules defined by moving them <code class="highlighter-rouge">Up</code> or <code class="highlighter-rouge">Down</code> the list of rules.</p>
+
+<p><img src="images/status-based-deduplication_5.png" alt="" /></p>
 
 
                 <!--div class="tags">
@@ -1744,7 +1867,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 10, 2021 <br /> -->
+<!--  Site last generated: Mar 15, 2021 <br /> -->
                 </div>
             </div>
             <script>

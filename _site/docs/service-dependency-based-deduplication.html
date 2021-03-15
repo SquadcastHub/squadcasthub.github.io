@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Deduplicate incoming events for a service against the latest incident of its service dependencies">
+<meta name="description" content="De-duplicate incoming alerts for a Service against the latest open incident of its dependent Service(s)">
 <meta name="keywords" content="set-up-your-profilemanaging-all-users,  ">
-<title>Service Dependency Based Deduplication | Incident Management using Squadcast</title>
+<title>Service Dependency Based De-duplication | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,7 +43,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="" href="https://support.squadcast.com/feed.xml">
 
 <!-- Fonts (Nunitosans & Opensans) -->
 
@@ -194,7 +194,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Service Dependency Based Deduplication page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Service Dependency Based De-duplication page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -404,24 +404,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li class="subfolders">
-              <a title="Alert Deduplication Rules" href="#">Alert Deduplication Rules</a>
+              <a title="Alert De-duplication Rules" href="#">Alert De-duplication Rules</a>
               <ul>
                   
                   
                   
-                  <li><a title="Alert Deduplication Rules" href="de-duplication-rules">Alert Deduplication Rules</a></li>
+                  <li><a title="Alert De-duplication Rules" href="de-duplication-rules">Alert De-duplication Rules</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Incident Status Based Deduplication" href="status-based-deduplication">Incident Status Based Deduplication</a></li>
+                  <li><a title="Incident Status Based De-duplication" href="status-based-deduplication">Incident Status Based De-duplication</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Service Dependency Based Deduplication" href="service-dependency-based-deduplication">Service Dependency Based Deduplication</a></li>
+                  <li><a title="Service Dependency Based De-duplication" href="service-dependency-based-deduplication">Service Dependency Based De-duplication</a></li>
                   
                   
                   
@@ -926,6 +926,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Kapacitor" href="/docs/kapacitor">Kapacitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LibreNMS" href="/docs/librenms">LibreNMS</a></li>
           
           
           
@@ -1535,70 +1542,85 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Service Dependency Based Deduplication</h1>
+            <h1 class="post-title-main">Service Dependency Based De-duplication</h1>
         </div>
             
-                <div class="summary">Deduplicate incoming events for a service against the latest incident of its service dependencies</div>
+                <div class="summary">De-duplicate incoming alerts for a Service against the latest open incident of its dependent Service(s)</div>
             
 
                 
 
-            <p>Service Dependency Based Deduplication works on the logic that the incidents coming in for a service and its dependencies have a related cause.</p>
+            <p>Service Dependency Based De-duplication works on the logic that the incidents coming in for a Service and its dependencies have a related cause.</p>
+
+<p>It is most likely the case where, when one Service has an incident, its dependent Service(s) may also have incidents and hence, you will be notified for the incident only once. <em>This helps control unnecessary alert noise and notification fatigue during critical outages</em>.</p>
+
+<p>Defining dependencies between Services also helps Squadcast understand the relationship between your actual systems.</p>
+
+<p>To understand this better, let us consider 3 Services: <em>Service A</em>, <em>Service B</em> and <em>Service C</em>.</p>
+
+<p>If <em>Service A</em> is <code class="highlighter-rouge">dependent on</code> <em>Service B</em> and <em>Service C</em>, then:</p>
+
+<ul>
+  <li><strong>Dependent Service</strong>: <em>Service A</em></li>
+  <li><strong>Dependency Service(s)</strong>: <em>Service B</em>, <em>Service C</em></li>
+</ul>
 
 <h2 id="adding-a-service-dependency">Adding a Service Dependency</h2>
 
-<p>Adding Dependent services helps the system understand the relationship between your actual systems.</p>
+<p><strong>(1)</strong> Navigate to <strong>Services</strong> from the sidebar</p>
 
-<p>You can add a dependency for your Service by:</p>
-<ul>
-  <li>Move over to the <strong>Service</strong> tab from the left side navigation panel</li>
-  <li>Click on the <code class="highlighter-rouge">More Option</code> icon and choose <code class="highlighter-rouge">Dependencies</code></li>
-</ul>
+<p><img src="images/service-dependancy-based-deduplication_0.png" alt="" /></p>
+
+<p><strong>(2)</strong> To add a dependency where, <em>Service A</em> <code class="highlighter-rouge">is dependent on</code> Service B, for <em>Service A</em>, click on <strong>More</strong> and select <strong>Dependencies</strong></p>
 
 <p><img src="images/service-dependancy-based-deduplication_1.png" alt="" /></p>
 
-<ul>
-  <li>Search and add dependency services from your Squadcast Organization.</li>
-</ul>
+<p><strong>(3)</strong> Search for <em>Service B</em>, select it and click on <strong>Save</strong></p>
+
+<p>In this example, we have considered <code class="highlighter-rouge">Backend Prometheus Service</code> and <code class="highlighter-rouge">Translations</code> Services as dependencies of the <code class="highlighter-rouge">Payment Portal</code> Service.</p>
 
 <p><img src="images/service-dependancy-based-deduplication_2.png" alt="" /></p>
 
-<p>In this example above, we have marked the <code class="highlighter-rouge">Backend Prometheus Service</code> and <code class="highlighter-rouge">Translations</code> services as a dependencies of the <code class="highlighter-rouge">Payment Portal</code> service.</p>
+<p>This means that the <code class="highlighter-rouge">Payment Portal</code> Service is dependent on <code class="highlighter-rouge">Backend Prometheus Service</code> and <code class="highlighter-rouge">Translations</code>.</p>
 
-<p>This means that the  <code class="highlighter-rouge">Payment Portal</code> service is dependent on <code class="highlighter-rouge">Backend Prometheus Service</code> and <code class="highlighter-rouge">Translations</code></p>
+<h2 id="enabling-service-dependency-based-de-duplication">Enabling Service Dependency Based De-duplication</h2>
 
-<h2 id="enabling-service-dependency-based-deduplication">Enabling Service Dependency Based Deduplication</h2>
+<p>Once you have defined the Service Dependencies, you can set a Service Dependency Based De-duplication rule which would de-duplicate all incoming alerts for the chosen Service against the latest open incident of its Service Dependencies.</p>
 
-<p>Once you’ve added the Service dependencies, you can set a Service Dependency based deduplication rule which would deduplicate all incoming events for the chosen service against the latest incident of its service dependencies.</p>
+<p>To do so:</p>
 
-<p>To enable this:</p>
-
-<ul>
-  <li>Move over to the <code class="highlighter-rouge">Deduplication</code> option from the <code class="highlighter-rouge">More Options</code> icon for the chosen service.</li>
-  <li>You will see a checkbox with the message as shown in the image below. This checkbox will be disabled by default.</li>
-  <li>To enable Service Dependency based deduplication, you can check this and this will hold true for that particular rule.</li>
-</ul>
+<p><strong>(1)</strong> For the Service that has its dependencies defined, click on <strong>More</strong> and select <strong>De-duplication Rules</strong></p>
 
 <p><img src="images/service-dependancy-based-deduplication_3.png" alt="" /></p>
 
+<p><strong>(2)</strong> For the De-duplication Rule that you want checked and applied for Service Dependency Based De-duplication, simply enable the checkbox <strong>If this service and a service it depends on both have an incident, alert only once</strong>.</p>
+
+<p><strong>NOTE:</strong> This checkbox for every De-duplication Rule is disabled by default.</p>
+
+<p><img src="images/service-dependancy-based-deduplication_4.png" alt="" /></p>
+
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
 <b>Note:</b>
-<br /><br /><p>1. The Service Dependency based deduplication will deduplicate any incoming event against either a Triggered, Acknowledged or a Suppressed Incident. 
+<br /><br /><p><b>1.</b> The Service Dependency based De-duplication will de-duplicate any incoming alert against either a <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Triggered</code>, <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Acknowledged</code> or <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Suppressed</code> incident. 
 <br /><br />
-2. Service Dependency based deduplication is rule-specific and can be enabled for any number of rules for the service.</p>
+<b>2.</b> Service Dependency based De-duplication is rule-specific and can be enabled for any number of De-duplication Rules that are defined for a Service.</p>
 </div>
 
-<h2 id="enabling-service-dependency-based-deduplication-for-a-specific-dependency">Enabling Service Dependency Based Deduplication for a Specific Dependency</h2>
+<h2 id="enabling-service-dependency-based-de-duplication-for-a-specific-service-dependency">Enabling Service Dependency Based De-duplication for a Specific Service Dependency</h2>
 
-<p>In cases where you would like the system to consider just one of the many dependencies for a service, you can follow the method below.</p>
+<p>In cases where you would like Squadcast to consider just one of the many dependencies for a Service for Service Dependency Based De-duplication, you can follow the method below.</p>
 
-<p>Along with enabling  the Service Dependency checkbox as shown above, you will need to add the below condition to the rule.</p>
+<p>Along with enabling the Service Dependency checkbox as shown above, you will need to add the below condition to the rule:</p>
 
 <p><code class="highlighter-rouge">past_incident.service == &lt;slug_of_the_particular_dependency_service&gt;</code></p>
 
-<p>The slug of a service is displayed on the Service card as shown below.</p>
+<h2 id="faqs">FAQs</h2>
 
-<p><img src="images/service-dependancy-based-deduplication_4.png" alt="" /></p>
+<p><strong>(1)</strong> Where can one find the <code class="highlighter-rouge">slug</code> of a Service?</p>
+
+<p>The <code class="highlighter-rouge">slug</code> of a Service is displayed on the Service card as shown below.</p>
+
+<p><img src="images/service-dependancy-based-deduplication_5.png" alt="" /></p>
 
 
                 <!--div class="tags">
@@ -1703,7 +1725,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 10, 2021 <br /> -->
+<!--  Site last generated: Mar 15, 2021 <br /> -->
                 </div>
             </div>
             <script>
