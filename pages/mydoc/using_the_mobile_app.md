@@ -18,7 +18,7 @@ You can use our mobile app to Acknowledge, Reassign, take Actions, and Resolve f
 
 ### Incident List
 
-Once logged in, you will be navigated to the Incident List view. Incidents are organized by the incident status. The tabs above hold the incident count for open incidents (Triggered & Acknowledged).
+Once you are logged into the application, you will be navigated to the **Incident List** page. Incidents are organized according to incident status. In the tab above, you will be able to view the number of incidents in the open state (Triggered & Acknowledged).
 
 ![](images/using_mobile_1.png){: style="max-width: 30%" }
 
