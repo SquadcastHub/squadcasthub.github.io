@@ -20,7 +20,7 @@ In this example, we have clicked on the **Triggered** state and will be moving t
 **(2)** Check the box under the **Actions** button to select all the incidents that are shown in the view. You can also choose to select specific incidents for which you want to take the action.
 
 {{site.data.alerts.note}}
-<br/><br/><p>You will only be able to view a maximum of 20 incidents at once. So, you will only be able to select a maximum of 20 incidents at once.</p>
+<br/><br/><p>You will only be able to view a maximum of 20 incidents at once. So, you will only be able to select a maximum of 20 incidents at once. For a more detailed view of incidents, navigate to the <a href="incident-list-table-view">Incident List</a> page.</p>
 {{site.data.alerts.end}}
 
 ![](images/bulk_actions_2.png)

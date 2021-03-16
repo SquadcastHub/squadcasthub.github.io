@@ -43,7 +43,7 @@ This should ensure that you get alerted on incidents and it doesn't get lost in 
 On the **Incident Details** page, you can take all the actions that are supported on our web app. The page has 4 major sections, namely:
 
 - Details - the incident details that come in from the incident payload
-- Timeline - the timeline of incident specific activities, such as Acknowledging or Resolving an Incident, Actions that are run and so on.
+- Incident Activity Timeline - the timeline of incident specific activities, such as Acknowledging or Resolving an Incident, Actions that are run and so on.
 - Events - incidents events that are deduplicated against the parent incident
 - Incident Notes & Starred Notes - all the notes created and starred for the incident
 
@@ -59,9 +59,9 @@ The **Incident Details** page allows for quick actions:
 
 ![](images/using_mobile_5.png){: style="max-width: 30%" }
 
-#### Timeline
+#### Incident Activity Timeline
 
-The **Incident Timeline** provides all the recorded logs taken against the incident
+The **Incident Activity Timeline** provides all the recorded logs taken against the incident
 
 ![](images/using_mobile_6.png){: style="max-width: 30%" }
 

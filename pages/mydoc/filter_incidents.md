@@ -14,7 +14,7 @@ Filter Incidents by different parameters like Date & Time of creation, affected 
 
 ## Getting Started
 
-**(1)** Click on **Incident List** on the left side navigation sidebar
+**(1)** Click on **Incident List** on the sidebar
 
 ![](images/filter_1.png)
 
@@ -75,6 +75,26 @@ Filter Incidents by *[Tags](event-tagging)*.
 In order to filter by **Tags**, first select the `key` and then select the `value` of the **Tag** you would like to filter by. You can use the search box to narrow down your options.
 
 ![](images/filter_9.png)
+
+![](images/filter_11.png)
+
+When you are not filtering by any **Services**, tags across all the **Services** will be displayed. To narrow down your **Tags** by **Service**, make sure to apply the **Service** filter first.
+
+#### Search for Custom Tags
+
+If you are unable to find the option you want to filter by, then you can input custom values for **Tag** search. In order to do so, enter the custom `key` / `value` and click on the `+` icon to add the custom **Tag** filter.
+
+![](images/filter_12.png)
+
+![](images/filter_13.png)
+
+#### Add / Delete Multiple Tag Filters
+
+To add a new **Tag** filter, open the tags filter and click on the `+ new tag` button, and select the `key` and `value` of the new **Tag**.
+
+To delete a **Tag** filter, click on the cross button of the corresponding **Tag**.
+
+![](images/filter_14.png)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Multiple Tag Filters</b><br/><br/>

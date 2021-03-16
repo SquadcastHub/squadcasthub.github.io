@@ -83,7 +83,7 @@ You can use the below syntax to add an image:
 
 ![](images/incident_notes_10.png)
 
-- Starred notes would be captured in the **Activity Timeline**. Clicking on the starred note activity in the **Activity Timeline** will take you to that specific note in the Incident Notes section
+- Starred notes would be captured in the **Incident Activity Timeline**. Clicking on the starred note activity in the **Incident Activity Timeline** will take you to that specific note in the Incident Notes section
 
 ![](images/incident_notes10_1.png)
 
