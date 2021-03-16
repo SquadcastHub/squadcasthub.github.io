@@ -74,24 +74,9 @@ Sometimes, the incidents can be in a **Suppressed** state - this happens when th
 
 ![](images/incident_4.png)
 
-{{site.data.alerts.blue-note}}
-<b>Important Note</b>
-<br/><br/><p>Squadcast allows a maximum of 10 notifications every 15 minutes for an organization. Any incident that crosses these limits will be automatically truncated in the platform</p>
-{{site.data.alerts.end}}
-
 ### Incident Field Limitations
 
- ```json
-{
-  "data": {
-    "0-0": "Incident Message",
-    "1-0": "Incident Description",
-    "0-1": "250",
-    "h-1": "Character Limit",
-    "h-0": "Incident Field",
-    "1-1": "15000"
-  },
-  "cols": 2,
-  "rows": 2
-}
- ```
+|    Incident Field    | Character Limit |
+|:--------------------:|:---------------:|
+|   Incident Message   |       250       |
+| Incident Description |      15000      |
