@@ -10,26 +10,26 @@ folder: mydoc
 
 Incidents can be triggered manually either from the **Incident Dashboard** or the **Incident List**.
 
-### Via **Incident Dashboard**
+### Triggering Incidents Via **Incident Dashboard**
 
 Click on **+** right next to the **Actions** dropdown tab 
 
 ![](images/manual1.png)
 
-### Via **List**
+### Triggering Incidents Via **List**
 
 **(1)** Click on **Create an Incident**
 
 ![](images/manual2.png)
 
-**(2)** Add the relevant fields:
+**(2)** Add details in the relevant fields:
 
 ![](images/manual3.png)
 
 - Incident Title - This would be the title/message of the incident being created
 - Incident Description - This would be the description of the Incident being created. This is an optional field
-- Service - Specify the business Service to which this incident would be mapped
-- Assigned To - Upon choosing the Service, the default Escalation Policy associated with the Service would be auto-filled. You can also manually update Assigned To value to **User** or **Squad**
+- Service - Select the relevant **Service** to which this incident would be mapped
+- Assigned To - Upon choosing the **Service**, the default **Escalation Policy** associated with the **Service** would be auto-filled. You can choose to manually update the **Assigned To** field to a different **Escalation Policy** or a specific **User** or **Squad**
 - Tags 
 
 ![](images/manual4.png)
@@ -37,6 +37,6 @@ Click on **+** right next to the **Actions** dropdown tab
 - By default, you will have the option to add **Tags** to an incident 
 - You can do so by assigning the `tag name (key)` and `tag value` in the text fields provided and you can also change the tag color by clicking on the colour of your choice
 - You can also add multiple tags by clicking on the **+** option
-- Adding a Tag is an optional field
+- Adding a **Tag** is optional
 
 **(3)** Click on **Create new incident** to trigger the incident

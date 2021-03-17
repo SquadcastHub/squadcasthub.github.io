@@ -10,7 +10,7 @@ permalink: docs/filter-incidents
 folder: mydoc
 ---
 
-Filter Incidents by different parameters like Date & Time of creation, affected business Service, Alert Source, to whom an incident is Assigned To or custom Tags. 
+Filter Incidents by different parameters like Date & Time of creation, affected business **Service**, **Alert Source**, to whom an incident is **Assigned To** or custom **Tags**.
 
 ## Getting Started
 
@@ -105,6 +105,6 @@ To delete a **Tag** filter, click on the cross button of the corresponding **Tag
 
 Filter Incident by *[Incident Status](dashboard-metrics#incident-state-metric)*.
 
-Use the checkbox to select the value of your choice. 
+Select the Status of your choice to filter our incidents by a specific status.
 
 ![](images/filter_10.png)
