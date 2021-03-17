@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Use Incident Status Based Deduplication to deduplicate all open events to an existing open Incident for a service">
+<meta name="description" content="Use Incident Status Based De-duplication to de-duplicate all alerts to an existing open incident for a Service">
 <meta name="keywords" content="set-up-your-profilemanaging-all-users,  ">
-<title>Incident Status Based Deduplication | Incident Management using Squadcast</title>
+<title>Incident Status Based De-duplication | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -194,7 +194,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident Status Based Deduplication page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident Status Based De-duplication page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -404,24 +404,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li class="subfolders">
-              <a title="Alert Deduplication Rules" href="#">Alert Deduplication Rules</a>
+              <a title="Alert De-duplication Rules" href="#">Alert De-duplication Rules</a>
               <ul>
                   
                   
                   
-                  <li><a title="Alert Deduplication Rules" href="de-duplication-rules">Alert Deduplication Rules</a></li>
+                  <li><a title="Alert De-duplication Rules" href="de-duplication-rules">Alert De-duplication Rules</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Incident Status Based Deduplication" href="status-based-deduplication">Incident Status Based Deduplication</a></li>
+                  <li><a title="Incident Status Based De-duplication" href="status-based-deduplication">Incident Status Based De-duplication</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Service Dependency Based Deduplication" href="service-dependency-based-deduplication">Service Dependency Based Deduplication</a></li>
+                  <li><a title="Service Dependency Based De-duplication" href="service-dependency-based-deduplication">Service Dependency Based De-duplication</a></li>
                   
                   
                   
@@ -926,6 +926,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Kapacitor" href="/docs/kapacitor">Kapacitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LibreNMS" href="/docs/librenms">LibreNMS</a></li>
           
           
           
@@ -1535,49 +1542,58 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Incident Status Based Deduplication</h1>
+            <h1 class="post-title-main">Incident Status Based De-duplication</h1>
         </div>
             
-                <div class="summary">Use Incident Status Based Deduplication to deduplicate all open events to an existing open Incident for a service</div>
+                <div class="summary">Use Incident Status Based De-duplication to de-duplicate all alerts to an existing open incident for a Service</div>
             
 
                 
 
-            <p>Incident Status Based Deduplication works on the logic that all incidents that come in for a service is related to the same cause. So, if there is an open (Triggered or Acknowledged state) incident for a service, any and all incidents that come in for this service will get deduplicated against this open incident.</p>
+            <p>Incident Status Based De-duplication works on the logic that all alerts that come in for a Service are related to the same issue. So, if there is an open incident for a Service - that is, incident is in the <code class="highlighter-rouge">Triggered</code> or <code class="highlighter-rouge">Acknowledged</code> state, <strong>all</strong> incidents that come in for this Service will get de-duplicated against the existing, open incident within the specified time window.</p>
 
-<h2 id="enabling-the-incident-status-based-deduplication">Enabling the Incident Status Based Deduplication</h2>
+<h2 id="enabling-the-incident-status-based-de-duplication">Enabling the Incident Status Based De-duplication</h2>
 
-<ul>
-  <li>
-    <p>You can enable this while adding a service using the <code class="highlighter-rouge">Add Service</code> button.</p>
-  </li>
-  <li>
-    <p>Check the box with the information message and choose the appropriate time window for which you’d like this deduplication rule to hold true.</p>
-  </li>
-</ul>
+<h3 id="enabling-this-while-creating-a-new-service">Enabling this while creating a new Service</h3>
+
+<p><strong>(1)</strong> Navigate to <strong>Services</strong> from the sidebar</p>
+
+<p><strong>(2)</strong> Click on <strong>Add Service</strong></p>
 
 <p><img src="images/status-based-deduplication_1.png" alt="" /></p>
 
-<ul>
-  <li>
-    <p>By default, this will remain unchecked.</p>
-  </li>
-  <li>
-    <p>If enabled, you will be seeing the Deduplication rule below in the Deduplication UI.</p>
-  </li>
-</ul>
+<p><strong>(3)</strong> Fill in the required details and enable the checkbox at the bottom that says <strong>De-duplicate all incoming incidents against any open incident for this service for</strong> and specify the De-duplication Time Window. The maximum time allowed for de-duplication is <strong>48 hours</strong>.</p>
 
 <p><img src="images/status-based-deduplication_2.png" alt="" /></p>
 
-<ul>
-  <li>You can edit, change the execution priority or delete this rule based on your requirements.</li>
-</ul>
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
+<br /><br /><p>By default, Incident Status Based De-duplication checkbox in the Service creation modal will remain unchecked.</p>
+</div>
+
+<p><strong>(4)</strong> After enabling the checkbox and creating the Service, if you click on the <strong>More</strong> option for the Service</p>
+
+<p><img src="images/status-based-deduplication_3.png" alt="" /></p>
+
+<p>Select <strong>De-duplication Rules</strong>, you will be able to see the De-duplication Rule added for the same.</p>
+
+<p><img src="images/status-based-deduplication_4.png" alt="" /></p>
+
+<h2 id="enabling-this-for-an-existing-service">Enabling this for an existing Service</h2>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note:</b>
-<br /><br /><p>This option can be enabled only at the start of a Service Creation. If you leave this box unchecked and want to add this as a Deduplication rule later, you can copy paste the rule below and change the execution priority accordingly. <br />
+<b>Note</b>
+<br /><br /><p>If you leave the Incident Status Based De-duplication box unchecked at the time of Service creation and want to add this rule later, you can copy and paste the rule below and change the Rule Execution Priority accordingly. <br />
 <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">past_incident.is_suppressed == false</code> with the appropriate deduplication time window.</p>
 </div>
+
+<h2 id="faqs">FAQs</h2>
+
+<p><strong>(1)</strong> I have added the De-duplication Rule <code class="highlighter-rouge">past_incident.is_suppressed == false</code> manually to an existing Service to de-duplicate all alerts against any open incident for the Service. Nevertheless, I do not see Incident Status Based De-duplication taking place as expected. What am I missing?</p>
+
+<p>Once the De-duplication Rule <code class="highlighter-rouge">past_incident.is_suppressed == false</code> is added manually to an existing Service, please move the rule <code class="highlighter-rouge">up</code> or <code class="highlighter-rouge">down</code> based on the Rule Execution Priority you wish to have. If you do not want any of your other De-duplication Rules to be executed for the Service, move the newly added De-duplication Rule to the top of the list of rules.</p>
+
+<p><img src="images/status-based-deduplication_5.png" alt="" /></p>
 
 
                 <!--div class="tags">

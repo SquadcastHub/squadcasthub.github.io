@@ -9,38 +9,97 @@ permalink: docs/new-relic
 folder: mydoc
 ---
 
-Follow the steps below to configure a service so as to extract its related alert data from New Relic. Squadcast will then process this information to create incidents for this service as per your preferences.
+This document will help you integrate New Relic with Squadcast.
 
-## Using New Relic as an Alert Source
+[New Relic](https://newrelic.com/) is an observability platform built to help engineers create more perfect software. From monoliths to serverless, you can instrument everything, then analyze, troubleshoot, and optimize your entire software stack, all from one place.
 
-On the **Sidebar**, click on **Services**.
+Route detailed monitoring alerts from New Relic to the right users in Squadcast.
 
-You can either choose to use existing service or [create a new service](adding-a-service-1)
+## How to integrate New Relic with Squadcast
 
-Now, click on the corresponding **Alert Sources** button.
+### In Squadcast: Using New Relic as an Alert Source
+
+**(1)** On the **Sidebar**, click on **Services**
+
+![](images/integration_1-1.png)
+
+**(2)** Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+**(3)** Click the corresponding **Alert Sources**
 
 ![](images/integration_1.png)
 
-Select **New Relic** from **Alert Source** drop down and copy the Webhook URL shown.
+**(4)** Search for **New Relic** from  the **Alert Source** drop down menu and copy the Webhook URL
 
 ![](images/new_relic_1.png)
 
-## Create a Squadcast Webhook in New Relic
+### In New Relic: Add a Squadcast Webhook
 
-Now log in to your New Relic account and go to **Alerts** tabs and then go to **Notification Channels** tab.
+Log in to your New Relic account.
 
-Click on **New Notification Channel**.
-
-Select channel type as **webhook** and enter the channel name as “**squadcast**” and the base url as the url received in step 4.
-
-Click on **create channel**.
+**(1)** From Home, navigate to **Alerts & AI** 
 
 ![](images/new_relic_2.png)
 
-Now you can add this channel to any alert policy you have created (example shown below).
+**(2)** Navigate to **Notification channels** tab and click on **New notification channel**
 
 ![](images/new_relic_3.png)
 
-When the New Relic alert violation closes, or is manually closed, it will be reflected in Squadcast.
+**(3)** Here:
+- Select **channel type** as **Webhook**
+- Enter the **Channel name** as **Squadcast**
+- Paste the copied Webhook URL copied from Squadcast previously under **Base Url**
+- Click on **Create channel**
 
-That's it! Your New Relic integration is now good to go.
+![](images/new_relic_4.png)
+
+**(4)** Now, you can add this **Notification Channel** to any Alert Policy you have created
+
+That is it, your integration with New Relic is complete and you are good to go!
+
+### Configuring Proactive Detection for Anomalies in New Relic
+
+Log in to your New Relic account.
+
+**(1)** From Home, hover over **Alerts & AI** and select **Settings**
+
+![](images/new_relic_6.png)
+
+**(2)** Click on **Settings** in the sidebar under **Proactive Detection** and click on **Add a configuration**
+
+![](images/new_relic_7.png)
+
+**(3)** Here:
+
+- Give the configuration a **Name**
+- Select your New Relic **Account**
+- Choose the **Applications and Services** that need to be monitored
+
+![](images/new_relic_8.png)
+
+- Select the **Signals** that need to be monitored
+
+![](images/new_relic_9.png)
+
+- Select where you want to **receive notifications** 
+    + Select **Webhook**
+    + Paste previously copied Webhook from Squadcast under **URL**
+    + In **Payload template** add the payload exactly as shown below:
+    {% raw %}
+    ```json
+    {
+        "alertClass": "anomaly_detection",
+        "alertData": {{this}}
+    }
+    ```
+    {% endraw %}
+    + You can click on **Send test notification** to trigger an incident in Squadcast check if the integration works fine
+    + **Save** the configuration
+
+![](images/new_relic_10.png)
+
+Now, every time there is an alert in New Relic, the alert will be sent to Squadcast and an incident will be triggered, notifying the right people. 
+
+Similarly, when the alert gets resolved in New Relic, the corresponding incident will get **auto-resolved** in Squadcast as well.
