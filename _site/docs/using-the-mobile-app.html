@@ -567,7 +567,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          <li><a title="Incident List View" href="/docs/incident-list-table-view">Incident List View</a></li>
           
           
           
@@ -604,7 +604,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident Timeline" href="/docs/incident-timeline">Incident Timeline</a></li>
+          <li><a title="Incident Activity Timeline" href="/docs/incident-timeline">Incident Activity Timeline</a></li>
           
           
           
@@ -1543,24 +1543,26 @@ li.sidebarTitle{
 
                 
 
-            <p>You can use our mobile app to Acknowledge, Reassign, take Actions, and Resolve from the Mobile App also a view into who is on-call schedules. The Mobile app will walk you into the incident dashboard where you will be able to view incidents organized into incident-status.</p>
+            <p>You can use our mobile app to Acknowledge, Reassign, take Actions, and Resolve from the mobile app. You can also view who is on-call from the Schedules Tab. The mobile app will walk you into the <strong>Incident List</strong> view where you will be able to view incidents organized by Incident status, that is, Triggered, Acknowledged and Resolved.</p>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>
 <b>SSO login now available on Mobile App</b>
-<br /><br /><p>We have enabled SSO login for Mobile Apps as well. Check the <a href="#sso-login-support-for-mobile-apps">SSO login for mobile apps section</a> for more details.</p>
+<br /><br /><p>We have enabled SSO login for mobile application. Check the <a href="#sso-login-support-for-mobile-apps">SSO login for mobile apps section</a> for more details.</p>
 </div>
 
-<h3 id="incident-list">Incident list</h3>
+<h3 id="incident-list">Incident List</h3>
 
-<p>Once logged in the app will be navigated to the incident-list view. Incidents are organized according to incident-status. The tabs above list the count for only acknowledged and triggered incidents.</p>
+<p>Once you are logged into the application, you will be navigated to the <strong>Incident List</strong> page. Incidents are organized according to incident status. In the tab above, you will be able to view the number of incidents in the open state (Triggered &amp; Acknowledged).</p>
 
 <p><img src="images/using_mobile_1.png" alt="" style="max-width: 30%" /></p>
 
-<p>The incident list can be assorted into based on time by clicking the filter icon on the top right corner as mentioned below</p>
+<p>The <strong>Incident List</strong> holds the ability to filter to view incidents by time. You can do so by using the <strong>filter icon</strong> on the top right  corner of the <strong>Incident List</strong> page.</p>
 
 <p><img src="images/using_mobile_2.png" alt="" style="max-width: 30%" /></p>
 
-<p>Incidents can be searched by clicking on search icon on the top right corner</p>
+<p>You can search for specific incidents by using the <strong>search icon</strong> on the top right corner of the page.</p>
+
+<p><img src="images/using_mobile_search_button.png" alt="" style="max-width: 30%" /></p>
 
 <p><img src="images/using_mobile_3.png" alt="" style="max-width: 30%" /></p>
 
@@ -1570,25 +1572,40 @@ li.sidebarTitle{
 
 <p>This should ensure that you get alerted on incidents and it doesn’t get lost in the noise of other push notifications</p>
 
-<h3 id="incident-page">Incident Page</h3>
+<h3 id="incident-details-page">Incident Details Page</h3>
 
-<p>On an incident page you can take all the actions that are supported on our web app. The page is categorized into 4 pages based on the incident. Details - the incident details, Timeline - incident timeline, Events - incident events (if the incident has deduped events), Incident Notes</p>
+<p>On the <strong>Incident Details</strong> page, you can take all the actions that are supported on our web app. The page has 4 major sections, namely:</p>
+
+<ul>
+  <li>Details - the incident details that come in from the incident payload</li>
+  <li>Incident Activity Timeline - the timeline of incident specific activities, such as Acknowledging or Resolving an Incident, Actions that are run and so on.</li>
+  <li>Events - incidents events that are deduplicated against the parent incident</li>
+  <li>Incident Notes &amp; Starred Notes - all the notes created and starred for the incident</li>
+</ul>
 
 <p><img src="images/using_mobile_4.png" alt="" style="max-width: 30%" /></p>
 
-<p>Incident details page enables quick actions (Acknowledge and Resolve), and more options provide reassign and squad actions</p>
+<p>The <strong>Incident Details</strong> page allows for quick actions:</p>
+
+<ul>
+  <li>Acknowledge - Acknowledge the incident</li>
+  <li>Resolve - Resolve the incident</li>
+  <li>Reassign - Reassign the incident to a different user</li>
+  <li>Respond with Action - Take JIRA or CircleCI actions on an incident
+ enables quick actions (Acknowledge and Resolve), and more options provide reassign and squad actions</li>
+</ul>
 
 <p><img src="images/using_mobile_5.png" alt="" style="max-width: 30%" /></p>
 
-<h4 id="timeline">Timeline</h4>
+<h4 id="incident-activity-timeline">Incident Activity Timeline</h4>
 
-<p>The incident timeline provides all the recorded logs taken against the action</p>
+<p>The <strong>Incident Activity Timeline</strong> provides all the recorded logs taken against the incident</p>
 
 <p><img src="images/using_mobile_6.png" alt="" style="max-width: 30%" /></p>
 
 <h4 id="incident-notes">Incident Notes</h4>
 
-<p>Each incident gets its own notes section. One can @mention users and invite them to collaborate and resolve the incident.</p>
+<p>Each incident gets its own notes section. One can @mention users and invite them to collaborate and resolve the incident. When this is done, the mentioned user will receive an email and push notification to inform them of this.</p>
 
 <p><img src="images/incident_notes_12.png" alt="" style="max-width: 30%" /></p>
 
@@ -1607,21 +1624,21 @@ li.sidebarTitle{
 
 <h3 id="teams">Teams</h3>
 
-<p>Team lists all the members of the organization. Additionally, if the user is on call, there will be a small green dot against the user avatar.</p>
+<p><strong>Team</strong> lists all users in the organization. Additionally, if the user is on call, there will be a small green dot against the user avatar.</p>
 
 <p><img src="images/using_mobile_9.png" alt="" style="max-width: 30%" /></p>
 
-<p>Navigating to the user will be taken into the user profile. User profile lists all the user info including the user notification rules, schedules escalation-policies and squads.</p>
+<p>You can view any specific user’s profile by clicking on their avatar from the <strong>Team</strong> page. User profile lists all the user info including the user’s <strong>Notification Rules</strong>, <strong>Schedules</strong>, <strong>Escalation Policies</strong> and <strong>Squads</strong>.</p>
 
 <p><img src="images/using_mobile_10.png" alt="" style="max-width: 30%" /></p>
 
 <h3 id="schedules">Schedules</h3>
 
-<p>Schedules list’s all the schedules organized against date and time.</p>
+<p><strong>Schedules</strong> page lists all the <strong>Schedules</strong> organized against date and time.</p>
 
 <p><img src="images/using_mobile_11.png" alt="" style="max-width: 30%" /></p>
 
-<h3 id="sso-login-support-for-mobile-apps">SSO login support for Mobile apps</h3>
+<h3 id="sso-login-support-for-mobile-apps">SSO login support for mobile apps</h3>
 
 <p>We have started supporting SSO login for mobile apps from version 2.8.37 onwards. Read below to know how to make it work on <a href="#android">Android</a> &amp; <a href="#ios">iOS</a>.</p>
 
@@ -1630,7 +1647,7 @@ li.sidebarTitle{
 <br /><br /><p>SSO login for Mobile app works only if you access your SSO dashboard from your web browser. Login using SSO provider apps are not supported due to limitations imposed by the SSO providers.</p>
 </div>
 
-<h3 id="android">Android</h3>
+<h3 id="sso-login-flow-for-android-application">SSO Login Flow for Android Application</h3>
 
 <ol>
   <li>Open the Squadcast Mobile App</li>
@@ -1640,7 +1657,7 @@ li.sidebarTitle{
 
 <p>That’s it, you will be logged in to the mobile app automatically.</p>
 
-<h3 id="ios">iOS</h3>
+<h3 id="sso-login-flow-for-ios-application">SSO Login Flow for iOS Application</h3>
 
 <ol>
   <li>Open your mobile browser and login to the SSO dashboard from the mobile browser.</li>
@@ -1744,7 +1761,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 12, 2021 <br /> -->
+<!--  Site last generated: Mar 17, 2021 <br /> -->
                 </div>
             </div>
             <script>

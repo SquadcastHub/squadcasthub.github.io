@@ -567,7 +567,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          <li><a title="Incident List View" href="/docs/incident-list-table-view">Incident List View</a></li>
           
           
           
@@ -604,7 +604,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident Timeline" href="/docs/incident-timeline">Incident Timeline</a></li>
+          <li><a title="Incident Activity Timeline" href="/docs/incident-timeline">Incident Activity Timeline</a></li>
           
           
           
@@ -1554,27 +1554,27 @@ li.sidebarTitle{
 
 <h3 id="postmortem-templates">Postmortem Templates</h3>
 
-<p>Each organization gets a few predefined Postmortem Templates from <strong>Squadcast</strong>. You can choose to create new templates/modify existing ones, based on how you do postmortems within your organization.</p>
+<p>Each organization has a few predefined <strong>Postmortem Templates</strong> from <strong>Squadcast</strong>. You can choose to create new templates/modify existing ones, based on how you do postmortems within your organization.</p>
 
-<p>To do so:</p>
+<p>You can follow the steps below to create a new Postmortem Template in Squadcast:</p>
 
 <p><strong>(1)</strong> Click on <strong>Settings</strong> on the sidebar</p>
 
 <p><img src="images/postmortem_1.png" alt="" /></p>
 
-<p><strong>(2)</strong> Click on <strong>Postmortem Settings</strong>. Here you’ll find the ready-to-use templates</p>
+<p><strong>(2)</strong> Click on <strong>Postmortem Settings</strong>. Here you’ll find the list of pre-defined templates</p>
 
 <p><img src="images/postmortem_2.png" alt="" /></p>
 
-<p><strong>(3)</strong> You can either make use of the existing templates or add new templates</p>
+<p><strong>(3)</strong> You can either make use of the existing templates or add new templates for the rest of your Organization to use</p>
 
 <p><img src="images/postmortem_3.png" alt="" /></p>
 
-<p><strong>(4)</strong> There is a set of <code class="highlighter-rouge">incident-variables</code>, which can be used while creating Postmortem Templates. These <code class="highlighter-rouge">incident-variables</code> will dynamically get populated with the incident’s data for which the Postmortem is being created. You can see all the available <code class="highlighter-rouge">incident-variables</code> on the right-half while creating templates. The variables need to be specified using <a href="https://github.com/janl/mustache.js/">MustacheJS syntax</a>. Refer to the pre-defined templates for the templating syntax.</p>
+<p><strong>(4)</strong> There is a set of <code class="highlighter-rouge">incident-variables</code>, which can be used while creating <strong>Postmortem Templates</strong>. These <code class="highlighter-rouge">incident-variables</code> will dynamically get populated with the incident’s data for which the Postmortem is being created. You can see all the available <code class="highlighter-rouge">incident-variables</code> on the right-half while creating templates. The variables need to be specified using <a href="https://github.com/janl/mustache.js/">MustacheJS syntax</a>. Refer to the pre-defined templates for the templating syntax.</p>
 
 <p><img src="images/postmortem_4.png" alt="" /></p>
 
-<p><strong>(5)</strong> A template can be marked <strong>default</strong>. While filling a Postmortem report for an incident, the default template would pop up automatically</p>
+<p><strong>(5)</strong> A template can be marked <strong>Default</strong>. While filling a Postmortem report for an incident, the default template would pop up automatically when a user <strong>Starts a Postmortem</strong>.</p>
 
 <p><img src="images/postmortem_5.png" alt="" /></p>
 
@@ -1587,11 +1587,12 @@ li.sidebarTitle{
 
 <h3 id="creating-a-postmortem">Creating a Postmortem</h3>
 
-<p>Prerequisites: 
-The Postmortem feature is enabled for an incident only after it has been resolved. Hence, an incident first needs to be <strong>Resolved</strong>
-Only the <em>account-owner/admin</em> of an organization has the access to modify the templates and/or create new templates for the organization</p>
+<h4 id="prerequisites">Prerequisites:</h4>
 
-<p><strong>(1)</strong> To create a Postmortem for a resolved incident, go into the <strong>Incident Details Page</strong>and Click on <strong>Start Postmortem</strong></p>
+<p>The Postmortem feature is enabled for an incident only after it has been resolved. Hence, an incident first needs to be <strong>Resolved</strong>
+Only the <strong>Account Owner</strong>/<strong>Admin</strong> of an Organization has the access to modify the templates and/or create new templates for the Organization</p>
+
+<p><strong>(1)</strong> To create a Postmortem for a resolved incident, go into the <strong>Incident Details Page</strong> and Click on <strong>Start Postmortem</strong></p>
 
 <p><img src="images/postmortem_6.png" alt="" /></p>
 
@@ -1613,13 +1614,13 @@ Only the <em>account-owner/admin</em> of an organization has the access to modif
 
 <h3 id="faqs">FAQs</h3>
 
-<p><strong>Q:</strong> Who can create Postmortem templates?</p>
+<p><strong>Q:</strong> Who can create Postmortem Templates?</p>
 
-<p><strong>A:</strong> Only <code class="highlighter-rouge">account-owner and admins</code> of an organization have the access to modify or create the templates.</p>
+<p><strong>A:</strong> Only <strong>Account Owner</strong> and <strong>Admins</strong> of an organization have the access to modify or create the templates.</p>
 
-<p><strong>Q:</strong> Can Stakeholders create Postmortem templates?</p>
+<p><strong>Q:</strong> Can Stakeholders create Postmortem Templates?</p>
 
-<p><strong>A:</strong> No, Stakeholders cannot create Postmortem templates.</p>
+<p><strong>A:</strong> No, <strong>Stakeholders</strong> cannot create Postmortem Templates.</p>
 
 <p><strong>Q:</strong> When can Postmortems be created?</p>
 
@@ -1720,7 +1721,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 12, 2021 <br /> -->
+<!--  Site last generated: Mar 17, 2021 <br /> -->
                 </div>
             </div>
             <script>

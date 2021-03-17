@@ -666,7 +666,7 @@
 
 
 {
-"title": "Incident List Table View",
+"title": "Incident List View",
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/incident-list-table-view",
@@ -710,11 +710,11 @@
 
 
 {
-"title": "Incident Timeline",
+"title": "Incident Activity Timeline",
 "tags": "incident timeline",
 "keywords": "",
 "url": "/docs/incident-timeline",
-"summary": "View Timelines of the Incident"
+"summary": "View the Activity Timelines of an Incident"
 }
 ,
 
@@ -1408,7 +1408,7 @@
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/squadcast-search",
-"summary": "Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + K</code> for search. Search also supports GOTO for instant navigation. GOTO can be accessed directly with <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + SHIFT + K</code>. (use CTRL for windows and CMD as meta keys for mac)."
+"summary": "Use the global search bar to look for incidents, documentation or other entities within the platform"
 }
 ,
 

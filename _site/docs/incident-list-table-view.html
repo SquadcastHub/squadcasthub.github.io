@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="List view for all your incidents">
 <meta name="keywords" content="set-up-your-profilemanaging-all-users,  ">
-<title>Incident List Table View | Incident Management using Squadcast</title>
+<title>Incident List View | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -194,7 +194,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident List Table View page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident List View page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -567,7 +567,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li class="active"><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          <li class="active"><a title="Incident List View" href="/docs/incident-list-table-view">Incident List View</a></li>
           
           
           
@@ -604,7 +604,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident Timeline" href="/docs/incident-timeline">Incident Timeline</a></li>
+          <li><a title="Incident Activity Timeline" href="/docs/incident-timeline">Incident Activity Timeline</a></li>
           
           
           
@@ -1535,7 +1535,7 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Incident List Table View</h1>
+            <h1 class="post-title-main">Incident List View</h1>
         </div>
             
                 <div class="summary">List view for all your incidents</div>
@@ -1543,15 +1543,23 @@ li.sidebarTitle{
 
                 
 
-            <p>The incident List Table View gives you a clear view of all your incidents along with its relevant information at a single glance.</p>
+            <p>The <strong>Incident List</strong> view gives you a clear view of all your incidents along with its relevant information at a single glance.</p>
 
-<h2 id="accessing-this-view">Accessing this view</h2>
+<h2 id="accessing-the-incident-list-view">Accessing the <strong>Incident List</strong> view</h2>
 
-<p><strong>(1)</strong> Click on <strong>Incident List</strong> on the sidebar</p>
+<p><strong>(1)</strong> Click on <strong>Incident List</strong> from the sidebar</p>
 
 <p><img src="images/incident_list_1.png" alt="" /></p>
 
-<p><strong>(2)</strong> View the Incident Message, time of creation, associated Service, Assigned to and the current Status of the incident</p>
+<p><strong>(2)</strong> View the details of the incident:</p>
+
+<ul>
+  <li><strong>Incident Message</strong></li>
+  <li><strong>Created At</strong></li>
+  <li>Associated <strong>Service</strong></li>
+  <li><strong>Assigned To</strong></li>
+  <li>The <strong>Current Status</strong> of the incident</li>
+</ul>
 
 <p><img src="images/incident_list_2.png" alt="" /></p>
 
@@ -1563,7 +1571,7 @@ li.sidebarTitle{
 
 <h3 id="bulk-actions">Bulk Actions</h3>
 
-<p>Acknowledge and Resolve multiple incidents in one go by selecting the incidents and selecting the appropriate action button.</p>
+<p><strong>Acknowledge</strong> and <strong>Resolve</strong> multiple incidents in one go by selecting the incidents and selecting the appropriate action button.</p>
 
 <p><img src="images/incident_list_4.png" alt="" /></p>
 
@@ -1612,13 +1620,13 @@ li.sidebarTitle{
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>
 <b>Incident Export Limit</b><br /><br />
-<p>At the moment you can export only a maximum of 1000 incidents at once. Please tweak your filters to ensure the incidents count is within the limit.</p>
+<p>At the moment you can export only a maximum of 1000 incidents at once. Please tweak your filters to ensure the incidents count is within the limit for every export. Today, there are no limits on the number of times you can export incidents.</p>
 </div>
 
 <p><strong>(2)</strong> The exported CSV file will have the following fields:</p>
 
 <ul>
-  <li>ID</li>
+  <li>Incident ID</li>
   <li>Title</li>
   <li>Description</li>
   <li>Status</li>
@@ -1630,22 +1638,25 @@ li.sidebarTitle{
   <li>Resolved At</li>
   <li>Tags</li>
   <li>Event Count</li>
+  <li>TTA (Time to Acknowledge)</li>
+  <li>TTR (Time to Resolve)</li>
+  <li>Activity Logs</li>
 </ul>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>
-<b>Public API</b><br /><br />
+<b>Export Incidents: Public API</b><br /><br />
 <p>Exporting incidents as CSV is available as a public API. Check out the Apidocs <a href="https://apidocs.squadcast.com/#3d00d5c6-6b9b-410c-a11b-0da72c60d419" target="_blank">here</a>.</p>
 </div>
 
-<h3 id="free-text-search">Free text Search</h3>
+<h3 id="incident-list-search">Incident List Search</h3>
 
-<p>Search for <strong>Message</strong>, <strong>Incident Description</strong> and <strong>Postmortem</strong> using the free text Search box.</p>
+<p>Search for <strong>Message</strong>, <strong>Incident Description</strong> and <strong>Postmortem</strong> using the text Search box.</p>
 
 <p><img src="images/incident_list_10.png" alt="" /></p>
 
 <h3 id="load-more-incidents">Load More Incidents</h3>
 
-<p>In order to load more incidents, just scroll to the end of the list and new incidents will be automatically added.</p>
+<p>In order to load more incidents, just scroll to the end of the list and the available existing incidents will be automatically displayed.</p>
 
 <p><img src="images/incident_list_11.png" alt="" /></p>
 
@@ -1752,7 +1763,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 12, 2021 <br /> -->
+<!--  Site last generated: Mar 17, 2021 <br /> -->
                 </div>
             </div>
             <script>
