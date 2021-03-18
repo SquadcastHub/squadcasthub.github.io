@@ -123,13 +123,53 @@ jsonPath(payload.Message, "AlarmName")
 
 This will pick out the value `AlarmName` from the Message object in the payload based on which, you can suppress the incident.
 
-{{site.data.alerts.blue-note}}
-<b>Multiple Alert Sources</b>
-<br/><br/><p>We can see alert payloads of past events from different alert sources for the service by selecting the respective alert source from the dropdown in the right-half side.
-<br/><br/>
-Since the payload format is fixed for a given alert source, it is usually preferrable to have suppression rules on a per-alert source basis. This can be done by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.
-<br/><br/>
-For example, if you want to have a suppression rule for a service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'jira-plugin' && (&lt;your_suppression_rule&gt;)</code></p>
+#### Discarding suppressed incidents
+
+The `discard()` function can be used along with the supression rule to let the system know
+that incidents that hold true for the rule needn't be stored in the platform. 
+
+**Example** 
+
+Suppression Rule:  
+
+```javascript
+source == "grafana" && re(payload["message"], "Notification Message")
+``` 
+Supression Rule with `discard()`: 
+
+```javascript
+source == grafana && re(payload["message"], "Notification Message") && discard()
+```
+
+{{site.data.alerts.blue-note-md}}
+   **Avoid hitting Rate Limits**
+   
+   The `discard()` function can be used to avoid hitting the
+   **[Incident Rate Limits](https://support.squadcast.com/docs/incident-rate-limiting)**
+   as **Suppressed** events that are discarded don't get counted against the allowed rate limits.
+
+{{site.data.alerts.end}}
+
+
+{{site.data.alerts.blue-note-md}}
+   **Multiple Alert Sources**
+
+   We can see alert payloads of past events from different alert
+   sources for the service by selecting the respective alert source
+   from the dropdown in the right-half side.
+
+   Since the payload format is fixed for a given alert source,
+   it is usually preferrable to have suppression rules on a per-alert source basis.
+   This can be done by making use of the `source` field which
+   lets you know the alert source that triggered the incoming event.
+
+   For example, if you want to have a suppression rule for a service,
+   only for alerts coming for **`grafana`** alert source, then the corresponding
+   rule would look something like:
+   
+   ```javascript
+   source == 'grafana' && (<your_suppression_rule>)
+   ```
 {{site.data.alerts.end}}
 
 ### Example
@@ -152,21 +192,21 @@ Below is an example payload for demonstration:
     "project_name": "hydra"
   },
   "incident_details": {
-    "message": "[Bug] bug - 2"
+    "message": "[Bug] bug - 2",
     "description": "+ Project: HYDRA \n+Issue Type: Bug ..."
   },
-  "source": "jira-plugin"
+  "source": "grafana"
 }
 ```
 
 To suppress any incoming alert when:
  - The alert message contains: `[Bug]`
- - The alert source is `jira-plugin`
+ - The alert source is `grafana`
 
 **Suppression Rule:**
 
 ```javascript
-re(payload.incident_details.message, "[Bug]") && source == "jira-plugin"
+re(payload.incident_details.message, "[Bug]") && source == "grafana"
 ```
 
 ## Viewing Suppressed Incidents
@@ -176,8 +216,9 @@ You can view `suppressed` incidents in the [Incident List](https://support.squad
 ![](images/alert_suppression_6_new.png)
 
 
-{{site.data.alerts.yellow-note-i}}
-<b>Note</b>
-<br/><p><ul><li><code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Suppressed</code> and <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Resolved</code> are the final states for incidents in Squadcast. You will not be able to take any action on incidents that are in these states.</li>
-<li>Incident information will be available on the Squadcast platform even if they are suppressed.</li></ul></p>
+{{site.data.alerts.yellow-note-i-md}}
+**Note**
+
+ - **`Suppressed`** and **`Resolved`** are the final states for incidents in Squadcast. You will not be able to take any action on incidents that are in these states.
+ - Incident information will be available on the Squadcast platform even if they are suppressed.
 {{site.data.alerts.end}}
