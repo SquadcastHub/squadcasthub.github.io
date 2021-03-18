@@ -156,7 +156,7 @@ Below is an example payload for demonstration:
     "project_key": "HYD",
     "project_name": "hydra"
   },
-  "source": "jira-plugin"
+  "source": "grafana"
 }
 ```
 To de-duplicate any incoming alert when:
@@ -178,15 +178,15 @@ From the [Incident List page](https://support.squadcast.com/docs/incident-list-t
 
 ![](images/de-duplication_6.png)
 
-Clicking on such an incident will take you its [Incident Details page](https://support.squadcast.com/docs/incident-details) where, by clicking on **Events**, you will be able to see the following:
+Clicking on such an incident will take you to its [Incident Details page](https://support.squadcast.com/docs/incident-details) where, by clicking on **Deduped Events**, you will be able to see the following:
 
-  - Number of de-duplicated alerts 
+  - Number of de-duplicated events 
   - Time when they reached Squadcast
-  - **Message** of the alert
+  - **Message** and **Payload** of the event
 
 ![](images/de-duplication_7.png)
 
-Clicking on any of the de-duplicated alerts will display will all the information that is sent for that alert from the monitoring tool.
+Clicking on any of the de-duplicated events will display will all the information that is sent for that alert from the monitoring tool.
 
 ![](images/de-duplication_8.png)
 
@@ -210,7 +210,7 @@ Yes, you can. The evaluation between different De-duplication Rules is OR.
 
 **(5)** What kind of regex can be used to write custom rules?
 
-The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](https://regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
 
 ![](images/de-duplication_9.png)
 
