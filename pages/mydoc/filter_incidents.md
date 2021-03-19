@@ -72,11 +72,13 @@ You can choose to filter by multiple values, so use the checkbox to select all t
 
 Filter Incidents by *[Tags](event-tagging)*.
 
-In order to filter by **Tags**, first select the `key` and then select the `value` of the **Tag** you would like to filter by. You can use the search box to narrow down your options.
+In order to filter by **Tags**, first select the `key`.
 
 ![](images/filter_9.png)
 
-![](images/filter_11.png)
+Then select the `value` of the **Tag**. You can use the search box to narrow down your options.
+
+![](images/filter_11.png)s
 
 When you are not filtering by any **Services**, tags across all the **Services** will be displayed. To narrow down your **Tags** by **Service**, make sure to apply the **Service** filter first.
 
