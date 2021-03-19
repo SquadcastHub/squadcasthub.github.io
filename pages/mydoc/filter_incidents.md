@@ -78,7 +78,7 @@ In order to filter by **Tags**, first select the `key`.
 
 Then select the `value` of the **Tag**. You can use the search box to narrow down your options.
 
-![](images/filter_11.png)s
+![](images/filter_11.png)
 
 When you are not filtering by any **Services**, tags across all the **Services** will be displayed. To narrow down your **Tags** by **Service**, make sure to apply the **Service** filter first.
 
