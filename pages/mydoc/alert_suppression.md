@@ -186,7 +186,7 @@ You can view `suppressed` incidents in the [Incident List](https://support.squad
 
 **(1)** What kind of regex can be used to write custom rules?
 
-The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](https://regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
 
 ![](images/de-duplication_9.png)
 
