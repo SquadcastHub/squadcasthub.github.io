@@ -1565,6 +1565,8 @@ li.sidebarTitle{
   <li><strong>Dependency Service(s)</strong>: <em>Service B</em>, <em>Service C</em></li>
 </ul>
 
+<p>Let’s say, <em>Service B</em> has an open incident at <em>time x</em> and <em>Service C</em> has an open incident at <em>time x+1</em>. Now, <em>Service A</em> receives an incident. This incident for <em>Service A</em> gets de-duplicated with the <strong>latest</strong> open incident of its depenedency Service(s) - i.e., with the open incident for <em>Service C</em>, in this case.</p>
+
 <h2 id="adding-a-service-dependency">Adding a Service Dependency</h2>
 
 <p><strong>(1)</strong> Navigate to <strong>Services</strong> from the sidebar</p>
@@ -1601,7 +1603,8 @@ li.sidebarTitle{
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
 <b>Note:</b>
-<br /><br /><p><b>1.</b> The Service Dependency based De-duplication will de-duplicate any incoming alert against either a <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Triggered</code> or <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Acknowledged</code> incident only.
+<br /><br /><p><b>1.</b> The Service Dependency Based De-duplication will de-duplicate any incoming alert against either a <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Triggered</code> or <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Acknowledged</code> incident only.
+<br /><br />
 <b>2.</b> Service Dependency based De-duplication is rule-specific and can be enabled for any number of De-duplication Rules that are defined for a Service.</p>
 </div>
 
