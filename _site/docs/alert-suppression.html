@@ -1663,13 +1663,25 @@ li.sidebarTitle{
 
 <p>This will pick out the value <code class="highlighter-rouge">AlarmName</code> from the Message object in the payload based on which, you can suppress the incident.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Multiple Alert Sources</b>
-<br /><br /><p>We can see alert payloads of past events from different alert sources for the service by selecting the respective alert source from the dropdown in the right-half side.
-<br /><br />
-Since the payload format is fixed for a given alert source, it is usually preferrable to have suppression rules on a per-alert source basis. This can be done by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.
-<br /><br />
-For example, if you want to have a suppression rule for a service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'jira-plugin' &amp;&amp; (&lt;your_suppression_rule&gt;)</code></p>
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+   <strong>Multiple Alert Sources</strong></p>
+
+  <p>We can see alert payloads of past events from different alert
+   sources for the service by selecting the respective alert source
+   from the dropdown in the right-half side.</p>
+
+  <p>Since the payload format is fixed for a given alert source,
+   it is usually preferrable to have suppression rules on a per-alert source basis.
+   This can be done by making use of the <code class="highlighter-rouge">source</code> field which
+   lets you know the alert source that triggered the incoming event.</p>
+
+  <p>For example, if you want to have a suppression rule for a service,
+   only for alerts coming for <strong><code class="highlighter-rouge">grafana</code></strong> alert source, then the corresponding
+   rule would look something like:</p>
+
+  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="nx">source</span> <span class="o">==</span> <span class="s1">'grafana'</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="o">&lt;</span><span class="nx">your_suppression_rule</span><span class="o">&gt;</span><span class="p">)</span>
+</code></pre></div>  </div>
 </div>
 
 <h3 id="example">Example</h3>
@@ -1691,23 +1703,49 @@ For example, if you want to have a suppression rule for a service, only for aler
     </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hydra"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="s2">"incident_details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[Bug] bug - 2"</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[Bug] bug - 2"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"+ Project: HYDRA </span><span class="se">\n</span><span class="s2">+Issue Type: Bug ..."</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jira-plugin"</span><span class="w">
+  </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"grafana"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
 <p>To suppress any incoming alert when:</p>
 <ul>
   <li>The alert message contains: <code class="highlighter-rouge">[Bug]</code></li>
-  <li>The alert source is <code class="highlighter-rouge">jira-plugin</code></li>
+  <li>The alert source is <code class="highlighter-rouge">grafana</code></li>
 </ul>
 
 <p><strong>Suppression Rule:</strong></p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">re</span><span class="p">(</span><span class="nx">payload</span><span class="p">.</span><span class="nx">incident_details</span><span class="p">.</span><span class="nx">message</span><span class="p">,</span> <span class="s2">"[Bug]"</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">source</span> <span class="o">==</span> <span class="s2">"jira-plugin"</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">re</span><span class="p">(</span><span class="nx">payload</span><span class="p">.</span><span class="nx">incident_details</span><span class="p">.</span><span class="nx">message</span><span class="p">,</span> <span class="s2">"[Bug]"</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">source</span> <span class="o">==</span> <span class="s2">"grafana"</span>
 </code></pre></div></div>
+
+<h3 id="discarding-suppressed-incidents">Discarding suppressed incidents</h3>
+
+<p>To discard incoming alerts and stop them from being triggered as incidents in Squadcast,
+use the <code class="highlighter-rouge">discard()</code> function in conjunction with Suppression Rules.</p>
+
+<p><strong>Example</strong></p>
+
+<p>Suppression Rule:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">source</span> <span class="o">==</span> <span class="s2">"grafana"</span> <span class="o">&amp;&amp;</span> <span class="nx">re</span><span class="p">(</span><span class="nx">payload</span><span class="p">[</span><span class="s2">"message"</span><span class="p">],</span> <span class="s2">"Notification Message"</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Supression Rule with <code class="highlighter-rouge">discard()</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">source</span> <span class="o">==</span> <span class="nx">grafana</span> <span class="o">&amp;&amp;</span> <span class="nx">re</span><span class="p">(</span><span class="nx">payload</span><span class="p">[</span><span class="s2">"message"</span><span class="p">],</span> <span class="s2">"Notification Message"</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">discard</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+   <strong>Avoid hitting Rate Limits</strong></p>
+
+  <p>The <code class="highlighter-rouge">discard()</code> function can be used to avoid hitting the
+   <strong><a href="https://support.squadcast.com/docs/incident-rate-limiting">Incident Rate Limits</a></strong>
+   as <strong>Suppressed events that are discarded</strong> don’t get counted against the allowed rate limits.</p>
+
+</div>
 
 <h2 id="viewing-suppressed-incidents">Viewing Suppressed Incidents</h2>
 
@@ -1715,10 +1753,14 @@ For example, if you want to have a suppression rule for a service, only for aler
 
 <p><img src="images/alert_suppression_6_new.png" alt="" /></p>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note</b>
-<br /><p><ul><li><code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Suppressed</code> and <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Resolved</code> are the final states for incidents in Squadcast. You will not be able to take any action on incidents that are in these states.</li>
-<li>Incident information will be available on the Squadcast platform even if they are suppressed.</li></ul></p>
+<div class="alert alert-warning" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<strong>Note</strong></p>
+
+  <ul>
+    <li><strong><code class="highlighter-rouge">Suppressed</code></strong> and <strong><code class="highlighter-rouge">Resolved</code></strong> are the final states for incidents in Squadcast. You will not be able to take any action on incidents that are in these states.</li>
+    <li>Incident information will be available on the Squadcast platform even if they are suppressed.</li>
+  </ul>
 </div>
 
 
@@ -1824,7 +1866,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 17, 2021 <br /> -->
+<!--  Site last generated: Mar 22, 2021 <br /> -->
                 </div>
             </div>
             <script>
