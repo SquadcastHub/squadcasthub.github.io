@@ -715,13 +715,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="AppSignal" href="/docs/appsignal">AppSignal</a></li>
           
           
@@ -884,6 +877,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Icinga2" href="/docs/icinga2">Icinga2</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
           
           
           
@@ -1762,6 +1762,18 @@ use the <code class="highlighter-rouge">discard()</code> function in conjunction
     <li>Incident information will be available on the Squadcast platform even if they are suppressed.</li>
   </ul>
 </div>
+
+<h2 id="faqs">FAQs</h2>
+
+<p><strong>(1)</strong> What kind of regex can be used to write custom rules?</p>
+
+<p>The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex <a href="https://regex101.com">here</a> against <code class="highlighter-rouge">Golang</code> flavour as shown in the screenshot below and then, set them up in Squadcast:</p>
+
+<p><img src="images/de-duplication_9.png" alt="" /></p>
+
+<p><strong>(2)</strong> Can I create OR rules?</p>
+
+<p>Yes, you can. The evaluation between different Suppression Rules is OR. Add multiple Suppression Rules to enable OR evaluation.</p>
 
 
                 <!--div class="tags">

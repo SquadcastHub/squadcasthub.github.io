@@ -715,13 +715,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="AppSignal" href="/docs/appsignal">AppSignal</a></li>
           
           
@@ -884,6 +877,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Icinga2" href="/docs/icinga2">Icinga2</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
           
           
           
@@ -1609,7 +1609,7 @@ li.sidebarTitle{
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
 <b>Important</b>
-<br /><br /><p>Once you opt for the Raw String method, you cannot revert to the UI-based Rule Builder method.</p>
+<br /><br /><p>Once you opt for the Raw String method, you cannot revert to the UI-based Rule Builder method for that rule.</p>
 </div>
 
 <p>(a) On the right, you can view the payload of the latest alert for the chosen Alert Source</p>
@@ -1683,7 +1683,7 @@ Below is an example payload:</p>
 <br /><br />
 Since the payload format is fixed for a given alert source, it is usually preferrable to have De-duplication Rules on a per-alert source basis. This can be done by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.
 <br /><br />
-For example, if you want to have a De-duplication Rule for a Service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'jira-plugin' &amp;&amp; (&lt;your_de-duplication_rule&gt;)</code></p>
+For example, if you want to have a De-duplication Rule for a Service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">grafana</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'grafana' &amp;&amp; (&lt;your_de-duplication_rule&gt;)</code></p>
 </div>
 
 <h3 id="example">Example</h3>
@@ -1705,7 +1705,7 @@ For example, if you want to have a De-duplication Rule for a Service, only for a
     </span><span class="s2">"project_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HYD"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"project_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hydra"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jira-plugin"</span><span class="w">
+  </span><span class="s2">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"grafana"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 <p>To de-duplicate any incoming alert when:</p>
@@ -1728,17 +1728,17 @@ For example, if you want to have a De-duplication Rule for a Service, only for a
 
 <p><img src="images/de-duplication_6.png" alt="" /></p>
 
-<p>Clicking on such an incident will take you its <a href="https://support.squadcast.com/docs/incident-details">Incident Details page</a> where, by clicking on <strong>Events</strong>, you will be able to see the following:</p>
+<p>Clicking on such an incident will take you to its <a href="https://support.squadcast.com/docs/incident-details">Incident Details page</a> where, by clicking on <strong>Deduped Events</strong>, you will be able to see the following:</p>
 
 <ul>
-  <li>Number of de-duplicated alerts</li>
+  <li>Number of de-duplicated events</li>
   <li>Time when they reached Squadcast</li>
-  <li><strong>Message</strong> of the alert</li>
+  <li><strong>Message</strong> and <strong>Payload</strong> of the event</li>
 </ul>
 
 <p><img src="images/de-duplication_7.png" alt="" /></p>
 
-<p>Clicking on any of the de-duplicated alerts will display will all the information that is sent for that alert from the monitoring tool.</p>
+<p>Clicking on any of the de-duplicated events will display will all the information that is sent for that alert from the monitoring tool.</p>
 
 <p><img src="images/de-duplication_8.png" alt="" /></p>
 
@@ -1762,7 +1762,7 @@ For example, if you want to have a De-duplication Rule for a Service, only for a
 
 <p><strong>(5)</strong> What kind of regex can be used to write custom rules?</p>
 
-<p>The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex <a href="regex101.com">here</a> against <code class="highlighter-rouge">Golang</code> flavour as shown in the screenshot below and then, set them up in Squadcast:</p>
+<p>The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex <a href="https://regex101.com">here</a> against <code class="highlighter-rouge">Golang</code> flavour as shown in the screenshot below and then, set them up in Squadcast:</p>
 
 <p><img src="images/de-duplication_9.png" alt="" /></p>
 
