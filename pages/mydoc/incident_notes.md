@@ -9,7 +9,7 @@ permalink: docs/incident-notes
 folder: mydoc
 ---
 
-Incident Notes enable you to add important notes that can help mitigate an incident faster.
+**Incident Notes** enable you to add important notes for you and your team that can help mitigate an incident faster.
 
 You can use this to: 
 - Collaborate with your team and resolve the incident 
@@ -17,13 +17,11 @@ You can use this to:
 - Use it to store Notes that can be populated in the Postmortem report
 - Share Organization-wide information like resolution reason, Follow-up Tasks, etc.
 
-{{site.data.alerts.blue-note}}
-<b>Prerequisite</b>
-<br/><br/>
-<p>
-Click on Profile > Previews > Enable to switch to the new Incident Details view.
-</p>
-{{site.data.alerts.end}}
+## Prerequisites
+
+- Only verified users would be receiving any kind of notifications from Squadcast
+- For receiving Push notifications, users should have the [Squadcast mobile app](https://support.squadcast.com/docs/using-the-mobile-app) (Version 2.10.71 and above) installed
+
 
 ## To get started
 
@@ -35,9 +33,9 @@ Click on Profile > Previews > Enable to switch to the new Incident Details view.
 
 ![](images/incident_notes_1_1.png)
 
-### Tagging Users
+### Mentioning Users in Notes
 
-- One can callout users using "@" symbol for user specific notes
+- Users can callout other users using the "@" symbol for important notes. This can also be used to inform users of a specific need, information or as a means to notify your **Stakeholders** on information pertaining to the status of an ongoing incident.
 
 ![](images/incident_notes_2.png)
 
@@ -49,21 +47,16 @@ Click on Profile > Previews > Enable to switch to the new Incident Details view.
 
 ![](images/incident_notes_4.png)
 
-<br/>
-{{site.data.alerts.blue-note}}
-<b>NOTE</b>
-<br/><br/>
-<p>Only verified users would be receiving any kind of notifications from Squadcast. </p>
-<p>For receiving Push notifications, users should have the <a href="using-the-mobile-app">Squadcast mobile app</a> (Version 2.10.71 and above) installed</p>
-{{site.data.alerts.end}}
-
 ### Adding Images
 
 - Incident Notes support Markdown text format. Hence, images can be added as URLs or links 
 
 ![](images/incident_notes4_1.png)
 
-**Command to add an image**:
+#### Adding Images to a Note
+
+You can use the below syntax to add an image:
+
 ```
 ![image_name](image_url)
 ```
@@ -72,17 +65,17 @@ Click on Profile > Previews > Enable to switch to the new Incident Details view.
 
 ### Editing or Deleting a Note
 
-- One can edit or delete existing notes as well by clicking on the _More_ option corresponding to a particular note which would appear on hovering over it
+- One can **Edit** or **Delete** existing notes as well by clicking on the **More** icon corresponding to a particular note which would appear on hovering over the note
 
 ![](images/incident_notes_7.png)
 
 ### Starring and Un-starring Notes 
 
-- Star important notes by clicking on the `star` icon as shown in the screenshot above beside the `More` option
+- Star important notes by clicking on the **Star** icon as shown in the screenshot above beside the **More** option
 
 ![](images/incident_notes_8.png)
 
-- When you have a bulk of Notes and want to simply take a look at all the important, Starred Notes, you can do so by clicking on **View Starred Notes*
+- When you have a bulk of Notes and want to simply take a look at all the important, Starred Notes, you can do so by clicking on **View Starred Notes**
 
 ![](images/incident_notes_9.png)
 
@@ -90,13 +83,13 @@ Click on Profile > Previews > Enable to switch to the new Incident Details view.
 
 ![](images/incident_notes_10.png)
 
-- Starred notes would be captured in the Activity Timeline. Clicking on the starred note activity in the Activity Timeline will take you to that specific note in the Incident Notes section
+- Starred notes would be captured in the **Incident Activity Timeline**. Clicking on the starred note activity in the **Incident Activity Timeline** will take you to that specific note in the Incident Notes section
 
 ![](images/incident_notes10_1.png)
 
 ## FAQs
 
-**(1)** What actions can be taken by the different User Roles?
+**(1)** What actions can be taken by the different User Types?
 
 - **Note Creation**: Any user can add a note
 - **Note Updation**: Only the author of the note can update it
@@ -127,4 +120,4 @@ To do so:
 
 **(3)** Can I call Stakeholders in the Notes section and notify them?
 
-Yes, you can “@” mention Stakeholders and they would be notified for your comment via Email and Push.
+Yes, you can “@” mention Stakeholders and they would be notified for the note via Email and Push.

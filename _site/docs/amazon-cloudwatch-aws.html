@@ -404,24 +404,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li class="subfolders">
-              <a title="Alert Deduplication Rules" href="#">Alert Deduplication Rules</a>
+              <a title="Alert De-duplication Rules" href="#">Alert De-duplication Rules</a>
               <ul>
                   
                   
                   
-                  <li><a title="Alert Deduplication Rules" href="de-duplication-rules">Alert Deduplication Rules</a></li>
+                  <li><a title="Alert De-duplication Rules" href="de-duplication-rules">Alert De-duplication Rules</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Incident Status Based Deduplication" href="status-based-deduplication">Incident Status Based Deduplication</a></li>
+                  <li><a title="Incident Status Based De-duplication" href="status-based-deduplication">Incident Status Based De-duplication</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Service Dependency Based Deduplication" href="service-dependency-based-deduplication">Service Dependency Based Deduplication</a></li>
+                  <li><a title="Service Dependency Based De-duplication" href="service-dependency-based-deduplication">Service Dependency Based De-duplication</a></li>
                   
                   
                   
@@ -567,7 +567,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          <li><a title="Incident List View" href="/docs/incident-list-table-view">Incident List View</a></li>
           
           
           
@@ -604,7 +604,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident Timeline" href="/docs/incident-timeline">Incident Timeline</a></li>
+          <li><a title="Incident Activity Timeline" href="/docs/incident-timeline">Incident Activity Timeline</a></li>
           
           
           
@@ -709,13 +709,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="AppDynamics" href="/docs/appdynamics">AppDynamics</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
           
           
           
@@ -890,6 +883,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="InsightOps (LogEntries)" href="/docs/insightops-logentries">InsightOps (LogEntries)</a></li>
           
           
@@ -926,6 +926,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Kapacitor" href="/docs/kapacitor">Kapacitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LibreNMS" href="/docs/librenms">LibreNMS</a></li>
           
           
           
@@ -1543,7 +1550,7 @@ li.sidebarTitle{
 
                 
 
-            <p>Follow the steps below to configure a service so as to push related alert data from Honeybadger onto Squadcast.</p>
+            <p>Follow the steps below to configure a service so as to push related alert data from AWS Cloudwatch onto Squadcast.</p>
 
 <p>Squadcast will then process this information to create incidents for this service as per your preferences.</p>
 
@@ -1565,15 +1572,20 @@ li.sidebarTitle{
 
 <p>Now log in to your AWS account and proceed to SNS.</p>
 
-<p>Click on “<strong>Create topic</strong>” to get “Create new topic” dialog box. Fill in the details as per your requirements and then click on “Create topic”</p>
+<p>Click on “<strong>Create topic</strong>” to configure the display name and related details. Fill in the details as per your requirements and then click on “Create topic”.</p>
 
 <p><img src="images/aws_2.png" alt="" /></p>
 
-<p>Now inside the topic, click on “<strong>Create subscription</strong>” to get “Create subscription” dialog box. Select the protocol as “HTTPS” and in the endpoint enter the URL you obtained earlier. Finally, click on “Create subscription” to create the subscription.</p>
+<p>Now inside the topic, click on “<strong>Create subscription</strong>” to get “Create subscription” page. Select the protocol as “HTTPS” and in the endpoint enter the URL that was copied from Squadcast. Finally, click on “Create subscription” to create the subscription.</p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
+<b>Important</b><br /><br />
+<p>Ensure that the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Enable raw message Delivery</code> checkbox remains unchecked.</p>
+</div>
 
 <p><img src="images/aws_3.png" alt="" /></p>
 
-<p>The “<strong>Subscription ID</strong>” for the subscription should immediately change from “PendingConfirmation”. Click on the refresh button to verify the same.</p>
+<p>The “<strong>Subscription ID</strong>” for the subscription should immediately change from “PendingConfirmation” to “Confirmed”. Click on the refresh button to verify the same.</p>
 
 <p><img src="images/aws_4.png" alt="" /></p>
 
@@ -1591,7 +1603,9 @@ li.sidebarTitle{
 
 <p><img src="images/aws_7.png" alt="" /></p>
 
-<p>That’s it your Amazon CloudWatch Integration is now good to go! Whenever an Alarm moves to OK state inside CloudWatch the corresponding incident will automatically be resolved in Squadcast.</p>
+<p>Your Amazon CloudWatch Integration is now good to go!</p>
+
+<p>Whenever an Alarm moves to OK state inside CloudWatch the corresponding incident will <strong>automatically be resolved</strong> in Squadcast.</p>
 
 
                 <!--div class="tags">
@@ -1690,7 +1704,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 10, 2021 <br /> -->
+<!--  Site last generated: Mar 22, 2021 <br /> -->
                 </div>
             </div>
             <script>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use CMD/CTRL + K for search. Search also supports GOTO fo...">
+<meta name="description" content="Use the global search bar to look for incidents, documentation or other entities within the platform">
 <meta name="keywords" content="set-up-your-profilemanaging-all-users,  ">
 <title>Squadcast Search | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -404,24 +404,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li class="subfolders">
-              <a title="Alert Deduplication Rules" href="#">Alert Deduplication Rules</a>
+              <a title="Alert De-duplication Rules" href="#">Alert De-duplication Rules</a>
               <ul>
                   
                   
                   
-                  <li><a title="Alert Deduplication Rules" href="de-duplication-rules">Alert Deduplication Rules</a></li>
+                  <li><a title="Alert De-duplication Rules" href="de-duplication-rules">Alert De-duplication Rules</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Incident Status Based Deduplication" href="status-based-deduplication">Incident Status Based Deduplication</a></li>
+                  <li><a title="Incident Status Based De-duplication" href="status-based-deduplication">Incident Status Based De-duplication</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Service Dependency Based Deduplication" href="service-dependency-based-deduplication">Service Dependency Based Deduplication</a></li>
+                  <li><a title="Service Dependency Based De-duplication" href="service-dependency-based-deduplication">Service Dependency Based De-duplication</a></li>
                   
                   
                   
@@ -567,7 +567,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          <li><a title="Incident List View" href="/docs/incident-list-table-view">Incident List View</a></li>
           
           
           
@@ -604,7 +604,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident Timeline" href="/docs/incident-timeline">Incident Timeline</a></li>
+          <li><a title="Incident Activity Timeline" href="/docs/incident-timeline">Incident Activity Timeline</a></li>
           
           
           
@@ -709,13 +709,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="AppDynamics" href="/docs/appdynamics">AppDynamics</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
           
           
           
@@ -890,6 +883,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="InsightOps (LogEntries)" href="/docs/insightops-logentries">InsightOps (LogEntries)</a></li>
           
           
@@ -926,6 +926,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Kapacitor" href="/docs/kapacitor">Kapacitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LibreNMS" href="/docs/librenms">LibreNMS</a></li>
           
           
           
@@ -1538,20 +1545,34 @@ li.sidebarTitle{
             <h1 class="post-title-main">Squadcast Search</h1>
         </div>
             
-                <div class="summary">Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + K</code> for search. Search also supports GOTO for instant navigation. GOTO can be accessed directly with <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + SHIFT + K</code>. (use CTRL for windows and CMD as meta keys for mac).</div>
+                <div class="summary">Use the global search bar to look for incidents, documentation or other entities within the platform</div>
             
 
                 
 
             <h2 id="basic-commands">Basic commands</h2>
 
-<p>Search requires some basic commands to work with. Once in search, autocompletes can be provided with <code class="highlighter-rouge">Tab</code>. use <code class="highlighter-rouge">CTRL + SPACE</code> to view autocomplete. Access search helps within search by typing in <code class="highlighter-rouge">?:</code>. To execute a command use <code class="highlighter-rouge">CMD + ENTER</code> for Mac and <code class="highlighter-rouge">CTRL + ENTER</code> for windows.</p>
+<p>Search requires some basic commands to work with.</p>
+
+<ul>
+  <li>Once in search, autocompletes can be provided with <code class="highlighter-rouge">Tab</code></li>
+  <li>Use <code class="highlighter-rouge">CTRL + SPACE</code> to view autocomplete</li>
+  <li>Access search helps within search by typing in <code class="highlighter-rouge">?:</code></li>
+  <li>To execute a command use <code class="highlighter-rouge">CMD + ENTER</code> for Mac and <code class="highlighter-rouge">CTRL + ENTER</code> for Windows</li>
+</ul>
 
 <p><img src="images/search_1.png" alt="" /></p>
 
-<h2 id="goto">GOTO</h2>
+<h2 id="goto">goto</h2>
 
-<p>GOTO enables for instant navigation. Open up goto with (CMD/CTRL + SHIFT + K) and type in the route you want to navigate. GOTO has a profile section, you can add in the team members’ email and it will navigate to respective profile.</p>
+<p><code class="highlighter-rouge">goto</code> enables <em>instant navigation</em> when used along with <code class="highlighter-rouge">profile</code>.</p>
+
+<ul>
+  <li>Activate the global search bar using <code class="highlighter-rouge">CMD/CTRL + SHIFT + K</code></li>
+  <li>Type in <code class="highlighter-rouge">goto</code> and enter</li>
+  <li>Type in <code class="highlighter-rouge">profile</code> and then search for users by their email address</li>
+  <li><code class="highlighter-rouge">CMD/CTRL + Return/Enter</code> to navigate to the user’s profile</li>
+</ul>
 
 <p><img src="images/search_2.png" alt="" /></p>
 
@@ -1559,7 +1580,7 @@ li.sidebarTitle{
 
 <h2 id="help">Help</h2>
 
-<p>Now you can navigate to integration documents directly through the search. Type in <code class="highlighter-rouge">help:</code> and the docs you want to search.</p>
+<p>Now you can navigate to alert source integration documents directly through the search. Type in <code class="highlighter-rouge">help:</code> and then the keyword or name of the documentation you want to search for.</p>
 
 <p><img src="images/search_4.png" alt="" /></p>
 
@@ -1577,7 +1598,7 @@ li.sidebarTitle{
 
 <p><img src="images/search_6.png" alt="" /></p>
 
-<p>You can search for Postmortems through Incident Number, Incident Message and Description, Impacted Service, Created After, Created Before and Postmortem Content.</p>
+<p>You can search for <strong>Postmortems</strong> through <strong>Incident Message</strong> and <strong>Description</strong>, <strong>Impacted Service</strong>, <strong>Created After</strong>, <strong>Created Before</strong> and <strong>Postmortem Content</strong>.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
 <b>Note: The <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">message</code> query</b>
@@ -1598,7 +1619,7 @@ li.sidebarTitle{
 
 <p><img src="images/search_7.png" alt="" /></p>
 
-<p>Search also provides history of queries. Search history is specific to a user with respect to the organization.</p>
+<p>Search also provides history of queries. Search history is specific to a user with respect to the Organization.</p>
 
 
                 <!--div class="tags">
@@ -1703,7 +1724,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 10, 2021 <br /> -->
+<!--  Site last generated: Mar 22, 2021 <br /> -->
                 </div>
             </div>
             <script>

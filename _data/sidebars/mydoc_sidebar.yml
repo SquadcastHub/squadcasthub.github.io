@@ -92,18 +92,18 @@ entries:
             output: web, pdf
 
             subfolders:
-              - title: Alert Deduplication Rules
+              - title: Alert De-duplication Rules
                 output: web
                 subfolderitems:
-                  - title: Alert Deduplication Rules
+                  - title: Alert De-duplication Rules
                     url: /de-duplication-rules
                     output: web, pdf
 
-                  - title: Incident Status Based Deduplication
+                  - title: Incident Status Based De-duplication
                     url: /status-based-deduplication
                     output: web, pdf
 
-                  - title: Service Dependency Based Deduplication
+                  - title: Service Dependency Based De-duplication
                     url: /service-dependency-based-deduplication
                     output: web, pdf
 
@@ -179,7 +179,7 @@ entries:
         output: web, pdf
 
         folderitems:
-          - title: Incident List Table View
+          - title: Incident List View
             url: /docs/incident-list-table-view
             output: web, pdf
 
@@ -199,7 +199,7 @@ entries:
             url: /docs/incident-details
             output: web, pdf
 
-          - title: Incident Timeline
+          - title: Incident Activity Timeline
             url: /docs/incident-timeline
             output: web, pdf
 
@@ -250,17 +250,13 @@ entries:
           - title: AWS CloudTrail via CloudWatch
             url: /docs/aws-cloudtrail-via-cloudwatch
             output: web, pdf
-          
+
           - title: AWS Elastic Beanstalk via CloudWatch
             url: /docs/aws-elastic-beanstalk-via-cloudwatch
             output: web, pdf
 
           - title: AppDynamics
             url: /docs/appdynamics
-            output: web, pdf
-
-          - title: Incident API
-            url: /docs/apiv2
             output: web, pdf
 
           - title: AppSignal
@@ -278,7 +274,7 @@ entries:
           - title: Buildkite
             url: /docs/buildkite
             output: web, pdf
-          
+
           - title: Checkly
             url: /docs/checkly
             output: web, pdf
@@ -359,6 +355,10 @@ entries:
             url: /docs/icinga2
             output: web, pdf
 
+          - title: Incident API
+            url: /docs/apiv2
+            output: web, pdf
+
           - title: InsightOps (LogEntries)
             url: /docs/insightops-logentries
             output: web, pdf
@@ -381,6 +381,10 @@ entries:
 
           - title: Kapacitor
             url: /docs/kapacitor
+            output: web, pdf
+
+          - title: LibreNMS
+            url: /docs/librenms
             output: web, pdf
 
           - title: LogDNA

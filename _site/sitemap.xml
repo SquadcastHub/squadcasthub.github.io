@@ -462,6 +462,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/librenms</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/logdna</loc>
   </url>
   

@@ -4,8 +4,7 @@ tags: [set-up-your-profile, managing-all-users]
 keywords: 
 last_updated: 
 datatable: 
-summary: "Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + K</code> for search. Search also supports GOTO for instant navigation. GOTO can be accessed directly with <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + SHIFT + K</code>.
-(use CTRL for windows and CMD as meta keys for mac)."
+summary: "Use the global search bar to look for incidents, documentation or other entities within the platform"
 sidebar: mydoc_sidebar
 permalink: docs/squadcast-search
 folder: mydoc
@@ -13,13 +12,23 @@ folder: mydoc
 
 ## Basic commands
 
-Search requires some basic commands to work with. Once in search, autocompletes can be provided with `Tab`. use `CTRL + SPACE` to view autocomplete. Access search helps within search by typing in `?:`. To execute a command use `CMD + ENTER` for Mac and `CTRL + ENTER` for windows.
+Search requires some basic commands to work with. 
+
+- Once in search, autocompletes can be provided with `Tab`
+- Use `CTRL + SPACE` to view autocomplete
+- Access search helps within search by typing in `?:`
+- To execute a command use `CMD + ENTER` for Mac and `CTRL + ENTER` for Windows
 
 ![](images/search_1.png)
 
-## GOTO
+## goto
 
-GOTO enables for instant navigation. Open up goto with (CMD/CTRL + SHIFT + K) and type in the route you want to navigate. GOTO has a profile section, you can add in the team members' email and it will navigate to respective profile.
+`goto` enables _instant navigation_ when used along with `profile`.
+
+- Activate the global search bar using `CMD/CTRL + SHIFT + K`
+- Type in `goto` and enter
+- Type in `profile` and then search for users by their email address
+- `CMD/CTRL + Return/Enter` to navigate to the user’s profile
 
 ![](images/search_2.png)
 
@@ -27,7 +36,7 @@ GOTO enables for instant navigation. Open up goto with (CMD/CTRL + SHIFT + K) an
 
 ## Help
 
-Now you can navigate to integration documents directly through the search. Type in `help:` and the docs you want to search. 
+Now you can navigate to alert source integration documents directly through the search. Type in `help:` and then the keyword or name of the documentation you want to search for.
 
 ![](images/search_4.png)
 
@@ -45,7 +54,7 @@ We support a set of tokens to fine-tune the results. Supported tokens can be vie
 
 ![](images/search_6.png)
 
-You can search for Postmortems through Incident Number, Incident Message and Description, Impacted Service, Created After, Created Before and Postmortem Content. 
+You can search for **Postmortems** through **Incident Message** and **Description**, **Impacted Service**, **Created After**, **Created Before** and **Postmortem Content**.
 
 {{site.data.alerts.blue-note}}
 <b>Note: The <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>message</code> query</b>
@@ -64,4 +73,4 @@ Your search results that match this query will be populated as shown below
 
 ![](images/search_7.png)
 
-Search also provides history of queries. Search history is specific to a user with respect to the organization.
+Search also provides history of queries. Search history is specific to a user with respect to the Organization.

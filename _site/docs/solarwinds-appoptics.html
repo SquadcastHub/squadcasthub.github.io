@@ -404,24 +404,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li class="subfolders">
-              <a title="Alert Deduplication Rules" href="#">Alert Deduplication Rules</a>
+              <a title="Alert De-duplication Rules" href="#">Alert De-duplication Rules</a>
               <ul>
                   
                   
                   
-                  <li><a title="Alert Deduplication Rules" href="de-duplication-rules">Alert Deduplication Rules</a></li>
+                  <li><a title="Alert De-duplication Rules" href="de-duplication-rules">Alert De-duplication Rules</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Incident Status Based Deduplication" href="status-based-deduplication">Incident Status Based Deduplication</a></li>
+                  <li><a title="Incident Status Based De-duplication" href="status-based-deduplication">Incident Status Based De-duplication</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Service Dependency Based Deduplication" href="service-dependency-based-deduplication">Service Dependency Based Deduplication</a></li>
+                  <li><a title="Service Dependency Based De-duplication" href="service-dependency-based-deduplication">Service Dependency Based De-duplication</a></li>
                   
                   
                   
@@ -567,7 +567,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          <li><a title="Incident List View" href="/docs/incident-list-table-view">Incident List View</a></li>
           
           
           
@@ -604,7 +604,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident Timeline" href="/docs/incident-timeline">Incident Timeline</a></li>
+          <li><a title="Incident Activity Timeline" href="/docs/incident-timeline">Incident Activity Timeline</a></li>
           
           
           
@@ -709,13 +709,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="AppDynamics" href="/docs/appdynamics">AppDynamics</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
           
           
           
@@ -890,6 +883,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="InsightOps (LogEntries)" href="/docs/insightops-logentries">InsightOps (LogEntries)</a></li>
           
           
@@ -926,6 +926,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Kapacitor" href="/docs/kapacitor">Kapacitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LibreNMS" href="/docs/librenms">LibreNMS</a></li>
           
           
           
@@ -1586,45 +1593,6 @@ Route detailed monitoring alerts from AppOptics to the right users in Squadcast.
 
 <p><strong>(5)</strong> While creating a <strong>Metric Alert</strong>, select the configured webhook URL and <strong>test fire</strong> to verify whether the notification service is working as expected</p>
 
-<p>Please refer to the sample payload below to get an idea of the data in the payload</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"alert"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">89007439</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test-service-alert"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"runbook_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"runbook.com"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"testing"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"account"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mayank@hellothere.com"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"trigger_time"</span><span class="p">:</span><span class="w"> </span><span class="mi">1605179040</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"incident_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"appoptics-89007439-9535626"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"conditions"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">219244540</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"above"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"threshold"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"summary_function"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sum"</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="s2">"violations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"service=test-service"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="s2">"metric"</span><span class="p">:</span><span class="w"> </span><span class="s2">"trace.service.response_time"</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">44122.09375</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"recorded_at"</span><span class="p">:</span><span class="w"> </span><span class="mi">1605179038</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"condition_violated"</span><span class="p">:</span><span class="w"> </span><span class="mi">219244540</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"count"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"begin"</span><span class="p">:</span><span class="w"> </span><span class="mi">1605178620</span><span class="p">,</span><span class="w">
-        </span><span class="s2">"end"</span><span class="p">:</span><span class="w"> </span><span class="mi">1605178920</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="s2">"triggered_by_user_test"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
 <p>That’s it! Now whenever an APM-related or Infrastructure-related notification is triggered in SolarWinds AppOptics, an incident will automatically be created in Squadcast.</p>
 
 <p>Also, whenever an alert is resolved in SolarWinds AppOptics, the corresponding incident will get <strong>auto-resolved</strong> in Squadcast.</p>
@@ -1726,7 +1694,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 10, 2021 <br /> -->
+<!--  Site last generated: Mar 22, 2021 <br /> -->
                 </div>
             </div>
             <script>

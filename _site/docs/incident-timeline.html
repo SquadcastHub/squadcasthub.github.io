@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="View Timelines of the Incident">
+<meta name="description" content="View the Activity Timelines of an Incident">
 <meta name="keywords" content="incident timeline,  ">
-<title>Incident Timeline | Incident Management using Squadcast</title>
+<title>Incident Activity Timeline | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -194,7 +194,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident Timeline page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Incident Activity Timeline page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -404,24 +404,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li class="subfolders">
-              <a title="Alert Deduplication Rules" href="#">Alert Deduplication Rules</a>
+              <a title="Alert De-duplication Rules" href="#">Alert De-duplication Rules</a>
               <ul>
                   
                   
                   
-                  <li><a title="Alert Deduplication Rules" href="de-duplication-rules">Alert Deduplication Rules</a></li>
+                  <li><a title="Alert De-duplication Rules" href="de-duplication-rules">Alert De-duplication Rules</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Incident Status Based Deduplication" href="status-based-deduplication">Incident Status Based Deduplication</a></li>
+                  <li><a title="Incident Status Based De-duplication" href="status-based-deduplication">Incident Status Based De-duplication</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Service Dependency Based Deduplication" href="service-dependency-based-deduplication">Service Dependency Based Deduplication</a></li>
+                  <li><a title="Service Dependency Based De-duplication" href="service-dependency-based-deduplication">Service Dependency Based De-duplication</a></li>
                   
                   
                   
@@ -567,7 +567,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          <li><a title="Incident List View" href="/docs/incident-list-table-view">Incident List View</a></li>
           
           
           
@@ -604,7 +604,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li class="active"><a title="Incident Timeline" href="/docs/incident-timeline">Incident Timeline</a></li>
+          <li class="active"><a title="Incident Activity Timeline" href="/docs/incident-timeline">Incident Activity Timeline</a></li>
           
           
           
@@ -709,13 +709,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="AppDynamics" href="/docs/appdynamics">AppDynamics</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
           
           
           
@@ -890,6 +883,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="InsightOps (LogEntries)" href="/docs/insightops-logentries">InsightOps (LogEntries)</a></li>
           
           
@@ -926,6 +926,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Kapacitor" href="/docs/kapacitor">Kapacitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LibreNMS" href="/docs/librenms">LibreNMS</a></li>
           
           
           
@@ -1535,25 +1542,25 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Incident Timeline</h1>
+            <h1 class="post-title-main">Incident Activity Timeline</h1>
         </div>
             
-                <div class="summary">View Timelines of the Incident</div>
+                <div class="summary">View the Activity Timelines of an Incident</div>
             
 
                 
 
-            <p>You can access the Incident Timeline by visiting the Incident Details page in the web app and the timeline will be displayed on the right-hand side of the page.</p>
+            <p>You can access the <strong>Incident Activity Timeline</strong> for a particular incident in the <strong>Incident Details</strong> page in the web app and the timeline will be displayed on the right-hand side of the page.</p>
 
 <p><img src="images/timeline_1.png" alt="" /></p>
 
-<p>The Incident Timeline will display the timeline of the incident in reverse chronological order as to:</p>
+<p>The Incident Timeline will display the timeline of the incident in reverse chronological order for the following details:</p>
 
-<p><strong>(a)</strong> when the incident was first Triggered and Assigned</p>
+<p><strong>(a)</strong> when the incident was first <strong>Triggered</strong> and <strong>Acknowledged</strong></p>
 
-<p><strong>(b)</strong> who Acknowledged it or was it Re-assigned</p>
+<p><strong>(b)</strong> who Acknowledged it or who it is <strong>Re-assigned</strong> to</p>
 
-<p><strong>(c)</strong> who Resolved it and when</p>
+<p><strong>(c)</strong> who <strong>Resolved</strong> it and when</p>
 
 <p><strong>(d)</strong> what message was posted on the StatusPage</p>
 
@@ -1563,16 +1570,11 @@ li.sidebarTitle{
 
 <p><strong>(g)</strong> starred comments from the Notes</p>
 
-<h3 id="exporting-incident-timeline">Exporting Incident Timeline</h3>
+<h3 id="exporting-incident-activity-timeline">Exporting Incident Activity Timeline</h3>
 
-<p>The automated timeline serves as a realtime chain of incident resolution activity. It is very useful to create Incident Review reports and you can use the export option to download the incident. Timeline can be exported by clicking on the <strong>Download</strong> icon at the top right corner of the incident timeline and download in PDF or CSV formats.</p>
+<p>The automated <strong>Incident Activity Timeline</strong> serves as a real-time chain of incident resolution activity. You can download this and use it for <strong>Incident Reviews</strong> or to create <strong>Postmortems</strong>. <strong>Incident Activity Timeline</strong> can be exported by clicking on the <strong>Download</strong> icon at the top right corner of the <strong>Activity Timeline</strong>. You can download this in PDF or CSV formats.</p>
 
 <p><img src="images/timeline_2.png" alt="" /></p>
-
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>
-<b>Pro Tip: </b>
-<br /><br /><p>You can reveal the exact time of the event in the Incident Timeline by clicking on the approximate time displayed.</p>
-</div>
 
 
                 <!--div class="tags">
@@ -1669,7 +1671,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 10, 2021 <br /> -->
+<!--  Site last generated: Mar 22, 2021 <br /> -->
                 </div>
             </div>
             <script>

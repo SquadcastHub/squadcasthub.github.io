@@ -9,7 +9,7 @@ permalink: docs/amazon-cloudwatch-aws
 folder: mydoc
 ---
 
-Follow the steps below to configure a service so as to push related alert data from Honeybadger onto Squadcast.
+Follow the steps below to configure a service so as to push related alert data from AWS Cloudwatch onto Squadcast.
 
 Squadcast will then process this information to create incidents for this service as per your preferences.
 
@@ -31,15 +31,20 @@ Select **Amazon CloudWatch** from  **Alert Source** drop down and copy the Webho
 
 Now log in to your AWS account and proceed to SNS.
 
-Click on "**Create topic**" to get "Create new topic" dialog box. Fill in the details as per your requirements and then click on "Create topic"
+Click on "**Create topic**" to configure the display name and related details. Fill in the details as per your requirements and then click on "Create topic".
 
 ![](images/aws_2.png)
 
-Now inside the topic, click on "**Create subscription**" to get "Create subscription" dialog box. Select the protocol as "HTTPS" and in the endpoint enter the URL you obtained earlier. Finally, click on "Create subscription" to create the subscription.
+Now inside the topic, click on "**Create subscription**" to get "Create subscription" page. Select the protocol as "HTTPS" and in the endpoint enter the URL that was copied from Squadcast. Finally, click on "Create subscription" to create the subscription. 
+
+{{site.data.alerts.yellow-note-i}}
+<b>Important</b><br/><br/>
+<p>Ensure that the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Enable raw message Delivery</code> checkbox remains unchecked.</p>
+{{site.data.alerts.end}}
 
 ![](images/aws_3.png)
 
-The "**Subscription ID**" for the subscription should immediately change from "PendingConfirmation". Click on the refresh button to verify the same.
+The "**Subscription ID**" for the subscription should immediately change from "PendingConfirmation" to "Confirmed". Click on the refresh button to verify the same.
 
 ![](images/aws_4.png)
 
@@ -57,4 +62,6 @@ Under "**Actions**", add a notification selecting "**Whenever this alarm: State 
 
 ![](images/aws_7.png)
 
-That's it your Amazon CloudWatch Integration is now good to go! Whenever an Alarm moves to OK state inside CloudWatch the corresponding incident will automatically be resolved in Squadcast.
+Your Amazon CloudWatch Integration is now good to go! 
+
+Whenever an Alarm moves to OK state inside CloudWatch the corresponding incident will **automatically be resolved** in Squadcast.

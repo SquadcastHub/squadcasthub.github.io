@@ -404,24 +404,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li class="subfolders">
-              <a title="Alert Deduplication Rules" href="#">Alert Deduplication Rules</a>
+              <a title="Alert De-duplication Rules" href="#">Alert De-duplication Rules</a>
               <ul>
                   
                   
                   
-                  <li><a title="Alert Deduplication Rules" href="de-duplication-rules">Alert Deduplication Rules</a></li>
+                  <li><a title="Alert De-duplication Rules" href="de-duplication-rules">Alert De-duplication Rules</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Incident Status Based Deduplication" href="status-based-deduplication">Incident Status Based Deduplication</a></li>
+                  <li><a title="Incident Status Based De-duplication" href="status-based-deduplication">Incident Status Based De-duplication</a></li>
                   
                   
                   
                   
                   
-                  <li><a title="Service Dependency Based Deduplication" href="service-dependency-based-deduplication">Service Dependency Based Deduplication</a></li>
+                  <li><a title="Service Dependency Based De-duplication" href="service-dependency-based-deduplication">Service Dependency Based De-duplication</a></li>
                   
                   
                   
@@ -567,7 +567,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident List Table View" href="/docs/incident-list-table-view">Incident List Table View</a></li>
+          <li><a title="Incident List View" href="/docs/incident-list-table-view">Incident List View</a></li>
           
           
           
@@ -604,7 +604,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Incident Timeline" href="/docs/incident-timeline">Incident Timeline</a></li>
+          <li><a title="Incident Activity Timeline" href="/docs/incident-timeline">Incident Activity Timeline</a></li>
           
           
           
@@ -709,13 +709,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="AppDynamics" href="/docs/appdynamics">AppDynamics</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
           
           
           
@@ -890,6 +883,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+          <li><a title="Incident API" href="/docs/apiv2">Incident API</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="InsightOps (LogEntries)" href="/docs/insightops-logentries">InsightOps (LogEntries)</a></li>
           
           
@@ -926,6 +926,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Kapacitor" href="/docs/kapacitor">Kapacitor</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="LibreNMS" href="/docs/librenms">LibreNMS</a></li>
           
           
           
@@ -1543,41 +1550,112 @@ li.sidebarTitle{
 
                 
 
-            <p>Follow the steps below to configure a service so as to extract its related alert data from New Relic. Squadcast will then process this information to create incidents for this service as per your preferences.</p>
+            <p>This document will help you integrate New Relic with Squadcast.</p>
 
-<h2 id="using-new-relic-as-an-alert-source">Using New Relic as an Alert Source</h2>
+<p><a href="https://newrelic.com/">New Relic</a> is an observability platform built to help engineers create more perfect software. From monoliths to serverless, you can instrument everything, then analyze, troubleshoot, and optimize your entire software stack, all from one place.</p>
 
-<p>On the <strong>Sidebar</strong>, click on <strong>Services</strong>.</p>
+<p>Route detailed monitoring alerts from New Relic to the right users in Squadcast.</p>
 
-<p>You can either choose to use existing service or <a href="adding-a-service-1">create a new service</a></p>
+<h2 id="how-to-integrate-new-relic-with-squadcast">How to integrate New Relic with Squadcast</h2>
 
-<p>Now, click on the corresponding <strong>Alert Sources</strong> button.</p>
+<h3 id="in-squadcast-using-new-relic-as-an-alert-source">In Squadcast: Using New Relic as an Alert Source</h3>
+
+<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong></p>
+
+<p><img src="images/integration_1-1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Select an existing Service or <strong>Add service</strong></p>
+
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p><strong>(3)</strong> Click the corresponding <strong>Alert Sources</strong></p>
 
 <p><img src="images/integration_1.png" alt="" /></p>
 
-<p>Select <strong>New Relic</strong> from <strong>Alert Source</strong> drop down and copy the Webhook URL shown.</p>
+<p><strong>(4)</strong> Search for <strong>New Relic</strong> from  the <strong>Alert Source</strong> drop down menu and copy the Webhook URL</p>
 
 <p><img src="images/new_relic_1.png" alt="" /></p>
 
-<h2 id="create-a-squadcast-webhook-in-new-relic">Create a Squadcast Webhook in New Relic</h2>
+<h3 id="in-new-relic-add-a-squadcast-webhook">In New Relic: Add a Squadcast Webhook</h3>
 
-<p>Now log in to your New Relic account and go to <strong>Alerts</strong> tabs and then go to <strong>Notification Channels</strong> tab.</p>
+<p>Log in to your New Relic account.</p>
 
-<p>Click on <strong>New Notification Channel</strong>.</p>
-
-<p>Select channel type as <strong>webhook</strong> and enter the channel name as “<strong>squadcast</strong>” and the base url as the url received in step 4.</p>
-
-<p>Click on <strong>create channel</strong>.</p>
+<p><strong>(1)</strong> From Home, navigate to <strong>Alerts &amp; AI</strong></p>
 
 <p><img src="images/new_relic_2.png" alt="" /></p>
 
-<p>Now you can add this channel to any alert policy you have created (example shown below).</p>
+<p><strong>(2)</strong> Navigate to <strong>Notification channels</strong> tab and click on <strong>New notification channel</strong></p>
 
 <p><img src="images/new_relic_3.png" alt="" /></p>
 
-<p>When the New Relic alert violation closes, or is manually closed, it will be reflected in Squadcast.</p>
+<p><strong>(3)</strong> Here:</p>
+<ul>
+  <li>Select <strong>channel type</strong> as <strong>Webhook</strong></li>
+  <li>Enter the <strong>Channel name</strong> as <strong>Squadcast</strong></li>
+  <li>Paste the copied Webhook URL copied from Squadcast previously under <strong>Base Url</strong></li>
+  <li>Click on <strong>Create channel</strong></li>
+</ul>
 
-<p>That’s it! Your New Relic integration is now good to go.</p>
+<p><img src="images/new_relic_4.png" alt="" /></p>
+
+<p><strong>(4)</strong> Now, you can add this <strong>Notification Channel</strong> to any Alert Policy you have created</p>
+
+<p>That is it, your integration with New Relic is complete and you are good to go!</p>
+
+<h3 id="configuring-proactive-detection-for-anomalies-in-new-relic">Configuring Proactive Detection for Anomalies in New Relic</h3>
+
+<p>Log in to your New Relic account.</p>
+
+<p><strong>(1)</strong> From Home, hover over <strong>Alerts &amp; AI</strong> and select <strong>Settings</strong></p>
+
+<p><img src="images/new_relic_6.png" alt="" /></p>
+
+<p><strong>(2)</strong> Click on <strong>Settings</strong> in the sidebar under <strong>Proactive Detection</strong> and click on <strong>Add a configuration</strong></p>
+
+<p><img src="images/new_relic_7.png" alt="" /></p>
+
+<p><strong>(3)</strong> Here:</p>
+
+<ul>
+  <li>Give the configuration a <strong>Name</strong></li>
+  <li>Select your New Relic <strong>Account</strong></li>
+  <li>Choose the <strong>Applications and Services</strong> that need to be monitored</li>
+</ul>
+
+<p><img src="images/new_relic_8.png" alt="" /></p>
+
+<ul>
+  <li>Select the <strong>Signals</strong> that need to be monitored</li>
+</ul>
+
+<p><img src="images/new_relic_9.png" alt="" /></p>
+
+<ul>
+  <li>Select where you want to <strong>receive notifications</strong>
+    <ul>
+      <li>Select <strong>Webhook</strong></li>
+      <li>Paste previously copied Webhook from Squadcast under <strong>URL</strong></li>
+      <li>In <strong>Payload template</strong> add the payload exactly as shown below:</li>
+    </ul>
+
+    <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"alertClass"</span><span class="p">:</span><span class="w"> </span><span class="s2">"anomaly_detection"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"alertData"</span><span class="p">:</span><span class="w"> </span><span class="p">{{</span><span class="err">this</span><span class="p">}}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div>    </div>
+
+    <ul>
+      <li>You can click on <strong>Send test notification</strong> to trigger an incident in Squadcast check if the integration works fine</li>
+      <li><strong>Save</strong> the configuration</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="images/new_relic_10.png" alt="" /></p>
+
+<p>Now, every time there is an alert in New Relic, the alert will be sent to Squadcast and an incident will be triggered, notifying the right people.</p>
+
+<p>Similarly, when the alert gets resolved in New Relic, the corresponding incident will get <strong>auto-resolved</strong> in Squadcast as well.</p>
 
 
                 <!--div class="tags">
@@ -1676,7 +1754,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 10, 2021 <br /> -->
+<!--  Site last generated: Mar 22, 2021 <br /> -->
                 </div>
             </div>
             <script>

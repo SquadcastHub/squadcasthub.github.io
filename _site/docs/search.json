@@ -30,7 +30,7 @@
 "tags": "alert routing",
 "keywords": "",
 "url": "/docs/alert-routing",
-"summary": "Help route notifications to the right responder based on event tags"
+"summary": "Route alerts to the right responder(s) based on the tags they carry"
 }
 ,
 
@@ -367,7 +367,7 @@
 
 
 {
-"title": "Alert Deduplication Rules",
+"title": "Alert De-duplication Rules",
 "tags": "deduplication",
 "keywords": "",
 "url": "/docs/de-duplication-rules",
@@ -666,7 +666,7 @@
 
 
 {
-"title": "Incident List Table View",
+"title": "Incident List View",
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/incident-list-table-view",
@@ -699,22 +699,22 @@
 
 
 {
-"title": "Incident Status Based Deduplication",
+"title": "Incident Status Based De-duplication",
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/status-based-deduplication",
-"summary": "Use Incident Status Based Deduplication to deduplicate all open events to an existing open Incident for a service"
+"summary": "Use Incident Status Based De-duplication to de-duplicate all alerts to an existing open incident for a Service"
 }
 ,
 
 
 
 {
-"title": "Incident Timeline",
+"title": "Incident Activity Timeline",
 "tags": "incident timeline",
 "keywords": "",
 "url": "/docs/incident-timeline",
-"summary": "View Timelines of the Incident"
+"summary": "View the Activity Timelines of an Incident"
 }
 ,
 
@@ -827,6 +827,17 @@
 "keywords": "",
 "url": "/docs/kapacitor",
 "summary": "Send alerts to Squadcast from Kapacitor"
+}
+,
+
+
+
+{
+"title": "LibreNMS",
+"tags": "",
+"keywords": "",
+"url": "/docs/librenms",
+"summary": "Send alerts to Squadcast from LibreNMS"
 }
 ,
 
@@ -1270,11 +1281,11 @@
 
 
 {
-"title": "Service Dependency Based Deduplication",
+"title": "Service Dependency Based De-duplication",
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/service-dependency-based-deduplication",
-"summary": "Deduplicate incoming events for a service against the latest incident of its service dependencies"
+"summary": "De-duplicate incoming alerts for a Service against the latest open incident of its dependent Service(s)"
 }
 ,
 
@@ -1408,7 +1419,7 @@
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/squadcast-search",
-"summary": "Search incidents / docs / goto all at one place. Write complex queries to search through incidents. Use <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + K</code> for search. Search also supports GOTO for instant navigation. GOTO can be accessed directly with <code class='highlighter-rouge' style='color: #c7254e; background-color: #f9f2f4 !important;'>CMD/CTRL + SHIFT + K</code>. (use CTRL for windows and CMD as meta keys for mac)."
+"summary": "Use the global search bar to look for incidents, documentation or other entities within the platform"
 }
 ,
 

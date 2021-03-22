@@ -9,24 +9,26 @@ permalink: docs/using-the-mobile-app
 folder: mydoc
 ---
 
-You can use our mobile app to Acknowledge, Reassign, take Actions, and Resolve from the Mobile App also a view into who is on-call schedules. The Mobile app will walk you into the incident dashboard where you will be able to view incidents organized into incident-status.
+You can use our mobile app to Acknowledge, Reassign, take Actions, and Resolve from the mobile app. You can also view who is on-call from the Schedules Tab. The mobile app will walk you into the **Incident List** view where you will be able to view incidents organized by Incident status, that is, Triggered, Acknowledged and Resolved.
 
 {{site.data.alerts.green-note-check}}
 <b>SSO login now available on Mobile App</b>
-<br/><br/><p>We have enabled SSO login for Mobile Apps as well. Check the <a href="#sso-login-support-for-mobile-apps">SSO login for mobile apps section</a> for more details.</p>
+<br/><br/><p>We have enabled SSO login for mobile application. Check the <a href="#sso-login-support-for-mobile-apps">SSO login for mobile apps section</a> for more details.</p>
 {{site.data.alerts.end}}
 
-### Incident list
+### Incident List
 
-Once logged in the app will be navigated to the incident-list view. Incidents are organized according to incident-status. the tabs above list the count for only acknowledged and triggered incidents.
+Once you are logged into the application, you will be navigated to the **Incident List** page. Incidents are organized according to incident status. In the tab above, you will be able to view the number of incidents in the open state (Triggered & Acknowledged).
 
 ![](images/using_mobile_1.png){: style="max-width: 30%" }
 
-The incident list can be assorted into based on time by clicking the filter icon on the top right corner as mentioned below
+The **Incident List** holds the ability to filter to view incidents by time. You can do so by using the **filter icon** on the top right  corner of the **Incident List** page.
 
 ![](images/using_mobile_2.png){: style="max-width: 30%" }
 
-Incidents can be searched by clicking on search icon on the top right corner
+You can search for specific incidents by using the **search icon** on the top right corner of the page.
+
+![](images/using_mobile_search_button.png){: style="max-width: 30%" }
 
 ![](images/using_mobile_3.png){: style="max-width: 30%" }
 
@@ -36,25 +38,36 @@ All the Squadcast push notifications have a unique sound on both iOS and Android
 
 This should ensure that you get alerted on incidents and it doesn't get lost in the noise of other push notifications
 
-### Incident Page
+### Incident Details Page
 
-Once on an incident page you can take all the actions that are supported on our web app. The page is categorized into 4 pages based on the incident. Details - the incident details, Timeline - incident timeline, Events - incident events (if the incident has deduped events), Warroom - chat-ops
+On the **Incident Details** page, you can take all the actions that are supported on our web app. The page has 4 major sections, namely:
+
+- Details - the incident details that come in from the incident payload
+- Incident Activity Timeline - the timeline of incident specific activities, such as Acknowledging or Resolving an Incident, Actions that are run and so on.
+- Events - incidents events that are deduplicated against the parent incident
+- Incident Notes & Starred Notes - all the notes created and starred for the incident
 
 ![](images/using_mobile_4.png){: style="max-width: 30%" }
 
-Incident details page enables quick actions (Acknowledge and Resolve), and more options provide reassign and squad actions
+The **Incident Details** page allows for quick actions:
+
+- Acknowledge - Acknowledge the incident
+- Resolve - Resolve the incident
+- Reassign - Reassign the incident to a different user
+- Respond with Action - Take JIRA or CircleCI actions on an incident
+ enables quick actions (Acknowledge and Resolve), and more options provide reassign and squad actions
 
 ![](images/using_mobile_5.png){: style="max-width: 30%" }
 
-#### Timeline 
+#### Incident Activity Timeline
 
-The incident timeline provides all the recorded logs taken against the action
+The **Incident Activity Timeline** provides all the recorded logs taken against the incident
 
 ![](images/using_mobile_6.png){: style="max-width: 30%" }
 
 #### Incident Notes
 
-Each incident gets its own chat-ops channel. All the responses will be recorded. Additionally, we can add @ mentions and in a response tapping on a mention will take you to the profile
+Each incident gets its own notes section. One can @mention users and invite them to collaborate and resolve the incident. When this is done, the mentioned user will receive an email and push notification to inform them of this. 
 
 ![](images/incident_notes_12.png){: style="max-width: 30%" }
 
@@ -73,30 +86,30 @@ You can add as many rules as you see fit.
 
 ### Teams
 
-Team lists all the members of the organization. additionally, if the user is on call, there will be a small green dot against the user avatar. 
+**Team** lists all users in the organization. Additionally, if the user is on call, there will be a small green dot against the user avatar. 
 
 ![](images/using_mobile_9.png){: style="max-width: 30%" }
 
-Navigating to the user will be taken into the user profile. User profile lists all the user info including the user notification rules, schedules escalation-policies and squads
+You can view any specific user’s profile by clicking on their avatar from the **Team** page. User profile lists all the user info including the user's **Notification Rules**, **Schedules**, **Escalation Policies** and **Squads**.
 
 ![](images/using_mobile_10.png){: style="max-width: 30%" }
 
 ### Schedules
 
-Schedules list's all the schedules organized against date and time, split into time and schedule
+**Schedules** page lists all the **Schedules** organized against date and time.
 
 ![](images/using_mobile_11.png){: style="max-width: 30%" }
 
-### SSO login support for Mobile apps
+### SSO login support for mobile apps
 
-We have started supporting SSO login for mobile apps from version 2.8.37 onwards. Read below to know hoe to make it work on [Android](#android) & [iOS](#ios).
+We have started supporting SSO login for mobile apps from version 2.8.37 onwards. Read below to know how to make it work on [Android](#android) & [iOS](#ios).
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important Note</b>
 <br/><br/><p>SSO login for Mobile app works only if you access your SSO dashboard from your web browser. Login using SSO provider apps are not supported due to limitations imposed by the SSO providers.</p>
 {{site.data.alerts.end}}
 
-### Android
+### SSO Login Flow for Android Application
 
 1. Open the Squadcast Mobile App
 2. Open your mobile browser and login to the SSO dashboard from the mobile browser.
@@ -104,7 +117,7 @@ We have started supporting SSO login for mobile apps from version 2.8.37 onwards
 
 That's it, you will be logged in to the mobile app automatically.
 
-### iOS
+### SSO Login Flow for iOS Application
 
 1. Open your mobile browser and login to the SSO dashboard from the mobile browser.
 2. Click on the Squadcast logo in your SSO dashboard.
