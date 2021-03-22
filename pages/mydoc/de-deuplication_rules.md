@@ -66,7 +66,7 @@ Next, choose the **De-duplication Time Window**. You can de-duplicate incidents 
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b>
-<br/><br/><p>Once you opt for the Raw String method, you cannot revert to the UI-based Rule Builder method.</p>
+<br/><br/><p>Once you opt for the Raw String method, you cannot revert to the UI-based Rule Builder method for that rule.</p>
 {{site.data.alerts.end}}
 
 (a) On the right, you can view the payload of the latest alert for the chosen Alert Source
@@ -133,7 +133,7 @@ This will pick out the value `AlarmName` from the Message object in the payload,
 <br/><br/>
 Since the payload format is fixed for a given alert source, it is usually preferrable to have De-duplication Rules on a per-alert source basis. This can be done by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.
 <br/><br/>
-For example, if you want to have a De-duplication Rule for a Service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">jira-plugin</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'jira-plugin' && (&lt;your_de-duplication_rule&gt;)</code></p>
+For example, if you want to have a De-duplication Rule for a Service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">grafana</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'grafana' && (&lt;your_de-duplication_rule&gt;)</code></p>
 {{site.data.alerts.end}}
 
 ### Example
@@ -156,7 +156,7 @@ Below is an example payload for demonstration:
     "project_key": "HYD",
     "project_name": "hydra"
   },
-  "source": "jira-plugin"
+  "source": "grafana"
 }
 ```
 To de-duplicate any incoming alert when:
@@ -178,15 +178,15 @@ From the [Incident List page](https://support.squadcast.com/docs/incident-list-t
 
 ![](images/de-duplication_6.png)
 
-Clicking on such an incident will take you its [Incident Details page](https://support.squadcast.com/docs/incident-details) where, by clicking on **Events**, you will be able to see the following:
+Clicking on such an incident will take you to its [Incident Details page](https://support.squadcast.com/docs/incident-details) where, by clicking on **Deduped Events**, you will be able to see the following:
 
-  - Number of de-duplicated alerts 
+  - Number of de-duplicated events 
   - Time when they reached Squadcast
-  - **Message** of the alert
+  - **Message** and **Payload** of the event
 
 ![](images/de-duplication_7.png)
 
-Clicking on any of the de-duplicated alerts will display will all the information that is sent for that alert from the monitoring tool.
+Clicking on any of the de-duplicated events will display will all the information that is sent for that alert from the monitoring tool.
 
 ![](images/de-duplication_8.png)
 
@@ -210,7 +210,7 @@ Yes, you can. The evaluation between different De-duplication Rules is OR.
 
 **(5)** What kind of regex can be used to write custom rules?
 
-The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](https://regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
 
 ![](images/de-duplication_9.png)
 
