@@ -34,7 +34,7 @@ Alert Routing allows you to configure *Routing Rules* to ensure that alerts are 
 
 ![](images/alert_routing_3.png)
 
-**(c)** Pick the `event tag` **key** and **value** pair that you are checking for in an incident using the drop-downs
+**(c)** Pick the **event tag** `key` and `value` pair that you are checking for in an incident using the drop-downs
 
 ![](images/alert_routing_4.png)
 
@@ -55,7 +55,7 @@ Alert Routing allows you to configure *Routing Rules* to ensure that alerts are 
 
 {{site.data.alerts.yellow-note-i}}
 <b>Note</b>
-<br/><br/><p>Once you opt for the Raw String method, you cannot revert to the UI-based Rule Builder method.</p>
+<br/><br/><p>Once you opt for the Raw String method, you cannot revert to the UI-based Rule Builder method for that rule.</p>
 {{site.data.alerts.end}}
 
 **(a)** This box displays all the `event tags` [defined](https://support.squadcast.com/docs/event-tagging) for this Service
