@@ -259,10 +259,6 @@ entries:
             url: /docs/appdynamics
             output: web, pdf
 
-          - title: Incident API
-            url: /docs/apiv2
-            output: web, pdf
-
           - title: AppSignal
             url: /docs/appsignal
             output: web, pdf
@@ -357,6 +353,10 @@ entries:
 
           - title: Icinga2
             url: /docs/icinga2
+            output: web, pdf
+
+          - title: Incident API
+            url: /docs/apiv2
             output: web, pdf
 
           - title: InsightOps (LogEntries)
