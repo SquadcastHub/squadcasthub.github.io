@@ -6,7 +6,24 @@ green-note-check: '<div class="alert alert-success" role="alert"><i class="fa fa
 blue-note: '<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>'
 red-note: '<div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>'
 warning: '<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>'
+
 end: '</div>'
+
+tip-md: '<div markdown="1" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip: </b>'
+note-md: '<div markdown="1" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>'
+important-md: '<div markdown="1" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important: </b>'
+yellow-note-i-md: '<div markdown="1" class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>'
+green-note-check-md: '<div markdown="1" class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i>'
+blue-note-md: '<div markdown="1" class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>'
+red-note-md: '<div markdown="1" class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>'
+warning-md: '<div markdown="1" class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning: </b>'
+
+callout_danger-md: '<div markdown="1" class="bs-callout bs-callout-danger">'
+callout_default-md: '<div markdown="1" class="bs-callout bs-callout-default">'
+callout_primary-md: '<div markdown="1" class="bs-callout bs-callout-primary">'
+callout_success-md: '<div markdown="1" class="bs-callout bs-callout-success">'
+callout_info-md: '<div markdown="1" class="bs-callout bs-callout-info">'
+callout_warning-md: '<div markdown="1" class="bs-callout bs-callout-warning">'
 
 callout_danger: '<div class="bs-callout bs-callout-danger">'
 callout_default: '<div class="bs-callout bs-callout-default">'
