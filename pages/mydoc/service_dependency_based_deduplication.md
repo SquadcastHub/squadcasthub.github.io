@@ -23,6 +23,8 @@ If *Service A* is `dependent on` *Service B* and *Service C*, then:
 - **Dependent Service**: *Service A*
 - **Dependency Service(s)**: *Service B*, *Service C*
 
+Let's say, _Service B_ has an open incident at _time x_ and _Service C_ has an open incident at _time x+1_. Now, _Service A_ receives an incident. This incident for _Service A_ gets de-duplicated with the **latest** open incident of its depenedency Service(s) - i.e., with the open incident for _Service C_, in this case.
+
 ## Adding a Service Dependency 
 
 **(1)** Navigate to **Services** from the sidebar
@@ -59,7 +61,8 @@ To do so:
 
 {{site.data.alerts.yellow-note-i}}
 <b>Note:</b>
-<br/><br/><p><b>1.</b> The Service Dependency based De-duplication will de-duplicate any incoming alert against either a <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Triggered</code> or <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Acknowledged</code> incident only.
+<br/><br/><p><b>1.</b> The Service Dependency Based De-duplication will de-duplicate any incoming alert against either a <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Triggered</code> or <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Acknowledged</code> incident only.
+<br/><br/>
 <b>2.</b> Service Dependency based De-duplication is rule-specific and can be enabled for any number of De-duplication Rules that are defined for a Service.</p>
 {{site.data.alerts.end}}
 
