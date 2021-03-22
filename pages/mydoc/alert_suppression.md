@@ -58,8 +58,8 @@ These are useful in situations where you would like to *view* your all your info
 
 {{site.data.alerts.blue-note}}
 <b>Comparison Operators within Suppression Rules</b>
-<br/><br/><p>You can also leverage comparison operators such as <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">==, <, <=, >, >=</code> within your rules using the drop-down blocks, when the parameter you are evaluating against, is a <b>numerical value from the payload</b> to reduce alert noise.
-<img src="images/alert_suppression_7_new.png"></p>
+<br/><br/><p>You can also leverage comparison operators such as <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">==, <, <=, >, >=</code> within your rules using the drop-down blocks, when the parameter you are evaluating against, is a <b>numerical value from the payload</b> to reduce alert noise.</p>
+<p><img src="images/alert_suppression_7_new.png"></p>
 {{site.data.alerts.end}}
 
 ### (B) Raw String Method
