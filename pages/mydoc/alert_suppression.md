@@ -123,33 +123,6 @@ jsonPath(payload.Message, "AlarmName")
 
 This will pick out the value `AlarmName` from the Message object in the payload based on which, you can suppress the incident.
 
-#### Discarding suppressed incidents
-
-The `discard()` function can be used along with the supression rule to let the system know
-that incidents that hold true for the rule needn't be stored in the platform. 
-
-**Example** 
-
-Suppression Rule:  
-
-```javascript
-source == "grafana" && re(payload["message"], "Notification Message")
-``` 
-Supression Rule with `discard()`: 
-
-```javascript
-source == grafana && re(payload["message"], "Notification Message") && discard()
-```
-
-{{site.data.alerts.blue-note-md}}
-   **Avoid hitting Rate Limits**
-   
-   The `discard()` function can be used to avoid hitting the
-   **[Incident Rate Limits](https://support.squadcast.com/docs/incident-rate-limiting)**
-   as **Suppressed** events that are discarded don't get counted against the allowed rate limits.
-
-{{site.data.alerts.end}}
-
 
 {{site.data.alerts.blue-note-md}}
    **Multiple Alert Sources**
@@ -208,6 +181,33 @@ To suppress any incoming alert when:
 ```javascript
 re(payload.incident_details.message, "[Bug]") && source == "grafana"
 ```
+
+### Discarding suppressed incidents
+
+To discard incoming alerts and stop them from being triggered as incidents in Squadcast,
+use the `discard()` function in conjunction with Suppression Rules.
+
+**Example** 
+
+Suppression Rule:  
+
+```javascript
+source == "grafana" && re(payload["message"], "Notification Message")
+``` 
+Supression Rule with `discard()`: 
+
+```javascript
+source == grafana && re(payload["message"], "Notification Message") && discard()
+```
+
+{{site.data.alerts.blue-note-md}}
+   **Avoid hitting Rate Limits**
+   
+   The `discard()` function can be used to avoid hitting the
+   **[Incident Rate Limits](https://support.squadcast.com/docs/incident-rate-limiting)**
+   as **Suppressed events that are discarded** don't get counted against the allowed rate limits.
+
+{{site.data.alerts.end}}
 
 ## Viewing Suppressed Incidents
 
