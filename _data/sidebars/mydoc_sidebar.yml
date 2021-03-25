@@ -627,10 +627,6 @@ entries:
             url: /docs/squadcast-runbooks
             output: web, pdf
 
-          - title: How to Video - Squadcast Actions
-            url: /docs/how-to-video-squadcast-actions
-            output: web, pdf
-
       - title: Squadcast API Documentation
         output: web, pdf
 
