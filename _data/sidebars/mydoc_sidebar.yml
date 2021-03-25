@@ -311,12 +311,12 @@ entries:
             url: /docs/dynatrace
             output: web, pdf
 
-          - title: Elastic
-            url: /docs/elastic
-            output: web, pdf
-
           - title: ElastAlert
             url: /docs/elastalert
+            output: web, pdf
+
+          - title: Elastic
+            url: /docs/elastic
             output: web, pdf
 
           - title: Email
