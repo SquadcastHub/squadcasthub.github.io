@@ -651,10 +651,6 @@ entries:
             url: /docs/deleting-your-squadcast-account
             output: web, pdf
 
-          - title: Incident Rate Limiting
-            url: /docs/incident-rate-limiting
-            output: web, pdf
-
           - title: Organizations
             url: /docs/squadcast-organizations
             output: web, pdf
