@@ -299,10 +299,6 @@ entries:
             url: /docs/coralogix
             output: web, pdf
 
-          - title: Crashlytics
-            url: /docs/crashlytics
-            output: web, pdf
-
           - title: Datadog
             url: /docs/datadog
             output: web, pdf
