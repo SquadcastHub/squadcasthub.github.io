@@ -299,10 +299,6 @@ entries:
             url: /docs/coralogix
             output: web, pdf
 
-          - title: Crashlytics
-            url: /docs/crashlytics
-            output: web, pdf
-
           - title: Datadog
             url: /docs/datadog
             output: web, pdf
@@ -311,12 +307,12 @@ entries:
             url: /docs/dynatrace
             output: web, pdf
 
-          - title: Elastic
-            url: /docs/elastic
-            output: web, pdf
-
           - title: ElastAlert
             url: /docs/elastalert
+            output: web, pdf
+
+          - title: Elastic
+            url: /docs/elastic
             output: web, pdf
 
           - title: Email
@@ -649,10 +645,6 @@ entries:
 
           - title: Deleting your Squadcast Account
             url: /docs/deleting-your-squadcast-account
-            output: web, pdf
-
-          - title: Incident Rate Limiting
-            url: /docs/incident-rate-limiting
             output: web, pdf
 
           - title: Organizations
