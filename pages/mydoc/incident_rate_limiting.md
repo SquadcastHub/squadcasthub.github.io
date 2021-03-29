@@ -7,7 +7,6 @@ summary: "How do I avoid hitting the incident rate limits?"
 sidebar: mydoc_sidebar
 permalink: docs/incident-rate-limiting
 folder: mydoc
-published: false
 ---
 
 Squadcast has the following Incident Rate Limits in place. This limit is calculated over a **1 minute rolling window from the current time**. 
