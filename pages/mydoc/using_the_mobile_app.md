@@ -102,7 +102,7 @@ You can view any specific user’s profile by clicking on their avatar from the 
 
 ### SSO login support for mobile apps
 
-We have started supporting SSO login for mobile apps from version 2.8.37 onwards. Read below to know how to make it work on [Android](#android) & [iOS](#ios).
+We have started supporting SSO login for mobile apps from version 2.8.37 onwards. Read below to know how to make it work on [Android](https://play.google.com/store/apps/details?id=com.squadcast.incidents&hl=en) & [iOS](https://apps.apple.com/app/id1501689101).
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important Note</b>
