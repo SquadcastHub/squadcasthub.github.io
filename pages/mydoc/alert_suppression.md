@@ -12,142 +12,77 @@ folder: mydoc
 
 Alert suppression can help you avoid alert fatigue by suppressing notifications for non-actionable alerts. 
 
-Squadcast will suppress the incidents that match any of the Suppression Rules you create for your Services. These incidents will go into the `Suppressed` state and you will not get any notifications for them.
+Squadcast will suppress the incidents that match any Suppression rules you create. These incidents will go into `Suppressed` state and you won't get any notifications for them.
 
-These are useful in situations where you would like to *view* your all your informational alerts in Squadcast but do not want to get notified for them. 
+These are useful in situations where you'd like to view your all your informational alerts in Squadcast but don't want to be notified for them. 
 
-## Prerequisites
+## Creating a Suppression rule
 
-- Only the Account Owner and Admins have Create, Read, Update and Delete capabilities for Suppression Rules
-- First, integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast
+For each service, you can define your suppression rules.
 
-## Creating Suppression Rules
+You can set this up by going to [your Squadcast account](https://app.squadcast.com)
 
-**(1)** Navigate to **Services** from the sidebar
-
-**(2)** Select a Service and click on the **More** option
-
-**(3)** Click on **Suppression Rules**
+- Go to the relevant service
+- Click on the options dropdown 
+- Choose "Suppression Rules"
 
 ![](images/alert_suppression_1_new.png)
 
-**(4)** Select an **Alert Source** from the drop-down 
-
-**(5)** Click on **Add new rule**
+Choose Alert Source from the Dropdown
 
 ![](images/alert_suppression_2_new.png)
 
-**(6)** Suppression Rules can be added in two different ways:
-
-### (A) UI-based Rule Builder (Beginner-friendly)
-
-(a) On the right, you can view the *payload of the **latest** alert* for the chosen Alert Source 
-
-(b) The drop-downs in the Rule Builder contain values from the payload on the right. You can use them to easily create your Suppression Rules. As you build the expression from these drop-downs, you can also see the corresponding *raw string* being auto-populated for the same under **String Expression**. 
+Click on **Add new rule** to start configuring a rule
 
 ![](images/alert_suppression_3_new.png)
 
-(c) You can add more than 1 condition for a rule by selecting **Add Condition** (a logical AND is performed between all the conditions -> the entire Suppression Rule will evaluate to `True` only if all the conditions evaluate to `True`)
+By default, when a new rule is being created, a user is prompted to use the *drop-down blocks* for convenience. As you build the expression from these drop-downs, you can also see the corresponding suppression expression *raw string* being auto-added for the same. 
+
+The drop-down blocks are beginner friendly for sure, but they aren't as flexible as raw string method.
+If you want more flexibility while building your expressions, you may opt anytime to switch to use the raw string mode by clicking the edit button as shown.
 
 ![](images/alert_suppression_4_new.png)
 
 {{site.data.alerts.yellow-note-i}}
-<b>Note:</b>
-<br/><p>The drop-down blocks only support logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operator between 2 expressions. If you want to have a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">OR</code> operation between 2 expressions, then you would have to create a new Suppression Rule.</p>
+<b>Note</b>
+<br/><p><ol><li>You will have the option to choose either the <i>drop-down block</i> mode or the <i>raw-string</i>  for every rule you create.</li><li>Once you opt for the raw-string method, you can't revert back to the drop-down blocks for that specific rule. You can delete the rule and create a new one to have the option to use the drop-down blocks.</li><li>The drop-down blocks only support logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operator between 2 expressions. If you want to have a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">OR</code> operation between 2 expressions, then you would have to create a new tagging rule instead and have the copy over the same tags for the other rule.</li></ol></p>
 {{site.data.alerts.end}}
 
-{{site.data.alerts.blue-note}}
-<b>Comparison Operators within Suppression Rules</b>
-<br/><br/><p>You can also leverage comparison operators such as <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">==, <, <=, >, >=</code> within your rules using the drop-down blocks, when the parameter you are evaluating against, is a <b>numerical value from the payload</b> to reduce alert noise.</p>
-<p><img src="images/alert_suppression_7_new.png"></p>
-{{site.data.alerts.end}}
-
-### (B) Raw String Method
-
-{{site.data.alerts.yellow-note-i}}
-<b>Important</b>
-<br/><p>Once you opt for the Raw String method, you cannot revert to the UI-based Rule Builder method.</p>
-{{site.data.alerts.end}}
-
-(a) On the right, you can view the payload of the latest alert for the chosen Alert Source
-
-(b) Click on **Edit** to enable Raw String method
+You can add as many Suppression Rules as you want for a service. 
 
 ![](images/alert_suppression_5_new.png)
-
-(c) Write your custom Suppression Rule expression
-
-### Syntax for writing rules: The rule engine supports expressions with parameters, arithmetic, logical, and string operations
-
-The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this [link](https://regex101.com/) to get an idea of all the expression types accepted in Squadcast. 
-
-#### Basic Expressions
-
-   `10 > 0`, `1+2`, `100/3`
-
-#### Parameterized Expressions
-
-   `payload.metric == "disk"`
-      The available parameters are `payload`
-            `payload` : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source 
-            `incident_details`: This contains the content of `message` and `description` of the incoming event
-            `source`: This denotes the associated alert source for the current/incoming event
-
-#### Regular Expressions
-
-   `re(payload.metric, "disk.*")`
-
-#### Parse JSON content within the payload using `jsonPath` to add a tag
-
-**General Format** 
-`jsonPath(<the JSON string that should be parsed for JSON content>, <"the parameter that needs to be picked from the parsed JSON object">)`
-
-**Example**
-
-Below is an example payload:
-
-```json
-{
-   "payload": {  
-      "Type" : "Notification",
-      "MessageId" : "5966c484-5b37-58df",
-      "TopicArn" : "arn:aws:sns:us-east-1:51:Test",
-      "Message" : "{\"AlarmName\":\"Squadcast Testing - Ignore\",\"AlarmDescription\":\"Created from EC2 Console\"}"
-   }
-}
-```
-
-```javascript
-jsonPath(payload.Message, "AlarmName")
-```
-
-This will pick out the value `AlarmName` from the Message object in the payload based on which, you can suppress the incident.
-
 
 {{site.data.alerts.blue-note-md}}
    **Multiple Alert Sources**
 
-   We can see alert payloads of past events from different alert
-   sources for the service by selecting the respective alert source
-   from the dropdown in the right-half side.
+   We can see alert payloads of past events from different alert sources for the service by selecting the respective alert source from the dropdown in the right-half side.
 
-   Since the payload format is fixed for a given alert source,
-   it is usually preferrable to have suppression rules on a per-alert source basis.
-   This can be done by making use of the `source` field which
-   lets you know the alert source that triggered the incoming event.
+   Since the payload format is fixed for a given alert source, it is usually preferrable to have suppression rules on a per-alert source basis. This can be done by making use of the `source` field which lets you know the alert source that triggered the incoming event.
 
-   For example, if you want to have a suppression rule for a service,
-   only for alerts coming for **`grafana`** alert source, then the corresponding
-   rule would look something like:
+   For example, if you want to have a suppression rule for a service, only for alerts coming for `jira-plugin` alert source, then the corresponding rule would look something like:
    
    ```javascript
-   source == 'grafana' && (<your_suppression_rule>)
+   source == 'jira-plugin' && (<your_suppression_rule>)
    ```
 {{site.data.alerts.end}}
 
-### Example
+## Syntax for Writing Rules (For Raw String method)
 
-Below is an example payload for demonstration:
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this [link](https://regex101.com/) to get an idea of all the expression types accepted in Squadcast. 
+
+- Basic expression: `10 > 0`, `1+2`, `100/3`
+- Parameterized expression: `payload.metric == "disk"`
+   The available parameters are `payload`, `incident_details`, `source`
+   + `payload` : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source. 
+   + `incident_details`: This contains the content of `message` and `description` of the incoming event.
+   + `source`: This denotes the associated alert source for the current / incoming event.
+- Regular expression: `re(payload.metric, "disk.*")`
+- Parsing JSON content: `jsonPath(payload.message, "a.b.c")`
+   This can be used to parse JSON formatted strings and get the `jsonPath` from the resulting JSON object.
+
+## Example
+
+For a sample content shown in the right panel of the configuration space
 
 ```json
 {
@@ -168,69 +103,23 @@ Below is an example payload for demonstration:
     "message": "[Bug] bug - 2",
     "description": "+ Project: HYDRA \n+Issue Type: Bug ..."
   },
-  "source": "grafana"
+  "source": "jira-plugin"
 }
 ```
+Suppress any incoming alert if,
+ - The incident message contains:  `[Bug]`
+ - The alert source is jira-plugin
 
-To suppress any incoming alert when:
- - The alert message contains: `[Bug]`
- - The alert source is `grafana`
+**Rule**
+`re(payload.incident_details.message, "[Bug]") && source == "jira-plugin"`
 
-**Suppression Rule:**
+## Viewing Suppressed Alerts
 
-```javascript
-re(payload.incident_details.message, "[Bug]") && source == "grafana"
-```
-
-### Discarding suppressed incidents
-
-To discard incoming alerts and stop them from being triggered as incidents in Squadcast,
-use the `discard()` function in conjunction with Suppression Rules.
-
-**Example** 
-
-Suppression Rule:  
-
-```javascript
-source == "grafana" && re(payload["message"], "Notification Message")
-``` 
-Supression Rule with `discard()`: 
-
-```javascript
-source == grafana && re(payload["message"], "Notification Message") && discard()
-```
-
-{{site.data.alerts.blue-note-md}}
-   **Avoid hitting Rate Limits**
-   
-   The `discard()` function can be used to avoid hitting the
-   **[Incident Rate Limits](https://support.squadcast.com/docs/incident-rate-limiting)**
-   as **Suppressed events that are discarded** don't get counted against the allowed rate limits.
-
-{{site.data.alerts.end}}
-
-## Viewing Suppressed Incidents
-
-You can view `suppressed` incidents in the [Incident List](https://support.squadcast.com/docs/incident-list-table-view) page by clicking on **All Incidents** and choosing **Suppressed** as highlighted in the screenshot below.
+You can view Suppressed incidents on the Incident List page by clicking on All Incidents and choosing **Suppressed** as highlighted in the screenshot below.
 
 ![](images/alert_suppression_6_new.png)
 
-
-{{site.data.alerts.yellow-note-i-md}}
-**Note**
-
- - **`Suppressed`** and **`Resolved`** are the final states for incidents in Squadcast. You will not be able to take any action on incidents that are in these states.
- - Incident information will be available on the Squadcast platform even if they are suppressed.
+{{site.data.alerts.yellow-note-i}}
+<b>Note</b>
+<br/><p><ul><li>Suppressed and Resolved are the final states for incidents in Squadcast. You will not be able to take any action on incidents in these states.</li><li>Incident information will be available on the Squadcast platform even if they are suppressed.</li></ul></p>
 {{site.data.alerts.end}}
-
-## FAQs
-
-**(1)** What kind of regex can be used to write custom rules?
-
-The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](https://regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
-
-![](images/de-duplication_9.png)
-
-**(2)** Can I create OR rules?
-
-Yes, you can. The evaluation between different Suppression Rules is OR. Add multiple Suppression Rules to enable OR evaluation.
