@@ -167,8 +167,18 @@ Click on **Create** to trigger the incident
 ## Using Slack as an Alert Source
 To create incidents automatically in Squadcast from Slack, check out [Slack as an alert source](slack-as-an-alert-source).
 
-{{site.data.alerts.blue-note}}
-<b>FAQ</b>
-<br/><br/><p><b>Q: </b>How to give access to a user in Slack to add Public Channels?<br/>
-<b>A: </b>Please follow the <a href="https://slack.com/intl/en-nl/help/articles/360017938993-What-is-a-channel" target="_blank">documentation by Slack</a> to give access to your user.</p>
-{{site.data.alerts.end}}
+## FAQs
+
+1. #### How can a user in Slack be given access to add Public Channels?
+Please follow the <a href="https://slack.com/intl/en-nl/help/articles/360017938993-What-is-a-channel" target="_blank">documentation by Slack</a> to give access to your user to create Public Channels.
+
+2. #### Our Squadcast Organization is integrated with our Slack account. However, we see `error messages` such as the ones below. What do they mean?
+
+- #### You have not linked your Slack account with your Squadcast account.
+This error message simply means that you are not added as a user of your Squadcast Organization. One needs to be added as a user in their Squadcast Organization to be able to take actions on incidents from Slack. **Additionally, your Slack user Email and Squadcast user Email must be the exact same**.
+
+- #### You are not a part of this Organization on Squadcast. Please contact your Admin.
+This error message simply means that you are a user of Squadcast for an Organization that is **not the same** as the one that the incident in Slack is for. One needs to be added as a user of all those Squadcast Organizations in order to take actions on incidents of those particular Organizations. Please contact an Admin of your Organization and have them add you as a user of the right Squadcast Organization.
+
+- #### You are a part of this Organization as a Stakeholder. You cannot take actions on incidents. Please contact your Admin to upgrade your role.
+Stakeholders in Squadcast have read-only access to the platform. As a `Stakeholder`, one will not be able to take any actions on the incidents. To be able to take actions on incidents, you must be added as a `User` or an `Admin`. Please contact an Admin of your Organization and have your User Type changed from Stakeholder to `User` or `Admin`.
