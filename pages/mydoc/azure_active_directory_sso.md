@@ -15,7 +15,7 @@ Squadcast supports SAML 2.0 based  Single Sign On (SSO) login for Azure Active D
 
 1. Account Owner / Administrator account in Squadcast
 
-2. A valid Squadcast subscription ([Pro & Enterprise](https://www.squadcast.com/pricing))
+2. A valid Squadcast subscription ([Enterprise](https://www.squadcast.com/pricing))
 
 {{site.data.alerts.blue-note}}
 <b>Point to Note: </b>
