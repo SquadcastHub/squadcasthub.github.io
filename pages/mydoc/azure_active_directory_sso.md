@@ -1,15 +1,15 @@
 ---
 title: Azure Active Directory SSO
 tags: [sso, azure active directory]
-keywords: 
-last_updated: 
+keywords:
+last_updated:
 summary: "Enable Azure Active Directory Single Sign On (SSO) for your Squadcast organisation"
 sidebar: mydoc_sidebar
 permalink: docs/azure-active-directory-sso
 folder: mydoc
 ---
 
-Squadcast supports SAML 2.0 based  Single Sign On (SSO) login for Azure Active Directory users and you can set it for your organisation by following this integration guide.
+Squadcast supports SAML 2.0 based Single Sign On (SSO) login for Azure Active Directory users and you can set it for your organisation by following this integration guide.
 
 ### Pre-requisites
 
@@ -19,8 +19,7 @@ Squadcast supports SAML 2.0 based  Single Sign On (SSO) login for Azure Active D
 
 {{site.data.alerts.blue-note}}
 <b>Point to Note: </b>
-<br/><br/><p>1. Only an Administrator / Account owner can enable and configure Azure Active Directory SSO for an organisation in Squadcast.<br/><br/>
-2. Once enabled, only the Account owner can use email-password based login by default although it can be configured to enable email based login for Administrators as well.</p>
+<br/><br/><p>1. Only an Administrator / Account owner can enable and configure Azure Active Directory SSO for an organisation in Squadcast.<br/><br/> 2. Once enabled, only the Account owner can use email-password based login by default although it can be configured to enable email based login for Administrators as well.</p>
 {{site.data.alerts.end}}
 
 ### Setup Instructions
@@ -33,7 +32,7 @@ Squadcast supports SAML 2.0 based  Single Sign On (SSO) login for Azure Active D
 
 ![](images/azure_squadcast_2.png)
 
-![](images/azure_squadcast_3.png)
+![](images/saml_3.png)
 
 3.As given in the displayed guide, copy the **ACS URL** .Then go to your Azure Active Directory dashboard and click on **Enterprise applications** .
 
@@ -62,7 +61,7 @@ Squadcast supports SAML 2.0 based  Single Sign On (SSO) login for Azure Active D
 ![](images/azure_squadcast_10.png)
 
 9.Edit the Basic SAML configuration section and in **Reply URL (Assertion Consumer Service URL)
-**  paste the ACS URl you copied from Squadcast.
+** paste the ACS URl you copied from Squadcast.
 
 ![](images/azure_squadcast_11.png)
 
