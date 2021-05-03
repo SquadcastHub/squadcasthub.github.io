@@ -1,8 +1,8 @@
 ---
 title: Okta SSO
 tags: [sso, okta]
-keywords: 
-last_updated: 
+keywords:
+last_updated:
 summary: "Enable Okta Single Sign On (SSO) for your Squadcast organisation"
 sidebar: mydoc_sidebar
 permalink: docs/okta-sso-integration
@@ -19,8 +19,7 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 {{site.data.alerts.blue-note}}
 <b>Points to Note: </b>
-<br/><br/><p>1. Only an Administrator / Account owner can enable and configure Okta SSO for an organisation in Squadcast.<br/><br/>
-2. Once enabled, only the Account owner can use email-password based login by default although it can be configured to enable email based login for Administrators as well.</p>
+<br/><br/><p>1. Only an Administrator / Account owner can enable and configure Okta SSO for an organisation in Squadcast.<br/><br/> 2. Once enabled, only the Account owner can use email-password based login by default although it can be configured to enable email based login for Administrators as well.</p>
 {{site.data.alerts.end}}
 
 {{site.data.alerts.yellow-note-i}}
@@ -42,7 +41,7 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 ![](images/okta_3.png)
 
-**(4)** Move to your Okta Dashboard and navigate to **Applications** 
+**(4)** Move to your Okta Dashboard and navigate to **Applications**
 
 ![](images/okta_4.png)
 
@@ -50,11 +49,11 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 ![](images/okta_5.png)
 
-**(6)** Under the `Sign-On` tab, navigate to the `Advanced Sign-On Settings` and paste the Customer ID that was copied in Step 3 in the `Customer ID` field. 
+**(6)** Under the `Sign-On` tab, navigate to the `Advanced Sign-On Settings` and paste the Customer ID that was copied in Step 3 in the `Customer ID` field.
 
 ![](images/okta_5_1.png)
 
-**(7)** Now click on `View Setup Instructions` to view the SAML 2.0 Endpoint and X.509 Certificate. 
+**(7)** Now click on `View Setup Instructions` to view the SAML 2.0 Endpoint and X.509 Certificate.
 
 ![](images/okta_6.png)
 
@@ -64,17 +63,19 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 ![](images/okta_8.png)
 
-**(9)** In Squadcast, enable the toggle above within the modal and click on `Save` to enable Okta SSO for your Squadcast Account. 
+**(9)** In Squadcast, enable the toggle above within the modal and click on `Save` to enable Okta SSO for your Squadcast Account.
 
 ![](images/okta_9.png)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Note</b><br/><br/>
+
 <p>You can turn On / Off Okta SSO by toggling the button at the top. Configure other options like the default User role and click Save.</p>
 {{site.data.alerts.end}}
 
 {{site.data.alerts.blue-note}}
 <b>Note</b><br/><br/>
+
 <p>For members trying to log into Squadcast through SSO who aren't already added to the Squadcast platform, will be added to the platform by default as <b>Users</b>.</p>
 {{site.data.alerts.end}}
 
@@ -82,21 +83,20 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 ![](images/okta_10.png)
 
-In this example, we have chosen `Assign to People` and added a user as shown below. 
+In this example, we have chosen `Assign to People` and added a user as shown below.
 
 ![](images/okta_11.png)
 
-**(11)** By default, the SSO provider will send Firstname, Lastname and Email ID to Squadcast. If you can send an optional custom key called `role`  with one of these values `Admin`, `User` and `Stakeholder`, the user will be created with these roles instead of the default user role configured in the SSO modal in Squadcast.
+**(11)** By default, the SSO provider will send Firstname, Lastname and Email ID to Squadcast. If you can send an optional custom key called `role` with one of these values `Admin`, `User` and `Stakeholder`, the user will be created with these roles instead of the default user role configured in the SSO modal in Squadcast.
 
 Your Okta SSO Integration is good to go and anyone in your organisation can now use Okta SSO to login into Squadcast.
 
-
 ## Logging into Squadcast via Okta
- 
-**(1)** You can login to Squadcast by navigating to `My Apps` in your Okta Dashboard. 
+
+**(1)** You can login to Squadcast by navigating to `My Apps` in your Okta Dashboard.
 
 ![](images/okta_12.png)
 
-**(2)** Find `Squadcast` in this list of saved applications and just click on the `Squadcast` card and you will be automatically directed into your Squadcast account. 
+**(2)** Find `Squadcast` in this list of saved applications and just click on the `Squadcast` card and you will be automatically directed into your Squadcast account.
 
 ![](images/okta_13.png)

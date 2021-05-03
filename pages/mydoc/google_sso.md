@@ -1,8 +1,8 @@
 ---
 title: Google SSO
 tags: [sso, google]
-keywords: 
-last_updated: 
+keywords:
+last_updated:
 summary: "Use G Suite credentials to sign in to Squadcast via Single Sign-On (SSO)."
 sidebar: mydoc_sidebar
 permalink: docs/google-sso
@@ -98,5 +98,6 @@ By default Squadcast lets you create a user via SSO with a configured default Ro
 
 {{site.data.alerts.blue-note}}
 <b>Note</b><br/><br/>
+
 <p>After enabling SSO, if you are facing an issue to login using the SSO, we advise you to do the following: on the webpage, go to Inspect -> Application -> Clear Storage</p>
 {{site.data.alerts.end}}
