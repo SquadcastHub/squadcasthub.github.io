@@ -76,12 +76,12 @@ Now, there are 2 sections:
 
 **JQL - Service Mapping:** If a ticket is created in Jira, then the mappings defined in this section would be iterated one-by-one and incident would be created for the service corresponding to the first JQL that evaluated to be true for that Jira ticket. If none of the JQL matched, then no incident would be created in Squadcast.
 
+
 {{site.data.alerts.note}}
-<br/><br/><p>The issue must be in the same Jira project and be the same Jira Issue type. If you are using Jira Service Desk, incidents are created from JQL before <a href="https://confluence.atlassian.com/servicedeskserver041/automating-your-service-desk-969530933.html" target=_blank>automation rules</a> are applied.</p>
+<br/><br/><p>The issue must be in the same Jira project and be the same Jira Issue type. If you are using Jira Service Desk, incidents are created from JQL before <a href="https://confluence.atlassian.com/servicedeskserver041/automating-your-service-desk-969530933.html" target="_blank">automation rules</a> are applied.</p>
 
-<br/><br/><p>Make sure that issue priority is enabled if you want to create Squadcast incidents by creating Jira issues.</p>
+<br/><p>Make sure that the <b>issue priority</b> is enabled for issues in Jira in order to create incidents in Squadcast.</p>
 
-<br/><br/><p>For incidents created in Squadcast from jira Issues using the jira plugin you will not have any status sync.</p>
 {{site.data.alerts.end}}
 
 So, to summarize, 
@@ -95,11 +95,21 @@ That's it! Your JIRA Server Integration is good to go.
 The statuses of the Squadcast Incident and JIRA Issue will be automatically synced as per the mapping configured.
 
 {{site.data.alerts.note}}
+
+<br/><br/><p>Incidents in Squadcast created for issues in Jira using the Jira plugin will not have a status sync.</p>
+
+{{site.data.alerts.end}}
+
+{{site.data.alerts.note}}
 <br/><br/><p>If the Squadcast incident reaches either <b>Resolved</b> or <b>Suppressed</b> status, the bidirectional status syncing will stop even if the issue is re-opened in JIRA, as these both are end states in Squadcast.</p>
 {{site.data.alerts.end}}
 
 {{site.data.alerts.note}}
-<br/><br/><p>The default directory for user creation should be <b>Jira Internal Directory</b>.If its something else then please delete the <b>squadcast</b> user and create it in <b>Jira Internal Directory</b> with the same username and set the password as the token which you copied from Squadcast</p>
+<br/><br/><p>The default directory for user creation should be <b>Jira Internal Directory</b>. If the <b>squadcast user</b> gets created in any other directory apart from <b>Jira Internal Directory</b>, you will have to move the user to the <b>Jira Internal Directory</b> by following the steps below:</p>
+<b>1.</b> Delete the <b>squadcast user</b> that was created post the integration.
+<br/><b>2.</b> Then, add a new user. The username should be <b>squadcast</b> and password should be the <b>token</b> that is available <a href="https://support.squadcast.com/docs/jira-server-on-premise#integration-steps">in step 2 here.</a>
+<br/><b>3.</b> Kindly ensure that you have selected <b>Jira Internal Directory</b> from the dropdown while creating the user.
+
 {{site.data.alerts.end}}
 
 ## Usage of the Automatic and Manual Modes
