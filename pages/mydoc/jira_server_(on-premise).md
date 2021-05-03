@@ -77,7 +77,11 @@ Now, there are 2 sections:
 **JQL - Service Mapping:** If a ticket is created in Jira, then the mappings defined in this section would be iterated one-by-one and incident would be created for the service corresponding to the first JQL that evaluated to be true for that Jira ticket. If none of the JQL matched, then no incident would be created in Squadcast.
 
 {{site.data.alerts.note}}
-<br/><br/><p>The issue must be in the same Jira project and be the same Jira Issue type. If you are using Jira Service Desk, incidents are created from JQL before <a href="https://confluence.atlassian.com/servicedeskserver041/automating-your-service-desk-969530933.html" target="_blank">automation rules</a> are applied.</p>
+<br/><br/><p>The issue must be in the same Jira project and be the same Jira Issue type. If you are using Jira Service Desk, incidents are created from JQL before <a href="https://confluence.atlassian.com/servicedeskserver041/automating-your-service-desk-969530933.html" target=_blank>automation rules</a> are applied.</p>
+
+<br/><br/><p>Make sure that issue priority is enabled if you want to create Squadcast incidents by creating Jira issues.</p>
+
+<br/><br/><p>For incidents created in Squadcast from jira Issues using the jira plugin you will not have any status sync.</p>
 {{site.data.alerts.end}}
 
 So, to summarize, 
@@ -92,6 +96,10 @@ The statuses of the Squadcast Incident and JIRA Issue will be automatically sync
 
 {{site.data.alerts.note}}
 <br/><br/><p>If the Squadcast incident reaches either <b>Resolved</b> or <b>Suppressed</b> status, the bidirectional status syncing will stop even if the issue is re-opened in JIRA, as these both are end states in Squadcast.</p>
+{{site.data.alerts.end}}
+
+{{site.data.alerts.note}}
+<br/><br/><p>The default directory for user creation should be <b>Jira Internal Directory</b>.If its something else then please delete the <b>squadcast</b> user and create it in <b>Jira Internal Directory</b> with the same username and set the password as the token which you copied from Squadcast</p>
 {{site.data.alerts.end}}
 
 ## Usage of the Automatic and Manual Modes
