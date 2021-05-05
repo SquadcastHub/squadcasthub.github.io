@@ -318,11 +318,7 @@ No, editing previously posted incident updates to the StatusPage is not possible
 
 Yes, absolutely! You can add any information you want to provide maximum context of the ongoing issue to your end users within the **Custom Description** placeholder that supports `Markdown` formatting as well. 
 
-#### 16. Can I display Service Uptime Numbers, Graphs or indicate if my Service is put under Maintenance in the StatusPage?
-
-No, this is not possible in the current version of StatusPage available.
-
-#### 17. How many StatusPages can I add in my current plan? Can I add both Private and Public StatusPages?
+#### 16. How many StatusPages can I add in my current plan? Can I add both Private and Public StatusPages?
 
 The number of **Public StatusPages** that can be added depend on the [Pricing Plan](https://www.squadcast.com/pricing) that your account is currently on.
 - **Essential Plan**: 1
@@ -331,7 +327,7 @@ The number of **Public StatusPages** that can be added depend on the [Pricing Pl
 
 **Private StatusPages** can be added **only** in the **Pro and Enterprise Plans**, **not** in the **Essential Plan**.
 
-#### 18. Is there a limit on the number of subscribers to the StatusPage? Can I view the list of subscribers to my StatusPage?
+#### 17. Is there a limit on the number of subscribers to the StatusPage? Can I view the list of subscribers to my StatusPage?
 
 No, there is **no limit on the number of subscribers** to your StatusPage. You are also **not charged for subscriptions** to your StatusPage. 
 
