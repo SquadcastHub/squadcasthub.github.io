@@ -6,6 +6,8 @@ last_updated:
 summary: "Enable Squadcast to track user activity (commits) on Github"
 sidebar: mydoc_sidebar
 permalink: docs/github
+published: false
+search: exclude
 folder: mydoc
 ---
 

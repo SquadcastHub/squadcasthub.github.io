@@ -6,6 +6,8 @@ last_updated:
 summary: "Smart Squads allow you to dynamically add users to a Squad by integrating with your Version Control Tool"
 sidebar: mydoc_sidebar
 permalink: docs/create-smart-squads
+published: false
+search: exclude
 folder: mydoc
 ---
 
