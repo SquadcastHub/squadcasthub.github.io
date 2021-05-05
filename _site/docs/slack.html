@@ -507,7 +507,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Invoke an Escalation Policy for an Existing Incident" href="/docs/invoke-an-escalation-policy-for-an-existing-incident">Invoke an Escalation Policy for an Existing Incident</a></li>
+          <li><a title="Reassign an Incident" href="/docs/reassign-an-escalation-policy-for-an-existing-incident">Reassign an Incident</a></li>
           
           
           
@@ -652,12 +652,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
   
   <li>
-      <a title="Analytics" href="#">Analytics</a>
+      <a title="Analytics & Reporting" href="#">Analytics & Reporting</a>
       <ul>
           
           
           
-          <li><a title="Analyze Metrics" href="/docs/analytics">Analyze Metrics</a></li>
+          <li><a title="Analytics & Reporting" href="/docs/analytics">Analytics & Reporting</a></li>
           
           
           
@@ -785,13 +785,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Crashlytics" href="/docs/crashlytics">Crashlytics</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Datadog" href="/docs/datadog">Datadog</a></li>
           
           
@@ -806,14 +799,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Elastic" href="/docs/elastic">Elastic</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="ElastAlert" href="/docs/elastalert">ElastAlert</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Elastic" href="/docs/elastic">Elastic</a></li>
           
           
           
@@ -1365,13 +1358,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          
-          
-          <li><a title="How to Video - Squadcast Actions" href="/docs/how-to-video-squadcast-actions">How to Video - Squadcast Actions</a></li>
-          
-          
-          
-          
       </ul>
    </li>
      
@@ -1554,7 +1540,7 @@ li.sidebarTitle{
 
 <h2 id="slack-notifications-for-incidents">Slack Notifications for Incidents</h2>
 
-<p>Squadcast sends a notification to the configured Slack channel as soon as an incident is triggered. You can easily <strong>Acknowledge</strong> and <strong>Resolve</strong> the populated incidents from within the Slack channel itself.</p>
+<p>Squadcast sends a notification to the configured Slack Channel as soon as an incident is triggered. You can easily <strong>Acknowledge</strong> and <strong>Resolve</strong> the populated incidents from within the Slack Channel itself.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
 <b>Note</b><br /><br /><p>The <b>email address</b> used with your <b>user in Slack</b> and your <b>user in Squadcast</b> should be the same, if not, the integration will not work as expected.</p>
@@ -1566,75 +1552,75 @@ li.sidebarTitle{
 
 <p><img src="images/slack_squadcast_1.jpg" alt="" /></p>
 
-<p><strong>(2)</strong> Click on <strong>Integrate</strong> in the Slack tile, to begin you will be redirected asking for permissions to access your Slack account</p>
+<p><strong>(2)</strong> Click on the <strong>Integrate</strong> button on the Slack tile</p>
 
 <p><img src="images/slack_squadcast_2.png" alt="" /></p>
 
-<p><strong>(3)</strong> Please ensure that you have the permission to create Public Channels in your Slack workspace. If you have the permission, then click on <strong>Continue</strong></p>
+<p><strong>(3)</strong> Now, click on <strong>Continue</strong></p>
 
-<p><img src="images/slack_squadcast_18.png" alt="" /></p>
+<p><img src="images/slack_integration_modal_select_workspace.png" alt="" /></p>
 
-<p><strong>(4)</strong> You will be redirected to Slack for approval of certain permissions that Squadcast would need for this integration. Click on <strong>Allow</strong></p>
+<p><strong>(4)</strong> You will be redirected to Slack for approval of certain permissions that Squadcast would need for this integration. First select the Slack Workspace that you wish to integrate with your Squadcast account and then, click on <strong>Allow</strong></p>
 
 <p><img src="images/slack_squadcast_3.png" alt="" /></p>
 
+<p><strong>(5)</strong> Next, you will be asked to select a Slack Channel that would be the default Slack Channel for all your Squadcast Services</p>
+
+<p><img src="images/slack_integration_modal_select_channel.png" alt="" /></p>
+
+<p><strong>(6)</strong> You can either select an existing Channel from the dropdown or create a new Channel in Slack. If you have added a new Channel and don’t see the same in the dropdown, refresh the dropdown and it would appear. Once you have selected the Channel, click on <strong>Save</strong></p>
+
+<p><img src="images/slack_integration_modal_select_channel_dropdown.png" alt="" /></p>
+
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Permission in Slack to add Public Channel</b>
-<br /><br /><p>If you do not have the permission to create Public channels in your Slack workspace then you would see following error message:
-<img src="images/slack_squadcast_19.png" /></p>
+<b>List of Slack Channels displayed in the dropdown</b>
+<br /><br /><p>By default, all the Public Slack Channels and the Private Slack Channels in which the Squadcast Bot is added in your Slack Workspace would be listed in the dropdown. If you do not see the Channel of your choice listed in the dropdown, then:
+<ol>
+  <li>Head over to your Slack Workspace</li>
+  <li>Open the Channel that should have been present in the integration dropdown</li>
+  <li>In this Channel, call the Squadcast Bot by using <b>@squadcast</b></li>
+  <li>Back in Squadcast, click on the Refresh button beside the Channel dropdown to refresh the list. Your Channel should be populated in the list now</li>
+</ol></p>
 </div>
 
-<p><strong>(5)</strong> Upon doing this, you will receive an email notification from Slack about your Squadcast installation</p>
+<p>This completes the integration process between Squadcast and Slack. You can verify the same with the presence of the <strong>Integrated</strong> banner on the Slack tile as well as the selected Channel mentioned on the Slack tile</p>
 
-<p>This completes the integration process between Squadcast and Slack. You can verify the same with the presence of the <strong>Integrated</strong> banner on the Slack tile.</p>
-
-<p><img src="images/slack_squadcast_4.png" alt="" /></p>
+<p><img src="images/slack_integration_integrated_card.png" alt="" /></p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
 <b>Revoke Slack integration from Squadcast</b>
 <br /><br /><p>You can simply click on <b>Revoke</b> to remove the configured Slack integration at any given time</p>
 </div>
 
-<h2 id="configuring-a-global-slack-channel-for-all-services-in-squadcast">Configuring a global Slack channel for all Services in Squadcast</h2>
+<h2 id="updating-the-global-slack-channel-for-all-services-in-squadcast">Updating the global Slack Channel for all Services in Squadcast</h2>
 
 <p><strong>(1)</strong> Click on <strong>Select Channel</strong></p>
 
-<p><img src="images/slack_squadcast_5.png" alt="" /></p>
+<p><img src="images/slack_integration_select_channel_button.png" alt="" /></p>
 
-<p><strong>(2)</strong> Pick a Slack channel where you would wish to receive notifications for <em>all</em> the incidents in Squadcast</p>
+<p><strong>(2)</strong> Select the new Slack Channel that would be the default Slack Channel for all your Squadcast Services</p>
 
-<p><strong>(3)</strong> <img src="images/slack_squadcast_6.png" alt="" /></p>
+<p><img src="images/slack_integration_modal_select_channel_dropdown.png" alt="" /></p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>List of channel shown</b>
-<br /><br /><p>By default all the Public Channels and only the Private channels in which Squadcast bot is already called in your Slack workspace would be listed in Squadcast. If you do not see your channel in the list, then:
-<ol>
-  <li>Move to your Slack Workspace</li>
-  <li>Open the channel that you wish to map in Squadcast</li>
-  <li>Call Squadcast by using <b>@squadcast</b></li>
-  <li>Now, map the channel in Squadcast under the Service of your choice</li>
-</ol></p>
-</div>
+<p><strong>(3)</strong> Click on <strong>Save</strong></p>
 
-<p><strong>(4)</strong> Click on <strong>Save</strong></p>
+<p><img src="images/slack_integration_modal_save_channel.png" alt="" /></p>
 
-<p><img src="images/slack_squadcast_7.png" alt="" /></p>
-
-<p>Now, you will start receiving alert notifications for <em>all</em> Squadcast incidents in the configured Slack channel, in this case, the <code class="highlighter-rouge">incidents</code> channel. You can then choose to <strong>Acknowledge</strong> and <strong>Resolve</strong> these incidents from within the channel, in this case, the <code class="highlighter-rouge">incidents</code> channel.</p>
+<p>Now, you will start receiving alert notifications for <em>all</em> Squadcast incidents in the configured Slack Channel, in this case, the <code class="highlighter-rouge">incidents-internal</code> Channel. You can then choose to <strong>Acknowledge</strong> and <strong>Resolve</strong> these incidents from within the Channel, in this case, the <code class="highlighter-rouge">incidents-internal</code> Channel.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
 <b>This integration supports bi-directional status sync</b>
-<br /><br /><p>When an incident is <i>acknowledged</i> or <i>resolved</i> from Slack, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is <i>acknowledged</i> or <i>resolved</i> in Squadcast, you will be notified in the configured Slack channel for it</p>
+<br /><br /><p>When an incident is <i>acknowledged</i> or <i>resolved</i> from Slack, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is <i>acknowledged</i> or <i>resolved</i> in Squadcast, you will be notified in the configured Slack Channel for it</p>
 </div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note: Global Slack channel = default Slack channel for all Services</b>
-<br /><br /><p>By default, the configured global Slack channel is applicable to every Service in Squadcast. This means, all the alerts coming for every Service in Squadcast will be routed to the default Slack channel, <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">#incidents</code></p>
+<b>Note: Global Slack Channel = default Slack Channel for all Services</b>
+<br /><br /><p>By default, the configured global Slack Channel is applicable to every Service in Squadcast. This means, all the alerts coming for every Service in Squadcast will be routed to the default Slack Channel configured</p>
 </div>
 
 <h2 id="configuring-service-specific-slack-channels">Configuring Service Specific Slack Channels</h2>
 
-<p>Additionally, you can associate one Slack channel per Service so as to receive notifications for incidents affecting only that Service in this Slack channel.</p>
+<p>Additionally, you can associate one Slack Channel per Service so as to receive notifications for incidents affecting only that Service in this Slack Channel.</p>
 
 <p>Follow the steps below to configure the same:</p>
 
@@ -1650,18 +1636,18 @@ li.sidebarTitle{
 
 <p><img src="images/slack_squadcast_10.png" alt="" /></p>
 
-<p><strong>(4)</strong> By default, the configured global Slack channel is populated. Now, select a channel from the drop-down to which incident notifications should be sent for this Service and click on <strong>save</strong></p>
+<p><strong>(4)</strong> By default, the configured global Slack Channel is populated. Now, select a Channel from the drop-down to which incident notifications should be sent for this Service and click on <strong>save</strong></p>
 
 <p><img src="images/slack_squadcast_11.png" alt="" /></p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>List of channel shown</b>
-<br /><br /><p>By default all the Public Channels and only the Private channels in which Squadcast bot is already called in your Slack workspace would be listed in Squadcast. If you do not see your channel in the list, then:
+<b>List of Channel shown</b>
+<br /><br /><p>By default all the Public Channels and only the Private Channels in which Squadcast bot is already called in your Slack workspace would be listed in Squadcast. If you do not see your Channel in the list, then:
 <ol>
   <li>Move to your Slack Workspace</li>
-  <li>Open the channel that you wish to map in Squadcast</li>
+  <li>Open the Channel that you wish to map in Squadcast</li>
   <li>Call Squadcast by using <b>@squadcast</b></li>
-  <li>Now, map the channel in Squadcast under the Service of your choice</li>
+  <li>Now, map the Channel in Squadcast under the Service of your choice</li>
 </ol></p>
 </div>
 
@@ -1669,15 +1655,15 @@ li.sidebarTitle{
 
 <p><img src="images/slack_squadcast_12.png" alt="" /></p>
 
-<p>You will be able to see the associated Slack channel on the bottom-right corner of the Service tile.</p>
+<p>You will be able to see the associated Slack Channel on the bottom-right corner of the Service tile.</p>
 
 <p><img src="images/slack_squadcast_13.png" alt="" /></p>
 
 <h2 id="triggering-incidents-from-slack">Triggering Incidents from Slack</h2>
 
-<p>You can trigger incidents in Squadcast directly from a Slack channel.</p>
+<p>You can trigger incidents in Squadcast directly from a Slack Channel.</p>
 
-<p><strong>(1)</strong> To trigger an incident from Slack, within the Slack channel, type <code class="highlighter-rouge">/create_incident</code> and select the first option as seen in the screenshot</p>
+<p><strong>(1)</strong> To trigger an incident from Slack, within the Slack Channel, type <code class="highlighter-rouge">/create_incident</code> and select the first option as seen in the screenshot</p>
 
 <p><img src="images/slack_squadcast_14.png" alt="" /></p>
 
@@ -1689,18 +1675,18 @@ Click on <strong>Create</strong> to trigger the incident</p>
 
 <p><img src="images/slack_squadcast_15.png" alt="" /></p>
 
-<p><strong>(3)</strong> You will now be able to see the newly triggered incident in Squadcast. You will also be notified in the globally configured or the Service specific Slack channel for the same</p>
+<p><strong>(3)</strong> You will now be able to see the newly triggered incident in Squadcast. You will also be notified in the globally configured or the Service specific Slack Channel for the same</p>
 
 <p><img src="images/slack_squadcast_16.png" alt="" /></p>
 
 <div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i>
-<b>Adding private Slack channels for Service-specific Slack channels</b>
-<br /><br /><p>First, within the private Slack channel, add the Squadcast bot. You can do so by executing the command - <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">@squadcast</code>. Once this is done, in Squadcast, you can map that particular channel to the Service of your choice.</p>
+<b>Adding private Slack Channels for Service-specific Slack Channels</b>
+<br /><br /><p>First, within the private Slack Channel, add the Squadcast bot. You can do so by executing the command - <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">@squadcast</code>. Once this is done, in Squadcast, you can map that particular Channel to the Service of your choice.</p>
 </div>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note: Global Slack channel = default Slack channel for all Services</b>
-<br /><br /><p>You will be able to view tags (if present) associated with an incident in the incident notification that you receive within the Slack channel</p>
+<b>Note: Global Slack Channel = default Slack Channel for all Services</b>
+<br /><br /><p>You will be able to view tags (if present) associated with an incident in the incident notification that you receive within the Slack Channel</p>
 </div>
 
 <p><img src="images/slack_squadcast_17.png" alt="" /></p>
@@ -1708,11 +1694,32 @@ Click on <strong>Create</strong> to trigger the incident</p>
 <h2 id="using-slack-as-an-alert-source">Using Slack as an Alert Source</h2>
 <p>To create incidents automatically in Squadcast from Slack, check out <a href="slack-as-an-alert-source">Slack as an alert source</a>.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>FAQ</b>
-<br /><br /><p><b>Q: </b>How to give access to a user in Slack to add Public Channels?<br />
-<b>A: </b>Please follow the <a href="https://slack.com/intl/en-nl/help/articles/360017938993-What-is-a-channel" target="_blank">documentation by Slack</a> to give access to your user.</p>
-</div>
+<h2 id="faqs">FAQs</h2>
+
+<ol>
+  <li>
+    <h4 id="how-can-a-user-in-slack-be-given-access-to-add-public-channels">How can a user in Slack be given access to add Public Channels?</h4>
+    <p>Please follow the <a href="https://slack.com/intl/en-nl/help/articles/360017938993-What-is-a-Channel" target="_blank">documentation by Slack</a> to give access to your user to create Public Channels.</p>
+  </li>
+  <li>
+    <h4 id="our-squadcast-organization-is-integrated-with-our-slack-account-however-we-see-error-messages-such-as-the-ones-below-what-do-they-mean">Our Squadcast Organization is integrated with our Slack account. However, we see <code class="highlighter-rouge">error messages</code> such as the ones below. What do they mean?</h4>
+  </li>
+</ol>
+
+<ul>
+  <li>
+    <h4 id="you-have-not-linked-your-slack-account-with-your-squadcast-account">You have not linked your Slack account with your Squadcast account.</h4>
+    <p>This error message simply means that you are not added as a user of your Squadcast Organization. One needs to be added as a user in their Squadcast Organization to be able to take actions on incidents from Slack. <strong>Additionally, your Slack user Email and Squadcast user Email must be the exact same</strong>.</p>
+  </li>
+  <li>
+    <h4 id="you-are-not-a-part-of-this-organization-on-squadcast-please-contact-your-admin">You are not a part of this Organization on Squadcast. Please contact your Admin.</h4>
+    <p>This error message simply means that you are a user of Squadcast for an Organization that is <strong>not the same</strong> as the one that the incident in Slack is for. One needs to be added as a user of all those Squadcast Organizations in order to take actions on incidents of those particular Organizations. Please contact an Admin of your Organization and have them add you as a user of the right Squadcast Organization.</p>
+  </li>
+  <li>
+    <h4 id="you-are-a-part-of-this-organization-as-a-stakeholder-you-cannot-take-actions-on-incidents-please-contact-your-admin-to-upgrade-your-role">You are a part of this Organization as a Stakeholder. You cannot take actions on incidents. Please contact your Admin to upgrade your role.</h4>
+    <p>Stakeholders in Squadcast have read-only access to the platform. As a <code class="highlighter-rouge">Stakeholder</code>, one will not be able to take any actions on the incidents. To be able to take actions on incidents, you must be added as a <code class="highlighter-rouge">User</code> or an <code class="highlighter-rouge">Admin</code>. Please contact an Admin of your Organization and have your User Type changed from Stakeholder to <code class="highlighter-rouge">User</code> or <code class="highlighter-rouge">Admin</code>.</p>
+  </li>
+</ul>
 
 
                 <!--div class="tags">
@@ -1811,7 +1818,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 22, 2021 <br /> -->
+<!--  Site last generated: May 5, 2021 <br /> -->
                 </div>
             </div>
             <script>

@@ -507,7 +507,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Invoke an Escalation Policy for an Existing Incident" href="/docs/invoke-an-escalation-policy-for-an-existing-incident">Invoke an Escalation Policy for an Existing Incident</a></li>
+          <li><a title="Reassign an Incident" href="/docs/reassign-an-escalation-policy-for-an-existing-incident">Reassign an Incident</a></li>
           
           
           
@@ -652,12 +652,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
   
   <li>
-      <a title="Analytics" href="#">Analytics</a>
+      <a title="Analytics & Reporting" href="#">Analytics & Reporting</a>
       <ul>
           
           
           
-          <li><a title="Analyze Metrics" href="/docs/analytics">Analyze Metrics</a></li>
+          <li><a title="Analytics & Reporting" href="/docs/analytics">Analytics & Reporting</a></li>
           
           
           
@@ -785,13 +785,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Crashlytics" href="/docs/crashlytics">Crashlytics</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Datadog" href="/docs/datadog">Datadog</a></li>
           
           
@@ -806,14 +799,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Elastic" href="/docs/elastic">Elastic</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="ElastAlert" href="/docs/elastalert">ElastAlert</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Elastic" href="/docs/elastic">Elastic</a></li>
           
           
           
@@ -1365,13 +1358,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          
-          
-          <li><a title="How to Video - Squadcast Actions" href="/docs/how-to-video-squadcast-actions">How to Video - Squadcast Actions</a></li>
-          
-          
-          
-          
       </ul>
    </li>
      
@@ -1632,6 +1618,9 @@ Now, there are 2 sections:</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
 <br /><br /><p>The issue must be in the same Jira project and be the same Jira Issue type. If you are using Jira Service Desk, incidents are created from JQL before <a href="https://confluence.atlassian.com/servicedeskserver041/automating-your-service-desk-969530933.html" target="_blank">automation rules</a> are applied.</p>
+
+<br /><p>Make sure that the <b>issue priority</b> is enabled for issues in Jira in order to create incidents in Squadcast.</p>
+
 </div>
 
 <p>So, to summarize,</p>
@@ -1645,7 +1634,21 @@ Now, there are 2 sections:</p>
 <p>The statuses of the Squadcast Incident and JIRA Issue will be automatically synced as per the mapping configured.</p>
 
 <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
+
+<br /><br /><p>Incidents in Squadcast created for issues in Jira using the Jira plugin will not have a status sync.</p>
+
+</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
 <br /><br /><p>If the Squadcast incident reaches either <b>Resolved</b> or <b>Suppressed</b> status, the bidirectional status syncing will stop even if the issue is re-opened in JIRA, as these both are end states in Squadcast.</p>
+</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note: </b>
+<br /><br /><p>The default directory for user creation should be <b>Jira Internal Directory</b>. If the <b>squadcast user</b> gets created in any other directory apart from <b>Jira Internal Directory</b>, you will have to move the user to the <b>Jira Internal Directory</b> by following the steps below:</p>
+<b>1.</b> Delete the <b>squadcast user</b> that was created post the integration.
+<br /><b>2.</b> Then, add a new user. The username should be <b>squadcast</b> and password should be the <b>token</b> that is available <a href="https://support.squadcast.com/docs/jira-server-on-premise#integration-steps">in step 2 here.</a>
+<br /><b>3.</b> Kindly ensure that you have selected <b>Jira Internal Directory</b> from the dropdown while creating the user.
+
 </div>
 
 <h2 id="usage-of-the-automatic-and-manual-modes">Usage of the Automatic and Manual Modes</h2>
@@ -1818,7 +1821,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 22, 2021 <br /> -->
+<!--  Site last generated: May 5, 2021 <br /> -->
                 </div>
             </div>
             <script>
