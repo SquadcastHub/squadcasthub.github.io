@@ -34,7 +34,7 @@ Filter Incidents by different parameters like Date & Time of creation, affected 
 
 ### Date & Time
 
-This filter allows you to filter down incidents to a specific time range. By default, the incidents within the last 365 days are displayed. Change the filter by choosing a different option.
+This filter allows you to filter down incidents to a specific time range. By default, the incidents within the last **1 month** are displayed. Change the filter by choosing a different option.
 
 ![](images/filter_4.png)
 

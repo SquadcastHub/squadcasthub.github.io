@@ -148,7 +148,10 @@ If you do not check the **Make Public** box in the **Edit** dropdown, your Statu
 
 - You can also share the Squadcast URL (indicated by the green box) of the Private StatusPage with users of your account to easily access the StatusPage (with an added user login step, if they are not already logged in to Squadcast)
 
-![](images/statuspage_18.png)
+Whenever there is an incident for a displayed Service, that status of the Service will be marked as Degraded/Bad.
+You can post updates to the StatusPage for the incident with **different statuses**. 
+
+For a first update, you can add a status such as `Acknowledged`, `Investigating` and add relevant information in the **Description**.
 
 ## Posting Incident Updates to your StatusPage
 
