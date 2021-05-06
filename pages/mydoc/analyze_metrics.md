@@ -13,7 +13,7 @@ folder: mydoc
 
 The **Analytics Dashboard** helps you analyze your Organization's performance, for a given time period, by providing you the hard numbers in the form of easy to understand graphs and charts.
 
-## Visualizing the Graphs
+### Visualizing the Graphs
 
 **1.** On the Sidebar, click on **Analytics**.
 
