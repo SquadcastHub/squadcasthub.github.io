@@ -1561,9 +1561,14 @@ li.sidebarTitle{
 
 <h4 id="incident-count">Incident Count</h4>
 
-<p>Displays the <strong>Incident Count</strong> for a selected time range as a continuous line. Lines could be created based on <strong>Status</strong>, <strong>Service</strong> or <strong>Alert Source</strong> associated with the incidents.</p>
+<p>Displays the <strong>Incident Count</strong> for a selected time range as a line graph. You can add additional graph inputs(lines) by tweaking the <strong>Status</strong>, <strong>Service</strong> or <strong>Alert Source</strong> filters associated with the graph.</p>
 
 <p><img src="images/incident_count_line_chart.png" alt="" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
+<br /><br /><p>You can only choose a maximum of 10 filters at any given point in time.</p>
+</div>
 
 <h4 id="incident-count-heat-map">Incident Count Heat Map</h4>
 
@@ -1584,14 +1589,14 @@ li.sidebarTitle{
   <li>
     <p><strong>Incident Count By Service</strong></p>
 
-    <p>Displays <strong>Incident Count</strong> based on different configured services in an Organization.</p>
+    <p>Displays <strong>Incident Count</strong> based on different configured Services in an Organization.</p>
 
     <p><img src="images/incident_count_by_service.png" alt="" /></p>
   </li>
   <li>
     <p><strong>Incident Count By Alert Sources</strong></p>
 
-    <p>Displays <strong>Incident Count</strong> based on different configured alert sources in an Organization.</p>
+    <p>Displays <strong>Incident Count</strong> based on different configured Alert Sources in an Organization.</p>
 
     <p><img src="images/incident_count_by_alert_source.png" alt="" /></p>
   </li>
@@ -1603,39 +1608,42 @@ li.sidebarTitle{
   <li>
     <p><strong>Suppressed Events By Service</strong></p>
 
-    <p>Displays <strong>Incident Count</strong> <strong>Suppressed</strong> per service.</p>
+    <p>Displays the number of <strong>Suppressed Events</strong> per Service.</p>
 
     <p><img src="images/incident_count_suppressed_per_service.png" alt="" /></p>
   </li>
   <li>
     <p><strong>Deduplicated Events By Service</strong></p>
 
-    <p>Displays <strong>Incident Count</strong> <strong>Deduplicated</strong> per service.</p>
+    <p>Displays the number of <strong>Deduplicated Events</strong> per Service.</p>
 
     <p><img src="images/incident_count_deduplicated_per_service.png" alt="" /></p>
   </li>
   <li>
     <p><strong>Open Incidents By Service (Triggered &amp; Acknowledged)</strong></p>
 
-    <p>Displays <strong>Incident Count</strong> of <strong>Triggered</strong> and <strong>Acknowledged</strong> incidents per service.</p>
+    <p>Displays the number of <strong>Open Incidents</strong> per Service.</p>
 
     <p><img src="images/incident_count_open_incidents_per_service.png" alt="" /></p>
   </li>
   <li>
     <p><strong>Closed Incidents By Service (Resolved &amp; Suppressed)</strong></p>
 
-    <p>Displays <strong>Incident Count</strong> of <strong>Resolved</strong> and <strong>Suppressed</strong> incidents per service.</p>
+    <p>Displays the number of <strong>Closed Incidents</strong> per Service.</p>
 
     <p><img src="images/incident_count_closed_incidents_per_service.png" alt="" /></p>
   </li>
 </ol>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
-<b>Note</b>
-<br /><br /><p>The data in the dashboard is updated <i>every 24 hours</i> and the details of the latest update is displayed on the top-right hand corner of the dashboard - right next to the <i>time range selector</i>(as shown below).</p>
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<strong>Note</strong></p>
+
+  <p>The data in the dashboard is updated <em>every 24 hours</em> and the details of the latest update is displayed on the top-right hand corner of the dashboard - right next to the <em>time range selector</em> (as shown below).</p>
+
+  <p><img src="images/last_updated_on.png" alt="" /></p>
 </div>
 
-<p><img src="images/last_updated_on.png" alt="" /></p>
 
 
                 <!--div class="tags">
@@ -1732,7 +1740,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: May 5, 2021 <br /> -->
+<!--  Site last generated: May 6, 2021 <br /> -->
                 </div>
             </div>
             <script>

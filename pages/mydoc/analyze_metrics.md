@@ -34,9 +34,14 @@ You can select a custom time range using the utility on the top-right corner of 
 
 #### Incident Count
 
-Displays the **Incident Count** for a selected time range as a continuous line. Lines could be created based on **Status**, **Service** or **Alert Source** associated with the incidents.
+Displays the **Incident Count** for a selected time range as a line graph. You can add additional graph inputs(lines) by tweaking the **Status**, **Service** or **Alert Source** filters associated with the graph.
 
 ![](images/incident_count_line_chart.png)
+
+{{site.data.alerts.blue-note}}
+<b>Note</b>
+<br/><br/><p>You can only choose a maximum of 10 filters at any given point in time.</p>
+{{site.data.alerts.end}}
 
 #### Incident Count Heat Map
 
@@ -54,13 +59,13 @@ Upon clicking on any block present in the heat map, data on the following graphs
 
 2.  **Incident Count By Service**
 
-    Displays **Incident Count** based on different configured services in an Organization.
+    Displays **Incident Count** based on different configured Services in an Organization.
 
     ![](images/incident_count_by_service.png)
 
 3.  **Incident Count By Alert Sources**
 
-    Displays **Incident Count** based on different configured alert sources in an Organization.
+    Displays **Incident Count** based on different configured Alert Sources in an Organization.
 
     ![](images/incident_count_by_alert_source.png)
 
@@ -68,31 +73,33 @@ Upon clicking on any block present in the heat map, data on the following graphs
 
 1.  **Suppressed Events By Service**
 
-    Displays **Incident Count** **Suppressed** per service.
+    Displays the number of **Suppressed Events** per Service.
 
     ![](images/incident_count_suppressed_per_service.png)
 
 2.  **Deduplicated Events By Service**
 
-    Displays **Incident Count** **Deduplicated** per service.
+    Displays the number of **Deduplicated Events** per Service.
 
     ![](images/incident_count_deduplicated_per_service.png)
 
 3.  **Open Incidents By Service (Triggered & Acknowledged)**
 
-    Displays **Incident Count** of **Triggered** and **Acknowledged** incidents per service.
+    Displays the number of **Open Incidents** per Service.
 
     ![](images/incident_count_open_incidents_per_service.png)
 
 4.  **Closed Incidents By Service (Resolved & Suppressed)**
 
-    Displays **Incident Count** of **Resolved** and **Suppressed** incidents per service.
+    Displays the number of **Closed Incidents** per Service.
 
     ![](images/incident_count_closed_incidents_per_service.png)
 
-{{site.data.alerts.blue-note}}
-<b>Note</b>
-<br/><br/><p>The data in the dashboard is updated <i>every 24 hours</i> and the details of the latest update is displayed on the top-right hand corner of the dashboard - right next to the <i>time range selector</i>(as shown below).</p>
-{{site.data.alerts.end}}
+{{site.data.alerts.blue-note-md}}
+**Note**
+
+The data in the dashboard is updated _every 24 hours_ and the details of the latest update is displayed on the top-right hand corner of the dashboard - right next to the _time range selector_ (as shown below).
 
 ![](images/last_updated_on.png)
+{{site.data.alerts.end}}
+
