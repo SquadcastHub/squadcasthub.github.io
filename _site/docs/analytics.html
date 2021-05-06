@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Analytics for measuring your organisations performance">
+<meta name="description" content="Analytics for measuring your Organization's performance">
 <meta name="keywords" content="analyze metrics,  ">
-<title>Analyze Metrics | Incident Management using Squadcast</title>
+<title>Analytics & Reporting | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -194,7 +194,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Analyze Metrics page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:support@squadcast.com?subject=Squadcast Support feedback&body=I have some feedback about the Analytics & Reporting page: ' + window.location.href;"><i class="fa fa-envelope-o" id="envel"></i> Feedback</a>
 
 </li>
 
@@ -507,7 +507,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Invoke an Escalation Policy for an Existing Incident" href="/docs/invoke-an-escalation-policy-for-an-existing-incident">Invoke an Escalation Policy for an Existing Incident</a></li>
+          <li><a title="Reassign an Incident" href="/docs/reassign-an-escalation-policy-for-an-existing-incident">Reassign an Incident</a></li>
           
           
           
@@ -652,12 +652,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
   
   <li>
-      <a title="Analytics" href="#">Analytics</a>
+      <a title="Analytics & Reporting" href="#">Analytics & Reporting</a>
       <ul>
           
           
           
-          <li class="active"><a title="Analyze Metrics" href="/docs/analytics">Analyze Metrics</a></li>
+          <li class="active"><a title="Analytics & Reporting" href="/docs/analytics">Analytics & Reporting</a></li>
           
           
           
@@ -785,13 +785,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Crashlytics" href="/docs/crashlytics">Crashlytics</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Datadog" href="/docs/datadog">Datadog</a></li>
           
           
@@ -806,14 +799,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Elastic" href="/docs/elastic">Elastic</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="ElastAlert" href="/docs/elastalert">ElastAlert</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Elastic" href="/docs/elastic">Elastic</a></li>
           
           
           
@@ -1365,13 +1358,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          
-          
-          <li><a title="How to Video - Squadcast Actions" href="/docs/how-to-video-squadcast-actions">How to Video - Squadcast Actions</a></li>
-          
-          
-          
-          
       </ul>
    </li>
      
@@ -1542,37 +1528,122 @@ li.sidebarTitle{
 <div class="post-content">
     <div class="col-md-8">
         <div class="post-header">
-            <h1 class="post-title-main">Analyze Metrics</h1>
+            <h1 class="post-title-main">Analytics & Reporting</h1>
         </div>
             
-                <div class="summary">Analytics for measuring your organisations performance</div>
+                <div class="summary">Analytics for measuring your Organization's performance</div>
             
 
                 
 
-            <p>The Analytics page helps you see how your organisation has performed in a given time period by providing you the hard numbers in easy to understand graphs and charts.</p>
+            <h3 id="introduction">Introduction</h3>
 
-<p>You can access the Analytics page in the web app by selecting <strong>Analytics</strong> from the Sidebar.</p>
+<p>The <strong>Analytics Dashboard</strong> helps you analyze your Organization’s performance, for a given time period, by providing you the hard numbers in the form of easy to understand graphs and charts.</p>
 
-<h3 id="distribution-of-incidents-across-status">Distribution of Incidents Across Status</h3>
+<h2 id="visualizing-the-graphs">Visualizing the Graphs</h2>
 
-<p>In the first section, you can see the Distribution of Incidents across status and you can choose based on the Incident statuses like Triggered, Acknowledged, Resolved and Suppressed from the left side and see the changes reflecting on the graph in the right side.</p>
+<p><strong>1.</strong> On the Sidebar, click on <strong>Analytics</strong>.</p>
 
-<p><img src="images/metrics_1.png" alt="" /></p>
+<p><img src="images/analytics_sidebar.png" alt="" /></p>
 
-<h3 id="mtta--mttr-analysis">MTTA &amp; MTTR Analysis</h3>
+<p><strong>2.</strong> By default, the selected time range is the <strong>last three months</strong>.</p>
 
-<p>In the next section, you can see the <strong>MTTA &amp; MTTR Analysis</strong>, for the whole organisation over the selected time period. MTTA is the Mean time to Acknowledge an incident and MTTR is the Mean time to Resolve an incident.</p>
+<p>You can select a custom time range using the utility on the top-right corner of the page, to <em>select</em> and <em>apply</em> a time range for the <strong>Analytics</strong> data computation.</p>
 
-<p><img src="images/metrics_2.png" alt="" /></p>
+<p><img src="images/time_range_selector.png" alt="" /></p>
 
-<h3 id="distribution-of-incidents-across-services">Distribution of Incidents across services</h3>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Time Range Selector as a Top Level Filter</b>
+<br /><br /><p>The applied time range selection updates all the graphs shown on the <b>Analytics</b> dashboard.</p>
+</div>
 
-<p>In the Final section, you can see the <strong>Distribution of Incidents across services</strong>, during a given a time period. You can also view status of each service and for each individual or the organisation as a whole.</p>
+<h3 id="available-graphs">Available Graphs</h3>
 
-<p><img src="images/metrics_3.png" alt="" />
-<img src="images/metrics_4.png" alt="" />
-<img src="images/metrics_5.png" alt="" /></p>
+<h4 id="incident-count">Incident Count</h4>
+
+<p>Displays the <strong>Incident Count</strong> for a selected time range as a line graph. You can add additional graph inputs(lines) by tweaking the <strong>Status</strong>, <strong>Service</strong> or <strong>Alert Source</strong> filters associated with the graph.</p>
+
+<p><img src="images/incident_count_line_chart.png" alt="" /></p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>Note</b>
+<br /><br /><p>You can only choose a maximum of 10 filters at any given point in time.</p>
+</div>
+
+<h4 id="incident-count-heat-map">Incident Count Heat Map</h4>
+
+<p>Displays the <strong>Incident Count</strong> and the <em>associated information</em> on interaction with each block in the heat map.</p>
+
+<p><img src="images/incident_count_heat_map.png" alt="" /></p>
+
+<p>Upon clicking on any block present in the heat map, data on the following graphs would change automatically.</p>
+
+<ol>
+  <li>
+    <p><strong>Incident Count By Status</strong></p>
+
+    <p>Displays <strong>Incident Count</strong> based on different statuses like <strong>Triggered</strong>, <strong>Acknowledged</strong>, <strong>Suppressed</strong> and <strong>Resolved</strong>.</p>
+
+    <p><img src="images/incident_count_by_status.png" alt="" /></p>
+  </li>
+  <li>
+    <p><strong>Incident Count By Service</strong></p>
+
+    <p>Displays <strong>Incident Count</strong> based on different configured Services in an Organization.</p>
+
+    <p><img src="images/incident_count_by_service.png" alt="" /></p>
+  </li>
+  <li>
+    <p><strong>Incident Count By Alert Sources</strong></p>
+
+    <p>Displays <strong>Incident Count</strong> based on different configured Alert Sources in an Organization.</p>
+
+    <p><img src="images/incident_count_by_alert_source.png" alt="" /></p>
+  </li>
+</ol>
+
+<h4 id="incident-count-by-service">Incident Count By Service</h4>
+
+<ol>
+  <li>
+    <p><strong>Suppressed Events By Service</strong></p>
+
+    <p>Displays the number of <strong>Suppressed Events</strong> per Service.</p>
+
+    <p><img src="images/incident_count_suppressed_per_service.png" alt="" /></p>
+  </li>
+  <li>
+    <p><strong>Deduplicated Events By Service</strong></p>
+
+    <p>Displays the number of <strong>Deduplicated Events</strong> per Service.</p>
+
+    <p><img src="images/incident_count_deduplicated_per_service.png" alt="" /></p>
+  </li>
+  <li>
+    <p><strong>Open Incidents By Service (Triggered &amp; Acknowledged)</strong></p>
+
+    <p>Displays the number of <strong>Open Incidents</strong> per Service.</p>
+
+    <p><img src="images/incident_count_open_incidents_per_service.png" alt="" /></p>
+  </li>
+  <li>
+    <p><strong>Closed Incidents By Service (Resolved &amp; Suppressed)</strong></p>
+
+    <p>Displays the number of <strong>Closed Incidents</strong> per Service.</p>
+
+    <p><img src="images/incident_count_closed_incidents_per_service.png" alt="" /></p>
+  </li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+<strong>Note</strong></p>
+
+  <p>The data in the dashboard is updated <em>every 24 hours</em> and the details of the latest update is displayed on the top-right hand corner of the dashboard - right next to the <em>time range selector</em> (as shown below).</p>
+
+  <p><img src="images/last_updated_on.png" alt="" /></p>
+</div>
+
 
 
                 <!--div class="tags">
@@ -1669,7 +1740,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 22, 2021 <br /> -->
+<!--  Site last generated: May 6, 2021 <br /> -->
                 </div>
             </div>
             <script>

@@ -170,12 +170,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/crashlytics</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/escalation-policies</loc>
   </url>
   
@@ -340,12 +334,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/how-to-video-squadcast-actions</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/icinga2</loc>
   </url>
   
@@ -420,7 +408,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/invoke-an-escalation-policy-for-an-existing-incident</loc>
+    <loc>http://localhost:4000/docs/reassign-an-escalation-policy-for-an-existing-incident</loc>
   </url>
   
   

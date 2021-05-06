@@ -1,34 +1,105 @@
 ---
-title: Analyze Metrics
+title: Analytics & Reporting
 tags: [analyze metrics]
 keywords:
 last_updated:
-summary: "Analytics for measuring your organisations performance"
+summary: "Analytics for measuring your Organization's performance"
 sidebar: mydoc_sidebar
 permalink: docs/analytics
 folder: mydoc
 ---
 
-The Analytics page helps you see how your organisation has performed in a given time period by providing you the hard numbers in easy to understand graphs and charts.
+### Introduction
 
-You can access the Analytics page in the web app by selecting **Analytics** from the Sidebar. 
+The **Analytics Dashboard** helps you analyze your Organization's performance, for a given time period, by providing you the hard numbers in the form of easy to understand graphs and charts.
 
-### Distribution of Incidents Across Status
+## Visualizing the Graphs
 
-In the first section, you can see the Distribution of Incidents across status and you can choose based on the Incident statuses like Triggered, Acknowledged, Resolved and Suppressed from the left side and see the changes reflecting on the graph in the right side.
+**1.** On the Sidebar, click on **Analytics**.
 
-![](images/metrics_1.png)
+![](images/analytics_sidebar.png)
 
-### MTTA & MTTR Analysis
+**2.** By default, the selected time range is the **last three months**.
 
-In the next section, you can see the **MTTA & MTTR Analysis**, for the whole organisation over the selected time period. MTTA is the Mean time to Acknowledge an incident and MTTR is the Mean time to Resolve an incident. 
+You can select a custom time range using the utility on the top-right corner of the page, to *select* and *apply* a time range for the **Analytics** data computation.
 
-![](images/metrics_2.png)
+![](images/time_range_selector.png)
 
-### Distribution of Incidents across services
+{{site.data.alerts.blue-note}}
+<b>Time Range Selector as a Top Level Filter</b>
+<br/><br/><p>The applied time range selection updates all the graphs shown on the <b>Analytics</b> dashboard.</p>
+{{site.data.alerts.end}}
 
-In the Final section, you can see the **Distribution of Incidents across services**, during a given a time period. You can also view status of each service and for each individual or the organisation as a whole.
+### Available Graphs 
 
-![](images/metrics_3.png)
-![](images/metrics_4.png)
-![](images/metrics_5.png)
+#### Incident Count
+
+Displays the **Incident Count** for a selected time range as a line graph. You can add additional graph inputs(lines) by tweaking the **Status**, **Service** or **Alert Source** filters associated with the graph.
+
+![](images/incident_count_line_chart.png)
+
+{{site.data.alerts.blue-note}}
+<b>Note</b>
+<br/><br/><p>You can only choose a maximum of 10 filters at any given point in time.</p>
+{{site.data.alerts.end}}
+
+#### Incident Count Heat Map
+
+Displays the **Incident Count** and the *associated information* on interaction with each block in the heat map.
+
+![](images/incident_count_heat_map.png)
+
+Upon clicking on any block present in the heat map, data on the following graphs would change automatically.
+
+1.  **Incident Count By Status**
+
+    Displays **Incident Count** based on different statuses like **Triggered**, **Acknowledged**, **Suppressed** and **Resolved**. 
+
+    ![](images/incident_count_by_status.png)
+
+2.  **Incident Count By Service**
+
+    Displays **Incident Count** based on different configured Services in an Organization.
+
+    ![](images/incident_count_by_service.png)
+
+3.  **Incident Count By Alert Sources**
+
+    Displays **Incident Count** based on different configured Alert Sources in an Organization.
+
+    ![](images/incident_count_by_alert_source.png)
+
+#### Incident Count By Service
+
+1.  **Suppressed Events By Service**
+
+    Displays the number of **Suppressed Events** per Service.
+
+    ![](images/incident_count_suppressed_per_service.png)
+
+2.  **Deduplicated Events By Service**
+
+    Displays the number of **Deduplicated Events** per Service.
+
+    ![](images/incident_count_deduplicated_per_service.png)
+
+3.  **Open Incidents By Service (Triggered & Acknowledged)**
+
+    Displays the number of **Open Incidents** per Service.
+
+    ![](images/incident_count_open_incidents_per_service.png)
+
+4.  **Closed Incidents By Service (Resolved & Suppressed)**
+
+    Displays the number of **Closed Incidents** per Service.
+
+    ![](images/incident_count_closed_incidents_per_service.png)
+
+{{site.data.alerts.blue-note-md}}
+**Note**
+
+The data in the dashboard is updated _every 24 hours_ and the details of the latest update is displayed on the top-right hand corner of the dashboard - right next to the _time range selector_ (as shown below).
+
+![](images/last_updated_on.png)
+{{site.data.alerts.end}}
+

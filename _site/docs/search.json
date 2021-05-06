@@ -59,11 +59,11 @@
 
 
 {
-"title": "Analyze Metrics",
+"title": "Analytics &amp; Reporting",
 "tags": "analyze metrics",
 "keywords": "",
 "url": "/docs/analytics",
-"summary": "Analytics for measuring your organisations performance"
+"summary": "Analytics for measuring your Organization's performance"
 }
 ,
 
@@ -295,17 +295,6 @@
 "keywords": "",
 "url": "/docs/coralogix",
 "summary": "Get alerts from Coralogix into Squadcast"
-}
-,
-
-
-
-{
-"title": "Crashlytics",
-"tags": "integrationcrashlytics",
-"keywords": "",
-"url": "/docs/crashlytics",
-"summary": "Send issues to Squadcast from Crashlytics (Fabric SDK)"
 }
 ,
 
@@ -611,17 +600,6 @@
 
 
 {
-"title": "How to Video - Squadcast Actions",
-"tags": "how to videosquadcast actions",
-"keywords": "",
-"url": "/docs/how-to-video-squadcast-actions",
-"summary": "Here's a how-to-video on how you can use Squadcast Actions & Runbooks for faster incident resolution"
-}
-,
-
-
-
-{
 "title": "Icinga2",
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
@@ -692,7 +670,7 @@
 "tags": "rate limiting",
 "keywords": "",
 "url": "/docs/incident-rate-limiting",
-"summary": "Limit the number of requests a client can make"
+"summary": "How do I avoid hitting the incident rate limits?"
 }
 ,
 
@@ -756,11 +734,11 @@
 
 
 {
-"title": "Invoke an Escalation Policy for an Existing Incident",
+"title": "Reassign an Incident",
 "tags": "escalation policies",
 "keywords": "",
-"url": "/docs/invoke-an-escalation-policy-for-an-existing-incident",
-"summary": "Invoking an Escalation Policy"
+"url": "/docs/reassign-an-escalation-policy-for-an-existing-incident",
+"summary": "Reassigning an Escalation Policy"
 }
 ,
 
@@ -1474,7 +1452,7 @@
 "tags": "status page",
 "keywords": "",
 "url": "/docs/statuspage",
-"summary": "Let your customers know how your service is doing without them having to ask you about it"
+"summary": "Let your customers know how your Services are doing, without them having to ask you about it"
 }
 ,
 

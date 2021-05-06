@@ -223,11 +223,11 @@ entries:
             url: /docs/statuspage
             output: web, pdf
 
-      - title: Analytics
+      - title: Analytics & Reporting
         output: web, pdf
 
         folderitems:
-          - title: Analyze Metrics
+          - title: Analytics & Reporting
             url: /docs/analytics
             output: web, pdf
 

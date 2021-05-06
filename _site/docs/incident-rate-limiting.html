@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Limit the number of requests a client can make">
+<meta name="description" content="How do I avoid hitting the incident rate limits?">
 <meta name="keywords" content="rate limiting,  ">
 <title>Incident Rate Limiting | Incident Management using Squadcast</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -507,7 +507,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Invoke an Escalation Policy for an Existing Incident" href="/docs/invoke-an-escalation-policy-for-an-existing-incident">Invoke an Escalation Policy for an Existing Incident</a></li>
+          <li><a title="Reassign an Incident" href="/docs/reassign-an-escalation-policy-for-an-existing-incident">Reassign an Incident</a></li>
           
           
           
@@ -652,12 +652,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
   
   <li>
-      <a title="Analytics" href="#">Analytics</a>
+      <a title="Analytics & Reporting" href="#">Analytics & Reporting</a>
       <ul>
           
           
           
-          <li><a title="Analyze Metrics" href="/docs/analytics">Analyze Metrics</a></li>
+          <li><a title="Analytics & Reporting" href="/docs/analytics">Analytics & Reporting</a></li>
           
           
           
@@ -785,13 +785,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Crashlytics" href="/docs/crashlytics">Crashlytics</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="Datadog" href="/docs/datadog">Datadog</a></li>
           
           
@@ -806,14 +799,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Elastic" href="/docs/elastic">Elastic</a></li>
-          
-          
-          
-          
-          
-          
           <li><a title="ElastAlert" href="/docs/elastalert">ElastAlert</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Elastic" href="/docs/elastic">Elastic</a></li>
           
           
           
@@ -1365,13 +1358,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          
-          
-          <li><a title="How to Video - Squadcast Actions" href="/docs/how-to-video-squadcast-actions">How to Video - Squadcast Actions</a></li>
-          
-          
-          
-          
       </ul>
    </li>
      
@@ -1545,28 +1531,63 @@ li.sidebarTitle{
             <h1 class="post-title-main">Incident Rate Limiting</h1>
         </div>
             
-                <div class="summary">Limit the number of requests a client can make</div>
+                <div class="summary">How do I avoid hitting the incident rate limits?</div>
             
 
                 
 
-            <p>Squadcast limits the number of Incidents a client can create within a certain period of time.</p>
+            <p>Squadcast has the following Incident Rate Limits in place. This limit is calculated over a <strong>1 minute rolling window from the current time</strong>.</p>
 
-<p>This Rate Limiting is done for a few reasons:</p>
-<ol>
-  <li>To not overwhelm the system and provide a fairness for all the accounts on Squadcast in terms of resource consumption</li>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Pricing Plans</th>
+      <th style="text-align: center">Rate Limits (incidents/min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Essential (Free)</td>
+      <td style="text-align: center">15</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Pro</td>
+      <td style="text-align: center">30</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Enterprise</td>
+      <td style="text-align: center">50</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When Incident Rate limits are exceeded, our system throttles your alert requests for reasons listed below:</p>
+
+<ul>
+  <li>To not overwhelm the system and provide a fair service for all the accounts on Squadcast in terms of resource consumption</li>
   <li>To ensure that there is no violation of the platform</li>
-  <li>To not bombard the user with irrelevant or unnecessary incidents</li>
+  <li>To not bombard the user with notifications for irrelevant or unnecessary incidents</li>
   <li>To ensure that only meaningful and actionable alerts are sent into Squadcast</li>
-</ol>
+</ul>
 
-<p>For calculating rate limits, all incidents including <a href="alert-suppression">Suppressed</a> incidents and <a href="de-duplication-rules">Duplicates</a> will be counted.</p>
+<h2 id="what-kind-of-events-do-the-incident-rate-limits-include">What kind of events do the Incident Rate Limits include?</h2>
 
-<h2 id="how-can-i-ensure-that-i-dont-exceed-the-rate-limit">How can I ensure that I don’t exceed the Rate Limit?</h2>
+<div class="alert alert-info" role="alert">
+  <p><i class="fa fa-info-circle"></i>
+  <strong>Incident Rate Limits Calculation</strong></p>
 
-<p>There are a few ways to control the kind of alerts/ incidents that come into Squadcast. This is also done to ensure that you reduce alert fatigue and send in actionable incidents only.</p>
+  <p>All events in the platform, including <strong><a href="alert-suppression">Suppressed</a></strong> incidents &amp; <strong><a href="de-duplication-rules">Duplicate</a></strong> events will be counted towards the Incident Rate Limits Calculation.</p>
 
-<p>Configure your third party tools to send in only the alerts that you will need to take action on as opposed to sending in all the alerts that come in. For example, you don’t need all of the warning alerts and will probably need just the ones that impact customer SLAs or your internally set SLOs.</p>
+</div>
+
+<h2 id="how-can-i-ensure-that-i-dont-exceed-the-incident-rate-limits">How can I ensure that I don’t exceed the Incident Rate Limits?</h2>
+
+<p>There are a few ways to control the kind of events that come into Squadcast. This is also done to ensure that you reduce alert fatigue and and send in actionable events only.</p>
+
+<ul>
+  <li>Configure your third party tools to send in only the alerts that you will need to take action on as opposed to sending in every single alert. For example, you don’t need all of the warning alerts and will probably need just the ones that impact customer SLAs or your internal SLOs.</li>
+  <li>Using the <strong><a href="alert-suppression#discarding-suppressed-incidents">Discard</a></strong> function to avoid hitting the <strong><a href="incident-rate-limiting">Incident Rate Limits</a></strong> as Suppressed events that are discarded don’t get counted against the allowed Incident Rate Limits.</li>
+</ul>
 
 
                 <!--div class="tags">
@@ -1663,7 +1684,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Mar 22, 2021 <br /> -->
+<!--  Site last generated: May 6, 2021 <br /> -->
                 </div>
             </div>
             <script>
