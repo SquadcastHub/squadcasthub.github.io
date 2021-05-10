@@ -147,18 +147,18 @@ Squads can be added to escalation policies. When an incident is assigned to a sq
 ### Escalation Policies 
 An **[escalation policy](escalation-policies)** is the chain of escalations that determine who should be notified first, second and so on, when an incident is triggered. Escalation policies are attached to a specific service. The same escalation policy can be attached to multiple services. You can access escalation policies from the navigation sidebar. 
 
-Escalation policies can have users, multiple users, squads, smart squads and schedules. 
+Escalation policies can have users, multiple users, squads, and schedules. 
 
 You will need to add the below details to create an escalation policy: 
 - Policy Name: The name of the escalation policy (Ex: backend escalation)
 - Policy Description: The description of the policy (Ex: Incidents triggered for all the backend services should be routed to the backend escalation policy)
 - Rules: 
- - User or Squad or Schedule: Add users, squads, smart squads or schedules to the rule
+ - User or Squad or Schedule: Add users, squads or schedules to the rule
  - Escalation After: This is the time period after which if an incident is still in the triggered state, is escalated to the next rule in the policy. This time period can be adjusted to any amount of time (in minutes).
   - Escalate if: Incident is not acknowledged. Right now we only support this. Soon, we will be adding capability for escalating if not resolved. 
 
 ### Escalation Rule
-Multiple escalation rules make an escalation policy. Typically, each escalation rule represents a different level of on-call duty. The first rule in the policy will determine who gets notified first about the triggered incident. This can either be a user, multiple users, squads, smart squads and schedules. 
+Multiple escalation rules make an escalation policy. Typically, each escalation rule represents a different level of on-call duty. The first rule in the policy will determine who gets notified first about the triggered incident. This can either be a user, multiple users, squads, and schedules. 
 
 If the incident still remains in the triggered state after the notifications have gone through to the users/squad/schedule and the time period closes from the first escalation rule, then the user/squad/schedule on the second rule on the escalation policy will be notified and so on. 
 
