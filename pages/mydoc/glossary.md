@@ -143,10 +143,6 @@ Note: The MTTR is calculated as a separate metric for every organization that yo
 **[Squad](squads)** is a group/ team of users configured on the platform. Typically, squads are created to represent your current on-call organization or team structure (ex: backend squad, frontend squad or website monitoring squad, payment portal squad). 
 Squads can be added to escalation policies. When an incident is assigned to a squad, the first one in the squad to acknowledge will be the incident owner and the **Assigned to** information for the incident will change to that user's name. You can access squads from the navigation sidebar. 
 
-### Smart Squad
-**[Smart squad](squads#using-smart-squads)** is a dynamic squad that adds in users based on your organization's feature velocity and other rules configured for this from the metadata of your code repository. This feature can be used to reach the right engineer if the last commit was what triggered the incident. Smart Squads are typically used in dynamic organisations where engineers contribute in multiple areas or take on different roles while doing so. 
-
-To enable Smart Squad, you must integrate with the version control application you use to main your code repository. Smart Squad only accesses the meta data and cannot access or modify any part of the actual code.
 
 ### Escalation Policies 
 An **[escalation policy](escalation-policies)** is the chain of escalations that determine who should be notified first, second and so on, when an incident is triggered. Escalation policies are attached to a specific service. The same escalation policy can be attached to multiple services. You can access escalation policies from the navigation sidebar. 
