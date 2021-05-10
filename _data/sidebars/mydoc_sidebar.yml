@@ -71,10 +71,6 @@ entries:
             url: /docs/squads
             output: web, pdf
 
-          - title: Create Smart Squads
-            url: /docs/create-smart-squads
-            output: web, pdf
-
       - title: Services
         output: web, pdf
 
@@ -553,10 +549,6 @@ entries:
         folderitems:
           - title: CircleCI Integration
             url: /docs/circleci-integration
-            output: web, pdf
-
-          - title: GitHub
-            url: /docs/github
             output: web, pdf
 
           - title: Google Hangouts
