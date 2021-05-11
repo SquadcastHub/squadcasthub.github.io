@@ -2,7 +2,7 @@
 title: Progress WhatsUp Gold
 keywords: 
 last_updated: 
-summary: "Send notifications to Squadcast from WhatsUp Gold"
+summary: "Send notifications to Squadcast from Progress WhatsUp Gold"
 sidebar: mydoc_sidebar
 permalink: docs/progress_whatsup_gold
 folder: mydoc
@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate Progress WhatsUp Gold with Squadcast.
 
-[WhatsUp Gold](https://www.whatsupgold.com/) provides complete visibility into the status and performance of applications, network devices and servers in the cloud or on-premises with its network availability and performance monitoring capabilities.
+[Progress WhatsUp Gold](https://www.whatsupgold.com/) provides complete visibility into the status and performance of applications, network devices and servers in the cloud or on-premises with its network availability and performance monitoring capabilities.
 Route detailed events from WhatsUp Gold to the right users in Squadcast.
 
 ## How to integrate WhatsUp Gold with Squadcast
