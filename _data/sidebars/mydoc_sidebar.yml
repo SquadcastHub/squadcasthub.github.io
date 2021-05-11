@@ -439,6 +439,10 @@ entries:
             url: /docs/prometheus
             output: web, pdf
 
+          - title: Progress WhatsUp Gold
+            url: /docs/progress_whatsup_gold
+            output: web, pdf          
+
           - title: PRTG Network Monitor
             url: /docs/prtg-network-monitor
             output: web, pdf
