@@ -18,7 +18,7 @@ Route detailed events from Threat Stack to the right users in Squadcast.
 
 ### In Squadcast: Using Threat Stack as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services**.
+**(1)** On the **Sidebar**, click on **Services**
 
 ![](images/integration_1-1.png)
 
@@ -82,6 +82,6 @@ Ensure the following IP addresses are open in your firewall to allow the Threat 
 
 {{site.data.alerts.blue-note}}
 <b>FAQ:</b>
-<br/><br/><p>Q: Does this integration support auto-resolve of incidents in Squadcast?<br/><br/>
-A: No, this integration does not support auto-resolve of incidents in Squadcast since Threat Stack does not send out alert resolve notifications via Webhook.</p>
+<br/><br/><p>Q: Does this integration support auto-resolution of incidents in Squadcast?<br/><br/>
+A: No, this integration does not support auto-resolution of incidents in Squadcast since Threat Stack does not send out alert resolve notifications via the Webhook.</p>
 {{site.data.alerts.end}}
