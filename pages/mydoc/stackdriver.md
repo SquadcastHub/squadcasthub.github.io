@@ -9,21 +9,31 @@ permalink: docs/stackdriver
 folder: mydoc
 ---
 
-Follow the steps below to configure a service so as to extract its related alert data from Google Stackdriver. Squadcast will then process this information to create incidents for this service as per your preferences.
+This document will help you integrate Stackdriver with Squadcast.
 
-## Using Stackdriver as an Alert Source
+[Stackdriver](https://cloud.google.com/monitoring/docs) offers monitoring of a wide variety of metrics, dashboards, alerting, log management, reporting, and tracing capabilities.
 
-On the **Sidebar**, click on **Services**.
+Route detailed events from Stackdriver to the right users in Squadcast.
 
-You can either choose to use existing service or [create a new service](adding-a-service-1)
+## How to integrate Stackdriver with Squadcast
 
-Now, click on the corresponding **Alert Sources** button.
+### In Squadcast: Using Stackdriver as an Alert Source
+
+**(1)** On the **Sidebar**, click on **Services**
+
+![](images/integration_1-1.png)
+
+**(2)** Select an existing Service or **Add Service** 
+
+![](images/integration_1-2.png)
+
+**(3)** Click the corresponding **Alert Sources**
 
 ![](images/integration_1.png)
 
-Select **Stackdriver** from  **Alert Source** drop down and copy the Webhook URL shown.
+**(4)** Search for **Stackdriver** from  the **Alert Source** dropdown and copy the Webhook
 
-![](images/stackdriver_1.png)
+![](images/stackdriver_0_new.png)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b><br/><br/>
@@ -31,40 +41,74 @@ Select **Stackdriver** from  **Alert Source** drop down and copy the Webhook URL
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-## Create Squadcast Webhook in Stackdriver
+## In Stackdriver: Adding a Webhook for Squadcast
 
-1.Login to your Google Cloud console and go to **Stackdriver - Monitoring** in the sidebar.
+Login to your Google Cloud console. From the sidebar on the left, scroll to find **Operations** and select **Monitoring**
 
-![](images/stackdriver_2.png){: style="max-width: 30%" }
+![](images/stackdriver_1_new.png)
 
-2.Go to **Alerting** section in the sidebar.
+### Adding a Notification Channel - Webhooks
 
-![](images/stackdriver_3.png)
+**(1)** From the left sidebar, select **Alerting**
 
-3.Go to **Edit Notification Channels**. 
+![](images/stackdriver_2_new.png)
 
-![](images/stackdriver_4.png)
+**(2)** Select **Edit Notification Channels**
 
-4.Click on **ADD NEW** button corresponding to Webhooks. 
+![](images/stackdriver_3_new.png)
 
-![](images/stackdriver_5.png)
+**(3)** Scroll until you find **Webhooks**. Here, click on **Add New** to add the Squadcast Webhook
 
-5.Paste the Squadcast webhook URL copied in previous step. This will create Squadcast webhook in Stackdriver
+![](images/stackdriver_4_new.png)
 
-## Setting up Alerts in Stackdriver and send it to Squadcast
+**(4)** Here, paste the previously copied Webhook from Squadcast under **Endpoint URL**. Give the Webhook a meaningful **Displaye Name**. 
 
-1.In the alerting section, click on **CREATE POLICY**. 
+**Things to keep in mind here**: 
+- **Do not enable** the checkbox for using HTTP Basic Auth
+- When you paste the Webhook from Squadcast in **Endpoint URL** field, ensure you remove the additional `https://` that gets added
 
-![](images/stackdriver_6.png)
+**(5)** Click on **Test Connection** and check to see if an incident has been created for the incident in Squadcast 
 
-2.Configure policy name, conditions and triggers as per requirement. In the **Notifications** section, click on **ADD NOTIFICATION CHANNEL**.
+![](images/stackdriver_5_new.png)
 
-![](images/stackdriver_7.png)
+**(6)** Finally, click on **Save**
 
-3.Select **Webhook with Token Authentication** for **Notification Channel Type & for **Notification Channel**, select the webhook you had setup in the previous step. 
+![](images/stackdriver_7_new.png)
 
-![](images/stackdriver_8.png)
+### Setting up Alerting Policies
 
-4.Click on **ADD**.
+**(1)** Within the **Alerting** page, to add a **Policy**, click on either **+ Create Policy** on the top or **Add Policy** in the bottom
 
-Now whenever an alert is triggered by Stackdriver, an incident will be created automatically in Squadcast. The Stackdriver integration comes with an **Auto-Resolve** feature, meaning that whenever the alerts gets resolved in Stackdriver, the incident will automatically get resolved in Squadcast as well.
+![](images/stackdriver_8_new.png)
+
+**(2)** Now, **Add Condition** for your **Policy**. In that page, you can set up the metrics that you would wish to monitor and their thresholds, along with the resources
+
+![](images/stackdriver_9_new.png)
+
+**(3)** Once that is done, select **Next**
+
+![](images/stackdriver_10_new.png)
+
+**(4)** In the **Notification Channels** dropdown, select the Webhook previously configured for Squadcast and select **OK**
+
+![](images/stackdriver_11_new.png)
+
+**(5)** Enable the checkbox as shown in the screenshot to receive **Incident Resolutions signals** as well. Then, select **Next**
+
+![](images/stackdriver_12_new.png)
+
+**(6)** Here, add a meaningul **Alert Name**, add **Optional Documentation** and click on **Save** to create your **Alerting Policy**
+
+![](images/stackdriver_13_new.png)
+
+**(7)** Once everything is done, in the **Policies** page, you will be able to see the previously added **Alerting Policy**. Ensure that the **Alerting Policy** toggle is **Enabled** to `on`
+
+![](images/stackdriver_14_new.png)
+
+That is it, you are now good to go! Whenever an alert is generated in Stackdriver, an incident will be created for the same in Squadcast.
+
+{{site.data.alerts.blue-note}}
+<b>FAQ:</b>
+<br/><br/><p>Q: Does this integration support auto-resolution of incidents in Squadcast?<br/><br/>
+A: Yes, this integration **supports auto-resolution of incidents in Squadcast**, meaning that whenever alerts get resolved in Stackdriver, the corresponding incidents will be automatically resolved in Squadcast as well. If you do not enable the checkbox to <b>recieve Incident Resolution signals</b>, then your Squadcast incidents will not be auto-resolved when alerts in Stackdriver are resolved.</p>
+{{site.data.alerts.end}}
