@@ -73,8 +73,6 @@ Login to your Google Cloud console. From the sidebar on the left, scroll to find
 
 **(6)** Finally, click on **Save**
 
-![](images/stackdriver_7_new.png)
-
 ### Setting up Alerting Policies
 
 **(1)** Within the **Alerting** page, to add a **Policy**, click on either **+ Create Policy** on the top or **Add Policy** in the bottom
