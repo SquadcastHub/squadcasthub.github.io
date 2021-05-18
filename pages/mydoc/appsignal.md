@@ -10,23 +10,29 @@ permalink: docs/appsignal
 folder: mydoc
 ---
 
-Follow the steps below to configure AppSignal to send in alerts into Squadcast.
+This document will help you integrate AppSignal with Squadcast.
 
-Squadcast will then process this information to create incidents for this service according to your preferences.
+[AppSignal](https://www.appsignal.com/) APM offers error tracking, performance monitoring, dashboards, host metrics, and alerts, built for Ruby, Ruby on Rails, Elixir, Node.js, and JavaScript.
 
-## Using AppSignal as an Alert Source
+Route detailed events from AppSignal to the right users in Squadcast.
 
-Click on the **Services** tab on the sidebar.
+## How to integrate AppSignal with Squadcast
 
-![](images/appsignal_0_0.png)
+### In Squadcast: Using AppSignal as an Alert Source
 
-You can either choose to use an existing service or [create a new service](adding-a-service-1). 
+**(1)** On the **Sidebar**, click on **Services**
 
-Now, click on the corresponding **Alert Sources** button for the service.
+![](images/integration_1-1.png)
 
-![](images/appsignal_0.png)
+**(2)** Select an existing Service or **Add service** 
 
-Select **AppSignal** from **Alert Sources** drop-down and copy the Webhook URL.
+![](images/integration_1-2.png)
+
+**(3)** Click the corresponding **Alert Sources**
+
+![](images/integration_1.png)
+
+**(4)** Search for **AppSignal** from the **Alert Source** dropdown and copy the webhook 
 
 ![](images/appsignal_1.png)
 
@@ -38,20 +44,36 @@ Select **AppSignal** from **Alert Sources** drop-down and copy the Webhook URL.
 
 ## Create a Squadcast Webhook in AppSignal Dashboard
 
-**(1)** Log in to your **AppSignal** web console and select the App you would create incidents for.
+Log in to your **AppSignal** web console.
 
-**(2)** From your App's Dashboard navigate to the **Notifications** settings under **App Settings**.
+**(1)** Select the app you would create incidents for. Now, in the left sidebar, select **Notifications**
 
 ![](images/appsignal_2.png)
 
-**(3)** Click on the **Add Integration** button and select the **Webhook** option from the bottom of the dropdown.
+**(2)** Click on **Add Integration** and select **Webhook** from the dropdown
 
 ![](images/appsignal_3.png)
 
-**(4)** Give the integration a name, select the types of event you would like to create incidents for, and paste the copied **Webhook URL** in the input field. 
+**(3)** Give the Webhook a **Name**, select the _types of events_ for which you would like to create incidents for, and paste the previously copied Squadcast Webhook under **Webhook URL**
 
 ![](images/appsignal_4.png)
 
-**(5)** Click on the submit button to save your integration.
+{{site.data.alerts.blue-note-md}}
+**Important:**
 
-Now whenever a notification is triggered in AppSignal, an incident will automatically be created in Squadcast.
+
+![](images/appsignal_5.png)
+
+
+When you click on the **Test Hook** button after adding the Webhook, AppSignal sends test data over a `GET HTTP Request` and **not** a `POST HTTP Request`. As a result, **you will not notice an incident in Squadcast** for the same. To test the Webhook, either generate or wait for real-time alerts to occur within AppSignal.
+{{site.data.alerts.end}}
+
+**(5)** Click on **Submit** to save this Webhook integration
+
+That is it, ypu are good to go! Now, whenever an event in generated in AppSignal, an incident for the same will be created in Squadcast.
+
+{{site.data.alerts.blue-note}}
+<b>FAQ:</b>
+<br/><br/><p>Q: Does this integration support auto-resolution of incidents in Squadcast?<br/><br/>
+A: No, this integration does not support auto-resolution of incidents in Squadcast since AppSignal does not send out alert resolve notifications via the Webhook.</p>
+{{site.data.alerts.end}}
