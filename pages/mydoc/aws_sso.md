@@ -105,8 +105,20 @@ Here, in the placeholders for both **Application ACS URL** and **Application SAM
 
 ![](images/aws_sso_9_c.png)
 
-{{site.data.alerts.note}}
-<br/><br/><p>For members trying to login to Squadcast through AWS SSO and are not already added as users of Squadcast, <b>will be added to Squadcast by default with User Role: User</b>.</p>
+{{site.data.alerts.note-md}}
+
+For members trying to login to Squadcast through AWS SSO and are not already added as users of Squadcast, will be added to Squadcast by default with `User Role: User`.
+{{site.data.alerts.end}}
+
+{{site.data.alerts.note-md}}
+
+By **default**, all new users added to Squadcast via AWS SSO will be added with **`User Role : User`** anyway. You can add an **Attribute Mapping** to provision **all new users** as `Admins` or `Stakeholders`, if you wish to do that. In addition the previous Attribute Mappings, you can add `User Role` as an Attribute Mapping in here, in the same manner and **Save changes**.
+- User attribute in the application : role
+- Maps to this string value or user attribute in AWS SSO : either `Admin` or `Stakeholder`
+- Format : basic
+
+
+![](images/aws_sso_11.png)
 {{site.data.alerts.end}}
 
 **(10)** From the sidebar, now navigate to **Dashboard**. Here, you will be able to see your **User portal URL** that you can use to login to Squadcast
