@@ -137,6 +137,19 @@ In the last two **Update methods**, the modal shows the **Repeats** checkbox and
 <p>The user cannot update past events as it is meant to serve as an accurate record of the past on-call Schedule.</p>
 {{site.data.alerts.end}}
 
+### Choosing a different starting Group
+
+Starting Group determines the Group that starts the defined Rotation. This can only be defined when the update method chosen is **This and Following Shifts** option is selected in the update method.
+
+![](schedules_group_2.png)
+
+{{site.data.alerts.blue-note}}
+By Default Group #1 will be the starting Group.
+{{site.data.alerts.end}}
+
+![](schedules_group_1.png)
+
+
 ### Deleting an On-call
 
 **(1)** Delete an existing on-call by clicking the **Delete** button at the bottom right corner of the **Update on-call shift** dialog box
