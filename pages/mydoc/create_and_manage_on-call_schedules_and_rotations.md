@@ -141,27 +141,32 @@ In the last two **Update methods**, the modal shows the **Repeats** checkbox and
 
 Starting Group determines the Group that starts the defined Rotation. This can only be defined when the update method chosen is **This and Following Shifts** option is selected in the update method.
 
-![](schedules_group_2.png)
+![](images/schedules_group_2.png)
 
-{{site.data.alerts.blue-note}}
-By Default Group #1 will be the starting Group.
+{{site.data.alerts.blue-note-md}}
+**Note:**
+
+
+By Default #1 Group will be the starting Group.
+
+
+![](images/schedules_group_1.png)
 {{site.data.alerts.end}}
 
-![](schedules_group_1.png)
 
 
 ### Deleting an On-call
 
 **(1)** Delete an existing on-call by clicking the **Delete** button at the bottom right corner of the **Update on-call shift** dialog box
 
-![](images/schedules_18.png)
+![](images/schedules_group_1.png)
 
 **(2)** Choose the appropriate option:
 - **This event only** - It will delete only the selected event of the series
 - **This and proceeding events** - It will delete the event selected as well as all the future events belonging to that series
 - **All events** - It will delete all the events belonging to that series
 
-![](images/schedules_19.png)
+![](images/schedules_group_2.png)
 
 ## How to Video
 
