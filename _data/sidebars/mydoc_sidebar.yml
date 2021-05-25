@@ -315,6 +315,10 @@ entries:
             url: /docs/email
             output: web, pdf
 
+          - title: Errorception
+            url: /docs/errorception
+            output: web, pdf
+
           - title: Freshping
             url: /docs/freshping
             output: web, pdf
