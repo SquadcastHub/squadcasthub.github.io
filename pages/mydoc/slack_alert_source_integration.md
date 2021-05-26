@@ -72,4 +72,4 @@ The incident has now been created successfully
 
 ### How to Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UmHk_jor_mg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script src="https://fast.wistia.com/embed/medias/7tpv6ktcns.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:58.13% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_7tpv6ktcns popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
