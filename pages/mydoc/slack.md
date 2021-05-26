@@ -3,7 +3,7 @@ title: Slack
 tags: [integration, slack]
 keywords: 
 last_updated: 
-summary: "Trigger, Ack, Resolve, Reassign incidents from Slack."
+summary: "Trigger, Acknowledge, Resolve & Reassign incidents from Slack"
 sidebar: mydoc_sidebar
 permalink: docs/slack
 folder: mydoc
@@ -81,9 +81,16 @@ This completes the integration process between Squadcast and Slack. You can veri
 
 Now, you will start receiving alert notifications for *all* Squadcast incidents in the configured Slack Channel, in this case, the `incidents-internal` Channel. You can then choose to **Acknowledge**, **Resolve** and **Reassign** these incidents from within the Channel, in this case, the `incidents-internal` Channel.
 
-{{site.data.alerts.blue-note}}
-<b>This integration supports bi-directional status sync</b>
-<br/><br/><p>When an incident is <i>acknowledged</i>, <i>resolved</i> or <i>reassigned</i> from Slack, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is <i>acknowledged</i>, <i>resolved</i> or <i>reassigned</i> in Squadcast, you will be notified in the configured Slack Channel for it</p>
+{{site.data.alerts.blue-note-md}}
+**This integration supports bi-directional status sync**
+
+When an incident is _acknowledged_, _resolved_ or _reassigned_ from Slack, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is _acknowledged_, _resolved_ or _reassigned_ in Squadcast, you will be notified in the configured Slack Channel for it. 
+
+If an incident is auto-resolved by the alert-source, then the notification says so.
+
+
+![](images/slack_auto_resolve_notification.png)
+
 {{site.data.alerts.end}}
 
 {{site.data.alerts.blue-note}}
@@ -141,9 +148,13 @@ You can trigger incidents in Squadcast directly from a Slack Channel.
 ![](images/slack_squadcast_14.png)
 
 **(2)** In the pop-up:
+
   (a) Pick the Service for which you want to trigger the incident
+
   (b) Give the incident a meaningful title
+
   (c) Provide informative description if needed
+
 Click on **Create** to trigger the incident
 
 ![](images/slack_squadcast_15.png)
