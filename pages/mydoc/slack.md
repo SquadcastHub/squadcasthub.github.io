@@ -3,7 +3,7 @@ title: Slack
 tags: [integration, slack]
 keywords: 
 last_updated: 
-summary: "Trigger, Ack, Resolve incidents from Slack."
+summary: "Trigger, Acknowledge, Resolve & Reassign incidents from Slack"
 sidebar: mydoc_sidebar
 permalink: docs/slack
 folder: mydoc
@@ -13,7 +13,7 @@ We understand that most of your work happens over Slack. You can integrate Squad
 
 ## Slack Notifications for Incidents
 
-Squadcast sends a notification to the configured Slack Channel as soon as an incident is triggered. You can easily **Acknowledge** and **Resolve** the populated incidents from within the Slack Channel itself.
+Squadcast sends a notification to the configured Slack Channel as soon as an incident is triggered. You can easily **Acknowledge**, **Resolve** and **Reassign** the populated incidents from within the Slack Channel itself.
 
 {{site.data.alerts.blue-note}}
 <b>Note</b><br/><br/><p>The <b>email address</b> used with your <b>user in Slack</b> and your <b>user in Squadcast</b> should be the same, if not, the integration will not work as expected.</p>
@@ -79,11 +79,18 @@ This completes the integration process between Squadcast and Slack. You can veri
 
 ![](images/slack_integration_modal_save_channel.png)
 
-Now, you will start receiving alert notifications for *all* Squadcast incidents in the configured Slack Channel, in this case, the `incidents-internal` Channel. You can then choose to **Acknowledge** and **Resolve** these incidents from within the Channel, in this case, the `incidents-internal` Channel.
+Now, you will start receiving alert notifications for *all* Squadcast incidents in the configured Slack Channel, in this case, the `incidents-internal` Channel. You can then choose to **Acknowledge**, **Resolve** and **Reassign** these incidents from within the Channel, in this case, the `incidents-internal` Channel.
 
-{{site.data.alerts.blue-note}}
-<b>This integration supports bi-directional status sync</b>
-<br/><br/><p>When an incident is <i>acknowledged</i> or <i>resolved</i> from Slack, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is <i>acknowledged</i> or <i>resolved</i> in Squadcast, you will be notified in the configured Slack Channel for it</p>
+{{site.data.alerts.blue-note-md}}
+**This integration supports bi-directional status sync**
+
+When an incident is _acknowledged_, _resolved_ or _reassigned_ from Slack, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is _acknowledged_, _resolved_ or _reassigned_ in Squadcast, you will be notified in the configured Slack Channel for it. 
+
+If an incident is auto-resolved by the alert-source, then the notification says so.
+
+
+![](images/slack_auto_resolve_notification.png)
+
 {{site.data.alerts.end}}
 
 {{site.data.alerts.blue-note}}
@@ -141,16 +148,20 @@ You can trigger incidents in Squadcast directly from a Slack Channel.
 ![](images/slack_squadcast_14.png)
 
 **(2)** In the pop-up:
+
   (a) Pick the Service for which you want to trigger the incident
+
   (b) Give the incident a meaningful title
+
   (c) Provide informative description if needed
+
 Click on **Create** to trigger the incident
 
 ![](images/slack_squadcast_15.png)
 
 **(3)** You will now be able to see the newly triggered incident in Squadcast. You will also be notified in the globally configured or the Service specific Slack Channel for the same
 
-![](images/slack_squadcast_16.png)
+![](images/slack_create_incident_success.png)
 
 {{site.data.alerts.red-note}}
 <b>Adding private Slack Channels for Service-specific Slack Channels</b>
@@ -162,7 +173,7 @@ Click on **Create** to trigger the incident
 <br/><br/><p>You will be able to view tags (if present) associated with an incident in the incident notification that you receive within the Slack Channel</p>
 {{site.data.alerts.end}}
 
-![](images/slack_squadcast_17.png)
+![](images/slack_incident_action_buttons.png)
 
 ## Using Slack as an Alert Source
 To create incidents automatically in Squadcast from Slack, check out [Slack as an alert source](slack-as-an-alert-source).

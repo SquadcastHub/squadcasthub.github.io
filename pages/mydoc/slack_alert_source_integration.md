@@ -46,7 +46,7 @@ This will them prompt a UI pop-up where you can fill in additional information l
 
 The created incident will now show up on the Slack channel and on Squadcast
 
-![](images/slack_5.png)
+![](images/slack_create_incident_success_2.png)
 
 ### Using Message Actions in Slack
 
@@ -64,7 +64,7 @@ Choose **Create Incident** from the dropdown shown and then you will get a UI po
 
 The incident has now been created successfully
 
-![](images/slack_9.png)
+![](images/slack_message_action_create_incident_success.png)
 
 {{site.data.alerts.note}}
 <br/><br/><p>The Squadcast Bot must be called into the channel where you will want to take any Bot Action</p>
@@ -72,4 +72,4 @@ The incident has now been created successfully
 
 ### How to Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UmHk_jor_mg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script src="https://fast.wistia.com/embed/medias/7tpv6ktcns.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:58.13% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_7tpv6ktcns popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
