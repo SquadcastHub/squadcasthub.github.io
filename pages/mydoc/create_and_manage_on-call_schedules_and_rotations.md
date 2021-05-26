@@ -153,8 +153,6 @@ By Default #1 Group will be the starting Group.
 ![](images/schedules_group_1.png)
 {{site.data.alerts.end}}
 
-
-
 ### Deleting an On-call
 
 **(1)** Delete an existing on-call by clicking the **Delete** button at the bottom right corner of the **Update on-call shift** dialog box
