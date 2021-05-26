@@ -46,7 +46,7 @@ This will them prompt a UI pop-up where you can fill in additional information l
 
 The created incident will now show up on the Slack channel and on Squadcast
 
-![](images/slack_5.png)
+![](images/slack_create_incident_success_2.png)
 
 ### Using Message Actions in Slack
 
@@ -64,7 +64,7 @@ Choose **Create Incident** from the dropdown shown and then you will get a UI po
 
 The incident has now been created successfully
 
-![](images/slack_9.png)
+![](images/slack_message_action_create_incident_success.png)
 
 {{site.data.alerts.note}}
 <br/><br/><p>The Squadcast Bot must be called into the channel where you will want to take any Bot Action</p>
