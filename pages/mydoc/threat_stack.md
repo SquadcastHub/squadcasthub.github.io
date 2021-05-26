@@ -56,7 +56,7 @@ Route detailed events from Threat Stack to the right users in Squadcast.
 
 {{site.data.alerts.blue-note}}
 <b>Pro Tip:</b>
-<br/><br/><p>While choosing an option from the *Alert Severity* dropdown, in order to ensure all alerts reach Squadcast and you do not miss out on any by mistake, choose the option *Fire Webhook for all alerts*. This will ensure all alerts are reaching Squadcast.<br/><br/>Within Squadcast, you can choose how you want each of these alerts to be treated (i.e., you can choose to <a href="event-tagging">tag</a> and <a href="alert-routing">route</a> them to the right people based on severity, <a href="de-duplication-rules">deduplicate</a> or <a href="alert-suppression">suppress</a> them to control alert noise).</p>
+<br/><br/><p>While choosing an option from the <b>Alert Severity</b> dropdown, in order to ensure all alerts reach Squadcast and you do not miss out on any by mistake, choose the option <b>Fire Webhook for all alerts</b>. This will ensure all alerts are reaching Squadcast.<br/><br/>Within Squadcast, you can choose how you want each of these alerts to be treated (i.e., you can choose to <a href="event-tagging">tag</a> and <a href="alert-routing">route</a> them to the right people based on severity, <a href="de-duplication-rules">de-duplicate</a> or <a href="alert-suppression">suppress</a> them to control alert noise).</p>
 {{site.data.alerts.end}}
 
 That is it, you are good to go! Based on the "Alert Severity" value chosen while creating the Webhook, only notifications with those severity values would be created as incidents in Squadcast. You can then manually resolve incidents in Squadcast. 
@@ -77,6 +77,7 @@ Ensure the following IP addresses are open in your firewall to allow the Threat 
 </ul>
 </li>
 </ol>
+You can check out <a href="https://apidocs.threatstack.com/v2/alert-webhooks-api/webhooks-setup">Threat Stack's documentation</a> for more information.
 </p>
 {{site.data.alerts.end}}
 
