@@ -77,7 +77,7 @@ Learn more about each filter value [here](filter-incidents).
 
 ### Export Incidents
 
-**(1)** Add the filters of your choice and click on the **download** icon to download the incidents
+**(1)** Add the filters of your choice and click on the **download** icon and select **CSV** or **JSON** from the dropdown.
 
 ![](images/incident_list_9.png)
 
@@ -86,7 +86,7 @@ Learn more about each filter value [here](filter-incidents).
 <p>At the moment you can export only a maximum of 1000 incidents at once. Please tweak your filters to ensure the incidents count is within the limit for every export. Today, there are no limits on the number of times you can export incidents.</p>
 {{site.data.alerts.end}}
 
-**(2)** The exported CSV file will have the following fields:
+**(2)** The exported **CSV** or **JSON** file will have the following fields:
 
 - Incident ID
 - Title
@@ -107,7 +107,7 @@ Learn more about each filter value [here](filter-incidents).
 
 {{site.data.alerts.green-note-check}}
 <b>Export Incidents: Public API</b><br/><br/>
-<p>Exporting incidents as CSV is available as a public API. Check out the Apidocs <a href="https://apidocs.squadcast.com/#3d00d5c6-6b9b-410c-a11b-0da72c60d419" target="_blank">here</a>.</p>
+<p>Exporting incidents as <b>CSV</b> or <b>JSON</b> is available as a Public API. Check out the API Documentation <a href="https://apidocs.squadcast.com/#3d00d5c6-6b9b-410c-a11b-0da72c60d419" target="_blank">here</a>.</p>
 {{site.data.alerts.end}}
 
 ### Incident List Search
