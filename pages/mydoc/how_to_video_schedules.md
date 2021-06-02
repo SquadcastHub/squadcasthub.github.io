@@ -28,3 +28,7 @@ folder: mydoc
 ## Daylight Saving Changes
 
 <script src="https://fast.wistia.com/embed/medias/722f2bb7xq.jsonp" async></script><div class="wistia_responsive_padding" style="padding:51.46% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_722f2bb7xq popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
+
+## Override Schedules
+
+<script src="https://fast.wistia.com/embed/medias/a6l9mrunu9.jsonp" async></script><div class="wistia_responsive_padding" style="padding:54.79% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_a6l9mrunu9 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
