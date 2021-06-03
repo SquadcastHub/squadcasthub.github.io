@@ -639,11 +639,11 @@ entries:
         output: web, pdf
 
         folderitems:
-          - title: Deactivating your Squadcast Account
+          - title: Deactivate your Squadcast Account
             url: /docs/deactivating-your-squadcast-account
             output: web, pdf
 
-          - title: Deleting your Squadcast Account
+          - title: Delete your Squadcast Account
             url: /docs/deleting-your-squadcast-account
             output: web, pdf
 
