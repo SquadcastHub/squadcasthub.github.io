@@ -1,5 +1,5 @@
 ---
-title: Deleting your Squadcast Account
+title: Delete your Squadcast Account
 tags: [deleting, account]
 keywords: 
 last_updated: 

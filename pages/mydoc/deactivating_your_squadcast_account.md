@@ -1,5 +1,5 @@
 ---
-title: Deactivating your  Squadcast Account
+title: Deactivate your  Squadcast Account
 tags: [deactivating, account]
 keywords: 
 last_updated: 
