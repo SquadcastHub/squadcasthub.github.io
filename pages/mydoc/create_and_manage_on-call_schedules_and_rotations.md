@@ -128,7 +128,6 @@ It is important to ensure that there are no gaps in your Schedules.
 -  **This Event Only** - to update only that particular event 
 When this choice is made, you will not see the option to *Repeat* as this is considered a one-off necessity to update. Also, this will only show the assignees of the current event picked for the update
 -  **This and proceeding events** - to update the selected event and all the events that come afterwards
-- **All events in this series** - to update all the events of that series irrespective of which event you clicked on
 
 In the last two **Update methods**, the modal shows the **Repeats** checkbox and also, shows all the Assignee Groups in the series.
 
@@ -157,14 +156,13 @@ By Default #1 Group will be the starting Group.
 
 **(1)** Delete an existing on-call by clicking the **Delete** button at the bottom right corner of the **Update on-call shift** dialog box
 
-![](images/schedules_group_1.png)
+![](images/schedules_delete_1.png)
 
 **(2)** Choose the appropriate option:
 - **This event only** - It will delete only the selected event of the series
 - **This and proceeding events** - It will delete the event selected as well as all the future events belonging to that series
-- **All events** - It will delete all the events belonging to that series
 
-![](images/schedules_group_2.png)
+![](images/schedules_delete_2.png)
 
 ## How to Video
 
