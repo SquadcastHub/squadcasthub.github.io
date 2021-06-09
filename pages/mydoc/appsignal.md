@@ -68,7 +68,7 @@ Log in to your **AppSignal** web console.
 When you click on the **Test Hook** button after adding the Webhook, AppSignal sends test data over a `GET HTTP Request` and **not** a `POST HTTP Request`. As a result, **you will not notice an incident in Squadcast** for the same. To test the Webhook, either generate or wait for real-time alerts to occur within AppSignal.
 {{site.data.alerts.end}}
 
-**(5)** Click on **Submit** to save this Webhook integration
+**(4)** Click on **Submit** to save this Webhook integration
 
 That is it, ypu are good to go! Now, whenever an event in generated in AppSignal, an incident for the same will be created in Squadcast.
 

@@ -219,3 +219,7 @@ The rule engine supports expressions with parameters, arithmetic, logical, and s
 Yes, you can specify Execution Rule Priority for the rules defined by moving them `Up` or `Down` the list of rules. 
 
 ![](images/status-based-deduplication_5.png)
+
+**(7)** While adding a De-duplication Rule, is the _search string_ in the rule case sensitive? 
+
+Yes, that is correct. For example, if your seach string is "ALERT" and your payload does not contain "ALERT" but contains "Alert", this will not be matched. Your search string should be "Alert".

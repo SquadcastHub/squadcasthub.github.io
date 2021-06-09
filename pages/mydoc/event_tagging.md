@@ -352,3 +352,7 @@ source == "api" && (<your_tagging_rule>)
 ```
 
 This will ensure that this Tagging Rule will only be active for incidents triggered via that alert source for the service. This rule will not function for any other alert source.
+
+**(5)** While adding a Tagging Rule, is the _search string_ in the rule case sensitive? 
+
+Yes, that is correct. For example, if your seach string is "ALERT" and your payload does not contain "ALERT" but contains "Alert", this will not be matched. Your search string should be "Alert".
