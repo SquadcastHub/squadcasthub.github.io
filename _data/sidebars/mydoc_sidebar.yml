@@ -495,7 +495,7 @@ entries:
             url: /docs/site24x7
             output: web, pdf
 
-          - title: Slack Alert Source Integration
+          - title: Slack
             url: /docs/slack-as-an-alert-source
             output: web, pdf
 
