@@ -547,6 +547,10 @@ entries:
             url: /docs/uptime-robot
             output: web, pdf
 
+          - title: Wavefront
+            url: /docs/wavefront
+            output: web, pdf
+
           - title: Zabbix
             url: /docs/zabbix-integration-guide
             output: web, pdf
