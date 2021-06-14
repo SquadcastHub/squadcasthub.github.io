@@ -454,6 +454,10 @@ entries:
           - title: Rapid7 InsightIDR
             url: /docs/rapid7-insightidr
             output: web, pdf
+          
+          - title: Redash
+            url: /docs/redash
+            output: web, pdf
 
           - title: Rollbar
             url: /docs/rollbar
