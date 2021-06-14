@@ -86,8 +86,9 @@ Now, you will start receiving alert notifications for *all* Squadcast incidents 
 
 When an incident is _acknowledged_, _resolved_ or _reassigned_ from Slack, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is _acknowledged_, _resolved_ or _reassigned_ in Squadcast, you will be notified in the configured Slack Channel for it. 
 
-If an incident is auto-resolved by the alert-source, then the notification says so.
+![](images/slack_squadcast_17.png)
 
+**Note**: If an incident is auto-resolved by the alert-source, then the notification indicates the same.
 
 ![](images/slack_auto_resolve_notification.png)
 
