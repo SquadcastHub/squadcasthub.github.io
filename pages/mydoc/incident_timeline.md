@@ -13,7 +13,7 @@ You can access the **Incident Activity Timeline** for a particular incident in t
 
 ![](images/timeline_1.png)
 
-The Incident Timeline will display the timeline of the incident in reverse chronological order for the following details: 
+The Incident Timeline will display the timeline of the incident in reverse chronological order for the following details:
 
 **(a)** when the incident was first **Triggered** and **Acknowledged**
 
@@ -21,13 +21,25 @@ The Incident Timeline will display the timeline of the incident in reverse chron
 
 **(c)** who **Resolved** it and when
 
-**(d)** what message was posted on the StatusPage
+**(d)** what message was posted on the **StatusPage**
 
-**(e)** by whom and when the Postmortem was created
+**(e)** by whom and when the **Postmortem** was created
 
-**(f)**  what Action was taken
+**(f)** what **Action** was taken
 
-**(g)** starred comments from the Notes
+**(g)** starred comments from the **Notes**
+
+**(h)** if the incident is suppressed due to a **scheduled maintenance**
+
+![](images/maintenance_timeline.png)
+
+**(i)** if the incident is routed due to a **Routing Rule**
+
+![](images/routing_reason.png)
+
+**(j)** if the incident is suppressed due to a **Suppression Rule**
+
+![](images/suppression_reason.png)
 
 ### Exporting Incident Activity Timeline
 
