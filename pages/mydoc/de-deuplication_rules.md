@@ -11,7 +11,7 @@ folder: mydoc
 
 Alert De-duplication can help you reduce alert noise by organising and grouping alerts. This also provides easy access to similar alerts when needed.
 
-This can be achieved by defining De-duplication Rules for each Service in Squadcast. When these rules evaluate to *true* for an incoming incident, alerts will get de-duplicated.
+This can be achieved by defining De-duplication Rules for each Service in Squadcast. When these rules evaluate to _true_ for an incoming incident, alerts will get de-duplicated.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ This can be achieved by defining De-duplication Rules for each Service in Squadc
 <br/><br/><p>De-duplication Rules work only on incidents in either the <b>Triggered</b> or <b>Acknowledged</b> states.</p>
 {{site.data.alerts.end}}
 
-## Create De-duplication Rules 
+## Create De-duplication Rules
 
 **(1)** Navigate to **Services** from the sidebar
 
@@ -35,7 +35,7 @@ This can be achieved by defining De-duplication Rules for each Service in Squadc
 
 **(4)** Click on **Add new rule**
 
-**(5)** Select an **Alert Source** from the drop-down 
+**(5)** Select an **Alert Source** from the drop-down
 
 ![](images/de-duplication_2.png)
 
@@ -43,7 +43,7 @@ This can be achieved by defining De-duplication Rules for each Service in Squadc
 
 ## (A) UI-based Rule Builder (Beginner-friendly)
 
-(a) On the right, you can view the *payload of the **latest** alert* for the chosen Alert Source 
+(a) On the right, you can view the _payload of the **latest** alert_ for the chosen Alert Source
 
 (b) The drop-downs in the Rule Builder contain values from the payload on the right. You can use them to easily create your De-duplication Rules
 
@@ -81,15 +81,13 @@ Next, choose the **De-duplication Time Window**. You can de-duplicate incidents 
 
 - #### Basic Expressions
 
-   `10 > 0`, `1+2`, `100/3`
+  `10 > 0`, `1+2`, `100/3`
 
 - #### Parameterized Expressions
-   `past.metric == current.metric` 
 
-    The available parameters are `past`, `current` and `event_count`
-      + `past` : This parameter contains the JSON payload of the previous incident which the current event is compared with 
-      + `current` : This parameter contains the JSON payload of the incoming event which will be compared with the past incidents' JSON payload
-      + `event_count` : This denotes the number of de-duplicated events for a given incident
+  `past.metric == current.metric`
+
+  The available parameters are `past`, `current` and `event_count` + `past` : This parameter contains the JSON payload of the previous incident which the current event is compared with + `current` : This parameter contains the JSON payload of the incoming event which will be compared with the past incidents' JSON payload + `event_count` : This denotes the number of de-duplicated events for a given incident
 
 {{site.data.alerts.blue-note}}
 <b>Use-case for event_count:</b>
@@ -100,11 +98,11 @@ Next, choose the **De-duplication Time Window**. You can de-duplicate incidents 
 
   This can be used to check if a particular JSON payload field matches a regular expression.
 
-   `re(payload.metric, "disk.*")`
+  `re(payload.metric, "disk.*")`
 
 #### Parse JSON content within the payload using `jsonPath`
 
-**General Format** 
+**General Format**
 `jsonPath(<the JSON string that should be parsed for JSON content>, <"the parameter that needs to be picked from the parsed JSON object">)`
 
 **Example**
@@ -112,17 +110,17 @@ Below is an example payload:
 
 ```json
 {
-   "payload": {  
-      "Type" : "Notification",
-      "MessageId" : "5966c484-5b37-58df",
-      "TopicArn" : "arn:aws:sns:us-east-1:51:Test",
-      "Message" : "{\"AlarmName\":\"Squadcast Testing - Ignore\",\"AlarmDescription\":\"Created from EC2 Console\"}"
-   }
+	"payload": {
+		"Type": "Notification",
+		"MessageId": "5966c484-5b37-58df",
+		"TopicArn": "arn:aws:sns:us-east-1:51:Test",
+		"Message": "{\"AlarmName\":\"Squadcast Testing - Ignore\",\"AlarmDescription\":\"Created from EC2 Console\"}"
+	}
 }
 ```
 
 ```javascript
-jsonPath(payload.Message, "AlarmName")
+jsonPath(payload.Message, "AlarmName");
 ```
 
 This will pick out the value `AlarmName` from the Message object in the payload, based on which, you can de-duplicate incidents.
@@ -142,23 +140,24 @@ Below is an example payload for demonstration:
 
 ```json
 {
-  "event_count": 5,
-  "past": {
-    "issue_description": "bug - 2",
-    "issue_id": "10029",
-    "issue_key": "HYD-30",
-    "issue_labels": [],
-    "issue_link": "http://13.233.254.18:8080/browse/HYD/issues/HYD-30",
-    "issue_priority": "Medium",
-    "issue_summary": "bug - 2",
-    "issue_type": "Bug",
-    "project_id": "10000",
-    "project_key": "HYD",
-    "project_name": "hydra"
-  },
-  "source": "grafana"
+	"event_count": 5,
+	"past": {
+		"issue_description": "bug - 2",
+		"issue_id": "10029",
+		"issue_key": "HYD-30",
+		"issue_labels": [],
+		"issue_link": "http://13.233.254.18:8080/browse/HYD/issues/HYD-30",
+		"issue_priority": "Medium",
+		"issue_summary": "bug - 2",
+		"issue_type": "Bug",
+		"project_id": "10000",
+		"project_key": "HYD",
+		"project_name": "hydra"
+	},
+	"source": "grafana"
 }
 ```
+
 To de-duplicate any incoming alert when:
 
 - The `metric` matches the regular expression `^disk.*`
@@ -170,8 +169,14 @@ To de-duplicate any incoming alert when:
 **De-duplication Rule:**
 
 ```javascript
-(past.metric == current.metric) && re(current.metric, "^disk.*") && (past.host == current.host) && (current.value < 60) && jsonPath(past.tags, "context.value") == jsonPath(current.tags, "context.value")
+past.metric == current.metric &&
+	re(current.metric, "^disk.*") &&
+	past.host == current.host &&
+	current.value < 60 &&
+	jsonPath(past.tags, "context.value") ==
+		jsonPath(current.tags, "context.value");
 ```
+
 ## Viewing De-duplicated Incidents
 
 From the [Incident List page](https://support.squadcast.com/docs/incident-list-table-view), you can view which incidents have de-duplicated alerts when there is **+\<number\>** next to the Incident ID like in the screenshot below. The **number** indicates how many alerts were de-duplicated against this incident.
@@ -180,13 +185,15 @@ From the [Incident List page](https://support.squadcast.com/docs/incident-list-t
 
 Clicking on such an incident will take you to its [Incident Details page](https://support.squadcast.com/docs/incident-details) where, by clicking on **Deduped Events**, you will be able to see the following:
 
-  - Number of de-duplicated events 
-  - Time when they reached Squadcast
-  - **Message** and **Payload** of the event
+- Number of de-duplicated events
+- Time when they reached Squadcast
+- **Message** and **Payload** of the event
 
 ![](images/de-duplication_7.png)
 
-Clicking on any of the de-duplicated events will display will all the information that is sent for that alert from the monitoring tool.
+Clicking on any of the de-duplicated events will display will all the information that is sent for that alert from the monitoring tool, including the **deduplication reason** (which Deduplication Rule got executed).
+
+![](images/dedup_reason.png)
 
 ![](images/de-duplication_8.png)
 
@@ -206,7 +213,7 @@ Most organizations across the world follow a best practice of resolving critial 
 
 **(4)** Can I create OR rules?
 
-Yes, you can. The evaluation between different De-duplication Rules is OR. 
+Yes, you can. The evaluation between different De-duplication Rules is OR.
 
 **(5)** What kind of regex can be used to write custom rules?
 
@@ -216,10 +223,10 @@ The rule engine supports expressions with parameters, arithmetic, logical, and s
 
 **(6)** Do the De-duplication Rules have priority?
 
-Yes, you can specify Execution Rule Priority for the rules defined by moving them `Up` or `Down` the list of rules. 
+Yes, you can specify Execution Rule Priority for the rules defined by moving them `Up` or `Down` the list of rules.
 
 ![](images/status-based-deduplication_5.png)
 
-**(7)** While adding a De-duplication Rule, is the _search string_ in the rule case sensitive? 
+**(7)** While adding a De-duplication Rule, is the _search string_ in the rule case sensitive?
 
 Yes, that is correct. For example, if your seach string is "ALERT" and your payload does not contain "ALERT" but contains "Alert", this will not be matched. Your search string should be "Alert".

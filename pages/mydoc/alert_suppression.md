@@ -1,20 +1,20 @@
 ---
 title: Alert Suppression
 tags: [set-up-your-profile, managing-all-users]
-keywords: 
-last_updated: 
-datatable: 
+keywords:
+last_updated:
+datatable:
 summary: "Avoid alert fatigue by setting up Suppression Rules"
 sidebar: mydoc_sidebar
 permalink: docs/alert-suppression
 folder: mydoc
 ---
 
-Alert suppression can help you avoid alert fatigue by suppressing notifications for non-actionable alerts. 
+Alert suppression can help you avoid alert fatigue by suppressing notifications for non-actionable alerts.
 
 Squadcast will suppress the incidents that match any of the Suppression Rules you create for your Services. These incidents will go into the `Suppressed` state and you will not get any notifications for them.
 
-These are useful in situations where you would like to *view* your all your informational alerts in Squadcast but do not want to get notified for them. 
+These are useful in situations where you would like to _view_ your all your informational alerts in Squadcast but do not want to get notified for them.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ These are useful in situations where you would like to *view* your all your info
 
 ![](images/alert_suppression_1_new.png)
 
-**(4)** Select an **Alert Source** from the drop-down 
+**(4)** Select an **Alert Source** from the drop-down
 
 **(5)** Click on **Add new rule**
 
@@ -41,9 +41,9 @@ These are useful in situations where you would like to *view* your all your info
 
 ### (A) UI-based Rule Builder (Beginner-friendly)
 
-(a) On the right, you can view the *payload of the **latest** alert* for the chosen Alert Source 
+(a) On the right, you can view the _payload of the **latest** alert_ for the chosen Alert Source
 
-(b) The drop-downs in the Rule Builder contain values from the payload on the right. You can use them to easily create your Suppression Rules. As you build the expression from these drop-downs, you can also see the corresponding *raw string* being auto-populated for the same under **String Expression**. 
+(b) The drop-downs in the Rule Builder contain values from the payload on the right. You can use them to easily create your Suppression Rules. As you build the expression from these drop-downs, you can also see the corresponding _raw string_ being auto-populated for the same under **String Expression**.
 
 ![](images/alert_suppression_3_new.png)
 
@@ -59,6 +59,7 @@ These are useful in situations where you would like to *view* your all your info
 {{site.data.alerts.blue-note}}
 <b>Comparison Operators within Suppression Rules</b>
 <br/><br/><p>You can also leverage comparison operators such as <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">==, <, <=, >, >=</code> within your rules using the drop-down blocks, when the parameter you are evaluating against, is a <b>numerical value from the payload</b> to reduce alert noise.</p>
+
 <p><img src="images/alert_suppression_7_new.png"></p>
 {{site.data.alerts.end}}
 
@@ -79,27 +80,29 @@ These are useful in situations where you would like to *view* your all your info
 
 ### Syntax for writing rules: The rule engine supports expressions with parameters, arithmetic, logical, and string operations
 
-The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this [link](https://regex101.com/) to get an idea of all the expression types accepted in Squadcast. 
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this [link](https://regex101.com/) to get an idea of all the expression types accepted in Squadcast.
 
 #### Basic Expressions
 
-   `10 > 0`, `1+2`, `100/3`
+`10 > 0`, `1+2`, `100/3`
 
 #### Parameterized Expressions
 
-   `payload.metric == "disk"`
-      The available parameters are `payload`
-            `payload` : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source 
-            `incident_details`: This contains the content of `message` and `description` of the incoming event
-            `source`: This denotes the associated alert source for the current/incoming event
+`payload.metric == "disk"`
+The available parameters are `payload`
+`payload` : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source
+`payload` : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source
+`payload` : This parameter contains the JSON payload of an incident which will be the same as the JSON payload format for the future events for a particular alert source
+`incident_details`: This contains the content of `message` and `description` of the incoming event
+`source`: This denotes the associated alert source for the current/incoming event
 
 #### Regular Expressions
 
-   `re(payload.metric, "disk.*")`
+`re(payload.metric, "disk.*")`
 
 #### Parse JSON content within the payload using `jsonPath` to add a tag
 
-**General Format** 
+**General Format**
 `jsonPath(<the JSON string that should be parsed for JSON content>, <"the parameter that needs to be picked from the parsed JSON object">)`
 
 **Example**
@@ -108,41 +111,43 @@ Below is an example payload:
 
 ```json
 {
-   "payload": {  
-      "Type" : "Notification",
-      "MessageId" : "5966c484-5b37-58df",
-      "TopicArn" : "arn:aws:sns:us-east-1:51:Test",
-      "Message" : "{\"AlarmName\":\"Squadcast Testing - Ignore\",\"AlarmDescription\":\"Created from EC2 Console\"}"
-   }
+	"payload": {
+   "payload": {
+	"payload": {
+		"Type": "Notification",
+		"MessageId": "5966c484-5b37-58df",
+		"TopicArn": "arn:aws:sns:us-east-1:51:Test",
+		"Message": "{\"AlarmName\":\"Squadcast Testing - Ignore\",\"AlarmDescription\":\"Created from EC2 Console\"}"
+	}
 }
 ```
 
 ```javascript
-jsonPath(payload.Message, "AlarmName")
+jsonPath(payload.Message, "AlarmName");
 ```
 
 This will pick out the value `AlarmName` from the Message object in the payload based on which, you can suppress the incident.
 
-
 {{site.data.alerts.blue-note-md}}
-   **Multiple Alert Sources**
+**Multiple Alert Sources**
 
-   We can see alert payloads of past events from different alert
-   sources for the service by selecting the respective alert source
-   from the dropdown in the right-half side.
+We can see alert payloads of past events from different alert
+sources for the service by selecting the respective alert source
+from the dropdown in the right-half side.
 
-   Since the payload format is fixed for a given alert source,
-   it is usually preferrable to have suppression rules on a per-alert source basis.
-   This can be done by making use of the `source` field which
-   lets you know the alert source that triggered the incoming event.
+Since the payload format is fixed for a given alert source,
+it is usually preferrable to have suppression rules on a per-alert source basis.
+This can be done by making use of the `source` field which
+lets you know the alert source that triggered the incoming event.
 
-   For example, if you want to have a suppression rule for a service,
-   only for alerts coming for **`grafana`** alert source, then the corresponding
-   rule would look something like:
-   
-   ```javascript
-   source == 'grafana' && (<your_suppression_rule>)
-   ```
+For example, if you want to have a suppression rule for a service,
+only for alerts coming for **`grafana`** alert source, then the corresponding
+rule would look something like:
+
+```javascript
+source == 'grafana' && (<your_suppression_rule>)
+```
+
 {{site.data.alerts.end}}
 
 ### Example
@@ -151,35 +156,36 @@ Below is an example payload for demonstration:
 
 ```json
 {
-  "payload": {
-    "issue_description": "bug - 2",
-    "issue_id": "10029",
-    "issue_key": "HYD-30",
-    "issue_labels": [],
-    "issue_link": "http://13.233.254.18:8080/browse/HYD/issues/HYD-30",
-    "issue_priority": "Medium",
-    "issue_summary": "bug - 2",
-    "issue_type": "Bug",
-    "project_id": "10000",
-    "project_key": "HYD",
-    "project_name": "hydra"
-  },
-  "incident_details": {
-    "message": "[Bug] bug - 2",
-    "description": "+ Project: HYDRA \n+Issue Type: Bug ..."
-  },
-  "source": "grafana"
+	"payload": {
+		"issue_description": "bug - 2",
+		"issue_id": "10029",
+		"issue_key": "HYD-30",
+		"issue_labels": [],
+		"issue_link": "http://13.233.254.18:8080/browse/HYD/issues/HYD-30",
+		"issue_priority": "Medium",
+		"issue_summary": "bug - 2",
+		"issue_type": "Bug",
+		"project_id": "10000",
+		"project_key": "HYD",
+		"project_name": "hydra"
+	},
+	"incident_details": {
+		"message": "[Bug] bug - 2",
+		"description": "+ Project: HYDRA \n+Issue Type: Bug ..."
+	},
+	"source": "grafana"
 }
 ```
 
 To suppress any incoming alert when:
- - The alert message contains: `[Bug]`
- - The alert source is `grafana`
+
+- The alert message contains: `[Bug]`
+- The alert source is `grafana`
 
 **Suppression Rule:**
 
 ```javascript
-re(payload.incident_details.message, "[Bug]") && source == "grafana"
+re(payload.incident_details.message, "[Bug]") && source == "grafana";
 ```
 
 ### Discarding suppressed incidents
@@ -187,25 +193,28 @@ re(payload.incident_details.message, "[Bug]") && source == "grafana"
 To discard incoming alerts and stop them from being triggered as incidents in Squadcast,
 use the `discard()` function in conjunction with Suppression Rules.
 
-**Example** 
+**Example**
 
-Suppression Rule:  
-
-```javascript
-source == "grafana" && re(payload["message"], "Notification Message")
-``` 
-Supression Rule with `discard()`: 
+Suppression Rule:
 
 ```javascript
-source == grafana && re(payload["message"], "Notification Message") && discard()
+source == "grafana" && re(payload["message"], "Notification Message");
+```
+
+Supression Rule with `discard()`:
+
+```javascript
+source == grafana &&
+	re(payload["message"], "Notification Message") &&
+	discard();
 ```
 
 {{site.data.alerts.blue-note-md}}
-   **Avoid hitting Rate Limits**
-   
-   The `discard()` function can be used to avoid hitting the
-   **[Incident Rate Limits](https://support.squadcast.com/docs/incident-rate-limiting)**
-   as **Suppressed events that are discarded** don't get counted against the allowed rate limits.
+**Avoid hitting Rate Limits**
+
+The `discard()` function can be used to avoid hitting the
+**[Incident Rate Limits](https://support.squadcast.com/docs/incident-rate-limiting)**
+as **Suppressed events that are discarded** don't get counted against the allowed rate limits.
 
 {{site.data.alerts.end}}
 
@@ -215,12 +224,12 @@ You can view `suppressed` incidents in the [Incident List](https://support.squad
 
 ![](images/alert_suppression_6_new.png)
 
-
 {{site.data.alerts.yellow-note-i-md}}
 **Note**
 
- - **`Suppressed`** and **`Resolved`** are the final states for incidents in Squadcast. You will not be able to take any action on incidents that are in these states.
- - Incident information will be available on the Squadcast platform even if they are suppressed.
+- **`Suppressed`** and **`Resolved`** are the final states for incidents in Squadcast. You will not be able to take any action on incidents that are in these states.
+- Incident information will be available on the Squadcast platform even if they are suppressed.
+
 {{site.data.alerts.end}}
 
 ## FAQs
@@ -235,6 +244,12 @@ The rule engine supports expressions with parameters, arithmetic, logical, and s
 
 Yes, you can. The evaluation between different Suppression Rules is OR. Add multiple Suppression Rules to enable OR evaluation.
 
-**(3)** While adding a Suppression Rule, is the _search string_ in the rule case sensitive? 
+**(3)** While adding a Suppression Rule, is the _search string_ in the rule case sensitive?
 
 Yes, that is correct. For example, if your seach string is "ALERT" and your payload does not contain "ALERT" but contains "Alert", this will not be matched. Your search string should be "Alert".
+
+**(4)** How do I know if an incident gets suppressed due to a Suppression Rule?
+
+In the Incident's Activity Timeline the reason for suppression is displayed.
+
+![](images/suppression_reason.png)

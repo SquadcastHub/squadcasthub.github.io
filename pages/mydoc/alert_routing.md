@@ -9,7 +9,7 @@ permalink: docs/alert-routing
 folder: mydoc
 ---
 
-Alert Routing allows you to configure *Routing Rules* to ensure that alerts are routed to the right responder with the help of `event tags` attached to them. 
+Alert Routing allows you to configure _Routing Rules_ to ensure that alerts are routed to the right responder with the help of `event tags` attached to them.
 
 ## Prerequisites
 
@@ -85,7 +85,8 @@ Alert Routing allows you to configure *Routing Rules* to ensure that alerts are 
 `tags.severity == "high"`
 
 The available parameters are `tags`
-+ `tags` : This parameter contains the all the configured tags for a given Service.
+
+- `tags` : This parameter contains the all the configured tags for a given Service.
 
 #### Regular Expressions
 
@@ -99,28 +100,38 @@ Below is the set of `event tags` defined for a Service (as shown in the right pa
 
 ```json
 {
-    "tags" : [
-        {
-             "severity" : "critical"
-        },
-        {
-             "severity" : "high"
-        },
-        {
-             "severity" : "low"
-        }
-    ]
+	"tags": [
+		{
+			"severity": "critical"
+		},
+		{
+			"severity": "high"
+		},
+		{
+			"severity": "low"
+		}
+	]
 }
 ```
-**Use-case for Routing Rules** 
+
+**Use-case for Routing Rules**
 
 When:
+
 - `severity` is `critical` : Route to a **Squad**
-- `severity` is `high` : Route to an **Escalation Policy** 
+- `severity` is `high` : Route to an **Escalation Policy**
 - `severity` is `low` : Route to a **User**
 
-**Routing Rules are as follows:** 
+**Routing Rules are as follows:**
 
-- `tags.severity == "critical"` *route* to a `squad`
-- `tags.severity == "high"` *route* to an `escalation policy`
-- `tags.severity == "low"` *route* to a `user`
+- `tags.severity == "critical"` _route_ to a `squad`
+- `tags.severity == "high"` _route_ to an `escalation policy`
+- `tags.severity == "low"` _route_ to a `user`
+
+## FAQ
+
+**(1)** How do I know if an incident gets routed due to a Routing Rule?
+
+In the Incident's Activity Timeline the reason for routing, and to which entity it gets routed to, is displayed.
+
+![](images/routing_reason.png)
