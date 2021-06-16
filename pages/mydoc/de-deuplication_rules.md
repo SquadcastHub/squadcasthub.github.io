@@ -191,11 +191,9 @@ Clicking on such an incident will take you to its [Incident Details page](https:
 
 ![](images/de-duplication_7.png)
 
-Clicking on any of the de-duplicated events will display will all the information that is sent for that alert from the monitoring tool, including the **deduplication reason** (which Deduplication Rule got executed).
+Clicking on any of the de-duplicated events will display will all the information that is sent for that alert from the monitoring tool, including the **Deduplication Reason** (which Deduplication Rule got executed).
 
 ![](images/dedup_reason.png)
-
-![](images/de-duplication_8.png)
 
 ## FAQs
 
