@@ -9,19 +9,29 @@ permalink: docs/pingdom
 folder: mydoc
 ---
 
-Follow the steps below to configure a service so as to extract its related alert data from Pingdom. Squadcast will then process this information to create incidents for this service as per your preferences.
+This document will help you integrate Pingdom with Squadcast.
 
-## Using Pingdom as an Alert Source
+[Pingdom](https://www.pingdom.com/) helps you gain instant insights into your website’s availability and performance so that you can outsmart competition with an amazing end-user experience.
 
-On the **Sidebar**, click on **Services**.
+Route detailed events from Pingdom to the right users in Squadcast.
 
-You can either choose to use existing service or [create a new service](adding-a-service-1)
+## How to integrate Pingdom with Squadcast
 
-Now, click on the corresponding **Alert Sources** button.
+### In Squadcast: Using Pingdom as an Alert Source
+
+**(1)** In the **Sidebar**, click on **Services**
+
+![](images/integration_1-1.png)
+
+**(2)** Select an existing Service or **Add service** 
+
+![](images/integration_1-2.png)
+
+**(3)** Click the corresponding **Alert Sources**
 
 ![](images/integration_1.png)
 
-Select **Pingdomr** from  **Alert Source** drop down and copy the Webhook URL shown.
+**(4)** Search for **Pingdom** from  the **Alert Source** dropdown and copy the Webhook
 
 ![](images/pingdom_1.png)
 
@@ -31,22 +41,50 @@ Select **Pingdomr** from  **Alert Source** drop down and copy the Webhook URL sh
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-## Create a Squadcast Webhook in Pingdom
+### In Pingdom: Create a Squadcast Webhook
 
-Now login to your Pingdom account.
+**(1)** From the navigation bar on the left, select **Settings** and select **Integrations**
 
-Click on **Integrations** to go to the Integrations page.
+![](images/pingdom_2.png)
 
-![](images/pingdom_2.png){: style="max-width: 30%" }
-
-Click on "**Add Integration**" and in the subsequent dialog box select type as "**Webhook**" and provide an appropriate name for the integration. Enter the URL obtained earlier and tick the "**Active Checkbox**". Finally click on "**Save Integration**" button. 
+**(2)** Click on **Add integration** on the top right
 
 ![](images/pingdom_3.png)
 
-Now you can connect this integration to any of yours checks on Pingdom.
+**(3)** Here:
+
+- Select **Type** as **Webhook** from the dropdown
+
+- Give the Webhook a **Name**
+
+- Paste the previously copied Webhook from Squadcast under **URL**
+
+- Ensure the **Active** option is checked
+
+- Finally, click on **Save integration**
 
 ![](images/pingdom_4.png)
 
-That's it! Your Pingdom integration is now good to go.
+**(4)** Back in your **Integrations** page, you should now be able to see the newly added Webhook for Squadcast
 
-Once a check gets **UP** or **SUCCESS** from Pingdom it will automatically be resolved inside Squadcast.
+![](images/pingdom_5.png)
+
+**(5)** Now, associate this integration to any of yours checks on Pingdom
+
+Here, we have simply associated this Webhook integration with one of Pingdom's Uptime Checks.
+
+![](images/pingdom_6.png)
+
+**Note**: Please check the **Alert when back up** checkbox. If this is not done, when an alert recovers in Pingdom, the corresponding incident for in Squadcast will not get **auto-resolved**.
+
+
+{{site.data.alerts.yellow-note-i-md}}
+**Test Alerts from Pingdom**
+
+To check if the configured Webhook integration is functioning as expected, within your **Checks**, you have an option to do so. Against the configured Squadcast Webhook, click on **Test**. This generates a test alert to Squadcast. In Squadcast, you will be able to see the test incident created by this alert from Pingdom in the Incident Dashboard or the Incident List. This will confirm that the integration is working fine. You will have to **manually resolve** this incident in Squadcast.
+
+![](images/pingdom_7.png)
+{{site.data.alerts.end}}
+
+
+That is it, you are good to go! Everytime an alert is created in Pingdom, an incident would be created in Squadcast. When the alert is resolved (changes state to **Up** or **Success**) in Pingdom, the corresponding incident in Squadcast will be **automatically resolved**.
