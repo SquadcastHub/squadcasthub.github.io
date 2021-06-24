@@ -66,7 +66,7 @@ Example Use Case:
 I want to look for a postmortem that contains the string `jira` in its Incident Message. 
 
 - Type in `?:` if you want to look up the query token 
-- Type in `in: postmortem message "jira"`
+- Type in `in: postmortems message "jira"`
 - Hit `Command + Enter`
 
 Your search results that match this query will be populated as shown below
