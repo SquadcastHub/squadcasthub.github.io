@@ -221,6 +221,11 @@ toc: false
                 rest.innerHTML = 'No Results to display'+'<div style="display: flex; justify-content: flex-end"><img src="images/algolia-blue-mark.svg" style="width: 20px;"></div>';
               }
             });
+            dataLayer.push({
+                'event': 'searchEvent',
+                'gtm.elementId': 'wf-form-search',
+                'searchValue': val
+            });
           }
           field.onkeyup = function(event){
             if(field.value == ''){
