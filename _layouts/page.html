@@ -248,7 +248,8 @@ li.sidebarTitle{
     var images = document.getElementsByTagName('img');
     var host = document.location.origin.length + 8;
     for (i = 0; i < images.length; i++){
-        if (images[i].src.slice(host) != 'squadcast_logo_white.png' && images[i].src.slice(host) != 'company_logo.png' && images[i].src != 'https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5f87f57c067f42b537759cbc_ic_thumb_up.svg' && images[i].src != 'https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5f87fa4bf5fd371b4db470db_ic_thumb_down.svg' && images[i].parentElement.localName != 'a' && window.location.pathname != '/'){            var img = images[i].parentElement.innerHTML;
+        if (images[i].src.slice(host) != 'squadcast_logo_white.png' && images[i].src.slice(host) != 'company_logo.png' && images[i].src != 'https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5f87f57c067f42b537759cbc_ic_thumb_up.svg' && images[i].src != 'https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5f87fa4bf5fd371b4db470db_ic_thumb_down.svg' && images[i].parentElement.localName != 'a' && window.location.pathname != '/'){
+            var img = images[i].parentElement.innerHTML;
             var src = images[i].src;
             var lb = "<a href='"+src+"' style='cursor: zoom-in;'>"+img+"</a>";
             images[i].parentElement.innerHTML = lb;
