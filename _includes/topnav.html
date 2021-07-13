@@ -97,6 +97,11 @@
                             rest1.innerHTML = 'No Results to display'+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }
                         });
+                        dataLayer.push({
+                            'event': 'searchEvent',
+                            'gtm.elementId': 'wf-form-search',
+                            'searchValue': val
+                        });
                     }
                     field1.onkeyup = function(event1){
                         if(field1.value == ''){
