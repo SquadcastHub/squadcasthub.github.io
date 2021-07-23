@@ -339,3 +339,7 @@ The number of **Public StatusPages** that can be added depend on the [Pricing Pl
 No, there is **no limit on the number of subscribers** to your StatusPage. You are also **not charged for subscriptions** to your StatusPage. 
 
 However, you will **not be able to view the list of subscribers** that have subscribed to your StatusPage.
+
+#### 18. I have an open incident in Squadcast for one of my Services from 2 days ago, however, the health of the affected Service in the StatusPage went back to being healthy. Is this expected?
+
+Typically, critical incidents are resolved by Organizations within 24 hours of them being triggered. Squadcast keeps track of only those incidents affecting the Services displayed on your StatusPage **that occurred in the current day**. Post this duration, the health of the affected Service goes back to being healthy, since the open incident/s for it are older than 1 day.
