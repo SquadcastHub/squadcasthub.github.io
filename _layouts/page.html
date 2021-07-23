@@ -151,7 +151,7 @@ li.sidebarTitle{
                             '</div>'+
                         '</div>'+
                     '</div>';
-                    if(window.location.pathname.slice(1,5) == 'docs'){
+                    if(window.location.pathname.slice(1,5) == 'docs' && window.location.pathname != '/docs/'){
                         document.getElementById('feedback').innerHTML = htm;
                         document.getElementById('yes-b').onclick = function(){
                             document.getElementById('form-block').style.display = 'block';
