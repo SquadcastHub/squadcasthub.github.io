@@ -162,7 +162,7 @@
 "tags": "ssoazure active directory",
 "keywords": "",
 "url": "/docs/azure-active-directory-sso",
-"summary": "Enable Azure Active Directory Single Sign On (SSO) for your Squadcast organisation"
+"summary": "Enable Azure Active Directory Single Sign-On (SSO) for your Squadcast Organisation"
 }
 ,
 
@@ -323,17 +323,6 @@
 
 
 {
-"title": "Create Smart Squads",
-"tags": "smart squads",
-"keywords": "",
-"url": "/docs/create-smart-squads",
-"summary": "Smart Squads allow you to dynamically add users to a Squad by integrating with your Version Control Tool"
-}
-,
-
-
-
-{
 "title": "Dashboard Metrics",
 "tags": "dashboard metrics",
 "keywords": "",
@@ -367,7 +356,7 @@
 
 
 {
-"title": "Deactivating your  Squadcast Account",
+"title": "Deactivate your  Squadcast Account",
 "tags": "deactivatingaccount",
 "keywords": "",
 "url": "/docs/deactivating-your-squadcast-account",
@@ -378,7 +367,7 @@
 
 
 {
-"title": "Deleting your Squadcast Account",
+"title": "Delete your Squadcast Account",
 "tags": "deletingaccount",
 "keywords": "",
 "url": "/docs/deleting-your-squadcast-account",
@@ -427,6 +416,17 @@
 "keywords": "",
 "url": "/docs/email",
 "summary": "Send alerts to Squadcast via Email"
+}
+,
+
+
+
+{
+"title": "Errorception",
+"tags": "",
+"keywords": "",
+"url": "/docs/errorception",
+"summary": "Send error notifications to Squadcast from Errorception"
 }
 ,
 
@@ -484,17 +484,6 @@
 "keywords": "",
 "url": "/docs/ghost-inspector",
 "summary": "Trigger a Squadcast Incident for any failed UI tests from Ghost Inspector"
-}
-,
-
-
-
-{
-"title": "GitHub",
-"tags": "integrationgithub",
-"keywords": "",
-"url": "/docs/github",
-"summary": "Enable Squadcast to track user activity (commits) on Github"
 }
 ,
 
@@ -1090,6 +1079,17 @@
 
 
 {
+"title": "Progress WhatsUp Gold",
+"tags": "",
+"keywords": "",
+"url": "/docs/progress_whatsup_gold",
+"summary": "Send notifications to Squadcast from Progress WhatsUp Gold"
+}
+,
+
+
+
+{
 "title": "Prometheus",
 "tags": "integrationprometheus",
 "keywords": "",
@@ -1128,6 +1128,17 @@
 "keywords": "",
 "url": "/docs/rapid7-insightidr",
 "summary": "Get alerts from Rapid7 InsightIDR into Squadcast"
+}
+,
+
+
+
+{
+"title": "Redash",
+"tags": "",
+"keywords": "",
+"url": "/docs/redash",
+"summary": "Send notifications to Squadcast from Redash"
 }
 ,
 
@@ -1309,18 +1320,18 @@
 "tags": "integrationslack",
 "keywords": "",
 "url": "/docs/slack",
-"summary": "Trigger, Ack, Resolve incidents from Slack."
+"summary": "Trigger, Acknowledge, Resolve & Reassign incidents from Slack"
 }
 ,
 
 
 
 {
-"title": "Slack Alert Source Integration",
+"title": "Slack",
 "tags": "integrationslack",
 "keywords": "",
 "url": "/docs/slack-as-an-alert-source",
-"summary": "Slack Alert Source"
+"summary": "Create incidents in Squadcast from Slack"
 }
 ,
 
@@ -1474,7 +1485,7 @@
 "tags": "integrationsysdig monitor",
 "keywords": "",
 "url": "/docs/sysdig-monitor",
-"summary": "Get alerts from Sysdig Monitor into Squadcast"
+"summary": "Send alerts to Squadcast from Sysdig Monitor"
 }
 ,
 
@@ -1562,6 +1573,17 @@
 "keywords": "",
 "url": "/docs/using-the-mobile-app",
 "summary": "This document briefly explains all that you can do on our native mobile application available for both iOS and Android."
+}
+,
+
+
+
+{
+"title": "Wavefront",
+"tags": "",
+"keywords": "",
+"url": "/docs/wavefront",
+"summary": "Send notifications to Squadcast from Wavefront"
 }
 ,
 
