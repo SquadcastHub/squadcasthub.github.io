@@ -61,7 +61,7 @@ Event Tagging can be achieved by defining Tagging Rules for each Service in Squa
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b>
-<br/><br/><p>Once you opt for the Raw String method, you cannot revert to the UI-based Rule Builder method.</p>
+<br/><br/><p>Once you opt for the Raw String method for a rule, you cannot revert to the UI-based Rule Builder method.</p>
 {{site.data.alerts.end}}
 
 (a) On the right, you can view the payload of the latest alert for the chosen Alert Source
@@ -97,7 +97,7 @@ If you have 2 Tagging Rules for a Service:<br/>
 - Rule 2 with Tag Mapping Environment:QA-INTER<br/>
 Say, if your "match" condition string is “healthcheckstatus-QA-INTER-TESTING“, tag "Environment:QA-INTER" is created. 
 If you interchange the order of Rule 1 and Rule 2, tag "Environment:QA" is created instead.<br/><br/>
-Therefore, always ensure that you write your Tagging Rules in the correct order for desired behaviour or try and make your them as specific as possible.</p>
+Therefore, always ensure that you write your Tagging Rules in the correct order for desired behaviour or try and make them as specific as possible.</p>
 {{site.data.alerts.end}}
 
 ### Predefined commands that can be used to create Tagging Rules
