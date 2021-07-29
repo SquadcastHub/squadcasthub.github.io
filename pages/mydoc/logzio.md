@@ -64,6 +64,20 @@ Find more details on how each of these parameters can be configured [here](https
 
 ![](images/logzio_4.png)
 
+{% raw %}
+```json
+{
+    "alert_title": "{{alert_title}}",
+    "alert_description": "{{alert_description}}",
+    "alert_severity": "{{alert_severity}}",
+    "account_id": "{{account_id}}",
+    "account_name": "{{account_name}}",
+    "alert_samples": "{{alert_samples}}",
+    "alert_tags_json": "[{{alert_tags_json}}]"
+}
+```
+{% endraw %}
+
 **(4)** Next, to create the alert itself, you can either: 
 
 - Go to **Alerts & Events > New Alert** or,

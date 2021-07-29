@@ -319,6 +319,10 @@ entries:
             url: /docs/errorception
             output: web, pdf
 
+          - title: Freshdesk
+            url: /docs/freshdesk
+            output: web, pdf
+
           - title: Freshping
             url: /docs/freshping
             output: web, pdf
