@@ -85,11 +85,14 @@ Route detailed ticket alerts from Freshdesk to the right users in Squadcast.
 ![](images/freshdesk_6.png)
 
 **(4)** Do the following for sending **resolve alert** to Squadcast:
+
 **(a)** Navigate to **Ticket Updates** tab and click on **New Rule**
 
 ![](images/freshdesk_7.png)
 
-**(b)** Fill the below form according to your requirements. For example:
+**(b)** Fill the below form according to your requirements. 
+
+For example:
 
 ![](images/freshdesk_8.png)
 
@@ -100,6 +103,7 @@ Route detailed ticket alerts from Freshdesk to the right users in Squadcast.
 Find more details on Rule creation [here](https://support.freshdesk.com/support/solutions/articles/132589)
 
 **(5)** Next, to create the alert, follow the steps below: 
+
 **(a)** Click on **New > New Ticket** or,
 
 ![](images/freshdesk_10.png)
