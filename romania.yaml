@@ -1,0 +1,5 @@
+_id: RO
+country: Romania
+dial_code: "40"
+use_source: SQUADCAST
+preferred_provider: plivo

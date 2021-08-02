@@ -1,0 +1,5 @@
+_id: DE
+country: Germany
+dial_code: "49"
+use_source: SQUADCAST
+preferred_provider: plivo

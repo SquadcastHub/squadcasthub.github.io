@@ -1,0 +1,5 @@
+_id: LU
+country: Luxemborg
+dial_code: "352"
+use_source: SQUADCAST
+preferred_provider: plivo

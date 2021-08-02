@@ -1,0 +1,5 @@
+_id: LK
+country: Sri Lanka
+dial_code: "94"
+use_source: SQUADCAST
+preferred_provider: plivo
