@@ -1,0 +1,5 @@
+_id: BR
+country: Brazil
+dial_code: "55"
+use_source: ""
+preferred_provider: plivo
