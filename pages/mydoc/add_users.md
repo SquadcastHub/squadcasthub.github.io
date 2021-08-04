@@ -88,6 +88,12 @@ New rows will auto-populate as you start filling the fields.
 <br/><br/><p>You will not be able to transfer <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Account Ownership</code> with the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Add User</code> flow.</p>
 {{site.data.alerts.end}}
 
+{{site.data.alerts.yellow-note-i}}
+<b>Note</b>
+<br/><br/>
+In order to use mobile app, make sure you have verified your email address. You can do that by opening the verification link sent in your email in a browser.
+{{site.data.alerts.end}}
+
 ### FAQs
 
 **Q**: Can I add more than one Account Owner?
