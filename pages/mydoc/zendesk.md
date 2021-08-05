@@ -54,7 +54,7 @@ Route detailed ticket alerts from Zendesk to the right users in Squadcast.
 
 ![](images/zendesk_4.png)
 
-**(4)** Click on **Actions** and then, select **Create webhook**.
+**(4)** Click on **Actions** and then, select **Create webhook**
 
 ![](images/zendesk_5.png)
 
@@ -69,6 +69,34 @@ Then, click on **Create**
 
 ![](images/zendesk_6.png)
 
+{{site.data.alerts.yellow-note-i-md}}
+**Testing the configured Squadcast Webhook:**
+
+**(a)** Click on **Test webhook**
+
+**(b)** From the drop-down for **Test event source**, select **Custom test**
+
+**(c)** In the placeholder for **Request JSON Body**, add the following `JSON template`:
+
+{% raw %}
+```json
+{
+    "ticket_id": 35436,
+    "ticket_title": "This is a test incident for Zendesk",
+    "ticket_priority": "low",
+    "ticket_status": "Open",
+    "ticket_description": "---\n\nCurrent Date and Time\n\nHello user, the integration is working as expected!!!"
+}
+```
+{% endraw %}
+
+**(d)** Click on **Send test** to generate this test alert
+
+Back in Squadcast, you will now be able to see a test incident created for this test alert, thus concluding that the integration is working as expected.
+
+![](images/zendesk_13.png)
+{{site.data.alerts.end}}
+
 **(6)** In the Zendesk Support interface, click on the **Admin** icon in the sidebar, then select **Business Rules > Triggers**
 
 ![](images/zendesk_7.png)
@@ -82,7 +110,7 @@ Then, click on **Create**
 ![](images/zendesk_9.png)
 
 
-**(9)** under **Actions**, click on **Add action**. Select **Notify active webhook** and then select your webhook and paste the below json in the placeholder for **JSON body**.
+**(9)** Under **Actions**, click on **Add action**. Select **Notify active webhook** and then select your webhook and paste the below json in the placeholder for **JSON body**
 
 ![](images/zendesk_10.png)
 
@@ -121,7 +149,7 @@ Then, click on **Create**
 ```
 {% endraw %}
 
-Find more details on Rule Creation [here](https://support.zendesk.com/hc/en-us/articles/1260803996569-Creating-a-webhook)
+Find more details on _Rule Creation_ [here](https://support.zendesk.com/hc/en-us/articles/1260803996569-Creating-a-webhook).
 
 **(10)** Next, to create the alert, follow the steps below: 
 
@@ -137,6 +165,7 @@ Find more details on Rule Creation [here](https://support.zendesk.com/hc/en-us/a
 - status **Closed -> to resolve incident at Squadcast**
 
 Then, click on **Create**
+
 ![](images/zendesk_12.png)
 
-That is it, you are now good to go! Whenever a ticket is created as `New` or `Open`, an incident will be created in Squadcast. When the ticket is either `Solved` or `Closed` in Zendesk, the corresponding incident will automatically get resolved in Squadcast as well.
+That is it, you are now good to go! Whenever a ticket is created with `New` or `Open` status, an incident will be created in Squadcast for it. When the ticket is either `Solved` or `Closed` in Zendesk, the corresponding incident will automatically get resolved in Squadcast as well.
