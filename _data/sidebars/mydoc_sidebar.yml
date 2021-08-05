@@ -448,7 +448,7 @@ entries:
             output: web, pdf
 
           - title: Progress WhatsUp Gold
-            url: /docs/progress_whatsup_gold
+            url: /docs/progress-whatsup-gold
             output: web, pdf          
 
           - title: PRTG Network Monitor
