@@ -4,7 +4,7 @@ keywords:
 last_updated: 
 summary: "Send notifications to Squadcast from Progress WhatsUp Gold"
 sidebar: mydoc_sidebar
-permalink: docs/progress_whatsup_gold
+permalink: docs/progress-whatsup-gold
 folder: mydoc
 ---
 
