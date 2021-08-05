@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate Zendesk with Squadcast.
 
-[Zendesk](https://www.zendesk.com/) makes customer service better. We build software to meet customer needs, set your team up for success, and keep your business in sync.
+[Zendesk](https://www.zendesk.com/) makes customer service better. Zendesk is built to meet customer needs, set teams up for success, and keep the business in sync.
 
 Route detailed ticket alerts from Zendesk to the right users in Squadcast.
 
@@ -22,15 +22,15 @@ Route detailed ticket alerts from Zendesk to the right users in Squadcast.
 
 ![](images/integration_1-1.png)
 
-**(2)** Select an existing Service or **Add service** 
+**(2)** Select an existing Service or **Add Service** 
 
 ![](images/integration_1-2.png)
 
-**(3)** Click the corresponding **Alert Sources**
+**(3)** Click on the corresponding **Alert Sources**
 
 ![](images/integration_1.png)
 
-**(4)** Search for **Zendesk** from  the **Alert Source** drop-down menu and copy the Webhook 
+**(4)** Search for **Zendesk** from the **Alert Source** drop-down menu and copy the Webhook
 
 ![](images/zendesk_1.png)
 
@@ -42,7 +42,7 @@ Route detailed ticket alerts from Zendesk to the right users in Squadcast.
 
 ### In Zendesk: Create a Squadcast webhook alert
 
-**(1)** In the app, Click the **Zendesk Products icon** in the top bar, then click on **Admin Center**
+**(1)** In the app, click the **Zendesk Products** icon in the top bar, and then click on **Admin Center**
 
 ![](images/zendesk_2.png)
 
@@ -54,24 +54,26 @@ Route detailed ticket alerts from Zendesk to the right users in Squadcast.
 
 ![](images/zendesk_4.png)
 
-**(4)** Click **Actions** and select **Create webhook**.
+**(4)** Click on **Actions** and then, select **Create webhook**.
 
 ![](images/zendesk_5.png)
 
-**(5)** Fill in the form as shown in the bellow and click on **Create**:
+**(5)** Fill in the details as indicated below
 
 - Provide any **Name**
 - **Endpoint URL**: Paste the previously copied Squadcast webhook here
 - **Request method**: `POST`
 - **Request format**: `JSON`
 
+Then, click on **Create**
+
 ![](images/zendesk_6.png)
 
-**(6)** In the Zendesk Support interface, click the **Admin icon** in the sidebar, then select **Business Rules > Triggers**
+**(6)** In the Zendesk Support interface, click on the **Admin** icon in the sidebar, then select **Business Rules > Triggers**
 
 ![](images/zendesk_7.png)
 
-**(7)** [Create a new trigger](https://support.zendesk.com/hc/en-us/articles/203662106) click on **Add trigger**.
+**(7)** [Create a new trigger](https://support.zendesk.com/hc/en-us/articles/203662106) by clicking on **Add trigger**
 
 ![](images/zendesk_8.png)
 
@@ -80,7 +82,7 @@ Route detailed ticket alerts from Zendesk to the right users in Squadcast.
 ![](images/zendesk_9.png)
 
 
-**(9)** under **Actions**, click **Add action**. Select **Notify active webhook** and then select your webhook and paste below json in **JSON body**.
+**(9)** under **Actions**, click on **Add action**. Select **Notify active webhook** and then select your webhook and paste the below json in the placeholder for **JSON body**.
 
 ![](images/zendesk_10.png)
 
@@ -119,7 +121,7 @@ Route detailed ticket alerts from Zendesk to the right users in Squadcast.
 ```
 {% endraw %}
 
-Find more details on Rule creation [here](https://support.zendesk.com/hc/en-us/articles/1260803996569-Creating-a-webhook)
+Find more details on Rule Creation [here](https://support.zendesk.com/hc/en-us/articles/1260803996569-Creating-a-webhook)
 
 **(10)** Next, to create the alert, follow the steps below: 
 
@@ -127,13 +129,14 @@ Find more details on Rule creation [here](https://support.zendesk.com/hc/en-us/a
 
 ![](images/zendesk_11.png)
 
-**(b)** Fill the form below and click on **Create**
+**(b)** Fill in the fields as shown below:
 
 - status **New -> to trigger incident at Squadcast**
 - status **Open -> to trigger incident at Squadcast**
 - status **Solved -> to resolve incident at Squadcast**
 - status **Closed -> to resolve incident at Squadcast**
 
+Then, click on **Create**
 ![](images/zendesk_12.png)
 
 That is it, you are now good to go! Whenever a ticket is created as `New` or `Open`, an incident will be created in Squadcast. When the ticket is either `Solved` or `Closed` in Zendesk, the corresponding incident will automatically get resolved in Squadcast as well.
