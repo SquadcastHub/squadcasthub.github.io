@@ -562,6 +562,10 @@ entries:
           - title: Zabbix 5.0
             url: /docs/zabbix-5
             output: web, pdf
+          
+          - title: Zendesk
+            url: /docs/zendesk
+            output: web, pdf
 
       - title: Extensions
         output: web, pdf
