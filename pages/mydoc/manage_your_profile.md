@@ -13,9 +13,9 @@ folder: mydoc
 
 **(1)** Click on the user icon in the upper right corner and select **Profile**
 
-![](images/manage_account_1.png)
+![](images/manage_your_profile_1.png)
 
-**(2)** On your **Profile** page, you can
+**(2)** On your **Profile** page, you can:
 
 (a) Edit your _First Name_ and _Last Name_
 
@@ -31,15 +31,11 @@ folder: mydoc
 
 (g) For the past week, view the number of incidents Acknowledged and Resolved by you, along with MTTA and MTTR
 
-![](images/manage_account_2.png)
+### Edit Profile
 
-## Edit Profile
-
-**(1)** Click on **More Options Icon**, and select **Edit**
+**(1)** Click on **More Options** icon, and select **Edit**
 
 **(2)** Fill out the details and click **Save**
-
-![](images/manage_account_9.png)
 
 ## Change Password
 
@@ -48,8 +44,6 @@ folder: mydoc
 **(2)** Fill out _Current Password_, _New Password_ and _Re-enter New Password_
 
 **(3)** Click on **Save**
-
-![](images/manage_account_10.png)
 
 ## Change Mobile Number
 
