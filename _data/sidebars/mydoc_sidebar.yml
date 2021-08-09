@@ -327,6 +327,10 @@ entries:
             url: /docs/freshping
             output: web, pdf
 
+          - title: Freshservice
+            url: /docs/freshservice
+            output: web, pdf
+
           - title: Ghost Inspector
             url: /docs/ghost-inspector
             output: web, pdf
