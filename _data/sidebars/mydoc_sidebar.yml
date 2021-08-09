@@ -326,6 +326,10 @@ entries:
           - title: Freshping
             url: /docs/freshping
             output: web, pdf
+          
+          - title: Freshservice
+            url: /docs/freshservice
+            output: web, pdf
 
           - title: Ghost Inspector
             url: /docs/ghost-inspector
@@ -448,7 +452,7 @@ entries:
             output: web, pdf
 
           - title: Progress WhatsUp Gold
-            url: /docs/progress-whatsup-gold
+            url: /docs/progress_whatsup_gold
             output: web, pdf          
 
           - title: PRTG Network Monitor
