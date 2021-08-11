@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate Freshservice with Squadcast.
 
-[Freshservice](https://freshservice.com/) Extends digital capabilities and deliver exceptional employee experiences with an intuitive, scalable, no code solution.
+[Freshservice](https://freshservice.com/) extends digital capabilities and delivers exceptional employee experiences with an intuitive, scalable, no code solution.
 
 Route detailed ticket alerts from Freshservice to the right users in Squadcast.
 
@@ -46,52 +46,91 @@ Route detailed ticket alerts from Freshservice to the right users in Squadcast.
 
 ![](images/freshservice_2.png)
 
-**(2)** Click on **New Automator > Ticket**
+**(2)** Click on **New Automator** and select the suitable category from the drop-down. Here, we have selected **Ticket**
 
 ![](images/freshservice_3.png)
 
-**(3)** Provide title and click on **Create**
+**(3)** Provide a **Title** and an optional **Description**. Next, click on **Create**
 
 ![](images/freshservice_4.png)
 
-**(4)** Fill in the form as shown in the below screenshot (you can put your own checks):
+**(4)** In the **Events** section, you can select and add the **Events** of your choice. Here, we have added 3 Events as shown in the screenshot. Then, click on **Done**
 
 ![](images/freshservice_5.png)
 
-**(5)** Drag **ACTION** and put after **Ticket is raised**.
+**(5)** Drag **ACTION** from the menu on the left on to the screen
 
 ![](images/freshservice_6.png)
 
-**(6)** Fill **Perform these actions** form as shown below:
+**(a)** From the drop-down for **Perform these actions on**, select **Ticket**
 
-- Select **Trigger webhook**
+**(b)** Then, from the next drop-down, select **Trigger Webhook**
 
 ![](images/freshservice_7.png)
 
-- **Request Type**: `POST`
-- **Callback URL**: Paste the previously copied Squadcast webhook here
-- **Encoding** `JSON`
-- `Simple`
-- **Content**: Select All feilds  
+**(c)** Choose **Request Type** as `POST`
 
-Then, click on **Done**
+**(d)** In **Callback URL** paste the previously copied Squadcast webhook URL here
+
+**(e)** Choose **Encoding** as `JSON` and `Simple`
+
+**(f)** In **Content**, you can select all of the available fields to send complete information as the alert to Squadcast. 
+
+As the bare minimum, please select the below:
+
+{% raw %}
+```json
+ticket_status
+ticket_id
+ticket_priority
+ticket_subject
+ticket_due_by_time
+ticket_description
+ticket_source
+ticket_department_name
+ticket_category
+ticket_url
+ticket_portal_url
+approval_url
+approval_portal_url
+ticket_group_name
+associated_asset_names
+ticket_tags
+ticket_agent_email
+ticket_agent_name
+ticket_requester_name
+ticket_requester_email
+ticket_requester_phone
+```
+{% endraw %}
+
+**(g)** Then, click on **Done**
 
 ![](images/freshservice_8.png)
 
-**(7)** Click on **Activate**
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+The **Test Webhook** option sends empty data on the configured **Callback URL**. As a result, since no data is available in the alert payload, no incident is created in Squadcast for it. **Please create a test ticket post configuring this webhook as indicated in this document to see a test incident created for it in Squadcast**, to ensure that the configuration is working as expected.
+{{site.data.alerts.end}}
+
+**(6)** Click on **Activate**
 
 ![](images/freshservice_9.png)
 
-**(8)** Do the following for sending **resolve alert** to Squadcast:
-**(a)** Follow point **1-3**
-**(b)** Fill in the form as shown in the below screenshot
+**(7)** Do the following for sending **resolve alerts** to Squadcast:
+
+**(a)** Follow steps **1-3**
+
+**(b)** Fill in the form as shown in the screenshot below:
 
 ![](images/freshservice_10.png)
 
-**(c)** Follow point **5-7**
+**(c)** Follow steps **5 and 6**
 
-**(9)** Next, to create the alert, follow the steps below: 
-**(a)** Click on **➕(plus) icon > Incident**,
+**(8)** Next, to create the alert, follow the steps below: 
+
+**(a)** Click on **➕**(plus) icon and select any of the available options in the drop-down. Here, we have selected **Incident**
 
 ![](images/freshservice_11.png)
 
@@ -99,8 +138,14 @@ Then, click on **Done**
 
 ![](images/freshservice_12.png)
 
-- status **Open -> to trigger incident at Squadcast**
-- status **Resolved -> to resolve incident at Squadcast**
-- status **Closed -> to resolve incident at Squadcast**
+- **Status** `Open` -> **to trigger incident at Squadcast**
+- **Status** `Resolved` -> **to resolve incident at Squadcast**
+- **Status** `Closed` -> **to resolve incident at Squadcast**
 
-That is it, you are now good to go! Whenever a ticket is created as `New` or `Open`, an incident will be created in Squadcast. When the ticket is either `Solved` or `Closed` in Zendesk, the corresponding incident will automatically get resolved in Squadcast as well.
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+If you have configured [Custom Statuses](https://support.freshservice.com/support/solutions/articles/156452-customizing-helpdesk-statuses) in Freshservice and want to use one of the configured Custom Statuses for ticket creation/resolution (in turn, triggering/resolving corresponding incidents in Squadcast), kindly reach out to [support@squadcast.com](support@squadcast.com) for further details on this.
+{{site.data.alerts.end}}
+
+That is it, you are now good to go! Whenever a ticket is created with `Open` status, an incident will be created in Squadcast. When the ticket is either `Solved` or `Closed` in Freshservice, the corresponding incident will automatically get resolved in Squadcast as well.
