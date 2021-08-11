@@ -13,15 +13,11 @@ Follow the steps below to configure a service so as to extract its related alert
 
 ## Using Azure Monitor as an Alert Source
 
-On the **Sidebar**, click on **Services**.
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-You can either choose to use existing service or [create a new service](adding-a-service-1)
+![](images/alert_source_1.png)
 
-Now, click on the corresponding **Alert Sources** button.
-
-![](images/integration_1.png)
-
-Select **Azure Monitor** from  **Alert Source** drop down and copy the Webhook URL shown.
+**(2)** Search for **Azure Monitor** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/azure_1.png)
 
