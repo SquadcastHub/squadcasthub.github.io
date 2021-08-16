@@ -4,7 +4,7 @@ keywords:
 last_updated: 
 summary: "A Squad is a group of users corresponding to a team or a project"
 sidebar: mydoc_sidebar
-permalink: docs/squads-v2
+permalink: docs/squads
 folder: mydoc
 ---
 
