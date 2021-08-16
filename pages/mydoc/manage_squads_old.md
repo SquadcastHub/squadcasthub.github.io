@@ -1,3 +1,4 @@
+---
 title: Manage Squads
 tags: [squads]
 keywords: 
