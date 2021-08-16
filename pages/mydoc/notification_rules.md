@@ -10,7 +10,7 @@ permalink: docs/notification-rules
 folder: mydoc
 ---
 
-Notification Rules determine how an individual user is notified for an incident that is assigned to them. You can set up rules to be notified notify on any of the following notification channels: 
+Notification Rules determine how an individual user is notified for an incident that is assigned to them. One can set up rules to be notified on any of the following notification channels: 
 
 - Email
 - [Push notification on the Squadcast mobile app](using-the-mobile-app)
@@ -19,10 +19,10 @@ Notification Rules determine how an individual user is notified for an incident 
 
 {{site.data.alerts.blue-note}}
 <b>Edit Notification Rules for other users of Squadcast</b><br/><br/>
-<p>Irrespective of your User Role in Squadcast, you will only be able to set/edit your own Notification Rules. You will not be able to do it for any other member of Squadcast.</p>
+<p>Irrespective of your User Role in Squadcast, you will only be able to set/edit your own Notification Rules. You will not be able to do it for any other member of Squadcast. If you wish to explicitly specify Notification Channels for all the users, this can be done in the Escalation Policy by selecting <b>Custom</b> from the drop-down.</p>
 {{site.data.alerts.end}}
 
-## Edit Notification Rules
+### Edit Notification Rules
 
 **(1)** Click on the user icon in the upper right corner and select **Profile** 
 
@@ -40,13 +40,21 @@ Notification Rules determine how an individual user is notified for an incident 
 
 ![](images/notification_rules_3.png)
 
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
 By default, every new user’s **Notification Rules** would be defined by Squadcast as indicated by the screenshot below:
 
+
 ![](images/notification_rules_4.png)
+{{site.data.alerts.end}}
 
-You're good to go. Now, when an incident is assigned to **you**, you will be notified based on your preferences set in the **Notification Rules** section.
+You're good to go. Now, when an incident is assigned to **you**, you will be notified based on your notification preferences set in the **Notification Rules** section.
 
-{{site.data.alerts.green-note-check}}
-<b>Pro Tip: </b>
-<p><br/>You can set up a rule to be notified immediately, as soon as the incident is triggered, if you input 0 in the text box that asks for time.</p>
+{{site.data.alerts.yellow-note-i-md}}
+**Things to Note:**
+
+**(1)** You can set up a rule to be notified immediately, as soon as the incident is triggered, if you input 0 in the text box that asks for time.
+
+**(2)** You cannot add `SMS` and `Phone` multiple times within your Notification Rules. The required repetition can be achieved by setting up the Escalation Policies right. However, there are no such limits for `Push` or `Email`.
 {{site.data.alerts.end}}
