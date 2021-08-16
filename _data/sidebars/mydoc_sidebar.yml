@@ -37,6 +37,13 @@ entries:
             url: /docs/squadcast-faq
             output: web, pdf
 
+      - title: Squads
+        output: web, pdf
+        folderitems:
+          - title: Manage Squads
+            url: /docs/squads
+            output: web, pdf
+
       - title: Services
         output: web, pdf
 
