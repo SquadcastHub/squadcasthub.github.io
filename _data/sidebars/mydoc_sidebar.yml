@@ -327,6 +327,10 @@ entries:
             url: /docs/freshping
             output: web, pdf
 
+          - title: Freshservice
+            url: /docs/freshservice
+            output: web, pdf
+
           - title: Ghost Inspector
             url: /docs/ghost-inspector
             output: web, pdf
@@ -469,6 +473,10 @@ entries:
 
           - title: Runscope
             url: /docs/runscope
+            output: web, pdf
+
+          - title: Salesforce cloud
+            url: /docs/salesforce-cloud
             output: web, pdf
 
           - title: Scout APM
