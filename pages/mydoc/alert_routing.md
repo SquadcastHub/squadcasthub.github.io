@@ -13,22 +13,23 @@ Alert Routing allows you to configure _Routing Rules_ to ensure that alerts are 
 
 ## Prerequisites
 
-- Only the Account Owner and Admins have Create, Read, Update and Delete capabilities for Routing Rules
-- First, ensure you have `Tags` [defined](https://support.squadcast.com/docs/event-tagging) for the Service
+- The User Role associated with the user in the Team must have required permissions to manage Services (ability to manage Routing Rules).
 
-## Configuring Routing Rules for a Service
+- Ensure you have `Tags` [defined](https://support.squadcast.com/docs/event-tagging) for the Service.
 
-**(1)** Navigate to **Services** from the sidebar
+## Configuring Routing Rules
+
+Ensure that the right Team is chosen from the team picker on the top of the screen.
+
+**(1)** Click on **Services** in the primary navigation
+
+**(2)** For the Service of your choice, click on **More options** icon and select **Routing Rules**
 
 ![](images/alert_routing_1.png)
 
-**(2)** For the Service of your choice, click on **More** and select **Routing Rules**
+### UI-based Rule Builder (Beginner-friendly)
 
-![](images/alert_routing_2.png)
-
-## UI-based Rule Builder (Beginner-friendly)
-
-**(a)** This box displays all the `event tags` [defined](https://support.squadcast.com/docs/event-tagging) for this Service, which can be used to define Routing Rules
+**(a)** This box displays all the `[event tags]`(https://support.squadcast.com/docs/event-tagging) defined for this Service, which can be used to define Routing Rules
 
 **(b)** Select **Add new rule**
 
@@ -51,7 +52,7 @@ Alert Routing allows you to configure _Routing Rules_ to ensure that alerts are 
 <br/><br/><p>The Alert Routing Rules will take precendence (override) over the default Escalation Policy for the Service, if any of the rules match (evaluate to True) an incoming incident.</p>
 {{site.data.alerts.end}}
 
-## Raw String Method
+### Raw String Method
 
 {{site.data.alerts.yellow-note-i}}
 <b>Note</b>
@@ -74,7 +75,9 @@ Alert Routing allows you to configure _Routing Rules_ to ensure that alerts are 
 
 ![](images/alert_routing_6.png)
 
-### The rule engine supports expressions with parameters, arithmetic, logical, and string operations
+### Supported Rules
+
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations.
 
 #### Basic Expressions
 
@@ -94,7 +97,7 @@ The available parameters are `tags`
 
 This can be used to check if a particular tag field matches a regular expression.
 
-## Example
+#### Example
 
 Below is the set of `event tags` defined for a Service (as shown in the right panel of the configuration space)
 
@@ -128,10 +131,30 @@ When:
 - `tags.severity == "high"` _route_ to an `escalation policy`
 - `tags.severity == "low"` _route_ to a `user`
 
-## FAQ
+## FAQs
 
 **(1)** How do I know if an incident gets routed due to a Routing Rule?
 
 In the Incident's Activity Timeline the reason for routing, and to which entity it gets routed to, is displayed.
 
 ![](images/routing_reason.png)
+
+**(2)** What kind of regex can be used to write custom rules?
+
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](https://regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
+
+![](images/de-duplication_9.png)
+
+**(3)** Can I create OR rules?
+
+Yes, you can. The evaluation between different Routing Rules is `OR`. Add multiple Routing Rules to enable `OR` evaluation.
+
+**(4)** While adding a Routing Rule, is the _search string_ in the rule case sensitive?
+
+Yes, that is correct. For example, if your seach string is "ALERT" and your payload does not contain "ALERT" but contains "Alert", this will not be matched. Your search string should be "Alert".
+
+**(5)** Do Routing Rules have priority?
+
+Yes, you can specify Execution Rule Priority for the rules defined by moving them `Up` or `Down` the list of rules.
+
+![](images/status-based-deduplication_5.png)
