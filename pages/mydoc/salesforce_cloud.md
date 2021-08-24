@@ -4,7 +4,7 @@ keywords:
 last_updated: 
 summary: "Send ticket details to Squadcast from Salesforse Cloud"
 sidebar: mydoc_sidebar
-permalink: docs/salesforce-Cloud
+permalink: docs/salesforce-cloud
 folder: mydoc
 ---
 
@@ -40,7 +40,7 @@ Route detailed ticket alerts from Salesforce Cloud to the right users in Squadca
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-### In Salesforce Cloud: Create a Squadcast webhook alert
+### In Salesforce Cloud: Create a Squadcast Webhook
 
 **(1)** Download the [squadcastClass.apxc](github.com) file
 
@@ -64,4 +64,4 @@ Route detailed ticket alerts from Salesforce Cloud to the right users in Squadca
 
 ![](images/salesforce_5.png)
 
-That is it, you are now good to go! Whenever a case is created with `New` or `Working` or `Escalated` status, an incident will be created in Squadcast for it. When the ticket is `Closed` in Salesforce Cloud, the corresponding incident will automatically get resolved in Squadcast as well.
+That is it, you are now good to go! Whenever a case is created with `New`, `Working` or `Escalated` status, an incident will be created in Squadcast for it. When the ticket is moved to `Closed` status in Salesforce Cloud, the corresponding incident will automatically get resolved in Squadcast as well.
