@@ -448,6 +448,10 @@ entries:
             url: /docs/runscope
             output: web, pdf
 
+          - title: Salesforce cloud
+            url: /docs/salesforce-cloud
+            output: web, pdf
+
           - title: Scout APM
             url: /docs/scout-apm
             output: web, pdf
