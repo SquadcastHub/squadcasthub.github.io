@@ -1,22 +1,22 @@
 ---
-title: Salesforce cloud
+title: Salesforce Cloud
 keywords: 
 last_updated: 
-summary: "Send ticket details to Squadcast from Salesforse cloud"
+summary: "Send ticket details to Squadcast from Salesforse Cloud"
 sidebar: mydoc_sidebar
-permalink: docs/salesforce-cloud
+permalink: docs/salesforce-Cloud
 folder: mydoc
 ---
 
-This document will help you integrate Salesforce cloud with Squadcast.
+This document will help you integrate Salesforce Cloud with Squadcast.
 
-[Salesforce cloud](https://www.salesforce.com) is the #1 CRM and leading platform for digital-first work are coming together.
+[Salesforce Cloud](https://www.salesforce.com) is the #1 CRM and leading platform for digital-first work are coming together.
 
-Route detailed ticket alerts from Salesforce cloud to the right users in Squadcast.
+Route detailed ticket alerts from Salesforce Cloud to the right users in Squadcast.
 
-## How to integrate Salesforce cloud with Squadcast
+## How to integrate Salesforce Cloud with Squadcast
 
-### In Squadcast: Using Salesforce cloud as an Alert Source
+### In Squadcast: Using Salesforce Cloud as an Alert Source
 
 **(1)** On the **Sidebar**, click on **Services**
 
@@ -30,7 +30,7 @@ Route detailed ticket alerts from Salesforce cloud to the right users in Squadca
 
 ![](images/integration_1.png)
 
-**(4)** Search for **Salesforce cloud** from the **Alert Source** drop-down menu and copy the Webhook
+**(4)** Search for **Salesforce Cloud** from the **Alert Source** drop-down menu and copy the Webhook
 
 ![](images/salesforce_1.png)
 
@@ -40,28 +40,28 @@ Route detailed ticket alerts from Salesforce cloud to the right users in Squadca
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-### In Salesforce cloud: Create a Squadcast webhook alert
+### In Salesforce Cloud: Create a Squadcast webhook alert
 
-**(1)** Download the [squadcastClass.apxc](github.com) file.
+**(1)** Download the [squadcastClass.apxc](github.com) file
 
-**(2)** In Salesforce Service Cloud, click the **Settings icon** and click the **Developer Console**.
+**(2)** In Salesforce Service Cloud, click on the **Settings** icon and then, click on the **Developer Console**
 
 ![](images/salesforce_2.png)
 
-**(3)** In **Developer Console** page select **File** and click **New -> Apex Class** and copy squadcastClass.apxc, then click Save.
+**(3)** In **Developer Console** page, select **File**. Then, click on **New -> Apex Class** and copy squadcastClass.apxc. Next, click on **Save**
 
 ![](images/salesforce_3.png)
 
 **(4)** Download the [squadcastTrigger.apxt](github.com) file.
 
-**(5)** On the Developer Console page, select **File**. Click **New -> Apex Trigger** and paste squadcastTrigger.apxt. Then, paste the Webhook URL copied previously into the endpoint field in the trigger function and Click **Save**
+**(5)** On the Developer Console page, select **File**. Click **New -> Apex Trigger** and paste the downloaded/copied file from the previous step. Then, paste the Webhook URL copied previously into the **endpoint field** in the **trigger function** and Click **Save**
 
 ![](images/salesforce_4.png)
 
-**(6)** Go back to the Salesforce page and select **Setup** from settings and go to **Setup->Security->Remote Site Settings** page
+**(6)** Go back to the Salesforce Cloud page and select **Setup** from Settings. Here, navigate to the **Setup -> Security -> Remote Site Settings** page
 
-**(7)** Add a new remote site: name it "Squadcast" and then paste the URL copied previously to the "Remote Site URL" field. Click **Save**
+**(7)** Add a **new remote site**: name it **Squadcast** and then paste the URL copied previously to the **Remote Site URL** field. Click on **Save**
 
 ![](images/salesforce_5.png)
 
-That is it, you are now good to go! Whenever a case is created with `New` or `Working` or `Escalated` status, an incident will be created in Squadcast for it. When the ticket is `Closed` in Salesforce-cloud, the corresponding incident will automatically get resolved in Squadcast as well.
+That is it, you are now good to go! Whenever a case is created with `New` or `Working` or `Escalated` status, an incident will be created in Squadcast for it. When the ticket is `Closed` in Salesforce Cloud, the corresponding incident will automatically get resolved in Squadcast as well.
