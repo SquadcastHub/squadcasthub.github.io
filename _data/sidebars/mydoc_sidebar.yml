@@ -176,12 +176,24 @@ entries:
             url: /docs/manually-creating-an-incident
             output: web, pdf
 
-          - title: Postmortems
+          - title: Incident Notes
+            url: /docs/incident-notes
+            output: web, pdf
+                
+      - title: Postmortems
+        output: web, pdf
+
+        folderitems:  
+          - title: Postmortem Templates
+            url: /docs/postmortem-templates
+            output: web, pdf
+
+          - title: Create Postmortems
             url: /docs/postmortems
             output: web, pdf
 
-          - title: Incident Notes
-            url: /docs/incident-notes
+          - title: Accessing Postmortems
+            url: /docs/accessing-postmortems
             output: web, pdf
 
       - title: StatusPage
