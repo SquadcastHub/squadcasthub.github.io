@@ -256,6 +256,10 @@ entries:
             url: /docs/cisco-dnac
             output: web, pdf
 
+          - title: ClickUp
+            url: /docs/clickup
+            output: web, pdf
+
           - title: Conviva
             url: /docs/conviva
             output: web, pdf
