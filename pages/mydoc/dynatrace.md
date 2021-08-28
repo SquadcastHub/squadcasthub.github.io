@@ -16,17 +16,11 @@ Squadcast will then process this information to create incidents for this servic
 
 ## Using Dynatrace as an Alert Source
 
-Click on the **Services** tab on the sidebar.
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/appsignal_0_0.png)
+![](images/alert_source_1.png)
 
-You can either choose to use an existing service or [create a new service](adding-a-service-1). 
-
-Now, click on the corresponding **Alert Sources** button for the service.
-
-![](images/appsignal_0.png)
-
-Select **Dynatrace** from **Alert Sources** drop-down and copy the Webhook URL.
+**(2)** Search for **Dynatrace** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/dynatrace_1.png)
 

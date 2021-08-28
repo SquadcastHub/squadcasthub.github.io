@@ -11,7 +11,9 @@ On-call schedules are used to determine who will be notified when an incident is
 
 ## Creating an On-call Schedule
 
-**(1)** Click on **Schedules** on the sidebar
+Ensure that the right Team is selected from the team picker present at the top.
+
+**(1)** Click on **Schedules** in the primary navigation
 
 ![](images/schedules_1.png)
 
@@ -133,7 +135,7 @@ In the last two **Update methods**, the modal shows the **Repeats** checkbox and
 
 {{site.data.alerts.red-note}}
 <b>Warning</b><br/><br/>
-<p>The user cannot update past events as it is meant to serve as an accurate record of the past on-call Schedule.</p>
+<p>You cannot update past events as it is meant to serve as an accurate record of the past on-call Schedule.</p>
 {{site.data.alerts.end}}
 
 ### Choosing a different starting Group
@@ -164,7 +166,7 @@ By Default #1 Group will be the starting Group.
 
 ![](images/schedules_delete_2.png)
 
-## How to Video
+## How-to Video
 
 <script src="https://fast.wistia.com/embed/medias/9wor2hwbo9.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:53.75% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_9wor2hwbo9 popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
 
@@ -172,7 +174,7 @@ By Default #1 Group will be the starting Group.
 
 **Q:** How can I add users in different time zones to the Schedule?
 
-**A:** The selected timezone will default to the local machine timezone. This is especially beneficial for geography-based on-call rotations. The teams will be able to view any created on-call schedule in their local time.
+**A:** The selected timezone will default to the local machine timezone. This is especially beneficial for geography-based on-call rotations. The Team members will be able to view any created on-call schedule in their local time.
 
 **Q:** Can I send on-call reminder notifications?
 
@@ -180,6 +182,6 @@ By Default #1 Group will be the starting Group.
 
 **Q:** Why cannot Stakeholders be added in the on-call Schedules?
 
-**A:** Stakeholders are read-only users in Squadcast. Hence they cannot be added in an on-call schedule. When you try adding them you would see an error message as shown below.
+**A:** *Stakeholders or Users with Observer Role* are read-only users in Squadcast. Hence they cannot be added in an on-call schedule. When you try adding them you would see an error message as shown below.
 
 ![](images/schedules_20.png)

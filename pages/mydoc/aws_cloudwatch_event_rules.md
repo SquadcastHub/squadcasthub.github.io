@@ -18,19 +18,11 @@ Route detailed alerts from AWS CloudWatch Event Rules to the right users in Squa
 
 ### In Squadcast: Using AWS CloudWatch Event Rules as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services**.
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **AWS Cloudwatch Event Rules** from  the **Alert Source** drop down menu and copy the webhook 
+**(2)** Search for **AWS Cloudwatch Event Rules** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/event_rules_1.png)
 

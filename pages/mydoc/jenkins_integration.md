@@ -23,13 +23,13 @@ This documentation will help you integrate Jenkins Build Job with Squadcast. Wit
 <br/><br/><p>This user will be used with curl command to fetch the Jenkins job status.</p>
 {{site.data.alerts.end}}
 
-- Move over to the relevant service. This service will essentially bring in your build updates from Jenkins, that is, success/ failure and create it as an incident on Squadcast. 
+In Squadcast:
 
-- Now, click on the corresponding **Alert Sources** button.
+- From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. This Service will essentially bring in your build updates from Jenkins, that is, success/ failure and create it as an incident on Squadcast
 
-![](images/integration_1.png)
+![](images/alert_source_1.png)
 
-Select **Jenkins** from  **Alert Source** drop down and copy the Webhook URL shown.
+- Search for **Jenkins** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/jenkins_1.png)
 
