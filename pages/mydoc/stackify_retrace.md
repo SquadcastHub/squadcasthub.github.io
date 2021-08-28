@@ -16,15 +16,11 @@ Squadcast will then process this information to create incidents for this servic
 
 ## Using Retrace as an Alert Source
 
-On the **Sidebar**, click on **Services**.
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-You can either choose to use an existing service or [create a new service](adding-a-service-1)
+![](images/alert_source_1.png)
 
-Now, click on the corresponding **Alert Sources** button.
-
-![](images/stackify_0.png)
-
-Select **Retrace** from  **Alert Source** drop down and copy the Webhook URL shown.
+**(2)** Search for **Stackify Retrace** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/stackify_1.png)
 

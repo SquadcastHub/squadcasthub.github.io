@@ -70,7 +70,7 @@ You can also click on **Skip and verify later** to verify the _Mobile Number_ la
 {{site.data.alerts.yellow-note-i}}
 <b>Disclaimer: </b>
 
-<p><br/> (1) For existing users of Squadcast, they will continue receiving Phone and SMS notifications as usual until <b>August 13th, 2021</b>. Post this, unless their Mobile Number is verified, they will not receive Phone and SMS notifications</p>
+<p><br/> (1) For existing users of Squadcast, they will continue receiving Phone and SMS notifications as usual until <b>September 1st, 2021</b>. Post this, unless their Mobile Number is verified, they will not receive Phone and SMS notifications</p>
 <p><br />(2) For new users of Squadcast, please verify your Mobile Number in order to start receiving Phone and SMS notifications post signing up</p>
 {{site.data.alerts.end}}
 

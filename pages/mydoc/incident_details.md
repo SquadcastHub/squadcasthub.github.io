@@ -3,7 +3,7 @@ title: Incident Details
 tags: [incident]
 keywords:
 last_updated:
-summary: "Get more details about the incident"
+summary: "Get more details about an incident"
 sidebar: mydoc_sidebar
 permalink: docs/incident-details
 folder: mydoc
@@ -11,11 +11,11 @@ folder: mydoc
 
 ### Get more details for an incident
 
-**(1)** Move to the **[Dashboard](incident-dashboard)** or the **[Incident List](incident-list-table-view)** to view and open incidents
+First, select the **Team** from the team picker on the top.
+
+**(1)** Move to the **[Dashboard](incident-dashboard)** or the **[Incidents](incident-list-table-view) page** to view and open incidents
 
 ![](images/incident_1.png)
-
-![](images/incident_1_1.png)
 
 **(2)** By clicking on any incident, you will be taken to its dedicated **Incident Details** page which shows all the details of the incident. You can see:
 
@@ -46,7 +46,7 @@ Incidents can be marked as **Resolved** to close them.
 #### Suppressed
 Sometimes, the incidents can be in a **Suppressed** state - this happens when the alert notification was not meant to go out for some reason like the **Service** was under maintenance. 
 
-**(e)** [Incident Notes](incident-notes) to collaborate with your team 
+**(e)** [Incident Notes](incident-notes) to collaborate with your team members
 
 **(f)** Ability to:
 

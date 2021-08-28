@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate Salesforce Cloud with Squadcast.
 
-[Salesforce Cloud](https://www.salesforce.com) is the #1 CRM and leading platform for digital-first work are coming together.
+[Salesforce Cloud](https://www.salesforce.com) is a customer relationship management (CRM) platform for customer service and support teams, enabling users to automate service processes, streamline workflows and find key articles.
 
 Route detailed ticket alerts from Salesforce Cloud to the right users in Squadcast.
 

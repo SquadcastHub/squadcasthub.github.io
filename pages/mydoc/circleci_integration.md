@@ -17,13 +17,13 @@ Squadcast’s **Extension** with CircleCI enables you to rebuild projects from w
 
 This is primarily helpful in a situation where you want to quickly mitigate a *customer experience* issue by rolling back to an older successful build. 
  
-### Prerequisite
+### Prerequisites
 
-Only Account Owners and Admins have permission to enable or disable Extensions in Squadcast
+- Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast
 
-### Enabling your CircleCI Extension
+### Enabling CircleCI Extension
 
-**(1)** Navigate to the **Extensions** page from the left navigation sidebar
+**(1)** Navigate to **Settings** and select the **Extensions** tab from the left navigation sidebar
  
 **(2)** Move over to the CircleCI extension and click on **Integrate** 
 
@@ -57,7 +57,7 @@ Your CircleCI integration is good to go and you will be able to perform CircleCI
 
 ### Using CircleCI Actions 
 
-Now that your CircleCI extension is enabled, follow the steps below to understand how to take CircleCI actions from within Squadcast. 
+Now that the CircleCI extension is enabled, follow the steps below to understand how to take CircleCI actions from within Squadcast. 
  
 **(1)** Navigate to the [Incident Details](incident-details) page of an incident for which you want to take the CircleCI action. In this example, we’re choosing the incident below to demonstrate. 
 
@@ -81,7 +81,7 @@ Now that your CircleCI extension is enabled, follow the steps below to understan
 
 ![](images/circle_ci_actions_14.png)
 
-**(6)** Click the **Rebuild** button to trigger the build again and you can see the link to the CircleCI build in the resulting screen.
+**(6)** Click the **Rebuild** button to trigger the build again and you can see the link to the CircleCI build in the resulting screen
 
 ![](images/circle_ci_actions_15.png)
 

@@ -18,19 +18,11 @@ Route detailed ticket alerts from Freshservice to the right users in Squadcast.
 
 ### In Squadcast: Using Freshservice as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services**
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add Service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click on the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **Freshservice** from the **Alert Source** drop-down menu and copy the Webhook
+**(2)** Search for **Freshservice** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/freshservice_1.png)
 

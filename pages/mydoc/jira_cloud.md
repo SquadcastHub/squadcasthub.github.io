@@ -13,11 +13,15 @@ You can use this integration guide to install and configure the Squadcast extens
 
 ## Pre-requisites
 
-1. A valid Squadcast cloud subscription or a trial account (in either the Pro or Enterprise plans)
+- A valid Squadcast cloud subscription or a trial account (in either the Pro or Enterprise [plans](https://squadcast.com/pricing))
 
-2. A user account in JIRA Cloud version with `Administrator` privileges
+- A user account in JIRA Cloud version with `Administrator` privileges
 
-## Integration Steps
+- Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast
+
+## Configuring the Extension
+
+### In JIRA Cloud: Installing Squadcast App
 
 **(1)** Login to your Jira Cloud account and install [Squadcast Jira Cloud plugin](https://marketplace.atlassian.com/apps/1221041/squadcast-for-jira-cloud?hosting=cloud&tab=overview) by clicking on **Get it now**
 
@@ -31,23 +35,27 @@ You can use this integration guide to install and configure the Squadcast extens
 
 ![](images/jira_cloud_squadcast_13.png)
 
-**(4)** Go back to Squadcast, navigate to **Extensions** from the sidebar and click on **Integrate** under Jira cloud
+### In Squadcast: Configuring JIRA Cloud Extension
+
+**(1)** In Squadcast, navigate to **Settings** and select the **Extensions** tab from the left navigation sidebar
+ 
+**(2)** Move over to the JIRA Cloud extension and click on **Integrate** 
 
 ![](images/jira_cloud_squadcast_2.png)
 
-**(5)** Paste the previously copied `Jira Client Token` and click on **Save & Next**
+**(3)** Paste the previously copied `Jira Client Token` and click on **Save & Next**
 
 ![](images/jira_cloud_squadcast_3.png)
 
-**(6)** Select the `Jira Project` in which tickets need to be created, select the `Issue Type` and click **Next**
+**(4)** Select the `Jira Project` in which tickets need to be created, select the `Issue Type` and click **Next**
 
 ![](images/jira_cloud_squadcast_4.png)
 
-**(7)** Then, map the `Jira Issue Status` to the available *Squadcast incident statuses* and click **Next**
+**(5)** Then, map the `Jira Issue Status` to the available *Squadcast incident statuses* and click **Next**
 
 ![](images/jira_cloud_squadcast_5.png)
 
-**(8)** Select the **Mode** in which you want to add tickets to Jira for incidents in Squadcast: **Manually** or **Automatically** and then, select the *Service(s)*, for whose incidents JIRA tickets must be created by Squadcast and click on  **Save & Integrate**
+**(6)** Select the **Mode** in which you want to add tickets to Jira for incidents in Squadcast: **Manually** or **Automatically** and then, select the *Service(s)*, for whose incidents JIRA tickets must be created by Squadcast and click on  **Save & Integrate**
 
 ![](images/jira_cloud_squadcast_6.png)
 
