@@ -4,7 +4,7 @@ last_updated:
 summary: "Discover Postmortems that exist for incidents in your Team"
 last_updated:
 sidebar: mydoc_sidebar
-permalink: docs/accessing-templates
+permalink: docs/accessing-postmortems
 folder: mydoc
 ---
 
