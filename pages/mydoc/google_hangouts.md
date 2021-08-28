@@ -9,25 +9,33 @@ permalink: docs/hangouts
 folder: mydoc
 ---
 
-You can use this guide to integrate with [Hangouts Chat](http://chat.google.com/). 
+You can use this guide to integrate with [Hangouts Chat](http://chat.google.com/).
 
-- Click on **Extensions** from the navigation sidebar. 
+### Prerequisites
 
-- Click on the **Integrate** button under **Google Hangouts**.
+- Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast
+
+### Enabling Google Hangouts Extension
+
+**(1)** Navigate to **Settings** and select the **Extensions** tab from the left navigation sidebar
+ 
+**(2)** Move over to the Google Hangouts extension and click on **Integrate**
 
 ![](images/hangouts_1.png)
 
-- Copy the **Integration Key** shown. 
+**(3)** Copy the **Integration Key** shown
 
 ![](images/hangouts_2.png)
 
-- Move over to your Hangouts Chat account and select the room in which you want to install the bot.
+### Configuration in Google Hangouts
 
-- Type **Squadcast**, add the **Squadcast BOT** from the options. 
+**(1)** Move over to your Hangouts Chat account and select the room in which you want to install the bot
+
+**(2)** Type **Squadcast**, add the **Squadcast BOT** from the options
 
 ![](images/hangouts_3.png)
 
-- In order to integrate this chat room with your Squadcast organization, send the **Squadcast BOT** a message in the following format.
+**(3)** In order to integrate this chat room with your Squadcast Organization, send the **Squadcast BOT** a message in the following format
 
 ```@Squadcast connect <your integration key>```
 
@@ -35,12 +43,12 @@ Add the copied integration key in the `<your integration key>` space.
 
 ![](images/hangouts_4.png)
 
-That's it! Your Hangouts integration is now good to go.
+That's it! Your Google Hangouts extension integration is now good to go.
 
 ![](images/hangouts_5.png)
 
-Here's how the Incident Details are shown in Hangouts. 
+Here's how the Incident Details are shown in Google Hangouts. 
 
-You can click on `View On Squadcast` to take you straight to the Incident Details Page of that incident. 
+You can click on `View On Squadcast` to take you straight to the [Incident Details](incident-details) page of that incident. 
 
 ![](images/hangouts_6.png)
