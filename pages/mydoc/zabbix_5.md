@@ -18,19 +18,11 @@ Route detailed monitoring alerts from Zabbix 5.0 to the right users in Squadcast
 
 ### In Squadcast: Using Zabbix 5.0 as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services** 
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **Zabbix 5.0** from the **Alert Source** drop-down menu and copy the Webhook
+**(2)** Search for **Zabbix 5.0** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/zabbix-5_1.png)
 

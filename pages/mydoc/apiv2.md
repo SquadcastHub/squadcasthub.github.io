@@ -16,19 +16,11 @@ Route detailed monitoring alerts coming in via Incident API to the right users i
 
 ### In Squadcast: Using Incident API as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services**.
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **Incident API** from  the **Alert Source** drop down menu and copy the webhook. Use this webhook to send HTTP POST requests
+**(2)** Search for **Incident API** from the Alert Source drop-down and copy the Webhook URL. Use this Webhook URL endpoint to send `HTTP POST` requests
 
 ![](images/apiv2_1.png)
 

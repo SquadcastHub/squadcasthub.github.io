@@ -13,19 +13,11 @@ Route alerts into Squadcast using Email endpoints of Services from platforms tha
 
 ## In Squadcast: Using Email as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services** 
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **Email** from the **Alert Source** drop down menu and copy the Email address
+**(2)** Search for **Email** from the Alert Source drop-down and copy the Email address
 
 ![](images/email_1.png)
 

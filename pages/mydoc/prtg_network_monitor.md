@@ -16,13 +16,11 @@ Squadcast will then process this information to create incidents for this servic
 
 ## Using PRTG Network Monitor as an Alert Source
 
-You can either choose to use existing service or [create a new service](adding-a-service-1)
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-Now, click on the corresponding **Alert Sources** button.
+![](images/alert_source_1.png)
 
-![](images/prtg_0.png)
-
-Select **PRTG Network Monitor** from  **Alert Source** drop down and copy the Webhook URL shown.
+**(2)** Search for **PRTG Network Monitor** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/prtg_1.png)
 
