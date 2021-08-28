@@ -37,10 +37,53 @@ entries:
             url: /docs/squadcast-faq
             output: web, pdf
 
-      - title: Squads
+      - title: Manage Users
         output: web, pdf
         folderitems:
-          - title: Manage Squads
+          - title: Types of Users
+            url: /docs/types-of-users
+            output: web, pdf
+
+          - title: Add and Delete Users
+            url: /docs/add-and-delete-users
+            output: web, pdf
+
+          - title: Import Users
+            url: /docs/import-users
+            output: web, pdf
+
+          - title: User Permissions - Access Controls
+            url: /docs/user-permissions-access-controls
+            output: web, pdf
+
+          - title: Manage Your Profile
+            url: /docs/set-up-your-profile
+            output: web, pdf
+
+          - title: Notification Rules
+            url: /docs/notification-rules
+            output: web, pdf
+
+          - title: Change Account Owner
+            url: /docs/transfer-ownership
+            output: web, pdf
+
+      - title: Manage Teams
+        output: web, pdf
+        folderitems:
+          - title: Understanding Teams
+            url: /docs/understanding-teams
+            output: web, pdf
+
+          - title: Create and Delete Teams
+            url: /docs/create-and-delete-teams
+            output: web, pdf
+
+          - title: Role Based Access Control
+            url: /docs/role-based-access-control
+            output: web, pdf
+
+          - title: Squads
             url: /docs/squads
             output: web, pdf
 
