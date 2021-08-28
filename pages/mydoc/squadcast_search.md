@@ -4,7 +4,7 @@ tags: [set-up-your-profile, managing-all-users]
 keywords: 
 last_updated: 
 datatable: 
-summary: "Use the global search bar to look for incidents, documentation or other entities within the platform"
+summary: "Use the global search bar to look for incidents, documentation or other entities for your Team within the platform"
 sidebar: mydoc_sidebar
 permalink: docs/squadcast-search
 folder: mydoc
