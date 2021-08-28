@@ -25,13 +25,19 @@ If *Service A* is `dependent on` *Service B* and *Service C*, then:
 
 Let's say, _Service B_ has an open incident at _time x_ and _Service C_ has an open incident at _time x+1_. Now, _Service A_ receives an incident. This incident for _Service A_ gets de-duplicated with the **latest** open incident of its depenedency Service(s) - i.e., with the open incident for _Service C_, in this case.
 
+## Prerequisites
+
+- The User Role associated with the user in the Team must have required permissions to manage Services (ability to manage De-duplication Rules).
+
 ## Adding a Service Dependency 
 
-**(1)** Navigate to **Services** from the sidebar
+Ensure that the right Team is chosen from the team picker on the top of the screen.
+
+**(1)** Click on **Services** in the primary navigation
 
 ![](images/service-dependancy-based-deduplication_0.png)
 
-**(2)** To add a dependency where, *Service A* `is dependent on` Service B, for *Service A*, click on **More** and select **Dependencies**
+**(2)** To add a dependency where, *Service A* `is dependent on` Service B, for *Service A*, click on **More options** icon and select **Dependencies**
 
 ![](images/service-dependancy-based-deduplication_1.png)
 
@@ -55,7 +61,7 @@ To do so:
 
 **(2)** For the De-duplication Rule that you want checked and applied for Service Dependency Based De-duplication, simply enable the checkbox **If this service and a service it depends on both have an incident, alert only once**. 
 
-**NOTE:** This checkbox for every De-duplication Rule is disabled by default. 
+**Note:** This checkbox for every De-duplication Rule is disabled by default. 
 
 ![](images/service-dependancy-based-deduplication_4.png)
 
@@ -81,3 +87,7 @@ Along with enabling the Service Dependency checkbox as shown above, you will nee
 The `slug` of a Service is displayed on the Service card as shown below. 
 
 ![](images/service-dependancy-based-deduplication_5.png)
+
+**(2)** Can I set up dependencies between Services that are in 2 different Teams?
+
+No, you can set up dependencies only within Services for a given Team and not across Teams.

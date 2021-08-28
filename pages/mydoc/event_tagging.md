@@ -17,14 +17,17 @@ Event Tagging can be achieved by defining Tagging Rules for each Service in Squa
 
 ## Prerequisites
 
-- Only the Account Owner and Admins have Create, Read, Update and Delete capabilities for Tagging Rules
-- First, integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast
+- The User Role associated with the user in the Team must have required permissions to manage Services (ability to manage Tagging Rules).
 
-## Create Tagging Rules 
+- Integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast before setting up Tagging Rules.
 
-**(1)** Navigate to **Services** from the sidebar
+## Creating Tagging Rules
 
-**(2)** Select a **Service** and click on the **More** option
+Ensure that the right Team is chosen from the team picker on the top of the screen.
+
+**(1)** Click on **Services** in the primary navigation
+
+**(2)** Select a **Service** and click on the **More options** icon
 
 **(3)** Click on **Tagging Rules**
 
@@ -38,7 +41,7 @@ Event Tagging can be achieved by defining Tagging Rules for each Service in Squa
 
 **(6)** Tagging Rules can be added in three ways:
 
-## (A) UI-based Rule Builder (Beginner-friendly)
+### (A) UI-based Rule Builder (Beginner-friendly)
 
 (a) On the right, you can view the *payload of the **latest** alert* for the chosen Alert Source 
 
@@ -57,7 +60,7 @@ Event Tagging can be achieved by defining Tagging Rules for each Service in Squa
 <br/><br/><p>The key of the Tag label, "tag key" can only contain letters (both lowercase and uppercase) and numbers. Anything else will be ignored.</p>
 {{site.data.alerts.end}}
 
-## (B) Raw String Method
+### (B) Raw String Method
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b>
@@ -72,7 +75,9 @@ Event Tagging can be achieved by defining Tagging Rules for each Service in Squa
 
 (c) Write your custom Tagging Rule expression. Below are some examples to help you get started:
 
-### The rule engine supports expressions with parameters, arithmetic, logical, and string operations
+### Supported Rules
+
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations.
 
 #### Basic Expressions
 
@@ -100,7 +105,9 @@ If you interchange the order of Rule 1 and Rule 2, tag "Environment:QA" is creat
 Therefore, always ensure that you write your Tagging Rules in the correct order for desired behaviour or try and make them as specific as possible.</p>
 {{site.data.alerts.end}}
 
-### Predefined commands that can be used to create Tagging Rules
+### Available Predefined Commands 
+
+The below commands can be used to create Tagging Rules.
 
 #### Add tags to incidents directly from your payload
 
@@ -306,13 +313,13 @@ Create *3 rules* with the following configuration
    payload.value < 60
    ```
 
-## (C) Manual Method
+### (C) Manual Method
 
 Associate a tag while creating an incident manually from the Incident Dashboard
 
 ![](images/tagging_6.png)
 
-### Delete Tagging Rules
+## Deleting Tagging Rules
 
 **(1)** Click on the Tagging Rule for a selected Service 
 
@@ -320,7 +327,7 @@ Associate a tag while creating an incident manually from the Incident Dashboard
 
 ![](images/tagging_7.png)
 
-### Updating Tags
+## Updating Tags
 
 Use **+Update Tags** within an incident to update tags for a specific incident
 
@@ -356,3 +363,9 @@ This will ensure that this Tagging Rule will only be active for incidents trigge
 **(5)** While adding a Tagging Rule, is the _search string_ in the rule case sensitive? 
 
 Yes, that is correct. For example, if your seach string is "ALERT" and your payload does not contain "ALERT" but contains "Alert", this will not be matched. Your search string should be "Alert".
+
+**(6)** What kind of regex can be used to write custom rules?
+
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](https://regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
+
+![](images/de-duplication_9.png)

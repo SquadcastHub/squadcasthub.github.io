@@ -3,7 +3,7 @@ title: Adding a Service
 tags: [service]
 keywords:
 last_updated: 
-summary: "Service - The core components of your infrastructure from which alerts are generated"
+summary: "Services - The core components of your infrastructure/application for which alerts are generated"
 series:
 weight:
 sidebar: mydoc_sidebar
@@ -11,45 +11,47 @@ permalink: docs/adding-a-service-1
 folder: mydoc
 ---
 
-Services represent specific systems, applications, components, products, or teams for which an incident is created. 
+Services in Squadcast represent specific systems, applications, components, products, or teams for which an incident is created. To check out some of the best practices on creating Services in Squadcast, refer to the guide [here](https://www.squadcast.com/blog/how-to-configure-services-in-squadcast-best-practices-to-reduce-mttr).
 
-## Create a Service
+### Prerequisites
 
-### Prerequisite
-You need to have at least one [Escalation Policy](escalation-policies) before you can add a Service.
+- The User Role associated with the user in the Team must have required permissions to manage Services.
 
-**(1)** Click on **Services** 
+- You need to have at least one [Escalation Policy](escalation-policies) before you can add Services.
 
-**(2)** Click on **Add Service**
+- The number of Services that can be added for an Organization is determined by the [plan](https://squadcast.com/pricing) that your account is currently on.
+
+### Creating a Service
+
+**(1)** Click on **Services** in the primary navigation. Then, click on **Add Service** to create a new Service 
+
+Here, add the following information:
+
+- Service **Name** - Corresponds to the name of your business service
+- Service **Description** (optional) - A simple description of the service
+- **Escalation Policy** - The Escalation Policy that you assign to a service. **This will be its default Escalation Policy**
+- **Email Prefix** (optional) - You can choose to add an [email address prefix](email) to the Service for it to function as an alternative alert source for that Service. If you leave it blank, Squadcast will automatically fill in the prefix-key which you can use
+- **[Status Based Deduplication](de-duplication-rules#status-based-deduplication)** (optional) - This can be enabled by checking the box with the information message and choosing the appropriate time window for which you would like this deduplication rule to hold true. This can be enabled/modified even after the Service is created
+
+**Note:** Ensure that the right Team is chosen from the team picker on the top of the screen (which is also visible as a display tag against on the top of the Create Service modal).
+
+**(2)** Finally, click on **Save** to create the Service
 
 ![](images/adding_a_service_1.png)
 
-**(3)** Add the following information:
-- Service Name - Corresponds to the name of your business service
-- Service Description (optional) - Service Description
-- Escalation Policy - The Escalation Policy that you assign to a service will be its default Escalation Policy.
-- Email Prefix (optional) - You can choose to add an [email address prefix](email) to the Service for it to function as an alternative alert source for that Service. If you leave it blank, Squadcast will automatically fill in the prefix-key which you can use.
-- [Status Based Deduplication](de-duplication-rules#status-based-deduplication) (optional) can be enabled by checking the box with the information message and choosing the appropriate time window for which you'd like this deduplication rule to hold true.
+### Deleting a Service
 
-**(4)** Click on **Save**
-
-**(5)** That’s it! The service has been created.
-
-![](images/adding_a_service_2.png)
-
-## Delete a Service
-
-**(1)** Move over to the service that you wish to delete. Click on the `More Options` icon and select `Delete` from the dropdown
+**(1)** Move over to the Service that you wish to delete. Click on the `More Options` icon and select `Delete` from the drop-down
 
 ![](images/adding_a_service_3.png)
 
-**(2)** You will then see a confirmation pop-up and you can click on `Delete` to delete the service forever.
+**(2)** You will then see a confirmation pop-up and you can click on `Delete` to delete the service. This action is irreversible
 
 ![](images/adding_a_service_4.png)
 
-### Unable to delete Service and an error message is thrown
+#### Unable to delete a Service and an error message is thrown
 
-In cases where there are open (Triggered / Acknowledged) incidents for a service, the system will not allow you to delete the service without resolving these incidents. 
+In cases where there are open (Triggered / Acknowledged) incidents for a Service, the system will not allow you to delete the service without resolving these incidents. 
 
 You will be able to see a similar error message in cases like these. 
 
@@ -59,43 +61,45 @@ You will have to resolve all the open incidents and then follow the same process
 
 To resolve multiple incidents at one shot, check out the [Take Bulk Actions](take-bulk-actions) documentation.
 
-## Alert Sources (Integrations)
+### Alert Sources (Integrations)
 
-A single service can receive alerts from multiple sources 
+A single Service can receive alerts from multiple sources. The list of supported alert source integrations is available [here](https://www.squadcast.com/integrations).
 
-### Adding Multiple Alert Sources for one Service
+#### Adding Multiple Alert Sources for one Service
 
 **(1)** Click on **Alert Sources** for a **Service**
 
 ![](images/adding_a_service_5.png)
 
-**(2)** Follow the steps below to integrate with an alert source:
+**(2)** Follow the steps below to integrate with an Alert Source:
 
-(a) Select the type of Alert Source from the dropdown that lists our native integrations
+**(a)** Select the type of Alert Source from the drop-down that lists all the available integrations
 
-(b) Copy the end point 
+**(b)** Copy the end point (which is generally either a Webhook URL or an Email)
 
-(c) Click on integration guide to set integrate with the alert source
+**(c)** Click on integration guide to integrate with the Alert Source
 
 ![](images/adding_a_service_6.png)
 
-So, now when the incident comes for a Service via a given Alert Source, you can see the **Service** in the **Impact On** column and **Alert Source** in **Via** column, in the Incident Dashboard:
+Now, when an incident comes for a Service via an integrated Alert Source, you can see the affected **Service** and the **Alert Source** information in:
+
+- The **Dashboard**
 
 ![](images/adding_a_service_7.png)
 
-and on the Incident Details page: 
+- The **Incidents** page
 
 ![](images/adding_a_service_8.png)
 
-Similarly, on the Incident List page, for every incoming incident, the Service affected is listed under **Service** and the Alert Source is listed under **Alert source**.
+- The **Incident Details** page
 
 ![](images/adding_a_service_9.png)
 
 {{site.data.alerts.green-note-check}}
-<b>Pro Tip</b>
-<br/><br/><p>We are currently working on improving the UI to show you the list of integrated Alert Sources for each Service.</p>
+<b>Progress Update</b>
+<br/><br/><p>We are working on improving the Services UI to show you the list of integrated Alert Sources for each Service with just a quick glance.</p>
 {{site.data.alerts.end}}
 
-We recommend adding the names of the integrated Alert Sources under the Service description so as to easily keep a note of all the configured end-points.  
+**Pro-tip:** We recommend adding the names of the integrated Alert Sources under the Service's Description so as to easily keep a note of all the configured end-points.  
 
 ![](images/adding_a_service_10.png)
