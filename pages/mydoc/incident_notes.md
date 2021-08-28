@@ -15,19 +15,21 @@ You can use this to:
 - Collaborate with your team and resolve the incident 
 - Use it to store important pointers that will help with the mitigation 
 - Use it to store Notes that can be populated in the Postmortem report
-- Share Organization-wide information like resolution reason, Follow-up Tasks, etc.
+- Share Team-wide information like resolution reason, follow-up tasks, etc.
 
 ## Prerequisites
 
 - Only verified users would be receiving any kind of notifications from Squadcast
-- For receiving Push notifications, users should have the [Squadcast mobile app](https://support.squadcast.com/docs/using-the-mobile-app) (Version 2.10.71 and above) installed
+- For receiving Push notifications, users should have the latest version of the [Squadcast mobile app](https://support.squadcast.com/docs/using-the-mobile-app) installed
 
 
 ## To get started
 
-**(1)** Click on **Incident List** or the **Dashboard** from the sidebar
+First, select the **Team** from the team picker on the top.
 
-![](images/incident_notes_1.png)
+**(1)** Click on either **Dashboard** or **Incidents** from the sidebar
+
+![](images/incident_1.png)
 
 **(2)** Open an incident to view the **Incident Details**
 
@@ -35,13 +37,13 @@ You can use this to:
 
 ### Mentioning Users in Notes
 
-- Users can callout other users using the "@" symbol for important notes. This can also be used to inform users of a specific need, information or as a means to notify your **Stakeholders** on information pertaining to the status of an ongoing incident.
+- Users can callout other users in the Team using the "@" symbol for important notes. This can also be used to inform users of a specific need, information or as a means to notify your **Stakeholders** on information pertaining to the status of an ongoing incident
 
 ![](images/incident_notes_2.png)
 
 - Users who are currently on-call are indicated with a green dot against their name. In the above screenshot, you can see that **Diane Nyugen** is currently on-call
 
-- The user who is called out will get notified instantly via Email and Push notification on the Squadcast mobile app
+- The user who is called out will get notified instantly via **Email** and **Push** notification on the Squadcast mobile app
 
 ![](images/incident_notes_3.png)
 
@@ -102,7 +104,7 @@ Yes, users can add, edit, delete, star and unstar notes for an incident from the
 
 To do so:
 
-- Login to your Organization on the Squadcast mobile app and open an incident
+- Login to your Organization on the Squadcast mobile app, choose your Team and open an incident
 
 ![](images/incident_notes_11.png)
 
@@ -110,7 +112,7 @@ To do so:
 
 ![](images/incident_notes_12.png)
 
-- A long press on a note authored by you will give you an option to *star, un-star, edit and delete* it. A long press on a note authored by others will give you an option to only *star, un-star* it
+- **A long press on a note authored by you will give you an option to *star, un-star, edit and delete* it. A long press on a note authored by others will give you an option to only *star, un-star* it**
 
 ![](images/incident_notes_13.png)
 
@@ -120,4 +122,4 @@ To do so:
 
 **(3)** Can I call Stakeholders in the Notes section and notify them?
 
-Yes, you can “@” mention Stakeholders and they would be notified for the note via Email and Push.
+Yes, you can “@” mention Stakeholders and they would be notified for the note via **Email** and **Push**.
