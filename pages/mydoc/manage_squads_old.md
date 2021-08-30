@@ -7,6 +7,7 @@ summary: "A Squad is a group of users corresponding to a team or a project"
 sidebar: mydoc_sidebar
 permalink: docs/squads
 folder: mydoc
+published: false
 ---
 
 ## Defining a Squad
