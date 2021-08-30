@@ -8,15 +8,19 @@ permalink: docs/manually-creating-an-incident
 folder: mydoc
 ---
 
-Incidents can be triggered manually either from the **Incident Dashboard** or the **Incident List**.
+Incidents can be triggered manually either from the **Incident Dashboard** or the **Incident** page.
 
-### Triggering Incidents Via **Incident Dashboard**
+First, select the **Team** from the team picker on the top.
+
+![](images/incident_1.png)
+
+### Triggering Incidents in the **Incident Dashboard**
 
 Click on **+** right next to the **Actions** dropdown tab 
 
 ![](images/manual1.png)
 
-### Triggering Incidents Via **List**
+### Triggering Incidents in the **Incidents** page
 
 **(1)** Click on **Create an Incident**
 
@@ -26,15 +30,15 @@ Click on **+** right next to the **Actions** dropdown tab
 
 ![](images/manual3.png)
 
-- Incident Title - This would be the title/message of the incident being created
-- Incident Description - This would be the description of the Incident being created. This is an optional field
-- Service - Select the relevant **Service** to which this incident would be mapped
-- Assigned To - Upon choosing the **Service**, the default **Escalation Policy** associated with the **Service** would be auto-filled. You can choose to manually update the **Assigned To** field to a different **Escalation Policy** or a specific **User** or **Squad**
-- Tags 
+- **Incident Title** - This would be the title/message of the incident being created
+- **Incident Description** - This would be the description of the Incident being created. This is an optional field
+- **Service** - Select the relevant **Service** to which this incident would be mapped
+- **Assigned To** - Upon choosing the **Service**, the default **Escalation Policy** associated with the **Service** would be auto-filled. You can choose to manually update the **Assigned To** field to a different **Escalation Policy** or a specific **User** or **Squad** in your Team
+- **Tags** 
 
 ![](images/manual4.png)
 
-- By default, you will have the option to add **Tags** to an incident 
+- By default, you will have the option to add **Tags** to an incident (either while creating the incident or after the incident is created)
 - You can do so by assigning the `tag name (key)` and `tag value` in the text fields provided and you can also change the tag color by clicking on the colour of your choice
 - You can also add multiple tags by clicking on the **+** option
 - Adding a **Tag** is optional

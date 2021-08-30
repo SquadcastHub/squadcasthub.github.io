@@ -9,15 +9,15 @@ permalink: docs/take-bulk-actions
 folder: mydoc
 ---
 
-Bulk actions are a way for you to change the Incident States for multiple incidents at one shot. You can do this by following the steps below.
+Bulk actions are a way for you to change the Incident Statuses for multiple incidents at one shot. You can do this by following the steps below.
 
-**(1)** Move over to the state-wise filters in the **Incident Dashboard**. Click on the incident state for which you need the incidents **Resolved**.
+**(1)** Pick a **Team** from the team picker on the top of the screen. Move over to the status-wise filters in the **Incident Dashboard**. Click on the incident state for which you need the incidents either **Acknowledged** or **Resolved**.
 
-In this example, we have clicked on the **Triggered** state and will be moving these incidents to **Acknowledged**.
+In this example, we have clicked on the **Triggered** state and will be moving these incidents to the **Acknowledged** state.
 
 ![](images/bulk_actions_1.png)
 
-**(2)** Check the box under the **Actions** button to select all the incidents that are shown in the view. You can also choose to select specific incidents for which you want to take the action.
+**(2)** Check the box under the **Actions** button to select **all** the incidents that are shown in the view. You can also choose to select specific incidents for which you want to take the action.
 
 {{site.data.alerts.note}}
 <br/><br/><p>You will only be able to view a maximum of 20 incidents at once. So, you will only be able to select a maximum of 20 incidents at once. For a more detailed view of incidents, navigate to the <a href="incident-list-table-view">Incident List</a> page.</p>

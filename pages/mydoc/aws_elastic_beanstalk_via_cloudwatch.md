@@ -18,19 +18,11 @@ Route detailed monitoring alerts from AWS Elastic Beanstalk via CloudWatch to th
 
 ### In Squadcast: Using Amazon CloudWatch as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services**
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add Service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Select **Amazon CloudWatch** from  **Alert Source** drop-down and copy the Webhook URL shown
+**(2)** Search for **Amazon CloudWatch** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/aws_1.png)
 

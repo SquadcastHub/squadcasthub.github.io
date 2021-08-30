@@ -4,13 +4,13 @@ tags: [set-up-your-profile, managing-all-users]
 keywords: 
 last_updated: 
 datatable: 
-summary: "Build your filters and save them as views for quick access"
+summary: "Build your filters and save them as views for your Team for quick access"
 sidebar: mydoc_sidebar
 permalink: docs/save-filter-view
 folder: mydoc
 ---
 
-The `Save View` on the filter builder allows you to save all the applied filters as a quick view option that can be accessed and used by everyone in your organization.
+The `Save View` on the filter builder allows you to save all the applied filters as a quick view option that can be accessed and used by everyone in your Team.
 
 ## Save View
 
@@ -22,7 +22,7 @@ Once you have a group of filters that you would like to save and use later. Clic
 
 In the confirm modal you will be presented with all the filters that are applied, once you have confirmed that you would like to save them, give the view a name and click the confirm button.
 
-The created view will be visible to all users within the organization. In order to create a personal view, visible only in your account, ensure to click on the `Save only for me` checkbox before saving the view.
+The created view will be visible to all users within the Team. In order to create a personal view, visible only in your account, ensure to click on the `Save only for me` checkbox before saving the view.
 
 ![](images/save_filter_3.png)
 

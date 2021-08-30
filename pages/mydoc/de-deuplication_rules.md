@@ -15,19 +15,22 @@ This can be achieved by defining De-duplication Rules for each Service in Squadc
 
 ## Prerequisites
 
-- Only the Account Owner and Admins have Create, Read, Update and Delete capabilities for De-duplication Rules
-- First, integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast
+- The User Role associated with the user in the Team must have required permissions to manage Services (ability to manage De-duplication Rules).
+
+- Integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast before setting up De-duplication Rules.
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b>
 <br/><br/><p>De-duplication Rules work only on incidents in either the <b>Triggered</b> or <b>Acknowledged</b> states.</p>
 {{site.data.alerts.end}}
 
-## Create De-duplication Rules
+## Creating De-duplication Rules
 
-**(1)** Navigate to **Services** from the sidebar
+Ensure that the right Team is chosen from the team picker on the top of the screen.
 
-**(2)** Select a **Service** and click on the **More** option
+**(1)** Click on **Services** in the primary navigation
+
+**(2)** Select a **Service** and click on the **More options** icon
 
 **(3)** Click on **De-duplication Rules**
 
@@ -41,7 +44,7 @@ This can be achieved by defining De-duplication Rules for each Service in Squadc
 
 **(6)** De-duplication Rules can be added in three ways:
 
-## (A) UI-based Rule Builder (Beginner-friendly)
+### (A) UI-based Rule Builder (Beginner-friendly)
 
 (a) On the right, you can view the _payload of the **latest** alert_ for the chosen Alert Source
 
@@ -62,7 +65,7 @@ Next, choose the **De-duplication Time Window**. You can de-duplicate incidents 
 
 ![](images/de-duplication_4.png)
 
-## (B) Raw String Method
+### (B) Raw String Method
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b>
@@ -77,13 +80,15 @@ Next, choose the **De-duplication Time Window**. You can de-duplicate incidents 
 
 (c) Write your custom De-duplication Rule expression. Below are some examples to help you get started:
 
-### The rule engine supports expressions with parameters, arithmetic, logical, and string operations
+### Supported Rules
 
-- #### Basic Expressions
+The rule engine supports expressions with parameters, arithmetic, logical, and string operations.
+
+#### Basic Expressions
 
   `10 > 0`, `1+2`, `100/3`
 
-- #### Parameterized Expressions
+#### Parameterized Expressions
 
   `past.metric == current.metric`
 
@@ -94,7 +99,7 @@ Next, choose the **De-duplication Time Window**. You can de-duplicate incidents 
 <br/><br/><p>This can be used in scenarios where you do not want to de-duplicate more than <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">n</code> number of alerts to a particular incident.</p>
 {{site.data.alerts.end}}
 
-- #### Regular Expressions
+#### Regular Expressions
 
   This can be used to check if a particular JSON payload field matches a regular expression.
 
@@ -134,7 +139,7 @@ Since the payload format is fixed for a given alert source, it is usually prefer
 For example, if you want to have a De-duplication Rule for a Service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">grafana</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'grafana' && (&lt;your_de-duplication_rule&gt;)</code></p>
 {{site.data.alerts.end}}
 
-### Example
+#### Example
 
 Below is an example payload for demonstration:
 
@@ -179,7 +184,9 @@ past.metric == current.metric &&
 
 ## Viewing De-duplicated Incidents
 
-From the [Incident List page](https://support.squadcast.com/docs/incident-list-table-view), you can view which incidents have de-duplicated alerts when there is **+\<number\>** next to the Incident ID like in the screenshot below. The **number** indicates how many alerts were de-duplicated against this incident.
+From the [Incidents](https://support.squadcast.com/docs/incident-list-table-view) page, you can view which incidents have de-duplicated events when there is a **+\<number\>** next to the Incident ID like in the screenshot below. 
+
+The **number** indicates how many alerts were de-duplicated against this incident.
 
 ![](images/de-duplication_6.png)
 

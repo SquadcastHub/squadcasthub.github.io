@@ -8,9 +8,15 @@ permalink: docs/reassign-an-escalation-policy-for-an-existing-incident
 folder: mydoc
 ---
 
-An incident in the Triggered or Acknowledged state can be reassigned to a different User, Squad or an Escalation Policy.
+## Prerequisites
 
-**(1)** Open an incident that you wish to reassign from the **Dashboard** or **Incident List**
+- The User Role for the user in the Team must have the necessary permissions in order to reassign incidents.
+
+## Reassiging Incidents
+
+An incident in the `Triggered` or `Acknowledged` state can be reassigned to a different **User**, **Squad** or an **Escalation Policy**.
+
+**(1)** Open an incident that you wish to reassign from the **Dashboard** or **Incidents** page
 
 ![](images/invoke_escalation_1.png)
 
@@ -18,7 +24,7 @@ An incident in the Triggered or Acknowledged state can be reassigned to a differ
 
 ![](images/invoke_escalation_2.png)
 
-**(3)** Select a **User**, **Squad** or an **Escalation Policy** from the dropdown
+**(3)** Select a **User**, **Squad** or an **Escalation Policy** from the drop-down
 
 ![](images/invoke_escalation_3.png)
 
@@ -30,6 +36,6 @@ An incident in the Triggered or Acknowledged state can be reassigned to a differ
 
 ![](images/invoke_escalation_4.png)
 
-**(5)** The reassigned action is auto-recorded in the **Incident Activity Timeline** of the incident and the same can be viewed under Responders section
+**(5)** The reassigned action is auto-recorded in the **Incident Activity Timeline** of the incident and the same can be viewed in the **Responders** section
 
 ![](images/invoke_escalation_5.png)

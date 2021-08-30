@@ -9,7 +9,11 @@ permalink: docs/slack
 folder: mydoc
 ---
 
-We understand that most of your work happens over Slack. You can integrate Squadcast and Slack to collaborate efficiently with your team while working on incidents. Here's a brief of all that is possible. 
+We understand that most of your work happens over Slack. You can integrate Squadcast and Slack to collaborate efficiently with your team while working on incidents. Here's a brief of all that is possible.
+
+## Prerequisites
+
+- Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast 
 
 ## Slack Notifications for Incidents
 
@@ -21,9 +25,9 @@ Squadcast sends a notification to the configured Slack Channel as soon as an inc
 
 ### Follow the steps below to integrate Squadcast and Slack
 
-**(1)** From the sidebar, navigate to **Extensions**
+**(1)** navigate to **Settings** and select the **Extensions** tab from the left navigation sidebar
 
-![](images/slack_squadcast_1.jpg)
+![](images/slack_squadcast_1.png)
 
 **(2)** Click on the **Integrate** button on the Slack tile
 
@@ -190,7 +194,7 @@ Please follow the <a href="https://slack.com/intl/en-nl/help/articles/3600179389
 This error message simply means that you are not added as a user of your Squadcast Organization. One needs to be added as a user in their Squadcast Organization to be able to take actions on incidents from Slack. **Additionally, your Slack user Email and Squadcast user Email must be the exact same**.
 
 - #### You are not a part of this Organization on Squadcast. Please contact your Admin.
-This error message simply means that you are a user of Squadcast for an Organization that is **not the same** as the one that the incident in Slack is for. One needs to be added as a user of all those Squadcast Organizations in order to take actions on incidents of those particular Organizations. Please contact an Admin of your Organization and have them add you as a user of the right Squadcast Organization.
+This error message simply means that you are a user of Squadcast for an Organization that is **not the same** as the one that the incident in Slack is for. One needs to be added as a user of all those Squadcast Organizations in order to take actions on incidents of those particular Organizations. Please contact an Admin of your Team and have them add you as a user of the right Squadcast Organization.
 
 - #### You are a part of this Organization as a Stakeholder. You cannot take actions on incidents. Please contact your Admin to upgrade your role.
-Stakeholders in Squadcast have read-only access to the platform. As a `Stakeholder`, one will not be able to take any actions on the incidents. To be able to take actions on incidents, you must be added as a `User` or an `Admin`. Please contact an Admin of your Organization and have your User Type changed from Stakeholder to `User` or `Admin`.
+Stakeholders in Squadcast have read-only access to the platform. As a `Stakeholder`, one will not be able to take any actions on the incidents. To be able to take actions on incidents, you must be added as a `User` or an `Admin`. Please contact an Admin of your Team and have your User Type changed from Stakeholder to `User` or with the right User Permissions.

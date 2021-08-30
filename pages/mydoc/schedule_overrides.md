@@ -12,7 +12,9 @@ This way, only the users in override schedules will get notified for incidents d
 
 ## Creating a Schedule Override
 
-**(1)** Click on **Schedules** on the sidebar
+Ensure that the right Team is selected from the team picker present at the top.
+
+**(1)** Click on **Schedules** in the primary navigation
 
 ![](images/schedules_1.png)
 
