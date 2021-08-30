@@ -15,7 +15,7 @@ folder: mydoc
 
 Squadcast is an incident management platform built on DevOps & SRE best practices to help you adopt the same to simplify incident management, get meaningful notifications, and enable faster incident resolution in collaboration. Explore all the incredible SRE features and incident resolution capabilities in this documentation.
 
-As soon you sign up, you'll be on the Enterprise plan trial and will have access to all the features on the platform for 14 days. Post the trial period, you will be downgraded to the Free plan and you can upgrade to any of the higher plans based on your need and usage. You can see all our plans [here](https://www.squadcast.com/pricing).
+As soon you sign up, you'll be on the Essential plan trial and will have access to all the features on the platform for 14 days. Post the trial period, you will be downgraded to the Free plan and you can upgrade to any of the higher plans based on your need and usage. You can see all our plans [here](https://www.squadcast.com/pricing).
 
 Now that you're here, we've put together a checklist of things that you can do to get started with Squadcast - a beginner's guide.
 
