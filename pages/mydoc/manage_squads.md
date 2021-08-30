@@ -5,9 +5,8 @@ keywords:
 last_updated: 
 summary: "What Squads are and understanding how to manage Squads"
 sidebar: mydoc_sidebar
-permalink: docs/squads-v2
+permalink: docs/squads
 folder: mydoc
-published: false
 ---
 
 ## Squads
