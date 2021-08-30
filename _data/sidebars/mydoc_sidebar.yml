@@ -84,7 +84,7 @@ entries:
             output: web, pdf
 
           - title: Squads
-            url: /docs/squads-v2
+            url: /docs/squads
             output: web, pdf
 
       - title: Services
