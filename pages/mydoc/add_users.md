@@ -7,6 +7,7 @@ summary: "Adding multiple Users to your organization"
 sidebar: mydoc_sidebar
 permalink: docs/add-users
 folder: mydoc
+published: false
 ---
 
 ### Follow the steps below to add users

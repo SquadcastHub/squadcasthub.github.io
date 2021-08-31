@@ -84,3 +84,11 @@ Now, whenever an Email is sent to the Email address of the Service, Squadcast wi
 <b>Note</b>
 <br/><br/><p>This integration does not support <b>auto-resolution</b> of incidents. If the platform you are using resolves an alert, you will have to manually resolve the corresponding incident in Squadcast via the <a href="https://www.app.squadcast.com">web app</a> or the <a href="using-the-mobile-app">Squadcast mobile app</a></p>
 {{site.data.alerts.end}}
+
+{{site.data.alerts.blue-note-md}}
+**Important**
+
+- If you are sending regular emails - emails in the `text/html` format, URLs for images will appear as URLs only. If the image is added inline, only the name of the file will appear and not the image. However, please note that if the image is added as an attachment, it will not show up in the payload (and hence, the Incident Description).
+
+- If you are sending emails as plain text - emails in the `text/plain` format, you can add images using the Markdown syntax `![image_name](image_url)`. The link of the image will appear in the Incident Description. Similarly, you will also be able to format the body content using Markdown, and the content with the same formatting will be displayed in the Incident Description.
+{{site.data.alerts.end}}

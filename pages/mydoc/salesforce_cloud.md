@@ -52,7 +52,7 @@ Route detailed ticket alerts from Salesforce Cloud to the right users in Squadca
 
 ![](images/salesforce_3.png)
 
-**(4)** Download the [squadcastTrigger.apxt](https://github.com/SquadcastHub/ingester/blob/master/manifests/salesforce-cloud/squadcastTrigger.apxt) file.
+**(4)** Download the [squadcastTrigger.apxt](https://github.com/SquadcastHub/ingester/blob/master/manifests/salesforce-cloud/squadcastTrigger.apxt) file
 
 **(5)** On the Developer Console page, select **File**. Click **New -> Apex Trigger** and paste the downloaded/copied file from the previous step. Then, paste the Webhook URL copied previously into the **endpoint field** in the **trigger function** and Click **Save**
 

@@ -507,7 +507,7 @@ entries:
             url: /docs/runscope
             output: web, pdf
 
-          - title: Salesforce cloud
+          - title: Salesforce Cloud
             url: /docs/salesforce-cloud
             output: web, pdf
 
