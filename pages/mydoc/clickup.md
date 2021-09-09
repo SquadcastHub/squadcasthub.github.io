@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate ClickUp with Squadcast.
 
-[ClickUp](https://clickup.com/) is unique Hierarchy helps you create the perfect structure that scales with your needs. Each level of ClickUp gives you more flexibility and control to organize everything from small teams to enterprise companies.
+[ClickUp](https://clickup.com/) is an all-in-one suite to manage people, projects, and everything in between. ClickUp offers docs, reminders, goals, calendars, and inboxes.
 
 Route detailed ticket alerts from ClickUp to the right users in Squadcast.
 
@@ -34,23 +34,22 @@ Route detailed ticket alerts from ClickUp to the right users in Squadcast.
 
 ### In ClickUp: Create a Squadcast Webhook
 
-**(1)** Goto **Space > New Space** and create new space.
+**(1)** Navigate to **Space** and select **New Space** to create new a Space
 
 ![](images/clickup_2.png)
 
-**(2)** Click on new created **Space** and then click on **Automate > Add automation** at top right corner
+**(2)** Click on the newly created **Space** and then, click on **Automate > Add automation** on the top right corner
 
 ![](images/clickup_3.png)
 
 ![](images/clickup_4.png)
 
-**(3)** select **condition** as per choice (In which case you want to trigger webhook) and select **Call webhook** as shown in below screenshot
+**(3)** Select **Condition** as per your choice (that is, in which case you want to trigger the Webhook for Squadcast). Then, select **Call Webhook**
 
 ![](images/clickup_5.png)
 
-**(4)** Paste copied webhook in **URL** field and click on **Create**
+**(4)** Paste the previously copied Webhook from Squadcast in the **URL** field and click on **Create**
 
 ![](images/clickup_6.png)
 
-
-That is it, you are now good to go! Whenever a case is created with `Open` status, an incident will be created in Squadcast for it. When the ticket is moved to `Closed` status in ClickUp, the corresponding incident will automatically get resolved in Squadcast as well.
+That is it, you are now good to go! Whenever a Case (ticket) is created with an `Open` status in ClickUp, an incident will be created for it in Squadcast. When it is moved to the `Closed` status in ClickUp, the corresponding incident will automatically get resolved in Squadcast as well.
