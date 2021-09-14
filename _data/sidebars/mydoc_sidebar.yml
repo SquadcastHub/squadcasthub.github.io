@@ -535,6 +535,10 @@ entries:
             url: /docs/server-density
             output: web, pdf
 
+          - title: ServiceNow
+            url: /docs/servicenow
+            output: web, pdf
+
           - title: SignalFx
             url: /docs/signalfx
             output: web, pdf
