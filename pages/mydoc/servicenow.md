@@ -1,28 +1,28 @@
 ---
-title: Servicenow
+title: ServiceNow
 keywords: 
 last_updated: 
-summary: "Send ticket details to Squadcast from Servicenow"
+summary: "Send ticket details to Squadcast from ServiceNow"
 sidebar: mydoc_sidebar
 permalink: docs/servicenow
 folder: mydoc
 ---
 
-This document will help you integrate Servicenow with Squadcast.
+This document will help you integrate ServiceNow with Squadcast.
 
-[Servicenow](https://www.servicenow.com/) transforms your business with digital IT workflows. Modernize your operations to optimize productivity, cost, and resilience with a single platform for IT.
+[ServiceNow](https://www.ServiceNow.com/) transforms your business with digital IT workflows by modernizing your operations to optimize productivity, cost, and resilience with a single platform for IT.
 
-Route detailed ticket alerts from Servicenow to the right users in Squadcast.
+Route detailed ticket alerts from ServiceNow to the right users in Squadcast.
 
-## How to integrate Servicenow with Squadcast
+## How to integrate ServiceNow with Squadcast
 
-### In Squadcast: Using Servicenow as an Alert Source
+### In Squadcast: Using ServiceNow as an Alert Source
 
 **(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
 ![](images/alert_source_1.png)
 
-**(2)** Search for **Servicenow** from the **Alert Source** drop-down menu and copy the Webhook
+**(2)** Search for **ServiceNow** from the **Alert Source** drop-down menu and copy the Webhook
 
 ![](images/servicenow_1.png)
 
@@ -32,11 +32,11 @@ Route detailed ticket alerts from Servicenow to the right users in Squadcast.
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-### In Servicenow: Create a Squadcast Webhook
+### In ServiceNow: Create a Squadcast Webhook
 
-**(1)** Download the [servicenow.js](https://github.com/SquadcastHub/ingester/) file
+**(1)** Download the [servicenow.js](https://github.com/SquadcastHub/squadcast-servicenow-integration/blob/master/servicenow.js) file
 
-**(2)** Navigate to filter box and search for **business rules** and click on **System Defination > Business Rules**
+**(2)** Navigate to the filter box and search for **Business Rules**. Click on **System Definition > Business Rules**
 
 ![](images/servicenow_2.png)
 
@@ -44,18 +44,18 @@ Route detailed ticket alerts from Servicenow to the right users in Squadcast.
 
 ![](images/servicenow_3.png)
 
-**(4)** Provide Any suitable **Name**, select **Incident** in Table dropdown and check **Advanced** option
+**(4)** Provide any suitable **Name**, select **Incident** in the drop-down and check the **Advanced** option
 
 ![](images/servicenow_4.png)
 
-**(5)** Navigate to **when to run** and fill the form as shown in below screenshot
+**(5)** Navigate to **when to run** and fill the form as shown in the screenshot below
 
 ![](images/servicenow_5.png)
 
-**(6)** Paste downloaded/copied snippet into **Script** textbox
+**(6)** Paste the previously downloaded and copied snippet into the **Script** text box
 
-**(7)** Replace <**Squadcast webhook URL**> with copied webhook URL and click on **Submit**
+**(7)** Replace <**Squadcast Webhook URL**> with the previously copied Webhook URL and click on **Submit**
 
 ![](images/servicenow_6.png)
 
-That is it, you are now good to go! Whenever a case is created with `New` status, an incident will be created in Squadcast for it. When the ticket is moved to `Resolved` `Closed` or `Deleted` status in Servicenow, the corresponding incident will automatically get resolved in Squadcast as well.
+That is it, you are now good to go! Whenever a ticket is created with the `New` status, an incident will be created in Squadcast for it. When the ticket is moved to `Resolved`, `Closed` or `Deleted` status in ServiceNow, the corresponding incident will automatically get resolved in Squadcast as well.
