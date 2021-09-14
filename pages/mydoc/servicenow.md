@@ -44,7 +44,7 @@ Route detailed ticket alerts from Servicenow to the right users in Squadcast.
 
 ![](images/servicenow_3.png)
 
-**(4)** Provide Any suitable **Name**, select **Incident** Table in dropdown and check **Advanced**
+**(4)** Provide Any suitable **Name**, select **Incident** in Table dropdown and check **Advanced** option
 
 ![](images/servicenow_4.png)
 
@@ -54,7 +54,7 @@ Route detailed ticket alerts from Servicenow to the right users in Squadcast.
 
 **(6)** Paste downloaded/copied snippet into **Script** textbox
 
-**(7)** Replace **<Squadcast webhook URL>** with copied webhook URL and click on **Submit**
+**(7)** Replace <**Squadcast webhook URL**> with copied webhook URL and click on **Submit**
 
 ![](images/servicenow_6.png)
 
