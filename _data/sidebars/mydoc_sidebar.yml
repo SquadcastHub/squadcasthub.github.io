@@ -535,7 +535,7 @@ entries:
             url: /docs/server-density
             output: web, pdf
 
-          - title: Servicenow
+          - title: ServiceNow
             url: /docs/servicenow
             output: web, pdf
 
