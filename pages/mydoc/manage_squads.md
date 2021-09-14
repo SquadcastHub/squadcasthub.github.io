@@ -5,9 +5,8 @@ keywords:
 last_updated: 
 summary: "What Squads are and understanding how to manage Squads"
 sidebar: mydoc_sidebar
-permalink: docs/squads-v2
+permalink: docs/squads
 folder: mydoc
-published: false
 ---
 
 ## Squads
@@ -19,7 +18,7 @@ These are especially useful for adding groups of people to be on-call in a [Sche
 ### Create a Squad
 
 **Prerequisite:**
-[Add Users](add-users) into your Team before defining a Squad.
+[Add Users](add-and-delete-users) into your Team before defining a Squad.
 
 Follow the steps below to create a Squad in a Team:
 

@@ -18,19 +18,11 @@ Route detailed ticket alerts from Salesforce Cloud to the right users in Squadca
 
 ### In Squadcast: Using Salesforce Cloud as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services**
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add Service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click on the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **Salesforce Cloud** from the **Alert Source** drop-down menu and copy the Webhook
+**(2)** Search for **Salesforce Cloud** from the **Alert Source** drop-down menu and copy the Webhook
 
 ![](images/salesforce_1.png)
 
@@ -52,7 +44,7 @@ Route detailed ticket alerts from Salesforce Cloud to the right users in Squadca
 
 ![](images/salesforce_3.png)
 
-**(4)** Download the [squadcastTrigger.apxt](https://github.com/SquadcastHub/ingester/blob/master/manifests/salesforce-cloud/squadcastTrigger.apxt) file.
+**(4)** Download the [squadcastTrigger.apxt](https://github.com/SquadcastHub/ingester/blob/master/manifests/salesforce-cloud/squadcastTrigger.apxt) file
 
 **(5)** On the Developer Console page, select **File**. Click **New -> Apex Trigger** and paste the downloaded/copied file from the previous step. Then, paste the Webhook URL copied previously into the **endpoint field** in the **trigger function** and Click **Save**
 

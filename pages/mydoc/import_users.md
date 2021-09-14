@@ -39,8 +39,8 @@ Your `.csv` file should be of the following format:
 ```csv
 first_name,last_name,email,user_type
 Todd,Chavez,todd@squadcast.com,stakeholder
-Diane,Nguyen,diane@squadcast.com,admin
-Princess,Carolyn,carolyn@squadcast.com,admin
+Diane,Nguyen,diane@squadcast.com,user
+Princess,Carolyn,carolyn@squadcast.com,user
 ```
 {{site.data.alerts.end}}
 

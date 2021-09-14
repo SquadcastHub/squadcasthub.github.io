@@ -74,8 +74,10 @@ Datadog is a monitoring platform for cloud applications that brings in together 
 
 ![](images/datadog_6.png)
 
-Click on “Save” to complete the service integration. 
+Click on “Save” to complete the service integration.
 
-That's it, you are good to go! Your Datadog integration is complete. 
+**NOTE:** Once the Webhook for Squadcast has been configured, ensure that the same is also selected as a channel within **Notify your team** in the **Monitor's** configuration. 
 
-Now, whenever Datadog fires an alert, an incident will be created in Squadcast for it. When the alert recovers in Datadog, the corresponding incident will **automatically get resolved** in Squadcast as well. 
+That's it, you are good to go! Your Datadog integration is complete.
+
+Now, whenever Datadog fires an alert, an incident will be created in Squadcast for it. When the alert recovers in Datadog, the corresponding incident will **automatically get resolved** in Squadcast as well.

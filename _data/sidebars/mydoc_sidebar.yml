@@ -311,6 +311,10 @@ entries:
             url: /docs/cisco-dnac
             output: web, pdf
 
+          - title: ClickUp
+            url: /docs/clickup
+            output: web, pdf
+
           - title: Conviva
             url: /docs/conviva
             output: web, pdf
@@ -503,7 +507,7 @@ entries:
             url: /docs/runscope
             output: web, pdf
 
-          - title: Salesforce cloud
+          - title: Salesforce Cloud
             url: /docs/salesforce-cloud
             output: web, pdf
 
