@@ -539,6 +539,10 @@ entries:
             url: /docs/servicenow
             output: web, pdf
 
+          - title: Shortcut
+            url: /docs/shortcut
+            output: web, pdf
+
           - title: SignalFx
             url: /docs/signalfx
             output: web, pdf
