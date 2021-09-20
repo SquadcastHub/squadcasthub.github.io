@@ -2,7 +2,7 @@
 title: Shortcut
 keywords: 
 last_updated: 
-summary: "Send ticket details to Squadcast from Shortcut"
+summary: "Send ticket details to Squadcast from Shortcut (Clubhouse)"
 sidebar: mydoc_sidebar
 permalink: docs/shortcut
 folder: mydoc
@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate Shortcut with Squadcast.
 
-[Shortcut](https://shortcut.com/) brings the flow to your software team's workflow. Plan, collaborate, build, and measure success with Shortcut.
+[Shortcut](https://shortcut.com/) (formerly Clubhouse) allows software teams to plan, collaborate, build, and measure success by bringing in the right team workflows.
 
 Route detailed ticket alerts from Shortcut to the right users in Squadcast.
 
@@ -51,4 +51,4 @@ Route detailed ticket alerts from Shortcut to the right users in Squadcast.
 ![](images/shortcut_5.png)
 
 
-That is it, you are now good to go! Whenever a Story/Epic/Milestone/Team is created, an incident will be created in Squadcast for it. When the Story/Epic/Milestone/Team is moved to `Completed` status in Shortcut, the corresponding incident will automatically get resolved in Squadcast as well.
+That is it, you are now good to go! Whenever either of a Story or an Epic is created, an incident will be created in Squadcast for it. When the Story or Epicis moved to the `Completed` state in Shortcut, the corresponding incident will automatically get resolved in Squadcast as well.

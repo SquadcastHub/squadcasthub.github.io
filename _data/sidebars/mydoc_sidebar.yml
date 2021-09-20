@@ -539,7 +539,7 @@ entries:
             url: /docs/servicenow
             output: web, pdf
 
-          - title: Shortcut
+          - title: Shortcut (Clubhouse)
             url: /docs/shortcut
             output: web, pdf
 
