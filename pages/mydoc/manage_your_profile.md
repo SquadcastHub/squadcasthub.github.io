@@ -123,3 +123,19 @@ You can also click on **Skip and verify later** to verify the _Mobile Number_ la
 **(4)** After verification is complete, the warning message will disappear and you will receive Phone & SMS notifications for incidents
 
 ![](images/manage_account_8.png)
+
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+If the Mobile Number is not verified via OTP, the same will be indicated in the web app as well as the mobile app.
+
+**In the web app:**
+
+![](images/manage_account_14.png)
+
+**In the mobile app:**
+
+Navigate to **My Profile**:
+
+![](images/manage_account_15.png)
+{{site.data.alerts.end}}
