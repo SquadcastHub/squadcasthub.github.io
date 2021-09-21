@@ -3,7 +3,7 @@ title: Analytics & Reporting
 tags: [analyze metrics]
 keywords:
 last_updated:
-summary: "Analytics for measuring your Organization's performance"
+summary: "Analytics for measuring your Team's performance"
 sidebar: mydoc_sidebar
 permalink: docs/analytics
 folder: mydoc
@@ -11,15 +11,17 @@ folder: mydoc
 
 ### Introduction
 
-The **Analytics Dashboard** helps you analyze your Organization's performance, for a given time period, by providing you the hard numbers in the form of easy to understand graphs and charts.
+The **Analytics Dashboard** helps you analyze your Teams's performance, for a given time period, by providing you the hard numbers in the form of easy to understand graphs and charts.
 
 ### Visualizing the Graphs
 
-**1.** On the Sidebar, click on **Analytics**.
+**Note:** Select the appropriate Team from the team picker on the top of your screen.
+
+**1.** On the Sidebar, click on **Analytics**
 
 ![](images/analytics_sidebar.png)
 
-**2.** By default, the selected time range is the **last three months**.
+**2.** By default, the selected time range is the **last three months**
 
 You can select a custom time range using the utility on the top-right corner of the page, to *select* and *apply* a time range for the **Analytics** data computation.
 
@@ -59,13 +61,13 @@ Upon clicking on any block present in the heat map, data on the following graphs
 
 2.  **Incident Count By Service**
 
-    Displays **Incident Count** based on different configured Services in an Organization.
+    Displays **Incident Count** based on different configured Services in a Team.
 
     ![](images/incident_count_by_service.png)
 
 3.  **Incident Count By Alert Sources**
 
-    Displays **Incident Count** based on different configured Alert Sources in an Organization.
+    Displays **Incident Count** based on different configured Alert Sources in a Team.
 
     ![](images/incident_count_by_alert_source.png)
 

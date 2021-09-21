@@ -9,9 +9,15 @@ permalink: docs/escalation-policies
 folder: mydoc
 ---
 
-Escalation Policies ensure that the right people are notified at the right time. Incident notifications can be configured to escalate to Users, Squads or Schedules in a given order and time. You can create different Escalation Policies for different Services. 
+Escalation Policies ensure that the right people are notified at the right time. Incident notifications can be configured to escalate to Users, Squads or Schedules in a given order and time. You can create different Escalation Policies for different Services.
+
+## Prerequisites
+
+- The User Role for the user in the Team must have the necessary permissions in order to manage Escalation Policies.
 
 ## Creating an Escalation Policy
+
+Ensure that the right Team is selected used the team picker at the top of the screen.
 
 **(1)** Click on **Escalation Policies** from the navigation sidebar
 
@@ -97,7 +103,7 @@ You can repeat any Escalation Policy for a **maximum of 3 times** only.
 If the incident has transitioned away from the **Triggered** state when it was assigned to a specific Escalation Policy, then the rest of the rules in the Escalation Policy will not be executed.
 {{site.data.alerts.end}}
 
-## Edit or Delete an Escalation Policy
+## Editing/Deleting an Escalation Policy
 
 **(1)** To edit an existing Escalation Policy, click on **More Options** for that particular Escalation Policy
 
@@ -112,3 +118,9 @@ If the incident has transitioned away from the **Triggered** state when it was a
 
 Before deleting an Escalation Policy, **ensure that it is not associated with any of the Services or that there are no open incidents associated with the Escalation Policy**, otherwise you will be prohibited from deleting it.
 {{site.data.alerts.end}}
+
+## FAQs
+
+**(1)** Can I add members from different Teams into an Escalation Policy for my Team?
+
+No, adding members from across Teams into an Escalation Policy is not allowed. Any member that needs to be added in the Escalation Policy for a Team must be a part of the same Team.

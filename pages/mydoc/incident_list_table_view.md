@@ -4,7 +4,7 @@ tags: [set-up-your-profile, managing-all-users]
 keywords: 
 last_updated: 
 datatable: 
-summary: "List view for all your incidents"
+summary: "List view for all your Team's incidents"
 sidebar: mydoc_sidebar
 permalink: docs/incident-list-table-view
 folder: mydoc
@@ -14,33 +14,35 @@ The **Incident List** view gives you a clear view of all your incidents along wi
 
 ## Accessing the **Incident List** view
 
-**(1)** Click on **Incident List** from the sidebar
+First, select the **Team** from the team picker on the top
+
+**(1)** Click on **Incidents** from the sidebar
 
 ![](images/incident_list_1.png)
 
-**(2)** View the details of the incident:
+**(2)** View the following details for every listed incident:
 
 - **Incident Message**
 - **Created At**
-- Associated **Service**
+- **Service** it is affecting
 - **Assigned To**
-- The **Current Status** of the incident
+- The **current Status** of the incident
 
 ![](images/incident_list_2.png)
 
 ### Quick Filter by Incident Status
 
-Filter incidents by status by using the status dropdown and choosing the appropriate option.
+Filter incidents by status by using the status drop-down and choosing the appropriate option.
 
 ![](images/incident_list_3.png)
 
 ### Bulk Actions
 
-**Acknowledge** and **Resolve** multiple incidents in one go by selecting the incidents and selecting the appropriate action button.
+**Acknowledge** and **Resolve** multiple incidents in one go by bulk selecting the listed incidents and choosing the appropriate action button.
 
 ![](images/incident_list_4.png)
 
-When an action is selected it is performed instantly without asking for confirmation so be wary while performing the action.
+**Note:** When an action is selected, it is performed instantly without asking for confirmation so be wary while performing the action.
 
 ### Create an Incident Manually
 
@@ -54,7 +56,7 @@ When an action is selected it is performed instantly without asking for confirma
 
 ### Filter Incidents
 
-**(1)** Click on **Add Filter** to filter incidents and create [custom views](save-filter-view). 
+**(1)** Click on **Add Filter** to filter incidents and create [custom views](save-filter-view) for your Team
 
 ![](images/incident_list_7.png)
 
@@ -77,13 +79,13 @@ Learn more about each filter value [here](filter-incidents).
 
 ### Export Incidents
 
-**(1)** Add the filters of your choice and click on the **download** icon and select **CSV** or **JSON** from the dropdown.
+**(1)** Add the filters of your choice and click on the **download** icon and select either the **CSV** or the **JSON** format option from the drop-down
 
 ![](images/incident_list_9.png)
 
 {{site.data.alerts.red-note}}
 <b>Incident Export Limit</b><br/><br/>
-<p>At the moment you can export only a maximum of 1000 incidents at once. Please tweak your filters to ensure the incidents count is within the limit for every export. Today, there are no limits on the number of times you can export incidents.</p>
+<p>At the moment, you can export only a maximum of 1000 incidents at once. Please tweak your filters to ensure the count of listed incidents is within the limit for every export. There are no limits on the number of times you can export incidents.</p>
 {{site.data.alerts.end}}
 
 **(2)** The exported **CSV** or **JSON** file will have the following fields:
@@ -112,7 +114,7 @@ Learn more about each filter value [here](filter-incidents).
 
 ### Incident List Search
 
-Search for **Message**, **Incident Description** and **Postmortem** using the text Search box.
+Search for incidents based on either the **Incident Message** or the **Incident Description** using the text Search box.
 
 ![](images/incident_list_10.png)
 

@@ -18,14 +18,17 @@ These are useful in situations where you would like to _view_ your all your info
 
 ## Prerequisites
 
-- Only the Account Owner and Admins have Create, Read, Update and Delete capabilities for Suppression Rules
-- First, integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast
+- The User Role associated with the user in the Team must have required permissions to manage Services (ability to manage Suppression Rules).
+
+- Integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast before setting up Suppression Rules.
 
 ## Creating Suppression Rules
 
-**(1)** Navigate to **Services** from the sidebar
+Ensure that the right Team is chosen from the team picker on the top of the screen.
 
-**(2)** Select a Service and click on the **More** option
+**(1)** Click on **Services** in the primary navigation
+
+**(2)** Select a **Service** and click on the **More options** icon
 
 **(3)** Click on **Suppression Rules**
 
@@ -78,7 +81,7 @@ These are useful in situations where you would like to _view_ your all your info
 
 (c) Write your custom Suppression Rule expression
 
-### Syntax for writing rules: The rule engine supports expressions with parameters, arithmetic, logical, and string operations
+### Supported Rules
 
 The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this [link](https://regex101.com/) to get an idea of all the expression types accepted in Squadcast.
 
@@ -150,7 +153,7 @@ source == 'grafana' && (<your_suppression_rule>)
 
 {{site.data.alerts.end}}
 
-### Example
+#### Example
 
 Below is an example payload for demonstration:
 
@@ -188,12 +191,12 @@ To suppress any incoming alert when:
 re(payload.incident_details.message, "[Bug]") && source == "grafana";
 ```
 
-### Discarding suppressed incidents
+## Discarding suppressed incidents
 
 To discard incoming alerts and stop them from being triggered as incidents in Squadcast,
 use the `discard()` function in conjunction with Suppression Rules.
 
-**Example**
+### Example
 
 Suppression Rule:
 
@@ -220,7 +223,7 @@ as **Suppressed events that are discarded** don't get counted against the allowe
 
 ## Viewing Suppressed Incidents
 
-You can view `suppressed` incidents in the [Incident List](https://support.squadcast.com/docs/incident-list-table-view) page by clicking on **All Incidents** and choosing **Suppressed** as highlighted in the screenshot below.
+You can view `suppressed` incidents in the [Incidents](https://support.squadcast.com/docs/incident-list-table-view) page by clicking on **All Incidents** and choosing **Suppressed** as highlighted in the screenshot below.
 
 ![](images/alert_suppression_6_new.png)
 
@@ -242,7 +245,7 @@ The rule engine supports expressions with parameters, arithmetic, logical, and s
 
 **(2)** Can I create OR rules?
 
-Yes, you can. The evaluation between different Suppression Rules is OR. Add multiple Suppression Rules to enable OR evaluation.
+Yes, you can. The evaluation between different Suppression Rules is `OR`. Add multiple Suppression Rules to enable `OR` evaluation.
 
 **(3)** While adding a Suppression Rule, is the _search string_ in the rule case sensitive?
 

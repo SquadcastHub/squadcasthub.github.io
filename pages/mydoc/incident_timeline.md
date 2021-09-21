@@ -9,7 +9,7 @@ permalink: docs/incident-timeline
 folder: mydoc
 ---
 
-You can access the **Incident Activity Timeline** for a particular incident in the **Incident Details** page in the web app and the timeline will be displayed on the right-hand side of the page.
+You can access the **Incident Activity Timeline** for a particular incident in the **Incidents** page in the web app and the timeline will be displayed on the right-hand side of the **Incident Details** page.
 
 ![](images/timeline_1.png)
 

@@ -11,11 +11,11 @@ folder: mydoc
 
 ## Get more details for an incident
 
-**(1)** Move to the **[Dashboard](incident-dashboard)** or the **[Incident List](incident-list-table-view)** to view and open incidents
+First, select the **Team** from the team picker on the top.
+
+**(1)** Move to the **[Dashboard](incident-dashboard)** or the **[Incidents](incident-list-table-view) page** to view and open incidents
 
 ![](images/incident_1.png)
-
-![](images/incident_1_1.png)
 
 **(2)** By clicking on any incident, you will be taken to its dedicated **Incident Details** page which shows all the details of the incident
 

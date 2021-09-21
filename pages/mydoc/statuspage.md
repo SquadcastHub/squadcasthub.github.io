@@ -26,17 +26,25 @@ You can also display dependent Services in the StatusPage. First, configure the 
 
 You can configure the [visual themes](https://support.squadcast.com/docs/statuspage#changing-the-colour-theme) and the [terminologies](https://support.squadcast.com/docs/statuspage#configuring-service-status) for Operational (Good) and Degraded (Bad).
 
-## Create a StatusPage
+## Prerequisites
 
-**1.** On the sidebar, click on **StatusPage**
+- The User Role associated with the user in the Team must have the necessary permissions to create and manage StatusPages.
+
+- Services must be created prior to configuring a StatusPage.
+
+## Creating a StatusPage
+
+Ensure that the right Team is selected from the team picker at the top of the screen.
+
+**(1)** Navigate to **StatusPage** from the sidebar
 
 ![](images/statuspage_1_new.png)
 
-**2.** Click on the **Add Status Page** button
+**(2)** Click on the **Add Status Page** button
 
 ![](images/statuspage_2_new.png)
 
-**3 (a)** **Page Configuration**
+**(3 a)** **Page Configuration**
 - Give your StatusPage a **Name**
 - Enter the **Page Hostname** (eg: status.yourcompany.com or www.yourcompanystatus.com) where you want to host the StatusPage
 - Copy the `CNAME` information
@@ -44,14 +52,14 @@ You can configure the [visual themes](https://support.squadcast.com/docs/statusp
 
 ![](images/statuspage_3_new.png)
 
-**3 (b)** **Service Configuration**
+**(3 b)** **Service Configuration**
 - Select the Services which you want to display in your StatusPage and provide a suitable _Alias_ for them
-- You can also enable the checkbox **Select all services** to display your entire list of Services on the StatusPage
+- You can also enable the checkbox **Select all services** to display your entire list of Services in your Team on the StatusPage
 - Click on **Save & Create** to create the StatusPage
 
 ![](images/statuspage_4_new.png)
 
-**Note**: If the selected Service is dependent on other Services, then its dependent Services will also automatically be displayed in the StatusPage.
+**Note:** If the selected Service is dependent on other Services, then its dependent Services will also automatically be displayed in the StatusPage.
 
 ![](images/statuspage_5_new.png)
 
@@ -125,7 +133,7 @@ You can see the changes reflecting as shown below.
 
 ### Public StatusPage
 
-Now that you are done with all the customizations, it's time to make the StatusPage `public`, so all your customers/stakeholders/end users can view it.
+Now that you are done with all the customizations, it's time to make the StatusPage `public`, so all your customers/stakeholders/members of other Teams in your Organization/end users can view it.
 
 To make a StatusPage `public`, go to **Edit** and check the **Make Public** check box as shown below.
 
@@ -137,7 +145,7 @@ Now, anyone can publicly view the status page using the Public URL (Hostname URL
 
 ### Private StatusPage
 
-If you do not check the **Make Public** box in the **Edit** dropdown, your StatusPage will be `Private` to your team members on Squadcast only.
+If you do not check the **Make Public** box in the **Edit** dropdown, your StatusPage will be `Private` to the **members of your Team only**.
 
 ![](images/statuspage_29_new.png)
 
@@ -146,11 +154,9 @@ If you do not check the **Make Public** box in the **Edit** dropdown, your Statu
 
 ![](images/statuspage_32_new.png)
 
-- You can also share the Squadcast URL (indicated by the green box) of the Private StatusPage with users of your account to easily access the StatusPage (with an added user login step, if they are not already logged in to Squadcast)
+- You can also share the Squadcast URL (indicated by the green box) of the Private StatusPage with members of your Team to easily access the StatusPage (with an added user login step, if they are not already logged in to Squadcast)
 
 ![](images/statuspage_32_new.png)
-
-- You can also share the Squadcast URL (indicated by the green box) of the Private StatusPage with users of your account to easily access the StatusPage (with an added user login step, if they are not already logged in to Squadcast)
 
 Whenever there is an incident for a displayed Service, that status of the Service will be marked as Degraded/Bad.
 You can post updates to the StatusPage for the incident with **different statuses**. 
@@ -339,3 +345,7 @@ The number of **Public StatusPages** that can be added depend on the [Pricing Pl
 No, there is **no limit on the number of subscribers** to your StatusPage. You are also **not charged for subscriptions** to your StatusPage. 
 
 However, you will **not be able to view the list of subscribers** that have subscribed to your StatusPage.
+
+#### 18. I have an open incident in Squadcast for one of my Services from 2 days ago, however, the health of the affected Service in the StatusPage went back to being healthy. Is this expected?
+
+Typically, critical incidents are resolved by Organizations within 24 hours of them being triggered. Squadcast keeps track of only those incidents affecting the Services displayed on your StatusPage **that occurred in the current day**. Post this duration, the health of the affected Service goes back to being healthy, since the open incident/s for it are older than 1 day.

@@ -18,19 +18,11 @@ Route detailed monitoring alerts from Checkly to the right users in Squadcast.
 
 ### In Squadcast: Using Checkly as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services**
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **Checkly** from  the **Alert Source** drop down menu and copy the webhook 
+**(2)** Search for **Checkly** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/checkly_1.png)
 
@@ -86,6 +78,20 @@ Route detailed monitoring alerts from Checkly to the right users in Squadcast.
 }
 ```
 {% endraw %}
+
+{{site.data.alerts.yellow-note-i-md}}
+**Important:**
+
+**(1)** Checkly auto-reformats the content copied from above that you paste which ruptures the template syntax, resulting in the failure of the **Test webhook** option and hence, alert propagation to Squadcast. Please ensure the copied content is edited to match the syntax in the screenshot below.
+
+![](images/checkly_6.png)
+
+
+**(2)** It is recommended to add the **Header** `Content-Type` as `application/json`.
+
+![](images/checkly_7.png)
+{{site.data.alerts.end}}
+  
   **(d)** Now, you can verify if the integration works fine by clicking on **Test webhook** which will create an incident in Squadcast
   
   **(e)** In the **Send when** section, choose **`a check fails`**, **`a check recovers`** without fail. The other two options, **`a check degrades`** and **`an SSL certificate is due to expire in a few days`** are optional, based on your requirement

@@ -182,12 +182,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/create-smart-squads</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/dashboard-metrics</loc>
   </url>
   
@@ -242,6 +236,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/errorception</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/event-tagging</loc>
   </url>
   
@@ -269,12 +269,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/ghost-inspector</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/github</loc>
   </url>
   
   
@@ -604,6 +598,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/docs/progress_whatsup_gold</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/docs/prometheus</loc>
   </url>
   
@@ -623,6 +623,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/rapid7-insightidr</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/redash</loc>
   </url>
   
   
@@ -877,6 +883,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/using-the-mobile-app</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/wavefront</loc>
   </url>
   
   

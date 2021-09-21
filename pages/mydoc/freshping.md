@@ -18,19 +18,11 @@ Route detailed monitoring alerts from Freshping to the right users in Squadcast.
 
 ### In Squadcast: Using Freshping as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services**.
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **Freshping** from the **Alert Source** drop down menu and copy the Webhook
+**(2)** Search for **Freshping** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/freshping_1.png)
 
@@ -44,30 +36,58 @@ Route detailed monitoring alerts from Freshping to the right users in Squadcast.
 
 ### In Freshping: Create a Squadcast Webhook
 
-**(1)** Login to your Freshping web console and go to **Settings** 
+**(1)** Login to your Freshping web console and navigate to **Settings** 
 
 ![](images/freshping_2.png)
 
-**(2)** From the Settings menu, select **Integrations**
+**(2)** Then, select **Integrations**. Scroll down to the **Webhook** section and select **+ Create Integration**
 
 ![](images/freshping_3.png)
 
-**(3)** Scroll down to the **Webhook** section and select **+ Create Integration**
+**(3)** Here:
+
+**(a)** Give a meaningful under **Webhook Name**
+
+**(b)** Select the applicable **Event Type** from the drop-down
+
+**(c)** Choose for what **Checks** of yours should Squadcast's Webhook be triggered for
+
+**(d)** Paste the previously copied Squadcast Webhook under **Trigger the webhook**
+
+**(e)** Ensure the **Requires Basic Authentication** checkbox is **unchecked**
 
 ![](images/freshping_4.png)
 
-**(4)** Paste the copied webhook URL from Squadcast under **Domain URL** and click on **Create** to save the integration
+**(f)** Next, you can either choose **Simple** or **Advanced** options for the `JSON Encoding`. At the bare minimum, we expect the below information for the integration to work fine:
 
-![](images/freshping_5.png)
+ ```json
+{
+  "text": "{text}",
+  "check_id": "{check_id}",
+  "check_name": "{check_name}",
+  "check_url": "{check_url}",
+  "request_location": "{request_location}",
+  "request_datetime": "{request_datetime}",
+  "request_timeout": "{request_timeout}",
+  "response_state": "{response_state}",
+  "response_status_code": "{response_status_code}",
+  "response_time": "{response_time}",
+  "response_summary": "{response_summary}"
+}
+ ```
 
-**(5)** You can verify the same on the **Integrations** page
+ In addition to this, if you wish to send more data to Squadcast via this Webhook, ensure the data is **valid** `JSON`.
+
+ **(g)** Click on **Save**
+
+ ![](images/freshping_5.png)
+
+**(4)** You can verify the creation of your Webhook for Squadcast on the **Integrations** page
 
 ![](images/freshping_6.png)
 
-**NOTE**: When you click on the **Test** button, Freshping sends out **Resolve** alerts which do *not* create any new incidents in Squadcast. Please simulate real-time alerts to verify that the integration is working as expected.
-
-![](images/freshping_7.png)
+**NOTE**: When you click on the **Test** button, Freshping sends out a test alert that would trigger a test incident in Squadcast.
 
 That is it, you are good to go! 
 
-Now, whenever Freshping generates an alert, an incident will be triggered for it in Squadcast. Additionally, once the alert that triggered the incident(s) is resolved in Freshping, the corresponding Squadcast incident would get **resolved automatically.**
+Now, whenever Freshping generates an alert, an incident will be triggered for it in Squadcast. Additionally, once the alert that triggered the incident is resolved in Freshping, the corresponding Squadcast incident would get **resolved automatically.**

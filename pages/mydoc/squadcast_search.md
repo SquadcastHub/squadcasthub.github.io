@@ -4,7 +4,7 @@ tags: [set-up-your-profile, managing-all-users]
 keywords: 
 last_updated: 
 datatable: 
-summary: "Use the global search bar to look for incidents, documentation or other entities within the platform"
+summary: "Use the global search bar to look for incidents, documentation or other entities for your Team within the platform"
 sidebar: mydoc_sidebar
 permalink: docs/squadcast-search
 folder: mydoc
@@ -66,7 +66,7 @@ Example Use Case:
 I want to look for a postmortem that contains the string `jira` in its Incident Message. 
 
 - Type in `?:` if you want to look up the query token 
-- Type in `in: postmortem message "jira"`
+- Type in `in: postmortems message "jira"`
 - Hit `Command + Enter`
 
 Your search results that match this query will be populated as shown below

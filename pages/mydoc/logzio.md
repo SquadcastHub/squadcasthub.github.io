@@ -18,19 +18,11 @@ Route detailed monitoring alerts from Logz.io to the right users in Squadcast.
 
 ### In Squadcast: Using Logz.io as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services**.
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **Logz.io** from  the **Alert Source** drop down menu and copy the webhook 
+**(2)** Search for **Logz.io** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/logzio_1.png)
 
@@ -63,6 +55,20 @@ Route detailed monitoring alerts from Logz.io to the right users in Squadcast.
 Find more details on how each of these parameters can be configured [here](https://docs.logz.io/user-guide/integrations/custom-endpoints.html)
 
 ![](images/logzio_4.png)
+
+{% raw %}
+```json
+{
+    "alert_title": "{{alert_title}}",
+    "alert_description": "{{alert_description}}",
+    "alert_severity": "{{alert_severity}}",
+    "account_id": "{{account_id}}",
+    "account_name": "{{account_name}}",
+    "alert_samples": "{{alert_samples}}",
+    "alert_tags_json": "[{{alert_tags_json}}]"
+}
+```
+{% endraw %}
 
 **(4)** Next, to create the alert itself, you can either: 
 

@@ -3,71 +3,81 @@ title: Azure Active Directory SSO
 tags: [sso, azure active directory]
 keywords:
 last_updated:
-summary: "Enable Azure Active Directory Single Sign On (SSO) for your Squadcast organisation"
+summary: "Enable Azure Active Directory Single Sign-On (SSO) for your Squadcast Organisation"
 sidebar: mydoc_sidebar
 permalink: docs/azure-active-directory-sso
 folder: mydoc
 ---
 
-Squadcast supports SAML 2.0 based Single Sign On (SSO) login for Azure Active Directory users and you can set it for your organisation by following this integration guide.
+Squadcast supports SAML 2.0 based Single Sign-On (SSO) login for Azure Active Directory users. You can integrate your Squadcast Organization with your Azure Active Directory SSO by following this integration guide.
 
 ### Pre-requisites
 
 1. Account Owner / Administrator account in Squadcast
 
-2. A valid Squadcast subscription ([Enterprise](https://www.squadcast.com/pricing))
+2. A valid Squadcast subscription in either ([Pro or Enterprise plans](https://www.squadcast.com/pricing))
 
 {{site.data.alerts.blue-note}}
 <b>Point to Note: </b>
-<br/><br/><p>1. Only an Administrator / Account owner can enable and configure Azure Active Directory SSO for an organisation in Squadcast.<br/><br/> 2. Once enabled, only the Account owner can use email-password based login by default although it can be configured to enable email based login for Administrators as well.</p>
+<br/><br/><p>1. Only an Administrator / Account owner can enable and configure Azure Active Directory SSO for an Organisation in Squadcast.<br/><br/> 2. Once enabled, only the Account Owner can use email-password based login <b>by default</b> although, it can be configured to enable email-password based login for Administrators as well.</p>
 {{site.data.alerts.end}}
 
-### Setup Instructions
+### Setup Guide
 
-1.Go to the Integrations tab from your Squadcast account sidebar and click on **Integrate** under SSO card.
+**(1)** Navigate to Extensions from the sidebar and click on **Integrate** in the SSO card
 
 ![](images/azure_squadcast_1.png)
 
-2.In the opened modal, select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**.
+**(2)** In the opened modal, select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**
 
 ![](images/azure_squadcast_2.png)
 
+As given in the displayed guide, copy the **ACS URL** being shown in point 1
+
 ![](images/saml_3.png)
 
-3.As given in the displayed guide, copy the **ACS URL** .Then go to your Azure Active Directory dashboard and click on **Enterprise applications** .
+**(3)** Then, go to your Azure Active Directory dashboard and click on **Enterprise applications** from the left navigation
 
 ![](images/azure_squadcast_4.png)
 
-4.Click **New Application** .
+**(4)** Click on **New Application** to create an application for Squadcast
 
 ![](images/azure_squadcast_5.png)
 
-5.Select Non Gallery Application , give a name for the application and click **Add** .
+**(5)** Select **Non-gallery Application**, give a name for the application (such as, _Squadcast_) and click on **Add**
 
 ![](images/azure_squadcast_6.png)
 
-6.In the left pane under **Manage** select **Users and groups**.
+**(6)** For the newly created app, in the left pane under **Manage**, select **Users and groups**
 
 ![](images/azure_squadcast_7.png)
 
+Now, click on **Add User**
+
 ![](images/azure_squadcast_8.png)
 
-7.Click **Add User**. Add the users you want along with the appropriate role.
+**(7)** Find and add the users you want to, along with the appropriate **Role**
 
 ![](images/azure_squadcast_9.png)
 
-8.Click **Single sign-on** and select **SAML**.
+**(8)** In the left pane under **Manage**, click **Single sign-on** and select **SAML**
 
 ![](images/azure_squadcast_10.png)
 
-9.Edit the Basic SAML configuration section and in **Reply URL (Assertion Consumer Service URL)
-** paste the ACS URl you copied from Squadcast.
+**(9)** Edit the **Basic SAML Configuration** section
+
+In both, the **Identifier (Entity ID)** and **Reply URL (Assertion Consumer Service URL)** placeholders, paste the **ACS URL** you copied previously from Squadcast in here
 
 ![](images/azure_squadcast_11.png)
 
-10.Edit the User and Attributes Claims Section. Remove the namespace and use **first_name** for source attribute **user.givenname** , **email** for **user.email** and **last_name** for **user.lastname**
+**(10)** Next, edit the **User and Attributes Claims** section
 
 ![](images/azure_squadcast_12.png)
+
+Remove the _namespace_ and use:
+- `first_name` for source attribute `user.givenname`
+- `email` for `user.mail`
+- `last_name` for `user.surname`
 
 ![](images/azure_squadcast_13.png)
 
@@ -75,18 +85,40 @@ Squadcast supports SAML 2.0 based Single Sign On (SSO) login for Azure Active Di
 
 ![](images/azure_squadcast_15.png)
 
-11.Click Edit icon on the Saml Signing Certificate section and download the PEM certificate.
+**(11)** Click on the **Edit** icon in the **SAML Signing Certificate** section
+
+![](images/azure_squadcast_20.png)
+
+Here, **download the PEM certificate**
 
 ![](images/azure_squadcast_16.png)
 
-12.Under Setup up section copy the Login Url.
+**(12)** From under the **Set up Squadcast** section, copy the **Login URL**
 
 ![](images/azure_squadcast_17.png)
 
-13.Paste both Login Url in Saml 2.0 EndPoint and the contents of the pem. file in the X.509. certificate section.Then click Save.
+**(13)** Paste the copied **Login URL** in the placeholder for **SAML 2.0 Endpoint** and the contents of the **PEM Certificate** in the placeholder for **X.509 Certificate**
+
+- Provisioning new users can be defaulted to a particular `User Role` from the drop-down
+- You can allow `Account Owners` and `Admins` to also login using their email credentials in addition to SSO. This can be done by checking the boxes for those options
+- You can simply _provision new users on their first login_ by enabling the checkbox for the same
+
+Once all of this have been configured based on your requirements, click on **Save**
 
 ![](images/azure_squadcast_18.png)
 
-14.That's it. For testing SSO go back to the azure portal sso page and click Test Sign In. Then Click sign in as current user
+**(14)** That's it, your configuration is now complete!
+
+For testing this SSO integration and if its working as expected, go back to the Azure Active Directory SSO portal, and click on **Test** 
+
+Then, click **Sign in as current user** to verify your login to Squadcast!
 
 ![](images/azure_squadcast_19.png)
+
+**(15)** Activate this SSO integration by _enabling the toggle_
+
+![](images/azure_squadcast_21.png)
+
+**(16)** To login to Squadcast via Azure Active Directory SSO from here on, **within your Office 365 account, click on App Launcher,  click on All Apps and you will be able to see Squadcast** there. Unless you have enabled email-password based login for your User Role, you will not be able to login to Squadcast using email-password from our [webapp login page](https://app.squadcast.com).
+
+**Important:** We do not support provisioning and syncing of **Groups** from Azure Active Directory SSO into Squadcast. We support this only for **Users**.

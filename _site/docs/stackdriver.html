@@ -78,10 +78,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- End Google Tag Manager -->
 
+<!-- Google Tag Manager (Support)-->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N886MXQ');</script>
+
+<!-- End Google Tag Manager (Support)-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109315563-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-109315563-4');
+</script>
+
+<!-- End GA -->
+
 <!-- Lightbox -->
 
 <link rel="stylesheet" href="/css/lightbox.css">
 <script type="text/javascript" src="/js/lightbox.js"></script>
+
+<!-- iFrame blocker -->
+
+<script>if(self != top){top.location = self.location}</script>
+
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -229,6 +256,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             rest1.innerHTML = 'No Results to display'+'<div style="display: flex; justify-content: flex-end; padding-right:10px; padding-bottom: 10px;"><img src="../images/algolia-blue-mark.svg" style="width: 15px;"></div>';
                         }
                         });
+                        dataLayer.push({
+                            'event': 'searchEvent',
+                            'gtm.elementId': 'wf-form-search',
+                            'searchValue': val
+                        });
                     }
                     field1.onkeyup = function(event1){
                         if(field1.value == ''){
@@ -363,13 +395,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Manage Squads" href="/docs/squads">Manage Squads</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Create Smart Squads" href="/docs/create-smart-squads">Create Smart Squads</a></li>
           
           
           
@@ -820,6 +845,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+          <li><a title="Errorception" href="/docs/errorception">Errorception</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Freshping" href="/docs/freshping">Freshping</a></li>
           
           
@@ -1037,6 +1069,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+          <li><a title="Progress WhatsUp Gold" href="/docs/progress_whatsup_gold">Progress WhatsUp Gold</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="PRTG Network Monitor" href="/docs/prtg-network-monitor">PRTG Network Monitor</a></li>
           
           
@@ -1045,6 +1084,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="Rapid7 InsightIDR" href="/docs/rapid7-insightidr">Rapid7 InsightIDR</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a title="Redash" href="/docs/redash">Redash</a></li>
           
           
           
@@ -1121,7 +1167,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Slack Alert Source Integration" href="/docs/slack-as-an-alert-source">Slack Alert Source Integration</a></li>
+          <li><a title="Slack" href="/docs/slack-as-an-alert-source">Slack</a></li>
           
           
           
@@ -1205,6 +1251,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
+          <li><a title="Wavefront" href="/docs/wavefront">Wavefront</a></li>
+          
+          
+          
+          
+          
+          
           <li><a title="Zabbix" href="/docs/zabbix-integration-guide">Zabbix</a></li>
           
           
@@ -1229,13 +1282,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           <li><a title="CircleCI Integration" href="/docs/circleci-integration">CircleCI Integration</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="GitHub" href="/docs/github">GitHub</a></li>
           
           
           
@@ -1392,14 +1438,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           
           
-          <li><a title="Deactivating your Squadcast Account" href="/docs/deactivating-your-squadcast-account">Deactivating your Squadcast Account</a></li>
+          <li><a title="Deactivate your Squadcast Account" href="/docs/deactivating-your-squadcast-account">Deactivate your Squadcast Account</a></li>
           
           
           
           
           
           
-          <li><a title="Deleting your Squadcast Account" href="/docs/deleting-your-squadcast-account">Deleting your Squadcast Account</a></li>
+          <li><a title="Delete your Squadcast Account" href="/docs/deleting-your-squadcast-account">Delete your Squadcast Account</a></li>
           
           
           
@@ -1536,21 +1582,31 @@ li.sidebarTitle{
 
                 
 
-            <p>Follow the steps below to configure a service so as to extract its related alert data from Google Stackdriver. Squadcast will then process this information to create incidents for this service as per your preferences.</p>
+            <p>This document will help you integrate Stackdriver with Squadcast.</p>
 
-<h2 id="using-stackdriver-as-an-alert-source">Using Stackdriver as an Alert Source</h2>
+<p><a href="https://cloud.google.com/monitoring/docs">Stackdriver</a> offers monitoring of a wide variety of metrics, dashboards, alerting, log management, reporting, and tracing capabilities.</p>
 
-<p>On the <strong>Sidebar</strong>, click on <strong>Services</strong>.</p>
+<p>Route detailed events from Stackdriver to the right users in Squadcast.</p>
 
-<p>You can either choose to use existing service or <a href="adding-a-service-1">create a new service</a></p>
+<h2 id="how-to-integrate-stackdriver-with-squadcast">How to integrate Stackdriver with Squadcast</h2>
 
-<p>Now, click on the corresponding <strong>Alert Sources</strong> button.</p>
+<h3 id="in-squadcast-using-stackdriver-as-an-alert-source">In Squadcast: Using Stackdriver as an Alert Source</h3>
+
+<p><strong>(1)</strong> On the <strong>Sidebar</strong>, click on <strong>Services</strong></p>
+
+<p><img src="images/integration_1-1.png" alt="" /></p>
+
+<p><strong>(2)</strong> Select an existing Service or <strong>Add Service</strong></p>
+
+<p><img src="images/integration_1-2.png" alt="" /></p>
+
+<p><strong>(3)</strong> Click the corresponding <strong>Alert Sources</strong></p>
 
 <p><img src="images/integration_1.png" alt="" /></p>
 
-<p>Select <strong>Stackdriver</strong> from  <strong>Alert Source</strong> drop down and copy the Webhook URL shown.</p>
+<p><strong>(4)</strong> Search for <strong>Stackdriver</strong> from  the <strong>Alert Source</strong> dropdown and copy the Webhook</p>
 
-<p><img src="images/stackdriver_1.png" alt="" /></p>
+<p><img src="images/stackdriver_0_new.png" alt="" /></p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-info-circle"></i>
 <b>Important</b><br /><br />
@@ -1558,43 +1614,77 @@ li.sidebarTitle{
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 </div>
 
-<h2 id="create-squadcast-webhook-in-stackdriver">Create Squadcast Webhook in Stackdriver</h2>
+<h2 id="in-stackdriver-adding-a-webhook-for-squadcast">In Stackdriver: Adding a Webhook for Squadcast</h2>
 
-<p>1.Login to your Google Cloud console and go to <strong>Stackdriver - Monitoring</strong> in the sidebar.</p>
+<p>Login to your Google Cloud console. From the sidebar on the left, scroll to find <strong>Operations</strong> and select <strong>Monitoring</strong></p>
 
-<p><img src="images/stackdriver_2.png" alt="" style="max-width: 30%" /></p>
+<p><img src="images/stackdriver_1_new.png" alt="" /></p>
 
-<p>2.Go to <strong>Alerting</strong> section in the sidebar.</p>
+<h3 id="adding-a-notification-channel---webhooks">Adding a Notification Channel - Webhooks</h3>
 
-<p><img src="images/stackdriver_3.png" alt="" /></p>
+<p><strong>(1)</strong> From the left sidebar, select <strong>Alerting</strong></p>
 
-<p>3.Go to <strong>Edit Notification Channels</strong>.</p>
+<p><img src="images/stackdriver_2_new.png" alt="" /></p>
 
-<p><img src="images/stackdriver_4.png" alt="" /></p>
+<p><strong>(2)</strong> Select <strong>Edit Notification Channels</strong></p>
 
-<p>4.Click on <strong>ADD NEW</strong> button corresponding to Webhooks.</p>
+<p><img src="images/stackdriver_3_new.png" alt="" /></p>
 
-<p><img src="images/stackdriver_5.png" alt="" /></p>
+<p><strong>(3)</strong> Scroll until you find <strong>Webhooks</strong>. Here, click on <strong>Add New</strong> to add the Squadcast Webhook</p>
 
-<p>5.Paste the Squadcast webhook URL copied in previous step. This will create Squadcast webhook in Stackdriver</p>
+<p><img src="images/stackdriver_4_new.png" alt="" /></p>
 
-<h2 id="setting-up-alerts-in-stackdriver-and-send-it-to-squadcast">Setting up Alerts in Stackdriver and send it to Squadcast</h2>
+<p><strong>(4)</strong> Here, paste the previously copied Webhook from Squadcast under <strong>Endpoint URL</strong>. Give the Webhook a meaningful <strong>Displaye Name</strong>.</p>
 
-<p>1.In the alerting section, click on <strong>CREATE POLICY</strong>.</p>
+<p><strong>Things to keep in mind here</strong>:</p>
+<ul>
+  <li><strong>Do not enable</strong> the checkbox for using HTTP Basic Auth</li>
+  <li>When you paste the Webhook from Squadcast in <strong>Endpoint URL</strong> field, ensure you remove the additional <code class="highlighter-rouge">https://</code> that gets added</li>
+</ul>
 
-<p><img src="images/stackdriver_6.png" alt="" /></p>
+<p><strong>(5)</strong> Click on <strong>Test Connection</strong> and check to see if an incident has been created for the incident in Squadcast</p>
 
-<p>2.Configure policy name, conditions and triggers as per requirement. In the <strong>Notifications</strong> section, click on <strong>ADD NOTIFICATION CHANNEL</strong>.</p>
+<p><img src="images/stackdriver_5_new.png" alt="" /></p>
 
-<p><img src="images/stackdriver_7.png" alt="" /></p>
+<p><strong>(6)</strong> Finally, click on <strong>Save</strong></p>
 
-<p>3.Select <strong>Webhook with Token Authentication</strong> for <strong>Notification Channel Type &amp; for **Notification Channel</strong>, select the webhook you had setup in the previous step.</p>
+<h3 id="setting-up-alerting-policies">Setting up Alerting Policies</h3>
 
-<p><img src="images/stackdriver_8.png" alt="" /></p>
+<p><strong>(1)</strong> Within the <strong>Alerting</strong> page, to add a <strong>Policy</strong>, click on either <strong>+ Create Policy</strong> on the top or <strong>Add Policy</strong> in the bottom</p>
 
-<p>4.Click on <strong>ADD</strong>.</p>
+<p><img src="images/stackdriver_8_new.png" alt="" /></p>
 
-<p>Now whenever an alert is triggered by Stackdriver, an incident will be created automatically in Squadcast. The Stackdriver integration comes with an <strong>Auto-Resolve</strong> feature, meaning that whenever the alerts gets resolved in Stackdriver, the incident will automatically get resolved in Squadcast as well.</p>
+<p><strong>(2)</strong> Now, <strong>Add Condition</strong> for your <strong>Policy</strong>. In that page, you can set up the metrics that you would wish to monitor and their thresholds, along with the resources</p>
+
+<p><img src="images/stackdriver_9_new.png" alt="" /></p>
+
+<p><strong>(3)</strong> Once that is done, select <strong>Next</strong></p>
+
+<p><img src="images/stackdriver_10_new.png" alt="" /></p>
+
+<p><strong>(4)</strong> In the <strong>Notification Channels</strong> dropdown, select the Webhook previously configured for Squadcast and select <strong>OK</strong></p>
+
+<p><img src="images/stackdriver_11_new.png" alt="" /></p>
+
+<p><strong>(5)</strong> Enable the checkbox as shown in the screenshot to receive <strong>Incident Resolutions signals</strong> as well. Then, select <strong>Next</strong></p>
+
+<p><img src="images/stackdriver_12_new.png" alt="" /></p>
+
+<p><strong>(6)</strong> Here, add a meaningul <strong>Alert Name</strong>, add <strong>Optional Documentation</strong> and click on <strong>Save</strong> to create your <strong>Alerting Policy</strong></p>
+
+<p><img src="images/stackdriver_13_new.png" alt="" /></p>
+
+<p><strong>(7)</strong> Once everything is done, in the <strong>Policies</strong> page, you will be able to see the previously added <strong>Alerting Policy</strong>. Ensure that the <strong>Alerting Policy</strong> toggle is <strong>Enabled</strong> to <code class="highlighter-rouge">on</code></p>
+
+<p><img src="images/stackdriver_14_new.png" alt="" /></p>
+
+<p>That is it, you are now good to go! Whenever an alert is generated in Stackdriver, an incident will be created for the same in Squadcast.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i>
+<b>FAQ:</b>
+<br /><br /><p>Q: Does this integration support auto-resolution of incidents in Squadcast?<br /><br />
+A: Yes, this integration **supports auto-resolution of incidents in Squadcast**, meaning that whenever alerts get resolved in Stackdriver, the corresponding incidents will be automatically resolved in Squadcast as well. If you do not enable the checkbox to <b>recieve Incident Resolution signals</b>, then your Squadcast incidents will not be auto-resolved when alerts in Stackdriver are resolved.</p>
+</div>
 
 
                 <!--div class="tags">
@@ -1608,7 +1698,93 @@ li.sidebarTitle{
                     
                     
                 </div-->
-
+                <div id="feedback"></div>
+                <script>
+                    var htm = '<div class="columns-337 w-row" style="display:flex; margin-top: 32px; margin-bottom: 32px; align-items: center;">'+
+                        '<div class="w-col w-col-4" style="width:33.33%; position: relative; float: left;">'+
+                            '<div class="text-block-485" style="font-size: 20px;">Was this helpful?</div>'+
+                        '</div>'+
+                        '<div class="column-484 w-col w-col-4" style="width: 33.33%; position: relative; float: left; display: flex;">'+
+                            '<button id="yes-b" class="div-block-458 mr-16" style="margin-right: 16px; display: flex;  width: 70px; height: 35px; justify-content: center; align-items: center; border: 2px solid #3670fe; border-radius: 4px; cursor: pointer; background-color: transparent;">'+
+                                '<img id="yes-d" src="https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5f87f57c067f42b537759cbc_ic_thumb_up.svg" loading="lazy" id="tu-d" alt="" class="image-374" style="margin: 0px; width: 30%; margin-right: 5px; z-index: -1;">'+
+                                '<img id="yes-w" src="https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5f87fa4bf5fd371b4db470db_ic_thumb_down.svg" loading="lazy" id="tu-w" alt="" class="image-374 inv wh" style="margin: 0px; width: 30%; margin-right: 5px; transform: rotate(180deg); display: none;">'+
+                                'Yes'+
+                            '</button>'+
+                            '<button id="no-b" class="div-block-458 blu" style="display: flex;  width: 70px; height: 35px; justify-content: center; align-items: center; border: 2px solid #3670fe; border-radius: 4px; cursor: pointer; background-color: transparent;">'+
+                                '<img id="no-d" src="https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5f87f57c067f42b537759cbc_ic_thumb_up.svg" loading="lazy" id="td-d" alt="" class="image-374 inv prt2" style="margin: 0px; width: 30%; margin-right: 5px; transform: rotate(180deg); z-index: -1;">'+
+                                '<img id="no-w" src="https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5f87fa4bf5fd371b4db470db_ic_thumb_down.svg" loading="lazy" id="td-w" alt="" class="image-374 wh prt2" style="margin: 0px; width: 30%; margin-right: 5px; display: none;">'+
+                                'No'+
+                            '</button>'+
+                        '</div>'+
+                    '</div>'+
+                    '<div id="form-block" class="div-block-460" style="display: none;">'+
+                        '<div id="no-text" class="text-block-487" style="margin-bottom:8px;">Oh no, let us know how we can improve.</div>'+
+                        '<div class="div-block-459">'+
+                            '<div class="form-block-2 w-form">'+
+                                '<form id="wf-form-docs" name="wf-form-docs" data-name="docs">'+
+                                    '<div style="padding: 12px; border: 1px solid #bbb7b7; border-radius: 4px; margin-bottom: 12px;">'+
+                                        '<textarea placeholder="Write your comments here" maxlength="5000" id="comment" name="comment" required data-name="comment" class="textarea w-input" style="resize: none; margin-bottom: 8px; border: 0px; width: 100%; min-height: 100px; outline: none;"></textarea>'+
+                                    '</div>'+
+                                    '<button type="submit" value="Submit" data-wait="Please wait..." class="submit-button-2 w-button" style="width: 70px; height: 35px; padding: 0; border: 0px; border-radius: 4px; background-color: #3670fe; color: #f9fafb;">Submit</button>'+
+                                '</form>'+
+                                '<div id="success" class="success-message w-form-done" style="display:none; border-radius: 6px; background-color: rgba(15,221,143,.1); color: #0fdd8f; padding: 20px;">'+
+                                    '<div class="text-block-12" style="color: #0fdd8f; text-align: center;"></div>'+
+                                '</div>'+
+                                '<div id ="fail" class="error-message w-form-fail" style="display: none; border-radius: 6px; background-color: rgba(240,69,70,.2); padding: 20px; color: #f04546;">'+
+                                    '<div class="text-block-13" style="color: #f04546; text-align: center;">Oops! Something went wrong while submitting the form.</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>';
+                    if(window.location.pathname.slice(1,5) == 'docs' && window.location.pathname != '/docs/'){
+                        document.getElementById('feedback').innerHTML = htm;
+                        document.getElementById('yes-b').onclick = function(){
+                            document.getElementById('form-block').style.display = 'block';
+                            document.getElementById('yes-b').style.backgroundColor = '#3670fe';
+                            document.getElementById('yes-b').style.color = 'white';
+                            document.getElementById('no-b').style.backgroundColor = 'inherit';
+                            document.getElementById('no-b').style.color = 'inherit';
+                            document.getElementById('yes-d').style.display = 'none';
+                            document.getElementById('yes-w').style.display = 'block';
+                            document.getElementById('no-d').style.display = 'block';
+                            document.getElementById('no-w').style.display = 'none';
+                            document.getElementById('success').style.display = 'block';
+                            document.getElementById('no-text').style.display = 'none';
+                            document.getElementById('wf-form-docs').style.display = 'none';
+                            document.getElementById('success').innerHTML = '<p style="text-align: center; margin-bottom: 0px;">Thank you for your feedback!</p>';
+                        }
+                        document.getElementById('no-b').onclick = function(){
+                            document.getElementById('form-block').style.display = 'block';
+                            document.getElementById('no-b').style.backgroundColor = '#3670fe';
+                            document.getElementById('no-b').style.color = 'white';
+                            document.getElementById('yes-b').style.backgroundColor = 'inherit';
+                            document.getElementById('yes-b').style.color = 'inherit';
+                            document.getElementById('yes-w').style.display = 'none';
+                            document.getElementById('yes-d').style.display = 'block';
+                            document.getElementById('no-w').style.display = 'block';
+                            document.getElementById('no-d').style.display = 'none';
+                            document.getElementById('success').style.display = 'none';
+                            document.getElementById('no-text').style.display = 'block';
+                            document.getElementById('wf-form-docs').style.display = 'block';
+                        }
+                        $('#wf-form-docs').submit(function(e){
+                            document.getElementById('no-text').style.display = 'none';
+                            document.getElementById('wf-form-docs').style.display = 'none';
+                            try{
+                                dataLayer.push({
+                                    'event': 'submitEvent',
+                                    'gtm.elementId': 'wf-form-docs',
+                                    'eventMessage': document.getElementById('comment').value
+                                });
+                                document.getElementById('success').style.display = 'block';
+                                document.getElementById('success').innerHTML = '<p style="text-align: center; margin-bottom: 0px;">Thank you! Your submission has been received!</p>';
+                                e.preventDefault();
+                            }catch(e){
+                                document.getElementById('fail').style.display = 'block';
+                            }
+                        });
+                    }
+                </script>
             <!--hr class="shaded"/--><div style="box-shadow: inset 0 6px 6px -6px rgba(0,0,0,0.5);height: 12px;border: 0;margin-top: 70px;background: white;width: 100%;margin-bottom: 10px;"></div>
             
 
@@ -1679,7 +1855,7 @@ $('#toc').on('click', 'a', function() {
     var images = document.getElementsByTagName('img');
     var host = document.location.origin.length + 8;
     for (i = 0; i < images.length; i++){
-        if (images[i].src.slice(host) != 'squadcast_logo_white.png' && images[i].src.slice(host) != 'company_logo.png' && images[i].parentElement.localName != 'a' && window.location.pathname != '/'){
+        if (images[i].src.slice(host) != 'squadcast_logo_white.png' && images[i].src.slice(host) != 'company_logo.png' && images[i].src != 'https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5f87f57c067f42b537759cbc_ic_thumb_up.svg' && images[i].src != 'https://uploads-ssl.webflow.com/5c51758c58939b30a6fd3d73/5f87fa4bf5fd371b4db470db_ic_thumb_down.svg' && images[i].parentElement.localName != 'a' && window.location.pathname != '/'){
             var img = images[i].parentElement.innerHTML;
             var src = images[i].src;
             var lb = "<a href='"+src+"' style='cursor: zoom-in;'>"+img+"</a>";
@@ -1693,7 +1869,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
                Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: May 6, 2021 <br /> -->
+<!--  Site last generated: Jul 29, 2021 <br /> -->
                 </div>
             </div>
             <script>
@@ -1703,6 +1879,10 @@ $('#toc').on('click', 'a', function() {
                 };
             </script>
             <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/lqtvxnd7';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+            <!-- Google Tag Manager (noscript) [support]-->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N886MXQ"
+                 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) [support]-->
 </footer>
 
 

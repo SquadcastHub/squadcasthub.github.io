@@ -13,19 +13,11 @@ Route alerts into Squadcast using Email endpoints of Services from platforms tha
 
 ## In Squadcast: Using Email as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services** 
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **Email** from the **Alert Source** drop down menu and copy the Email address
+**(2)** Search for **Email** from the Alert Source drop-down and copy the Email address
 
 ![](images/email_1.png)
 
@@ -91,4 +83,12 @@ Now, whenever an Email is sent to the Email address of the Service, Squadcast wi
 {{site.data.alerts.blue-note}}
 <b>Note</b>
 <br/><br/><p>This integration does not support <b>auto-resolution</b> of incidents. If the platform you are using resolves an alert, you will have to manually resolve the corresponding incident in Squadcast via the <a href="https://www.app.squadcast.com">web app</a> or the <a href="using-the-mobile-app">Squadcast mobile app</a></p>
+{{site.data.alerts.end}}
+
+{{site.data.alerts.blue-note-md}}
+**Important**
+
+- If you are sending regular emails - emails in the `text/html` format, URLs for images will appear as URLs only. If the image is added inline, only the name of the file will appear and not the image. However, please note that if the image is added as an attachment, it will not show up in the payload (and hence, the Incident Description).
+
+- If you are sending emails as plain text - emails in the `text/plain` format, you can add images using the Markdown syntax `![image_name](image_url)`. The link of the image will appear in the Incident Description. Similarly, you will also be able to format the body content using Markdown, and the content with the same formatting will be displayed in the Incident Description.
 {{site.data.alerts.end}}

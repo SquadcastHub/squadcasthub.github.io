@@ -11,6 +11,13 @@ folder: mydoc
 
 You can use our mobile app to Acknowledge, Reassign, take Actions, and Resolve from the mobile app. You can also view who is on-call from the Schedules Tab. The mobile app will walk you into the **Incident List** view where you will be able to view incidents organized by Incident status, that is, Triggered, Acknowledged and Resolved.
 
+{{site.data.alerts.yellow-note-i}}
+<b>Note</b>
+<br/><br/>
+In order to use mobile app, make sure you have verified your email address. You can do that by opening the verification link sent in your email in a browser.
+{{site.data.alerts.end}}
+
+
 {{site.data.alerts.green-note-check}}
 <b>SSO login now available on Mobile App</b>
 <br/><br/><p>We have enabled SSO login for mobile application. Check the <a href="#sso-login-support-for-mobile-apps">SSO login for mobile apps section</a> for more details.</p>

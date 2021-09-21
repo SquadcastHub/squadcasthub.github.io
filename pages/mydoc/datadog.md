@@ -15,19 +15,11 @@ Datadog is a monitoring platform for cloud applications that brings in together 
 
 ### In Squadcast: Using Datadog as an Alert Source
 
-**(1)** On the **Sidebar**, click on **Services**.
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
-![](images/integration_1-1.png)
+![](images/alert_source_1.png)
 
-**(2)** Select an existing Service or **Add service** 
-
-![](images/integration_1-2.png)
-
-**(3)** Click the corresponding **Alert Sources**
-
-![](images/integration_1.png)
-
-**(4)** Search for **Datadog** from  the **Alert Source** drop down menu and copy the webhook 
+**(2)** Search for **Datadog** from the Alert Source drop-down and copy the Webhook URL 
 
 ![](images/datadog_1.png)
 
@@ -82,8 +74,10 @@ Datadog is a monitoring platform for cloud applications that brings in together 
 
 ![](images/datadog_6.png)
 
-Click on “Save” to complete the service integration. 
+Click on “Save” to complete the service integration.
 
-That's it, you are good to go! Your Datadog integration is complete. 
+**NOTE:** Once the Webhook for Squadcast has been configured, ensure that the same is also selected as a channel within **Notify your team** in the **Monitor's** configuration. 
 
-Now, whenever Datadog fires an alert, an incident will be created in Squadcast for it. When the alert recovers in Datadog, the corresponding incident will **automatically get resolved** in Squadcast as well. 
+That's it, you are good to go! Your Datadog integration is complete.
+
+Now, whenever Datadog fires an alert, an incident will be created in Squadcast for it. When the alert recovers in Datadog, the corresponding incident will **automatically get resolved** in Squadcast as well.
