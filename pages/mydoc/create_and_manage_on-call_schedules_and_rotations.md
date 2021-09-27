@@ -1,7 +1,7 @@
 ---
 title: Create and Manage On-call Schedules & Rotations
 tags: [schedules, rotations]
-summary: "Roosters for your customer support engineers or on-call teams"
+summary: "Rosters for your customer support engineers or on-call teams"
 sidebar: mydoc_sidebar
 permalink: docs/schedules
 folder: mydoc
