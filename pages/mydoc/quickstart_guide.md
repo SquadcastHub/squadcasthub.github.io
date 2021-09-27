@@ -51,7 +51,6 @@ Here's a checklist of things to do to use Squadcast to its full potential or jum
 1. [Squadcast Support - Essential Information](#6--squadcast-support---essential-information)
 1. [Latest Product Updates](#7--latest-product-updates)
 1. [Check out the Squadcast GitHub page](#8--check-out-the-squadcast-github-page)
-1. [Check out our Product Roadmap](#9--check-out-our-product-roadmap)
 1. [Browse Through Glossary](#10--browse-through-glossary)
 1. [Check out our Blog & Resources](#11--check-out-our-blog--resources)
 1. [Here are the events we'll be at](#12-%EF%B8%8F-here-are-the-events-well-be-at)
@@ -226,27 +225,21 @@ If you're curious about what we do everyday, feel free to drop by the [Squadcast
 
 You can check out and contribute to our curated repository of [awesome-sre-tools](https://github.com/SquadcastHub/awesome-sre-tools)! 😊
 
-### 9. 🤓 Check out our Product Roadmap
-
-We are building an end-to-end Incident Management product built on SRE best practices. We're always open to hearing new ideas and improvements. You can check out our [Public Roadmap](http://bit.ly/squadcast-roadmap) to know what we have in store for the near future! 
-
-Drop us a line at [ideas@squadcast.com](mailto:ideas@squadcast.com) with your ideas and feature requests! 
-
-### 10. 📖 Browse Through Glossary
+### 9. 📖 Browse Through Glossary
 
 You can browse our [Glossary](glossary) for terminologies that we use within the platform. This will give a fair understanding of each terminology and functionalities associated with them.
 
-### 11. 📚 Check out our Blog & Resources
+### 10. 📚 Check out our Blog & Resources
 
 If you're looking for more information on Squadcast, Incident Management, SRE, DevOps and general best practices associated with these fields, check out the [Squadcast Blog](https://www.squadcast.com/blog). You can also see additional information like case studies, comparison pages, events we'll be at and our changelog from under the **resource** dropdown on our [website](https://www.squadcast.com/) header.
 
-###  12. ❤️ Here are the events we'll be at
+###  11. ❤️ Here are the events we'll be at
 
 You can catch Squadcast participating in prominent technology events around the world! Meet our team to discuss all things SRE and what we're building at Squadcast.
 
 You can check out all the events we'll be at on the [Squadcast Events](https://www.squadcast.com/events) 
 
-### 13. 🎊 Here's how we engage with the community
+### 12. 🎊 Here's how we engage with the community
 
 From discussing all things SRE, hosting a webinar, contributing to our blog, getting featured on SRE Speak to speaking at meetups, there are several ways you can participate and give back to the SRE community. To find out how you can be a part of our super awesome community, drop us a line at [marketing@squadcast.com](mailto:marketing@squadcast.com) and hear back from us soon!
 
