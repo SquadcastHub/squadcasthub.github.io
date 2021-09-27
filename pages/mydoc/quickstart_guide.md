@@ -51,10 +51,10 @@ Here's a checklist of things to do to use Squadcast to its full potential or jum
 1. [Squadcast Support - Essential Information](#6--squadcast-support---essential-information)
 1. [Latest Product Updates](#7--latest-product-updates)
 1. [Check out the Squadcast GitHub page](#8--check-out-the-squadcast-github-page)
-1. [Browse Through Glossary](#10--browse-through-glossary)
-1. [Check out our Blog & Resources](#11--check-out-our-blog--resources)
-1. [Here are the events we'll be at](#12-%EF%B8%8F-here-are-the-events-well-be-at)
-1. [Here's how we engage with the community](#13--heres-how-we-engage-with-the-community)
+1. [Browse Through Glossary](#9--browse-through-glossary)
+1. [Check out our Blog & Resources](#10--check-out-our-blog--resources)
+1. [Here are the events we'll be at](#11-%EF%B8%8F-here-are-the-events-well-be-at)
+1. [Here's how we engage with the community](#12--heres-how-we-engage-with-the-community)
 
 ### 1. 📅 Setting up your on-call team
 
