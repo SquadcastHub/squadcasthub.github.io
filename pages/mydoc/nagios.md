@@ -35,7 +35,7 @@ Nagios Core versions 3.x and above are supported
 
 ## Create a Squadcast Webhook in Nagios
 
-- Log in to your Nagios server and go to your **nagios.cfg** file  (usually in  /usr/local/nagios/etc/ or /etc/nagios). Make sure **enable_environment_macros=1**. You can find the path of all your object config files and resource config file here. Go to **$USER1$ **directory. You can find the value of this macro in your resource.cfg file.
+- Log in to your Nagios server and go to your **nagios.cfg** file  (usually in  `/usr/local/nagios/etc/` or `/etc/nagios`). Make sure **enable_environment_macros=1**. You can find the path of all your object config files and resource config file here. Go to **$USER1$** directory. You can find the value of this macro in your resource.cfg file.
 
 - Once you're inside the directory, run the following commands:
 
