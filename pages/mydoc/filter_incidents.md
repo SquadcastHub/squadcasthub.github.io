@@ -113,6 +113,6 @@ To delete a **Tag** filter, click on the cross button of the corresponding **Tag
 
 Filter Incident by **[Incident Status](dashboard-metrics#incident-state-metric)**.
 
-Select the *Statuses* of your choice to filter out incidents by statuses.
+Select the *Status* of your choice to filter our incidents by a specific status.
 
 ![](images/filter_12.png)
