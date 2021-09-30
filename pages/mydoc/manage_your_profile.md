@@ -25,11 +25,13 @@ folder: mydoc
 
 (d) [Update Personal Notification Rules](notification-rules). Additionally, if your Squadcast Organization is integrated with Slack/Google Hangouts, the same will be indicated here as well
 
-(e) View the Escalation Policies, Squads and Schedules you are a part of
+(e) [Update On-Call reminder Notification Rules](oncall-reminder-rules).
 
-(f) [Generate and view existing API Refresh Tokens](squadcast-public-api)
+(f) View the Escalation Policies, Squads and Schedules you are a part of
 
-(g) For the past week, view the number of incidents Acknowledged and Resolved by you, along with MTTA and MTTR
+(g) [Generate and view existing API Refresh Tokens](squadcast-public-api)
+
+(h) For the past week, view the number of incidents Acknowledged and Resolved by you, along with MTTA and MTTR
 
 ### Edit Profile
 

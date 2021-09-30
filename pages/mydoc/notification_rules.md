@@ -28,11 +28,11 @@ Notification Rules determine how an individual user is notified for an incident 
 
 ![](images/notification_rules_1.png)
 
-**(2)** You will be taken into the **My Profile** section where you can see the User Details on the left and the **Notification Rules** on the right. Click on the **Options** icon to edit the rules 
+**(2)** You will be taken into the **My Profile** section where you can see the User Details on the left and the **Notification Rules** on the right. Click on the **Edit** button to edit the rules 
 
 ![](images/notification_rules_2.png)
 
-**(3)** Enter the amount of time after the incident trigger when you wish to get notified by a particular medium and choose that medium from the drop-down at the end of the rule
+**(3)** Choose the medium from the drop-down and enter the amount of time after the incident trigger when you wish to get notified
 
 **(4)** You can also add new rules by clicking **Add More Rules** at the bottom
 
