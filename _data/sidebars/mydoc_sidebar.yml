@@ -64,6 +64,10 @@ entries:
             url: /docs/notification-rules
             output: web, pdf
 
+          - title: On-Call Reminder Rules
+            url: /docs/oncall-reminder-rules
+            output: web, pdf
+
           - title: Change Account Owner
             url: /docs/transfer-ownership
             output: web, pdf
