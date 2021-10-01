@@ -603,6 +603,10 @@ entries:
             url: /docs/uptime-robot
             output: web, pdf
 
+          - title: Uptrends
+            url: /docs/uptrends
+            output: web, pdf
+
           - title: Wavefront
             url: /docs/wavefront
             output: web, pdf
