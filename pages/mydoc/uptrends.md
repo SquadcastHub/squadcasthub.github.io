@@ -2,7 +2,7 @@
 title: Uptrends
 keywords: 
 last_updated: 
-summary: "Send ticket details to Squadcast from Uptrends"
+summary: "Send alert details to Squadcast from Uptrends"
 sidebar: mydoc_sidebar
 permalink: docs/uptrends
 folder: mydoc
@@ -12,7 +12,7 @@ This document will help you integrate Uptrends with Squadcast.
 
 [Uptrends](https://www.uptrends.com/) monitors the uptime, performance, and accuracy of websites, APIs, web applications, and servers.
 
-Route detailed ticket alerts from Uptrends to the right users in Squadcast.
+Route detailed alerts from Uptrends to the right users in Squadcast.
 
 ## How to integrate Uptrends with Squadcast
 
@@ -42,16 +42,26 @@ Route detailed ticket alerts from Uptrends to the right users in Squadcast.
 
 ![](images/uptrends_3.png)
 
-**(3)** Fill the form as shown in the below screenshot and click on **Save**. You can also send test alert by clicking **Send test alert** button
+**(3)** Fill the form as shown in the below screenshot and click on **Save**. 
 
 ![](images/uptrends_4.png)
 
-**(4)** Click the **+** button next to **Alert definations** under the **Alerting** drop-down menu
+**(4)** You can send a test alert by clicking the **Start test** button
+
+![](images/uptrends_7.png)
+
+You should get a response like in the screenshot below
+
+![](images/uptrends_8.png)
+
+**(5)** Click the **+** button next to **Alert definitions** under the **Alerting** drop-down menu
 
 ![](images/uptrends_5.png)
 
-**(5)** Provide any suitable Name, check **Active** and **All monitors** checkbox and click on **Save**
+**(6)** Provide any suitable Name, check **Active** and **All monitors** checkbox and click on **Save**
 
 ![](images/uptrends_6.png)
 
-That is it, you are now good to go! Whenever a Alert generated as **Alert type** `Alert` or `Reminder` at Uptrends, an incident will be created for it in Squadcast. When the same Alert is `Ok`(resolved) at Uptrends, the corresponding incident will automatically get resolved in Squadcast as well.
+You can find more information on setting this up [here](https://www.uptrends.com/support/kb/integrations/custom-integrations).
+
+That is it, you are now good to go! Whenever an alert is generated with **Alert type** as `Error` in Uptrends, an incident will be created for it in Squadcast. When the alert is resolved in Uptrends, the corresponding incident will automatically get resolved in Squadcast as well.
