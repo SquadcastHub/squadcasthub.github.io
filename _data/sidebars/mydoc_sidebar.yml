@@ -467,6 +467,10 @@ entries:
             url: /docs/nixstats
             output: web, pdf
 
+          - title: NodePing
+            url: /docs/nodeping
+            output: web, pdf
+
           - title: Observium
             url: /docs/observium
             output: web, pdf
