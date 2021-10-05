@@ -2,7 +2,7 @@
 title: NodePing
 keywords: 
 last_updated: 
-summary: "Send ticket details to Squadcast from NodePing"
+summary: "Send alert details to Squadcast from NodePing"
 sidebar: mydoc_sidebar
 permalink: docs/nodeping
 folder: mydoc
@@ -10,9 +10,9 @@ folder: mydoc
 
 This document will help you integrate NodePing with Squadcast.
 
-[NodePing](https://nodeping.com/) monitors Uptime Monitoring for Websites and Servers.
+[NodePing](https://nodeping.com/) provides uptime monitoring for websites and servers.
 
-Route detailed ticket alerts from NodePing to the right users in Squadcast.
+Route detailed alert alerts from NodePing to the right users in Squadcast.
 
 ## How to integrate NodePing with Squadcast
 
@@ -38,9 +38,11 @@ Route detailed ticket alerts from NodePing to the right users in Squadcast.
 
 ![](images/nodeping_2.png)
 
-**(2)** Provide any suitable Name, select **Webhook** option in dropdown, change method name from **GET** to **POST**, Provide previously copied **Webhook url** in **URL field** and click on **Body > raw**
+**(2)** Provide any suitable Name, select **Webhook** option in the drop-down, change method name from **GET** to **POST**. Paste the previously copied **Webhook URL** in the **URL field**
 
 ![](images/nodeping_3.png)
+
+**(3)** Click on **Body > RAW** and copy the below payload and paste this in the **JSON** section and click on **Save**
 
 ```
 {
@@ -61,14 +63,12 @@ Route detailed ticket alerts from NodePing to the right users in Squadcast.
 }
 ```
 
-**(3)** Copy above JSON and paste into **JSON** body and click on **Save**
-
 ![](images/nodeping_4.png)
 
-**(4)** click on **Checks & Contacts > Checks** and edit checks, goto **Notify** section and select squadcast in dropdown and click on **Save**
+**(4)** Click on **Checks & Contacts > Checks** and edit the check. Scroll to the **Notify** section and select the Contact created for Sqaudcast in the drop-down and click on **Save**
 
 ![](images/nodeping_5.png)
 
-You can find more information on setting this up [here](https://nodeping.com/nodepingnotifications.html#webhooks)
+You can find more information on setting this up [here](https://nodeping.com/nodepingnotifications.html#webhooks).
 
-That is it, you are now good to go! Whenever an Alert is generated, an incident will be created in Squadcast. When the alert is resolved at NodePing, the corresponding incident will automatically get resolved in Squadcast as well.
+That is it, you are now good to go! Whenever an alert is generated in NodePing, an incident will be created in Squadcast. When the alert is resolved in NodePing, the corresponding incident will automatically get resolved in Squadcast as well.
