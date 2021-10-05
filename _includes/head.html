@@ -18,18 +18,18 @@
 <!-- most color styles are extracted out to here -->
 <link rel="stylesheet" href="css/theme-blue.css">
 
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script defer src="{{ "js/jquery.navgoco.min.js" }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="{{ "js/jquery.navgoco.min.js" }}"></script>
 
 
 <!-- Latest compiled and minified JavaScript -->
-<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <!-- Anchor.js -->
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
-<script defer src="{{ "js/toc.js" }}"></script>
-<script defer src="{{ "js/customscripts.js" }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
+<script src="{{ "js/toc.js" }}"></script>
+<script src="{{ "js/customscripts.js" }}"></script>
 
 {% if page.url contains '/docs/' %}
 <link rel="shortcut icon" href="{{ "images/favicon1.png"  }}">
@@ -60,18 +60,18 @@
 <!-- Algolia Scripts -->
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"></script> Only Search -->
-<script defer src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script> <!-- All Features -->
+<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch.umd.js"></script> <!-- All Features -->
 
 <!-- Initialize Algolia -->
 
-<script defer>
+<script>
     const client = algoliasearch('M0XX7ZMBFN', '15ca191d233b51e77561d5d1e18a7157');
     const index = client.initIndex('squadcast_support');
 </script>
 
 <!-- Google Tag Manager -->
 
-<script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -81,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Google Tag Manager (Support)-->
 
-<script defer>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -91,8 +91,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
-<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-109315563-4"></script>
-<script defer>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109315563-4"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -104,8 +104,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Lightbox -->
 
 <link rel="stylesheet" href="/css/lightbox.css">
-<script defer type="text/javascript" src="/js/lightbox.js"></script>
+<script type="text/javascript" src="/js/lightbox.js"></script>
 
 <!-- iFrame blocker -->
 
-<script async>if(self != top){top.location = self.location}</script>
+<script>if(self != top){top.location = self.location}</script>
