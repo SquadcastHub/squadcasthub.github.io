@@ -297,7 +297,7 @@ With this, every time there is an update posted to the StatusPage for an inciden
 
 #### 8. Does Squadcast provide APIs for creating and updating StatusPage?
 
-We currently do not have Public APIs for creating, managing subscriptions or updating the StatusPage. Watch out for more updates on this in our [Public Roadmap](https://trello.com/b/rvAFiRnU/squadcast-public-roadmap).
+We currently do not have Public APIs for creating, managing subscriptions or updating the StatusPage.
 
 #### 9. I have enabled Webhook subscriptions only for my StatusPage. When I click on the Subscribe on my StatusPage, I am asked to enter an Email address in addition to a Webhook endpoint. Why is that so?
 

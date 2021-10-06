@@ -64,6 +64,10 @@ entries:
             url: /docs/notification-rules
             output: web, pdf
 
+          - title: On-Call Reminder Rules
+            url: /docs/oncall-reminder-rules
+            output: web, pdf
+
           - title: Change Account Owner
             url: /docs/transfer-ownership
             output: web, pdf
@@ -463,6 +467,10 @@ entries:
             url: /docs/nixstats
             output: web, pdf
 
+          - title: NodePing
+            url: /docs/nodeping
+            output: web, pdf
+
           - title: Observium
             url: /docs/observium
             output: web, pdf
@@ -597,6 +605,10 @@ entries:
 
           - title: Uptime Robot
             url: /docs/uptime-robot
+            output: web, pdf
+
+          - title: Uptrends
+            url: /docs/uptrends
             output: web, pdf
 
           - title: Wavefront

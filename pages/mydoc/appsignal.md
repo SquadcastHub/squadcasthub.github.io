@@ -62,7 +62,7 @@ When you click on the **Test Hook** button after adding the Webhook, AppSignal s
 
 **(4)** Click on **Submit** to save this Webhook integration
 
-That is it, ypu are good to go! Now, whenever an event in generated in AppSignal, an incident for the same will be created in Squadcast.
+That is it, you are good to go! Now, whenever an event in generated in AppSignal, an incident for the same will be created in Squadcast.
 
 {{site.data.alerts.blue-note}}
 <b>FAQ:</b>
