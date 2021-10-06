@@ -12,7 +12,7 @@ This document will help you integrate NodePing with Squadcast.
 
 [NodePing](https://nodeping.com/) provides uptime monitoring for websites and servers.
 
-Route detailed alert alerts from NodePing to the right users in Squadcast.
+Route detailed alerts from NodePing to the right users in Squadcast.
 
 ## How to integrate NodePing with Squadcast
 

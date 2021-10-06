@@ -178,7 +178,7 @@ By Default #1 Group will be the starting Group.
 
 **Q:** Can I send on-call reminder notifications?
 
-**A:** All members in an on-call shift will be notified via email 1 hour before the start of their shift. If the created override shift has less than an hour to begin, email notification will go out immediately after the override creation.
+**A:** Yes, users can choose to receive on-call reminder notifications ahead of their shifts. They can set this up according to their preference as mentioned [here](https://support.squadcast.com/docs/oncall-reminder-rules). If a created override shift has less than the time specified to begin, the notification will go out immediately after the override creation.
 
 **Q:** Why cannot Stakeholders be added in the on-call Schedules?
 
