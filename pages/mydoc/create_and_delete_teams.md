@@ -52,37 +52,3 @@ In this example, we are deleting the `Testing Team`.
 
 Deleting a Team is **not reversible**.
 {{site.data.alerts.end}}
-
-### Add a Member to a Team
-
-**(1)** Click on **Settings** in the sidebar
-
-![](images/add_and_delete_users_1.png)
-
-**(2)** Click on **Teams** from the secondary navigation menu and select the Team you want to add the new member to
-
-![](images/add_and_delete_teams_1.png)
-
-**(3)** Click on **Members** from the horizontal menu and scroll down to the bottom of the page
-
-**(4)** Click on the **Add New Members**, select the member from the drop-down list and select the `Team Roles`
-
-**(5)** Click on **Add Members** and confirm their addition into the Team
-
-![](images/add_and_delete_teams_5.png)
-
-### Remove a Member from a Team
-
-**(1)** Click on **Settings** in the sidebar
-
-![](images/add_and_delete_users_1.png)
-
-**(2)** Click on **Teams** from the secondary navigation menu and select the Team you want to remove the member from
-
-![](images/add_and_delete_teams_1.png)
-
-**(3)** Click on **Members** from the horizontal menu hover over to the name of the team member you want to delete
-
-**(4)** Click on **Delete** via `More Options` corresponding to the concerned member & confirm **Delete** in the pop-up window to remove the member from the Team
-
-![](images/add_and_delete_teams_6.png)
