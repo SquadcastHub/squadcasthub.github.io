@@ -76,7 +76,7 @@ Remove/delete users added to your Organization by following the steps below:
 
 ![](images/add_and_delete_users_5.png)
 
-**(4)** If the user is part of any team, you will see a modal as below listing all the teams the user is part of
+**(4)** If the user is part of any Team, a modal listing all the Teams that the user is a part of, appears as shown below
 
 ![](images/add_and_delete_users_team_list.png)
 
