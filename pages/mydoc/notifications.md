@@ -43,7 +43,7 @@ Squadcast uses the following numbers to notify you for incidents.
 
 You can either save the above numbers on your devices or download the below vCard to set up a contact for Squadcast automatically.
 
-// insert vCard
+<a href="/docs/vcf/Squadcast_Incidents.vcf" download="Squadcast vCard">Download Squadcast vCard</a>
 
 ## Notification Details and Logs
 
