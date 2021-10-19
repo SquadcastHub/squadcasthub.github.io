@@ -46,6 +46,24 @@ Route detailed alerts from Heroku to the right users in Squadcast.
 
 ![](images/nodeping_4.png)
 
+### Supported Entity and Event types
+
+| Entity | Event Types |
+|----------------------|
+| addon-attachment | Trigger |
+| addon | Trigger |
+| app | Trigger |
+| build | Trigger |
+| collaborator | Trigger |
+| domain | Trigger |
+| dyno | Trigger, Resolve |
+| formation | Trigger |
+| release | Trigger |
+| sni-endpoint | Trigger |
+| ssl-endpoint | Trigger |
+
+Find more details about entity and event details [here](https://devcenter.heroku.com/articles/app-webhooks#step-2-determine-which-events-to-subscribe-to)
+
 You can find more information on setting this up [here](https://devcenter.heroku.com/articles/app-webhooks).
 
 That is it, you are now good to go! Whenever an alert is generated in Heroku, an incident will be created in Squadcast. When the alert is resolved in Heroku, the corresponding incident will automatically get resolved in Squadcast as well.
