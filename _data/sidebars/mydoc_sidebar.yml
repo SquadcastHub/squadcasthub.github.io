@@ -167,6 +167,14 @@ entries:
             url: /docs/reassign-an-escalation-policy-for-an-existing-incident
             output: web, pdf
 
+      - title: Notifications
+        output: web, pdf
+
+        folderitems:
+          - title: Understanding Incident Notifications
+            url: /docs/notifications
+            output: web, pdf
+
       - title: Dashboards
         output: web, pdf
 
