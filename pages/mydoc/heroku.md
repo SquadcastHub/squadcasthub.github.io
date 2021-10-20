@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate Heroku with Squadcast.
 
-[Heroku](https://www.heroku.com/) is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+[Heroku](https://www.heroku.com/) is a platform as a service (PaaS) that enables developers to build, run and operate applications entirely in the cloud.
 
 Route detailed alerts from Heroku to the right users in Squadcast.
 
@@ -32,23 +32,27 @@ Route detailed alerts from Heroku to the right users in Squadcast.
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-### In Heroku: Create a Squadcast webhook alert
+### In Heroku: Set up a Webhook for Squadcast
 
-**(1)** Go to the Dashboard page for your app and go to the dropdown menu below **More**. You will see an option to **View Webhooks** that will take you to the webhooks creation and management interface.
+**(1)** Navigate to the Dashboard page for your application. In the drop-down menu below, select **More**. You will see an option to **View Webhooks** that will take you to the Webhooks creation and management interface
 
 ![](images/heroku_2.png)
 
-**(2)** Click on **Create Webhook**
+**(2)** Here, click on **Create Webhook**
 
 ![](images/heroku_3.png)
 
-**(3)** Provide any suitable **Name**, Paste the previously copied **Webhook URL**, select all the checks for which you want to create incident at Squadcast and click on **Add Webhook**
+**(3)** Provide a suitable **Name** for the Webhook, paste the previously copied **Webhook URL**, select all the checks for which you want to create incidents in Squadcast and click on **Add Webhook**
 
 ![](images/heroku_4.png)
 
-### Supported Entity and Event types
+This completes the configuration of a Webhook in Heroku for Squadcast!
 
-| Entity | Event Types |
+### Supported Entities and Event Types
+
+The below table indicates the Heroku Entities for which this integration would trigger and resolve incidents in Squadcast. If `Resolve` is mentioned against an Entity, it means the triggered incident in Squadcast will be automatically resolved when Heroku sends a resolve signal for it. For the other Entities, Squadcast users will be notified for the triggered incident. They will have to manually resolve these incidents in Squadcast once the issues are fixed in Heroku.
+
+| Heroku Entities | Squadcast Incident Event Types |
 |----------------------|
 | addon-attachment | Trigger |
 | addon | Trigger |
@@ -62,8 +66,8 @@ Route detailed alerts from Heroku to the right users in Squadcast.
 | sni-endpoint | Trigger |
 | ssl-endpoint | Trigger |
 
-Find more details about entity and event details [here](https://devcenter.heroku.com/articles/app-webhooks#step-2-determine-which-events-to-subscribe-to)
+### Helpful Links to Heroku's Documentation
 
-You can find more information on setting this up [here](https://devcenter.heroku.com/articles/app-webhooks).
+**1.** You can find more details about Entities and Event Details [here](https://devcenter.heroku.com/articles/app-webhooks#step-2-determine-which-events-to-subscribe-to)
 
-That is it, you are now good to go! Whenever an alert is generated in Heroku, an incident will be created in Squadcast. When the alert is resolved in Heroku, the corresponding incident will automatically get resolved in Squadcast as well.
+**2.** You can find more information on setting Webhooks up [here](https://devcenter.heroku.com/articles/app-webhooks)
