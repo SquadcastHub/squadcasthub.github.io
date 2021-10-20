@@ -53,7 +53,7 @@ Route detailed alerts from Heroku to the right users in Squadcast.
 | addon-attachment | Trigger |
 | addon | Trigger |
 | app | Trigger |
-| build | Trigger |
+| build | Trigger, Resolve |
 | collaborator | Trigger |
 | domain | Trigger |
 | dyno | Trigger, Resolve |
