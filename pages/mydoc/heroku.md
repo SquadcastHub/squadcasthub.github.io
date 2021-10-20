@@ -24,7 +24,7 @@ Route detailed alerts from Heroku to the right users in Squadcast.
 
 **(2)** Search for **Heroku** from the Alert Source drop-down and copy the Webhook URL
 
-![](images/nodeping_1.png)
+![](images/heroku_1.png)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b><br/><br/>
@@ -36,15 +36,15 @@ Route detailed alerts from Heroku to the right users in Squadcast.
 
 **(1)** Go to the Dashboard page for your app and go to the dropdown menu below **More**. You will see an option to **View Webhooks** that will take you to the webhooks creation and management interface.
 
-![](images/nodeping_2.png)
+![](images/heroku_2.png)
 
 **(2)** Click on **Create Webhook**
 
-![](images/nodeping_3.png)
+![](images/heroku_3.png)
 
 **(3)** Provide any suitable **Name**, Paste the previously copied **Webhook URL**, select all the checks for which you want to create incident at Squadcast and click on **Add Webhook**
 
-![](images/nodeping_4.png)
+![](images/heroku_4.png)
 
 ### Supported Entity and Event types
 
