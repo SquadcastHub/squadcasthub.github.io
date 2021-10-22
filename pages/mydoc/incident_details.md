@@ -76,7 +76,7 @@ Hover over the **created** field to view the exact Date and Time of the creation
 - Affected **Service** for which the incident was created
 - **Elapsed time** since the incident got created in Squadcast
 
-**(h)** **Responders** will display the list of all `Users`, `Squads` or `Escalation Policies` that were involved during the lifecycle of the incident
+**(h)** **Responders** will display the list of all `Users`, `Squads` or `Escalation Policies` that were involved during the lifecycle of the incident. Select **[Notification logs](notification-logs)** to open up logs of all the notifications generated for the Incident
 
 **(i)** **[Activity Timeline](incident-timeline)** will indicate the list of all activities performed on this incident in reverse chronological order
 
@@ -103,6 +103,6 @@ Clicking on any of the deduplicated events will display will all the information
 There are certain character limitations for the Incident Message and Incident Description fields. The same is indicated below.
 
 |    Incident Field    | Character Limit |
-|:--------------------:|:---------------:|
+| :------------------: | :-------------: |
 |   Incident Message   |       250       |
 | Incident Description |      15000      |
