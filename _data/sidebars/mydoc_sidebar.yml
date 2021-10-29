@@ -83,6 +83,10 @@ entries:
             url: /docs/create-and-delete-teams
             output: web, pdf
 
+          - title: Add and Remove Team Members
+            url: /docs/add-and-remove-members
+            output: web, pdf
+
           - title: Role Based Access Control
             url: /docs/role-based-access-control
             output: web, pdf
@@ -234,11 +238,11 @@ entries:
           - title: Incident Notes
             url: /docs/incident-notes
             output: web, pdf
-                
+
       - title: Postmortems
         output: web, pdf
 
-        folderitems:  
+        folderitems:
           - title: Postmortem Templates
             url: /docs/postmortem-templates
             output: web, pdf
@@ -505,7 +509,7 @@ entries:
 
           - title: Progress WhatsUp Gold
             url: /docs/progress-whatsup-gold
-            output: web, pdf          
+            output: web, pdf
 
           - title: PRTG Network Monitor
             url: /docs/prtg-network-monitor
@@ -514,7 +518,7 @@ entries:
           - title: Rapid7 InsightIDR
             url: /docs/rapid7-insightidr
             output: web, pdf
-          
+
           - title: Redash
             url: /docs/redash
             output: web, pdf
@@ -634,7 +638,7 @@ entries:
           - title: Zabbix 5.0
             url: /docs/zabbix-5
             output: web, pdf
-          
+
           - title: Zendesk
             url: /docs/zendesk
             output: web, pdf
