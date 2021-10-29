@@ -76,4 +76,8 @@ Remove/delete users added to your Organization by following the steps below:
 
 ![](images/add_and_delete_users_5.png)
 
-**(4)** If you have deleted the user by mistake, you can immediately click on the `Undo` option given to you, to restore the deleted user
+**(4)** If the user is part of any Team, a modal listing all the Teams that the user is a part of, appears as shown below
+
+![](images/add_and_delete_users_team_list.png)
+
+Users who are part of some team can't be deleted. You'll have to [remove them from the team](add-and-remove-members#remove-a-member-from-a-team) before deleting them.
