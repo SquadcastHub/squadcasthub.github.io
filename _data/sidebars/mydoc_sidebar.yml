@@ -394,6 +394,10 @@ entries:
           - title: HetrixTools
             url: /docs/hetrixtools
             output: web, pdf
+          
+          - title: Heroku
+            url: /docs/heroku
+            output: web, pdf
 
           - title: Honeybadger
             url: /docs/honeybadger
