@@ -1,26 +1,26 @@
 ---
-title: Incident API
+title: Incident Webhook
 tags: [integration, api]
 last_updated:
 keywords:
-summary: "Send events to Squadcast using Incident API - Squadcast’s generic API Webhook"
+summary: "Send events to Squadcast using Incident Webhook - Squadcast’s generic API Webhook"
 sidebar: mydoc_sidebar
 permalink: docs/apiv2
 folder: mydoc
 ---
 
-This document will help you configure Incident API to route alerts from monitoring tools or your internal (bespoke) systems into Squadcast. Incident API can do both, trigger and resolve incidents in Squadcast, through HTTP POST requests.
-Route detailed monitoring alerts coming in via Incident API to the right users in Squadcast.
+This document will help you configure Incident Webhook to route alerts from monitoring tools or your internal (bespoke) systems into Squadcast. Incident Webhook can do both, trigger and resolve incidents in Squadcast, through HTTP POST requests.
+Route detailed monitoring alerts coming in via Incident Webhook to the right users in Squadcast.
 
-## How to configure Incident API
+## How to configure Incident Webhook
 
-### In Squadcast: Using Incident API as an Alert Source
+### In Squadcast: Using Incident Webhook as an Alert Source
 
 **(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
 ![](images/alert_source_1.png)
 
-**(2)** Search for **Incident API** from the Alert Source drop-down and copy the Webhook URL. Use this Webhook URL endpoint to send `HTTP POST` requests
+**(2)** Search for **Incident Webhook** from the Alert Source drop-down and copy the Webhook URL. Use this Webhook URL endpoint to send `HTTP POST` requests
 
 ![](images/apiv2_1.png)
 
@@ -101,7 +101,7 @@ To resolve an incident, a JSON with the format as shown below should be sent.
 
 ## Add a Tag From directly Incident JSON
 
-This section will give you an understanding of how you can add tags to an incident straight from the Incident JSON using the Incident API.
+This section will give you an understanding of how you can add tags to an incident straight from the Incident JSON using the Incident Webhook.
 
 ### Typical Incident JSON:
 
