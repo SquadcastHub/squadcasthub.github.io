@@ -66,7 +66,7 @@ You can choose to filter by multiple Alert Sources, so use the checkbox to selec
 
 ### Assigned To
 
-Filter incidents by the **[Users](add-users)**, **[Squads](squads)** or **[Escalation Policies](escalation-policies)** using this filter.
+Filter incidents by the **[Users](add-and-delete-users)**, **[Squads](squads)** or **[Escalation Policies](escalation-policies)** using this filter.
 
 You can choose to filter by multiple values, so use the checkbox to select all the values. You can also use the search box to narrow down your options.
 
