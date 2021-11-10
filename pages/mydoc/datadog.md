@@ -9,7 +9,9 @@ folder: mydoc
 
 This document will help you integrate Datadog with Squadcast.
 
-Datadog is a monitoring platform for cloud applications that brings in together data from servers, containers, databases, third-party services, thus providing observability into the entire stack. Route detailed monitoring alerts from Datadog to the right users in Squadcast.
+[Datadog](https://www.datadoghq.com/) is a monitoring platform for cloud applications that brings in together data from servers, containers, databases, third-party services, thus providing observability into the entire stack. 
+
+Route detailed monitoring alerts from Datadog to the right users in Squadcast.
 
 ## How to integrate Datadog with Squadcast
 
@@ -35,23 +37,23 @@ Datadog is a monitoring platform for cloud applications that brings in together 
 
 ![](images/datadog_2.png)
 
-**(2)** Search for **Webhooks**. Once the Webhooks tile appears, hover over it and click on "Configure".
+**(2)** Search for **Webhooks**. Once the Webhooks tile appears, hover over it and click on "Configure"
 
 ![](images/datadog_3.png)
 
-**(3)** Navigate to the **Configuration** tab. 
+**(3)** Navigate to the **Configuration** tab
 
 ![](images/datadog_4.png)
 
-**(4)** Scroll to the bottom of the page. Click on `New Webhook` to add a new Webhook URL. 
+**(4)** Scroll to the bottom of the page. Click on `New Webhook` to add a new Webhook URL
 
 ![](images/datadog_5.png)
 
-**(5)** (a) Give the Webhook a name in the Name field.
+**(5)** (a) Give the Webhook a name in the Name field
 
-      (b) Paste the **Datadog Webhook URL** provided by Squadcast in the URL field.
+      (b) Paste the **Datadog Webhook URL** provided by Squadcast in the URL field
 
-      (c) Copy-paste the following JSON in the text box under the **Payload** section.
+      (c) Copy-paste the following JSON in the text box under the **Payload** section
 
 ```json
 {
@@ -59,16 +61,33 @@ Datadog is a monitoring platform for cloud applications that brings in together 
     "eventMessage": "$TEXT_ONLY_MSG",
     "title": "$EVENT_TITLE",
     "url": "$LINK",
-    "alertTransition": "$ALERT_TRANSITION",
+    "alertTransition": "Triggered",
     "hostname": "$HOSTNAME",
-    "orgName": "$ORG_NAME",
-    "priority": "$PRIORITY",
+    "orgName":"$ORG_NAME",
+    "priority":"$PRIORITY",
     "snapshot": "$SNAPSHOT",
     "alertQuery": "$ALERT_QUERY",
     "alertScope": "$ALERT_SCOPE",
     "alertStatus": "$ALERT_STATUS",
     "eventType": "$EVENT_TYPE",
-    "lastUpdated": "$LAST_UPDATED"
+    "event_id": "$ID",
+    "alert_metric": "$ALERT_METRIC",
+    "alert_priority": "$ALERT_PRIORITY",
+    "alert_title": "$ALERT_TITLE",
+    "alert_type" : "$ALERT_TYPE",
+    "event_msg" : "$EVENT_MSG",
+    "incident_pub_id" : "$INCIDENT_PUBLIC_ID",
+    "incident_title" : "$INCIDENT_TITLE",
+    "incident_url" : "$INCIDENT_URL",
+    "incident_msg" : "$INCIDENT_MSG",
+    "security_rule_id" : "$SECURITY_RULE_ID",
+    "security_rule_name" : "$SECURITY_RULE_NAME",
+    "security_signal_severity" : "$SECURITY_SIGNAL_SEVERITY",
+    "security_signal_title" : "$SECURITY_SIGNAL_TITLE",
+    "security_signal_msg" : "$SECURITY_SIGNAL_MSG",
+    "security_rule_query" : "$SECURITY_RULE_QUERY",
+    "security_rule_type" : "$SECURITY_RULE_TYPE",
+    "tags" : "$TAGS"
 }
 ```
 
@@ -76,8 +95,10 @@ Datadog is a monitoring platform for cloud applications that brings in together 
 
 Click on “Save” to complete the service integration.
 
-**NOTE:** Once the Webhook for Squadcast has been configured, ensure that the same is also selected as a channel within **Notify your team** in the **Monitor's** configuration. 
+**NOTE:** You can find detailed information on the variables supported by Datadog that are available within the alert payload in Squadcast [here](https://docs.datadoghq.com/integrations/webhooks/).
 
-That's it, you are good to go! Your Datadog integration is complete.
+**IMPORTANT:** Once the Webhook for Squadcast has been configured, ensure that the same is also selected as a channel within **Notify your team** in the **Monitor's** configuration.
+
+That's it, you are good to go! Your Datadog integration is now complete.
 
 Now, whenever Datadog fires an alert, an incident will be created in Squadcast for it. When the alert recovers in Datadog, the corresponding incident will **automatically get resolved** in Squadcast as well.
