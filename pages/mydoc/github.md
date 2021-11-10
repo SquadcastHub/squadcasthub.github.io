@@ -2,7 +2,7 @@
 title: GitHub
 keywords: 
 last_updated: 
-summary: "Send notifications to Squadcast from GitHub"
+summary: "Send events to Squadcast from GitHub"
 sidebar: mydoc_sidebar
 permalink: docs/github
 folder: mydoc
@@ -36,35 +36,37 @@ Route detailed events from GitHub to the right users in Squadcast.
 
 You can configure a webhook for a group or a project.
 
-**(1)** Go to the **settings page** of your **repository** or **organization**
+**(1)** Click on your user icon on the top right, under **Your repositories** or **Your organizations**, navigate to **Settings**
 
 ![](images/github_2.png)
 
 ![](images/github_3.png)
 
-**(2)** Click on **Webhooks**, then **Add webhook**
+**(2)** Selecy **Webhooks**, then select **Add webhook**
 
 ![](images/github_4.png)
 
-**(3)** Paste previously copied **Webhook URL** into **Payload URL** field, select **Content type** as **application/json**
+**(3)** Paste the previously copied Webhook from Squadcast into the **Payload URL** field, and select **Content type** as `application/json`
 
 ![](images/github_5.png)
 
 
-**(3)** In **Which events would you like to trigger this webhook** section choose **Let me select individual events** and select the **below events** to trigger the webhook and Click **Add webhook**
+**(3)** In **Which events would you like to trigger this webhook** section, choose **Let me select individual events** and select the **below events** to trigger the Webhook. Next, click on **Add webhook**
  + `Issues`
  + `Pushes`
- + `Pull Request`
+ + `Pull Requests`
  + `Releases`
 
 ![](images/gitlab_6.png)
 
 {{site.data.alerts.yellow-note-i-md}}
-**NOTE:** Squadcast supports only for below events 
- + `Issues`
+**NOTE:** 
+
+Squadcast supports only for below events:
+ + `Issues` (Supports auto-resolution)
  + `Pushes`
- + `Pull Request`
+ + `Pull Requests` (Supports auto-resolution)
  + `Releases`
 {{site.data.alerts.end}}
 
-That is it, you are good to go! Everytime an Issue, Push, Pull Request and Release event occured in GitHub, an incident would be created in Squadcast. When the Issue and Pull Request is closed in GitHub, the corresponding incident in Squadcast will be **automatically resolved**. 
+That is it, you are good to go! Everytime an Issue, Push, Pull Request or a Release event occurs in GitHub, an incident would be created in Squadcast. When an Issue or a Pull Request is closed in GitHub, the corresponding incident in Squadcast will be **automatically resolved** for it. However, for Pushes and Releases, users will have to manually resolve the associated incidents in Squadcast.
