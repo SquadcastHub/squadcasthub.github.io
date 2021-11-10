@@ -2,7 +2,7 @@
 title: GitLab
 keywords: 
 last_updated: 
-summary: "Send notifications to Squadcast from GitLab"
+summary: "Send events to Squadcast from GitLab"
 sidebar: mydoc_sidebar
 permalink: docs/gitlab
 folder: mydoc
@@ -34,30 +34,34 @@ Route detailed events from GitLab to the right users in Squadcast.
 
 ### In GitLab: Create a Squadcast Webhook
 
-You can configure a webhook for a group or a project.
+You can configure a Webhook for a group or a project.
 
 **(1)** In your project or group, on the left sidebar, select **Settings > Webhooks**
 
 ![](images/gitlab_2.png)
 
-**(2)** In URL, paste the previously copied Webhook URL
+**(2)** In the placeholder for **URL**, paste the previously copied Webhook from Squadcast
 
 ![](images/gitlab_3.png)
 
-**(3)** In the **Trigger** section, select the **below events** to trigger the webhook and Click **Add webhook**
+**(3)** In the **Trigger** section, select the **below events** to trigger the Webhook. Then, select **Add webhook**
  + `Issues`
  + `Pushes`
- + `Merge Request`
+ + `Merge Requests`
  + `Releases`
 
 ![](images/gitlab_4.png)
 
 {{site.data.alerts.yellow-note-i-md}}
-**NOTE:** Squadcast supports only for below events  
- + `Issues`
+**NOTE:** 
+
+This integration supports the below GitLab events: 
+ + `Issues` (Supports auto-resolution)
  + `Pushes`
- + `Merge Request`
+ + `Merge Requests` (Supports auto-resolution)
  + `Releases`
 {{site.data.alerts.end}}
 
-That is it, you are good to go! Everytime an Issue, Push, Merge Request and Release event occured in GitLab, an incident would be created in Squadcast. When the Issue and Merge Request is closed in GitLab, the corresponding incident in Squadcast will be **automatically resolved**. 
+That is it, you are good to go! 
+
+Everytime an Issue, Push, Merge Request or a Release event occurs in GitLab, an incident would be created for it in Squadcast. When an Issue or a Merge Request is closed/merged in GitLab, the corresponding incident in Squadcast will be **automatically resolved**. For Pushes and Releases, the associated incidents must be manually resolved in Squadcast.
