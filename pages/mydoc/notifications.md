@@ -35,6 +35,8 @@ Squadcast uses the following numbers to notify you for incidents.
 
 **1.** +17076844278
 
+**2.** +17072447799
+
 ### SMS Notifications
 
 **1.** +17076844278
