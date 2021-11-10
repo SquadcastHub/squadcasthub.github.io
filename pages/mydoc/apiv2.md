@@ -3,13 +3,14 @@ title: Incident Webhook
 tags: [integration, api]
 last_updated:
 keywords:
-summary: "Send events to Squadcast using Incident Webhook - Squadcast’s generic API Webhook"
+summary: "Send events to create incidents in Squadcast using Incident Webhook (generic incoming Webhook)"
 sidebar: mydoc_sidebar
 permalink: docs/apiv2
 folder: mydoc
 ---
 
 This document will help you configure Incident Webhook to route alerts from monitoring tools or your internal (bespoke) systems into Squadcast. Incident Webhook can do both, trigger and resolve incidents in Squadcast, through HTTP POST requests.
+
 Route detailed monitoring alerts coming in via Incident Webhook to the right users in Squadcast.
 
 ## How to configure Incident Webhook
