@@ -55,4 +55,13 @@ and click on **Save**
 
 ![](images/bitbucket_5.png)
 
+{{site.data.alerts.yellow-note-i-md}}
+**NOTE:** Squadcast supports only for below events  
+- `Repository push`
+- `Pull request created`
+- `Pull request merged` 
+
+for Issue event integrate with [Jira-cloud](https://support.squadcast.com/docs/jira-cloud-alert-source) as alert source integration. 
+{{site.data.alerts.end}}
+
 That is it, you are good to go! Everytime an Push, Pull Request event occured in Bitbucket, an incident would be created in Squadcast. When the Pull Request is merged in Bitbucket, the corresponding incident in Squadcast will be **automatically resolved**. 
