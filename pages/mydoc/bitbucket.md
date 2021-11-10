@@ -2,7 +2,7 @@
 title: Bitbucket
 keywords: 
 last_updated: 
-summary: "Send alert details to Squadcast from Bitbucket"
+summary: "Send events to Squadcast from Bitbucket"
 sidebar: mydoc_sidebar
 permalink: docs/bitbucket
 folder: mydoc
@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate Bitbucket with Squadcast.
 
-[Bitbucket](https://bitbucket.org/) is a Git-based source code repository hosting service owned by Atlassian. Bitbucket offers both commercial plans and free accounts with an unlimited number of private repositories.
+[Bitbucket](https://bitbucket.org/) is a Git-based source code repository hosting service.
 
 Route detailed alerts from Bitbucket to the right users in Squadcast.
 
@@ -34,7 +34,7 @@ Route detailed alerts from Bitbucket to the right users in Squadcast.
 
 ### In Bitbucket: Set up a Webhook for Squadcast
 
-**(1)** Open the repository where you want to add the webhook and click the **Settings** link on the left side
+**(1)** Open the repository where you want to add the Webhook for Squadcast and click on **Repository settings**
 
 ![](images/bitbucket_2.png)
 
@@ -42,26 +42,29 @@ Route detailed alerts from Bitbucket to the right users in Squadcast.
 
 ![](images/bitbucket_3.png)
 
-**(3)** Click the **Add webhook** button to create a webhook for the repository
+**(3)** Select the **Add webhook** button to create a Webhook for the repository
 
 ![](images/bitbucket_4.png)
 
-**(4)** On the **Add new webhook** page, enter a **Title**, perviously copied **Squadcast Webhook URL** and select the **Triggers** field as below:
+**(4)** In the **Add new webhook** page, enter a **Title**, paste the previously copied Webhook URL from Squadcast and select the below in the **Triggers** field:
 - `Repository push`
 - `Pull request created`
 - `Pull request merged`
 
-and click on **Save**
+Click on **Save**
 
 ![](images/bitbucket_5.png)
 
 {{site.data.alerts.yellow-note-i-md}}
-**NOTE:** Squadcast supports only for below events  
+**NOTE:** 
+
+This integration supports the below events:
 - `Repository push`
 - `Pull request created`
-- `Pull request merged` 
+- `Pull request merged`
 
-for Issue event integrate with [Jira-cloud](https://support.squadcast.com/docs/jira-cloud-alert-source) as alert source integration. 
 {{site.data.alerts.end}}
 
-That is it, you are good to go! Everytime an Push, Pull Request event occured in Bitbucket, an incident would be created in Squadcast. When the Pull Request is merged in Bitbucket, the corresponding incident in Squadcast will be **automatically resolved**. 
+**NOTE:** For the event type `Issue`, integrate with our [Jira-cloud](https://support.squadcast.com/docs/jira-cloud-alert-source) as an alert source integration since, Bitbucket uses Jira to create and manage issues. This way, everytime you create an issue in Bitbucket, an issue for it is created in Jira, for which an incident is triggered in Squadcast.
+
+That is it, you are good to go! Everytime a Push or Pull Request event occurs in Bitbucket, an incident would be created in Squadcast. When a Pull Request is merged in Bitbucket, the corresponding incident in Squadcast will be **automatically resolved**.
