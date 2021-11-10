@@ -59,4 +59,12 @@ You can configure a webhook for a group or a project.
 
 ![](images/gitlab_6.png)
 
+{{site.data.alerts.yellow-note-i-md}}
+**NOTE:** Squadcast supports only for below events 
+ + `Issues`
+ + `Pushes`
+ + `Pull Request`
+ + `Releases`
+{{site.data.alerts.end}}
+
 That is it, you are good to go! Everytime an Issue, Push, Pull Request and Release event occured in GitHub, an incident would be created in Squadcast. When the Issue and Pull Request is closed in GitHub, the corresponding incident in Squadcast will be **automatically resolved**. 
