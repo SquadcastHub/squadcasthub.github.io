@@ -56,7 +56,7 @@ The copy button beside Incident ID copies the Incident URL to the clipboard.
 
 - **Acknowledge** the incident
 - **Reassign** the incident to a `User`, `Squad` or an `Escalation Policy`
-- Take **Actions** on the incident to create JIRA tickets or take actions via [Circle CI](https://support.squadcast.com/docs/circleci-actions)
+- Take **Actions** on the incident to create JIRA tickets or take actions via [Circle CI](circleci-integration)
 - **Resolve** the incident
 
 **(g)** **Incident Details** displays:

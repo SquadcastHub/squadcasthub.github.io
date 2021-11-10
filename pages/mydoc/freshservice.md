@@ -137,7 +137,7 @@ The **Test Webhook** option sends empty data on the configured **Callback URL**.
 {{site.data.alerts.yellow-note-i-md}}
 **Note:**
 
-If you have configured [Custom Statuses](https://support.freshservice.com/support/solutions/articles/156452-customizing-helpdesk-statuses) in Freshservice and want to use one of the configured Custom Statuses for ticket creation/resolution (in turn, triggering/resolving corresponding incidents in Squadcast), kindly reach out to [support@squadcast.com](support@squadcast.com) for further details on this.
+If you have configured [Custom Statuses](https://support.freshservice.com/support/solutions/articles/156452-customizing-helpdesk-statuses) in Freshservice and want to use one of the configured Custom Statuses for ticket creation/resolution (in turn, triggering/resolving corresponding incidents in Squadcast), kindly reach out to <a href="mailto:support@squadcast.com">support@squadcast.com</a> for further details on this.
 {{site.data.alerts.end}}
 
 That is it, you are now good to go! Whenever a ticket is created with `Open` status, an incident will be created in Squadcast. When the ticket is either `Solved` or `Closed` in Freshservice, the corresponding incident will automatically get resolved in Squadcast as well.
