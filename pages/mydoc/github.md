@@ -62,7 +62,7 @@ You can configure a webhook for a group or a project.
 {{site.data.alerts.yellow-note-i-md}}
 **NOTE:** 
 
-Squadcast supports only for below events:
+This integration supports the below GitHub events:
  + `Issues` (Supports auto-resolution)
  + `Pushes`
  + `Pull Requests` (Supports auto-resolution)
