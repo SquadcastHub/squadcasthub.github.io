@@ -383,8 +383,8 @@ entries:
             url: /docs/grafana
             output: web, pdf
           
-          - title: Grafana v8
-            url: /docs/grafana-v8
+          - title: Grafana 8
+            url: /docs/grafana-8
             output: web, pdf
 
           - title: Graylog
