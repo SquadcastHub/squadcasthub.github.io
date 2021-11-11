@@ -57,7 +57,7 @@ You can configure a webhook for a group or a project.
  + `Pull Request`
  + `Releases`
 
-![](images/gitlab_6.png)
+![](images/github_6.png)
 
 {{site.data.alerts.yellow-note-i-md}}
 **NOTE:** Squadcast supports only for below events 
