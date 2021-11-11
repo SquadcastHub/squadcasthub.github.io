@@ -24,7 +24,7 @@ Route detailed events from GitLab to the right users in Squadcast.
 
 **(2)** Search for **GitLab** from the Alert Source drop-down and copy the Webhook URL 
 
-![](images/wavefront_1.png)
+![](images/gitlab_1.png)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b><br/><br/>
