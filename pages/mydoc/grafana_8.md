@@ -1,28 +1,28 @@
 ---
-title: Grafana v8
+title: Grafana 8
 keywords:
 last_updated: 
-summary: "Send alerts to Squadcast from Grafana"
+summary: "Send alerts to Squadcast from Grafana 8"
 sidebar: mydoc_sidebar
-permalink: docs/grafana-v8
+permalink: docs/grafana-8
 folder: mydoc
 ---
 
-This document will help you integrate [Grafana](https://grafana.com) with Squadcast.
+This document will help you integrate [Grafana 8](https://grafana.com/docs/grafana/latest/whatsnew/whats-new-in-v8-0/) with Squadcast.
 
-Grafana is a Data Visualization platform that allows you to query, visualize and alert on metrics no matter where they are stored. 
+Grafana is a data visualization platform that allows you to query, visualize and alert on metrics no matter where they are stored. 
  
-Route detailed alerts from Grafana to the right users in Squadcast.
+Route detailed alerts from Grafana 8 to the right users in Squadcast.
 
-## How to integrate Grafana with Squadcast
+## How to integrate Grafana 8 with Squadcast
 
-### In Squadcast: Using Grafana as an Alert Source
+### In Squadcast: Using Grafana 8 as an Alert Source
 
 **(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
 ![](images/alert_source_1.png)
 
-**(2)** Search for **Grafana** from the Alert Source drop-down and copy the Webhook URL
+**(2)** Search for **Grafana 8** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/grafana_v8_1.png)
 
@@ -32,9 +32,9 @@ Route detailed alerts from Grafana to the right users in Squadcast.
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-### In Grafana: Create a Squadcast Webhook as a Notification Channel
+### In Grafana 8: Create a Squadcast Webhook as a Notification Channel
 
-**(1)** Login to your Grafana dashboard, click on the **Alerting (Bell) icon** and select **Contact points**
+**(1)** Login to your Grafana 8 dashboard, click on the **Alerting (Bell)** icon and select **Contact points**
 
 ![](images/grafana_v8_2.png)
 
@@ -42,12 +42,12 @@ Route detailed alerts from Grafana to the right users in Squadcast.
 
 ![](images/grafana_v8_3.png)
 
-**(3)** Enter `Name` as **Squadcast**, under `Contact point type`- select **webhook** and under `url`, paste the previously copied Webhook URL from the Squadcast Service.
+**(3)** Enter `Name` as **Squadcast**, under `Contact point type`- select **Webhook** and under `URL`, paste the previously copied Webhook URL from Squadcast
 
 ![](images/grafana_v8_4.png)
 
-**(4)** Click on **Save** to enable the integration. You can test the integration by clicking on **Test**. This will trigger a test incident in Squadcast. 
+**(4)** Click on **Save** to enable the integration. You can test the integration by clicking on **Test**. This will trigger a test incident in Squadcast
 
-Now, whenever an alert is triggered in Grafana, an incident will be created in Squadcast. When it is resolved in Grafana, it will automatically get Resolved in Squadcast, provided the **Disable Resolve Message** checkbox is **unchecked**.
+Now, whenever an alert is triggered in Grafana 8, an incident will be created in Squadcast. When an alert is resolved in Grafana 8, the corresponding incident will automatically get resolved in Squadcast, provided the **Disable Resolve Message** checkbox is **unchecked**.
 
 <style>.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}</style><div style="height: 100%;width: 100%;display: flex;margin-top: 40px;"><div style="margin: auto;"><div style="height: 100%;width: 100%;display: flex;padding: 20px;border: 1px solid #e7e9ed;border-radius: 8px;"><div style="margin: auto;"><div style="text-align: center;padding-bottom: 20px;font-size: 18px;line-height: 24px;font-family: Metropolis, sans-serif;color: #0d2149;">Ready to try Squadcast?</div><a href="https://app.squadcast.com/register" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #0f61dd;font-family: Metropolis,sans-serif;color: #fff;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #fff;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Start Now For Free!</a>   <a href="https://calendly.com/renuka-squadcast/30min" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #fff;font-family: Metropolis,sans-serif;color: #0f61dd;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #0f61dd;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;border: 1px solid #0f61dd;margin-left: 20px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Schedule a Demo</a></div></div></div></div>
