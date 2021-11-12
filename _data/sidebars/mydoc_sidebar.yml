@@ -415,7 +415,7 @@ entries:
             url: /docs/icinga2
             output: web, pdf
 
-          - title: Incident Webhook
+          - title: Incident API
             url: /docs/apiv2
             output: web, pdf
 
