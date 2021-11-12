@@ -386,6 +386,10 @@ entries:
           - title: Grafana
             url: /docs/grafana
             output: web, pdf
+          
+          - title: Grafana 8
+            url: /docs/grafana-8
+            output: web, pdf
 
           - title: Graylog
             url: /docs/graylog
