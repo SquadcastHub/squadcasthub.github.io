@@ -410,6 +410,10 @@ entries:
           - title: Honeybadger
             url: /docs/honeybadger
             output: web, pdf
+          
+          - title: Hyperping
+            url: /docs/hyperping
+            output: web, pdf
 
           - title: Icinga2
             url: /docs/icinga2
