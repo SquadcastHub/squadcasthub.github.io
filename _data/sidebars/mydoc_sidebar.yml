@@ -234,10 +234,6 @@ entries:
           - title: Incident Notes
             url: /docs/incident-notes
             output: web, pdf
-
-          - title: Incident Notification logs
-            url: /docs/notification-logs
-            output: web, pdf
                 
       - title: Postmortems
         output: web, pdf

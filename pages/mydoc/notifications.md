@@ -8,6 +8,8 @@ permalink: docs/notifications
 folder: mydoc
 ---
 
+## Incident Notifications
+
 Incident notifications represent alert information that is sent to users via the various available channels, which are Push, Email, SMS and Phone calls. 
 
 Notifications are sent out only for the incidents created in Squadcast and they cannot be manually created.
@@ -51,7 +53,65 @@ You can either save the above numbers on your devices or download the below vCar
 
 ## Notification Details and Logs
 
-Each incident notification can be traced to a source. We are in the process of rolling out a feature for this in the near future. In the meantime, if you wish to receive details or logs of the notifications sent out for an incident, you can reach out to our [Support team](mailto:support@squadcast.com) with the `Incident ID` of the incident.
+Each incident notification can be traced to a source. You can access the Notification Logs for a perticular incident by navigating to the [Incident Details](https://support.squadcast.com/docs/incident-details) page and clicking on **Notification Logs** in the **Responders** section.
+
+![](images/notification_logs_1.png)
+
+The Notification Logs for an incident will include:
+
+**(1)** The **user name** of the user
+
+**(2)** The **notification channel** depicted by an icon followed by the **destination**
+
+The destination for: 
+- Email notification is the **email address** of the user
+- Phone and SMS notification is the **phone number** of the user
+- Push notifications on the mobile app is **push**
+
+**(3)** The **status** of the notification
+
+An incident notification can have one of the following statuses:
+
+**(a)** `scheduled`: When the notification is scheduled to be sent out from Squadcast
+
+**(b)** `dispatched`: When the notification is dispatched from Squadcast and has been accepted by our providers for further delivery
+
+**(c)** `sent`: When the notification is dispatched from the providers' platform to the user
+
+**(d)** `delivered`: When the notification has been delivered successfully to the user
+
+**(e)** `failed`: When Squadcast is unable to send out the notification
+
+**(f)** `canceled`: When an incident has been acknowledged or resolved, the rest of the scheduled notifications will not be dispatched. The notification status of these notifications will be set to `canceled`
+
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+We have implemented redundancies for each of our notification channels. We will continue to add different providers for each of the notification channels going forward in order to provide maximum reliability for our users.
+
+{{site.data.alerts.end}}
+
+You can get the **time of dispatch** for notifications that are in status `sent` or `delivered` by hovering over them.
+
+**(4)** The **time** at which the notification was sent (or is yet to be sent)
+
+**(5)** You can click on the refresh icon for the latest data
+
+{{site.data.alerts.yellow-note-i-md}}
+**Important:**
+
+In some cases, even when notifications might have been *delivered* to users, the status could still be set to *sent/dispatched*. We depend on our vendors, who in turn depend on hundreds of carriers worldwide, to get notification delivery information. In rare cases, these logs might not be completely reliable. We might have to look further into it to understand certain situations. If you wish to receive more details of the notifications sent out for an incident, you can reach out to our [Support team](mailto:support@squadcast.com) with the `Incident ID` of the incident.
+
+{{site.data.alerts.end}}
+
+{{site.data.alerts.yellow-note-i-md}}
+**Understanding push notifications:**
+
+**(1)** You might see multiple push notifications being scheduled/dispatched if you have logged in to your Squadcast account on multiple mobile devices
+
+**(2)** You will not see any push notifications in the logs if you have not installed and logged into the Squadcast mobile app even though you have push as a notification channel in your notification rule(s)
+
+{{site.data.alerts.end}}
 
 ## Bypass Do Not Disturb (DND) for SMS and Phone Call Notifications
 
