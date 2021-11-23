@@ -369,3 +369,9 @@ Yes, that is correct. For example, if your seach string is "ALERT" and your payl
 The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check <a href="https://regex101.com">this</a> out to get an idea of all the expression types accepted in Squadcast. Please do your regex [here](https://regex101.com) against `Golang` flavour as shown in the screenshot below and then, set them up in Squadcast:
 
 ![](images/de-duplication_9.png)
+
+**(7)** I have configured multiple rules for a particular Service. Can I search through the configured rules to find the rule I am looking for?
+
+Yes, that is doable. You will notice a **Search** option on the left-top of the rules modal. You can type in a word you recall from the rule itself or search by the mapped tags within the rules. Any matching results will yield the narrowed down set of rules.
+
+![](images/automation-rules-search-1.png)

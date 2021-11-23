@@ -58,4 +58,23 @@ Route detailed ticket alerts from ServiceNow to the right users in Squadcast.
 
 ![](images/servicenow_6.png)
 
+{{site.data.alerts.yellow-note-i-md}}
+
+**Important:**
+Understanding how the integration works:
+
+- Trigger a new incident:
+
+For `state: 1` in the ServiceNow ticket payload, an incident is triggered in Squadcast.
+
+- Resolve an existing incident:
+
+For `state: 6`, `state: 7` and `state: 8`, incidents are resolved in Squadcast (pertaining to auto-resolution of an existing, *open* incident)
+
+Please ensure that the right `status` is being sent within the payload for the tickets into Squadcast. If values other than the ones mentioned above are sent for `status`, the integration will not work as expected.
+
+In case of any queries, please feel free to reach out to our [Support team](mailto:support@squadcast.com).
+
+{{site.data.alerts.end}}
+
 That is it, you are now good to go! Whenever a ticket is created with the `New` status, an incident will be created in Squadcast for it. When the ticket is moved to `Resolved`, `Closed` or `Deleted` status in ServiceNow, the corresponding incident will automatically get resolved in Squadcast as well.

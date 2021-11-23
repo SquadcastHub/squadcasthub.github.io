@@ -235,3 +235,9 @@ Yes, you can specify Execution Rule Priority for the rules defined by moving the
 **(7)** While adding a De-duplication Rule, is the _search string_ in the rule case sensitive?
 
 Yes, that is correct. For example, if your seach string is "ALERT" and your payload does not contain "ALERT" but contains "Alert", this will not be matched. Your search string should be "Alert".
+
+**(8)** I have configured multiple rules for a particular Service. Can I search through the configured rules to find the rule I am looking for?
+
+Yes, that is doable. You will notice a **Search** option on the left-top of the rules modal. You can type in a word you recall from the rule description or the rule itself. Any matching results will yield the narrowed down set of rules.
+
+![](images/automation-rules-search-1.png)
