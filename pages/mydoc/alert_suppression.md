@@ -256,3 +256,9 @@ Yes, that is correct. For example, if your seach string is "ALERT" and your payl
 In the Incident's Activity Timeline the reason for suppression is displayed.
 
 ![](images/suppression_reason.png)
+
+**(5)** I have configured multiple rules for a particular Service. Can I search through the configured rules to find the rule I am looking for?
+
+Yes, that is doable. You will notice a **Search** option on the left-top of the rules modal. You can type in a word you recall from the rule description or the rule itself. Any matching results will yield the narrowed down set of rules.
+
+![](images/automation-rules-search-1.png)
