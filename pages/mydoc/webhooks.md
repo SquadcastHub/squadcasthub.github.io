@@ -3,33 +3,42 @@ title: Outgoing Webhooks
 tags:
 keywords:
 last_updated:
-summary: "Receive alerts from squadcast in your service"
+summary: "Use outbound webhooks to send incident information from Squadcast into other systems"
 sidebar: mydoc_sidebar
-permalink: docs/webhooks
+permalink: docs/outgoing-webhooks
 folder: mydoc
 ---
 
-A webhook allows you to connect a platform you manage (either an API you create yourself, or a third party service) to a stream of future _events_.
+## Outgoing Webhooks
 
-Setting up a webhook on Squadcast enables you to receive information (referred to as _events_) from Squadcast, as they happen. This can help you avoid polling the API or manually checking the Squadcast web application for desired information.
+Webhooks allow you to connect a platform that you manage (either an API that you create by yourself, or a third party service) to a stream of future *events*.
 
-The rest of this document will detail how to set up a webhook as well as the shape of events that will be sent to your webhook destination.
+Setting up a webhook on Squadcast enables you to receive information (referred to as *events*) from Squadcast as they happen. This can help you avoid continuously polling Squadcast's REST APIs or manually checking the Squadcast web/mobile application for desired information.
 
-**Note:** The webhooks feature on Squadcast is currently in beta; documentation and features may change or be added to.
+The rest of this document will explain how you can set up these webhooks, as well as list the events that can be sent to your webhook destinations.
+
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+This new feature is currently in `Beta` and is accessible in all of our [plans](https://squadcast.com/pricing). We will be enhancing the feature from time to time and the documentation around it is hence, subject to change. 
+
+If you have queries or suggestions, please feel free to reach out to our [Support team](mailto:support@squadcast.com).
+
+{{site.data.alerts.end}}
 
 ## Prerequisites
 
-- Only the Account Owner and Users with the `Manage Webhook` permission will be able to enable, disable and manage webhooks in Squadcast
+Only the **Account Owner** and **Users** with the `Manage Webhook` permission will be able to *enable*, *disable* and *manage* webhooks in Squadcast.
 
-If you don’t have access to the Webhooks feature, please contact your administrator to give you webhook permissions.
+If you do not have access to this feature, please contact your administrator to give you the right permissions for it.
+
+Navigate to **Settings** > **Permissions** and enable the checkbox under **Webhooks** for the desired users.
 
 ![](images/webhooks_0.png)
 
-## Setting up a webhook
+## Setup a Webhook
 
-Go to **Settings > Webhooks**
-
-**(1)** Click on the **+** icon
+**(1)** Navigate to **Settings > Webhooks**. Click on the **+** icon
 
 ![](images/webhooks_1.png)
 
@@ -37,69 +46,89 @@ Go to **Settings > Webhooks**
 
 ![](images/webhooks_2.png)
 
-## Supported events
+You can now proceed to configuring the newly created webhook.
 
-The following events are supported at the moment, if you need more events to be added, please reach out to our support team with your use case.
+## Supported Events
 
-- Incident Triggered
-- Incident Acknowledged
-- Incident Reassigned
-- Incident Resolved
+The webhook that you have configured can be triggered for certain events occurring in Squadcast. At the moment, the following incident-related events are supported:
+
+- [Incident `triggered`](outgoing-webhooks#incident-triggered)
+- [Incident `reassigned`](outgoing-webhooks#incident-reassigned)
+- [Incident `acknowledged`](outgoing-webhooks#incident-acknowledged)
+- [Incident `resolved`](outgoing-webhooks#incident-resolved)
 
 ![](images/webhooks_3.png)
 
-You can choose multiple triggers, a new event is sent for the provided URLs if any of the trigger matches.
+You can choose multiple triggers for a webhook. Information is sent to the provided URLs if any of the triggers match.
 
-## Communication protocol with webhooks
+If your use-case requires more Squadcast events to be supported, please reach out to our [Support team](mailto:support@squadcast.com) with details of the same.
 
-A webhook is sent whenever the configured events occur on the Squadcast platform.
+## Communication Protocol for Webhooks
 
-A webhook is sent using an HTTP POST to the URL(s) that was registered when the webhook was created, with a body encoded using JSON.
+A webhook is called whenever the configured events occur in Squadcast.
 
-Squadcast expects that the server that responds to a webhook will return a 2xx response code. If a non-2xx response is received, squadcast will retry the request for a maximum of 3 times. The exact details of the retry policy are not currently documented, and are subject to change during the beta period.
+A webhook call is made using the `HTTP POST` method to the URL(s) that were added when the webhook was configured, with a body that is encoded using `JSON`.
 
-## URLs and headers
+Squadcast expects that the server that responds to the webhook to return a `2xx` response code upon success. If a non-2xx response is received, **Squadcast will retry the request for a maximum of 3 times**. 
 
-We support multiple URLs, with POST, PUT and PATCH methods, any alert generated will be sent to all the URLs, you can also configure additional headers and the header will get attached to all the webhooks that will be sent based on this configuration. 
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+The exact details of the retry policy are currently not being tracked. This is subject to change during the Beta period.
+
+{{site.data.alerts.end}}
+
+## URLs and Headers
+
+We support the addition of multiple URL endpoints, with `POST`, `PUT` and `PATCH` methods. Incident payloads will be sent to all the URL endpoints that are added. You can also configure *additional headers*. These headers will get attached to all the webhook calls that will be made based on this configuration. 
 
 ![](images/webhooks_4.png)
 
 ## Filters
 
-You can filter events from services and alert sources, either by individual expression or a combination of expression and expression groups
+You can filter on top of events from the **Services** and **Alert Sources** drop-downs, either by having an individual expression or a combination of expressions/expression groups.
 
 ![](images/webhooks_5.png)
 
 ## Logs
 
-Once the webhook has been sent, you can view the logs in the **Logs** tab, 
+Once the webhook call has been made, you can view the logs for it in the **Logs** tab.
 
 ![](images/webhooks_6.png)
 
-Click on the expand icon on any logs to view the payload 
+Click on the expand icon on any of the individual logs to view the payload that has been sent across.
 
 ![](images/webhooks_7.png)
 
-## Settings
+## Additional Settings
 
-Configure name description and Failure notification email in the settings tab
+Configure the **Name**, **Description** and **Failure Notification email** in the **Settings** tab. This is particularly helpful when you (or an administrator) would want to be notified for webhook-related failures.
 
 ![](images/webhooks_8.png)
 
-## Use cases for webhooks
+## Use-cases for Webhooks
 
-Webhooks can be leveraged for various purposes. Some possible use cases for webhooks might include:
+Webhooks can be leveraged in various scenarios. We have put together some common use-cases. 
 
-- Building a custom dashboard to visualize or analyze incidents.
-- Sending data to ticketing tools, such as Zendesk, Freshdesk, Shortcut, Asana etc.
-- Sending events to communication apps, such as Slack, MS Teams etc,.
-- Alerting when a workflow is cancelled, then using the API to rerun the workflow.
-- Triggering internal notification systems to alert people when incidents are created / resolved.
-- Building your own automation plugins and tools.
+They are:
+- Building internal custom dashboards to visualize or analyze incidents
+- Sending data to ticketing tools, such as Zendesk, Freshdesk, Shortcut, Asana, etc.
+- Sending events to communication apps, such as Slack, MS Teams, etc.
+- Alerting when a workflow is disrupted- then use the API to re-run the workflow
+- Triggering internal notification systems to alert people when incidents are created/resolved
+- Building your own automation plug-ins and tools
 
-We will be coming up with Squadcast webhook connectors soon to show how webhooks can be connected to other well known 3rd party applications. If you need help with integrating into a 3rd party application, please contact our support team and we’ll help you set it up.
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
 
-## Sample webhook payloads
+We will be coming up with *Webhook Connectors* soon, to show how our webhooks can be easily connected to other well known third party applications. 
+
+If you need help with integrating your Squadcast account to a third party application using webhooks, please contact our [Support team](mailto:support@squadcast.com).
+
+{{site.data.alerts.end}}
+
+## Sample Webhook Payloads
+
 ### Incident Triggered
 
 ```json

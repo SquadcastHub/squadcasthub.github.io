@@ -643,6 +643,14 @@ entries:
             url: /docs/zendesk
             output: web, pdf
 
+      - title: Outgoing Webhooks
+        output: web, pdf
+
+        folderitems:
+          - title: Configuring Outgoing Webhooks
+            url: /docs/outgoing-webhooks
+            output: web, pdf
+
       - title: Extensions
         output: web, pdf
 
