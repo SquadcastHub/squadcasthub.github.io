@@ -479,6 +479,10 @@ entries:
             url: /docs/logzio
             output: web, pdf
 
+          - title: ManageEngine Application Manager
+            url: /docs/manageengine-appmanager
+            output: web, pdf
+
           - title: ManageEngine Opmanager
             url: /docs/manageengine-opmanager
             output: web, pdf
