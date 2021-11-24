@@ -2,7 +2,7 @@
 title: Hyperping
 keywords: 
 last_updated: 
-summary: "Send alert details to Squadcast from Hyperping"
+summary: "Send alerts to Squadcast from Hyperping"
 sidebar: mydoc_sidebar
 permalink: docs/hyperping
 folder: mydoc
@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate Hyperping with Squadcast.
 
-[Hyperping](https://hyperping.io/) is Uptime monitoring for websites and APIs, public status pages, instantly receive alerts by emails, Slack and SMS.
+[Hyperping](https://hyperping.io/) is an uptime monitoring platform for websites, APIs and public status pages.
 
 Route detailed alerts from Hyperping to the right users in Squadcast.
 
@@ -34,17 +34,32 @@ Route detailed alerts from Hyperping to the right users in Squadcast.
 
 ### In Hyperping: Set up a Webhook for Squadcast
 
+**(1)** Click on **Project** and navigate to **Project settings**
 
-**(1)** Click on **Project settings** under your **Project**
-
-**(2)** Paste previously copied Squadcast **Webhook URL** in the **URL field** under **Webhook** section
+**(2)** Paste the previously copied Squadcast **Webhook URL** in the **URL** field under **Webhook** section
 
 ![](images/hyperping_2.png)
 
-**NOTE**: You can enter your webhook endpoint at the project level.
+{{site.data.alerts.yellow-note-i-md}}
+**Information**: 
 
-That is it, you are now good to go! Whenever an alert is generated with `check.down`, an incident will be created in Squadcast. When the alert is generated with `check.up` in Hyperping, the corresponding incident will automatically get resolved in Squadcast as well.
+You can test the newly configured webhook by clicking on `Down test`. This will trigger a test alert in Squadcast. Clicking on `Up test` may or may not send out the *correspoding* resolve signal to Squadcast for auto-resolution of the newly triggered incident.
 
-### Helpful Links to Hyperping's Documentation
+However, if you see that a test alert is triggered in Squadcast when you click on `Down test`, you can be rest assured that the integration will work as expected.
+{{site.data.alerts.end}}
 
-**1.** You can find more information on setting Webhooks up [here](https://hyperping.io/docs/integrations/webhooks)
+{{site.data.alerts.yellow-note-i-md}}
+**Note**: 
+
+You can configure webhooks in Hyperping across different Projects as well.
+{{site.data.alerts.end}}
+
+That is it, you are now good to go! 
+
+In Hyperping, whenever an event is generated with `down: true`, an incident will be created for it in Squadcast. When an event is generated with `down: false`, the corresponding incident will automatically get resolved in Squadcast as well.
+
+{{site.data.alerts.yellow-note-i-md}}
+**Helpful Links to Hyperping's Documentation**: 
+
+You can find more information on setting Webhooks up [here](https://hyperping.io/docs/integrations/webhooks).
+{{site.data.alerts.end}}
