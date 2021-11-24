@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate ManageEngine Application Manager with Squadcast.
 
-[ManageEngine Application Manager](https://www.manageengine.com/) is an application performance monitoring software that provides deep visibility into the performance and user experience of your business-critical applications and infrastructure components.
+[ManageEngine Application Manager](https://www.manageengine.com/products/applications_manager/) is an application performance monitoring software that provides deep visibility into the performance and user experience of business-critical applications and infrastructure components.
 
 Route detailed alerts from ManageEngine Application Manager to the right users in Squadcast.
 
@@ -34,9 +34,15 @@ Route detailed alerts from ManageEngine Application Manager to the right users i
 
 ### In ManageEngine Application Manager: Create a Squadcast Webhook
 
-You can configure a webhook for a group or a project.
+![](images/manageengine_appmanager_1.png)
 
-**(1)** Click on **Admin > Alarm/Action > Actions** 
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+You can configure a webhook for either a Group or a Project.
+{{site.data.alerts.end}}
+
+**(1)** Navigate to **Admin > Alarm/Action > Actions** 
 
 ![](images/manageengine_appmanager_2.png)
 
@@ -44,11 +50,11 @@ You can configure a webhook for a group or a project.
 
 ![](images/manageengine_appmanager_3.png)
 
-**(3)** Enter the **Display Name** for the action, Paste the previously copied Squadcast **Webhook URL** and Choose the **Form Submission Method** as **POST**
+**(3)** Enter the **Display Name** for the action. Paste the previously copied Squadcast **Webhook URL** and choose the **Form Submission Method** as `POST`
 
 ![](images/manageengine_appmanager_4.png)
 
-**(4)** Choose the **PayLoad Type** to send data requests through **JSON** and paste below JSON in **Custom Parameters**
+**(4)** Choose the **PayLoad Type** to send data requests through as `JSON` and paste the below JSON in the placeholder for **Custom Parameters**
 
 ```json
 {
@@ -86,6 +92,23 @@ You can configure a webhook for a group or a project.
 **(5)** Click the **Create Action** button to finish creating the **Webhook** action
 
 ![](images/manageengine_appmanager_5.png)
+
+{{site.data.alerts.yellow-note-i-md}}
+**Important:**
+
+Understanding how the integration works:
+
+- Trigger a new incident:
+For the values `severity: critical`, `severity: down`, `severity: warning` in the alert payload, an incident is triggered in Squadcast.
+
+- Resolve an existing incident:
+For the values `severity: clear` and `severity: up`, incidents are resolved in Squadcast (pertaining to auto-resolution of an existing, open incident)
+
+Please ensure that the right `severity` is being sent within the payload for the alerts into Squadcast. If values other than the ones mentioned above are sent for `severity`, the integration will not work as expected.
+
+In case of any queries, please feel free to reach out to our [Support team](mailto:support@squadcast.com).
+
+{{site.data.alerts.end}}
 
 That's it, you are good to go! Your ManageEngine Application Manager integration is now complete.
 
