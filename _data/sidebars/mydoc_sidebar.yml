@@ -627,6 +627,10 @@ entries:
             url: /docs/threat-stack
             output: web, pdf
 
+          - title: Twilio
+            url: /docs/twilio
+            output: web, pdf
+
           - title: Uptime Robot
             url: /docs/uptime-robot
             output: web, pdf
