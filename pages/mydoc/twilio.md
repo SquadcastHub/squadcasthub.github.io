@@ -36,7 +36,7 @@ Route detailed events from Twilio to the right users in Squadcast.
 
 You can configure a webhook for a group or a project.
 
-**(1)** Click on **Monitor > Logs > Eroors > Webhooks & alerts** on the left panel of page
+**(1)** Navigate to **Monitor > Logs > Errors > Webhooks & alerts** from the left panel of the page
 
 ![](images/twilio_2.png)
 
@@ -44,4 +44,14 @@ You can configure a webhook for a group or a project.
 
 ![](images/twilio_3.png)
 
-That is it, you are good to go! Everytime an `Error` or `Warning` occurs in Twilio, an incident would be created in Squadcast.
+This will create and complete the configuration of the webhook in your Twilio account.
+
+That is it, you are good to go! Everytime an event with `Level: ERROR` or `Level: WARNING` occurs in Twilio, an incident would be created in Squadcast.
+
+{{site.data.alerts.blue-note-md}}
+**FAQ:**
+
+Q: If an alert gets resolved in Twilio, does Twilio send auto-resolve signals to Squadcast?
+
+A: No, Twilio does not send auto-resolve signals to Squadcast. Hence, Squadcast incidents from Twilio should be resolved manually once issues have been fixed.
+{{site.data.alerts.end}}
