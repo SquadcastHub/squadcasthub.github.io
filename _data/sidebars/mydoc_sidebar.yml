@@ -382,6 +382,10 @@ entries:
           - title: Ghost Inspector
             url: /docs/ghost-inspector
             output: web, pdf
+          
+          - title: GitLab
+            url: /docs/gitlab
+            output: web, pdf
 
           - title: GitHub
             url: /docs/github
