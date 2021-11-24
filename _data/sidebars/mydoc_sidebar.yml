@@ -307,6 +307,10 @@ entries:
             url: /docs/azure-monitor
             output: web, pdf
 
+          - title: Bitbucket
+            url: /docs/bitbucket
+            output: web, pdf
+
           - title: Bugsnag
             url: /docs/bugsnag
             output: web, pdf
@@ -381,6 +385,10 @@ entries:
 
           - title: Ghost Inspector
             url: /docs/ghost-inspector
+            output: web, pdf
+          
+          - title: GitLab
+            url: /docs/gitlab
             output: web, pdf
 
           - title: GitHub
@@ -649,6 +657,14 @@ entries:
 
           - title: Zendesk
             url: /docs/zendesk
+            output: web, pdf
+
+      - title: Outgoing Webhooks
+        output: web, pdf
+
+        folderitems:
+          - title: Configuring Outgoing Webhooks
+            url: /docs/outgoing-webhooks
             output: web, pdf
 
       - title: Extensions
