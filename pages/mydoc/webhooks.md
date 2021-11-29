@@ -26,6 +26,12 @@ If you have queries or suggestions, please feel free to reach out to our [Suppor
 
 {{site.data.alerts.end}}
 
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+We also support generic incoming webhooks for incident creation. You can find detailed information on how to use those [here](https://support.squadcast.com/docs/apiv2).
+{{site.data.alerts.end}}
+
 ## Prerequisites
 
 Only the **Account Owner** and **Users** with the `Manage Webhook` permission will be able to *enable*, *disable* and *manage* webhooks in Squadcast.
