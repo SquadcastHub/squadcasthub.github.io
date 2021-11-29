@@ -121,4 +121,18 @@ Then, click **Sign in as current user** to verify your login to Squadcast!
 
 **(16)** To login to Squadcast via Azure Active Directory SSO from here on, **within your Office 365 account, click on App Launcher,  click on All Apps and you will be able to see Squadcast** there. Unless you have enabled email-password based login for your User Role, you will not be able to login to Squadcast using email-password from our [webapp login page](https://app.squadcast.com).
 
-**Important:** We do not support provisioning and syncing of **Groups** from Azure Active Directory SSO into Squadcast. We support this only for **Users**.
+{{site.data.alerts.blue-note-md}}
+**Logging in from the Squadcast mobile app when Azure AD SSO is enabled:**
+
+The user needs to first access and login to [myapplications.microsoft.com](myapplications.microsoft.com) in the mobile browser. Here, they will be able to see the configured SSO (for Squadcast, as shown in the screenshot below). They can simply click on the icon to login.
+
+![](images/azure_squadcast_22.png)
+{{site.data.alerts.end}}
+
+{{site.data.alerts.blue-note-md}}
+**Important:**
+
+**(1)** We do not support provisioning and syncing of **Groups** from Azure AD SSO into Squadcast. We support this only for **Users**.
+
+**(2)** To login to the Squadcast web app when Azure AD SSO is enabled, users can use **My Apps Secure Sign-in Extension** for an easy login.
+{{site.data.alerts.end}}
