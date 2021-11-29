@@ -35,7 +35,7 @@ Ensure that the right Team is selected from the team picker present at the top.
 
 ![](images/schedules_4.png)
 
-**(5)** **Shift Name** corresponds to the name of the on-call engineer and would be auto-filled by the system. Hence, you can *skip this field*
+**(5)** **Shift Name** indicates the name of the particular *Shift* being set up within the Schedule. This is a mandatory field and the user needs to enter a value for this before proceeding further
 
 ![](images/schedules_5.png)
 
