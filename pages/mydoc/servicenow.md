@@ -59,8 +59,8 @@ Route detailed ticket alerts from ServiceNow to the right users in Squadcast.
 ![](images/servicenow_6.png)
 
 {{site.data.alerts.yellow-note-i-md}}
-
 **Important:**
+
 Understanding how the integration works:
 
 - Trigger a new incident:
