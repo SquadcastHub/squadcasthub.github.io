@@ -30,13 +30,6 @@ entries:
             url: /docs/glossary
             output: web, pdf
 
-      - title: FAQs
-        output: web, pdf
-        folderitems:
-          - title: FAQs
-            url: /docs/squadcast-faq
-            output: web, pdf
-
       - title: Manage Users
         output: web, pdf
         folderitems:
@@ -271,437 +264,442 @@ entries:
             url: /docs/analytics
             output: web, pdf
 
-      - title: Alert Source Integrations
+      - title: Integrations
         output: web, pdf
 
         folderitems:
-          - title: Amazon CloudWatch (AWS)
-            url: /docs/amazon-cloudwatch-aws
-            output: web, pdf
-
-          - title: AWS CloudWatch Event Rules
-            url: /docs/aws-cloudwatch-event-rules
-            output: web, pdf
-
-          - title: AWS CloudTrail Logs
-            url: /docs/aws-cloudtrail-logs
-            output: web, pdf
-
-          - title: AWS CloudTrail via CloudWatch
-            url: /docs/aws-cloudtrail-via-cloudwatch
-            output: web, pdf
-
-          - title: AWS Elastic Beanstalk via CloudWatch
-            url: /docs/aws-elastic-beanstalk-via-cloudwatch
-            output: web, pdf
-
-          - title: AppDynamics
-            url: /docs/appdynamics
-            output: web, pdf
-
-          - title: AppSignal
-            url: /docs/appsignal
-            output: web, pdf
-
-          - title: Azure Monitor
-            url: /docs/azure-monitor
-            output: web, pdf
-
-          - title: Bitbucket
-            url: /docs/bitbucket
-            output: web, pdf
-
-          - title: Bugsnag
-            url: /docs/bugsnag
-            output: web, pdf
-
-          - title: Buildkite
-            url: /docs/buildkite
-            output: web, pdf
-
-          - title: Checkly
-            url: /docs/checkly
-            output: web, pdf
-
-          - title: Checkmk
-            url: /docs/checkmk
-            output: web, pdf
-
-          - title: Cisco DNAC
-            url: /docs/cisco-dnac
-            output: web, pdf
-
-          - title: ClickUp
-            url: /docs/clickup
-            output: web, pdf
-
-          - title: Conviva
-            url: /docs/conviva
-            output: web, pdf
-
-          - title: CopperEgg
-            url: /docs/copperegg
-            output: web, pdf
-
-          - title: Coralogix
-            url: /docs/coralogix
-            output: web, pdf
-
-          - title: Datadog
-            url: /docs/datadog
-            output: web, pdf
-
-          - title: Dynatrace
-            url: /docs/dynatrace
-            output: web, pdf
-
-          - title: ElastAlert
-            url: /docs/elastalert
-            output: web, pdf
-
-          - title: Elastic
-            url: /docs/elastic
-            output: web, pdf
-
-          - title: Email
-            url: /docs/email
-            output: web, pdf
-
-          - title: Errorception
-            url: /docs/errorception
-            output: web, pdf
-
-          - title: Freshdesk
-            url: /docs/freshdesk
-            output: web, pdf
-
-          - title: Freshping
-            url: /docs/freshping
-            output: web, pdf
-
-          - title: Freshservice
-            url: /docs/freshservice
-            output: web, pdf
-
-          - title: Ghost Inspector
-            url: /docs/ghost-inspector
-            output: web, pdf
-          
-          - title: GitLab
-            url: /docs/gitlab
-            output: web, pdf
-
-          - title: GitHub
-            url: /docs/github
-            output: web, pdf
-
-          - title: Grafana
-            url: /docs/grafana
-            output: web, pdf
-          
-          - title: Grafana 8
-            url: /docs/grafana-8
-            output: web, pdf
-
-          - title: Graylog
-            url: /docs/graylog
-            output: web, pdf
-
-          - title: Graylog v4
-            url: /docs/graylog-v4
-            output: web, pdf
-
-          - title: HetrixTools
-            url: /docs/hetrixtools
-            output: web, pdf
-          
-          - title: Heroku
-            url: /docs/heroku
-            output: web, pdf
-
-          - title: Honeybadger
-            url: /docs/honeybadger
-            output: web, pdf
-          
-          - title: Hyperping
-            url: /docs/hyperping
-            output: web, pdf
-
-          - title: Icinga2
-            url: /docs/icinga2
-            output: web, pdf
-
-          - title: Incident Webhook
+          - title: Incoming Webhooks (Incident Webhook/API)
             url: /docs/apiv2
             output: web, pdf
 
-          - title: InsightOps (LogEntries)
-            url: /docs/insightops-logentries
-            output: web, pdf
-
-          - title: Instana
-            url: /docs/instana
-            output: web, pdf
-
-          - title: Jenkins Integration
-            url: /docs/jenkins
-            output: web, pdf
-
-          - title: Jira Cloud Alert Source
-            url: /docs/jira-cloud-alert-source
-            output: web, pdf
-
-          - title: Jira Server Alert Source
-            url: /docs/jira-server-alert-source
-            output: web, pdf
-
-          - title: Kapacitor
-            url: /docs/kapacitor
-            output: web, pdf
-
-          - title: LibreNMS
-            url: /docs/librenms
-            output: web, pdf
-
-          - title: LogDNA
-            url: /docs/logdna
-            output: web, pdf
-
-          - title: Loggly
-            url: /docs/loggly
-            output: web, pdf
-
-          - title: LogicMonitor
-            url: /docs/logic-monitor
-            output: web, pdf
-
-          - title: Logstash
-            url: /docs/logstash-integration-guide
-            output: web, pdf
-
-          - title: Logz.io
-            url: /docs/logzio
-            output: web, pdf
-
-          - title: ManageEngine Application Manager
-            url: /docs/manageengine-appmanager
-            output: web, pdf
-
-          - title: ManageEngine Opmanager
-            url: /docs/manageengine-opmanager
-            output: web, pdf
-
-          - title: MongoDB Atlas / Cloud Manager
-            url: /docs/mongodb-atlas-cloud-manager
-            output: web, pdf
-
-          - title: Nagios
-            url: /docs/nagios
-            output: web, pdf
-
-          - title: New Relic
-            url: /docs/new-relic
-            output: web, pdf
-
-          - title: Nixstats
-            url: /docs/nixstats
-            output: web, pdf
-
-          - title: NodePing
-            url: /docs/nodeping
-            output: web, pdf
-
-          - title: Observium
-            url: /docs/observium
-            output: web, pdf
-
-          - title: OverOps
-            url: /docs/overops
-            output: web, pdf
-
-          - title: Papertrail
-            url: /docs/papertrail
-            output: web, pdf
-
-          - title: Pingdom
-            url: /docs/pingdom
-            output: web, pdf
-
-          - title: Prometheus
-            url: /docs/prometheus
-            output: web, pdf
-
-          - title: Progress WhatsUp Gold
-            url: /docs/progress-whatsup-gold
-            output: web, pdf
-
-          - title: PRTG Network Monitor
-            url: /docs/prtg-network-monitor
-            output: web, pdf
-
-          - title: Rapid7 InsightIDR
-            url: /docs/rapid7-insightidr
-            output: web, pdf
-
-          - title: Redash
-            url: /docs/redash
-            output: web, pdf
-
-          - title: Rollbar
-            url: /docs/rollbar
-            output: web, pdf
-
-          - title: Runscope
-            url: /docs/runscope
-            output: web, pdf
-
-          - title: Salesforce Cloud
-            url: /docs/salesforce-cloud
-            output: web, pdf
-
-          - title: Scout APM
-            url: /docs/scout-apm
-            output: web, pdf
-
-          - title: Sematext
-            url: /docs/sematext
-            output: web, pdf
-
-          - title: Sensu
-            url: /docs/sensu
-            output: web, pdf
-
-          - title: Sensu Go
-            url: /docs/sensu-go
-            output: web, pdf
-
-          - title: Sentry.io
-            url: /docs/sentryio
-            output: web, pdf
-
-          - title: Server Density
-            url: /docs/server-density
-            output: web, pdf
-
-          - title: ServiceNow
-            url: /docs/servicenow
-            output: web, pdf
-
-          - title: Shortcut (Clubhouse)
-            url: /docs/shortcut
-            output: web, pdf
-
-          - title: SignalFx
-            url: /docs/signalfx
-            output: web, pdf
-
-          - title: Site24x7
-            url: /docs/site24x7
-            output: web, pdf
-
-          - title: Slack
-            url: /docs/slack-as-an-alert-source
-            output: web, pdf
-
-          - title: SolarWinds AppOptics
-            url: /docs/solarwinds-appoptics
-            output: web, pdf
-
-          - title: Splunk
-            url: /docs/splunk
-            output: web, pdf
-
-          - title: Sqreen
-            url: /docs/sqreen
-            output: web, pdf
-
-          - title: Stackdriver
-            url: /docs/stackdriver
-            output: web, pdf
-
-          - title: Stackify Retrace
-            url: /docs/stackify-retrace
-            output: web, pdf
-
-          - title: StatHat
-            url: /docs/stathat
-            output: web, pdf
-
-          - title: StatusCake
-            url: /docs/statuscake
-            output: web, pdf
-
-          - title: Sumo Logic
-            url: /docs/sumo-logic
-            output: web, pdf
-
-          - title: Sysdig Monitor
-            url: /docs/sysdig-monitor
-            output: web, pdf
-
-          - title: Threat Stack
-            url: /docs/threat-stack
-            output: web, pdf
-
-          - title: Twilio
-            url: /docs/twilio
-            output: web, pdf
-
-          - title: Uptime Robot
-            url: /docs/uptime-robot
-            output: web, pdf
-
-          - title: Uptrends
-            url: /docs/uptrends
-            output: web, pdf
-
-          - title: Wavefront
-            url: /docs/wavefront
-            output: web, pdf
-
-          - title: Zabbix
-            url: /docs/zabbix-integration-guide
-            output: web, pdf
-
-          - title: Zabbix 5.0
-            url: /docs/zabbix-5
-            output: web, pdf
-
-          - title: Zendesk
-            url: /docs/zendesk
-            output: web, pdf
-
-      - title: Outgoing Webhooks
-        output: web, pdf
-
-        folderitems:
-          - title: Configuring Outgoing Webhooks
-            url: /docs/outgoing-webhooks
-            output: web, pdf
-
-      - title: Extensions
-        output: web, pdf
-
-        folderitems:
-          - title: CircleCI Integration
-            url: /docs/circleci-integration
-            output: web, pdf
-
-          - title: Google Hangouts
-            url: /docs/hangouts
-            output: web, pdf
-
-          - title: Jira Cloud
-            url: /docs/jira-cloud
-            output: web, pdf
-
-          - title: Jira Server (On-Premise)
-            url: /docs/jira-server-on-premise
-            output: web, pdf
-
-          - title: Slack
-            url: /docs/slack
-            output: web, pdf
+            subfolders:
+              - title: Alert Source Integrations (Native)
+                output: web, pdf
+
+                subfolderitems:
+                  - title: Amazon CloudWatch (AWS)
+                    url: /amazon-cloudwatch-aws
+                    output: web, pdf
+
+                  - title: AWS CloudWatch Event Rules
+                    url: /aws-cloudwatch-event-rules
+                    output: web, pdf
+
+                  - title: AWS CloudTrail Logs
+                    url: /aws-cloudtrail-logs
+                    output: web, pdf
+
+                  - title: AWS CloudTrail via CloudWatch
+                    url: /aws-cloudtrail-via-cloudwatch
+                    output: web, pdf
+
+                  - title: AWS Elastic Beanstalk via CloudWatch
+                    url: /aws-elastic-beanstalk-via-cloudwatch
+                    output: web, pdf
+
+                  - title: AppDynamics
+                    url: /appdynamics
+                    output: web, pdf
+
+                  - title: AppSignal
+                    url: /appsignal
+                    output: web, pdf
+
+                  - title: Azure Monitor
+                    url: /azure-monitor
+                    output: web, pdf
+
+                  - title: Bitbucket
+                    url: /bitbucket
+                    output: web, pdf
+
+                  - title: Bugsnag
+                    url: /bugsnag
+                    output: web, pdf
+
+                  - title: Buildkite
+                    url: /buildkite
+                    output: web, pdf
+
+                  - title: Checkly
+                    url: /checkly
+                    output: web, pdf
+
+                  - title: Checkmk
+                    url: /checkmk
+                    output: web, pdf
+
+                  - title: Cisco DNAC
+                    url: /cisco-dnac
+                    output: web, pdf
+
+                  - title: ClickUp
+                    url: /clickup
+                    output: web, pdf
+
+                  - title: Conviva
+                    url: /conviva
+                    output: web, pdf
+
+                  - title: CopperEgg
+                    url: /copperegg
+                    output: web, pdf
+
+                  - title: Coralogix
+                    url: /coralogix
+                    output: web, pdf
+
+                  - title: Datadog
+                    url: /datadog
+                    output: web, pdf
+
+                  - title: Dynatrace
+                    url: /dynatrace
+                    output: web, pdf
+
+                  - title: ElastAlert
+                    url: /elastalert
+                    output: web, pdf
+
+                  - title: Elastic
+                    url: /elastic
+                    output: web, pdf
+
+                  - title: Email
+                    url: /email
+                    output: web, pdf
+
+                  - title: Errorception
+                    url: /errorception
+                    output: web, pdf
+
+                  - title: Freshdesk
+                    url: /freshdesk
+                    output: web, pdf
+
+                  - title: Freshping
+                    url: /freshping
+                    output: web, pdf
+
+                  - title: Freshservice
+                    url: /freshservice
+                    output: web, pdf
+
+                  - title: Ghost Inspector
+                    url: /ghost-inspector
+                    output: web, pdf
+                  
+                  - title: GitLab
+                    url: /gitlab
+                    output: web, pdf
+
+                  - title: GitHub
+                    url: /github
+                    output: web, pdf
+
+                  - title: Grafana
+                    url: /grafana
+                    output: web, pdf
+                  
+                  - title: Grafana 8
+                    url: /grafana-8
+                    output: web, pdf
+
+                  - title: Graylog
+                    url: /graylog
+                    output: web, pdf
+
+                  - title: Graylog v4
+                    url: /graylog-v4
+                    output: web, pdf
+
+                  - title: HetrixTools
+                    url: /hetrixtools
+                    output: web, pdf
+                  
+                  - title: Heroku
+                    url: /heroku
+                    output: web, pdf
+
+                  - title: Honeybadger
+                    url: /honeybadger
+                    output: web, pdf
+                  
+                  - title: Hyperping
+                    url: /hyperping
+                    output: web, pdf
+
+                  - title: Icinga2
+                    url: /icinga2
+                    output: web, pdf
+
+                  - title: InsightOps (LogEntries)
+                    url: /insightops-logentries
+                    output: web, pdf
+
+                  - title: Instana
+                    url: /instana
+                    output: web, pdf
+
+                  - title: Jenkins Integration
+                    url: /jenkins
+                    output: web, pdf
+
+                  - title: Jira Cloud Alert Source
+                    url: /jira-cloud-alert-source
+                    output: web, pdf
+
+                  - title: Jira Server Alert Source
+                    url: /jira-server-alert-source
+                    output: web, pdf
+
+                  - title: Kapacitor
+                    url: /kapacitor
+                    output: web, pdf
+
+                  - title: LibreNMS
+                    url: /librenms
+                    output: web, pdf
+
+                  - title: LogDNA
+                    url: /logdna
+                    output: web, pdf
+
+                  - title: Loggly
+                    url: /loggly
+                    output: web, pdf
+
+                  - title: LogicMonitor
+                    url: /logic-monitor
+                    output: web, pdf
+
+                  - title: Logstash
+                    url: /logstash-integration-guide
+                    output: web, pdf
+
+                  - title: Logz.io
+                    url: /logzio
+                    output: web, pdf
+
+                  - title: ManageEngine Application Manager
+                    url: /manageengine-appmanager
+                    output: web, pdf
+
+                  - title: ManageEngine Opmanager
+                    url: /manageengine-opmanager
+                    output: web, pdf
+
+                  - title: MongoDB Atlas / Cloud Manager
+                    url: /mongodb-atlas-cloud-manager
+                    output: web, pdf
+
+                  - title: Nagios
+                    url: /nagios
+                    output: web, pdf
+
+                  - title: New Relic
+                    url: /new-relic
+                    output: web, pdf
+
+                  - title: Nixstats
+                    url: /nixstats
+                    output: web, pdf
+
+                  - title: NodePing
+                    url: /nodeping
+                    output: web, pdf
+
+                  - title: Observium
+                    url: /observium
+                    output: web, pdf
+
+                  - title: OverOps
+                    url: /overops
+                    output: web, pdf
+
+                  - title: Papertrail
+                    url: /papertrail
+                    output: web, pdf
+
+                  - title: Pingdom
+                    url: /pingdom
+                    output: web, pdf
+
+                  - title: Prometheus
+                    url: /prometheus
+                    output: web, pdf
+
+                  - title: Progress WhatsUp Gold
+                    url: /progress-whatsup-gold
+                    output: web, pdf
+
+                  - title: PRTG Network Monitor
+                    url: /prtg-network-monitor
+                    output: web, pdf
+
+                  - title: Rapid7 InsightIDR
+                    url: /rapid7-insightidr
+                    output: web, pdf
+
+                  - title: Redash
+                    url: /redash
+                    output: web, pdf
+
+                  - title: Rollbar
+                    url: /rollbar
+                    output: web, pdf
+
+                  - title: Runscope
+                    url: /runscope
+                    output: web, pdf
+
+                  - title: Salesforce Cloud
+                    url: /salesforce-cloud
+                    output: web, pdf
+
+                  - title: Scout APM
+                    url: /scout-apm
+                    output: web, pdf
+
+                  - title: Sematext
+                    url: /sematext
+                    output: web, pdf
+
+                  - title: Sensu
+                    url: /sensu
+                    output: web, pdf
+
+                  - title: Sensu Go
+                    url: /sensu-go
+                    output: web, pdf
+
+                  - title: Sentry.io
+                    url: /sentryio
+                    output: web, pdf
+
+                  - title: Server Density
+                    url: /server-density
+                    output: web, pdf
+
+                  - title: ServiceNow
+                    url: /servicenow
+                    output: web, pdf
+
+                  - title: Shortcut (Clubhouse)
+                    url: /shortcut
+                    output: web, pdf
+
+                  - title: SignalFx
+                    url: /signalfx
+                    output: web, pdf
+
+                  - title: Site24x7
+                    url: /site24x7
+                    output: web, pdf
+
+                  - title: Slack
+                    url: /slack-as-an-alert-source
+                    output: web, pdf
+
+                  - title: SolarWinds AppOptics
+                    url: /solarwinds-appoptics
+                    output: web, pdf
+
+                  - title: Splunk
+                    url: /splunk
+                    output: web, pdf
+
+                  - title: Sqreen
+                    url: /sqreen
+                    output: web, pdf
+
+                  - title: Stackdriver
+                    url: /stackdriver
+                    output: web, pdf
+
+                  - title: Stackify Retrace
+                    url: /stackify-retrace
+                    output: web, pdf
+
+                  - title: StatHat
+                    url: /stathat
+                    output: web, pdf
+
+                  - title: StatusCake
+                    url: /statuscake
+                    output: web, pdf
+
+                  - title: Sumo Logic
+                    url: /sumo-logic
+                    output: web, pdf
+
+                  - title: Sysdig Monitor
+                    url: /sysdig-monitor
+                    output: web, pdf
+
+                  - title: Threat Stack
+                    url: /threat-stack
+                    output: web, pdf
+
+                  - title: Twilio
+                    url: /twilio
+                    output: web, pdf
+
+                  - title: Uptime Robot
+                    url: /uptime-robot
+                    output: web, pdf
+
+                  - title: Uptrends
+                    url: /uptrends
+                    output: web, pdf
+
+                  - title: Wavefront
+                    url: /wavefront
+                    output: web, pdf
+
+                  - title: Zabbix
+                    url: /zabbix-integration-guide
+                    output: web, pdf
+
+                  - title: Zabbix 5.0
+                    url: /zabbix-5
+                    output: web, pdf
+
+                  - title: Zendesk
+                    url: /zendesk
+                    output: web, pdf
+ 
+              - title: Outgoing Webhooks
+                output: web, pdf
+
+                subfolderitems:
+                  - title: Configuring Outgoing Webhooks
+                    url: /outgoing-webhooks
+                    output: web, pdf
+
+              - title: Extensions
+                output: web, pdf
+
+                subfolderitems:
+                  - title: CircleCI Integration
+                    url: /circleci-integration
+                    output: web, pdf
+
+                  - title: Google Hangouts
+                    url: /hangouts
+                    output: web, pdf
+
+                  - title: Jira Cloud
+                    url: /jira-cloud
+                    output: web, pdf
+
+                  - title: Jira Server (On-Premise)
+                    url: /jira-server-on-premise
+                    output: web, pdf
+
+                  - title: Slack
+                    url: /slack
+                    output: web, pdf
 
       - title: SSO
         output: web, pdf
@@ -751,22 +749,38 @@ entries:
             url: /docs/squadcast-runbooks
             output: web, pdf
 
-      - title: Squadcast API Documentation
+      - title: Terraform & API Documentation
         output: web, pdf
 
         folderitems:
-          - title: Squadcast Public API - Refresh Token
+          - title: Terraform Provider
+            url: /docs/terraform-provider-for-squadcast
+            output: web, pdf
+
+          - title: Public API - Refresh Token
             url: /docs/squadcast-public-api
             output: web, pdf
 
-          - title: Squadcast API Documentation
+          - title: API Documentation
             external_url: https://apidocs.squadcast.com
+            output: web, pdf
+
+          - title: Incident Rate Limiting
+            url: /docs/incident-rate-limiting
             output: web, pdf
 
       - title: Managing your Squadcast Account
         output: web, pdf
 
         folderitems:
+          - title: Understanding Organizations
+            url: /docs/squadcast-organizations
+            output: web, pdf
+          
+          - title: Billing FAQs
+            url: /docs/billing
+            output: web, pdf
+
           - title: Deactivate your Squadcast Account
             url: /docs/deactivating-your-squadcast-account
             output: web, pdf
@@ -775,21 +789,9 @@ entries:
             url: /docs/deleting-your-squadcast-account
             output: web, pdf
 
-          - title: Incident Rate Limiting
-            url: /docs/incident-rate-limiting
-            output: web, pdf
-
-          - title: Organizations
-            url: /docs/squadcast-organizations
-            output: web, pdf
-
-          - title: Terraform Provider for Squadcast
-            url: /docs/terraform-provider-for-squadcast
-            output: web, pdf
-
-      - title: Billing
+      - title: FAQs
         output: web, pdf
         folderitems:
-          - title: Billing
-            url: /docs/billing
+          - title: FAQs
+            url: /docs/squadcast-faq
             output: web, pdf
