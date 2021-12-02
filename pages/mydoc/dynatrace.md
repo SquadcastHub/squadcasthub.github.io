@@ -51,9 +51,9 @@ Squadcast will then process this information to create incidents for this servic
   "PID": "{PID}",
   "ProblemTitle": "{ProblemTitle}",
   "ImpactedEntity": "{ImpactedEntity}",
-  "ImpactedEntities": {ImpactedEntities},
+  "ImpactedEntities": "{ImpactedEntities}",
   "ProblemDetailsText": "{ProblemDetailsText}",
-  "ProblemSeverity": "{ProblemSeverity"},
+  "ProblemSeverity": "{ProblemSeverity}",
   "ProblemURL": "{ProblemURL}"
 }
 ```
