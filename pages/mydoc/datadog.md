@@ -61,7 +61,7 @@ Route detailed monitoring alerts from Datadog to the right users in Squadcast.
     "eventMessage": "$TEXT_ONLY_MSG",
     "title": "$EVENT_TITLE",
     "url": "$LINK",
-    "alertTransition": "Triggered",
+    "alertTransition": "$ALERT_TRANSITION",
     "hostname": "$HOSTNAME",
     "orgName":"$ORG_NAME",
     "priority":"$PRIORITY",
