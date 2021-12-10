@@ -280,7 +280,7 @@ Today the platform has the following Actions:
 Some simple examples of actions are rebuilding your project, rolling back to the previous build, rebooting a server. You can choose to build a repository of any actions, even more complex ones to take action from Squadcast. 
 
 ### Circle CI Actions 
-Squadcast supports actions such as Rebuilding **[CircleCI](circleci-actions)** projects directly from the incident page directly by clicking on the **More Actions** button from the incidents page. The link to the project status will be added to the timeline and you should be able to click on the link to view the status from Squadcast. 
+Squadcast supports actions such as Rebuilding **[CircleCI](https://support.squadcast.com/docs/circleci-integration)** projects directly from the incident page by clicking the **More Actions** button. The link to the project status will be added to the timeline and you should be able to click on the link to view the status from Squadcast. 
 
 ### Squadcast Runbooks
 **[Squadcast Runbooks](squadcast-runbooks)** are executable scripts that you can create and store within the platform to execute when repetitive incidents are triggered. You can execute Squadcast Runbooks from the **More Actions** button on the . incident page and resolve your incidents quickly and bring down your MTTR significantly. The link to the status of the script execution will be added to the timeline and you should be able to see the status of the same within Squadcast.
