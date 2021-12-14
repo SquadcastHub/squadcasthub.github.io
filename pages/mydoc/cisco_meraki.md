@@ -1,6 +1,6 @@
 ---
 title: Cisco Meraki
-summary: "Get Cisco Meraki alerts into Squadcast"
+summary: "Send alerts to Squadcast from Cisco Meraki"
 tags: [integration, cicso meraki]
 keywords:
 sidebar: mydoc_sidebar
@@ -8,9 +8,9 @@ permalink: docs/cisco-meraki
 folder: mydoc
 ---
 
-Cisco Meraki is a suite of internet-managed network solutions that enables a single source of management over locations, infrastructure, and devices.
+[Cisco Meraki](https://meraki.cisco.com/) is a suite of internet-managed network solutions that enables a single source of management over locations, infrastructure, and devices. Meraki Webhooks provide a new way to subscribe to alerts sent from Meraki Cloud when an events occur.
 
-Meraki Webhooks are a powerful and lightweight new way to subscribe to alerts sent from the Meraki Cloud when an event occurs. These include a JSON formatted message and are sent to a unique URL where they can be processed, stored or used to trigger powerful automations.
+Route detailed alerts from Cisco Meraki to the right users in Squadcast.
 
 ## Using Cisco Meraki as an Alert Source
 
@@ -30,32 +30,33 @@ Meraki Webhooks are a powerful and lightweight new way to subscribe to alerts se
 
 ## Create a Squadcast Webhook URL REST Endpoint in Cisco Meraki
 
-Login to your Cisco Meraki dashboard and go to the **Network-wide** tab and click on **Alerts**.
+**(1)** Login to your Cisco Meraki dashboard. Head over to the **Network-wide** tab and click on **Alerts**
 
 ![](images/cisco_meraki_2.png)
 
-Scroll down the alerts page and click on the **Add an HTTP server** button under the **Webhooks** section.
-
-![](images/cisco_meraki_3.png)
+**(2)** Scroll to the bottom of the **Alerts** page, and click on **Add an HTTP Server** under the **Webhooks** section
 
 ![](images/cisco_meraki_4.png)
 
-Then fill in the **Name** and **Shared Secret** in the appropriate boxes. Paste the previously copied **Cisco Meraki Squadcast Webhook URL** in the **URL** box. Then click on the **Save** button.
+**(3)** Here, fill in the **Name**. Paste the previously copied Squadcast Webhook URL in the placeholder for **URL**. Then, click on **Save**
 
 ![](images/cisco_meraki_5.png)
 
-Scroll to the top of the Alerts page and add the newly created **Webhook** in **default recipients**.
+**(4)** Scroll to the top of the **Alerts** page and add the newly created Webhook for Squadcast as a  **default recipient**
 
 ![](images/cisco_meraki_6.png)
 
-Select the events & parameters for triggering the webhook and the click on the **Save** Button.
+**(5)** Select the events & parameters for triggering this webhook and the click on **Save**
 
 ![](images/cisco_meraki_7.png)
 
 ![](images/cisco_meraki_8.png)
 
-That’s it, you are good to go! Your Cisco Meraki integration is now complete.
+That’s it, you are good to go! Your Cisco Meraki integration is now complete. Whenever Cisco Meraki fires an alert, an incident will be created in Squadcast for it.
 
-Now, whenever Cisco Meraki fires an alert, an incident will be created in Squadcast for it.
+{{site.data.alerts.blue-note}}
+<b>FAQ:</b>
+<br/><br/><p>Q: If an alert gets resolved in Cisco Meraki, does Cisco Meraki send auto-resolve signals to Squadcast?<br/><br/>A: No, Cisco Meraki does not send auto-resolve signals to Squadcast. Hence, Squadcast incidents from Cisco Meraki should be resolved manually.</p>
+{{site.data.alerts.end}}
 
 <style>.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}</style><div style="height: 100%;width: 100%;display: flex;margin-top: 40px;"><div style="margin: auto;"><div style="height: 100%;width: 100%;display: flex;padding: 20px;border: 1px solid #e7e9ed;border-radius: 8px;"><div style="margin: auto;"><div style="text-align: center;padding-bottom: 20px;font-size: 18px;line-height: 24px;font-family: Metropolis, sans-serif;color: #0d2149;">Ready to try Squadcast?</div><a href="https://app.squadcast.com/register" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #0f61dd;font-family: Metropolis,sans-serif;color: #fff;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #fff;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Start Now For Free!</a>   <a href="https://calendly.com/renuka-squadcast/30min" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #fff;font-family: Metropolis,sans-serif;color: #0f61dd;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #0f61dd;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;border: 1px solid #0f61dd;margin-left: 20px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Schedule a Demo</a></div></div></div></div>
