@@ -96,8 +96,10 @@ By default Squadcast lets you create a user via SSO with a configured default Ro
 
 ![](images/google_15.png)
 
-{{site.data.alerts.blue-note}}
-<b>Note</b><br/><br/>
+{{site.data.alerts.blue-note-md}}
+**Note:**
 
-<p>After enabling SSO, if you are facing an issue to login using the SSO, we advise you to do the following: on the webpage, go to Inspect -> Application -> Clear Storage</p>
+**(1)** After enabling SSO (step 14), if you are facing an issue to login using SSO, we advise you to do the following: on the webpage (depending on the browser that is being used), navigate to Inspect -> Application -> Storage -> click **Clear site data**
+
+**(2)** After enabling SSO (step 14), if you see the error `403: no_saml_app` on the browser, we advise you to do the following: on the webpage (depending on the browser that is being used), navigate to Inspect -> Application -> Storage -> click **Clear site data**
 {{site.data.alerts.end}}
