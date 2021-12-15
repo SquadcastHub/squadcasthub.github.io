@@ -56,6 +56,7 @@ You can configure a webhook for a group or a project.
  + `Pushes`
  + `Pull Requests`
  + `Releases`
+ + `Repository Vulnerability Alerts`
 
 ![](images/github_6.png)
 
@@ -67,6 +68,7 @@ This integration supports the below GitHub events:
  + `Pushes`
  + `Pull Requests` (Supports auto-resolution)
  + `Releases`
+ + `Repository Vulnerability Alerts` (Supports auto-resolution)
 {{site.data.alerts.end}}
 
 That is it, you are good to go! Everytime an Issue, Push, Pull Request or a Release event occurs in GitHub, an incident would be created in Squadcast. When an Issue or a Pull Request is closed in GitHub, the corresponding incident in Squadcast will be **automatically resolved** for it. However, for Pushes and Releases, users will have to manually resolve the associated incidents in Squadcast.
