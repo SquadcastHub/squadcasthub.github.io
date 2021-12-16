@@ -6,6 +6,8 @@ summary: "Send events to Squadcast from Trello"
 sidebar: mydoc_sidebar
 permalink: docs/trello
 folder: mydoc
+published: false
+search: exclude
 ---
 
 This document will help you integrate Trello with Squadcast.
