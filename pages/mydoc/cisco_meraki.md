@@ -18,7 +18,7 @@ Route detailed alerts from Cisco Meraki to the right users in Squadcast.
 
 ![](images/alert_source_1.png)
 
-**(2)** Search for **Cisco Meraki** from the Alert Source drop-down and copy the Webhook URL
+**(2)** Search for **Cisco Meraki** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/cisco_meraki_1.png)
 
@@ -52,7 +52,13 @@ Route detailed alerts from Cisco Meraki to the right users in Squadcast.
 
 ![](images/cisco_meraki_8.png)
 
-That’s it, you are good to go! Your Cisco Meraki integration is now complete. Whenever Cisco Meraki fires an alert, an incident will be created in Squadcast for it.
+That's it, you are good to go! Your Cisco Meraki integration is now complete. Whenever Cisco Meraki fires an alert, an incident will be created in Squadcast for it.
+
+{{site.data.alerts.blue-note-md}}
+**Note**:
+
+Incidents will be triggered in Squadcast for the alerts that come in from Cisco Meraki with the key `alertLevel` having values `critical`, `warning` and `informational`.
+{{site.data.alerts.end}}
 
 {{site.data.alerts.blue-note}}
 <b>FAQ:</b>
