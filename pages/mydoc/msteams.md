@@ -1,8 +1,8 @@
 ---
 title: MS Teams
 tags: [integration, msteams]
-keywords: 
-last_updated: 
+keywords:
+last_updated:
 summary: "Acknowledge, Resolve & Reassign incidents from MS Teams"
 sidebar: mydoc_sidebar
 permalink: docs/msteams
@@ -13,7 +13,7 @@ We understand that most of your work happens over MS Teams. You can integrate Sq
 
 ## Prerequisites
 
-- Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast 
+- Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast
 - Only MS Teams Admin can add squadcast msteams app in their workspace
 
 ## MS Teams Notifications for Incidents
@@ -24,178 +24,111 @@ Squadcast sends a notification to the configured MS Teams Channel as soon as an 
 <b>Note</b><br/><br/><p>The <b>email address</b> used with your <b>user in MS Teams</b> and your <b>user in Squadcast</b> should be the same, if not, the integration will not work as expected.</p>
 {{site.data.alerts.end}}
 
-### Follow the steps below to integrate Squadcast and Slack
+### Follow the steps below to integrate Squadcast and MS Teams.
 
-**(1)** navigate to **Settings** and select the **Extensions** tab from the left navigation sidebar
+**(1)** For adding MS Teams Squadcast App you have two options.
 
-![](images/slack_squadcast_1.png)
+#### Option 1 by using custom app.
 
-**(2)** Click on the **Integrate** button on the MS Teams tile.
+**(1.1)** Download MS Teams App bundle by clicking on this link [MS Teams App Bundle]().
 
-![](images/slack_squadcast_2.png)
+**(1.2)** Open MS Teams app drawer.
 
-**(3)** Now, click on **Continue**
+![](images/teams_app.png)
 
-![](images/slack_integration_modal_select_workspace.png)
+**(1.3)** Click on Upload Customised App, and upload Downloaded App bundle by clicking on Upload for my Org.
 
-**(4)** You will be redirected to Slack for approval of certain permissions that Squadcast would need for this integration. First select the Slack Workspace that you wish to integrate with your Squadcast account and then, click on **Allow**
+![](images/msteams_custom_app.png)
 
-![](images/slack_squadcast_3.png)
+**(1.4)** Once successfully uploaded you will see Squadcast MS Teams app in Built for your org.
 
-**(5)** Next, you will be asked to select a Slack Channel that would be the default Slack Channel for all your Squadcast Services
+**(1.5)** Click on App card to open App configuration modal, Click on "Add" button to add app.
 
-![](images/slack_integration_modal_select_channel.png)
+![](images/msteams_app_modal.png)
 
-**(6)** You can either select an existing Channel from the dropdown or create a new Channel in Slack. If you have added a new Channel and don't see the same in the dropdown, refresh the dropdown and it would appear. Once you have selected the Channel, click on **Save**
+**(1.6)** Once successfully added you will recieve an authorise message, click on "Authorize" button to initiate authorisation flow
 
-![](images/slack_integration_modal_select_channel_dropdown.png)
+![](images/msteams_authorise_message.png)
+
+**(1.7)** Clicking on it will redirect you to extension page on dashboard, indicating successfull integration of MS Teams and Squadcast.
+
+![](images/msteam_successfull_integration.png)
+
+### Adding Channels for MS Teams integration.
+
+**(1)** By default only bot converstaion will appear as default channel in the integration.
+
+**(2)** To add more channels go to MS Teams app drawer and open Squadcast app modal, and click on dropdown next to "Open" button to open configuration options and click on "Add to a team".
+
+![](images/msteams_app_add_to_team.png)
+
+**(3)** Select a team and channel to add MS Teams app to a team and click on Setup Bot
+
+![](images/msteams_select_channel.png)
+
+![](images/msteams_setup_bot.png)
+
+**(4)** Once successfully added MS Teams team will appear in Squadcast MS Teams extension configuration.
 
 {{site.data.alerts.blue-note}}
-<b>List of Slack Channels displayed in the dropdown</b>
-<br/><br/><p>By default, all the Public Slack Channels and the Private Slack Channels in which the Squadcast Bot is added in your Slack Workspace would be listed in the dropdown. If you do not see the Channel of your choice listed in the dropdown, then:
-<ol>
-  <li>Head over to your Slack Workspace</li>
-  <li>Open the Channel that should have been present in the integration dropdown</li>
-  <li>In this Channel, call the Squadcast Bot by using <b>@squadcast</b></li>
-  <li>Back in Squadcast, click on the Refresh button beside the Channel dropdown to refresh the list. Your Channel should be populated in the list now</li>
-</ol></p>
+<b>List of channels appearing in default channel</b>
+<br/><br/>
+
+<p>Once Squadcast App is added to some team in MS Teams then all the channels for that team will appear in "DEFAULT MS TEAM NOTIFICATION CHANNEL", to add more teams to Squadcast refer <b>Step 2</b> </p>
 {{site.data.alerts.end}}
 
-This completes the integration process between Squadcast and Slack. You can verify the same with the presence of the **Integrated** banner on the Slack tile as well as the selected Channel mentioned on the Slack tile
+![](images/msteams_team_channel.png)
 
-![](images/slack_integration_integrated_card.png)
+## Updating the global MS Teams Channel for all Services in Squadcast
 
-{{site.data.alerts.blue-note}}
-<b>Revoke Slack integration from Squadcast</b>
-<br/><br/><p>You can simply click on <b>Revoke</b> to remove the configured Slack integration at any given time</p>
-{{site.data.alerts.end}}
+**(1)** Click on **DEFAULT MS TEAM NOTIFICATION CHANNEL Dropdown**
 
-## Updating the global Slack Channel for all Services in Squadcast
+**(2)** Select the new MS Teams Channel that would be the default Slack Channel for all your Squadcast Services
 
-**(1)** Click on **Select Channel**
-
-![](images/slack_integration_select_channel_button.png)
-
-**(2)** Select the new Slack Channel that would be the default Slack Channel for all your Squadcast Services
-
-![](images/slack_integration_modal_select_channel_dropdown.png)
+![](images/msteams_team_channel.png)
 
 **(3)** Click on **Save**
 
-![](images/slack_integration_modal_save_channel.png)
+![](images/msteams_team_save.png)
 
-Now, you will start receiving alert notifications for *all* Squadcast incidents in the configured Slack Channel, in this case, the `incidents-internal` Channel. You can then choose to **Acknowledge**, **Resolve** and **Reassign** these incidents from within the Channel, in this case, the `incidents-internal` Channel.
+Now, you will start receiving alert notifications for _all_ Squadcast incidents in the configured MS Teams Channel, in this case, the `internal-testing-Production-alerts` Channel. You can then choose to **Acknowledge**, **Resolve** and **Reassign** these incidents from within the Channel, in this case, the `internal-testing-Production-alerts` Channel.
 
 {{site.data.alerts.blue-note-md}}
 **This integration supports bi-directional status sync**
 
-When an incident is _acknowledged_, _resolved_ or _reassigned_ from Slack, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is _acknowledged_, _resolved_ or _reassigned_ in Squadcast, you will be notified in the configured Slack Channel for it. 
-
-![](images/slack_squadcast_17.png)
+When an incident is _acknowledged_, _resolved_ or _reassigned_ from MS Teams, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is _acknowledged_, _resolved_ or _reassigned_ in Squadcast, you will be notified in the configured MS Teams Channel for it.
 
 **Note**: If an incident is auto-resolved by the alert-source, then the notification indicates the same.
 
-![](images/slack_auto_resolve_notification.png)
-
 {{site.data.alerts.end}}
 
 {{site.data.alerts.blue-note}}
-<b>Note: Global Slack Channel = default Slack Channel for all Services</b>
-<br/><br/><p>By default, the configured global Slack Channel is applicable to every Service in Squadcast. This means, all the alerts coming for every Service in Squadcast will be routed to the default Slack Channel configured</p>
+<b>Note: Global MS Teams Channel = default MS Teams Channel for all Services</b>
+<br/><br/><p>By default, the configured global MS Teams Channel is applicable to every Service in Squadcast. This means, all the alerts coming for every Service in Squadcast will be routed to the default MS Teams Channel configured</p>
 {{site.data.alerts.end}}
 
-## Configuring Service Specific Slack Channels
+## Configuring Service Specific MS Teams Channels
 
-Additionally, you can associate one Slack Channel per Service so as to receive notifications for incidents affecting only that Service in this Slack Channel.
+Additionally, you can associate one MS Teams Channel per Service so as to receive notifications for incidents affecting only that Service in this MS Teams Channel.
 
 Follow the steps below to configure the same:
 
-**(1)** From the sidebar, navigate to **Services** 
+**(1)** Click on checkbox to activate `TEAM/SERVICE SPECIFIC CHANNEL`
 
-![](images/slack_squadcast_8.png)
+![](images/msteams_teams_service_specific.png)
 
-**(2)** Click on the three horizontal dots for the Service of your choice
+**(2)** Click on the team name to open team configuration option.
 
-![](images/slack_squadcast_9.png)
+![](images/msteam_team_config.png)
 
-**(3)** Select **Slack Channel**
+**(3)** Select **Squadcast Team**.
 
-![](images/slack_squadcast_10.png)
+![](images/msteams_select_sq_team.png)
 
-**(4)** By default, the configured global Slack Channel is populated. Now, select a Channel from the drop-down to which incident notifications should be sent for this Service and click on **save**
+**(4)** All the services part of that SQ_Team will appear in next Services dropdown select service.
 
-![](images/slack_squadcast_11.png)
+**(5)** Select a channel in opened Teams so for example in all the channels in `internal-testing` team is shown and we can select a channel to create a Squadcast(Team, service) to MS Teams Channel mapping.
 
-{{site.data.alerts.blue-note}}
-<b>List of Channel shown</b>
-<br/><br/><p>By default all the Public Channels and only the Private Channels in which Squadcast bot is already called in your Slack workspace would be listed in Squadcast. If you do not see your Channel in the list, then:
-<ol>
-  <li>Move to your Slack Workspace</li>
-  <li>Open the Channel that you wish to map in Squadcast</li>
-  <li>Call Squadcast by using <b>@squadcast</b></li>
-  <li>Now, map the Channel in Squadcast under the Service of your choice</li>
-</ol></p>
-{{site.data.alerts.end}}
+![](images/msteams_select_team_channels.png)
 
-**(5)** **Save** the configuration
-
-![](images/slack_squadcast_12.png)
-
-You will be able to see the associated Slack Channel on the bottom-right corner of the Service tile.
-
-![](images/slack_squadcast_13.png)
-
-## Triggering Incidents from Slack
-
-You can trigger incidents in Squadcast directly from a Slack Channel. 
-
-**(1)** To trigger an incident from Slack, within the Slack Channel, type `/create_incident` and select the first option as seen in the screenshot
-
-![](images/slack_squadcast_14.png)
-
-**(2)** In the pop-up:
-
-  (a) Pick the Service for which you want to trigger the incident
-
-  (b) Give the incident a meaningful title
-
-  (c) Provide informative description if needed
-
-Click on **Create** to trigger the incident
-
-![](images/slack_squadcast_15.png)
-
-**(3)** You will now be able to see the newly triggered incident in Squadcast. You will also be notified in the globally configured or the Service specific Slack Channel for the same
-
-![](images/slack_create_incident_success.png)
-
-{{site.data.alerts.red-note}}
-<b>Adding private Slack Channels for Service-specific Slack Channels</b>
-<br/><br/><p>First, within the private Slack Channel, add the Squadcast bot. You can do so by executing the command - <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">@squadcast</code>. Once this is done, in Squadcast, you can map that particular Channel to the Service of your choice.</p>
-{{site.data.alerts.end}}
-
-{{site.data.alerts.blue-note}}
-<b>Note: Global Slack Channel = default Slack Channel for all Services</b>
-<br/><br/><p>You will be able to view tags (if present) associated with an incident in the incident notification that you receive within the Slack Channel</p>
-{{site.data.alerts.end}}
-
-![](images/slack_incident_action_buttons.png)
-
-## Using Slack as an Alert Source
-To create incidents automatically in Squadcast from Slack, check out [Slack as an alert source](slack-as-an-alert-source).
-
-## FAQs
-
-1. #### How can a user in Slack be given access to add Public Channels?
-Please follow the <a href="https://slack.com/intl/en-nl/help/articles/360017938993-What-is-a-Channel" target="_blank">documentation by Slack</a> to give access to your user to create Public Channels.
-
-2. #### Our Squadcast Organization is integrated with our Slack account. However, we see `error messages` such as the ones below. What do they mean?
-
-- #### You have not linked your Slack account with your Squadcast account.
-This error message simply means that you are not added as a user of your Squadcast Organization. One needs to be added as a user in their Squadcast Organization to be able to take actions on incidents from Slack. **Additionally, your Slack user Email and Squadcast user Email must be the exact same**.
-
-- #### You are not a part of this Organization on Squadcast. Please contact your Admin.
-This error message simply means that you are a user of Squadcast for an Organization that is **not the same** as the one that the incident in Slack is for. One needs to be added as a user of all those Squadcast Organizations in order to take actions on incidents of those particular Organizations. Please contact an Admin of your Team and have them add you as a user of the right Squadcast Organization.
-
-- #### You are a part of this Organization as a Stakeholder. You cannot take actions on incidents. Please contact your Admin to upgrade your role.
-Stakeholders in Squadcast have read-only access to the platform. As a `Stakeholder`, one will not be able to take any actions on the incidents. To be able to take actions on incidents, you must be added as a `User` or an `Admin`. Please contact an Admin of your Team and have your User Type changed from Stakeholder to `User` or with the right User Permissions.
+**(6)** Click on "Save" to save configuration.
