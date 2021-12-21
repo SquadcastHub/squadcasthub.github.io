@@ -28,7 +28,7 @@ Squadcast sends a notification to the configured MS Teams Channel as soon as an 
 
 **(1)** For adding MS Teams Squadcast App you have two options.
 
-#### Option 1 by using custom app.
+### Option 1 by using custom app.
 
 **(1.1)** Download MS Teams App bundle by clicking on this link [MS Teams App Bundle]().
 
@@ -125,10 +125,20 @@ Follow the steps below to configure the same:
 
 ![](images/msteams_select_sq_team.png)
 
-**(4)** All the services part of that SQ_Team will appear in next Services dropdown select service.
+**(4)** All the services part of that Squadcast Team will appear in next Services dropdown select service.
 
 **(5)** Select a channel in opened Teams so for example in all the channels in `internal-testing` team is shown and we can select a channel to create a Squadcast(Team, service) to MS Teams Channel mapping.
 
 ![](images/msteams_select_team_channels.png)
 
 **(6)** Click on "Save" to save configuration.
+
+## Capablites of MS Teams App
+
+- You can `Acknowledge`,`Resolve` and `Reassign` Incidents from App itself by clicking on corresponding CTAs, in addition to this you can also add notes to the incidents, which will directly reflect on Squadcast dashboard.
+
+![](images/msteams_message.png)
+
+- Once App is added as a bot in specific MS Teams channel, you can run bot command `whos-on-call` to view oncall schedule for all the Teams created on Squadcast platform.
+
+![](images/msteams_sq_command.png)
