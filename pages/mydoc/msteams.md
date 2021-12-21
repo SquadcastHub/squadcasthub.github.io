@@ -1,26 +1,27 @@
 ---
-title: Slack
-tags: [integration, slack]
+title: MS Teams
+tags: [integration, msteams]
 keywords: 
 last_updated: 
-summary: "Trigger, Acknowledge, Resolve & Reassign incidents from Slack"
+summary: "Acknowledge, Resolve & Reassign incidents from MS Teams"
 sidebar: mydoc_sidebar
-permalink: docs/slack
+permalink: docs/msteams
 folder: mydoc
 ---
 
-We understand that most of your work happens over Slack. You can integrate Squadcast and Slack to collaborate efficiently with your team while working on incidents. Here's a brief of all that is possible.
+We understand that most of your work happens over MS Teams. You can integrate Squadcast and Slack to collaborate efficiently with your team while working on incidents. Here's a brief of all that is possible.
 
 ## Prerequisites
 
 - Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast 
+- Only MS Teams Admin can add squadcast msteams app in their workspace
 
-## Slack Notifications for Incidents
+## MS Teams Notifications for Incidents
 
-Squadcast sends a notification to the configured Slack Channel as soon as an incident is triggered. You can easily **Acknowledge**, **Resolve** and **Reassign** the populated incidents from within the Slack Channel itself.
+Squadcast sends a notification to the configured MS Teams Channel as soon as an incident is triggered. You can easily **Acknowledge**, **Resolve** and **Reassign** the populated incidents from within the Slack Channel itself.
 
 {{site.data.alerts.blue-note}}
-<b>Note</b><br/><br/><p>The <b>email address</b> used with your <b>user in Slack</b> and your <b>user in Squadcast</b> should be the same, if not, the integration will not work as expected.</p>
+<b>Note</b><br/><br/><p>The <b>email address</b> used with your <b>user in MS Teams</b> and your <b>user in Squadcast</b> should be the same, if not, the integration will not work as expected.</p>
 {{site.data.alerts.end}}
 
 ### Follow the steps below to integrate Squadcast and Slack
@@ -29,7 +30,7 @@ Squadcast sends a notification to the configured Slack Channel as soon as an inc
 
 ![](images/slack_squadcast_1.png)
 
-**(2)** Click on the **Integrate** button on the Slack tile
+**(2)** Click on the **Integrate** button on the MS Teams tile.
 
 ![](images/slack_squadcast_2.png)
 
