@@ -1,5 +1,5 @@
 ---
-title: MS Teams
+title: Microsoft Teams
 tags: [integration, msteams]
 keywords:
 last_updated:
@@ -9,12 +9,12 @@ permalink: docs/msteams
 folder: mydoc
 ---
 
-We understand that most of your work happens over MS Teams. You can integrate Squadcast and Slack to collaborate efficiently with your team while working on incidents. Here's a brief of all that is possible.
+We understand that most of your work happens over MS Teams. You can integrate Squadcast and MS Teams to collaborate efficiently with your team while working on incidents. Here's a brief of all that is possible.
 
 ## Prerequisites
 
 - Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast
-- Only MS Teams Admin can add squadcast msteams app in their workspace
+- Only MS Teams Admins can add the Squadcast *msteams app* in their workspace
 
 ## MS Teams Notifications for Incidents
 

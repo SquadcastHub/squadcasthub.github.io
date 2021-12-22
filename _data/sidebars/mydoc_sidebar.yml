@@ -705,6 +705,10 @@ entries:
                     url: /slack
                     output: web, pdf
 
+                  - title: Microsoft Teams
+                    url: /msteams
+                    output: web, pdf
+
       - title: SSO
         output: web, pdf
 
