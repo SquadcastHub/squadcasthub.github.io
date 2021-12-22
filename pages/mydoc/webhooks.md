@@ -139,51 +139,74 @@ If you need help with integrating your Squadcast account to a third party applic
 
 ```json
 {
-   "event_type":"incident_triggered",
-   "id":"619cba1e749fd801ea1cd439",
-   "organization_id":"604592dabc35ea0008bb0584",
-   "service_id":"617411eac6991e7406f95ec6",
-   "service":{
-      "id":"617411eac6991e7406f95ec6",
-      "name":"Team 2 Service 1",
-      "slug":"team-2-service-1"
-   },
-   "alert_source_id":"6077f7225fdc7075e371685f",
-   "alert_source":{
-      "id":"6077f7225fdc7075e371685f",
-      "type":"Squadcast UI",
-      "short_name":"squadcastui"
-   },
-   "message":"Sample incident for testing webhooks",
-   "description":"This is a sample incident created for testing outgoing webhooks feature in Squadcast using the Squadcast web UI.\nThe payload might differ slightly for other alert sources.",
-   "status":"triggered",
-   "time_of_creation":"2021-11-23T09:53:34.626Z",
-   "assigned_to":[
-      {
-         "id":"617411dcc6991e7406f95ec5",
-         "type":"escalationpolicy",
-         "time_of_assignment":"2021-11-23T09:53:34.626Z"
+  "id": "61c075f78589dca75fdb2f44",
+  "event_type": "incident_triggered",
+  "organization": {
+    "id": "609b8e9978d2770008db8638",
+    "name": "My Org"
+  },
+  "service": {
+    "id": "61518af788792704697f3da0",
+    "name": "email trigger",
+    "slug": "email-trigger"
+  },
+  "alert_source": {
+    "id": "5fae6d03ef87d3896aa92ad1",
+    "type": "Squadcast UI",
+    "short_name": "squadcastui"
+  },
+  "message": "CPU Throttling: Over 90% of cpu is being utilized",
+  "description": "Over 90% of cpu is being utilized from past 2 hours which is a drastic increase from before. Please checkout the metrics.",
+  "status": "triggered",
+  "created_at": "2021-12-20T12:24:23.11Z",
+  "assigned_to": {
+    "id": "609b8e9e78d2770008db8639",
+    "name": "SRE and Devops Escalation Policy",
+    "type": "escalationpolicy"
+  },
+  "tags": {
+    "severity": {
+      "value": "critical",
+      "color": "#FF0A49"
+    }
+  },
+  "timeline": [
+    {
+      "action": "triggered",
+      "assigned_to": "escalationpolicy",
+      "name": "SRE and Devops Escalation Policy",
+      "time": "2021-12-20T12:24:23.077Z"
+    }
+  ],
+  "analytics": {},
+  "event_count": 1,
+  "event_payload": {
+    "assignee": {
+      "id": "609b8e9e78d2770008db8639",
+      "type": "escalationpolicy"
+    },
+    "created_by": "603360ce3aeae4de2b6edec1",
+    "description": "Over 90% of cpu is being utilized from past 2 hours which is a drastic increase from before. Please checkout the metrics.",
+    "message": "CPU Throttling: Over 90% of cpu is being utilized",
+    "tags": {
+      "severity": {
+        "color": "#FF0A49",
+        "value": "critical"
       }
-   ],
-   "tags":null,
-   "timeline":[
-      {
-         "action":"triggered",
-         "assigned_to":"escalationpolicy",
-         "id":"617411dcc6991e7406f95ec5",
-         "time":"2021-11-23T09:53:34.318Z"
-      }
-   ],
-   "analytics":{
-      
-   },
-   "created_by":"5ecf49257bae6c0008a7ae66",
-   "event_count":1,
-   "incident_payload":null,
-   "owner":{
-      "id":"617411a8c6991e7406f95ec0",
-      "type":"team"
-   }
+    }
+  },
+  "owner": {
+    "id": "6129ac09518568defa927536",
+    "name": "Default Team",
+    "type": "team",
+    "is_default_team": true,
+    "team_description": "Default team"
+  },
+  "manually_created_by": {
+    "id": "603360ce3aeae4de2b6edec1",
+    "name": "David Brent",
+    "email": "david@myorg.com"
+  }
 }
 ```
 
@@ -191,76 +214,86 @@ If you need help with integrating your Squadcast account to a third party applic
 
 ```json
 {
-   "event_type":"incident_reassigned",
-   "id":"619cba1e749fd801ea1cd439",
-   "organization_id":"604592dabc35ea0008bb0584",
-   "service_id":"617411eac6991e7406f95ec6",
-   "service":{
-      "id":"617411eac6991e7406f95ec6",
-      "name":"Team 2 Service 1",
-      "slug":"team-2-service-1"
-   },
-   "alert_source_id":"6077f7225fdc7075e371685f",
-   "alert_source":{
-      "id":"6077f7225fdc7075e371685f",
-      "type":"Squadcast UI",
-      "short_name":"squadcastui"
-   },
-   "message":"Sample incident for testing webhooks",
-   "description":"This is a sample incident created for testing outgoing webhooks feature in Squadcast using the Squadcast web UI.\nThe payload might differ slightly for other alert sources.",
-   "status":"triggered",
-   "time_of_creation":"2021-11-23T09:53:34.626Z",
-   "assigned_to":[
-      {
-         "id":"617411dcc6991e7406f95ec5",
-         "type":"escalationpolicy",
-         "time_of_assignment":"2021-11-23T09:53:34.626Z"
-      },
-      {
-         "id":"5e1c2309342445001180f9c2",
-         "type":"user",
-         "time_of_assignment":"2021-11-23T09:55:50.634Z"
+  "id": "61c075f78589dca75fdb2f44",
+  "event_type": "incident_reassigned",
+  "organization": {
+    "id": "609b8e9978d2770008db8638",
+    "name": "My Org"
+  },
+  "service": {
+    "id": "61518af788792704697f3da0",
+    "name": "email trigger",
+    "slug": "email-trigger"
+  },
+  "alert_source": {
+    "id": "5fae6d03ef87d3896aa92ad1",
+    "type": "Squadcast UI",
+    "short_name": "squadcastui"
+  },
+  "message": "CPU Throttling: Over 90% of cpu is being utilized",
+  "description": "Over 90% of cpu is being utilized from past 2 hours which is a drastic increase from before. Please checkout the metrics.",
+  "status": "triggered",
+  "created_at": "2021-12-20T12:24:23.11Z",
+  "assigned_to": {
+    "id": "603360ce3aeae4de2b6edec1",
+    "name": "Micheal Scott",
+    "type": "user"
+  },
+  "tags": {
+    "severity": {
+      "value": "critical",
+      "color": "#FF0A49"
+    }
+  },
+  "timeline": [
+    {
+      "action": "triggered",
+      "assigned_to": "escalationpolicy",
+      "name": "SRE and Devops Escalation Policy",
+      "time": "2021-12-20T12:24:23.077Z"
+    },
+    {
+      "action": "reassigned",
+      "assigned_to": "user",
+      "name": "Micheal Scott",
+      "time": "2021-12-21T04:59:18.173Z"
+    }
+  ],
+  "analytics": {
+    "tta": {
+      "time": 11475,
+      "user_id": "603360ce3aeae4de2b6edec1",
+      "escalation_policy_id": "609b8e9e78d2770008db8639"
+    }
+  },
+  "event_count": 1,
+  "event_payload": {
+    "assignee": {
+      "id": "609b8e9e78d2770008db8639",
+      "type": "escalationpolicy"
+    },
+    "created_by": "603360ce3aeae4de2b6edec1",
+    "description": "Over 90% of cpu is being utilized from past 2 hours which is a drastic increase from before. Please checkout the metrics.",
+    "message": "CPU Throttling: Over 90% of cpu is being utilized",
+    "tags": {
+      "severity": {
+        "color": "#FF0A49",
+        "value": "critical"
       }
-   ],
-   "tags":null,
-   "timeline":[
-      {
-         "action":"triggered",
-         "assigned_to":"escalationpolicy",
-         "id":"617411dcc6991e7406f95ec5",
-         "time":"2021-11-23T09:53:34.318Z"
-      },
-      {
-         "action":"reassigned",
-         "assigned_to":"user",
-         "id":"5e1c2309342445001180f9c2",
-         "time":"2021-11-23T09:55:50.634Z"
-      }
-   ],
-   "analytics":{
-      
-   },
-   "created_by":"5ecf49257bae6c0008a7ae66",
-   "event_count":1,
-   "incident_payload":{
-      "assignee":{
-         "id":"617411dcc6991e7406f95ec5",
-         "type":"escalationpolicy"
-      },
-      "created_by":"5ecf49257bae6c0008a7ae66",
-      "description":"This is a sample incident created for testing outgoing webhooks feature in Squadcast using the Squadcast web UI.\nThe payload might differ slightly for other alert sources.",
-      "message":"Sample incident for testing webhooks",
-      "tags":{
-         "incident-type":{
-            "color":"#00A96B",
-            "value":"demo-incident"
-         }
-      }
-   },
-   "owner":{
-      "id":"617411a8c6991e7406f95ec0",
-      "type":"team"
-   }
+    }
+  },
+  "owner": {
+    "id": "6129ac09518568defa927536",
+    "name": "Default Team",
+    "type": "team",
+    "is_default_team": true,
+    "team_description": "Default team"
+  },
+  "manually_created_by": {
+    "id": "603360ce3aeae4de2b6edec1",
+    "name": "David Brent",
+    "email": "david@myorg.com"
+  }
 }
 ```
 
@@ -268,91 +301,92 @@ If you need help with integrating your Squadcast account to a third party applic
 
 ```json
 {
-   "event_type":"incident_acknowledged",
-   "id":"619cba1e749fd801ea1cd439",
-   "organization_id":"604592dabc35ea0008bb0584",
-   "service_id":"617411eac6991e7406f95ec6",
-   "service":{
-      "id":"617411eac6991e7406f95ec6",
-      "name":"Team 2 Service 1",
-      "slug":"team-2-service-1"
-   },
-   "alert_source_id":"6077f7225fdc7075e371685f",
-   "alert_source":{
-      "id":"6077f7225fdc7075e371685f",
-      "type":"Squadcast UI",
-      "short_name":"squadcastui"
-   },
-   "message":"Sample incident for testing webhooks",
-   "description":"This is a sample incident created for testing outgoing webhooks feature in Squadcast using the Squadcast web UI.\nThe payload might differ slightly for other alert sources.",
-   "status":"acknowledged",
-   "time_of_creation":"2021-11-23T09:53:34.626Z",
-   "assigned_to":[
-      {
-         "id":"617411dcc6991e7406f95ec5",
-         "type":"escalationpolicy",
-         "time_of_assignment":"2021-11-23T09:53:34.626Z"
-      },
-      {
-         "id":"5e1c2309342445001180f9c2",
-         "type":"user",
-         "time_of_assignment":"2021-11-23T09:55:50.634Z"
-      },
-      {
-         "id":"5ecf49257bae6c0008a7ae66",
-         "type":"user",
-         "time_of_assignment":"2021-11-23T09:56:54.582Z"
+  "id": "61c075f78589dca75fdb2f44",
+  "event_type": "incident_acknowledged",
+  "organization": {
+    "id": "609b8e9978d2770008db8638",
+    "name": "My Org"
+  },
+  "service": {
+    "id": "61518af788792704697f3da0",
+    "name": "email trigger",
+    "slug": "email-trigger"
+  },
+  "alert_source": {
+    "id": "5fae6d03ef87d3896aa92ad1",
+    "type": "Squadcast UI",
+    "short_name": "squadcastui"
+  },
+  "message": "CPU Throttling: Over 90% of cpu is being utilized",
+  "description": "Over 90% of cpu is being utilized from past 2 hours which is a drastic increase from before. Please checkout the metrics.",
+  "status": "acknowledged",
+  "created_at": "2021-12-20T12:24:23.11Z",
+  "assigned_to": {
+    "id": "603360ce3aeae4de2b6edec1",
+    "name": "Micheal Scott",
+    "type": "user"
+  },
+  "tags": {
+    "severity": {
+      "value": "critical",
+      "color": "#FF0A49"
+    }
+  },
+  "timeline": [
+    {
+      "action": "triggered",
+      "assigned_to": "escalationpolicy",
+      "name": "SRE and Devops Escalation Policy",
+      "time": "2021-12-20T12:24:23.077Z"
+    },
+    {
+      "action": "reassigned",
+      "assigned_to": "user",
+      "name": "Micheal Scott",
+      "time": "2021-12-21T04:59:18.173Z"
+    },
+    {
+      "action": "acknowledged",
+      "assigned_to": "user",
+      "name": "Micheal Scott",
+      "time": "2021-12-21T05:05:23.129Z"
+    }
+  ],
+  "analytics": {
+    "tta": {
+      "time": 11475,
+      "user_id": "603360ce3aeae4de2b6edec1",
+      "escalation_policy_id": "609b8e9e78d2770008db8639"
+    }
+  },
+  "event_count": 1,
+  "event_payload": {
+    "assignee": {
+      "id": "609b8e9e78d2770008db8639",
+      "type": "escalationpolicy"
+    },
+    "created_by": "603360ce3aeae4de2b6edec1",
+    "description": "Over 90% of cpu is being utilized from past 2 hours which is a drastic increase from before. Please checkout the metrics.",
+    "message": "CPU Throttling: Over 90% of cpu is being utilized",
+    "tags": {
+      "severity": {
+        "color": "#FF0A49",
+        "value": "critical"
       }
-   ],
-   "tags":null,
-   "timeline":[
-      {
-         "action":"triggered",
-         "assigned_to":"escalationpolicy",
-         "id":"617411dcc6991e7406f95ec5",
-         "time":"2021-11-23T09:53:34.318Z"
-      },
-      {
-         "action":"reassigned",
-         "assigned_to":"user",
-         "id":"5e1c2309342445001180f9c2",
-         "time":"2021-11-23T09:55:50.634Z"
-      },
-      {
-         "action":"acknowledged",
-         "assigned_to":"user",
-         "id":"5ecf49257bae6c0008a7ae66",
-         "time":"2021-11-23T09:56:54.582Z"
-      }
-   ],
-   "analytics":{
-      "tta":{
-         "time":200264,
-         "user_id":"5ecf49257bae6c0008a7ae66",
-         "escalation_policy_id":"617411dcc6991e7406f95ec5"
-      }
-   },
-   "created_by":"5ecf49257bae6c0008a7ae66",
-   "event_count":1,
-   "incident_payload":{
-      "assignee":{
-         "id":"617411dcc6991e7406f95ec5",
-         "type":"escalationpolicy"
-      },
-      "created_by":"5ecf49257bae6c0008a7ae66",
-      "description":"This is a sample incident created for testing outgoing webhooks feature in Squadcast using the Squadcast web UI.\nThe payload might differ slightly for other alert sources.",
-      "message":"Sample incident for testing webhooks",
-      "tags":{
-         "incident-type":{
-            "color":"#00A96B",
-            "value":"demo-incident"
-         }
-      }
-   },
-   "owner":{
-      "id":"617411a8c6991e7406f95ec0",
-      "type":"team"
-   }
+    }
+  },
+  "owner": {
+    "id": "6129ac09518568defa927536",
+    "name": "Default Team",
+    "type": "team",
+    "is_default_team": true,
+    "team_description": "Default team"
+  },
+  "manually_created_by": {
+    "id": "603360ce3aeae4de2b6edec1",
+    "name": "David Brent",
+    "email": "david@myorg.com"
+  }
 }
 ```
 
@@ -360,101 +394,102 @@ If you need help with integrating your Squadcast account to a third party applic
 
 ```json
 {
-   "event_type":"incident_resolved",
-   "id":"619cba1e749fd801ea1cd439",
-   "organization_id":"604592dabc35ea0008bb0584",
-   "service_id":"617411eac6991e7406f95ec6",
-   "service":{
-      "id":"617411eac6991e7406f95ec6",
-      "name":"Team 2 Service 1",
-      "slug":"team-2-service-1"
-   },
-   "alert_source_id":"6077f7225fdc7075e371685f",
-   "alert_source":{
-      "id":"6077f7225fdc7075e371685f",
-      "type":"Squadcast UI",
-      "short_name":"squadcastui"
-   },
-   "message":"Sample incident for testing webhooks",
-   "description":"This is a sample incident created for testing outgoing webhooks feature in Squadcast using the Squadcast web UI.\nThe payload might differ slightly for other alert sources.",
-   "status":"resolved",
-   "time_of_creation":"2021-11-23T09:53:34.626Z",
-   "assigned_to":[
-      {
-         "id":"617411dcc6991e7406f95ec5",
-         "type":"escalationpolicy",
-         "time_of_assignment":"2021-11-23T09:53:34.626Z"
-      },
-      {
-         "id":"5e1c2309342445001180f9c2",
-         "type":"user",
-         "time_of_assignment":"2021-11-23T09:55:50.634Z"
-      },
-      {
-         "id":"5ecf49257bae6c0008a7ae66",
-         "type":"user",
-         "time_of_assignment":"2021-11-23T09:56:54.582Z"
+  "id": "61c075f78589dca75fdb2f44",
+  "event_type": "incident_resolved",
+  "organization": {
+    "id": "609b8e9978d2770008db8638",
+    "name": "My Org"
+  },
+  "service": {
+    "id": "61518af788792704697f3da0",
+    "name": "email trigger",
+    "slug": "email-trigger"
+  },
+  "alert_source": {
+    "id": "5fae6d03ef87d3896aa92ad1",
+    "type": "Squadcast UI",
+    "short_name": "squadcastui"
+  },
+  "message": "CPU Throttling: Over 90% of cpu is being utilized",
+  "description": "Over 90% of cpu is being utilized from past 2 hours which is a drastic increase from before. Please checkout the metrics.",
+  "status": "resolved",
+  "created_at": "2021-12-20T12:24:23.11Z",
+  "assigned_to": {
+    "id": "603360ce3aeae4de2b6edec1",
+    "name": "Micheal Scott",
+    "type": "user"
+  },
+  "tags": {
+    "severity": {
+      "value": "critical",
+      "color": "#FF0A49"
+    }
+  },
+  "timeline": [
+    {
+      "action": "triggered",
+      "assigned_to": "escalationpolicy",
+      "name": "SRE and Devops Escalation Policy",
+      "time": "2021-12-20T12:24:23.077Z"
+    },
+    {
+      "action": "reassigned",
+      "assigned_to": "user",
+      "name": "Micheal Scott",
+      "time": "2021-12-21T04:59:18.173Z"
+    },
+    {
+      "action": "acknowledged",
+      "assigned_to": "user",
+      "name": "Micheal Scott",
+      "time": "2021-12-21T05:05:23.129Z"
+    },
+    {
+      "action": "resolved",
+      "assigned_to": "user",
+      "name": "Micheal Scott",
+      "time": "2021-12-21T05:11:34.219Z"
+    }
+  ],
+  "analytics": {
+    "tta": {
+      "time": 11475,
+      "user_id": "603360ce3aeae4de2b6edec1",
+      "escalation_policy_id": "609b8e9e78d2770008db8639"
+    },
+    "ttr": {
+      "time": 60431142,
+      "user_id": "603360ce3aeae4de2b6edec1",
+      "escalation_policy_id": "609b8e9e78d2770008db8639"
+    }
+  },
+  "event_count": 1,
+  "event_payload": {
+    "assignee": {
+      "id": "609b8e9e78d2770008db8639",
+      "type": "escalationpolicy"
+    },
+    "created_by": "603360ce3aeae4de2b6edec1",
+    "description": "Over 90% of cpu is being utilized from past 2 hours which is a drastic increase from before. Please checkout the metrics.",
+    "message": "CPU Throttling: Over 90% of cpu is being utilized",
+    "tags": {
+      "severity": {
+        "color": "#FF0A49",
+        "value": "critical"
       }
-   ],
-   "tags":null,
-   "timeline":[
-      {
-         "action":"triggered",
-         "assigned_to":"escalationpolicy",
-         "id":"617411dcc6991e7406f95ec5",
-         "time":"2021-11-23T09:53:34.318Z"
-      },
-      {
-         "action":"reassigned",
-         "assigned_to":"user",
-         "id":"5e1c2309342445001180f9c2",
-         "time":"2021-11-23T09:55:50.634Z"
-      },
-      {
-         "action":"acknowledged",
-         "assigned_to":"user",
-         "id":"5ecf49257bae6c0008a7ae66",
-         "time":"2021-11-23T09:56:54.582Z"
-      },
-      {
-         "action":"resolved",
-         "assigned_to":"user",
-         "id":"5ecf49257bae6c0008a7ae66",
-         "time":"2021-11-23T09:57:39.769Z"
-      }
-   ],
-   "analytics":{
-      "tta":{
-         "time":200264,
-         "user_id":"5ecf49257bae6c0008a7ae66",
-         "escalation_policy_id":"617411dcc6991e7406f95ec5"
-      },
-      "ttr":{
-         "time":245451,
-         "user_id":"5ecf49257bae6c0008a7ae66",
-         "escalation_policy_id":"617411dcc6991e7406f95ec5"
-      }
-   },
-   "created_by":"5ecf49257bae6c0008a7ae66",
-   "event_count":1,
-   "incident_payload":{
-      "assignee":{
-         "id":"617411dcc6991e7406f95ec5",
-         "type":"escalationpolicy"
-      },
-      "created_by":"5ecf49257bae6c0008a7ae66",
-      "description":"This is a sample incident created for testing outgoing webhooks feature in Squadcast using the Squadcast web UI.\nThe payload might differ slightly for other alert sources.",
-      "message":"Sample incident for testing webhooks",
-      "tags":{
-         "incident-type":{
-            "color":"#00A96B",
-            "value":"demo-incident"
-         }
-      }
-   },
-   "owner":{
-      "id":"617411a8c6991e7406f95ec0",
-      "type":"team"
-   }
+    }
+  },
+  "owner": {
+    "id": "6129ac09518568defa927536",
+    "name": "Default Team",
+    "type": "team",
+    "is_default_team": true,
+    "team_description": "Default team"
+  },
+  "manually_created_by": {
+    "id": "603360ce3aeae4de2b6edec1",
+    "name": "David Brent",
+    "email": "david@myorg.com"
+  }
 }
 ```
