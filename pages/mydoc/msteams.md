@@ -148,4 +148,4 @@ Errors encountered when taking actions on incident:
 
 ![](images/msteams_unauthorized_error.png)
 
-This error is either because you are not part a of the organisation for which this incident is triggerd in Squadcast, or you are not authorised to take this action.
+This error is either because you are not part a of the organization for which this incident is triggerd in Squadcast, or you are not authorised to take this action.
