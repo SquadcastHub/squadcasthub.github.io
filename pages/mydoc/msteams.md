@@ -23,7 +23,7 @@ Squadcast sends a notification to the configured MS Teams channel as soon as an 
 {{site.data.alerts.blue-note-md}}
 **Note:**
 
-The `email address` used with your *user in MS Teams* and your *user in Squadcast* should be the same, if not, the integration will not work as expected.
+The `email address` used with your _user in MS Teams_ and your _user in Squadcast_ should be the same, if not, the integration will not work as expected.
 {{site.data.alerts.end}}
 
 ### Follow the steps below to integrate Squadcast and MS Teams
@@ -32,7 +32,7 @@ For adding the Squadcast-MS Teams app, you have two options.
 
 #### Option 1: Use a Custom App
 
-**(1)** Download the MS Teams app bundle by clicking on this link [MS Teams App Bundle]()
+**(1)** Download the MS Teams app bundle by clicking on this link [MS Teams App Bundle](resources/squadcast_teams.zip)
 
 **(2)** Navigate to the **Apps** section
 
@@ -143,3 +143,9 @@ Follow the steps below to configure the same:
 - Once App is added as a bot in specific MS Teams channel, you can run bot command `whos-on-call` to view oncall schedule for all the Teams created on Squadcast platform.
 
 ![](images/msteams_sq_command.png)
+
+## Errors encountered when taking actions on incident message
+
+![](images/msteams_unauthorized_error.png)
+
+This error is either due to you are not part of organisation for which this incident is triggerd in Squadcast platform, or you are not authorised to take this action.
