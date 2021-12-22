@@ -30,8 +30,6 @@ The `email address` used with your _user in MS Teams_ and your _user in Squadcas
 
 For adding the Squadcast-MS Teams app, you have two options.
 
-#### Option 1: Use a Custom App
-
 **(1)** Download the MS Teams app bundle by clicking on this link [MS Teams App Bundle](resources/squadcast_msteams.zip)
 
 **(2)** Navigate to the **Apps** section
@@ -56,7 +54,7 @@ For adding the Squadcast-MS Teams app, you have two options.
 
 ![](images/msteam_successfull_integration.png)
 
-## Adding MS Teams Channels
+## Adding more MS Teams Channels
 
 **(1)** By default, only the bot converstaion will appear in the default channel in the integration
 
