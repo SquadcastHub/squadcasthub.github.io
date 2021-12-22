@@ -32,7 +32,7 @@ For adding the Squadcast-MS Teams app, you have two options.
 
 #### Option 1: Use a Custom App
 
-**(1)** Download the MS Teams app bundle by clicking on this link [MS Teams App Bundle](resources/squadcast_teams.zip)
+**(1)** Download the MS Teams app bundle by clicking on this link [MS Teams App Bundle](resources/squadcast_msteams.zip)
 
 **(2)** Navigate to the **Apps** section
 
