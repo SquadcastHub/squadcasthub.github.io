@@ -23,12 +23,10 @@ Squadcast sends a notification to the configured MS Teams channel as soon as an 
 {{site.data.alerts.blue-note-md}}
 **Note:**
 
-The `email address` used with your _user in MS Teams_ and your _user in Squadcast_ should be the same, if not, the integration will not work as expected.
+The `email address` used with your *user in MS Teams* and your *user in Squadcast* should be the same, if not, the integration will not work as expected.
 {{site.data.alerts.end}}
 
-### Follow the steps below to integrate Squadcast and MS Teams
-
-For adding the Squadcast-MS Teams app, you have two options.
+## Follow the steps below to integrate Squadcast and MS Teams
 
 **(1)** Download the MS Teams app bundle by clicking on this link [MS Teams App Bundle](resources/squadcast_msteams.zip)
 
@@ -54,9 +52,9 @@ For adding the Squadcast-MS Teams app, you have two options.
 
 ![](images/msteam_successfull_integration.png)
 
-## Adding more MS Teams Channels
+## Adding MS Teams Channels
 
-**(1)** By default, only the bot converstaion will appear in the default channel in the integration
+**(1)** By default, only the bot conversation will appear in the default channel
 
 **(2)** To add more channels, navigate to the Squadcast app in MS Teams and click on the drop-down next to the **Open** button to open the configuration options. Click on **Add to a team**
 
@@ -78,11 +76,11 @@ For adding the Squadcast-MS Teams app, you have two options.
 Once the Squadcast app is added to a team in MS Teams, all the channels for that team will appear in **DEFAULT MS TEAM NOTIFICATION CHANNEL**. To add more teams to Squadcast, refer to step 2 & onwards.
 {{site.data.alerts.end}}
 
-### Updating the global MS Teams Channel for all Services in Squadcast
+### Updating the Global MS Teams Channel for all Services in Squadcast
 
-**(1)** Click on **DEFAULT MS TEAM NOTIFICATION CHANNEL** drop-down
+**(1)** Click on the **DEFAULT MS TEAM NOTIFICATION CHANNEL** drop-down
 
-**(2)** Select the new MS Teams Channel that would be the default Slack Channel for all your Squadcast Services
+**(2)** Select the new MS Teams channel that would be the default channel for all your Squadcast Services
 
 ![](images/msteams_team_channel.png)
 
@@ -90,60 +88,64 @@ Once the Squadcast app is added to a team in MS Teams, all the channels for that
 
 ![](images/msteams_team_save.png)
 
-Now, you will start receiving alert notifications for _all_ Squadcast incidents in the configured MS Teams Channel, in this case, the `internal-testing-Production-alerts` Channel. You can then choose to **Acknowledge**, **Resolve** and **Reassign** these incidents from within the Channel, in this case, the `internal-testing-Production-alerts` Channel.
+Now, you will start receiving alert notifications for _all_ Squadcast incidents in the configured MS Teams channel, in this case, the `internal-testing-Production-alerts` channel. You can then choose to **Acknowledge**, **Resolve** and **Reassign** these incidents from within the channel, in this case, the `internal-testing-Production-alerts` channel.
 
 {{site.data.alerts.blue-note-md}}
 **This integration supports bi-directional status sync**
 
-When an incident is _acknowledged_, _resolved_ or _reassigned_ from MS Teams, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is _acknowledged_, _resolved_ or _reassigned_ in Squadcast, you will be notified in the configured MS Teams Channel for it.
+When an incident is acknowledged, resolved or reassigned from MS Teams, the status change of the incident is propagated to Squadcast and updated automatically. Similarly, if an incident is acknowledged, resolved or reassigned in Squadcast, you will be notified in the configured MS Teams channel for it.
 
-**Note**: If an incident is auto-resolved by the alert-source, then the notification indicates the same.
-
+**Note**: If an incident is auto-resolved by the alert source (monitoring tool), then the notification will indicate the same.
 {{site.data.alerts.end}}
 
-{{site.data.alerts.blue-note}}
-<b>Note: Global MS Teams Channel = default MS Teams Channel for all Services</b>
-<br/><br/><p>By default, the configured global MS Teams Channel is applicable to every Service in Squadcast. This means, all the alerts coming for every Service in Squadcast will be routed to the default MS Teams Channel configured</p>
+{{site.data.alerts.blue-note-md}}
+**Note:** 
+
+Global MS Teams channel = default MS Teams channel for all Services
+
+By default, the configured global MS Teams channel is applicable to every Service in Squadcast. This means, all the alerts coming for every Service in Squadcast will be routed to the default MS Teams channel configured.
 {{site.data.alerts.end}}
 
-## Configuring Service Specific MS Teams Channels
+### Configuring Service Specific MS Teams Channels
 
-Additionally, you can associate one MS Teams Channel per Service so as to receive notifications for incidents affecting only that Service in this MS Teams Channel.
+Additionally, you can associate one MS Teams channel per Squadcast Service so as to receive notifications for incidents affecting only that Service in this MS Teams channel.
 
 Follow the steps below to configure the same:
 
-**(1)** Click on checkbox to activate `TEAM/SERVICE SPECIFIC CHANNEL`
+**(1)** Enable the checkbox to activate `TEAM/SERVICE SPECIFIC CHANNEL`
 
 ![](images/msteams_teams_service_specific.png)
 
-**(2)** Click on the team name to open team configuration option
+**(2)** Select the Team to open the Team configuration option
 
 ![](images/msteam_team_config.png)
 
-**(3)** Select **Squadcast Team**
+**(3)** Select the Squadcast **Team** here
 
 ![](images/msteams_select_sq_team.png)
 
-**(4)** All the services part of that Squadcast Team will appear in next Services dropdown select service
+**(4)** All the Services that are a part of that Squadcast Team will appear in next Services drop-down, select the Service(s)
 
 **(5)** Select a channel in opened Teams so for example in all the channels in `internal-testing` team is shown and we can select a channel to create a Squadcast(Team, service) to MS Teams Channel mapping
 
 ![](images/msteams_select_team_channels.png)
 
-**(6)** Click on "Save" to save configuration
+**(6)** Click on **Save** to save configuration
 
 ## Capabilities of MS Teams App
 
-- You can `Acknowledge`,`Resolve` and `Reassign` Incidents from App itself by clicking on corresponding CTAs, in addition to this you can also add notes to the incidents, which will directly reflect on Squadcast dashboard.
+- You can `Acknowledge`,`Resolve` and `Reassign` incidents from within MS Teams itself by clicking on the corresponding CTAs. In addition to this, you can also add notes to the incidents which will directly reflect in the Incident Details page for the incident.
 
 ![](images/msteams_message.png)
 
-- Once App is added as a bot in specific MS Teams channel, you can run bot command `whos-on-call` to view oncall schedule for all the Teams created on Squadcast platform.
+- Once the app is added as a bot in a specific MS Teams channel, you can run the bot command `whos-on-call` to view the on-call schedules for all the Teams created in your Squadcast organization.
 
 ![](images/msteams_sq_command.png)
 
-## Errors encountered when taking actions on incident message
+## Additional Information on Errors
+
+Errors encountered when taking actions on incident:
 
 ![](images/msteams_unauthorized_error.png)
 
-This error is either due to you are not part of organisation for which this incident is triggerd in Squadcast platform, or you are not authorised to take this action.
+This error is either because you are not part a of the organisation for which this incident is triggerd in Squadcast, or you are not authorised to take this action.
