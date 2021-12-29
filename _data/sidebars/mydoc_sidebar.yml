@@ -357,6 +357,10 @@ entries:
                     url: /datadog
                     output: web, pdf
 
+                  - title: Domotz
+                    url: /domotz
+                    output: web, pdf
+
                   - title: Dynatrace
                     url: /dynatrace
                     output: web, pdf
