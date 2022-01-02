@@ -103,7 +103,6 @@ You can get the **time of dispatch** for notifications that are in status `sent`
 **Important:**
 
 In some cases, even when notifications might have been *delivered* to users, the status could still be set to *sent/dispatched*. We depend on our vendors, who in turn depend on hundreds of carriers worldwide, to get notification delivery information. In rare cases, these logs might not be completely reliable. We might have to look further into it to understand certain situations. If you wish to receive more details of the notifications sent out for an incident, you can reach out to our [Support team](mailto:support@squadcast.com) with the `Incident ID` of the incident.
-
 {{site.data.alerts.end}}
 
 {{site.data.alerts.yellow-note-i-md}}
@@ -174,7 +173,15 @@ We use third party providers to send out SMS and Phone call incident notificatio
 - Cuba
 - North Korea
 
-While we do send SMS and Phone call incident notifications to users in **Iran**, we cannot assure its deliverability.
+{{site.data.alerts.yellow-note-i-md}}
+**Important:**
+
+**(1)** **SMS and Phone Notifications to Iran:**
+While we do send SMS and Phone call incident notifications to users in **Iran**, we cannot assure its 100% deliverability.
+
+**(2)** **SMSs to China:**
+Incident notification SMSs sent to users of Squadcast in China will contain only the `Incident Title`. Incident URL is not included due to government policies against the presence of any URLs in SMSs. However, users can quickly view and take actions on an incident by using the Squadcast mobile app.
+{{site.data.alerts.end}}
 
 
 
