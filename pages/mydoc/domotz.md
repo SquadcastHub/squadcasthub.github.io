@@ -8,7 +8,7 @@ permalink: docs/domotz
 folder: mydoc
 ---
 
-[Domotz](https://www.domotz.com/) is a network monitoring software to easily monitor remote networks and devices with powerful and affordable software, providing actionable insights & easy-to-use interface. Domotz Webhooks provide a way to subscribe to alerts sent from Domotz Agents when an event occurs.
+[Domotz](https://www.domotz.com/) is a network monitoring software to easily monitor remote networks and devices with powerful and affordable software, providing actionable insights & easy-to-use interface.
 
 Route detailed alerts from Domotz to the right users in Squadcast.
 
@@ -46,13 +46,15 @@ Route detailed alerts from Domotz to the right users in Squadcast.
 
 ![](images/domotz_5.png)
 
-**(5)** Switch on the Toggle switch, specify the name of the Shared Alert under **Alert Name** and select the events for the Shared Alert under the **Events Lists**. Then click on **Select Contact Channels**. Select the Squadcast webhook and click on **Add**. Then click on **Create**
+**(5)** Enable the toggle and specify the name of the Shared Alert under **Alert Name**. Select the events for the Shared Alert under the **Events Lists**. Then, click on **Select Contact Channels**. Select the Squadcast webhook and click on **Add**.
+
+Finally, click on **Create**.
 
 ![](images/domotz_6.png)
 
 ![](images/domotz_7.png)
 
-**(6)** Navigate to Device/network details and click on **Alerts**. Then click on **Add Shared Alerts**  and select your newly created Shared Alert under **Available Shared Alerts**.
+**(6)** Navigate to Device/Network Details and click on **Alerts**. Then, click on **Add Shared Alerts** and select your newly created Shared Alert under **Available Shared Alerts**.
 
 ![](images/domotz_8.png)
 
@@ -60,6 +62,8 @@ Route detailed alerts from Domotz to the right users in Squadcast.
 
 ![](images/domotz_10.png)
 
-That's it, you are good to go! Your Domotz integration is now complete. Whenever Domotz fires an alert, an incident will be created in Squadcast for it. Also when an alert is resolved in Domotz, the corresponding incident gets **auto-resolved** in Squadcast.
+That's it, you are good to go! Your Domotz integration is now complete. Whenever Domotz fires an alert, an incident will be created in Squadcast for it. Also, when an alert is resolved in Domotz, the corresponding incident gets **auto-resolved** in Squadcast.
+
+The integration will also create incidents for heartbeat monitoring alerts. 
 
 <style>.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}</style><div style="height: 100%;width: 100%;display: flex;margin-top: 40px;"><div style="margin: auto;"><div style="height: 100%;width: 100%;display: flex;padding: 20px;border: 1px solid #e7e9ed;border-radius: 8px;"><div style="margin: auto;"><div style="text-align: center;padding-bottom: 20px;font-size: 18px;line-height: 24px;font-family: Metropolis, sans-serif;color: #0d2149;">Ready to try Squadcast?</div><a href="https://app.squadcast.com/register" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #0f61dd;font-family: Metropolis,sans-serif;color: #fff;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #fff;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Start Now For Free!</a>   <a href="https://calendly.com/renuka-squadcast/30min" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #fff;font-family: Metropolis,sans-serif;color: #0f61dd;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #0f61dd;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;border: 1px solid #0f61dd;margin-left: 20px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Schedule a Demo</a></div></div></div></div>
