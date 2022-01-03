@@ -10,9 +10,11 @@ permalink: docs/prtg-network-monitor
 folder: mydoc
 ---
 
-Follow the steps below to configure a service so as to push related alert data from PRTG Network Monitor onto Squadcast.
+This document will help you integrate PRTG Network Monitor with Squadcast.
 
-Squadcast will then process this information to create incidents for this service as per your preferences.
+[PRTG Network Monitor](https://www.paessler.com/prtg) by Paessler is a tool used to monitor small and midsize infrastructures. It provides maps and dashboards, flexible alerting, multiple user interfaces and distributed monitoring.
+
+Route detailed alerts from PRTG Network Monitor to the right users in Squadcast.
 
 ## Using PRTG Network Monitor as an Alert Source
 
@@ -36,15 +38,15 @@ Squadcast will then process this information to create incidents for this servic
 
 ![](images/prtg_2.png)
 
-**(2)** Click on the **+** button on the right side of the screen to **Add Notification Template**.
+**(2)** Click on the **+** button on the right side of the screen to **Add Notification Template**
 
 ![](images/prtg_3.png)
 
-**(3)** Name it  **Squadcast Webhook**  for easy identification. Configure the remaining fields as per your requirements.
+**(3)** Name it  **Squadcast Webhook**  for easy identification. Configure the remaining fields as per your requirements
 
 ![](images/prtg_4.png)
 
-**(4)** Scroll down and tick the **Execute HTTP Action** button. Paste the webhook URL copied from Squadcast platform in the **URL** field. 
+**(4)** Scroll down and tick the **Execute HTTP Action** button. Paste the webhook URL copied from Squadcast platform in the **URL** field
 
 Select **HTTP Method** as POST and paste the snippet given below in the payload field.
 
@@ -54,7 +56,13 @@ Select **HTTP Method** as POST and paste the snippet given below in the payload 
 colorofstate=%colorofstate&company=%company&comments=%comments&commentssensor=%commentssensor&commentsdevice=%commentsdevice&commentsgroup=%commentsgroup&commentsprobe=%commentsprobe&coverage=%coverage&cumsince=%cumsince&date=%date&datetime=%datetime&device=%device&deviceid=%deviceid&down=%down&downtime=%downtime&elapsed_lastcheck=%elapsed_lastcheck&elapsed_lastdown=%elapsed_lastdown&elapsed_lastup=%elapsed_lastup&group=%group&groupid=%groupid&history=%history&home=%home&host=%host&iconofstate=%iconofstate&lastcheck=%lastcheck&lastdown=%lastdown&lastmessage=%lastmessage&laststatus=%laststatus&lastup=%lastup&lastvalue=%lastvalue&linkprobe=%linkprobe&linkgroup=%linkgroup&linkdevice=%linkdevice&linksensor=%linksensor&location=%location&message=%message&name=%name&nodename=%nodename&objecttags=%objecttags&parenttags=%parenttags&prio=%prio&priority=%priority&probe=%probe&probeid=%probeid&programname=%programname&programversion=%programversion&sensor=%sensor&sensorid=%sensorid&server=%server&serviceurl=%serviceurl&settings=%settings&shortname=%shortname&since=%since&sitename=%sitename&statesince=%statesince&status=%status&systemdatetime=%systemdatetime&tags=%tags&time=%time&timezone=%timezone&uptime=%uptime
 ```
 
-**(5)** Finally click on the **Create** button to create the Notification Template.
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+By default, the **SNI** field is set to **Do not send SNI (default)**. Ideally, this setting should work fine. However, we have seen that certain users of PRTG Network Monitor receive SSL Handshake related errors. In such cases, you can simply change the setting here to **Send SNI**. Doing so will solve for any SSL related errors that occur otherwise.
+{{site.data.alerts.end}}
+
+**(5)** Finally click on the **Create** button to create the Notification Template
 
 Now, your Squadcast webhook is setup and ready to be consumed by sensors for sending alerts. 
 
@@ -62,4 +70,4 @@ Simply select the **Squadcast Webhook** as the Notification Template from the dr
 
 ![](images/prtg_6.png)
 
-PRTG Network Monitor also supports auto-resolve. So, when the system gets back online, your incident would get **automatically resolved in Squadcast.**
+That is it, you are good to go! Everytime an alert is generated in PRTG Network Monitor, an incident for it would be triggered in Squadcast. When the alert is resolved in PRTG Network Monitor (when the system gets back online), the corresponding incident for it will be automatically resolved in Squadcast.
