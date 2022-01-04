@@ -693,10 +693,6 @@ entries:
                     url: /circleci-integration
                     output: web, pdf
 
-                  - title: Google Hangouts
-                    url: /hangouts
-                    output: web, pdf
-
                   - title: Jira Cloud
                     url: /jira-cloud
                     output: web, pdf
@@ -705,15 +701,23 @@ entries:
                     url: /jira-server-on-premise
                     output: web, pdf
 
-                  - title: Slack
-                    url: /slack
-                    output: web, pdf
+      - title: ChatOps
+        output: web, pdf
 
-                  - title: Microsoft Teams
-                    url: /msteams
-                    output: web, pdf
+        folderitems:
+          - title: Google Hangouts
+            url: /docs/hangouts
+            output: web, pdf
 
-      - title: SSO
+          - title: Microsoft Teams
+            url: /docs/msteams
+            output: web, pdf
+
+          - title: Slack
+            url: /docs/slack
+            output: web, pdf
+
+      - title: Single Sign-On (SSO)
         output: web, pdf
 
         folderitems:
