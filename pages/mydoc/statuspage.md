@@ -1,5 +1,5 @@
 ---
-title:  StatusPage
+title:  Status Page
 summary: "Let your customers know how your Services are doing, without them having to ask you about it"
 tags: [status page]
 last_updated: 
@@ -8,35 +8,35 @@ permalink: docs/statuspage
 folder: mydoc
 ---
 
-## What is a StatusPage?
+## What is a Status Page?
 
-One of the core principles of SRE is _Transparency_ and StatusPages help you communicate the status of your Services to your customers at all times, as opposed to you getting to know the status of your Services through support tickets logged by your customers. 
+One of the core principles of SRE is _Transparency_ and Status Pages help you communicate the status of your Services to your customers at all times, as opposed to you getting to know the status of your Services through support tickets logged by your customers. 
 
-Squadcast's StatusPage can be used to configure and display Services and dependent Services along with their real-time statuses updated directly, all from within the platform.
+Squadcast's Status Page can be used to configure and display Services and dependent Services along with their real-time statuses updated directly, all from within the platform.
 
 ![](images/statuspage_1.png)
 
-## Working of a StatusPage 
+## Working of a Status Page 
 
 Whenever the displayed Service has an open incident (an incident in the `Triggered` or `Acknowledged` state), its status automatically changes to the status equivalent of _Degraded (Bad)_. When the incident gets resolved, the status of the displayed Service goes back to being _Operational (Good)_ or its equivalent status.
 
-For an incident, you can choose to post updates of its status directly from its [Incident Details](https://support.squadcast.com/docs/incident-details) page using the [Update StatusPage](https://support.squadcast.com/docs/statuspage#updating-your-statuspage) option.
+For an incident, you can choose to post updates of its status directly from its [Incident Details](https://support.squadcast.com/docs/incident-details) page using the [Update Status Page](https://support.squadcast.com/docs/statuspage#updating-your-statuspage) option.
 
-You can also display dependent Services in the StatusPage. First, configure the [dependencies between your Services](https://support.squadcast.com/docs/service-dependency-based-deduplication#adding-a-service-dependency) and then, add them to the StatusPage. 
+You can also display dependent Services in the Status Page. First, configure the [dependencies between your Services](https://support.squadcast.com/docs/service-dependency-based-deduplication#adding-a-service-dependency) and then, add them to the Status Page. 
 
 You can configure the [visual themes](https://support.squadcast.com/docs/statuspage#changing-the-colour-theme) and the [terminologies](https://support.squadcast.com/docs/statuspage#configuring-service-status) for Operational (Good) and Degraded (Bad).
 
 ## Prerequisites
 
-- The User Role associated with the user in the Team must have the necessary permissions to create and manage StatusPages.
+- The User Role associated with the user in the Team must have the necessary permissions to create and manage Status Pages
 
-- Services must be created prior to configuring a StatusPage.
+- Services must be created prior to configuring a Status Page
 
-## Creating a StatusPage
+## Creating a Status Page
 
 Ensure that the right Team is selected from the team picker at the top of the screen.
 
-**(1)** Navigate to **StatusPage** from the sidebar
+**(1)** Navigate to **Status Page** from the sidebar
 
 ![](images/statuspage_1_new.png)
 
@@ -45,49 +45,49 @@ Ensure that the right Team is selected from the team picker at the top of the sc
 ![](images/statuspage_2_new.png)
 
 **(3 a)** **Page Configuration**
-- Give your StatusPage a **Name**
-- Enter the **Page Hostname** (eg: status.yourcompany.com or www.yourcompanystatus.com) where you want to host the StatusPage
+- Give your Status Page a **Name**
+- Enter the **Page Hostname** (eg: status.yourcompany.com or www.yourcompanystatus.com) where you want to host the Status Page
 - Copy the `CNAME` information
 - Click on **Save & Next** button
 
 ![](images/statuspage_3_new.png)
 
 **(3 b)** **Service Configuration**
-- Select the Services which you want to display in your StatusPage and provide a suitable _Alias_ for them
-- You can also enable the checkbox **Select all services** to display your entire list of Services in your Team on the StatusPage
-- Click on **Save & Create** to create the StatusPage
+- Select the Services which you want to display in your Status Page and provide a suitable _Alias_ for them
+- You can also enable the checkbox **Select all services** to display your entire list of Services in your Team on the Status Page
+- Click on **Save & Create** to create the Status Page
 
 ![](images/statuspage_4_new.png)
 
-**Note:** If the selected Service is dependent on other Services, then its dependent Services will also automatically be displayed in the StatusPage.
+**Note:** If the selected Service is dependent on other Services, then its dependent Services will also automatically be displayed in the Status Page.
 
 ![](images/statuspage_5_new.png)
 
 ## Setting CNAME record
 
-When you try to view your StatusPage by clicking on the StatusPage or by visiting the `Page Hostname`, it will not be visible. 
+When you try to view your Status Page by clicking on the Status Page or by visiting the `Page Hostname`, it will not be visible. 
 
 ![](images/statuspage_7.png)
 
 You would have to first add a CNAME record in your DNS Provider for the Page Hostname and point it to `status.squadcast.io`.
 
-**Note**: This step is necessary for you to complete irrespective of whether you are looking to have a [Public StatusPage or a Private StatusPage](https://support.squadcast.com/docs/statuspage#types-of-statuspage).
+**Note**: This step is necessary for you to complete irrespective of whether you are looking to have a [Public Status Page or a Private Status Page](https://support.squadcast.com/docs/statuspage#types-of-statuspage).
 
 {{site.data.alerts.blue-note-md}}
 **Note: CAA Records Setup**  
 
-All our StatusPages are served via `https` and we use a certificate generated by Letsencrypt, so if you had setup CAA record, please add `letsencrypt.org`  to the CAA record list, if not added already. This will prevent certificate issues for your StatusPage.
+All our Status Pages are served via `https` and we use a certificate generated by Letsencrypt, so if you had setup CAA record, please add `letsencrypt.org`  to the CAA record list, if not added already. This will prevent certificate issues for your Status Page.
 {{site.data.alerts.end}}
 
-Once, the CNAME record has been added successfully, you can view the StatusPage by clicking on its name from the **StatusPage** tab.
+Once, the CNAME record has been added successfully, you can view the Status Page by clicking on its name from the **Status Page** tab.
 
 ![](images/statuspage_6_new.png)
 
-You will be able to view your StatusPage like shown in the image below.
+You will be able to view your Status Page like shown in the image below.
 
 ![](images/statuspage_8_new.png)
 
-## Customizing your StatusPage
+## Customizing your Status Page
 
 ### Update Header (Logo & Status Heading)
 
@@ -95,11 +95,11 @@ You can upload a _Logo_ and change the default _System Status_ texts by clicking
 
 ![](images/statuspage_9.png)
 
-Here, you can upload a **Logo** for your StatusPage and provide _custom text_ for when all your displayed Services are healthy - _Good Status_ (eg: Operational, All good!, etc.) and for when even one of your displayed Services has an incident - _Bad Status_ (eg: Degraded, Oops.., Something is wrong, etc.)
+Here, you can upload a **Logo** for your Status Page and provide _custom text_ for when all your displayed Services are healthy - _Good Status_ (eg: Operational, All good!, etc.) and for when even one of your displayed Services has an incident - _Bad Status_ (eg: Degraded, Oops.., Something is wrong, etc.)
 
 ![](images/statuspage_10.png)
 
-This _status_ will update the StatusPage's overall _status_ in the _header_ section accordingly.
+This _status_ will update the Status Page's overall _status_ in the _header_ section accordingly.
 
 ![](images/statuspage_11.png)
 
@@ -117,7 +117,7 @@ Here, you can customize the _text to be displayed for the `Service Status`_ on t
 
 ### Changing the colour theme
 
-You can edit the _colour theme_ of your StatusPage by clicking on **Edit** and selecting **Theme**.
+You can edit the _colour theme_ of your Status Page by clicking on **Edit** and selecting **Theme**.
 
 ![](images/statuspage_9.png)
 
@@ -129,13 +129,13 @@ You can see the changes reflecting as shown below.
 
 ![](images/statuspage_15.png)
 
-## Types of StatusPage
+## Types of Status Page
 
-### Public StatusPage
+### Public Status Page
 
-Now that you are done with all the customizations, it's time to make the StatusPage `public`, so all your customers/stakeholders/members of other Teams in your Organization/end users can view it.
+Now that you are done with all the customizations, it's time to make the Status Page `public`, so all your customers/stakeholders/members of other Teams in your Organization/end users can view it.
 
-To make a StatusPage `public`, go to **Edit** and check the **Make Public** check box as shown below.
+To make a Status Page `public`, go to **Edit** and check the **Make Public** check box as shown below.
 
 ![](images/statuspage_16.png)
 
@@ -143,45 +143,45 @@ Now, anyone can publicly view the status page using the Public URL (Hostname URL
 
 ![](images/statuspage_17.png)
 
-### Private StatusPage
+### Private Status Page
 
-If you do not check the **Make Public** box in the **Edit** dropdown, your StatusPage will be `Private` to the **members of your Team only**.
+If you do not check the **Make Public** box in the **Edit** dropdown, your Status Page will be `Private` to the **members of your Team only**.
 
 ![](images/statuspage_29_new.png)
 
 #### Note: 
-- To access a Private StatusPage, you can either click on the **Name** of the StatusPage or click on the **Hostname URL** for the StatusPage and view the StatusPage.
+- To access a Private Status Page, you can either click on the **Name** of the Status Page or click on the **Hostname URL** for the Status Page and view the Status Page.
 
 ![](images/statuspage_32_new.png)
 
-- You can also share the Squadcast URL (indicated by the green box) of the Private StatusPage with members of your Team to easily access the StatusPage (with an added user login step, if they are not already logged in to Squadcast)
+- You can also share the Squadcast URL (indicated by the green box) of the Private Status Page with members of your Team to easily access the Status Page (with an added user login step, if they are not already logged in to Squadcast)
 
 ![](images/statuspage_32_new.png)
 
 Whenever there is an incident for a displayed Service, that status of the Service will be marked as Degraded/Bad.
-You can post updates to the StatusPage for the incident with **different statuses**. 
+You can post updates to the Status Page for the incident with **different statuses**. 
 
 For a first update, you can add a status such as `Acknowledged`, `Investigating` and add relevant information in the **Description**.
 
-## Posting Incident Updates to your StatusPage
+## Posting Incident Updates to your Status Page
 
 Whenever there is an incident for a displayed Service, that status of the Service will be marked as Degraded/Bad.
-You can post updates to the StatusPage for the incident with **different statuses**. 
+You can post updates to the Status Page for the incident with **different statuses**. 
 
 For a first update, you can add a status such as `Acknowledged`, `Investigating` and add relevant information in the **Description**.
 
 As the incident state progresses, you can continue to post updates for its status like `Identified`, `Fix deployed`, `Resolved`, etc., and accompany it with relevant **Description**.
 
-In order to do this, go to the [Incident Details page](https://support.squadcast.com/docs/incident-details) for the incident.  Click on the three dots on the top right of the incident and click on **Update StatusPage**.
+In order to do this, go to the [Incident Details page](https://support.squadcast.com/docs/incident-details) for the incident.  Click on the three dots on the top right of the incident and click on **Update Status Page**.
 
 ![](images/statuspage_19_new.png)
 
-In the **Update StatusPage** modal, enter the **Custom Status** and **Custom Description**, select the StatusPage to which you want to post the update and click on the **Update** button.
+In the **Update Status Page** modal, enter the **Custom Status** and **Custom Description**, select the Status Page to which you want to post the update and click on the **Update** button.
 
 {{site.data.alerts.blue-note-md}}
 **Note: Markdown supported**
 
-The **Custom Description** field in the **Update StatusPage** modal supports `Markdown` formatting.
+The **Custom Description** field in the **Update Status Page** modal supports `Markdown` formatting.
 {{site.data.alerts.end}}
 
 ![](images/statuspage_20.png)
@@ -190,17 +190,17 @@ The **Custom Description** field in the **Update StatusPage** modal supports `Ma
 
 ![](images/statuspage_22.png)
 
-These updates will be reflected in the selected StatusPage under **Incident History**.
+These updates will be reflected in the selected Status Page under **Incident History**.
 
 ![](images/statuspage_23.png)
 
-## Enable Subscriptions to your StatusPage
+## Enable Subscriptions to your Status Page
 
-To enable subscriptions to your StatusPage, go to **Edit**, click on **Subscriptions** and check the **Enable Subscriptions** checkbox. **Subscribe** option will now show up on your public StatusPage. You can have your end users **subscribe** for incident update notifications from the StatusPage.
+To enable subscriptions to your Status Page, go to **Edit**, click on **Subscriptions** and check the **Enable Subscriptions** checkbox. **Subscribe** option will now show up on your public Status Page. You can have your end users **subscribe** for incident update notifications from the Status Page.
 
 ![](images/statuspage_24.png)
 
-You can also select the **modes of subscription** you want to enable for your StatusPage. You can select either or both the available options.
+You can also select the **modes of subscription** you want to enable for your Status Page. You can select either or both the available options.
 
 ![](images/statuspage_26.png)
 
@@ -208,9 +208,9 @@ The available modes are:
 
 **1. Email:** 
 
-You can add a suitable text on the sender's email address text box from which all the subscribed users will receive StatusPage incident update notifications. In this case, all the subscribed users will get mails from 'updates@status.poniesareaweso.me'.
+You can add a suitable text on the sender's email address text box from which all the subscribed users will receive Status Page incident update notifications. In this case, all the subscribed users will get mails from 'updates@status.poniesareaweso.me'.
 
-On the StatusPage itself, you will now notice a placeholder to enter Email addresses like shown below. A _confirmation/verification_ Email is sent to the added Email address. Post the confirmation/verification completion, incident update notifications will be sent out.
+On the Status Page itself, you will now notice a placeholder to enter Email addresses like shown below. A _confirmation/verification_ Email is sent to the added Email address. Post the confirmation/verification completion, incident update notifications will be sent out.
 
 ![](images/statuspage_31_new.png)
 
@@ -245,61 +245,61 @@ The payload format of the Webhook is as follows:
 
 ### Please refer to the Frequently Asked Questions below that might help you fix any issues/answer your queries.
 
-#### 1. I am looking to have a public StatusPage, I have most likely configured everything, yet when I access the Hostnamre URL, the StatusPage does not load. Am I missing anything?
+#### 1. I am looking to have a public Status Page, I have most likely configured everything, yet when I access the Hostnamre URL, the Status Page does not load. Am I missing anything?
 
-Please ensure that you have made your StatusPage `Public`. Without [enabling this checkbox](https://support.squadcast.com/docs/statuspage#making-your-statuspage-public), your StatusPage would be private and hence, not accessible via the Hostname URL.
+Please ensure that you have made your Status Page `Public`. Without [enabling this checkbox](https://support.squadcast.com/docs/statuspage#making-your-statuspage-public), your Status Page would be private and hence, not accessible via the Hostname URL.
 
-#### 2. I have confirmed that my StatusPage is made Public and have added the CNAME record which is pointing to status.squadcast.io, yet I am unable to access the StatusPage at the said Page Hostname
+#### 2. I have confirmed that my Status Page is made Public and have added the CNAME record which is pointing to status.squadcast.io, yet I am unable to access the Status Page at the said Page Hostname
 
 There could be various reasons for the same. 
-- There could be a DNS propagation delay. You might be able to access the StatusPage from machines in certain regions of the world, while it would fail in the rest. In this case, it is recommended to wait for 48 hours from the time the last DNS changes were made.
+- There could be a DNS propagation delay. You might be able to access the Status Page from machines in certain regions of the world, while it would fail in the rest. In this case, it is recommended to wait for 48 hours from the time the last DNS changes were made.
 - There could be a DNS caching issue at your end (For example, your router, your system's local resolver cache, etc.). In this case, it is recommended to wait for sometime, generally a few hours, from the time the last changes were made.
 
 If neither is applicable to you, kindly reach out to <a href="mailto:support@squadcast.com">us</a> for further assistance.
 
-#### 3. Even after making our StatusPage public, when we try accessing the Hostname URL, we are redirected to Squadcast. What can we do to fix this?
+#### 3. Even after making our Status Page public, when we try accessing the Hostname URL, we are redirected to Squadcast. What can we do to fix this?
 
-If your Public StatusPage is being redirected to your Squadcast account even after making it `Public`, please clear your application cache and try again. You may also additionally want to try accessing the Hostname URL from a private browsing window or another browser as well. 
+If your Public Status Page is being redirected to your Squadcast account even after making it `Public`, please clear your application cache and try again. You may also additionally want to try accessing the Hostname URL from a private browsing window or another browser as well. 
 Should this also not work, do reach out to <a href="mailto:support@squadcast.com">us</a> for further assistance.
 
-#### 4. I have added a CNAME record, configured the DNS settings as per Squadcast's steps. Yet, I receive the error "Too many redirects" while accessing the StatusPage. What could be possibly causing this?
+#### 4. I have added a CNAME record, configured the DNS settings as per Squadcast's steps. Yet, I receive the error "Too many redirects" while accessing the Status Page. What could be possibly causing this?
 
-This is possibly to do with the DNS changes (addition of CNAME record) that you recently made at your DNS Provider's end (GoDaddy, CloudFlare, DigitalOcean, etc.). Please allow sometime (this might take upto 48 hours in extreme cases) for the DNS changes to fully propagate and take effect before you can access your public StatusPage via the Hostname URL.
+This is possibly to do with the DNS changes (addition of CNAME record) that you recently made at your DNS Provider's end (GoDaddy, CloudFlare, DigitalOcean, etc.). Please allow sometime (this might take upto 48 hours in extreme cases) for the DNS changes to fully propagate and take effect before you can access your public Status Page via the Hostname URL.
 Should this also not work, do reach out to <a href="mailto:support@squadcast.com">us</a> for further assistance.
 
 #### 5. Accessing a Private Status Page versus a Public Status Page
 
-**Private StatusPage URL**
-A Private StatusPage's URL can be shared with the team members who have access to Squadcast (added as users of the Squadcast account). Please note that it is not the custom URL (depicted in the red box) that is entered in the page configuration. It is the URL of the page in the app itself (depicted in the green box). The custom URL is valid only for public viewers of the StatusPage, that is if you choose to make the StatusPage public.
+**Private Status Page URL**
+A Private Status Page's URL can be shared with the team members who have access to Squadcast (added as users of the Squadcast account). Please note that it is not the custom URL (depicted in the red box) that is entered in the page configuration. It is the URL of the page in the app itself (depicted in the green box). The custom URL is valid only for public viewers of the Status Page, that is if you choose to make the Status Page public.
 
 ![](images/statuspage_18.png)
 
-#### 6. I have certain production Services running and I want to control the status of the Service displayed on my StatusPage. Everytime the production Service has an incident, I do not want the status of that Service on my StatusPage to be degraded. Is there a way for me to achieve this?
+#### 6. I have certain production Services running and I want to control the status of the Service displayed on my Status Page. Everytime the production Service has an incident, I do not want the status of that Service on my Status Page to be degraded. Is there a way for me to achieve this?
 
 Absolutely, we understand that you may have certain non-critical incidents also affecting your Services that need not necessarily mean that your entire Service is degraded. To go about this, please follow the steps below:
-- For each such Service of yours, create a duplicate Service to be displayed on the StatusPage. This Service's sole purpose is to appear on the StatusPage, so you need not have to integrate this Service with your monitoring tools or route any alerts to it.
-- Choose to display this duplicate Service on your StatusPage instead of your original production Service. Give it an Alias. 
-- Every time your production Service has a severe incident/outage, you can create an incident manually for the duplicate Service and post incident updates to your StatusPage for _this_ incident. 
-- What this also means is, when you create the incident for this duplicate Service, its status on the StatusPage will be degraded, representing the actual state at your end.
-- Once your outage/incident for the production Service is `resolved`, you can go ahead and resolve the incident that you previously created and post the incident update to your StatusPage for the same.
+- For each such Service of yours, create a duplicate Service to be displayed on the Status Page. This Service's sole purpose is to appear on the Status Page, so you need not have to integrate this Service with your monitoring tools or route any alerts to it.
+- Choose to display this duplicate Service on your Status Page instead of your original production Service. Give it an Alias. 
+- Every time your production Service has a severe incident/outage, you can create an incident manually for the duplicate Service and post incident updates to your Status Page for _this_ incident. 
+- What this also means is, when you create the incident for this duplicate Service, its status on the Status Page will be degraded, representing the actual state at your end.
+- Once your outage/incident for the production Service is `resolved`, you can go ahead and resolve the incident that you previously created and post the incident update to your Status Page for the same.
 
-#### 7. Can I receive notifications for StatusPage Updates in Slack or Microsoft Teams?
+#### 7. Can I receive notifications for Status Page Updates in Slack or Microsoft Teams?
 
-- [Enable Subscriptions](https://support.squadcast.com/docs/statuspage#enable-subscriptions-to-your-statuspage) for your StatusPage
-- Obtain the **Email address** of the [Slack](https://slack.com/intl/en-in/help/articles/206819278-Send-emails-to-Slack#create-a-channel-email) or [MS Teams](https://support.microsoft.com/en-us/office/send-an-email-to-a-channel-in-teams-d91db004-d9d7-4a47-82e6-fb1b16dfd51e#bkmk_send) channel where you would like to receive the notifications for StatusPage updates
+- [Enable Subscriptions](https://support.squadcast.com/docs/statuspage#enable-subscriptions-to-your-statuspage) for your Status Page
+- Obtain the **Email address** of the [Slack](https://slack.com/intl/en-in/help/articles/206819278-Send-emails-to-Slack#create-a-channel-email) or [MS Teams](https://support.microsoft.com/en-us/office/send-an-email-to-a-channel-in-teams-d91db004-d9d7-4a47-82e6-fb1b16dfd51e#bkmk_send) channel where you would like to receive the notifications for Status Page updates
 - Add all such Email addresses under **Subscriptions** -> **Email** and click on **Subscribe**
 
 ![](images/statuspage_27_new.png)
 
 - If there is an option to do so, ensure that you have added the SMTP Endpoint for Squadcast - `incidents.squadcast.com`
 
-With this, every time there is an update posted to the StatusPage for an incident, a notification for the same would appear in the Slack or MS Teams channel as well.
+With this, every time there is an update posted to the Status Page for an incident, a notification for the same would appear in the Slack or MS Teams channel as well.
 
-#### 8. Does Squadcast provide APIs for creating and updating StatusPage?
+#### 8. Does Squadcast provide APIs for creating and updating Status Page?
 
-We currently do not have Public APIs for creating, managing subscriptions or updating the StatusPage.
+We currently do not have Public APIs for creating, managing subscriptions or updating the Status Page.
 
-#### 9. I have enabled Webhook subscriptions only for my StatusPage. When I click on the Subscribe on my StatusPage, I am asked to enter an Email address in addition to a Webhook endpoint. Why is that so?
+#### 9. I have enabled Webhook subscriptions only for my Status Page. When I click on the Subscribe on my Status Page, I am asked to enter an Email address in addition to a Webhook endpoint. Why is that so?
 
 The Email placeholder you see here is for Webhook usage confirmation/verification, not to receive incident update notifications via Email subscriptions. This Email address needs to be accessible and one must be able to verify the Email sent to this Email address in order to receive incident update notifications via the Webhook.
 
@@ -309,7 +309,7 @@ The Email placeholder you see here is for Webhook usage confirmation/verificatio
 
 We send out the [payloads in a particular format](https://support.squadcast.com/docs/statuspage#enable-subscriptions-to-your-statuspage) to the added Webhook, and most likely, the payload format we send is not being accepted by the 3rd party platform. This is why you see a `Webhook URL returned: 400` error appear on the screen. In such cases, please check to see if the 3rd party platform can receive incident update notifications in the form of an Email or if you can modify the accepted payload format on their platform.
 
-#### 11. Is there a recommended size for the Logo image that we can upload to our StatusPage Header?
+#### 11. Is there a recommended size for the Logo image that we can upload to our Status Page Header?
 
 Yes, it is recommended that you use an image with dimensions _1300x250_ for best results.
 
@@ -321,31 +321,31 @@ Yes, that is correct. Only the Services that have an open incident (incident in 
 
 #### 13. What is the Incident History retention/data display period by default?
 
-You will be able to view incident updates posted to your StatusPage in the **last 14 days (2 weeks)**.
+You will be able to view incident updates posted to your Status Page in the **last 14 days (2 weeks)**.
 
-#### 14. Can I edit the previously posted incident updates on my StatusPage?
+#### 14. Can I edit the previously posted incident updates on my Status Page?
 
-No, editing previously posted incident updates to the StatusPage is not possible.
+No, editing previously posted incident updates to the Status Page is not possible.
 
 #### 15. I want to display more information for my incident, for example, time according to my local timezone or the Incident Details. Is this possible?
 
 Yes, absolutely! You can add any information you want to provide maximum context of the ongoing issue to your end users within the **Custom Description** placeholder that supports `Markdown` formatting as well. 
 
-#### 16. How many StatusPages can I add in my current plan? Can I add both Private and Public StatusPages?
+#### 16. How many Status Pages can I add in my current plan? Can I add both Private and Public Status Pages?
 
-The number of **Public StatusPages** that can be added depend on the [Pricing Plan](https://www.squadcast.com/pricing) that your account is currently on.
+The number of **Public Status Pages** that can be added depend on the [Pricing Plan](https://www.squadcast.com/pricing) that your account is currently on.
 - **Essential Plan**: 1
 - **Pro Plan**: 5
 - **Enterprise Plan**: Unlimited
 
-**Private StatusPages** can be added **only** in the **Pro and Enterprise Plans**, **not** in the **Essential Plan**.
+**Private Status Pages** can be added **only** in the **Pro and Enterprise Plans**, **not** in the **Essential Plan**.
 
-#### 17. Is there a limit on the number of subscribers to the StatusPage? Can I view the list of subscribers to my StatusPage?
+#### 17. Is there a limit on the number of subscribers to the Status Page? Can I view the list of subscribers to my Status Page?
 
-No, there is **no limit on the number of subscribers** to your StatusPage. You are also **not charged for subscriptions** to your StatusPage. 
+No, there is **no limit on the number of subscribers** to your Status Page. You are also **not charged for subscriptions** to your Status Page. 
 
-However, you will **not be able to view the list of subscribers** that have subscribed to your StatusPage.
+However, you will **not be able to view the list of subscribers** that have subscribed to your Status Page.
 
-#### 18. I have an open incident in Squadcast for one of my Services from 2 days ago, however, the health of the affected Service in the StatusPage went back to being healthy. Is this expected?
+#### 18. I have an open incident in Squadcast for one of my Services from 2 days ago, however, the health of the affected Service in the Status Page went back to being healthy. Is this expected?
 
-Typically, critical incidents are resolved by Organizations within 24 hours of them being triggered. Squadcast keeps track of only those incidents affecting the Services displayed on your StatusPage **that occurred in the current day**. Post this duration, the health of the affected Service goes back to being healthy, since the open incident/s for it are older than 1 day.
+Typically, critical incidents are resolved by Organizations within 24 hours of them being triggered. Squadcast keeps track of only those incidents affecting the Services displayed on your Status Page **that occurred in the current day**. Post this duration, the health of the affected Service goes back to being healthy, since the open incident/s for it are older than 1 day.

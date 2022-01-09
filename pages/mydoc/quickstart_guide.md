@@ -184,9 +184,9 @@ See how to configure your [Suppression Rules](alert-suppression).
 
 ✅ **Set up your Public and Private Status Pages**
 
-[StatusPage](statuspage) helps you communicate the status of your services to your customers or internal teams at all times as opposed to you getting to know the status of your service though support tickets. You can access StatusPage from the navigation sidebar. 
+[Status Page](statuspage) helps you communicate the status of your services to your customers or internal teams at all times as opposed to you getting to know the status of your service though support tickets. You can access Status Page from the navigation sidebar. 
 
-StatusPages can either be public (accessible by everyone) or private (accessible by just your team on Squadcast) on Squadcast. You can also add a subscription option for your public status page so customers are automatically informed of any updates on the StatusPage. To set up your Status Page, [click here](statuspage).
+Status Pages can either be public (accessible by everyone) or private (accessible by just your team on Squadcast) on Squadcast. You can also add a subscription option for your public status page so customers are automatically informed of any updates on the Status Page. To set up your Status Page, [click here](statuspage).
 
 📖 **Create a Postmortem report or create your own template**
 

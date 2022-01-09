@@ -248,11 +248,11 @@ entries:
             url: /docs/accessing-postmortems
             output: web, pdf
 
-      - title: StatusPage
+      - title: Status Page
         output: web, pdf
 
         folderitems:
-          - title: StatusPage
+          - title: Status Page
             url: /docs/statuspage
             output: web, pdf
 

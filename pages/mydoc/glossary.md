@@ -293,10 +293,10 @@ An **[Incident postmortem](postmortems)** is a post-incident review of all the a
 
 You can create an incident postmortem from within an incident page once the incident is resolved from the options icon on the right corner of the incident details section. You can choose from several popularly used postmortem templates or have your admin/ account owner create one for your organization.
 
-### StatusPage
-**[StatusPage](statuspage)** helps you communicate the status of your services to your customers or internal teams at all times as opposed to you getting to know the status of your service though support tickets. You can access StatusPage from the navigation sidebar. 
+### Status Page
+**[Status Page](statuspage)** helps you communicate the status of your services to your customers or internal teams at all times as opposed to you getting to know the status of your service though support tickets. You can access Status Page from the navigation sidebar. 
 
-StatusPages can either be public (accessible by everyone) or private (accessible by just your team on Squadcast) on Squadcast. You can also add a subscription option for your public status page so customers are automatically informed of any updates on the StatusPage. 
+Status Pages can either be public (accessible by everyone) or private (accessible by just your team on Squadcast) on Squadcast. You can also add a subscription option for your public status page so customers are automatically informed of any updates on the Status Page. 
 
 ### Analytics 
 The **[Analytics page](analytics)** helps you see how your organisation has performed in a given time period by providing you the hard numbers in easy to understand graphs and charts. You will be able to view the SLO dashboard, number of incidents by the state, MTTA and MTTR analysis. 

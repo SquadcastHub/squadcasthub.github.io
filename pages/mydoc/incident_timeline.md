@@ -21,7 +21,7 @@ The Incident Timeline will display the timeline of the incident in reverse chron
 
 **(c)** who **Resolved** it and when
 
-**(d)** what message was posted on the **StatusPage**
+**(d)** what message was posted on the **Status Page**
 
 **(e)** by whom and when the **Postmortem** was created
 
