@@ -1,5 +1,5 @@
 ---
-title: Alert De-duplication Rules
+title: Alert Deduplication Rules
 tags: [deduplication]
 keywords:
 last_updated:
@@ -9,22 +9,22 @@ permalink: docs/de-duplication-rules
 folder: mydoc
 ---
 
-Alert De-duplication can help you reduce alert noise by organising and grouping alerts. This also provides easy access to similar alerts when needed.
+Alert Deduplication can help you reduce alert noise by organising and grouping alerts. This also provides easy access to similar alerts when needed.
 
-This can be achieved by defining De-duplication Rules for each Service in Squadcast. When these rules evaluate to _true_ for an incoming incident, alerts will get de-duplicated.
+This can be achieved by defining Deduplication Rules for each Service in Squadcast. When these rules evaluate to _true_ for an incoming incident, alerts will get deduplicated.
 
 ## Prerequisites
 
-- The User Role associated with the user in the Team must have required permissions to manage Services (ability to manage De-duplication Rules).
+- The User Role associated with the user in the Team must have required permissions to manage Services (ability to manage Deduplication Rules).
 
-- Integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast before setting up De-duplication Rules.
+- Integrate with an Alert Source and ensure that the Alert Source has started sending alerts to Squadcast before setting up Deduplication Rules.
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b>
-<br/><br/><p>De-duplication Rules work only on incidents in either the <b>Triggered</b> or <b>Acknowledged</b> states.</p>
+<br/><br/><p>Deduplication Rules work only on incidents in either the <b>Triggered</b> or <b>Acknowledged</b> states.</p>
 {{site.data.alerts.end}}
 
-## Creating De-duplication Rules
+## Creating Deduplication Rules
 
 Ensure that the right Team is chosen from the team picker on the top of the screen.
 
@@ -32,7 +32,7 @@ Ensure that the right Team is chosen from the team picker on the top of the scre
 
 **(2)** Select a **Service** and click on the **More options** icon
 
-**(3)** Click on **De-duplication Rules**
+**(3)** Click on **Deduplication Rules**
 
 ![](images/de-duplication_1.png)
 
@@ -42,23 +42,23 @@ Ensure that the right Team is chosen from the team picker on the top of the scre
 
 ![](images/de-duplication_2.png)
 
-**(6)** De-duplication Rules can be added in three ways:
+**(6)** Deduplication Rules can be added in three ways:
 
 ### (A) UI-based Rule Builder (Beginner-friendly)
 
 (a) On the right, you can view the _payload of the **latest** alert_ for the chosen Alert Source
 
-(b) The drop-downs in the Rule Builder contain values from the payload on the right. You can use them to easily create your De-duplication Rules
+(b) The drop-downs in the Rule Builder contain values from the payload on the right. You can use them to easily create your Deduplication Rules
 
 ![](images/de-duplication_3.png)
 
-(c) You can add more than 1 condition for a rule by selecting **Add Condition** (a logical AND is performed between all the conditions -> the entire De-duplication Rule will evaluate to `True` only if all the conditions evaluate to `True`)
+(c) You can add more than 1 condition for a rule by selecting **Add Condition** (a logical AND is performed between all the conditions -> the entire Deduplication Rule will evaluate to `True` only if all the conditions evaluate to `True`)
 
-Next, choose the **De-duplication Time Window**. You can de-duplicate incidents for a **maximum of 48 hours**.
+Next, choose the **Deduplication Time Window**. You can deduplicate incidents for a **maximum of 48 hours**.
 
 {{site.data.alerts.yellow-note-i}}
 <b>Time Window</b>
-<br/><br/><p>During the set time window, incidents that occur are compared against all incidents that come in during that time period, and will then get de-duplicated against the first incident that it matches with.</p>
+<br/><br/><p>During the set time window, incidents that occur are compared against all incidents that come in during that time period, and will then get deduplicated against the first incident that it matches with.</p>
 {{site.data.alerts.end}}
 
 (d) Click on **Save**
@@ -78,7 +78,7 @@ Next, choose the **De-duplication Time Window**. You can de-duplicate incidents 
 
 ![](images/de-duplication_5.png)
 
-(c) Write your custom De-duplication Rule expression. Below are some examples to help you get started:
+(c) Write your custom Deduplication Rule expression. Below are some examples to help you get started:
 
 ### Supported Rules
 
@@ -92,11 +92,11 @@ The rule engine supports expressions with parameters, arithmetic, logical, and s
 
   `past.metric == current.metric`
 
-  The available parameters are `past`, `current` and `event_count` + `past` : This parameter contains the JSON payload of the previous incident which the current event is compared with + `current` : This parameter contains the JSON payload of the incoming event which will be compared with the past incidents' JSON payload + `event_count` : This denotes the number of de-duplicated events for a given incident
+  The available parameters are `past`, `current` and `event_count` + `past` : This parameter contains the JSON payload of the previous incident which the current event is compared with + `current` : This parameter contains the JSON payload of the incoming event which will be compared with the past incidents' JSON payload + `event_count` : This denotes the number of deduplicated events for a given incident
 
 {{site.data.alerts.blue-note}}
 <b>Use-case for event_count:</b>
-<br/><br/><p>This can be used in scenarios where you do not want to de-duplicate more than <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">n</code> number of alerts to a particular incident.</p>
+<br/><br/><p>This can be used in scenarios where you do not want to deduplicate more than <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">n</code> number of alerts to a particular incident.</p>
 {{site.data.alerts.end}}
 
 #### Regular Expressions
@@ -134,9 +134,9 @@ This will pick out the value `AlarmName` from the Message object in the payload,
 <b>Multiple Alert Sources</b>
 <br/><br/><p>We can see alert payloads of past events from different alert sources for the Service by selecting the respective alert source from the dropdown in the right-half side.
 <br/><br/>
-Since the payload format is fixed for a given alert source, it is usually preferrable to have De-duplication Rules on a per-alert source basis. This can be done by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.
+Since the payload format is fixed for a given alert source, it is usually preferrable to have Deduplication Rules on a per-alert source basis. This can be done by making use of the <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source</code> field which lets you know the alert source that triggered the incoming event.
 <br/><br/>
-For example, if you want to have a De-duplication Rule for a Service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">grafana</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'grafana' && (&lt;your_de-duplication_rule&gt;)</code></p>
+For example, if you want to have a Deduplication Rule for a Service, only for alerts coming for <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">grafana</code> alert source, then the corresponding rule would look something like: <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">source == 'grafana' && (&lt;your_deduplication_rule&gt;)</code></p>
 {{site.data.alerts.end}}
 
 #### Example
@@ -163,7 +163,7 @@ Below is an example payload for demonstration:
 }
 ```
 
-To de-duplicate any incoming alert when:
+To deduplicate any incoming alert when:
 
 - The `metric` matches the regular expression `^disk.*`
 - The `past` incident `metric` and the `current` event `metric` are the same
@@ -171,7 +171,7 @@ To de-duplicate any incoming alert when:
 - The `current` disk usage `value` is less than 60%
 - The `context` value tag is same
 
-**De-duplication Rule:**
+**Deduplication Rule:**
 
 ```javascript
 past.metric == current.metric &&
@@ -182,23 +182,23 @@ past.metric == current.metric &&
 		jsonPath(current.tags, "context.value");
 ```
 
-## Viewing De-duplicated Incidents
+## Viewing Deduplicated Incidents
 
-From the [Incidents](https://support.squadcast.com/docs/incident-list-table-view) page, you can view which incidents have de-duplicated events when there is a **+\<number\>** next to the Incident ID like in the screenshot below. 
+From the [Incidents](https://support.squadcast.com/docs/incident-list-table-view) page, you can view which incidents have deduplicated events when there is a **+\<number\>** next to the Incident ID like in the screenshot below. 
 
-The **number** indicates how many alerts were de-duplicated against this incident.
+The **number** indicates how many alerts were deduplicated against this incident.
 
 ![](images/de-duplication_6.png)
 
 Clicking on such an incident will take you to its [Incident Details page](https://support.squadcast.com/docs/incident-details) where, by clicking on **Deduped Events**, you will be able to see the following:
 
-- Number of de-duplicated events
+- Number of deduplicated events
 - Time when they reached Squadcast
 - **Message** and **Payload** of the event
 
 ![](images/de-duplication_7.png)
 
-Clicking on any of the de-duplicated events will display will all the information that is sent for that alert from the monitoring tool, including the **Deduplication Reason** (which Deduplication Rule got executed).
+Clicking on any of the deduplicated events will display will all the information that is sent for that alert from the monitoring tool, including the **Deduplication Reason** (which Deduplication Rule got executed).
 
 ![](images/dedup_reason.png)
 
@@ -210,15 +210,15 @@ No, nobody is notified for the duplicate alerts that come in for an incident in 
 
 **(2)** Will I get notified for the duplicate alerts that come in for an incident in Resolved state?
 
-Yes, incident de-duplication will not take place for an incident when it is in the `Resolved` state. Squadcast triggers a fresh incident for such an alert and notifies the right people.
+Yes, incident deduplication will not take place for an incident when it is in the `Resolved` state. Squadcast triggers a fresh incident for such an alert and notifies the right people.
 
-**(3)** Why can't I de-duplicate incidents for more than 48 hours?
+**(3)** Why can't I deduplicate incidents for more than 48 hours?
 
-Most organizations across the world follow a best practice of resolving critial incidents within 48 hours of their creation. This is also the reason why, Squadcast allows you to de-duplicate incidents for a maximum of 48 hours.
+Most organizations across the world follow a best practice of resolving critial incidents within 48 hours of their creation. This is also the reason why, Squadcast allows you to deduplicate incidents for a maximum of 48 hours.
 
 **(4)** Can I create OR rules?
 
-Yes, you can. The evaluation between different De-duplication Rules is OR.
+Yes, you can. The evaluation between different Deduplication Rules is `OR`.
 
 **(5)** What kind of regex can be used to write custom rules?
 
@@ -226,13 +226,13 @@ The rule engine supports expressions with parameters, arithmetic, logical, and s
 
 ![](images/de-duplication_9.png)
 
-**(6)** Do the De-duplication Rules have priority?
+**(6)** Do the Deduplication Rules have priority?
 
 Yes, you can specify Execution Rule Priority for the rules defined by moving them `Up` or `Down` the list of rules.
 
 ![](images/status-based-deduplication_5.png)
 
-**(7)** While adding a De-duplication Rule, is the _search string_ in the rule case sensitive?
+**(7)** While adding a Deduplication Rule, is the _search string_ in the rule case sensitive?
 
 Yes, that is correct. For example, if your seach string is "ALERT" and your payload does not contain "ALERT" but contains "Alert", this will not be matched. Your search string should be "Alert".
 

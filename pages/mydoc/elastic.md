@@ -179,7 +179,7 @@ The payload JSON must have the following keys :-
 
 4. **description** : This would be the detailed description of the incident in the squadcast dashboard.
 
-5. **payload** : This would be the whole **ctx** object. This is taken so as just to get some more metadata on the event which maybe useful in de-duping.
+5. **payload** : This would be the whole **ctx** object. This is taken so as just to get some more metadata on the event which maybe useful in deduplicating.
 
 So, a sample payload JSON would look like
 
@@ -236,4 +236,4 @@ Now, whenever the cluster status becomes `red`, an incident will be created auto
 **NOTE**
 * Just like watch for elastic cluster health, we can setup watch for other elastic metrics as well.
 
-* We have tried to do de-duping in squadcast end so that multiple triggers for the same incident would only create a single event in squadcast dashboard. Still, try to configure watcher from your end to ensure minimal noise.
+* We have tried to do deduplication in Squadcast so that multiple triggers for the same incident would only create a single event in Squadcast dashboard. Still, try to configure watcher from your end to ensure minimal noise.

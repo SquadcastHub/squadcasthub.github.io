@@ -173,7 +173,7 @@ Note that this rule will override the escalation policy attached to the service.
 
 ⚠️ **Deduplicate to reduce alert fatigue**
 
-[Alert de-duplication](de-duplication-rules)** can help you reduce alert noise by organising and grouping relevant alerts. This also provides easy access to similar alerts when needed. You can configure deduplication rules with an incident JSON to automatically deduplicate and group similar incidents and can see this reflect on the incident dashboard. To know more about how to configure this, [click here](de-duplication-rules).
+[Alert Deduplication](de-duplication-rules)** can help you reduce alert noise by organising and grouping relevant alerts. This also provides easy access to similar alerts when needed. You can configure deduplication rules with an incident JSON to automatically deduplicate and group similar incidents and can see this reflect on the incident dashboard. To know more about how to configure this, [click here](de-duplication-rules).
 
 🔕  **Suppress non-actionable alerts**
 

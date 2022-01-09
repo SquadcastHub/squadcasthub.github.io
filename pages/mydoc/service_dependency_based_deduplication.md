@@ -1,16 +1,16 @@
 ---
-title: Service Dependency Based De-duplication
+title: Service Dependency Based Deduplication
 tags: [set-up-your-profile, managing-all-users]
 keywords: 
 last_updated: 
 datatable: 
-summary: "De-duplicate incoming alerts for a Service against the latest open incident of its dependent Service(s)"
+summary: "Deduplicate incoming alerts for a Service against the latest open incident of its dependent Service(s)"
 sidebar: mydoc_sidebar
 permalink: docs/service-dependency-based-deduplication
 folder: mydoc
 ---
 
-Service Dependency Based De-duplication works on the logic that the incidents coming in for a Service and its dependencies have a related cause. 
+Service Dependency Based Deduplication works on the logic that the incidents coming in for a Service and its dependencies have a related cause. 
 
 It is most likely the case where, when one Service has an incident, its dependent Service(s) may also have incidents and hence, you will be notified for the incident only once. *This helps control unnecessary alert noise and notification fatigue during critical outages*.
 
@@ -23,11 +23,11 @@ If *Service A* is `dependent on` *Service B* and *Service C*, then:
 - **Dependent Service**: *Service A*
 - **Dependency Service(s)**: *Service B*, *Service C*
 
-Let's say, _Service B_ has an open incident at _time x_ and _Service C_ has an open incident at _time x+1_. Now, _Service A_ receives an incident. This incident for _Service A_ gets de-duplicated with the **latest** open incident of its depenedency Service(s) - i.e., with the open incident for _Service C_, in this case.
+Let's say, _Service B_ has an open incident at _time x_ and _Service C_ has an open incident at _time x+1_. Now, _Service A_ receives an incident. This incident for _Service A_ gets deduplicated with the **latest** open incident of its depenedency Service(s) - i.e., with the open incident for _Service C_, in this case.
 
 ## Prerequisites
 
-- The User Role associated with the user in the Team must have required permissions to manage Services (ability to manage De-duplication Rules).
+- The User Role associated with the user in the Team must have required permissions to manage Services (ability to manage Deduplication Rules).
 
 ## Adding a Service Dependency 
 
@@ -49,32 +49,32 @@ In this example, we have considered `Backend Prometheus Service` and `Translatio
 
 This means that the `Payment Portal` Service is dependent on `Backend Prometheus Service` and `Translations`.
 
-## Enabling Service Dependency Based De-duplication
+## Enabling Service Dependency Based Deduplication
 
-Once you have defined the Service Dependencies, you can set a Service Dependency Based De-duplication rule which would de-duplicate all incoming alerts for the chosen Service against the latest open incident of its Service Dependencies.
+Once you have defined the Service Dependencies, you can set a Service Dependency Based Deduplication rule which would deduplicate all incoming alerts for the chosen Service against the latest open incident of its Service Dependencies.
 
 To do so: 
 
-**(1)** For the Service that has its dependencies defined, click on **More** and select **De-duplication Rules**
+**(1)** For the Service that has its dependencies defined, click on **More** and select **Deduplication Rules**
 
 ![](images/service-dependancy-based-deduplication_3.png)
 
-**(2)** For the De-duplication Rule that you want checked and applied for Service Dependency Based De-duplication, simply enable the checkbox **If this service and a service it depends on both have an incident, alert only once**. 
+**(2)** For the Deduplication Rule that you want checked and applied for Service Dependency Based Deduplication, simply enable the checkbox **If this service and a service it depends on both have an incident, alert only once**. 
 
-**Note:** This checkbox for every De-duplication Rule is disabled by default. 
+**Note:** This checkbox for every Deduplication Rule is disabled by default. 
 
 ![](images/service-dependancy-based-deduplication_4.png)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Note:</b>
-<br/><br/><p><b>1.</b> The Service Dependency Based De-duplication will de-duplicate any incoming alert against either a <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Triggered</code> or <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Acknowledged</code> incident only.
+<br/><br/><p><b>1.</b> The Service Dependency Based Deduplication will deduplicate any incoming alert against either a <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Triggered</code> or <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">Acknowledged</code> incident only.
 <br/><br/>
-<b>2.</b> Service Dependency based De-duplication is rule-specific and can be enabled for any number of De-duplication Rules that are defined for a Service.</p>
+<b>2.</b> Service Dependency based Deduplication is rule-specific and can be enabled for any number of Deduplication Rules that are defined for a Service.</p>
 {{site.data.alerts.end}}
 
-## Enabling Service Dependency Based De-duplication for a Specific Service Dependency 
+## Enabling Service Dependency Based Deduplication for a Specific Service Dependency 
 
-In cases where you would like Squadcast to consider just one of the many dependencies for a Service for Service Dependency Based De-duplication, you can follow the method below. 
+In cases where you would like Squadcast to consider just one of the many dependencies for a Service for Service Dependency Based Deduplication, you can follow the method below. 
 
 Along with enabling the Service Dependency checkbox as shown above, you will need to add the below condition to the rule:
 

@@ -105,18 +105,18 @@ entries:
             output: web, pdf
 
             subfolders:
-              - title: Alert De-duplication Rules
+              - title: Alert Deduplication Rules
                 output: web
                 subfolderitems:
-                  - title: Alert De-duplication Rules
+                  - title: Alert Deduplication Rules
                     url: /de-duplication-rules
                     output: web, pdf
 
-                  - title: Incident Status Based De-duplication
+                  - title: Incident Status Based Deduplication
                     url: /status-based-deduplication
                     output: web, pdf
 
-                  - title: Service Dependency Based De-duplication
+                  - title: Service Dependency Based Deduplication
                     url: /service-dependency-based-deduplication
                     output: web, pdf
 
