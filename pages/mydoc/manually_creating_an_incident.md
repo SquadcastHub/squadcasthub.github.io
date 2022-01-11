@@ -31,7 +31,7 @@ Click on **+** right next to the **Actions** dropdown tab
 ![](images/manual3.png)
 
 - **Incident Title** - This would be the title/message of the incident being created
-- **Incident Description** - This would be the description of the Incident being created. This is an optional field
+- **Incident Description** - This would be the description of the Incident being created. This is an optional field.
 - **Service** - Select the relevant **Service** to which this incident would be mapped
 - **Assigned To** - Upon choosing the **Service**, the default **Escalation Policy** associated with the **Service** would be auto-filled. You can choose to manually update the **Assigned To** field to a different **Escalation Policy** or a specific **User** or **Squad** in your Team
 - **Tags** 
