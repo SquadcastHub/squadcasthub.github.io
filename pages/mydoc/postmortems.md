@@ -47,6 +47,30 @@ To create a Postmortem for a **resolved incident**:
 
 ![](images/postmortem_9.png){: style="max-width: 30%" }
 
+### Adding Attachments
+
+You can add a variety of file types as an attachment in the Postmortem of an incident.
+
+To attach a file, drag and drop the file to the markdown editor. You can also copy-paste the file directly in the markdown editor.
+
+The maximum size for a single single file is 10 MB (for upload). You can upload a maximum of 5 files at a time.
+
+The storage limit for an organization depends on the plan:
+
+- For Essential plan - the limit is 50 MB
+- For Pro and Enterprise plans - the limit is unlimited
+
+File uploads won’t work if the plan limit has been reached. File once uploaded cannot be deleted.
+
+The supported file types are:
+
+- Images (.png, .jpg, .jpeg)
+- Word Processors (.doc, .docx, .odt, pages)
+- Spreadsheets (.xls, .xlsx, numbers)
+- PDFs (.pdf)
+- Presentations (.ppt, .pptx. .odp)
+- Miscellaneous (.log, .txt, .odv, .csv, key, json, log)
+
 ### Updating a Postmortem
 
 We understand that conducting Postmortems and documenting it is an iterative process in some cases. In Squadcast, once a Postmortem is created, users with the right permissions can update the Postmortems as well.
