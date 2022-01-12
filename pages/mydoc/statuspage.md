@@ -194,6 +194,30 @@ These updates will be reflected in the selected Status Page under **Incident His
 
 ![](images/statuspage_23.png)
 
+### Adding Attachments
+
+You can add a variety of file types as an attachment to the Status Page update for an incident.
+
+To attach a file, drag and drop the file to the markdown editor. You can also copy-paste the file directly in the markdown editor.
+
+The maximum size for a single single file is 10 MB (for upload). You can upload a maximum of 5 files at a time.
+
+The storage limit for an organization depends on the plan:
+
+- For Essential plan - the limit is 50 MB
+- For Pro and Enterprise plans - the limit is unlimited
+
+File uploads won’t work if the plan limit has been reached. File once uploaded cannot be deleted.
+
+The supported file types are:
+
+- Images (.png, .jpg, .jpeg)
+- Word Processors (.doc, .docx, .odt, pages)
+- Spreadsheets (.xls, .xlsx, numbers)
+- PDFs (.pdf)
+- Presentations (.ppt, .pptx. .odp)
+- Miscellaneous (.log, .txt, .odv, .csv, key, json, log)
+
 ## Enable Subscriptions to your Status Page
 
 To enable subscriptions to your Status Page, go to **Edit**, click on **Subscriptions** and check the **Enable Subscriptions** checkbox. **Subscribe** option will now show up on your public Status Page. You can have your end users **subscribe** for incident update notifications from the Status Page.
