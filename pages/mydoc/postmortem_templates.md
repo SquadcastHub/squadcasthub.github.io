@@ -44,6 +44,30 @@ Refer to any of the pre-defined templates for the templating syntax.
 
 Click on **Add** to save the new template or **Update** to save the changes in an existing template
 
+### Adding Attachments
+
+You can add a variety of file types as an attachment in the Postmortem Template.
+
+To attach a file, drag and drop the file to the markdown editor. You can also copy-paste the file directly in the markdown editor.
+
+The maximum size for a single single file is 10 MB (for upload). You can upload a maximum of 5 files at a time.
+
+The storage limit for an organization depends on the plan:
+
+- For Essential plan - the limit is 50 MB
+- For Pro and Enterprise plans - the limit is unlimited
+
+File uploads won’t work if the plan limit has been reached. File once uploaded cannot be deleted.
+
+The supported file types are:
+
+- Images (.png, .jpg, .jpeg)
+- Word Processors (.doc, .docx, .odt, pages)
+- Spreadsheets (.xls, .xlsx, numbers)
+- PDFs (.pdf)
+- Presentations (.ppt, .pptx. .odp)
+- Miscellaneous (.log, .txt, .odv, .csv, key, json, log)
+
 ### How-to-video: Creating a Postmortem Template
 
 <div class="wistia_responsive_padding" style="padding:53.75% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="https://fast.wistia.net/embed/iframe/yz4mmxhi31?videoFoam=true" title="Create Postmortem Template Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
