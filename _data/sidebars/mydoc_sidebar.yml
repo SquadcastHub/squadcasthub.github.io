@@ -553,6 +553,10 @@ entries:
                     url: /redash
                     output: web, pdf
 
+                  - title: Redgate SQL Monitor
+                    url: /redgate-sql-monitor
+                    output: web, pdf
+
                   - title: Rollbar
                     url: /rollbar
                     output: web, pdf
