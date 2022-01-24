@@ -30,13 +30,13 @@ Route detailed alerts from Rundeck to the right users in Squadcast.
 
 ## Create a Squadcast Webhook Notification in Rundeck
 
-**(1)** Login to your Rundeck dashboard and head over to the **JOBS**. You can either create a new Job or edit an existing one. click on **Job Actions**
+**(1)** Login to your Rundeck dashboard and head over to the **JOBS** section. You can either create a new Job or edit an existing one.
 
-a.) To create a new Job, click on **Job Actions**. Then click on **NewJob**.
+a.) To create a new Job, click on **Job Actions**. Then click on **New Job**.
 
 ![](images/rundeck_2.png)
 
-b.) To edit an existing Job, click on the Job you want to edit. Then click on **Action** and click on **Edit this Job**.
+b.) To edit an existing Job, click on the Job you want to edit. Then click on **Action** and on **Edit this Job**.
 
 ![](images/rundeck_3.png)
 
@@ -48,7 +48,7 @@ b.) To edit an existing Job, click on the Job you want to edit. Then click on **
 
 ![](images/rundeck_5.png)
 
-**(4)** Paste the previously copied Squadcast Webhook URL in the placeholder for **URL(s)**. Select the Payload Format as **JSON** and Method as **POST**. Then click on Save
+**(4)** Paste the previously copied Squadcast Webhook URL in the placeholder for **URL(s)**. Select the Payload Format as **JSON** and Method as **POST**. Then click on Save.
 
 ![](images/rundeck_6.png)
 
