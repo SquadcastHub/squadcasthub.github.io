@@ -557,6 +557,10 @@ entries:
                     url: /rollbar
                     output: web, pdf
 
+                  - title: Rundeck
+                    url: /rundeck
+                    output: web, pdf
+
                   - title: Runscope
                     url: /runscope
                     output: web, pdf
