@@ -30,30 +30,30 @@ Route detailed alerts from Rundeck to the right users in Squadcast.
 
 ## Create a Squadcast Webhook Notification in Rundeck
 
-**(1)** Login to your Rundeck dashboard and head over to the **JOBS** section. You can either create a new Job or edit an existing one.
+**(1)** Login to your Rundeck dashboard and head over to the **JOBS** section. You can either create a new Job or edit an existing one
 
-a.) To create a new Job, click on **Job Actions**. Then click on **New Job**.
+**(a)** To create a new job, click on **Job Actions**. Then click on **New Job**
 
 ![](images/rundeck_2.png)
 
-b.) To edit an existing Job, click on the Job you want to edit. Then click on **Action** and on **Edit this Job**.
+**(b)** To edit an existing job, click on the job you want to edit. Then click on **Action** and on **Edit this Job**
 
 ![](images/rundeck_3.png)
 
-**(2)** Navigate to the **Notifications** tab, then select when Rundeck should send Alert to Squadcast. Then click on **+Add Notification**.
+**(2)** Navigate to the **Notifications** tab, then select when Rundeck should send alerts to Squadcast. Next, click on **+Add Notification**
 
 ![](images/rundeck_4.png)
 
-**(3)** Click on **Select a Notification** and select **Send Webhook** as **Notification Type**.
+**(3)** Click on **Select a Notification** and select **Send Webhook** as the **Notification Type**
 
 ![](images/rundeck_5.png)
 
-**(4)** Paste the previously copied Squadcast Webhook URL in the placeholder for **URL(s)**. Select the Payload Format as **JSON** and Method as **POST**. Then click on Save.
+**(4)** Paste the previously copied Squadcast Webhook URL in the placeholder for **URL(s)**. Select the Payload Format as **JSON** and Method as **POST**. Then, click on **Save**
 
 ![](images/rundeck_6.png)
 
 
-That's it, you are good to go! Your Rundeck integration is now complete. Whenever Rundeck fires an alert, an incident will be created in Squadcast for it. Also, when a Job is completed in Rundeck, the corresponding incident gets **auto-resolved** in Squadcast.
+That's it, you are good to go! Your Rundeck integration is now complete. Whenever Rundeck fires an alert, an incident will be created in Squadcast for it. Also, when a job is completed in Rundeck, the corresponding incident gets **auto-resolved** in Squadcast.
 
 
 <style>.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}</style><div style="height: 100%;width: 100%;display: flex;margin-top: 40px;"><div style="margin: auto;"><div style="height: 100%;width: 100%;display: flex;padding: 20px;border: 1px solid #e7e9ed;border-radius: 8px;"><div style="margin: auto;"><div style="text-align: center;padding-bottom: 20px;font-size: 18px;line-height: 24px;font-family: Metropolis, sans-serif;color: #0d2149;">Ready to try Squadcast?</div><a href="https://app.squadcast.com/register" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #0f61dd;font-family: Metropolis,sans-serif;color: #fff;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #fff;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Start Now For Free!</a>   <a href="https://calendly.com/renuka-squadcast/30min" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #fff;font-family: Metropolis,sans-serif;color: #0f61dd;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #0f61dd;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;border: 1px solid #0f61dd;margin-left: 20px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Schedule a Demo</a></div></div></div></div>
