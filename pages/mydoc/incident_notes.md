@@ -37,7 +37,8 @@ First, select the **Team** from the team picker on the top.
 
 ### Mentioning Users in Notes
 
-- Users can callout other users in the Team using the "@" symbol for important notes. This can also be used to inform users of a specific need, information or as a means to notify your **Stakeholders** on information pertaining to the status of an ongoing incident
+- Users can callout other users using the "@" symbol for important notes. This can also be used to inform users of a specific need, information or as a means to notify your **Stakeholders** on information pertaining to the status of an ongoing incident
+- Users can also notify other users in a particular Squad or a Team by "@" mentioning the Squad or Team name.
 
 ![](images/incident_notes_2.png)
 
