@@ -14,7 +14,7 @@ Route detailed alerts from Redgate SQL Monitor to the right users in Squadcast.
 
 ## Using Redgate SQL Monitor as an Alert Source
 
-**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service.
+**(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
 ![](images/alert_source_1.png)
 
@@ -30,15 +30,17 @@ Route detailed alerts from Redgate SQL Monitor to the right users in Squadcast.
 
 ## Create a Squadcast Webhook Alert in Redgate SQL Monitor
 
-**(1)** Login to your Redgate SQL Monitor dashboard. Head over to the **Configuration** tab. Then under **Alerts and Metrics**, select **Notification settings**.
+**(1)** Login to your Redgate SQL Monitor dashboard. Head over to the **Configuration** tab. Then under **Alerts and Metrics**, select **Notification settings**
 
 ![](images/redgate_sql_monitor_2.png)
 
-**(2)** Scroll to the **Webhook notifications** section, and choose when SQL Monitor should send messages to your Webhook.
+**(2)** Scroll to the **Webhook notifications** section, and choose when a SQL Monitor should send messages to your Webhook
 
 ![](images/redgate_sql_monitor_3.png)
 
-**(3)** Choose to send either the **Default message**. Paste the previously copied Squadcast Webhook URL in the placeholder for **URL**. You can also click on **Preview and test** to test the Alert.
+**(3)** You can choose to send the **Default message** itself by selecting the radio button. Paste the previously copied Squadcast Webhook URL in the placeholder for **URL**. 
+
+You can also click on **Preview and test** to test the alert. This will create a test incident in Squadcast.
 
 ![](images/redgate_sql_monitor_4.png)
 
