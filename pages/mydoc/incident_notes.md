@@ -38,13 +38,13 @@ First, select the **Team** from the team picker on the top.
 ### Mentioning Users in Notes
 
 - Users can callout other users using the "@" symbol for important notes. This can also be used to inform users of a specific need, information or as a means to notify your **Stakeholders** on information pertaining to the status of an ongoing incident
-- Users can also notify all the users in a particular Squad or a Team by "@" mentioning the Squad or the Team name.
+- Users can also notify all the members of a particular Squad or a Team by "@" mentioning the Squad or the Team name.
 
 ![](images/incident_notes_2.png)
 
 - Users who are currently on-call are indicated with a green dot against their name. In the above screenshot, you can see that **Diane Nyugen** is currently on-call
 
-- The user who is called out will get notified instantly via **Email** and **Push** notification on the Squadcast mobile app
+- The mentioned Users, Squad or Team members will get notified instantly via **Email** and **Push** notification on the Squadcast mobile app
 
 ![](images/incident_notes_3.png)
 
