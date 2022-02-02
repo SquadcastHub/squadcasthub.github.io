@@ -37,7 +37,7 @@ This page describes how to add Squadcast to G Suite and configure SSO-support wi
 
 ![](images/google_5.png)
 
-**(7)** Login to `app.squadcast.com` and navigate to the **Settings** > **Extensions**. Click the **Integrate** button under SSO and select the Google tab
+**(7)** Login to `app.squadcast.com` and navigate to the **Settings** > **Extensions**. Click the **Configure** button under SSO and select the Google tab
 
 ![](images/google_6.png)
 
