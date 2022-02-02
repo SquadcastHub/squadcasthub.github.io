@@ -240,7 +240,7 @@ On the Status Page itself, you will now notice a placeholder to enter Email addr
 
 **2. Webhook:** 
 
-You can subscribe to receive incident update notifications via Webhooks as well.
+You can subscribe to receive incident update notifications via Webhooks as well. You can also enter an email address which gets notified when the endpoint fails.
 
 ![](images/statuspage_25.png)
 
