@@ -29,9 +29,9 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 ## Setting up Okta SSO
 
-**(1)** Go to the Integrations tab from your Squadcast account sidebar and click on **Integrate** under SSO card.
+**(1)** Login to `app.squadcast.com` and navigate to the **Settings** > **Extensions**. Click the **Configure** button under SSO.
 
-![](images/okta_1.png)
+![](images/sso_new_button.png)
 
 **(2)** In the opened modal, select the **Okta** tab and click **Show configuration guide for Okta**.
 

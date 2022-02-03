@@ -24,9 +24,9 @@ Squadcast supports SAML 2.0 based Single Sign-On (SSO) login for Azure Active Di
 
 ### Setup Guide
 
-**(1)** Navigate to Extensions from the sidebar and click on **Integrate** in the SSO card
+**(1)** Login to `app.squadcast.com` and navigate to the **Settings** > **Extensions**. Click the **Configure** button under SSO.
 
-![](images/azure_squadcast_1.png)
+![](images/sso_new_button.png)
 
 **(2)** In the opened modal, select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**
 
