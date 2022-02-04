@@ -139,7 +139,7 @@ You can respond to a triggered incident by Acknowledging and Resolving it. You c
 
 ➕ **Add Extensions**
 
-Extensions are deeper integrations with tools where actions can be taken from within the platform to reflect on the tool as well. Within Squadcast, this is called **Integrations** and can be found on the navigation sidebar. You can find supported tools on this page to augment your incident management process. 
+Extensions are deeper integrations with tools where actions can be taken from within the platform to reflect on the tool as well. Within Squadcast, this is called **Extensions** and can be found on the navigation sidebar. You can find supported tools on this page to augment your incident management process. 
 
 Typically, extensions augment your incident management process by connecting with other tools where actions are required. Typically, ITSM, Communication, Web conferencing, Version Control, CI/CD, SSO tools would act as extensions.
 
@@ -149,15 +149,10 @@ Typically, extensions augment your incident management process by connecting wit
 
 Today the platform has the following Actions: 
 - [Circle CI ](circleci-actions)
-- [Squadcast Runbooks](squadcast-runbooks)
 - [JIRA Cloud ](jira-cloud)
 - [JIRA Server (on premise)](jira-server-on-premise)
 
-Some simple examples of actions are rebuilding your project, rolling back to the previous build, rebooting a server. You can choose to build a repository of any actions, even more complex ones to take action from Squadcast. 
-
-📜 **Create a Squadcast Runbook**
-
-[Squadcast Runbooks](squadcast-runbooks) are executable scripts that you can create and store within the platform to execute when repetitive incidents are triggered. You can execute Squadcast Runbooks from the **More Actions** button on the . incident page and resolve your incidents quickly and bring down your MTTR significantly. The link to the status of the script execution will be added to the timeline and you should be able to see the status of the same within Squadcast. To know more about how to configure your own Squadcast Runbook, [click here](squadcast-runbooks).
+Some simple examples of actions are rebuilding your project, rolling back to the previous build, rebooting a server. You can choose to build a repository of any actions, even more complex ones to take action from Squadcast.
 
 🔀 **Configure Routing Rules for automatic overrides**
 

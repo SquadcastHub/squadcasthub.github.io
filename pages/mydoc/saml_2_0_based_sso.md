@@ -18,9 +18,9 @@ Squadcast supports any SAML 2.0 based Single Sign On (SSO) and you can set it fo
 
 ### Setup Instructions
 
-**(1)** Navigate to the **Extensions** tab from your Squadcast account sidebar and click on **Integrate** under SSO card
+**(1)** Login to `app.squadcast.com` and navigate to the **Settings** > **Extensions**. Click the **Configure** button under SSO.
 
-![](images/saml_1.png)
+![](images/sso_new_button.png)
 
 **(2)** Select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**
 

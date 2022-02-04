@@ -59,7 +59,13 @@ colorofstate=%colorofstate&company=%company&comments=%comments&commentssensor=%c
 {{site.data.alerts.yellow-note-i-md}}
 **Note:**
 
-By default, the **SNI** field is set to **Do not send SNI (default)**. Ideally, this setting should work fine. However, we have seen that certain users of PRTG Network Monitor receive SSL Handshake related errors. In such cases, you can simply change the setting here to **Send SNI**. Doing so will solve for any SSL related errors that occur otherwise.
+By default, the **SNI** field is set to **Do not send SNI (default)**. Ideally, this setting should work fine. However, we have seen that certain users of PRTG Network Monitor receive SSL Handshake related errors. In such cases, you can simply change the setting here to **Send SNI**. 
+
+Then specify the **app.squadcast.com** as the **SNI Name**.
+
+![](images/prtg_note.png)
+
+Doing so will solve for any SSL related errors that occur otherwise.
 {{site.data.alerts.end}}
 
 **(5)** Finally click on the **Create** button to create the Notification Template

@@ -29,19 +29,21 @@ Squadcast will then process this information to create incidents for this servic
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-Now log in to your sentry account and go to your project settings.
+## Create a Squadcast Callback in Sentry
 
-Under alerts section, under settings tab, go to integrations and select webhook and under callback urls paste the url you received in step 4.
-
-Under alerts section under settings adjust the minimum delivery interval and maximum delivery interval.
+**(1)** Now log in to your Sentry account and go to your **Project Settings**. Under **Alerts** section of the **Settings** tab, go to Integrations and select webhook. Under **Callback URLs**, Paste the previously copied Squadcast Webhook URL
 
 ![](images/sentry_2.png)
 
-Under alerts section under rules tab, create a new rule with the following conditions:
+**(2)** Under **Alerts** section of the **Settings** tab, adjust the Minimum Delivery Interval and Maximum Delivery Interval
+
+![](images/sentry_3.png)
+
+**(3)** **Rules** tab under **Alerts** section, create a New Rule with the following conditions:
 
 1. When all of these conditions are met: An event is seen
 2. Take these actions at most once every 5 minutes for an issue: Send a notification via webhooks
 
-![](images/sentry_3.png)
+![](images/sentry_4.png)
 
 That's it! Your Sentry integration is now good to go.
