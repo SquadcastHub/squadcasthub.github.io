@@ -31,11 +31,11 @@ Squadcast will then process this information to create incidents for this servic
 
 ## Create a Squadcast Callback in Sentry
 
-**(1)** Now log in to your Sentry account and go to your **Project Settings**. Under **Alerts** section of the **Settings** tab, go to Integrations and select webhook. Under **Callback URLs**, Paste the previously copied Squadcast Webhook URL.
+**(1)** Now log in to your Sentry account and go to your **Project Settings**. Under **Alerts** section of the **Settings** tab, go to Integrations and select webhook. Under **Callback URLs**, Paste the previously copied Squadcast Webhook URL
 
 ![](images/sentry_2.png)
 
-**(2)** Under **Alerts** section of the **Settings** tab, adjust the Minimum Delivery Interval and Maximum Delivery Interval.
+**(2)** Under **Alerts** section of the **Settings** tab, adjust the Minimum Delivery Interval and Maximum Delivery Interval
 
 ![](images/sentry_3.png)
 

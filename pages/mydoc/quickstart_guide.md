@@ -191,6 +191,10 @@ You can create an incident postmortem from within an incident page once the inci
 
 ### 5. 😎 SRE Visibility & Insights
 
+💯 **Setup Service Level Objectives (SLOs)**
+
+The [Service Levels](service-levels) feature allows you to create Service Level Objectives (SLOs) for Service Level Indicators (SLIs) like latency,  memory and status codes. Any breach of SLOs for Services will trigger an incident and notify the relevant Users, [Squads](squads) (a group of Users) or [Schedules](adding-a-service-1) (on-call schedules). See how to configure [Service Levels →](service-levels).
+
 📊 **Use Analytics and Reports to Improve your Incident Response**
 
 The [Analytics page](analytics) helps you see how your organisation has performed in a given time period by providing you the hard numbers in easy to understand graphs and charts. You will be able to view the SLO dashboard, number of incidents by the state, MTTA and MTTR analysis. 
