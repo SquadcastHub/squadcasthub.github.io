@@ -67,6 +67,7 @@ Filter incidents by status by using the status drop-down and choosing the approp
 - Assigned To
 - Tags
 - Status
+- Postmortem
 
 ![](images/incident_list_8.png)
 
@@ -105,7 +106,6 @@ Learn more about each filter value [here](filter-incidents).
 - TTA (Time to Acknowledge)
 - TTR (Time to Resolve)
 - Activity Logs
-
 
 {{site.data.alerts.green-note-check}}
 <b>Export Incidents: Public API</b><br/><br/>

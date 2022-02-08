@@ -31,6 +31,7 @@ First, select the **Team** from the team picker on the top
 - Assigned To
 - Tags
 - Status
+- Postmortem
 
 ![](images/incident_list_8.png)
 
@@ -116,3 +117,11 @@ Filter Incident by **[Incident Status](dashboard-metrics#incident-state-metric)*
 Select the *Statuses* of your choice to filter out incidents by statuses.
 
 ![](images/filter_12.png)
+
+### Postmortem
+
+Filter incidents by checking for the presence or absence of a Postmortem being created and associated with them. Select the options *Included* **or** *Excluded* accordingly after selecting the *Postmortem* option from the filter drop-down.
+
+![](images/filter_16.png)
+
+![](images/filter_17.png)
