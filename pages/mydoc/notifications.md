@@ -164,7 +164,25 @@ Even if your iOS mobile device is on Do Not Disturb mode, you will now continue 
 
 ## Bypass Do Not Disturb (DND) for Squadcast Mobile App
 
-This feature is under development. We will be rolling this out shortly.
+Users can choose to override the DND settings on their mobile phones and receive critical incident notifications from Squadcast via Push. To do so, in the Squadcast mobile app:
+
+**(1)** Head over to **My Profile**
+
+**(2)** Enable the **Allow Critical Notifications** toggle
+
+![](images/notifications_override_dnd_1.png)
+
+{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+If in case you have declined critical alerts from the pop-up dialog in the Squadcast iOS app, then you can simply navigate to the settings for the Squadcast app on your mobile device and toggle critical alerts on from there.
+
+![](images/notifications_override_dnd_2.png)
+
+![](images/notifications_override_dnd_3.png)
+
+![](images/notifications_override_dnd_4.png)
+{{site.data.alerts.end}}
 
 ## Phone Calls and SMS Support
 
