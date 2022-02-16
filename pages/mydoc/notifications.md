@@ -172,6 +172,18 @@ Users can choose to override the DND settings on their mobile phones and receive
 
 ![](images/notifications_override_dnd_1.png)
 
+{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+If in case you have declined critical alerts from the pop-up dialog in the Squadcast iOS app, then you can simply navigate to the settings for the Squadcast app on your mobile device and toggle critical alerts on from there.
+
+![](images/notifications_override_dnd_2.png)
+
+![](images/notifications_override_dnd_3.png)
+
+![](images/notifications_override_dnd_4.png)
+{{site.data.alerts.end}}
+
 ## Phone Calls and SMS Support
 
 We use third party providers to send out SMS and Phone call incident notifications. SMS and Phone call notifications are supported for all the countries across the world except for:
