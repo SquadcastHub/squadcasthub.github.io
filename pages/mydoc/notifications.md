@@ -172,7 +172,25 @@ Users can choose to override the DND settings on their mobile phones and receive
 
 ![](images/notifications_override_dnd_1.png)
 
+On an Android device, follow the steps as indicated below:
+
+**(1)** Tap on **Allow Critical Notifications**
+
+![](images/notifications_override_dnd_5.png)
+
+**(2)** You will be redirected to app settings page
+
+![](images/notifications_override_dnd_6.png)
+
+**(3)** Tap on **Manage Notifications** > **Tap on Incidents**
+
+![](images/notifications_override_dnd_7.png)
+
+**(4)** Toggle **Allow notifications when Do not Disturb** on
+
+![](images/notifications_override_dnd_8.png)
 {site.data.alerts.yellow-note-i-md}}
+
 **Note:**
 
 If in case you have declined critical alerts from the pop-up dialog in the Squadcast iOS app, then you can simply navigate to the settings for the Squadcast app on your mobile device and toggle critical alerts on from there.
@@ -182,6 +200,29 @@ If in case you have declined critical alerts from the pop-up dialog in the Squad
 ![](images/notifications_override_dnd_3.png)
 
 ![](images/notifications_override_dnd_4.png)
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+On MIUI devices, notification sound also needs to be enabled.
+
+![](images/notifications_override_dnd_9.png)
+{{site.data.alerts.end}}
+
+**Important:**
+
+We have tested this feature on most of the iOS and Android devices in the market today. The below tables indicate the behaviour observed:
+
+| iOS              | Normal | DND | Low Volume | Vibrate | Silent |
+| Any iOS device   |    ✓   |  ✓  |     ✓      |    ✓    |    ✕   |
+
+| Android | Override DND + Ring | Override DND + Vibrate | Override DND + Silent |
+| Oneplus |       ✓             |            ✕           |           ✕           |
+| MIUI    |       ✓             |            ✓           |           ✓           |
+| Realme  |       ✓             |            ✓           |           ✓           |
+| Pixel   |       ✓             |            ✓           |           ✓           | 
+| Samsung |       ✓             |            ✓           |           ✕           |
+
+We intend to make this feature work as effectively as possible, as and when the OS will allow us to do so.
 {{site.data.alerts.end}}
 
 ## Phone Calls and SMS Support
