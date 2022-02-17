@@ -20,7 +20,7 @@ Route detailed alerts from Solarwinds Orion to the right users in Squadcast.
 
 **(2)** Search for **Solarwinds Orion** from the Alert Source drop-down and copy the Webhook URL
 
-![](images/redgate_sql_monitor_1.png)
+![](images/solarwinds_orion_1.png)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b><br/><br/>
