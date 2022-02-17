@@ -8,7 +8,7 @@ permalink: docs/linear
 folder: mydoc
 ---
 
-[Linear](https://linear.app/) is an issue tracking tool helps users to streamline software projects, sprints, tasks, and bug tracking.
+[Linear](https://linear.app/) is an issue tracking tool that helps users to streamline software projects, sprints, tasks, and bug tracking.
 
 Route detailed alerts from Linear to the right users in Squadcast.
 
