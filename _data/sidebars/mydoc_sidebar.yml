@@ -432,6 +432,10 @@ entries:
                   - title: Honeybadger
                     url: /honeybadger
                     output: web, pdf
+
+                  - title: Honeycomb
+                    url: /honeycomb
+                    output: web, pdf
                   
                   - title: Hyperping
                     url: /hyperping
