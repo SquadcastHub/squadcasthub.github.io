@@ -40,8 +40,13 @@ sensuctl asset add sensu/sensu-squadcast-handler
 
 #### Installation from source
 
-Download the latest version of the sensu-squadcast-handler from releases, or create an executable script by cloning the [sensu-squadcast-handler](https://github.com/SquadcastHub/sensu-squadcast-handler.git) repository
+Download the latest version of the sensu-squadcast-handler from releases, or create an executable script by cloning the [sensu-squadcast-handler](https://github.com/SquadcastHub/sensu-squadcast-handler.git) repository. 
 From the local path of the sensu-squadcast-handler repository run the following command:
+
+{{site.data.alerts.yellow-note-i}}
+<b>Important</b><br/><br/>
+<p>For the command mentioned below to work, you would need <b>Go Programming Language</b> installed beforehand.</p>
+{{site.data.alerts.end}}
 
 ```
 go build -o /usr/local/bin/sensu-squadcast-handler

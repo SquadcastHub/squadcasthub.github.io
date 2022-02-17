@@ -20,13 +20,9 @@ This page describes how to add Squadcast in AWS SSO Dashboard and configure SSO 
 
 ## Setup Instructions
 
-**(1)** Navigate to the **Extensions** tab from the sidebar in your Squadcast account
+**(1)** Login to `app.squadcast.com` and navigate to the **Settings** > **Extensions**. Click the **Configure** button under SSO.
 
-![](images/aws_sso_1_a.png)
-
-Then, click on **Integrate** under **SSO**
-
-![](images/aws_sso_1_b.png)
+![](images/sso_new_button.png)
 
 **(2)** Select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**
 
