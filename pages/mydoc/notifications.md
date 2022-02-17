@@ -189,7 +189,6 @@ On an Android device, follow the steps as indicated below:
 **(4)** Toggle **Allow notifications when Do not Disturb** on
 
 ![](images/notifications_override_dnd_8.png)
-{site.data.alerts.yellow-note-i-md}}
 
 **Note:**
 
@@ -200,6 +199,7 @@ If in case you have declined critical alerts from the pop-up dialog in the Squad
 ![](images/notifications_override_dnd_3.png)
 
 ![](images/notifications_override_dnd_4.png)
+
 {{site.data.alerts.yellow-note-i-md}}
 **Note:**
 
@@ -220,10 +220,9 @@ We have tested this feature on most of the iOS and Android devices in the market
 | MIUI    |       ✓             |            ✓           |           ✓           |
 | Realme  |       ✓             |            ✓           |           ✓           |
 | Pixel   |       ✓             |            ✓           |           ✓           | 
-| Samsung |       ✓             |            ✓           |           ✕           |
+| Samsung |       ✓             |            ✓           |           ✓           |
 
 We intend to make this feature work as effectively as possible, as and when the OS will allow us to do so.
-{{site.data.alerts.end}}
 
 ## Phone Calls and SMS Support
 
