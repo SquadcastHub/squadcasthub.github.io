@@ -10,7 +10,7 @@ folder: mydoc
 
 [Honeycomb](https://www.honeycomb.io/) is an application monitoring tool that helps DevOps and SRE teams to operate more efficiently by offering amazing observability, rich and blazing fast query, intuitive UI/UX and team collaboration.
 
-Route detailed alerts from Domotz to the right users in Squadcast.
+Route detailed alerts from Honeycomb to the right users in Squadcast.
 
 ## Using Honeycomb as an Alert Source
 
