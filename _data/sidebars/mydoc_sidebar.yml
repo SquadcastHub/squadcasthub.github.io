@@ -473,6 +473,10 @@ entries:
                     url: /librenms
                     output: web, pdf
 
+                  - title: Linear
+                    url: /linear
+                    output: web, pdf
+
                   - title: LogDNA
                     url: /logdna
                     output: web, pdf
