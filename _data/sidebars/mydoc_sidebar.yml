@@ -621,6 +621,10 @@ entries:
                     url: /solarwinds-appoptics
                     output: web, pdf
 
+                  - title: SolarWinds Orion
+                    url: /solarwinds-orion
+                    output: web, pdf
+
                   - title: Splunk
                     url: /splunk
                     output: web, pdf
