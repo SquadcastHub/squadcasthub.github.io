@@ -149,3 +149,13 @@ Errors encountered when taking actions on incident:
 ![](images/msteams_unauthorized_error.png)
 
 This error is either because you are not part a of the organization for which this incident is triggerd in Squadcast, or you are not authorised to take this action.
+
+## FAQs
+
+**(1)** What happens when I link multiple organizations with the same [tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant)?
+
+If you link multiple organizations with the same [tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant), then the previous organization-tenant mapping will get deactivated.
+
+**(2)** What does unlinking an account lead to?
+
+Unlinking an account deactivates all the organizations for a given [tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant).
