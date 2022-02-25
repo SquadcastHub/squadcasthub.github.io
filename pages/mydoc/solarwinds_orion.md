@@ -1,24 +1,24 @@
 ---
 title: SolarWinds Orion
 summary: "Send alerts to Squadcast from SolarWinds Orion"
-tags: [integration, solarwinds orion]
+tags: [integration, solarwinds orion]   
 keywords:
 sidebar: mydoc_sidebar
 permalink: docs/solarwinds-orion
 folder: mydoc
 ---
 
-[Solarwinds Orion](https://www.solarwinds.com/) Platform is a powerful, scalable infrastructure monitoring and management platform designed to simplify IT administration for on-premises, hybrid, and software as a service (SaaS) environments in a single pane of glass.
+[SolarWinds Orion](https://www.solarwinds.com/) is a powerful, scalable infrastructure monitoring and management platform designed to simplify IT administration for on-premises, hybrid, and software as a service (SaaS) environments in a single pane of glass.
 
 Route detailed alerts from Solarwinds Orion to the right users in Squadcast.
 
-## Using Solarwinds Orion as an Alert Source
+## Using SolarWinds Orion as an Alert Source
 
 **(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
 ![](images/alert_source_1.png)
 
-**(2)** Search for **Solarwinds Orion** from the Alert Source drop-down and copy the Webhook URL
+**(2)** Search for **SolarWinds Orion** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/solarwinds_orion_1.png)
 
@@ -28,23 +28,23 @@ Route detailed alerts from Solarwinds Orion to the right users in Squadcast.
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-## Create a Squadcast Webhook Alert in Solarwinds Orion
+## Create a Squadcast Webhook Alert in SolarWinds Orion
 
-**(1)** Login to your Solarwinds Orion dashboard. Head over to the **ALERTS & ACTIVITY** tab. Then select **Alerts**
+**(1)** Login to your SolarWinds Orion dashboard. Head over to the **ALERTS & ACTIVITY** tab. Then select **Alerts**
 
 ![](images/solarwinds_orion_2.png)
 
-**(2)** Click on **Manage Alerts**, then under **ALERT MANAGER** section click on **ADD NEW ALERT**
+**(2)** Click on **Manage Alerts**, then under the **ALERT MANAGER** section, click on **ADD NEW ALERT**
 
 ![](images/solarwinds_orion_3.png)
 
 ![](images/solarwinds_orion_4.png)
 
-**(3)** Under Alert Properties, set the **Name of alert definition** and the **Description of alert definition**. Toggle the **Enabled (On/Off)** switch to **ON** and click on **NEXT**.
+**(3)** Under Alert Properties, set the **Name of alert definition** and the **Description of alert definition**. Toggle the **Enabled (On/Off)** switch to **ON** and click on **NEXT**
 
 ![](images/solarwinds_orion_5.png)
 
-**(4)** Set the **Trigger Conditions** and **Reset Conditions** and click on **NEXT**.
+**(4)** Set the **Trigger Conditions** and **Reset Conditions** and click on **NEXT**
 
 ![](images/solarwinds_orion_6.png)
 
@@ -129,6 +129,6 @@ Status=Resolved
 ![](images/solarwinds_orion_14.png)
 
 
-That's it, you are good to go! Your Solarwinds Orion integration is now complete. Whenever Solarwinds Orion fires an alert through **Trigger Actions**, an incident will be created in Squadcast for it. Also, when an alert has been **RESET** in Solarwinds Orion, the corresponding incident gets **auto-resolved** in Squadcast.
+That's it, you are good to go! Your SolarWinds Orion integration is now complete. Whenever SolarWinds Orion fires an alert through **Trigger Actions**, an incident will be created in Squadcast for it. Also, when an alert has been **RESET** in SolarWinds Orion, the corresponding incident gets **auto-resolved** in Squadcast.
 
 <style>.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}</style><div style="height: 100%;width: 100%;display: flex;margin-top: 40px;"><div style="margin: auto;"><div style="height: 100%;width: 100%;display: flex;padding: 20px;border: 1px solid #e7e9ed;border-radius: 8px;"><div style="margin: auto;"><div style="text-align: center;padding-bottom: 20px;font-size: 18px;line-height: 24px;font-family: Metropolis, sans-serif;color: #0d2149;">Ready to try Squadcast?</div><a href="https://app.squadcast.com/register" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #0f61dd;font-family: Metropolis,sans-serif;color: #fff;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #fff;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Start Now For Free!</a>   <a href="https://calendly.com/renuka-squadcast/30min" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #fff;font-family: Metropolis,sans-serif;color: #0f61dd;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #0f61dd;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;border: 1px solid #0f61dd;margin-left: 20px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Schedule a Demo</a></div></div></div></div>
