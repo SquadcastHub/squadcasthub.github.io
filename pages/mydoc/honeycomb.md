@@ -8,7 +8,7 @@ permalink: docs/honeycomb
 folder: mydoc
 ---
 
-[Honeycomb](https://www.honeycomb.io/) is an application monitoring tool that helps DevOps and SRE teams to operate more efficiently by offering amazing observability, rich and blazing fast query, intuitive UI/UX and team collaboration.
+[Honeycomb](https://www.honeycomb.io/) is an application monitoring tool that helps DevOps and SRE teams to operate more efficiently by offering rich observability and intuitive team collaboration.
 
 Route detailed alerts from Honeycomb to the right users in Squadcast.
 
@@ -42,7 +42,7 @@ Route detailed alerts from Honeycomb to the right users in Squadcast.
 
 ![](images/honeycomb_4.png)
 
-**(4)** Under the **Triggers** tab, click on **New Trigger**. Choose the dataset of your choice and click on **Make Trigger**.
+**(4)** Under the **Triggers** tab, click on **New Trigger**. Choose the dataset of your choice and click on **Make Trigger**
 
 ![](images/honeycomb_5.png)
 
