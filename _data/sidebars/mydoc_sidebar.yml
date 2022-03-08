@@ -353,6 +353,10 @@ entries:
                     url: /coralogix
                     output: web, pdf
 
+                  - title: Cronitor
+                    url: /cronitor
+                    output: web, pdf
+
                   - title: Datadog
                     url: /datadog
                     output: web, pdf
