@@ -281,6 +281,10 @@ entries:
                     url: /amazon-cloudwatch-aws
                     output: web, pdf
 
+                  - title: Amazon RDS (AWS)
+                    url: /amazon-rds
+                    output: web, pdf
+
                   - title: AWS CloudWatch Event Rules
                     url: /aws-cloudwatch-event-rules
                     output: web, pdf
