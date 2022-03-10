@@ -34,7 +34,7 @@ Route detailed alerts from Kibana to the right users in Squadcast.
 
 ### In Kibana: Create a Squadcast webhook alert
 
-**(1)** From the navigation bar on the left, select **Management** then **Stack Management**
+**(1)** From the navigation bar on the left, select **Management** and then, select **Stack Management**
 
 ![](images/kibana_2.png)
 
@@ -42,30 +42,31 @@ Route detailed alerts from Kibana to the right users in Squadcast.
 
 ![](images/kibana_3.png)
 
-**(3)** Goto **Connectors**, click on **Create connector**
+**(3)** Navigate to **Connectors** and click on **Create Connector**
 
 ![](images/kibana_4.png)
 
-**(4)** Select **Webhook** as connector
+**(4)** Select **Webhook** as a Connector
 
 ![](images/kibana_5.png)
 
-**(5)** Provide any Name for **Connector name**, choose **Method** as `POST` and paste previously copied Squadcast webhook URL in **URL** field and click on **Save**
+**(5)** Provide a name for **Connector name**, choose **Method** as `POST` and paste the previously copied Squadcast Webhook URL in the **URL** field. Click on **Save**
 
 ![](images/kibana_6.png)
 
-**(6)** Goto **Rules** and click on **Create Rules**, Provide any name for rule and select any from below supported rules:
-    (a) APM AND USER EXPERIENCE
-    (b) LOGS
-    (c) MACHINE LEARNING
-    (d) METRICS
-    (e) UPTIME
-    and select **Webhook** in **Action** section.
+**(6)** Head over to **Rules** and click on **Create Rules**. Provide a name for the rule and select any of the options from the supported rule scenarios:
+    **(a)** APM AND USER EXPERIENCE
+    **(b)** LOGS
+    **(c)** MACHINE LEARNING
+    **(d)** METRICS
+    **(e)** UPTIME
+
+Select **Webhook** in the **Action** section.
 
 ![](images/kibana_7.png)
 ![](images/kibana_8.png)
 
-**(7)** Select previously created connector in **Webhook connector** dropdown and paste below **JSON** in **Body** and click on **save**
+**(7)** Next, select the previously created Connector in the **Webhook connector** drop-down and paste the below **JSON** in the placeholder for **Body** and click on **Save**
 
 ```
 {
@@ -134,3 +135,5 @@ Route detailed alerts from Kibana to the right users in Squadcast.
 ![](images/Kibana_9.png)
 
 That is it, you are now good to go! Whenever an alert is generated in Kibana, an incident will be created in Squadcast.
+
+For any queries, please reach out to our Support team and they will be happy to assist you with your Kibana queries.
