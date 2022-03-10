@@ -8,7 +8,7 @@ permalink: docs/cronitor
 folder: mydoc
 ---
 
-[Cronitor](https://www.cronitor.io/) is a simple monitoring for every application that provides performance insights and uptime monitoring for cron jobs, websites, APIs and more.
+[Cronitor](https://www.cronitor.io/) is a simple monitoring tool for every application that provides performance insights and uptime monitoring for cron jobs, websites and APIs.
 
 Route detailed alerts from Cronitor to the right users in Squadcast.
 
@@ -34,7 +34,7 @@ Route detailed alerts from Cronitor to the right users in Squadcast.
 
 ![](images/cronitor_2.png)
 
-**(2)** Click on **Create Notification List**. Fill in the **Name**, **Unique Key** and Paste the previously copied Squadcast Webhook URL in the placeholder for **Webhook Endpoints**. Then click on **Save Notification List**
+**(2)** Click on **Create Notification List**. Fill in the **Name**, **Unique Key** and paste the previously copied Squadcast Webhook URL in the placeholder for **Webhook Endpoints**. Then click on **Save Notification List**
 
 ![](images/cronitor_3.png)
 
