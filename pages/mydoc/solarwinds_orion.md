@@ -10,6 +10,13 @@ folder: mydoc
 
 [SolarWinds Orion](https://www.solarwinds.com/) is a powerful, scalable infrastructure monitoring and management platform designed to simplify IT administration for on-premises, hybrid, and software as a service (SaaS) environments in a single pane of glass.
 
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+All of the SolarWinds offerings in the suite integrate with **SolarWinds Orion** to generate alerts. Users can use this document to set up SolarWinds Orion and route alerts from Orion, and other the offerings in the suite through Orion, to Squadcast.
+
+{{site.data.alerts.end}}
+
 Route detailed alerts from Solarwinds Orion to the right users in Squadcast.
 
 ## Using SolarWinds Orion as an Alert Source
