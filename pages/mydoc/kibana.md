@@ -68,7 +68,8 @@ Select **Webhook** in the **Action** section.
 
 **(7)** Next, select the previously created Connector in the **Webhook connector** drop-down and paste the below **JSON** in the placeholder for **Body** and click on **Save**
 
-```
+{% raw %}
+```json
 {
     "actionGroupName": "{{alert.actionGroupName}}",
     "actionSubgroup": "{{alert.actionSubgroup}}",
@@ -131,6 +132,7 @@ Select **Webhook** in the **Action** section.
     "expiringCount": "{{state.expiringCount}}"
 }
 ```
+{% endraw %}
 
 ![](images/Kibana_9.png)
 

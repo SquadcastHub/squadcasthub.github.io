@@ -68,30 +68,7 @@ Route detailed alerts from Solarwinds Orion to the right users in Squadcast.
 ![](images/solarwinds_orion_10.png)
 
 ```
-EventID=${N=Alerting;M=AlertObjectID}-${N=Alerting;M=AlertID}&
-AcknowledgeLink=${N=Alerting;M=AcknowledgeLink}&
-AcknowledgeUrl=${N=Alerting;M=AcknowledgeUrl}&
-Acknowledged=${N=Alerting;M=Acknowledged}&
-AcknowledgedBy=${N=Alerting;M=AcknowledgedBy}&
-AcknowledgedTime=${N=Alerting;M=AcknowledgedTime;F=DateTime}&
-AlertActiveID=${N=Alerting;M=AlertActiveID}&
-AlertDefID=${N=Alerting;M=AlertDefID}&
-AlertDescription=${N=Alerting;M=AlertDescription}&
-AlertDetailsUrl=${N=Alerting;M=AlertDetailsUrl}&
-AlertID=${N=Alerting;M=AlertID}&
-TimeOfDay=${N=Alerting;M=TimeOfDay}&
-Severity=${N=Alerting;M=Severity}&
-ObjectType=${N=Alerting;M=ObjectType}&
-Notes=${N=Alerting;M=Notes}&
-LongAlertTriggerTime=${N=Alerting;M=LongAlertTriggerTime;F=DateTime}&
-LastEdit=${N=Alerting;M=LastEdit;F=DateTime}&
-DownTime=${N=Alerting;M=DownTime}&
-AlertTriggerTime=${N=Alerting;M=AlertTriggerTime;F=DateTime}&
-AlertTriggerCount=${N=Alerting;M=AlertTriggerCount}&
-AlertObjectID=${N=Alerting;M=AlertObjectID}&
-AlertName=${N=Alerting;M=AlertName}&
-AlertMessage=${N=Alerting;M=AlertMessage}&
-Status=Triggered
+EventID=${N=Alerting;M=AlertObjectID}-${N=Alerting;M=AlertID}&AcknowledgeLink=${N=Alerting;M=AcknowledgeLink}&AcknowledgeUrl=${N=Alerting;M=AcknowledgeUrl}&Acknowledged=${N=Alerting;M=Acknowledged}&AcknowledgedBy=${N=Alerting;M=AcknowledgedBy}&AcknowledgedTime=${N=Alerting;M=AcknowledgedTime;F=DateTime}&AlertActiveID=${N=Alerting;M=AlertActiveID}&AlertDefID=${N=Alerting;M=AlertDefID}&AlertDescription=${N=Alerting;M=AlertDescription}&AlertDetailsUrl=${N=Alerting;M=AlertDetailsUrl}&AlertID=${N=Alerting;M=AlertID}&TimeOfDay=${N=Alerting;M=TimeOfDay}&Severity=${N=Alerting;M=Severity}&ObjectType=${N=Alerting;M=ObjectType}&Notes=${N=Alerting;M=Notes}&LongAlertTriggerTime=${N=Alerting;M=LongAlertTriggerTime;F=DateTime}&LastEdit=${N=Alerting;M=LastEdit;F=DateTime}&DownTime=${N=Alerting;M=DownTime}&AlertTriggerTime=${N=Alerting;M=AlertTriggerTime;F=DateTime}&AlertTriggerCount=${N=Alerting;M=AlertTriggerCount}&AlertObjectID=${N=Alerting;M=AlertObjectID}&AlertName=${N=Alerting;M=AlertName}&AlertMessage=${N=Alerting;M=AlertMessage}&Status=Triggered
 ```
 
 **(7)** Under **RESET ACTIONS**, click on **Add Action**. Then select **Send a GET or POST Request to a Web Server** and click on **CONFIGURE ACTION**
@@ -105,30 +82,7 @@ Status=Triggered
 ![](images/solarwinds_orion_13.png)
 
 ```
-EventID=${N=Alerting;M=AlertObjectID}-${N=Alerting;M=AlertID}&
-AcknowledgeLink=${N=Alerting;M=AcknowledgeLink}&
-AcknowledgeUrl=${N=Alerting;M=AcknowledgeUrl}&
-Acknowledged=${N=Alerting;M=Acknowledged}&
-AcknowledgedBy=${N=Alerting;M=AcknowledgedBy}&
-AcknowledgedTime=${N=Alerting;M=AcknowledgedTime;F=DateTime}&
-AlertActiveID=${N=Alerting;M=AlertActiveID}&
-AlertDefID=${N=Alerting;M=AlertDefID}&
-AlertDescription=${N=Alerting;M=AlertDescription}&
-AlertDetailsUrl=${N=Alerting;M=AlertDetailsUrl}&
-AlertID=${N=Alerting;M=AlertID}&
-TimeOfDay=${N=Alerting;M=TimeOfDay}&
-Severity=${N=Alerting;M=Severity}&
-ObjectType=${N=Alerting;M=ObjectType}&
-Notes=${N=Alerting;M=Notes}&
-LongAlertTriggerTime=${N=Alerting;M=LongAlertTriggerTime;F=DateTime}&
-LastEdit=${N=Alerting;M=LastEdit;F=DateTime}&
-DownTime=${N=Alerting;M=DownTime}&
-AlertTriggerTime=${N=Alerting;M=AlertTriggerTime;F=DateTime}&
-AlertTriggerCount=${N=Alerting;M=AlertTriggerCount}&
-AlertObjectID=${N=Alerting;M=AlertObjectID}&
-AlertName=${N=Alerting;M=AlertName}&
-AlertMessage=${N=Alerting;M=AlertMessage}&
-Status=Resolved
+EventID=${N=Alerting;M=AlertObjectID}-${N=Alerting;M=AlertID}&AcknowledgeLink=${N=Alerting;M=AcknowledgeLink}&AcknowledgeUrl=${N=Alerting;M=AcknowledgeUrl}&Acknowledged=${N=Alerting;M=Acknowledged}&AcknowledgedBy=${N=Alerting;M=AcknowledgedBy}&AcknowledgedTime=${N=Alerting;M=AcknowledgedTime;F=DateTime}&AlertActiveID=${N=Alerting;M=AlertActiveID}&AlertDefID=${N=Alerting;M=AlertDefID}&AlertDescription=${N=Alerting;M=AlertDescription}&AlertDetailsUrl=${N=Alerting;M=AlertDetailsUrl}&AlertID=${N=Alerting;M=AlertID}&TimeOfDay=${N=Alerting;M=TimeOfDay}&Severity=${N=Alerting;M=Severity}&ObjectType=${N=Alerting;M=ObjectType}&Notes=${N=Alerting;M=Notes}&LongAlertTriggerTime=${N=Alerting;M=LongAlertTriggerTime;F=DateTime}&LastEdit=${N=Alerting;M=LastEdit;F=DateTime}&DownTime=${N=Alerting;M=DownTime}&AlertTriggerTime=${N=Alerting;M=AlertTriggerTime;F=DateTime}&AlertTriggerCount=${N=Alerting;M=AlertTriggerCount}&AlertObjectID=${N=Alerting;M=AlertObjectID}&AlertName=${N=Alerting;M=AlertName}&AlertMessage=${N=Alerting;M=AlertMessage}&Status=Resolved
 ```
 
 **(9)** Finalize the Alert Details on the **SUMMARY** page and click on **SUBMIT**

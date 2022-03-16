@@ -476,6 +476,10 @@ entries:
                   - title: Kapacitor
                     url: /kapacitor
                     output: web, pdf
+                  
+                  - title: Kibana
+                    url: /kibana
+                    output: web, pdf
 
                   - title: LibreNMS
                     url: /librenms
