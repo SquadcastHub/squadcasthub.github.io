@@ -100,7 +100,7 @@ The maximum size for a single single file is 10 MB (for upload). You can upload 
 
 The storage limit for an organization depends on the plan:
 
-- For Essential plan - the limit is 50 MB
+- For Free plan - the limit is 50 MB
 - For Pro and Enterprise plans - the limit is unlimited
 
 File uploads won’t work if the plan limit has been reached. File once uploaded cannot be deleted.

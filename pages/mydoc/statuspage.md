@@ -204,7 +204,7 @@ The maximum size for a single single file is 10 MB (for upload). You can upload 
 
 The storage limit for an organization depends on the plan:
 
-- For Essential plan - the limit is 50 MB
+- For Free plan - the limit is 50 MB
 - For Pro and Enterprise plans - the limit is unlimited
 
 File uploads won’t work if the plan limit has been reached. File once uploaded cannot be deleted.
@@ -358,11 +358,11 @@ Yes, absolutely! You can add any information you want to provide maximum context
 #### 16. How many Status Pages can I add in my current plan? Can I add both Private and Public Status Pages?
 
 The number of **Public Status Pages** that can be added depend on the [Pricing Plan](https://www.squadcast.com/pricing) that your account is currently on.
-- **Essential Plan**: 1
+- **Free Plan**: 1
 - **Pro Plan**: 5
 - **Enterprise Plan**: Unlimited
 
-**Private Status Pages** can be added **only** in the **Pro and Enterprise Plans**, **not** in the **Essential Plan**.
+**Private Status Pages** can be added **only** in the **Pro and Enterprise Plans**, **not** in the **Free Plan**.
 
 #### 17. Is there a limit on the number of subscribers to the Status Page? Can I view the list of subscribers to my Status Page?
 
