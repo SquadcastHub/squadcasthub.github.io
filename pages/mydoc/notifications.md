@@ -214,8 +214,6 @@ For these particular forks of Android, one may not be able to set sounds from th
 **OnePlus Devices**
 
 OnePlus devices running on OS 10 do not fully support Override System Volume. These devices will not always override the system volume when the phone is on silent or vibrate mode.
-
-![](images/notifications_override_dnd_9.png)
 {{site.data.alerts.end}}
 
 **Important:**
