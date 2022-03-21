@@ -203,7 +203,17 @@ If in case you have declined critical alerts from the pop-up dialog in the Squad
 {{site.data.alerts.yellow-note-i-md}}
 **Note:**
 
-On MIUI devices, notification sound also needs to be enabled.
+**MIUI and EMUI (Huawei and Xiaomi devices)**
+
+For these particular forks of Android, one may not be able to set sounds from the respective High and Low Urgency Notification Settings. Instead, one may need to perform the following steps additionally:
+
+- Navigate to System Notification Settings
+- Make sure High and Low Urgency Notifications are enabled
+- From here, tap either High or Low Urgency to choose your sound
+
+**OnePlus Devices**
+
+OnePlus devices running on OS 10 do not fully support Override System Volume. These devices will not always override the system volume when the phone is on silent or vibrate mode.
 
 ![](images/notifications_override_dnd_9.png)
 {{site.data.alerts.end}}
