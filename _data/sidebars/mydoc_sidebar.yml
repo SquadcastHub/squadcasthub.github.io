@@ -280,6 +280,10 @@ entries:
                   - title: Amazon CloudWatch (AWS)
                     url: /amazon-cloudwatch-aws
                     output: web, pdf
+                  
+                  - title: Amazon EventBridge
+                    url: /amazon-eventbridge
+                    output: web, pdf
 
                   - title: Amazon RDS (AWS)
                     url: /amazon-rds
