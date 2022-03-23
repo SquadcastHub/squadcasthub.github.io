@@ -11,9 +11,11 @@ folder: mydoc
 
 We understand that most of your work happens over Slack. You can integrate Squadcast and Slack to collaborate efficiently with your team while working on incidents. Here's a brief of all that is possible.
 
+You can review Squadcast's Privacy Policy [here](https://www.squadcast.com/privacy).
+
 ## Prerequisites
 
-- Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast 
+- Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast
 
 ## Slack Notifications for Incidents
 
