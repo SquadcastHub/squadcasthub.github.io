@@ -7,6 +7,7 @@ summary: "Squadcast Actions lets you take actions directly from Squadcast as a r
 sidebar: mydoc_sidebar
 permalink: docs/what-are-squadcast-actions
 folder: mydoc
+published: false
 ---
 
 Squadcast Actions lets you take actions directly from Squadcast as a response to incidents by clicking the _More Actions_ button.

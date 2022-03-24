@@ -232,6 +232,14 @@ entries:
             url: /docs/incident-notes
             output: web, pdf
 
+      - title: Runbooks
+        output: web, pdf
+
+        folderitems:
+          - title: Runbooks
+            url: /docs/runbooks
+            output: web, pdf
+
       - title: Postmortems
         output: web, pdf
 
@@ -791,18 +799,6 @@ entries:
         folderitems:
           - title: Using the Mobile App
             url: /docs/using-the-mobile-app
-            output: web, pdf
-
-      - title: Squadcast Actions
-        output: web, pdf
-
-        folderitems:
-          - title: What are Squadcast Actions?
-            url: /docs/what-are-squadcast-actions
-            output: web, pdf
-
-          - title: Squadcast Runbooks (Deprecated)
-            url: /docs/squadcast-runbooks
             output: web, pdf
 
       - title: Terraform & API Documentation

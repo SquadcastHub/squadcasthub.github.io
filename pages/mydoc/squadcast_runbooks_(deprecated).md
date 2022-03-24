@@ -7,6 +7,7 @@ summary: "Execute Squadcast Runbooks on your servers directly from an incident"
 sidebar: mydoc_sidebar
 permalink: docs/squadcast-runbooks
 folder: mydoc
+published: false
 ---
 
 You can execute Squadcast Runbooks as one of the Squadcast Actions and resolve your incidents quickly and bring down your MTTR significantly.
