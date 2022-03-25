@@ -35,15 +35,25 @@ Squadcast will then process this information to create incidents for this servic
 
 ![](images/sentry_2.png)
 
-**(2)** Under **Alerts** section of the **Settings** tab, adjust the Minimum Delivery Interval and Maximum Delivery Interval
+**(2)** Under **Alerts** section of the **Settings** tab
+
+**(a)** Click on **Create Alert**
 
 ![](images/sentry_3.png)
 
-**(3)** **Rules** tab under **Alerts** section, create a New Rule with the following conditions:
-
-1. When all of these conditions are met: An event is seen
-2. Take these actions at most once every 5 minutes for an issue: Send a notification via webhooks
+**(b)** **Select Alert** and click on **Set Condition**
 
 ![](images/sentry_4.png)
+
+**(c)** Provide **Alert name**
+
+![](images/sentry_5.png)
+
+**(d)** Under **Set Conditions** section choose Notification via **WebHooks**
+
+![](images/sentry_6.png)
+
+When all of these conditions are met: An event is seen
+
 
 That's it! Your Sentry integration is now good to go.
