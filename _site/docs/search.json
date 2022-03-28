@@ -4,11 +4,33 @@
 
 
 {
-"title": "Add Users",
-"tags": "import-userstransfer-ownership",
+"title": "Accessing Postmortem",
+"tags": "",
 "keywords": "",
-"url": "/docs/add-users",
-"summary": "Adding multiple Users to your organization"
+"url": "/docs/accessing-postmortems",
+"summary": "Discover Postmortems that exist for incidents in your Team"
+}
+,
+
+
+
+{
+"title": "Add and Delete Users",
+"tags": "",
+"keywords": "",
+"url": "/docs/add-and-delete-users",
+"summary": "Adding and Deleting Users from your Organization"
+}
+,
+
+
+
+{
+"title": "Add and Remove Team Members",
+"tags": "",
+"keywords": "",
+"url": "/docs/add-and-remove-members",
+"summary": "Adding or removing an existing Team member"
 }
 ,
 
@@ -19,7 +41,7 @@
 "tags": "service",
 "keywords": "",
 "url": "/docs/adding-a-service-1",
-"summary": "Service - The core components of your infrastructure from which alerts are generated"
+"summary": "Services - The core components of your infrastructure/application for which alerts are generated"
 }
 ,
 
@@ -59,22 +81,44 @@
 
 
 {
-"title": "Analytics &amp; Reporting",
-"tags": "analyze metrics",
+"title": "Amazon EventBridge",
+"tags": "integrationamazon eventbridge",
 "keywords": "",
-"url": "/docs/analytics",
-"summary": "Analytics for measuring your Organization's performance"
+"url": "/docs/amazon-eventbridge",
+"summary": "Send alerts to Squadcast from Amazon EventBridge"
 }
 ,
 
 
 
 {
-"title": "Incident API",
+"title": "AWS RDS",
+"tags": "",
+"keywords": "",
+"url": "/docs/amazon-rds",
+"summary": "Send alerts from Amazon RDS to Squadcast"
+}
+,
+
+
+
+{
+"title": "Analytics &amp; Reporting",
+"tags": "analyze metrics",
+"keywords": "",
+"url": "/docs/analytics",
+"summary": "Analytics for measuring your Team's performance"
+}
+,
+
+
+
+{
+"title": "Incident Webhook",
 "tags": "integrationapi",
 "keywords": "",
 "url": "/docs/apiv2",
-"summary": "Send events to Squadcast using Incident API - Squadcast’s generic API Webhook"
+"summary": "Send events to create incidents in Squadcast using Incident Webhook (generic incoming Webhook)"
 }
 ,
 
@@ -191,6 +235,17 @@
 
 
 {
+"title": "Bitbucket",
+"tags": "",
+"keywords": "",
+"url": "/docs/bitbucket",
+"summary": "Send events to Squadcast from Bitbucket"
+}
+,
+
+
+
+{
 "title": "Bugsnag",
 "tags": "azure-monitorbuildkite",
 "keywords": "",
@@ -268,6 +323,28 @@
 
 
 {
+"title": "Cisco Meraki",
+"tags": "integrationcicso meraki",
+"keywords": "",
+"url": "/docs/cisco-meraki",
+"summary": "Send alerts to Squadcast from Cisco Meraki"
+}
+,
+
+
+
+{
+"title": "ClickUp",
+"tags": "",
+"keywords": "",
+"url": "/docs/clickup",
+"summary": "Send ticket details to Squadcast from ClickUp"
+}
+,
+
+
+
+{
 "title": "Conviva",
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
@@ -301,6 +378,17 @@
 
 
 {
+"title": "Create and Delete Teams",
+"tags": "",
+"keywords": "",
+"url": "/docs/create-and-delete-teams",
+"summary": "Creating a new Team or deleting an existing Team"
+}
+,
+
+
+
+{
 "title": "Create &amp; Manage Escalation Policies",
 "tags": "escalation policies",
 "keywords": "",
@@ -316,7 +404,18 @@
 "tags": "schedulesrotations",
 "keywords": "",
 "url": "/docs/schedules",
-"summary": "Roosters for your customer support engineers or on-call teams"
+"summary": "Rosters for your customer support engineers or on-call teams"
+}
+,
+
+
+
+{
+"title": "Cronitor",
+"tags": "integrationcronitor",
+"keywords": "",
+"url": "/docs/cronitor",
+"summary": "Send alerts to Squadcast from Cronitor"
 }
 ,
 
@@ -345,7 +444,7 @@
 
 
 {
-"title": "Alert De-duplication Rules",
+"title": "Alert Deduplication Rules",
 "tags": "deduplication",
 "keywords": "",
 "url": "/docs/de-duplication-rules",
@@ -372,6 +471,17 @@
 "keywords": "",
 "url": "/docs/deleting-your-squadcast-account",
 "summary": "If you have decided to permanently delete your subscription to Squadcast, this document will help you understand how to do so"
+}
+,
+
+
+
+{
+"title": "Domotz",
+"tags": "integrationdomotz",
+"keywords": "",
+"url": "/docs/domotz",
+"summary": "Send alerts to Squadcast from Domotz"
 }
 ,
 
@@ -468,6 +578,17 @@
 
 
 {
+"title": "Freshdesk",
+"tags": "",
+"keywords": "",
+"url": "/docs/freshdesk",
+"summary": "Send ticket details to Squadcast from Freshdesk"
+}
+,
+
+
+
+{
 "title": "Freshping",
 "tags": "integrationfreshping",
 "keywords": "",
@@ -479,11 +600,44 @@
 
 
 {
+"title": "Freshservice",
+"tags": "",
+"keywords": "",
+"url": "/docs/freshservice",
+"summary": "Send ticket details to Squadcast from Freshservice"
+}
+,
+
+
+
+{
 "title": "Ghost Inspector",
 "tags": "integrationghost inspector",
 "keywords": "",
 "url": "/docs/ghost-inspector",
 "summary": "Trigger a Squadcast Incident for any failed UI tests from Ghost Inspector"
+}
+,
+
+
+
+{
+"title": "GitHub",
+"tags": "",
+"keywords": "",
+"url": "/docs/github",
+"summary": "Send events to Squadcast from GitHub"
+}
+,
+
+
+
+{
+"title": "GitLab",
+"tags": "",
+"keywords": "",
+"url": "/docs/gitlab",
+"summary": "Send events to Squadcast from GitLab"
 }
 ,
 
@@ -534,6 +688,17 @@
 
 
 {
+"title": "Grafana 8",
+"tags": "",
+"keywords": "",
+"url": "/docs/grafana-8",
+"summary": "Send alerts to Squadcast from Grafana 8"
+}
+,
+
+
+
+{
 "title": "Graylog v4",
 "tags": "",
 "keywords": "",
@@ -550,6 +715,17 @@
 "keywords": "",
 "url": "/docs/graylog",
 "summary": "Get alerts to Squadcast from Graylog"
+}
+,
+
+
+
+{
+"title": "Heroku",
+"tags": "",
+"keywords": "",
+"url": "/docs/heroku",
+"summary": "Send alert details to Squadcast from Heroku"
 }
 ,
 
@@ -578,11 +754,33 @@
 
 
 {
+"title": "Honeycomb",
+"tags": "integrationhoneycomb",
+"keywords": "",
+"url": "/docs/honeycomb",
+"summary": "Send alerts to Squadcast from Honeycomb"
+}
+,
+
+
+
+{
 "title": "Videos - How to set up common use-cases?",
 "tags": "integrationhoneybadger",
 "keywords": "",
 "url": "/docs/how-to-video-schedules",
 "summary": ""
+}
+,
+
+
+
+{
+"title": "Hyperping",
+"tags": "",
+"keywords": "",
+"url": "/docs/hyperping",
+"summary": "Send alerts to Squadcast from Hyperping"
 }
 ,
 
@@ -615,7 +813,7 @@
 "tags": "incident dashboard",
 "keywords": "",
 "url": "/docs/incident-dashboard",
-"summary": "One centralized dashboard to rule them all"
+"summary": "A centralized dashboard for every Team"
 }
 ,
 
@@ -626,7 +824,7 @@
 "tags": "incident",
 "keywords": "",
 "url": "/docs/incident-details",
-"summary": "Get more details about the incident"
+"summary": "Get more details for an incident"
 }
 ,
 
@@ -637,7 +835,7 @@
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/incident-list-table-view",
-"summary": "List view for all your incidents"
+"summary": "List view for all your Team's incidents"
 }
 ,
 
@@ -666,11 +864,11 @@
 
 
 {
-"title": "Incident Status Based De-duplication",
+"title": "Incident Status Based Deduplication",
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/status-based-deduplication",
-"summary": "Use Incident Status Based De-duplication to de-duplicate all alerts to an existing open incident for a Service"
+"summary": "Use Incident Status Based Deduplication to deduplicate all alerts to an existing open incident for a Service"
 }
 ,
 
@@ -749,7 +947,7 @@
 "tags": "integrationjira cloud",
 "keywords": "",
 "url": "/docs/jira-cloud",
-"summary": "Create tickets in JIRA with the incidents from Squadcast and sync status bidirectionally"
+"summary": "Create tickets in Jira with the incidents from Squadcast and sync status bidirectionally"
 }
 ,
 
@@ -800,11 +998,33 @@
 
 
 {
+"title": "Kibana",
+"tags": "",
+"keywords": "",
+"url": "/docs/kibana",
+"summary": "Send alert details to Squadcast from Kibana"
+}
+,
+
+
+
+{
 "title": "LibreNMS",
 "tags": "",
 "keywords": "",
 "url": "/docs/librenms",
 "summary": "Send alerts to Squadcast from LibreNMS"
+}
+,
+
+
+
+{
+"title": "Linear",
+"tags": "integrationlinear",
+"keywords": "",
+"url": "/docs/linear",
+"summary": "Send alerts to Squadcast from Linear"
 }
 ,
 
@@ -888,11 +1108,11 @@
 
 
 {
-"title": "Manage Squads",
+"title": "Understanding and Managing Squads",
 "tags": "squads",
 "keywords": "",
 "url": "/docs/squads",
-"summary": "A Squad is a group of users corresponding to a team or a project"
+"summary": "What Squads are and understanding how to manage Squads"
 }
 ,
 
@@ -904,6 +1124,17 @@
 "keywords": "",
 "url": "/docs/set-up-your-profile",
 "summary": "Edit your account details and set up notification preferences"
+}
+,
+
+
+
+{
+"title": "ManageEngine Application Manager",
+"tags": "",
+"keywords": "",
+"url": "/docs/manageengine-appmanager",
+"summary": "Send alerts to Squadcast from ManageEngine Application Manager"
 }
 ,
 
@@ -954,6 +1185,17 @@
 
 
 {
+"title": "Microsoft Teams",
+"tags": "integrationmsteams",
+"keywords": "",
+"url": "/docs/msteams",
+"summary": "Acknowledge, Resolve & Reassign incidents from MS Teams"
+}
+,
+
+
+
+{
 "title": "Nagios",
 "tags": "integrationnagios",
 "keywords": "",
@@ -987,11 +1229,44 @@
 
 
 {
+"title": "NodePing",
+"tags": "",
+"keywords": "",
+"url": "/docs/nodeping",
+"summary": "Send alert details to Squadcast from NodePing"
+}
+,
+
+
+
+{
+"title": "Notification Logs",
+"tags": "",
+"keywords": "",
+"url": "/docs/notification-logs",
+"summary": "Notification Logs shows details of all the notifications generated for an Incident"
+}
+,
+
+
+
+{
 "title": "Notification Rules",
 "tags": "Set-up-your-profileEscalation-PoliciesSchedules",
 "keywords": "",
 "url": "/docs/notification-rules",
 "summary": "Notification rules define how and when you are notified when an incident is assigned to you"
+}
+,
+
+
+
+{
+"title": "Notifications",
+"tags": "",
+"keywords": "",
+"url": "/docs/notifications",
+"summary": "Understanding the available incident notification channels in Squadcast"
 }
 ,
 
@@ -1022,11 +1297,33 @@
 
 
 {
+"title": "On-Call Reminder Rules",
+"tags": "Set-up-your-profile",
+"keywords": "",
+"url": "/docs/oncall-reminder-rules",
+"summary": "On-Call Reminder Rules define how and when you are notified about the upcoming On-Call Shift"
+}
+,
+
+
+
+{
 "title": "Organizations",
 "tags": "organizations",
 "keywords": "",
 "url": "/docs/squadcast-organizations",
 "summary": "Organizations in Squadcast"
+}
+,
+
+
+
+{
+"title": "OSNexus QuantaStor",
+"tags": "",
+"keywords": "",
+"url": "/docs/osnexus-quantastor",
+"summary": "Send alert details to Squadcast from OSNexus QuantaStor"
 }
 ,
 
@@ -1066,6 +1363,17 @@
 
 
 {
+"title": "Postmortem Templates",
+"tags": "",
+"keywords": "",
+"url": "/docs/postmortem-templates",
+"summary": "Postmortem Templates for the Postmortems that you conduct for incidents"
+}
+,
+
+
+
+{
 "title": "Postmortems",
 "tags": "postmortems",
 "keywords": "",
@@ -1082,7 +1390,7 @@
 "title": "Progress WhatsUp Gold",
 "tags": "",
 "keywords": "",
-"url": "/docs/progress_whatsup_gold",
+"url": "/docs/progress-whatsup-gold",
 "summary": "Send notifications to Squadcast from Progress WhatsUp Gold"
 }
 ,
@@ -1145,6 +1453,28 @@
 
 
 {
+"title": "Redgate SQL Monitor",
+"tags": "integrationredgate sql monitor",
+"keywords": "",
+"url": "/docs/redgate-sql-monitor",
+"summary": "Send alerts to Squadcast from Redgate SQL Monitor"
+}
+,
+
+
+
+{
+"title": "Role Based Access Control",
+"tags": "",
+"keywords": "",
+"url": "/docs/role-based-access-control",
+"summary": "RBAC: Understanding the Roles and Access Controls for Teams and Custom Roles"
+}
+,
+
+
+
+{
 "title": "Rollbar",
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
@@ -1156,11 +1486,44 @@
 
 
 {
+"title": "Runbooks",
+"tags": "",
+"keywords": "",
+"url": "/docs/runbooks",
+"summary": "Create, attach, reference and mark progress for incident resolution using Runbooks"
+}
+,
+
+
+
+{
+"title": "Rundeck",
+"tags": "integrationrundeck",
+"keywords": "",
+"url": "/docs/rundeck",
+"summary": "Send alerts to Squadcast from Rundeck"
+}
+,
+
+
+
+{
 "title": "Runscope",
 "tags": "integrationrunscope",
 "keywords": "",
 "url": "/docs/runscope",
 "summary": "Trigger a Squadcast Incident for any failed tests from Runscope"
+}
+,
+
+
+
+{
+"title": "Salesforce Cloud",
+"tags": "",
+"keywords": "",
+"url": "/docs/salesforce-cloud",
+"summary": "Send ticket details to Squadcast from Salesforse Cloud"
 }
 ,
 
@@ -1182,7 +1545,7 @@
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/save-filter-view",
-"summary": "Build your filters and save them as views for quick access"
+"summary": "Build your filters and save them as views for your Team for quick access"
 }
 ,
 
@@ -1270,11 +1633,11 @@
 
 
 {
-"title": "Service Dependency Based De-duplication",
+"title": "Service Dependency Based Deduplication",
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/service-dependency-based-deduplication",
-"summary": "De-duplicate incoming alerts for a Service against the latest open incident of its dependent Service(s)"
+"summary": "Deduplicate incoming alerts for a Service against the latest open incident of its dependent Service(s)"
 }
 ,
 
@@ -1286,6 +1649,28 @@
 "keywords": "",
 "url": "/docs/service-levels",
 "summary": "Track SLIs and match them against the SLOs to improve SRE"
+}
+,
+
+
+
+{
+"title": "ServiceNow",
+"tags": "",
+"keywords": "",
+"url": "/docs/servicenow",
+"summary": "Send ticket details to Squadcast from ServiceNow"
+}
+,
+
+
+
+{
+"title": "Shortcut",
+"tags": "",
+"keywords": "",
+"url": "/docs/shortcut",
+"summary": "Send ticket details to Squadcast from Shortcut (Clubhouse)"
 }
 ,
 
@@ -1360,6 +1745,17 @@
 
 
 {
+"title": "SolarWinds Orion",
+"tags": "integrationsolarwinds orion",
+"keywords": "",
+"url": "/docs/solarwinds-orion",
+"summary": "Send alerts to Squadcast from SolarWinds Orion"
+}
+,
+
+
+
+{
 "title": "Splunk",
 "tags": "Slack-as-an-Alert-SourceSqreen",
 "keywords": "",
@@ -1393,22 +1789,11 @@
 
 
 {
-"title": "Squadcast Runbooks (Deprecated)",
-"tags": "runbooks",
-"keywords": "",
-"url": "/docs/squadcast-runbooks",
-"summary": "Execute Squadcast Runbooks on your servers directly from an incident"
-}
-,
-
-
-
-{
 "title": "Squadcast Search",
 "tags": "set-up-your-profilemanaging-all-users",
 "keywords": "",
 "url": "/docs/squadcast-search",
-"summary": "Use the global search bar to look for incidents, documentation or other entities within the platform"
+"summary": "Use the global search bar to look for incidents, documentation or other entities for your Team within the platform"
 }
 ,
 
@@ -1459,7 +1844,7 @@
 
 
 {
-"title": "StatusPage",
+"title": "Status Page",
 "tags": "status page",
 "keywords": "",
 "url": "/docs/statuspage",
@@ -1557,11 +1942,66 @@
 
 
 {
+"title": "Twilio",
+"tags": "",
+"keywords": "",
+"url": "/docs/twilio",
+"summary": "Send events to Squadcast from Twilio"
+}
+,
+
+
+
+{
+"title": "Types of Users",
+"tags": "",
+"keywords": "",
+"url": "/docs/types-of-users",
+"summary": "Understanding the different User Types supported in Squadcast - Account Owners, Users and Stakeholders"
+}
+,
+
+
+
+{
+"title": "Understanding Teams",
+"tags": "",
+"keywords": "",
+"url": "/docs/understanding-teams",
+"summary": "What Teams are and the entities it can contain"
+}
+,
+
+
+
+{
 "title": "Uptime Robot",
 "tags": "integrationuptime robot",
 "keywords": "",
 "url": "/docs/uptime-robot",
 "summary": "Get Alerts from Uptime Robot into Squadcast"
+}
+,
+
+
+
+{
+"title": "Uptrends",
+"tags": "",
+"keywords": "",
+"url": "/docs/uptrends",
+"summary": "Send alert details to Squadcast from Uptrends"
+}
+,
+
+
+
+{
+"title": "User Permissions - Access Controls",
+"tags": "",
+"keywords": "",
+"url": "/docs/user-permissions-access-controls",
+"summary": "Organization-level Access Controls within your Account"
 }
 ,
 
@@ -1590,11 +2030,11 @@
 
 
 {
-"title": "What are Squadcast Actions?",
-"tags": "squadcast actions",
+"title": "Outgoing Webhooks",
+"tags": "",
 "keywords": "",
-"url": "/docs/what-are-squadcast-actions",
-"summary": "Squadcast Actions lets you take actions directly from Squadcast as a response to incidents."
+"url": "/docs/outgoing-webhooks",
+"summary": "Use outbound webhooks to send incident information from Squadcast into other systems"
 }
 ,
 
@@ -1628,6 +2068,17 @@
 "keywords": "",
 "url": "/docs/zabbix-5",
 "summary": "Route alerts from Zabbix 5.0 into Squadcast"
+}
+,
+
+
+
+{
+"title": "Zendesk",
+"tags": "",
+"keywords": "",
+"url": "/docs/zendesk",
+"summary": "Send ticket details to Squadcast from Zendesk"
 }
 
 
