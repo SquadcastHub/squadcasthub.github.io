@@ -10,7 +10,7 @@ folder: mydoc
 
 This document will help you integrate OSNexus QuantaStor with Squadcast.
 
-[OSNexus QuantaStor](https://www.osnexus.com/) is Defined Storage platform turns servers into multi-protocol scale-out storage appliances and delivers file.
+[OSNexus QuantaStor](https://www.osnexus.com/products/software-defined-storage) is a unified Software-Defined Storage platform designed to scale up and out to make storage management easy while reducing overall enterprise storage costs.
 
 Route detailed alerts from OSNexus QuantaStor to the right users in Squadcast.
 
@@ -34,11 +34,11 @@ Route detailed alerts from OSNexus QuantaStor to the right users in Squadcast.
 
 ### In OSNexus QuantaStor: Create a Squadcast webhook alert
 
-**(1)** In the Dashboard, click on **Alert Manager**
+**(1)** In the dashboard, click on **Alert Manager**
 
 ![](images/osnexus-quantastor_2.png)
 
-**(2)** Click on **ITSM Integrations** and select **squadcast** in **Module** dropdown and paste previously copied **Squadcast Webhook URL** and click on **Add**
+**(2)** Click on **ITSM Integrations**. In the **Module** drop-down, select **squadcast**. Paste the previously copied **Squadcast Webhook URL** and click on **Add**
 
 ![](images/osnexus-quantastor_3.png)
 
@@ -46,5 +46,6 @@ Route detailed alerts from OSNexus QuantaStor to the right users in Squadcast.
 
 ![](images/osnexus-quantastor_4.png)
 
+This should generate a test alert from OSNexus QuantaStor, in turn triggering an incident in Squadcast. This will confirm that the integration is working as expected.
 
-That is it, you are now good to go! Whenever an alert is generated in OSNexus QuantaStor, an incident will be created in Squadcast. When the alert is close in OSNexus QuantaStor, the corresponding incident will automatically get resolved in Squadcast as well.
+That's it, you are good to go! Whenever an alert is generated in OSNexus QuantaStor, an incident will be created in Squadcast. When the alert is closed in OSNexus QuantaStor, the corresponding incident will automatically get resolved in Squadcast as well.
