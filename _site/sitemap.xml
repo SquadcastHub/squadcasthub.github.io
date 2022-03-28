@@ -8,19 +8,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/accessing-postmortems</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/add-and-delete-users</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/add-and-remove-members</loc>
+    <loc>http://localhost:4000/docs/add-users</loc>
   </url>
   
   
@@ -45,18 +33,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/amazon-cloudwatch-aws</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/amazon-eventbridge</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/amazon-rds</loc>
   </url>
   
   
@@ -134,12 +110,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/bitbucket</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/bugsnag</loc>
   </url>
   
@@ -182,18 +152,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/cisco-meraki</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/clickup</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/conviva</loc>
   </url>
   
@@ -212,12 +170,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/create-and-delete-teams</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/escalation-policies</loc>
   </url>
   
@@ -225,12 +177,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/schedules</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/cronitor</loc>
   </url>
   
   
@@ -261,12 +207,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/deleting-your-squadcast-account</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/domotz</loc>
   </url>
   
   
@@ -322,37 +262,13 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/freshdesk</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/freshping</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/freshservice</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/ghost-inspector</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/github</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/gitlab</loc>
   </url>
   
   
@@ -382,12 +298,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/grafana-8</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/graylog-v4</loc>
   </url>
   
@@ -395,12 +305,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/graylog</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/heroku</loc>
   </url>
   
   
@@ -418,25 +322,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/honeycomb</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/how-to-video-schedules</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/hyperping</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/hyperping</loc>
   </url>
   
   
@@ -558,19 +444,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/kibana</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/librenms</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/linear</loc>
   </url>
   
   
@@ -630,12 +504,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/manageengine-appmanager</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/manageengine-opmanager</loc>
   </url>
   
@@ -660,12 +528,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/msteams</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/nagios</loc>
   </url>
   
@@ -684,25 +546,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/nodeping</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/notification-logs</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/notification-rules</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/notifications</loc>
   </url>
   
   
@@ -722,19 +566,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/oncall-reminder-rules</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/squadcast-organizations</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/osnexus-quantastor</loc>
   </url>
   
   
@@ -758,12 +590,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/postmortem-templates</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/postmortems</loc>
   </url>
   
@@ -772,7 +598,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/progress-whatsup-gold</loc>
+    <loc>http://localhost:4000/docs/progress_whatsup_gold</loc>
   </url>
   
   
@@ -808,43 +634,13 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/redgate-sql-monitor</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/role-based-access-control</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/rollbar</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/docs/runbooks</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/rundeck</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/runscope</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/salesforce-cloud</loc>
   </url>
   
   
@@ -920,18 +716,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/servicenow</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/shortcut</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/signalfx</loc>
   </url>
   
@@ -970,12 +754,6 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/solarwinds-orion</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/splunk</loc>
   </url>
   
@@ -989,6 +767,12 @@
   
   <url>
     <loc>http://localhost:4000/docs/squadcast-public-api</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docs/squadcast-runbooks</loc>
   </url>
   
   
@@ -1092,37 +876,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/twilio</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/types-of-users</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/understanding-teams</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/docs/uptime-robot</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/uptrends</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/user-permissions-access-controls</loc>
   </url>
   
   
@@ -1140,7 +894,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/docs/outgoing-webhooks</loc>
+    <loc>http://localhost:4000/docs/what-are-squadcast-actions</loc>
   </url>
   
   
@@ -1159,12 +913,6 @@
   
   <url>
     <loc>http://localhost:4000/docs/zabbix-5</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/docs/zendesk</loc>
   </url>
   
   
