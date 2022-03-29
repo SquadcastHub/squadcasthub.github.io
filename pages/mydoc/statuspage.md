@@ -218,7 +218,7 @@ The supported file types are:
 - Presentations (.ppt, .pptx. .odp)
 - Miscellaneous (.log, .txt, .odv, .csv, key, json, log)
 
-## Edit Status Page Messages
+### Edit Status Page Messages
 
 You can now update the real-time statuses posted on the Status Page. 
 
@@ -242,7 +242,7 @@ The updated message will be reflected under Incident History.
 
 ![](images/statuspage_incidenthistory.png)
 
-## Delete Status Page Message
+### Delete Status Page Message
 
 **(1)** Click on the Delete icon on the right of the status message
 
