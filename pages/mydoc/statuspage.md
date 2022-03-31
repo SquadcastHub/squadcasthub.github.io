@@ -220,7 +220,7 @@ The supported file types are:
 
 ## Edit Status Page Messages
 
-You can now update the real-time statuses posted on the Status Page. 
+You can now update the statuses posted on the Status Page. 
 
 **(1)** Navigate to the **Status Page** from the sidebar
 
@@ -232,27 +232,27 @@ You can now update the real-time statuses posted on the Status Page.
 
 You will find the icons to edit or delete a message to the right of the message posted. 
 
-**(3)** Click on the **Edit icon** to edit the real-time status. Make the necessary changes and click on the **Save** button
+**(3)** Click on the **Edit** icon to edit the update. Make the necessary changes and click on the **Save** button
 
 ![](images/edit_icon.png)
 
 ![](images/statuspage_save.png)
 
-The updated message will be reflected under Incident History. 
+The edited message will be reflected under the Incident History. 
 
 ![](images/statuspage_incidenthistory.png)
 
 ## Delete Status Page Message
 
-**(1)** Click on the Delete icon on the right of the status message
+**(1)** Click on the **Delete** icon to delete any of the previously posted updates
 
 ![](images/delete_icon.png)
 
-**(2)** And click on the **Delete button** again to confirm
+**(2)** Click on the **Delete** button again to confirm
 
 ![](images/confirm_delete.png)
 
-These updates will be reflected under Incident History. The deleted message will be displayed as 'This update was deleted'.
+These updates will be reflected under Incident History. The deleted message will be displayed as *'This update was deleted'*.
 
 ![](images/statuspage_incident.png)
 
