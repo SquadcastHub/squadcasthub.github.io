@@ -29,15 +29,17 @@ To create a Postmortem for a **resolved incident**:
 
 ![](images/postmortem_6.png)
 
-**(2)** You can select one of the Postmortem Templates from the drop-down and start documenting the Postmortem 
+**(2)** You can select one of the **Postmortem Templates** from the drop-down
+
+The **Postmortem Title** is auto-populated with your Incident Name as default. You can edit it, and start documenting the Postmortem.
 
 **Note**: The `incident-variables` will get auto-populated as per the data available for that particular incident. Remaining details need to be manually filled by the user by **Editing** the Postmortem.
 
-![](images/postmortem_7.png){: style="max-width: 30%" }
+![](images/postmortem_create.png){: style="max-width: 30%" }
 
 **(3)** Apart from the Markdown body in a Postmortem, you can also create a **check-list of follow-ups** that can be used to keep track of further actions that need to be done for that incident
 
-![](images/postmortem_8.png){: style="max-width: 30%" }
+![](images/postmortem_followup.png){: style="max-width: 30%" }
 
 **(4)** Click on **Create** to save the Postmortem
 
@@ -45,7 +47,7 @@ To create a Postmortem for a **resolved incident**:
 
 **Note:** Once the Postmortem is created (and updated), it can be downloaded offline in either `Markdown (MD)` or `PDF` format.
 
-![](images/postmortem_9.png){: style="max-width: 30%" }
+![](images/postmortem_download.png){: style="max-width: 30%" }
 
 ### Adding Attachments
 
@@ -83,4 +85,4 @@ There are 2 ways to do this:
 
 **(2)** Head over to **Postmortems** from the navigation on the left, scroll to the applicable Postmortem in the list. Click on the **Edit** icon, make the necessary changes and click on **Update**
 
-![](images/postmortem_new_4.png)
+![](images/postmortem_edit.png)
