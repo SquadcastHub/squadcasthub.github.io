@@ -108,3 +108,18 @@ Phone Calls:
 
 SMS: 
 +17076844278, +17072447799
+
+### 17. Why do I get "The Email is not registered" error though I have an account already?
+
+Make sure that you are logging in to the current data center, try swithcing to the correct data center where you have an account and it should work.
+
+### 18. What is the difference between EU & US Data centers?
+Customers who has opted for the US Data centre will have their data stored in a US data center whereas customers who opted for EU Data center will have their data stored in European Data center.
+
+
+### 19. Does both EU & US Data centers have the same set of features?
+
+In terms of features, both data centres have the exact same features with an exception of the following extensions.
+
+- Google Hangouts chat integration is not supported on the EU Data center yet.
+- Jira Server extension won't be supported in the EU Data center.

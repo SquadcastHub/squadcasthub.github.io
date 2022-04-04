@@ -11,6 +11,11 @@ folder: mydoc
 
 You can use this guide to integrate with [Hangouts Chat](http://chat.google.com/).
 
+{{site.data.alerts.yellow-note-i}}
+<b>Important</b><br/><br/>
+<p>Google Hangouts is not supported in the EU Datacenter yet.</p>
+{{site.data.alerts.end}}
+
 ### Prerequisites
 
 - Only the Account Owner and Users with the `Manage Extensions` permission will be able to enable, disable and manage Extensions in Squadcast
