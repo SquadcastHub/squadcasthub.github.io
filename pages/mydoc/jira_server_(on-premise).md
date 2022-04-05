@@ -11,6 +11,12 @@ folder: mydoc
 
 You can use this extension guide to install and configure the Squadcast extension in JIRA Server (On-Premise) in order to automatically create issues in JIRA projects from Squadcast and vice versa. The status of the issues on JIRA and incidents in Squadcast will automatically be in sync. 
 
+{{site.data.alerts.red-note-md}}
+**Important:**
+
+Jira Server extension will not be supported in the EU data center.
+{{site.data.alerts.end}}
+
 ## Prerequisites
 
 **(1)** A valid Squadcast cloud subscription or a trial account (in either the Pro or Enterprise [plans](https://squadcast.com/pricing))

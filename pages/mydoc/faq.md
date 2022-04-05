@@ -108,3 +108,19 @@ Phone Calls:
 
 SMS: 
 +17076844278, +17072447799
+
+### 17. Why do I get the error "The Email is not registered" even though I already have an account?
+
+For it to work, make sure you are logging into the correct data center in which you have an account. While signing in, you will have the option to switch between data centers.
+
+### 18. While signing up, why do I have an option to choose account provisioning between the EU & US data centers?
+
+Customers who have opted for the US data center will have their data stored in the US data center, whereas customers who have opted for the EU data center will have their data stored in the EU data center. This helps organizations with strict compliance requirements to stay adhered to it. 
+
+### 19. In terms of features, what is the difference between an account in the EU data center versus an account in the US data center?
+
+Accounts in both the data centers will have all of the features, except for:
+
+**1.** [Google Hangouts](https://support.squadcast.com/docs/hangouts) extension will soon be supported in the EU data center.
+
+**2.** [Jira Server](https://support.squadcast.com/docs/jira-server-on-premise) extension will not be supported in the EU data center.
