@@ -24,8 +24,10 @@ You can use this integration guide to install and configure the Squadcast extens
 ### In Jira Cloud: Installing Squadcast App
 
 **(1)** Login to your Jira Cloud account and install the Squadcast Jira Cloud plugin corresponding to your data centre.
-Plugin for US Data centre - [Squadcast Jira Cloud plugin](https://marketplace.atlassian.com/apps/1221041/squadcast-for-jira-cloud?hosting=cloud&tab=overview) 
-Plugin for EU Data Centre users - [Squadcast for Jira Cloud (EU only version)](https://marketplace.atlassian.com/apps/1227594/squadcast-for-jira-cloud-eu-only-version?tab=overview&hosting=cloud)
+
+Plugin for the US data center - [Squadcast Jira Cloud plugin](https://marketplace.atlassian.com/apps/1221041/squadcast-for-jira-cloud?hosting=cloud&tab=overview) 
+
+Plugin for the EU data center - [Squadcast for Jira Cloud (EU only version)](https://marketplace.atlassian.com/apps/1227594/squadcast-for-jira-cloud-eu-only-version?tab=overview&hosting=cloud)
 
 ![](images/jira_cloud_squadcast_1.png)
 
