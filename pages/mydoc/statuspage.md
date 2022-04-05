@@ -393,7 +393,7 @@ You will be able to view incident updates posted to your Status Page in the **la
 
 #### 14. Can I edit the previously posted incident updates on my Status Page?
 
-No, editing previously posted incident updates to the Status Page is not possible.
+Yes, you can edit previously posted incident updates to the Status Page.
 
 #### 15. I want to display more information for my incident, for example, time according to my local timezone or the Incident Details. Is this possible?
 
