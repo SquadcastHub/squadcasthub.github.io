@@ -22,13 +22,17 @@ You can follow the steps below to access Postmortems:
 
 **(1)** Click on **Postmortems** in the primary navigation
 
-![](images/postmortem_new_5.png)
+![](images/postmortem_navi.png)
 
 **(2)** Here, you will be able to see the list of all Postmortems that exist for the Team chosen
 
+- You can use the **+Add Filter** tab to add filters based on **Alert Sources** and **Services**. It will filter the Postmortem list according to the chosen Alert Source or Service. 
+
+![](images/postmortem_addfilter.png)
+
 - You can choose the time filter to view all Postmortems in the selected time period. By default, all the Postmortems within the **last 3 months** are displayed.
 
-![](images/postmortem_new_6.png)
+![](images/postmortem_time.png)
 
 - As we know, each of the listed Postmortem is associated with an incident. The `Incident ID` of the associated incident is listed above the Postmortem. Clicking on the `Incident ID` will navigate you to the **Incident Details** page of that incident.
 
@@ -42,4 +46,4 @@ You can follow the steps below to access Postmortems:
 
 **(3)** To update/edit a Postmortem, click on the **Edit** icon, make the necessary changes and click on **Update**
 
-![](images/postmortem_new_4.png)
+![](images/postmortem_edit.png)
