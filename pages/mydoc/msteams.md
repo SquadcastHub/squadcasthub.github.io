@@ -28,7 +28,11 @@ The `email address` used with your *user in MS Teams* and your *user in Squadcas
 
 ## Follow the steps below to integrate Squadcast and MS Teams
 
-**(1)** Download the MS Teams app bundle by clicking on this <a href="../../resources/squadcast_msteams.zip">link</a>
+**(1)** Download the MS Teams app bundle by clicking on one of these links.
+
+For US app bundle: <a href="../../resources/squadcast_msteams.zip">download link</a>
+
+For EU app bundle: <a href="https://github.com/SquadcastHub/squadcasthub.github.io/blob/main/bundles/microsoft-teams/Squadcast-EU-1.4.0.zip?raw=true">download link</a>
 
 **(2)** Navigate to the **Apps** section
 
