@@ -414,14 +414,10 @@ No, there is **no limit on the number of subscribers** to your Status Page. You 
 
 However, you will **not be able to view the list of subscribers** that have subscribed to your Status Page.
 
-#### 18. I have an open incident in Squadcast for one of my Services from 2 days ago, however, the health of the affected Service in the Status Page went back to being healthy. Is this expected?
-
-Typically, critical incidents are resolved by Organizations within 24 hours of them being triggered. Squadcast keeps track of only those incidents affecting the Services displayed on your Status Page **that occurred in the current day**. Post this duration, the health of the affected Service goes back to being healthy, since the open incident/s for it are older than 1 day.
-
-#### 19. Will the users get notified of the edited or deleted changes in the Status Page?
+#### 18. Will the users get notified of the edited or deleted changes in the Status Page?
 
 No, the users will not be notified of the changes. They will have to navigate to the Status Page to view any updates.
 
-#### 20. Will the time stamp change when a message is edited or deleted?
+#### 19. Will the time stamp change when a message is edited or deleted?
 
 No, it will show the timestamp of the original message that was posted.
