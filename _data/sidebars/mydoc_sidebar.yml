@@ -392,6 +392,10 @@ entries:
                   - title: Elastic
                     url: /elastic
                     output: web, pdf
+                  
+                  - title: Elecard Boro
+                    url: /elecard-boro
+                    output: web, pdf
 
                   - title: Email
                     url: /email
