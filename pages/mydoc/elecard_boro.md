@@ -38,7 +38,7 @@ Route detailed alerts from Elecard Boro to the right users in Squadcast.
 
 ![](images/elecard_boro_3.png)
 
-**(3)** Under **WEBHOOK**, Click on **Create profile**. Set the preferred **Language** and the **Timezone**. Enable the **Send error notifications via Webhook** and Paste the previously copied Squadcast Webhook URL in the placeholder for **URL**
+**(3)** Under **WEBHOOK**, click on **Create profile**. Set the preferred **Language** and the **Timezone**. Enable the **Send error notifications via Webhook** and paste the previously copied Squadcast Webhook URL in the placeholder for **URL**
 
 ![](images/elecard_boro_4.png)
 
