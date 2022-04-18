@@ -8,7 +8,7 @@ permalink: docs/elecard-boro
 folder: mydoc
 ---
 
-[Elecard Boro](https://www.elecard.com/products/quality-control/boro-service) is a IPTV Monitoring software solution for UDP, RTP, HTTP, HLS and DASH streams quality control and measurement of QoS and QoE parameters in all segments of distributed networks.
+[Elecard Boro](https://www.elecard.com/products/quality-control/boro-service) is an IPTV monitoring software solution for UDP, RTP, HTTP, HLS and DASH streams quality control and measurement of QoS and QoE parameters in all segments of distributed networks.
 
 Route detailed alerts from Elecard Boro to the right users in Squadcast.
 
@@ -30,11 +30,11 @@ Route detailed alerts from Elecard Boro to the right users in Squadcast.
 
 ## Create a Squadcast Webhook Notification in Elecard Boro
 
-**(1)** Login to your Elecard Boro dashboard. Head over to the **MY PROJECTS** tab. Then select the project of your choice
+**(1)** Login to your Elecard Boro dashboard. Head over to the **MY PROJECTS** tab. Then, select the project of your choice
 
 ![](images/elecard_boro_2.png)
 
-**(2)** Click on **Project Settings**, then under the **Notifications** section, click on **WEBHOOK**
+**(2)** Click on **Project Settings**. Under the **Notifications** section, click on **WEBHOOK**
 
 ![](images/elecard_boro_3.png)
 
@@ -42,7 +42,7 @@ Route detailed alerts from Elecard Boro to the right users in Squadcast.
 
 ![](images/elecard_boro_4.png)
 
-**(4)** Sroll down, set up your event triggers. Then click on **Save**
+**(4)** Scroll down, set up your event triggers. Then click on **Save**
 
 ![](images/elecard_boro_5.png)
 
