@@ -31,7 +31,7 @@ Users, Squads and Schedules are placed in an order in which they are assigned to
 
 #### Start Pointer
 
-While the Round Robin rotation is enabled, you will see a green arrow pointer next to the User, Squad or Schedule who is next in line for incident assignment. The pointer visually indicates who will be notified next in the Assignment Ring for an incident. By default, when an escalation policy with Round Robin rotation is created and configured, it will point to the first User, Squad or Schedule of the Assignment Ring.
+While the Round Robin rotation is enabled, you will see a green arrow pointer next to the User, Squad or Schedule who is next in line for incident assignment. The pointer visually indicates who will be notified next in the Assignment Ring for an incident. By default, when an Escalation Policy with Round Robin rotation is created and configured, it will point to the first User, Squad or Schedule of the Assignment Ring.
 
 {{site.data.alerts.blue-note-md}}
 **Note:**
@@ -59,7 +59,8 @@ When an incident is triggered that uses this Escalation Policy, the incident wil
 
 ![](images/round_robin_4.png)
 
-**(2)** In the level(s) where you would like to enable Round Robin, check the **Enable Round Robin assignment for this layer**. 
+**(2)** In the level(s) where you would like to enable Round Robin, check the option **Enable Round Robin assignment for this layer**.
+
 Add additional Users, Squads or Schedules if not added already. In case of a Schedule, whoever is on-call at the time, will be notified for the incident. Then, click **Save**
 
 ![](images/round_robin_5.png)
@@ -81,25 +82,25 @@ Escalation Policies can be configured granularly to further suit custom requirem
 
 **(1)** When a Squad is added in the escalation level and Round Robin Escalation is enabled, how would it work?
 
-Every user within the Squad would be notified when the Squad is added to the Assignment Ring for Round Robin rotation. Round Robin strategy is applicable to the entities in the Assignment Ring - Users, Squads and Schedules. Round Robin strategy is not applied to users within Squads and Schedules.
+Every user within the Squad would be notified when the Squad is added to the Assignment Ring for Round Robin rotation. Round Robin rotation is applicable to the entities in the Assignment Ring - Users, Squads and Schedules. Round Robin rotation is not applied to users present within Squads and Schedules.
 
 **(2)** When a Schedule is added in the escalation level and Round Robin Escalation is enabled, how would it work?
 
-Every on-call User/Squad within the Schedule would be notified when the Schedule is added to the Assignment Ring for Round Robin rotation. Round Robin strategy is applicable to the entities in the Assignment Ring - Users, Squads and Schedules. Round Robin strategy is not applied to users within Squads and Schedules.
+Every on-call User/Squad within the Schedule would be notified when the Schedule is added to the Assignment Ring for Round Robin rotation. Round Robin rotation is applicable to the entities in the Assignment Ring - Users, Squads and Schedules. Round Robin rotation is not applied to users present within Squads and Schedules.
 
-**(3)** How are coverage gaps in Schedules handled when the Schedule is part of Round Robin Escalation?
+**(3)** How are coverage gaps in Schedules handled when the Schedule is part of a Round Robin escalation?
 
-When a Schedule is due for assignment next, it is assigned to whoever is currently on-call on that Schedule. In case no one is on-call due to a coverage gap, it will skip the assignment to the either the next entity in the Assignment Ring or escalates to the next level of the Escalation Policy. This ensures that the coverage gap in the Schedule does not cause any incident to be missed. This is to ensure that a coverage gap on a schedule does not cause an incident to be missed.
+When a Schedule is due for assignment next, it is assigned to whoever is currently on-call in that Schedule. In case no one is on-call due to a coverage gap, it will skip the assignment to either the next entity in the Assignment Ring or escalate to the next level of the Escalation Policy (depending on how the rules are configured). This ensures that the coverage gap in the Schedule does not cause any incident to be missed.
 
 **(4)** What happens to the Round Robin Escalation when Users, Squads, Schedules are added or removed?
 
-Any Users, Squads, Schedules removed from the Assignment Ring, the Start Pointer is reset and points to the first User, Squad, Schedule again. One can easily drag and drop to rearrange the order of placement of the User, Squad, Schedule within the Assignment Ring.
+Any Users, Squads, Schedules removed from the Assignment Ring, the Start Pointer is reset and points to the first User, Squad or Schedule again. One can easily drag and drop to rearrange the order of placement of the User, Squad, Schedule within the Assignment Ring. Note that the position of the Start Pointer will reset to the first User, Squad or Schedule upon rearrangement (drag & drop) as well.
 
 **(5)** Which of the time inputs added are absolute versus relative?
 
-- The **Escalate After** input field for each escalation level is absolute (this time is calculated from the time of incident trigger)
-- The input for repetition of the entire Escalation Policy field is absolute (the input at the bottom of the Escalation Policy)
-- Every other time input within the Escalation Policy would be calculated as relative time
+- The **Escalate After** input field for each escalation level is **absolute** (this time is calculated from the time of incident trigger)
+- The input for repetition of the entire Escalation Policy field is **absolute** (the input at the bottom of the Escalation Policy)
+- Every other time input within the Escalation Policy would be calculated **relative** to the **Escalate After** time for that level
 
 **(6)** How can I understand if Round Robin rotation is enabled for an Escalation Policy or not?
 
@@ -130,20 +131,38 @@ The notifications to be sent out would be scheduled in this way:
 
 At this point, the start pointer is now pointing to user 2 (the next user to be notified in the Assignment Ring for the following incident).
 
-**(8)** I have enabled rotation within the Assignment Ring of Round Robin within an escalation level. What happens if the **Escalate After** timeout occurs before every member of the Assignment Ring could be notifief for the current incident?
+**(8)** I have enabled rotation within the Assignment Ring of Round Robin within an escalation level. What happens if the **Escalate After** timeout occurs before every member of the Assignment Ring could be notified for the current incident?
 
 Assume there are 10 users in the first level of the policy (with **Escalate After** time of 0 minutes), who are set to be notified with a gap of 1 minute before the next member is notified. Also, assume the second level is set to be called after an **Escalate After** time of 5 minutes. 
 
-Now, the notifications to be sent out would be scheduled in this way (assume, incident triggered at time T):
+Now, the notifications to be sent out would be scheduled in this way (assume, incident triggered at time T=0 minutes):
 
-T=0 mins: Notify user 1 (level 1)
+T=0 minutes: Notify user 1 (level 1)
 
-T=1 mins: Notify user 2 (level 1)
+T=1 minutes: Notify user 2 (level 1)
 
-T=2 mins: Notify user 3 (level 1)
+T=2 minutes: Notify user 3 (level 1)
 
-T=4 mins: Notify user 4 (level 1)
+T=4 minutes: Notify user 4 (level 1)
 
-**T=5 mins: Notify user 5 (level 1)**
+**T=5 minutes: Notify user 5 (level 1)**
 
-**T=5 mins: Notify user 6 (level 2)**
+**T=5 minutes: Notify user 6 (level 2)**
+
+**(9)** When does the Start Pointer increment to point to the next assignee (User, Squad or Schedule) in the Assignment Ring?
+
+The Start Pointer aims to visually indicate *starting from which assignee (User, Squad, Schedule) in the Assignment Ring would the notifications for the newly triggered incident be sent out for*
+
+The Start Pointer *increments* when:
+
+- The Escalation Policy is called for a newly triggered incident (including when the Escalation Policy is called as part of *incident reassignment*)
+
+The Start Pointer *does not increment* when:
+
+- The entire Escalation Policy is set to repeat (between 1 and 3 times)
+
+- When repetition of a particular level has been set up
+
+**(10)** Where can I check what notifications went out (when Round Robin rotation is enabled, or otherwise)?
+
+Every incident has [Notification Logs](https://support.squadcast.com/docs/notifications#notification-details-and-logs) within its Details page. What notifications where scheduled and to whom, how many of them were attempted - the status, notification channels and timestamp information would be included in these logs.

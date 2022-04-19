@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Define rules indicating when and how alerts will escalate to various Users, Squads and (or) Schedules within your Organization"
 sidebar: mydoc_sidebar
-permalink: docs/escalation-policies
+permalink: /docs/escalation-policies
 folder: mydoc
 ---
 

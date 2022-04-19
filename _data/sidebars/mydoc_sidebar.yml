@@ -160,7 +160,6 @@ entries:
             url: /docs/escalation-policies
             output: web, pdf
 
-        folderitems:
           - title: Round Robin & Advanced Escalations
             url: /docs/round-robin-advanced-escalations
             output: web, pdf
