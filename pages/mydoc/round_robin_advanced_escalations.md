@@ -4,7 +4,7 @@ keywords:
 last_updated:
 summary: "Round Robin Escalation is an incident assignment strategy where users are placed in a ring and assigned to incidents sequentially. With advanced escalations, one can further set up granular notification rules"
 sidebar: mydoc_sidebar
-permalink: /docs/round_robin_advanced_escalations
+permalink: /docs/round-robin-advanced-escalations
 folder: mydoc
 ---
 ## Round Robin & Advanced Escalations

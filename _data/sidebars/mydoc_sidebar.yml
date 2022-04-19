@@ -162,7 +162,7 @@ entries:
 
         folderitems:
           - title: Round Robin & Advanced Escalations
-            url: /docs/round_robin_advanced_escalations
+            url: /docs/round-robin-advanced-escalations
             output: web, pdf
 
           - title: Reassign an Incident
