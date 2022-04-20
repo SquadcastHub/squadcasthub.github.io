@@ -160,6 +160,10 @@ entries:
             url: /docs/escalation-policies
             output: web, pdf
 
+          - title: Round Robin & Advanced Escalations
+            url: /docs/round-robin-advanced-escalations
+            output: web, pdf
+
           - title: Reassign an Incident
             url: /docs/reassign-an-escalation-policy-for-an-existing-incident
             output: web, pdf

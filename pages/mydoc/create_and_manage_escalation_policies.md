@@ -5,7 +5,7 @@ keywords:
 last_updated:
 summary: "Define rules indicating when and how alerts will escalate to various Users, Squads and (or) Schedules within your Organization"
 sidebar: mydoc_sidebar
-permalink: docs/escalation-policies
+permalink: /docs/escalation-policies
 folder: mydoc
 ---
 
@@ -124,3 +124,7 @@ Before deleting an Escalation Policy, **ensure that it is not associated with an
 **(1)** Can I add members from different Teams into an Escalation Policy for my Team?
 
 No, adding members from across Teams into an Escalation Policy is not allowed. Any member that needs to be added in the Escalation Policy for a Team must be a part of the same Team.
+
+**(2)** Is there a way to introduce Round Robin assignment of incidents to different entities within an escalation level?
+
+Yes, please refer to the documentation [here](https://support.squadcast.com/docs/round-robin-advanced-escalations)
