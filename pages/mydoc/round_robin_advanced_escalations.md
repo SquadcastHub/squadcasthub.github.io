@@ -157,12 +157,20 @@ The Start Pointer *increments* when:
 
 - The Escalation Policy is called for a newly triggered incident (including when the Escalation Policy is called as part of *incident reassignment*)
 
-The Start Pointer *does not increment* when:
-
-- The entire Escalation Policy is set to repeat (between 1 and 3 times)
-
-- When repetition of a particular level has been set up
+**Note:** The Start Pointer *does not increment* across repetitions, when the entire Escalation Policy is set to repeat (i.e., between 1 and 3 times)
 
 **(10)** Where can I check what notifications went out (when Round Robin rotation is enabled, or otherwise)?
 
 Every incident has [Notification Logs](https://support.squadcast.com/docs/notifications#notification-details-and-logs) within its Details page. What notifications where scheduled and to whom, how many of them were attempted - the status, notification channels and timestamp information would be included in these logs.
+
+**(11)** How does individual rule/level rotation and repetition work?
+
+When Round Robin Assignment is enabled, you can enable rotation within the Assignment Ring and specify the time gap between each of the assignees being notified.
+
+![](images/round_robin_7.png)
+
+**Note:** You cannot make a Round Robin Assignment enabled layer repeat more than once.
+
+When Round Robin Assignment is disabled, you can specify how many times the particular layer needs to be executed, along with the timeout between each repetition.
+
+![](images/round_robin_8.png)
