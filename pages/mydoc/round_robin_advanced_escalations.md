@@ -78,6 +78,12 @@ Escalation Policies can be configured granularly to further suit custom requirem
 
 ![](images/round_robin_3.png)
 
+### Persistent Notifications
+
+Every Escalation Policy can have upto 12 levels. Each level can be repeated a maximum of 5 times (when Round Robin assignment is disabled). Additionally, the entire Escalation Policy can be repeated a maximum of 3 times. This would mean you can have upto 180 iterations persistently generating notifications for a triggered incident.
+
+While the system is generous on this front, we would recommend users to set up notifications responsibly for them to be suitably persistent.
+
 ## FAQs
 
 **(1)** When a Squad is added in the escalation level and Round Robin Escalation is enabled, how would it work?
@@ -178,10 +184,4 @@ When Round Robin Assignment is disabled, you can specify how many times the part
 **(12)** Is there a limit on the number of times an escalation level can be repeated?
 
 Yes, individual escalation levels can be repeated for a maximum of 5 times, while the entire Escalation Policy can be repeated an additional maximum of 3 times.
-
-**(13)** What is the maximum notification capacity of an Escalation Policy?
-
-Every Escalation Policy can have upto 12 levels. Each level can be repeated a maximum of 5 times (when Round Robin assignment is diasbled). Additionally, the entire Escalation Policy can be repeated a maximum of 3 times. This would mean you can have upto 180 iterations persistently generating notifications for a triggered incident.
-
-While the system is generous on this front, we would recommend users to set up notifications responsibly for them to be suitably persistent.
 
