@@ -32,7 +32,7 @@ The `email address` used with your *user in MS Teams* and your *user in Squadcas
 
 MS Teams app bundle for the US data center: <a href="../../resources/squadcast_msteams.zip">download link</a>
 
-MS Teams app bundle for the EU data center: <a href="https://github.com/SquadcastHub/squadcasthub.github.io/blob/main/bundles/microsoft-teams/Squadcast-EU-1.4.0.zip?raw=true">download link</a>
+MS Teams app bundle for the EU data center: <a href="https://github.com/SquadcastHub/squadcasthub.github.io/blob/main/bundles/microsoft-teams/Squadcast-EU-1.6.0.zip?raw=true">download link</a>
 
 **(2)** Navigate to the **Apps** section
 
