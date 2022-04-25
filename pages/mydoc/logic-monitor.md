@@ -66,6 +66,38 @@ Route detailed monitoring alerts from LogicMonitor to the right users in Squadca
 service=##SERVICE##&alertid=##ALERTID##&alerttype=##ALERTTYPE##&alertstatus=##ALERTSTATUS##&level=##LEVEL##&host=##HOST##&datasource=##DATASOURCE##&eventsource=##EVENTSOURCE##&batchjob=##BATCHJOB##&group=##GROUP##&datapoint=##DATAPOINT##&start=##START##&finish=##FINISH##&duration=##DURATION##&value=##VALUE##&threshold=##THRESHOLD##&userdata=##USERDATA##&cmdline=##CMDLINE##&exitCode=##EXITCODE##&stdout=##STDOUT##&stderr=##STDERR##&agent=##AGENT_DESCRIPTION##&checkpoint=##CHECKPOINT##&datapointdesc=##DPDESCRIPTION##&hostdesc=##HOSTDESCRIPTION##&hostinfo=##system.sysinfo##&hostips=##system.ips##&hosturl=##DEVICEURL##&instance=##INSTANCE##&dsidesc=##DSIDESCRIPTION##&batchdesc=##BJDESCRIPTION##&hostname=##system.hostname##&dsdesc=##DSDESCRIPTION##&eventmsg=##LIMITEDMESSAGE##&eventlogmsg=##MESSAGE##&eventcode=##EVENTCODE##&eventtype=##TYPE##&eventuser=##USER##&eventlogfile=##LOGFILE##&servicedetail=##DETAIL##&serviceurl=##URL##&servicegroup=##SERVICEGROUP##&date=##DATE##&clearvalue=##CLEARVALUE##&internalid=##INTERNALID##&alerturl=##ALERTDETAILURL##
 ```
 
+{{site.data.alerts.blue-note-md}}
+**Note: Custom User Defined Variables**  
+
+Users can define two custom variables within **Alert Data**. The two variables can be added in the format mentioned below :
+
+**&CustomVariable1Name=##Name##&CustomVariable1Value=##Value##
+&CustomVariable2Name=##Name##&CustomVariable2Value=##Value##**
+
+Replace the **##Name##** & **##Value##** with proper values and add at the end of the variables mentioned in **Step 4**.
+This is how it would look like : 
+
+```
+service=##SERVICE##&alertid=##ALERTID##&alerttype=##ALERTTYPE##&alertstatus=##ALERTSTATUS##&level=##LEVEL##&host=##HOST##&datasource=##DATASOURCE##&eventsource=##EVENTSOURCE##&batchjob=##BATCHJOB##&group=##GROUP##&datapoint=##DATAPOINT##&start=##START##&finish=##FINISH##&duration=##DURATION##&value=##VALUE##&threshold=##THRESHOLD##&userdata=##USERDATA##&cmdline=##CMDLINE##&exitCode=##EXITCODE##&stdout=##STDOUT##&stderr=##STDERR##&agent=##AGENT_DESCRIPTION##&checkpoint=##CHECKPOINT##&datapointdesc=##DPDESCRIPTION##&hostdesc=##HOSTDESCRIPTION##&hostinfo=##system.sysinfo##&hostips=##system.ips##&hosturl=##DEVICEURL##&instance=##INSTANCE##&dsidesc=##DSIDESCRIPTION##&batchdesc=##BJDESCRIPTION##&hostname=##system.hostname##&dsdesc=##DSDESCRIPTION##&eventmsg=##LIMITEDMESSAGE##&eventlogmsg=##MESSAGE##&eventcode=##EVENTCODE##&eventtype=##TYPE##&eventuser=##USER##&eventlogfile=##LOGFILE##&servicedetail=##DETAIL##&serviceurl=##URL##&servicegroup=##SERVICEGROUP##&date=##DATE##&clearvalue=##CLEARVALUE##&internalid=##INTERNALID##&alerturl=##ALERTDETAILURL##&CustomVariable1Name=##Name##&CustomVariable1Value=##Value##&CustomVariable2Name=##Name##&CustomVariable2Value=##Value##
+```
+{{site.data.alerts.end}}
+
+{{site.data.alerts.blue-note-md}}
+**Note: Custom User Defined Incident Message**  
+
+Users can define custom Incident Message within **Alert Data**. The variable can be added in the format mentioned below :
+
+**&CustomIncidentMessage=##IncidentMessage##**
+
+Replace the **##IncidentMessage##** with proper values and add at the end of the variables mentioned in **Step 4**.
+This is how it would look like : 
+
+```
+service=##SERVICE##&alertid=##ALERTID##&alerttype=##ALERTTYPE##&alertstatus=##ALERTSTATUS##&level=##LEVEL##&host=##HOST##&datasource=##DATASOURCE##&eventsource=##EVENTSOURCE##&batchjob=##BATCHJOB##&group=##GROUP##&datapoint=##DATAPOINT##&start=##START##&finish=##FINISH##&duration=##DURATION##&value=##VALUE##&threshold=##THRESHOLD##&userdata=##USERDATA##&cmdline=##CMDLINE##&exitCode=##EXITCODE##&stdout=##STDOUT##&stderr=##STDERR##&agent=##AGENT_DESCRIPTION##&checkpoint=##CHECKPOINT##&datapointdesc=##DPDESCRIPTION##&hostdesc=##HOSTDESCRIPTION##&hostinfo=##system.sysinfo##&hostips=##system.ips##&hosturl=##DEVICEURL##&instance=##INSTANCE##&dsidesc=##DSIDESCRIPTION##&batchdesc=##BJDESCRIPTION##&hostname=##system.hostname##&dsdesc=##DSDESCRIPTION##&eventmsg=##LIMITEDMESSAGE##&eventlogmsg=##MESSAGE##&eventcode=##EVENTCODE##&eventtype=##TYPE##&eventuser=##USER##&eventlogfile=##LOGFILE##&servicedetail=##DETAIL##&serviceurl=##URL##&servicegroup=##SERVICEGROUP##&date=##DATE##&clearvalue=##CLEARVALUE##&internalid=##INTERNALID##&alerturl=##ALERTDETAILURL##&CustomVariable1Name=##Name##&CustomVariable1Value=##Value##&CustomVariable2Name=##Name##&CustomVariable2Value=##Value##&CustomIncidentMessage=##IncidentMessage##
+```
+{{site.data.alerts.end}}
+
+
 Enable **Raw**. Additionally, from the **Format** drop-down, select **Form Data**
 - Do *not* enable the checkbox for **Include an ID provided in HTTP response when updating alert status**
 

@@ -74,7 +74,7 @@ EventID=${N=Alerting;M=AlertObjectID}-${N=Alerting;M=AlertID}&AcknowledgeLink=${
 {{site.data.alerts.blue-note-md}}
 **Note: Custom User Defined Variables**  
 
-Users can define two custom variables under Trigger Actions. The two variables can be added in the fomat mentioned below :
+Users can define two custom variables under Trigger Actions. The two variables can be added in the format mentioned below :
 
 **&CustomVariable1Name=[Name]&CustomVariable1Value=[Value]&CustomVariable2Name=[Name]&CustomVariable2Value=[Value]**
 
