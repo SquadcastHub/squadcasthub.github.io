@@ -426,3 +426,15 @@ No, it will show the timestamp of the original message that was posted.
 #### 20. In a scenario where there is a Service with an open incident (Status - Degraded), and a Service Under Maintenance, what will the Status Page Header read?
 
 In such a scenario, the Degraded Status will always take precendence over Under Maintenance Status. The Status Page Header will read - Degraded. 
+
+#### 21. Will the subscriber receive an email notification when a Service Maintenance is scheduled?
+
+Yes, the subscriber will be sent an email notifying them when a Service Maintenance is scheduled. 
+
+#### 22. Will the subscriber receive an email notification when a Service Maintenance window commences?
+
+No, the subscriber will not be sent an email notifying them of the Service Maintenance commencement.  
+
+#### 23. Will the subscriber receive an email notification when a Service Maintenance window is edited?
+
+No, the subscriber will not be sent an email notifying them of any edits in the the Service Maintenance window.  
