@@ -18,7 +18,7 @@ Squadcast's Status Page can be used to configure and display Services and depend
 
 ## Working of a Status Page 
 
-Whenever the displayed Service has an open incident (an incident in the `Triggered` or `Acknowledged` state), its status automatically changes to the status equivalent of _Degraded (Bad)_. When the incident gets resolved, the status of the displayed Service goes back to being _Operational (Good)_ or its equivalent status.
+Whenever the displayed Service has an open incident (an incident in the `Triggered` or `Acknowledged` state), its status automatically changes to the status equivalent of _Degraded (Bad)_. When the incident gets resolved, the status of the displayed Service goes back to being _Operational (Good)_ or its equivalent status. Services that undergo maintenance, the status of those Services is changed to _Under Maintenance_.
 
 For an incident, you can choose to post updates of its status directly from its [Incident Details](https://support.squadcast.com/docs/incident-details) page using the [Update Status Page](https://support.squadcast.com/docs/statuspage#updating-your-statuspage) option.
 
@@ -95,9 +95,9 @@ You can upload a _Logo_ and change the default _System Status_ texts by clicking
 
 ![](images/statuspage_9.png)
 
-Here, you can upload a **Logo** for your Status Page and provide _custom text_ for when all your displayed Services are healthy - _Good Status_ (eg: Operational, All good!, etc.) and for when even one of your displayed Services has an incident - _Bad Status_ (eg: Degraded, Oops.., Something is wrong, etc.)
+Here, you can upload a Logo for your Status Page and provide custom text for your Status Page. When all your displayed Services are healthy - Good Status (eg: Operational, All good!, etc.) and for when even one of your displayed Services has an incident - Bad Status (eg: Degraded, Oops.., Something is wrong, etc). There is another status, indicating when a Service is under maintenance - Under Maintenance Status.  
 
-![](images/statuspage_10.png)
+![](images/statuspage_logo.png)
 
 This _status_ will update the Status Page's overall _status_ in the _header_ section accordingly.
 
@@ -109,7 +109,7 @@ You can also configure the Service Status _text_ and the _representation colours
 
 Here, you can customize the _text to be displayed for the `Service Status`_ on the right, and you can edit the _representation colours_ on the left by clicking on the `colour` option. You can also enter your own choice of colour by providing the HEX value for that colour.
 
-![](images/statuspage_12.png)
+![](images/statuspage_color.png)
 
 **Note**: You can see the changes reflecting in your screen by refreshing the screen.
 
@@ -268,9 +268,10 @@ To enable subscriptions to your Status Page, go to **Edit**, click on **Subscrip
 
 ![](images/statuspage_24.png)
 
-You can also select the **modes of subscription** you want to enable for your Status Page. You can select either or both the available options.
+You can select the **modes of subscription** you want to enable for your Status Page. You can select either or both the available options.
+Additionally, you can select the type of notifications that get sent to your subscribers, **Incident Updates**, **Maintenance**, or both. 
 
-![](images/statuspage_26.png)
+![](images/statuspage_notifications.png)
 
 The available modes are:
 
@@ -421,3 +422,7 @@ No, the users will not be notified of the changes. They will have to navigate to
 #### 19. Will the time stamp change when a message is edited or deleted?
 
 No, it will show the timestamp of the original message that was posted.
+
+#### 20. If there is a Service with an open incident (Status - Degraded) along with a Service Under Maintenance, what will the overall status incidated by the Status Page?
+
+In such a scenario, the Degraded Status will always take precendence over Under Maintenance Status. The overall status will read - Degraded. 
