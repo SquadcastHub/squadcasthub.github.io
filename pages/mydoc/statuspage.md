@@ -18,7 +18,7 @@ Squadcast's Status Page can be used to configure and display Services and depend
 
 ## Working of a Status Page 
 
-Whenever the displayed Service has an open incident (an incident in the `Triggered` or `Acknowledged` state), its status automatically changes to the status equivalent of _Degraded (Bad)_. When the incident gets resolved, the status of the displayed Service goes back to being _Operational (Good)_ or its equivalent status. Services that undergo maintenance, the status of those Services is changed to _Under Maintenance_.
+Whenever the displayed Service has an open incident (an incident in the `Triggered` or `Acknowledged` state), its status automatically changes to the status equivalent of _Degraded (Bad)_. When the incident gets resolved, the status of the displayed Service goes back to being _Operational (Good)_ or its equivalent status. When Services undergo maintenance, the status of those Services are changed to _Under Maintenance_.
 
 For an incident, you can choose to post updates of its status directly from its [Incident Details](https://support.squadcast.com/docs/incident-details) page using the [Update Status Page](https://support.squadcast.com/docs/statuspage#updating-your-statuspage) option.
 
@@ -95,7 +95,7 @@ You can upload a _Logo_ and change the default _System Status_ texts by clicking
 
 ![](images/statuspage_9.png)
 
-Here, you can upload a Logo for your Status Page and provide custom text for your Status Page. When all your displayed Services are healthy - Good Status (eg: Operational, All good!, etc.) and for when even one of your displayed Services has an incident - Bad Status (eg: Degraded, Oops.., Something is wrong, etc). There is another status, indicating when a Service is under maintenance - Under Maintenance Status.  
+Here, you can upload a logo for your Status Page and provide custom text for your Status Page. When all your displayed Services are healthy - Good Status (eg: Operational, All good!, etc.) and for when even one of your displayed Services have an incident - Bad Status (eg: Degraded, Oops.., Something is wrong, etc). There is another status, indicating when a Service is under maintenance - Under Maintenance Status.
 
 ![](images/statuspage_logo.png)
 
@@ -423,6 +423,6 @@ No, the users will not be notified of the changes. They will have to navigate to
 
 No, it will show the timestamp of the original message that was posted.
 
-#### 20. If there is a Service with an open incident (Status - Degraded) along with a Service Under Maintenance, what will the overall status incidated by the Status Page?
+#### 20. In a scenario where there is a Service with an open incident (Status - Degraded), and a Service Under Maintenance, what will the Status Page Header read?
 
-In such a scenario, the Degraded Status will always take precendence over Under Maintenance Status. The overall status will read - Degraded. 
+In such a scenario, the Degraded Status will always take precendence over Under Maintenance Status. The Status Page Header will read - Degraded. 
