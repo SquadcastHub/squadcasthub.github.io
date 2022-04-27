@@ -561,6 +561,10 @@ entries:
                     url: /observium
                     output: web, pdf
 
+                  - title: Oh Dear
+                    url: /oh-dear
+                    output: web, pdf
+
                   - title: OSNexus QuantaStor
                     url: /osnexus-quantastor
                     output: web, pdf
