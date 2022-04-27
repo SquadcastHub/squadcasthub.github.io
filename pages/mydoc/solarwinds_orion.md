@@ -86,6 +86,21 @@ EventID=${N=Alerting;M=AlertObjectID}-${N=Alerting;M=AlertID}&AcknowledgeLink=${
 ```
 {{site.data.alerts.end}}
 
+{{site.data.alerts.blue-note-md}}
+**Note: Custom User Defined Incident Message**  
+
+Users can define custom Incident Message under Trigger Actions. The variable can be added in the format mentioned below :
+
+**&CustomIncidentMessage=[IncidentMessage]**
+
+Replace the **[IncidentMessage]** with proper values and add at the end of the variables mentioned in **Step 6**.
+This is how it would look like : 
+
+```
+EventID=${N=Alerting;M=AlertObjectID}-${N=Alerting;M=AlertID}&AcknowledgeLink=${N=Alerting;M=AcknowledgeLink}&AcknowledgeUrl=${N=Alerting;M=AcknowledgeUrl}&Acknowledged=${N=Alerting;M=Acknowledged}&AcknowledgedBy=${N=Alerting;M=AcknowledgedBy}&AcknowledgedTime=${N=Alerting;M=AcknowledgedTime;F=DateTime}&AlertActiveID=${N=Alerting;M=AlertActiveID}&AlertDefID=${N=Alerting;M=AlertDefID}&AlertDescription=${N=Alerting;M=AlertDescription}&AlertDetailsUrl=${N=Alerting;M=AlertDetailsUrl}&AlertID=${N=Alerting;M=AlertID}&TimeOfDay=${N=Alerting;M=TimeOfDay}&Severity=${N=Alerting;M=Severity}&ObjectType=${N=Alerting;M=ObjectType}&Notes=${N=Alerting;M=Notes}&LongAlertTriggerTime=${N=Alerting;M=LongAlertTriggerTime;F=DateTime}&LastEdit=${N=Alerting;M=LastEdit;F=DateTime}&DownTime=${N=Alerting;M=DownTime}&AlertTriggerTime=${N=Alerting;M=AlertTriggerTime;F=DateTime}&AlertTriggerCount=${N=Alerting;M=AlertTriggerCount}&AlertObjectID=${N=Alerting;M=AlertObjectID}&AlertName=${N=Alerting;M=AlertName}&AlertMessage=${N=Alerting;M=AlertMessage}&Status=Triggered&CustomVariable1Name=[Name]&CustomVariable1Value=[Value]&CustomVariable2Name=[Name]&CustomVariable2Value=[Value]&CustomIncidentMessage=[IncidentMessage]
+```
+{{site.data.alerts.end}}
+
 **(7)** Under **RESET ACTIONS**, click on **Add Action**. Then select **Send a GET or POST Request to a Web Server** and click on **CONFIGURE ACTION**
 
 ![](images/solarwinds_orion_11.png)
