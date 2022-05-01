@@ -289,6 +289,10 @@ entries:
                 output: web, pdf
 
                 subfolderitems:
+                  - title: Airbrake
+                    url: /airbrake
+                    output: web, pdf
+
                   - title: Amazon CloudWatch (AWS)
                     url: /amazon-cloudwatch-aws
                     output: web, pdf
