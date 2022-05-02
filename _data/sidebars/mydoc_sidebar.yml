@@ -385,6 +385,10 @@ entries:
                     url: /datadog
                     output: web, pdf
 
+                  - title: Dead Man's Snitch
+                    url: /dead-mans-snitch
+                    output: web, pdf
+
                   - title: Domotz
                     url: /domotz
                     output: web, pdf
