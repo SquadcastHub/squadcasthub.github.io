@@ -38,4 +38,8 @@ An incident in the `Triggered` or `Acknowledged` state can be reassigned to a di
 
 **(5)** The reassigned action is auto-recorded in the **Incident Activity Timeline** of the incident and the same can be viewed in the **Responders** section
 
+{{site.data.alerts.note}}
+<br/><br/><p>The Incident Activity Timeline will show incident reassignment, mentioning both the assigned and assignee.</p>
+{{site.data.alerts.end}}
+
 ![](images/invoke_escalation_5.png)
