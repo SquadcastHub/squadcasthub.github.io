@@ -17,19 +17,21 @@ The Incident Timeline will display the timeline of the incident in reverse chron
 
 **(a)** when the incident was first **Triggered** and **Acknowledged**
 
-**(b)** who Acknowledged it or who it is **Re-assigned** to
+**(b)** who **Acknowledged** it 
 
-**(c)** who **Resolved** it and when
+**(c)** who **Reassigned** it and who it is **Reassigned** to 
 
-**(d)** what message was posted on the **Status Page**
+**(d)** who **Resolved** it and when
 
-**(e)** by whom and when the **Postmortem** was created
+**(e)** what message was posted on the **Status Page**
 
-**(f)** what **Action** was taken
+**(f)** by whom and when the **Postmortem** was created
 
-**(g)** starred comments from the **Notes**
+**(g)** what **Action** was taken
 
-**(h)** if the incident is suppressed due to a **scheduled maintenance**
+**(h)** starred comments from the **Notes**
+
+**(i)** if the incident is suppressed due to a **scheduled maintenance**
 
 ![](images/maintenance_timeline.png)
 
