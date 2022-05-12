@@ -681,6 +681,10 @@ entries:
                     url: /solarwinds-orion
                     output: web, pdf
 
+                  - title: Sonar
+                    url: /sonar
+                    output: web, pdf
+
                   - title: Splunk
                     url: /splunk
                     output: web, pdf
