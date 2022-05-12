@@ -1,5 +1,5 @@
 ---
-title: Airbrake
+title: Sonar
 summary: "Send alerts to Squadcast from Sonar"
 tags: [integration, sonar]
 keywords:
