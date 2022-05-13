@@ -381,6 +381,10 @@ entries:
                     url: /cronitor
                     output: web, pdf
 
+                  - title: Crowdstrike Falcon
+                    url: /crowdstrike-falcon
+                    output: web, pdf
+
                   - title: Datadog
                     url: /datadog
                     output: web, pdf
