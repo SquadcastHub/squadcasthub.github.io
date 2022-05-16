@@ -112,7 +112,21 @@ li.sidebarTitle{
                     {% endif %}
                     {% endfor %}
                     {% endif %}
-                </div-->
+                </div-->                
+
+                <script>
+                var btn1 = document.getElementById("sd1");
+                var timezone1 = new Date().getTimezoneOffset() / -60;
+
+                btn1.onclick = function(){
+                    if(timezone1 >= -1){
+                        document.getElementById("sd_anirudh").click();
+                    }
+                    if(timezone1 < -1){
+                        document.getElementById("sd_nikil").click();
+                    }
+                }
+                </script>
                 <div id="feedback"></div>
                 <script>
                     var htm = '<div class="columns-337 w-row" style="display:flex; margin-top: 32px; margin-bottom: 32px; align-items: center;">'+

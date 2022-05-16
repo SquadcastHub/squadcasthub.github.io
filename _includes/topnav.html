@@ -63,7 +63,26 @@
                 </li>
                 {% endfor %}
                 {% endfor %}
-                <li><a href="#" onclick="javascript:Calendly.showPopupWidget('https://calendly.com/renuka-squadcast/30min');" rel="noopener">Schedule a Demo</a></li>
+                <li><a href="#" id="sd" rel="noreferrer noopener">Schedule a Demo</a></li>
+                <div id="sd_anirudh"></div>
+                <div id="sd_nikil"></div>
+
+                <script>document.getElementById("sd_nikil").onclick=function(){var e=document.createElement("link");e.href="https://assets.calendly.com/assets/external/widget.css",e.rel="stylesheet",document.head.appendChild(e);var t=document.createElement("script");t.src="https://assets.calendly.com/assets/external/widget.js",t.type="text/javascript",document.body.appendChild(t),t.addEventListener("load",function(){Calendly.showPopupWidget("https://calendly.com/nikil-30")})};</script>
+                <script>document.getElementById("sd_anirudh").onclick=function(){var e=document.createElement("link");e.href="https://assets.calendly.com/assets/external/widget.css",e.rel="stylesheet",document.head.appendChild(e);var t=document.createElement("script");t.src="https://assets.calendly.com/assets/external/widget.js",t.type="text/javascript",document.body.appendChild(t),t.addEventListener("load",function(){Calendly.showPopupWidget("https://calendly.com/anirudh-13")})};</script>
+
+                <script>
+                var btn = document.getElementById("sd");
+                var timezone = new Date().getTimezoneOffset() / -60;
+
+                btn.onclick = function(){
+                    if(timezone >= -1){
+                        document.getElementById("sd_anirudh").click();
+                    }
+                    if(timezone < -1){
+                        document.getElementById("sd_nikil").click();
+                    }
+                }
+                </script>
                 {% if site.feedback_disable == null or site.feedback_disable == false %}
 			{% include feedback.html %}
 		{% endif %}
