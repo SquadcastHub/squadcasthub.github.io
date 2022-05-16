@@ -113,6 +113,25 @@ li.sidebarTitle{
                     {% endfor %}
                     {% endif %}
                 </div-->
+                <div id="sd_anirudh"></div>
+                <div id="sd_nikil"></div>
+
+                <script>document.getElementById("sd_nikil").onclick=function(){var e=document.createElement("link");e.href="https://assets.calendly.com/assets/external/widget.css",e.rel="stylesheet",document.head.appendChild(e);var t=document.createElement("script");t.src="https://assets.calendly.com/assets/external/widget.js",t.type="text/javascript",document.body.appendChild(t),t.addEventListener("load",function(){Calendly.showPopupWidget("https://calendly.com/nikil-30")})};</script>
+                <script>document.getElementById("sd_anirudh").onclick=function(){var e=document.createElement("link");e.href="https://assets.calendly.com/assets/external/widget.css",e.rel="stylesheet",document.head.appendChild(e);var t=document.createElement("script");t.src="https://assets.calendly.com/assets/external/widget.js",t.type="text/javascript",document.body.appendChild(t),t.addEventListener("load",function(){Calendly.showPopupWidget("https://calendly.com/anirudh-13")})};</script>
+
+                <script>
+                var btn = document.getElementById("sd");
+                var timezone = new Date().getTimezoneOffset() / -60;
+
+                btn.onclick = function(){
+                    if(timezone >= -1){
+                        document.getElementById("sd_anirudh").click();
+                    }
+                    if(timezone < -1){
+                        document.getElementById("sd_nikil").click();
+                    }
+                }
+                </script>
                 <div id="feedback"></div>
                 <script>
                     var htm = '<div class="columns-337 w-row" style="display:flex; margin-top: 32px; margin-bottom: 32px; align-items: center;">'+
