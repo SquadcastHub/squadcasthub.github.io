@@ -1,5 +1,5 @@
 ---
-title: Incident Details
+title: Incidents Details
 tags: [incident]
 keywords:
 last_updated:
@@ -9,100 +9,62 @@ permalink: docs/incident-details
 folder: mydoc
 ---
 
-## Get more details for an incident
+An incident represents an issue that needs to be addressed and resolved. Incidents trigger on services, and a service’s escalation policy prompts notifications to go out to on-call responders to remediate the issue.
 
-First, select the **Team** from the team picker on the top.
+## Statuses of an Incident
 
-**(1)** Move to the **[Dashboard](incident-dashboard)** or the **[Incidents](incident-list-table-view) page** to view and open incidents
+![](images/Incidents.png)
 
-![](images/incident_1.png)
+## Incident Details Page
 
-**(2)** By clicking on any incident, you will be taken to its dedicated **Incident Details** page which shows all the details of the incident
+To view the Incident Details Page, select the **Team** from the team picker on the top -> Navigate to the **Dashboard** or the **Incidents** page from the sidebar and open incidents.
 
-### What does the Incident Details page for an incident contain
+![](images/Incident_select.png)
 
-![](images/incident_2.png)
+Click on any Incident from the Incident List to view the Incident Details page.
 
-**(a)** **Incident ID** and **Incident Message**
+![](images/Incident_select2.png)
 
-{{site.data.alerts.blue-note-md}}
-**Copy Incident URL**
+<br>
 
-The copy button beside Incident ID copies the Incident URL to the clipboard.
+The Incident Details page has many components:
 
-![](images/incident_5.png)
-
-{{site.data.alerts.end}}
-
-**(b)** Associated **Tags** below the **Message**. Tags can also be added/updated here
-
-**(c)** **Incident Description** i.e. the alert information along with images and links sent by the **Alert Source**
-
-**(d)** Incident **Status**
-
-- **Triggered**: When an incident is open, it will be in the **Triggered** state. Concerned users will get notified when an incident is in **Triggered** state. It will remain in this state until someone acknowledges it
-
-- **Acknowledged**: Incident shifts from **Triggered** to **Acknowledged** state when any user acknowledges it. The user can now look into the incident and try to solve it. If the incident is **Reassigned** or escalated to another user, it will go back to a triggered state, until the new user takes responsibility for it and acknowledges the incident
-
-- **Resolved**: Incidents can be marked as **Resolved** to close them
-
-- **Suppressed**: Sometimes, the incidents can be in a **Suppressed** state - this happens when the alert notification was not meant to go out for some reason like the **Service** was under maintenance
-
-**(e)** **[Notes](incident-notes)** to collaborate with your team
-
-![](images/incident_3.png)
-
-**(f)** Ability to:
-
-- **Acknowledge** the incident
-- **Reassign** the incident to a `User`, `Squad` or an `Escalation Policy`
-- Take **Actions** on the incident to create JIRA tickets or take actions via [Circle CI](circleci-integration)
-- **Resolve** the incident
-
-**(g)** **Incident Details** displays:
-
-- When the incident was **created** in Squadcast
-
-{{site.data.alerts.blue-note-md}}
-**Timestamp Details**
-
-Hover over the **created** field to view the exact Date and Time of the creation of the incident.
-
-![](images/incident_6.png)
-
-{{site.data.alerts.end}}
-
-- **Alert Source** via which the incident was created
-- Affected **Service** for which the incident was created
-- **Elapsed time** since the incident got created in Squadcast
-
-**(h)** **Responders** will display the list of all `Users`, `Squads` or `Escalation Policies` that were involved during the lifecycle of the incident. Select **[Notification Logs](https://support.squadcast.com/docs/notifications#notification-details-and-logs)** to open up logs of all the notifications generated for the incident
-
-**(i)** **[Activity Timeline](incident-timeline)** will indicate the list of all activities performed on this incident in reverse chronological order
-
-**(j)** **[Update Status Page](statuspage#updating-your-statuspage)** is used to update your Status Page for this incident
-
-**(k)** **[Create Postmortem](postmortems#creating-a-postmortem)** will let you start/update the Postmortem for the incident
-
-![](images/incident_4.png)
-
-**(l)** If the incident has deduplicated events, they will be listed under **Deduped events**. By clicking on **Deduped events**, you will be able to see the following:
-
-- Number of deduplicated events
-- Event Timestamp
-- Message and Payload of the event
-
-![](images/de-duplication_7.png)
-
-Clicking on any of the deduplicated events will display will all the information that is sent for that alert from the monitoring tool, including the **Deduplication Reason** (which Deduplication Rule got executed).
-
-![](images/dedup_reason.png)
+<style>
+table{
+   max-width: 100%;
+}
+th{
+   width: %;
+}
+</style>
+ 
+| Component | Description |
+|-----------|--------------|
+| Incident ID          |  []() A unique ID for the incident <br> <br> ![](images/IncidentID.png) <br> <br> **Note**: To copy this Incident URL to the clipboard, use the **Copy** button on the right  |
+| Incident Message     | The displayed title of the incident |
+| Incident Tags        | Tags are key-value pairs, added to an incident. They allow you to quickly see relevant information, such as severity or environment, for a particular incident rather than needing to review all of the related alerts |
+| Incident Description | Incident Description i.e. the alert information along with images and links sent by the Alert Source |
+| Notes                | Incident Notes enable you to add important notes for you and your team that can help mitigate an incident faster |
+| Runbooks             | [Runbooks](https://support.squadcast.com/docs/runbooks) are a “how-to” guide for completing a commonly repeated task or procedure while working on a critical incident.  <br> <br> **Note**: Simple Runbooks will be available for accounts in the [Pro and Enterprise plans](https://www.squadcast.com/pricing). <br> <br> To attach and reference runbooks to your incident, click on the **Attach Runbooks** button -> Check the runbook you wish to attach -> Click **Add Runbook**  <br> <br>![](images/incidents_runbook.png)<br> <br> |
+| Tasks                | [Tasks](https://support.squadcast.com/docs/runbooks#incident-tasks) are instructions or to-dos for other team members, or even follow-up tasks for an incident. <br> <br> **Note**: Tasks will be available for accounts in the [Pro and Enterprise plans](https://www.squadcast.com/pricing). <br> <br> To add your tasks, click on the **Add Task** button -> Add your Task -> Click on **Add Task** again, to save <br> <br>![](images/incidents_task.png)<br> <br> Once added, you can Edit/Update and Delete the Task. |
+| Acknowledge          | To mark an incident as Acknowledged |
+| Reassign             | To reassign an Incident to another User, Squad or an Escalation Policy |
+| Resolve              | To mark an incident as Resolved |
+| Actions              | Actions are used to create JIRA tickets or take actions via [Circle CI](https://support.squadcast.com/docs/circleci-integration) |
+| Incident Details     | []() **Incident Details displays**: <br> <br> 1. When the incident was **created** in Squadcast <br> 2. **Alert Source** via which the incident was created <br> 3. **Affected Service** for which the incident was created <br> 4. **Elapsed time** since the incident got created in Squadcast <br> <br> Note: Hover over the **created field** to view the exact Date and Time of the creation of the incident. <br> <br>![](images/incident_6.png) |
+| Responders           | Responders will display the list of all Users, Squads or Escalation Policies that were involved during the lifecycle of the incident. Select **Notification Logs** to open up logs of all the notifications generated for the incident |
+| Activity Timeline    | Activity Timeline will indicate the list of all activities performed on this incident in reverse chronological order <br> <br> **Note**: Activity Timeline will show incident reassignment, mentioning both the assigned and assignee. <br> <br> **Note**: Downloading Activity Timeline will be available for accounts in the [Pro and Enterprise plans](https://www.squadcast.com/pricing). |
+| Update Status Page   | Update Status Page is used to update your Status Page for this incident |
+| Create Postmortem    | []() Create Postmortem will let you start/update the Postmortem for the incident                 <br> <br>![](images/incident_4.png)<br> <br> |
+| Deduped Events       | []() If the incident has deduplicated events, they will be listed under **Deduped events**.  <br> <br> By clicking on **Deduped events**, you will be able to see the following: <br> <br> 1. Number of deduplicated events <br> 2. Event Timestamp <br> 3. Message and Payload of the event <br> <br>![](images/de-duplication_7.png)<br> <br>Clicking on any of the deduplicated events will display all the information that is sent for that alert from the monitoring tool, including the **Deduplication Reason** (which Deduplication Rule got executed). <br> <br>![](images/dedup_reason.png)<br> <br>|
 
 ## Incident Details Field Limitations
 
 There are certain character limitations for the Incident Message and Incident Description fields. The same is indicated below.
 
+<br>
+
 |    Incident Field    | Character Limit |
-| :------------------: | :-------------: |
+| --- | --- |
 |   Incident Message   |       250       |
 | Incident Description |      15000      |
