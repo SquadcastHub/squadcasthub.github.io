@@ -6,7 +6,7 @@ last_updated:
 summary: "Get more details for an incident"
 sidebar: mydoc_sidebar
 permalink: docs/incident-details
-folder: mydoca
+folder: mydoc
 ---
 
 An incident represents an issue that needs to be addressed and resolved. Incidents trigger on services, and a service’s escalation policy prompts notifications to go out to on-call responders to remediate the issue.
