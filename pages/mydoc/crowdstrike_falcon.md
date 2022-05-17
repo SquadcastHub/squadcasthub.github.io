@@ -44,6 +44,19 @@ Choose **Squadcast** as **Webhook name** and add the data you want to send to Sq
 
 ![](images/crowdstrike_falcon_5.png)
 
+{{site.data.alerts.blue-note-md}}
+**Important**  
+
+* **For New Detection :**
+
+Always add **Detection Id** and **Detection Status** in the data you want to send to Squadcast.
+
+* **For New Incident :**
+
+Always add **Incident Id** and **Incident Status** in the data you want to send to Squadcast.
+
+{{site.data.alerts.end}}
+
 Again add a **condition** after the **Trigger** event. Choose Parameter as **Detection status** or **Incident status**, Operator as **is equal to** & Value as **Closed**. Then click on **+** and add **Action**. Choose **Notifications** as **Action type** and **Call webhook** as **Action**. Choose **Squadcast** as **Webhook name** and add the data you want to send to Squadcast.
 
 ![](images/crowdstrike_falcon_4.png)
