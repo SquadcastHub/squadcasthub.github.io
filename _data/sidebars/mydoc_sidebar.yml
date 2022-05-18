@@ -268,6 +268,19 @@ entries:
             url: /docs/statuspage
             output: web, pdf
 
+      - title: SLO Tracker
+        output: web, pdf
+
+        folderitems:
+          - title: SLO Basics
+            url: /docs/slo-basics
+            output: web, pdf
+
+          - title: Configure and Monitor SLOs
+            url: /docs/configure-slo
+            output: web, pdf
+
+
       - title: Analytics & Reporting
         output: web, pdf
 
