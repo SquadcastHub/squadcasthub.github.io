@@ -12,7 +12,7 @@ folder: mydoc
 {{site.data.alerts.yellow-note-i-md}}
 **Note:**
 
-This feature is available as part of the [Pro and Enterprise Plan](https://www.squadcast.com/pricing).
+This feature is available as part of the Product Trial and [Pro and Enterprise Plan](https://www.squadcast.com/pricing).
 {{site.data.alerts.end}}
 
 <br> 
@@ -57,11 +57,13 @@ Before we go any further, let’s walk through some of the fundamental concepts 
 
 ## Key Terminology
 
-- **SLI or Service Level Indicator** is a quantitative measurement of a service’s performance or reliability.
-
-- **SLO or Service Level Objective** is a target percentage for an SLI over a specific period of time.
-
 - **SLA or Service Level Agreement** is an explicit or implicit agreement between a client and service provider stipulating the client’s reliability expectations and service provider’s consequences for not meeting them.
+
+- **SLO or Service Level Objective** is an agreement within an SLA about a specific metric over a certain period of time. It is expressed as a percentage or ratio over some time, for example, “99.95% availability over 24 hours”.
+
+- **SLI or Service Level Indicator** measures compliance with an SLO (Service Level Objective). So, for example, if an SLA specifies that your system will be available 99.95% of the time, your SLO is likely 99.95% uptime and your SLI is the actual measurement of your uptime. Maybe it’s 99.90%, or maybe it's 99.99%. 
+
+- **Error Budget** is the maximum acceptable downtime without breaching the SLO. For example, if your Service Level Agreement (SLA) specifies an uptime of 99.99% (in a year) before the business has to compensate clients for the outage, that means your error budget (or the time for which your system can go down without any consequences) is 52.56 mins in a year.
 
 - **Burn Rate** tells you how fast you are consuming your error budget.
 

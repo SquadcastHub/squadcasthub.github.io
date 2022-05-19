@@ -12,7 +12,7 @@ folder: mydoc
 {{site.data.alerts.yellow-note-i-md}}
 **Note:**
 
-This feature is available as part of the [Pro and Enterprise Plan](https://www.squadcast.com/pricing).
+This feature is available as part of the Product Trial and [Pro and Enterprise Plan](https://www.squadcast.com/pricing).
 {{site.data.alerts.end}}
 
 {{site.data.alerts.blue-note}}
@@ -160,7 +160,11 @@ An error budget is 1 minus the SLO of the service. A 99.9% SLO service has a 0.1
 
 #### 4. What determines a Healthy or Unhealthy SLO?
 
-Healthy or unhealthy is based on how rapidly the error budget is getting depleted.
+Healthy or unhealthy is based on how rapidly the error budget is getting depleted. Slo burn rate indicates how fast your error budget is getting consumed relative to your SLO’s target length.
+
+For eg: if have 99.9% target for a month, then you will get 43.12 min of downtime, Which means you can burn 1.43 Min(43.12/30) of error budget every day. If you burn a total of 30 min of error budget within the first 10 days of your SLO duration then it will turn unhealthy. 
+
+So the SLO which is Healthy today is because it's consumed less error budget than allocated for the days its been since the SLO started.
 
 #### 5. Can I automatically associate incidents with an SLO?
 
