@@ -3,20 +3,13 @@ title: SLO Basics
 tags: [slo basics]
 keywords:
 last_updated:
-summary: "SLOs allows you to define and enforce an agreement between two parties regarding the delivery of a given service. "
+summary: "SLOs allow you to define and enforce an agreement between two parties regarding the delivery of a given service."
 sidebar: mydoc_sidebar
 permalink: docs/slo-basics
 folder: mydoc
 ---
 
-{{site.data.alerts.yellow-note-i-md}}
-**Note:**
-
-This feature is available as part of the Product Trial and [Pro and Enterprise Plan](https://www.squadcast.com/pricing).
-{{site.data.alerts.end}}
-
-<br> 
-In recent years, organizations have increasingly adopted Service Level Objectives, or SLOs, as a fundamental part of their Site Reliability engineering (SRE) practice. Best practices around SLOs have been pioneered by Google—the [**Google SRE book**](https://sre.google/sre-book/service-level-objectives/) provides a great introduction to this concept. 
+In recent years, organizations have increasingly adopted Service Level Objectives, or SLOs, as a fundamental part of their Site Reliability engineering (SRE) practice. Best practices around SLOs have been pioneered by Google—the [Google SRE book](https://sre.google/sre-book/service-level-objectives/) provides a great introduction to this concept. 
 
 In essence, SLOs are rooted in the idea that service reliability and user happiness go hand in hand. Setting concrete and measurable reliability targets helps organizations strike the right balance between product development and operational work, which ultimately results in a positive end user experience.
 
@@ -41,7 +34,7 @@ In order to get the main stakeholders across your organization to adopt SLOs, yo
 
 ### End Users
 
-No matter the product, end users have expectations for the quality of service they receive. While you could use support tickets or incident pages to gauge how unhappy your customers are, you shouldn’t solely rely on them for making product decisions as they do not comprehensively capture your end user experience. 
+No matter what product, end users have expectations for the quality of service they receive. While you could use support tickets or incident pages to gauge how unhappy your customers are, you shouldn’t solely rely on them for making product decisions as they do not comprehensively capture your end user experience. 
 
 SLOs help you figure out the right balance between product innovation (which will help you provide greater value to your end users, but runs the risk of breaking things) and reliability (which will keep those users happy). Your error budgets dictate the amount of unreliability that can be afforded for development work before your end users are likely to experience a degradation in quality of service.
 
@@ -49,9 +42,9 @@ SLOs help you figure out the right balance between product innovation (which wil
 
 Traditionally, the split between developers and operations engineers stems from their opposing goals and responsibilities: developers aim to add more features to their services, while operations engineers are responsible for maintaining the stability of those services. 
 
-With SLOs—and their accompanying error budgets—in place, teams are able to objectively decide which projects or initiatives to prioritize. As long as there is an error budget remaining, developers can ship new features to improve the overall quality of the product, while ops engineers can focus more heavily on long-term reliability projects. But when the error budget begins running low, developers will need to slow down or freeze feature work—and work closely with the ops team to restabilize the system before any SLAs or SLOs are violated. 
+With SLOs—and their accompanying error budgets—in place, teams are able to objectively decide which projects or initiatives to prioritize. As long as there is an error budget remaining, developers can ship new features to improve the overall quality of the product, while operations engineers can focus more heavily on long-term reliability projects. But when the error budget begins running low, developers will need to slow down or freeze feature work—and work closely with the operations team to restabilize the system before any SLAs or SLOs are violated. 
 
-In short, error budgets act as a quantifiable method for aligning the work and goals of developers and ops engineers.
+In short, error budgets act as a quantifiable method for aligning the work and goals of developers and operations engineers.
 
 Before we go any further, let’s walk through some of the fundamental concepts and definitions we use within the product.
 
@@ -63,15 +56,15 @@ Before we go any further, let’s walk through some of the fundamental concepts 
 
 - **SLI or Service Level Indicator** measures compliance with an SLO (Service Level Objective). So, for example, if an SLA specifies that your system will be available 99.95% of the time, your SLO is likely 99.95% uptime and your SLI is the actual measurement of your uptime. Maybe it’s 99.90%, or maybe it's 99.99%. 
 
-- **Error Budget** is the maximum acceptable downtime without breaching the SLO. For example, if your Service Level Agreement (SLA) specifies an uptime of 99.99% (in a year) before the business has to compensate clients for the outage, that means your error budget (or the time for which your system can go down without any consequences) is 52.56 mins in a year.
+- **Error Budget** is the maximum acceptable downtime without breaching the SLO. For example, if your Service Level Agreement (SLA) specifies an uptime of 99.99% (in a year) before the business has to compensate clients for the outage, that means your error budget (or the time for which your system can go down without any consequences) is 52 mins 35 secs in a year.
 
-- **Burn Rate** tells you how fast you are consuming your error budget.
+- **Burn Rate** tells you how fast you are consuming the allocated error budget.
 
   SLOs can be defined over various time intervals, you can either use a *Rolling Time Window* or a *Fixed Duration Window*.
 
- - **Fixed Duration**: When you select **Fixed Duration** as the **Period Type**, you can specify the Period Length, which can be a day, a week or a month. Periods are non-overlapping and fixed to the calendar start and end dates. Compliance is calculated at the end of the time period. An example of where the Calendar period makes sense is when the company wants to calculate SLO compliance one quarter at a time. 
+ - **Fixed Duration**, when selected as the **Period Type**, user can specify the Period Length, which can be a day, a week or a month. Periods are non-overlapping and fixed to the calendar start and end dates. Compliance is calculated at the end of the time period. An example of where the Calendar period makes sense is when the company wants to calculate SLO compliance one quarter at a time. 
  
- - **Rolling Period**: When you select **Rolling Period** as the **Period Type**, you can specify the number of days for the Period Length, like, 30 days. They don’t have fixed start and end dates. With a rolling time period, you get the last 30 day measure of compliance, each day, rather than one per month. However, services can hover between compliance and noncompliance as the SLO status changes daily.
+ - **Rolling Period**, when selected as the **Period Type**, user can specify the number of days for the Period Length, like, 30 days. They don’t have fixed start and end dates. With a rolling time period, you get the last 30 day measure of compliance, each day, rather than one per month. However, services can hover between compliance and non-compliance as the SLO status changes daily.
 
 - **False Positives** are those incidents that were marked initially as affecting an SLO (and hence be considered for error budget calculations) but after further analysis, they were deemed not to be SLO affecting.
 
