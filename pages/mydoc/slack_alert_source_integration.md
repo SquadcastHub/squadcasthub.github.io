@@ -83,6 +83,33 @@ The incident has now been created successfully.
 The **Squadcast Bot must be called into the channel** where you will want to take any of the above actions to create an incident.
 {{site.data.alerts.end}}
 
+## Creating Slack Channel for Incidents
+
+To create a Slack Channel for an Incident,
+
+**(1)** Navigate to the Incident Details page, and click on the **+** icon or **+ Add Link** button
+ 
+![](images/slackchannel_1.png)
+
+**(2)** Click on the **Create Slack Channel** option from the menu
+
+![](images/slackchannel_2.png)
+ 
+**(3)** Type in the **Channel Name** for your Incident and click **Save**
+
+![](images/slackchannel_3.png)
+ 
+This will generate a dedicated Slack Channel for your Incident.
+
+{{site.data.alerts.yellow-note-i-md}}
+**Note**
+<br>
+Once the Incident is resolved, you can archive the Slack Channel using the **Archive** button on the right. 
+ 
+![](images/slackchannel_4.png)
+ 
+{{site.data.alerts.end}}
+
 ### How to Video
 
 <script src="https://fast.wistia.com/embed/medias/7tpv6ktcns.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:58.13% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><span class="wistia_embed wistia_async_7tpv6ktcns popover=true popoverAnimateThumbnail=true videoFoam=true" style="display:inline-block;height:100%;position:relative;width:100%">&nbsp;</span></div></div>
