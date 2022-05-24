@@ -7,6 +7,7 @@ summary: "Service Level Objective Dashboard"
 sidebar: mydoc_sidebar
 permalink: docs/slo-dashboard
 folder: mydoc
+published: false
 ---
 
 {{site.data.alerts.red-note}}
