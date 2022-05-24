@@ -228,6 +228,10 @@ entries:
             url: /docs/incident-timeline
             output: web, pdf
 
+          - title: Communication Channels
+            url: /docs/communication-channels
+            output: web, pdf
+
           - title: Create Incident Manually
             url: /docs/manually-creating-an-incident
             output: web, pdf
@@ -235,6 +239,7 @@ entries:
           - title: Incident Notes
             url: /docs/incident-notes
             output: web, pdf
+
 
       - title: Runbooks
         output: web, pdf
