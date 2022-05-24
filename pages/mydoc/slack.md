@@ -71,6 +71,33 @@ This completes the integration process between Squadcast and Slack. You can veri
 <br/><br/><p>You can simply click on <b>Revoke</b> to remove the configured Slack integration at any given time</p>
 {{site.data.alerts.end}}
 
+## Creating Slack Channel for Incidents
+
+To create a Slack Channel for an Incident,
+
+**(1)** Navigate to the Incident Details page, and click on the **+** icon or **+ Add Link** button
+ 
+![](images/slackchannel_1.png)
+
+**(2)** Click on the **Create Slack Channel** option from the menu
+
+![](images/slackchannel_2.png)
+ 
+**(3)** Type in the **Channel Name** for your Incident and click **Save**
+
+![](images/slackchannel_3.png)
+ 
+This will generate a dedicated Slack Channel for your Incident.
+
+{{site.data.alerts.yellow-note-i-md}}
+**Note**
+<br>
+Once the Incident is resolved, you can archive the Slack Channel using the **Archive** button on the right. 
+ 
+![](images/slackchannel_4.png)
+ 
+{{site.data.alerts.end}}
+
 ## Updating the global Slack Channel for all Services in Squadcast
 
 **(1)** Click on **Select Channel**
