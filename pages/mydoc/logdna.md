@@ -1,25 +1,25 @@
 ---
-title: LogDNA
-tags: [integration, logdna]
+title: Mezmo (formerly LogDNA)
+tags: [integration, mezmo-logdna]
 keywords: 
 last_updated: 
-summary: "Get alerts from LogDNA into Squadcast"
+summary: "Get alerts from Mezmo into Squadcast"
 sidebar: mydoc_sidebar
 permalink: docs/logdna
 folder: mydoc
 ---
 
-Follow the steps below to configure a service so as to extract its related alert data from LogDNA. Squadcast will then process this information to create incidents for this service as per your preferences.
+Follow the steps below to configure a service so as to extract its related alert data from Mezmo. Squadcast will then process this information to create incidents for this service as per your preferences.
 
-## Create a LogDNA service in Squadcast
+## Create a Mezmo service in Squadcast
 
 **(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
 ![](images/alert_source_1.png)
 
-**(2)** Search for **LogDNA** from the Alert Source drop-down and copy the Webhook URL
+**(2)** Search for **Mezmo (formerly LogDNA)** from the Alert Source drop-down and copy the Webhook URL
 
-![](images/logdna_1.png)
+![](images/logdna_ss.png)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b><br/><br/>
@@ -27,9 +27,9 @@ Follow the steps below to configure a service so as to extract its related alert
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-## Setting Squadcast webhooks in LogDNA
+## Setting Squadcast webhooks in Mezmo
 
-Login to your LogDNA account and navigate to the view for which you want to setup alerts.
+Login to your Mezmo account and navigate to the view for which you want to setup alerts.
 
 On the View name, click on the dropdown and select **Attach an alert**.
 
@@ -43,4 +43,4 @@ Then configure the type of alert and other conditions and enter Squadcast webhoo
 
 ![](images/logdna_4.png)
 
-That's it! Your LogDNA integration is good to go and whenever the alert conditions are met, an incident will be automatically created in Squadcast.
+That's it! Your Mezmo integration is good to go and whenever the alert conditions are met, an incident will be automatically created in Squadcast.

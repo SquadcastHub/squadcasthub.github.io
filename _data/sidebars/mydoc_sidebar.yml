@@ -534,7 +534,7 @@ entries:
                     url: /linear
                     output: web, pdf
 
-                  - title: LogDNA
+                  - title: Mezmo (formerly LogDNA)
                     url: /logdna
                     output: web, pdf
 
