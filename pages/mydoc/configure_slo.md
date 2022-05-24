@@ -101,7 +101,7 @@ The SLO list view shows information for each SLO, including:
 | Remaining Error Budget |      Shows the remaining Error Budget for your SLO (in minutes) |
 | SLO Health |      Indicates the health of the SLO, either as Healthy or Needs Attention     |
 | Status |      Status Indicates whether your SLO is Active or Inactive      |
-| Incidents Reported |      Indicates the no. of incidents reported for this SLO      |
+| Incidents Reported |      Indicates the no. of incidents reported **+** the false positives for this SLO      |
 | Tags |      Indicates the tags associated with the SLO      |
 
 ## SLO Detail Page
