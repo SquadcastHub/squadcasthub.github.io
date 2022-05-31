@@ -34,7 +34,7 @@ This Role will allow you to manage just this Team. The abilities are:
 | Runbooks            | `create` `read` `update` `delete` |
 | Schedules           | `create` `read` `update` `delete` |
 | Services            | `create` `read` `update` `delete` |
-| Slos                | `create` `read` `update` `delete` |
+| SLOs                | `create` `read` `update` `delete` |
 | Squads              | `create` `read` `update` `delete` |
 | Status Pages        | `create` `read` `update` `delete` |
 | Team analytics      | `read`                            |
@@ -48,7 +48,7 @@ This Role will allow you to manage just this Team. The abilities are:
 | Runbooks            | `read` `update` |
 | Schedules           | `read` `update` |
 | Services            | `read` `update` |
-| Slos                | `read` `update` |
+| SLOs                | `read` `update` |
 | Squads              | `read` `update` |
 | Status Pages        | `read` `update` |
 | Team analytics      | `read`          |
@@ -62,7 +62,7 @@ This Role will allow you to manage just this Team. The abilities are:
 | Runbooks            | `read`    |
 | Schedules           | `read`    |
 | Services            | `read`    |
-| Slos                | `read`    |
+| SLOs                | `read`    |
 | Squads              | `read`    |
 | Status Pages        | `read`    |
 | Team analytics      | `read`    |
