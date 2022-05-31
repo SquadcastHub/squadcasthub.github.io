@@ -1,5 +1,5 @@
 ---
-title: Analytics & Reporting
+title: Analytics 
 tags: [analyze metrics]
 keywords:
 last_updated:
@@ -22,7 +22,7 @@ Only users with [Org Level Permission](https://support.squadcast.com/docs/user-p
 {{site.data.alerts.yellow-note-i-md}}
 **Note:**
 
-Team Level Analytics uses Role-Based Access Control. Only the users part of the Team can view that Team’s performance.
+Team Level Analytics uses Role-Based Access Control. Only the users who are part of the Team can view that Team’s performance.
 {{site.data.alerts.end}}
 
 Select the appropriate **Team** from the Team picker on the top left.
@@ -42,13 +42,13 @@ In Team Analytics, you can see many components:
 | MTTA |   Mean Time To Acknowledge shows how quickly your team is able to respond to an incident. This is calculated by their time to Acknowledge an incident |
 |   MTTR  |  Mean Time To Resolve shows how quickly your team is able to resolve incidents as they arise. This is calculated by their time to Resolve an incident  |
 |   MTTA & MTTR over time  |    []() Image here shows the MTTA & MTTR over time for applied filters i.e Service:API and Tag:Alert type: Anomaly   ![](images/analytics_4.png)        |
-|   Open Incidents by Service  |       Service-wise mention of total number of open incidents (Triggered & Acknowledged)        |
-|   Open Incidents by Users  |       User-wise mention of total number of open incidents       |
-|   Deduplicated Incidents by Service  |       Service-wise mention of total number of deduplicated incidents       |
+|   Open Incidents by Service  |       Service level filter of total number of open incidents (Triggered & Acknowledged)        |
+|   Open Incidents by Users  |       User level filter of total number of open incidents       |
+|   Deduplicated Incidents by Service  |       Service level filter of total number of deduplicated incidents       |
 |   Deduplicated Incidents by Alert Sources  |       Alert Source specific split of total number of deduplicated incidents     |
-|   Suppressed Incidents by Service  |       Service-wise split of total number of suppressed incidents       |
+|   Suppressed Incidents by Service  |       Service level split of total number of suppressed incidents       |
 |   Suppressed Incidents Alert Sources  |      Alert Source specific split of total number of suppressed incidents        |
-|   Reassigned Incidents by Team  |       Team-wise split of total number of reassigned incidents        |
+|   Reassigned Incidents by Team  |       Team level split of total number of reassigned incidents        |
 
 {{site.data.alerts.yellow-note-i-md}}
 **Note:**
@@ -63,7 +63,6 @@ You can filter Team Analytics based on Services, Tags and Users. Click on **+Add
 
 You can only select one Service, Tag and User at a time. Multiselect for any one category is not permitted today.
 
-We’re working to bring this out to you soon
 {{site.data.alerts.end}}
 
 {{site.data.alerts.yellow-note-i-md}}
@@ -101,9 +100,9 @@ In Organization Analytics, you can see many components:
 | MTTA |      Mean Time to Acknowledge shows the average amount of time between a system alert and a team member acknowledging it, for the entire Organization, over a specified period of time     |
 |   MTTR   |     Mean Time to Resolution shows the average amount of time it takes to respond to or resolve an incident, for the entire Organization, over a specified period of time      |
 |   MTTA & MTTR over time  |     ![](images/analytics_5.png)     |
-|   Open Incidents by Team  |   Team-wise split of total number of open incidents  |
-|   Deduplicated Incidents by Team  |     Team-wise split of total number of deduplicated incidents      |
-|   Suppressed Incidents by Team   |     Team-wise split of total number of suppressed incidents      |
+|   Open Incidents by Team  |   Team level split of total number of open incidents  |
+|   Deduplicated Incidents by Team  |     Team level split of total number of deduplicated incidents      |
+|   Suppressed Incidents by Team   |     Team level split of total number of suppressed incidents      |
 
 {{site.data.alerts.yellow-note-i-md}}
 **Note:**

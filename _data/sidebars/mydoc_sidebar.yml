@@ -278,11 +278,11 @@ entries:
             output: web, pdf
 
 
-      - title: Analytics & Reporting
+      - title: Analytics
         output: web, pdf
 
         folderitems:
-          - title: Analytics & Reporting
+          - title: Analytics 
             url: /docs/analytics
             output: web, pdf
 
