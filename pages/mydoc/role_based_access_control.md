@@ -30,35 +30,44 @@ This Role will allow you to manage just this Team. The abilities are:
 | Entity              | Abilities                         |
 |---------------------------------------------------------|
 | Escalation Policies | `create` `read` `update` `delete` |
+| Postmortems         | `create` `read` `update` `delete` |
+| Runbooks            | `create` `read` `update` `delete` |
 | Schedules           | `create` `read` `update` `delete` |
 | Services            | `create` `read` `update` `delete` |
+| SLOs                | `create` `read` `update` `delete` |
 | Squads              | `create` `read` `update` `delete` |
 | Status Pages        | `create` `read` `update` `delete` |
-| Postmortems         | `create` `read` `update` `delete` |
+| Team analytics      | `read`                            |
 
 ### 3. User
 
 | Entity              | Abilities       |
 |---------------------------------------|
 | Escalation Policies | `read` `update` |
+| Postmortems         | `read` `update` |
+| Runbooks            | `read` `update` |
 | Schedules           | `read` `update` |
 | Services            | `read` `update` |
+| SLOs                | `read` `update` |
 | Squads              | `read` `update` |
 | Status Pages        | `read` `update` |
-| Postmortems         | `read` `update` |
+| Team analytics      | `read`          |
 
 ### 4. Observer
 
 | Entity              | Abilities |
 |---------------------------------|
 | Escalation Policies | `read`    |
+| Postmortems         | `read`    |
+| Runbooks            | `read`    |
 | Schedules           | `read`    |
 | Services            | `read`    |
+| SLOs                | `read`    |
 | Squads              | `read`    |
 | Status Pages        | `read`    |
-| Postmortems         | `read`    |
+| Team analytics      | `read`    |
 
-![](images/rbac_1.png)
+![](images/rbac_roles.png)
 
 {{site.data.alerts.yellow-note-i-md}}
 **Important:**
