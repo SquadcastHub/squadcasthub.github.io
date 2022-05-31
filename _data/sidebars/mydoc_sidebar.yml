@@ -100,10 +100,6 @@ entries:
             url: /docs/maintenance-mode
             output: web, pdf
 
-          - title: Service Levels (Deprecated)
-            url: /docs/service-levels
-            output: web, pdf
-
             subfolders:
               - title: Alert Deduplication Rules
                 output: web
@@ -186,10 +182,6 @@ entries:
 
           - title: Dashboard Metrics
             url: /docs/dashboard-metrics
-            output: web, pdf
-
-          - title: SLO Dashboard (Deprecated)
-            url: /docs/slo-dashboard
             output: web, pdf
 
           - title: Take Bulk Actions
@@ -286,11 +278,11 @@ entries:
             output: web, pdf
 
 
-      - title: Analytics & Reporting
+      - title: Analytics
         output: web, pdf
 
         folderitems:
-          - title: Analytics & Reporting
+          - title: Analytics 
             url: /docs/analytics
             output: web, pdf
 
