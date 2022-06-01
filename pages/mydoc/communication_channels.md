@@ -46,10 +46,17 @@ To create a Slack Channel for an Incident,
  
 **(3)** Type in the **Channel Name** for your Incident and click **Save**
 
-
 ![](images/slackchannel_3.png)
  
 This will generate a dedicated Slack Channel for your Incident.
+
+{{site.data.alerts.yellow-note-i-md}}
+**Note**
+<br>
+All notifications of this specific incident like, Acknowledged, Re-assigned, Resolved will be sent to this channel in addition to the regular channel (if configured).
+ 
+ 
+{{site.data.alerts.end}}
 
 
 {{site.data.alerts.yellow-note-i-md}}

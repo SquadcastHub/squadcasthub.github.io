@@ -92,6 +92,14 @@ This will generate a dedicated Slack Channel for your Incident.
 {{site.data.alerts.yellow-note-i-md}}
 **Note**
 <br>
+All notifications of this specific incident like, Acknowledged, Re-assigned, Resolved will be sent to this channel in addition to the regular channel (if configured).
+
+ 
+{{site.data.alerts.end}}
+
+{{site.data.alerts.yellow-note-i-md}}
+**Note**
+<br>
 Once the Incident is resolved, you can archive the Slack Channel using the **Archive** button on the right. 
  
 ![](images/slackchannel_4.png)
