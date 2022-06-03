@@ -603,6 +603,10 @@ entries:
                     url: /pingdom
                     output: web, pdf
 
+                  - title: Powercode
+                    url: /powercode
+                    output: web, pdf
+
                   - title: Prometheus
                     url: /prometheus
                     output: web, pdf
