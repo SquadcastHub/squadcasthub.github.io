@@ -140,6 +140,10 @@ entries:
             url: /docs/who-is-on-call
             output: web, pdf
 
+          - title: My On-Call Shifts
+            url: /docs/my-oncall-shifts
+            output: web, pdf
+
           - title: Schedule Overrides
             url: /docs/schedule-overrides
             output: web, pdf
