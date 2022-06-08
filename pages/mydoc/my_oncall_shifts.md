@@ -3,7 +3,7 @@ title: My On-Call Shifts
 tags: [on-call shifts]
 keywords: 
 last_updated: 
-summary: "My On-Call Shifts allows users to view their shifts across all escalation policies and schedules in a single, easy-to-use view"
+summary: "My On-Call Shifts allows users to view their shifts across all Escalation Policies and Schedules in a single, easy-to-use view"
 sidebar: mydoc_sidebar
 permalink: docs/my-oncall-shifts
 folder: mydoc
@@ -33,12 +33,13 @@ You can view the on-call shifts for today, this week, and any custom range you s
 
 ## View Another User’s On-Call Shifts
 
-Go to Settings -> Users and select another user to visit their profile page.
+Go to Settings -> Users and select another User to visit their Profile Page.
 Select the On-Call Shifts tab.
 
 ![](images/oncall_shifts3.png)
 
-{{site.data.alerts.yellow-note-i}}
+<!-- {{site.data.alerts.yellow-note-i}}
 <b>Important</b>
 The On-Call Shifts for you or any other user is displayed in your selected timezone. 
-{{site.data.alerts.end}}
+![](images/oncall_shifts4.png)
+{{site.data.alerts.end}} -->
