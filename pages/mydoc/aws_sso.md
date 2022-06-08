@@ -24,13 +24,13 @@ This page describes how to add Squadcast in AWS SSO Dashboard and configure SSO 
 
 ![](images/sso_new_button.png)
 
-**(2)** Select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**
+**(2)** Select the **AWS** from the dropdown and click **Show configuration guide for Custom SAML 2.0**
 
-![](images/aws_sso_2_a.png)
+![](images/aws_sso_new_1.png)
 
 Here, copy the **ACS URL** to use it in your AWS SSO configuration next
 
-![](images/saml_3.png)
+![](images/aws_sso_new_2.png)
 
 **(3)** In your AWS account, navigate to **AWS Single Sign-On**
 
@@ -72,6 +72,12 @@ Here, in the placeholders for both **Application ACS URL** and **Application SAM
 
 - Paste the copied **AWS SSO sign-in URL** under **SAML 2.0 Endpoint**
 - Copy the contents of the downloaded **AWS SSO certificate** and paste it under **X.509 Certificate**
+- Enter the domain name of your Organization
+
+{{site.data.alerts.note-md}}
+Make sure to add the **Domain Name** of your Organization, for SSO login to work
+{{site.data.alerts.end}}
+
 - Pick the **Default New User Role** that a newly provisioned user in Squadcast should be assigned as by default. This could be either `User`, `Admin` or `Stakeholder`
 
   **Note:** If required, the `User Role` attribute can be modified manually for users later on from the **Users** page in Squadcast
@@ -79,11 +85,11 @@ Here, in the placeholders for both **Application ACS URL** and **Application SAM
 - If you want the Account Owner and/or Admins to be able to login to Squadcast using email-password aside from SSO, enable the checkboxes accordingly
 - Click on **Save**
 
-![](images/aws_sso_7.png)
+![](images/aws_sso_new_3.png)
 
 **(8)** Enable the _toggle_ to activate the SSO integration
 
-![](images/aws_sso_8.png)
+![](images/aws_sso_new_4.png)
 
 **(9)** Finally, in AWS SSO:
 

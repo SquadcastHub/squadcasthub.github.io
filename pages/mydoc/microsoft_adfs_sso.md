@@ -29,9 +29,9 @@ Squadcast supports SAML 2.0 based Single Sign On (SSO) login for Microsoft Activ
 
 ![](images/sso_new_button.png)
 
-**(2)** In the opened modal, select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**.
+**(2)** In the opened modal, select the **Microsoft ADFS** from the dropdown and click **Show configuration guide for Custom SAML 2.0**.
 
-![](images/adfs_2.png)
+![](images/microsoft_sso_new_1.png)
 
 **(3)** As given in the displayed guide, copy the **ACS** url . Then log in to your server and go to `Server Manager`.
 
@@ -139,9 +139,14 @@ c:[Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"]
 openssl x509 -inform der -in certificatename.cer -out certificatename.pem
 ```
 
-**(24)** Open the .pem file in text editor. Copy the contents and paste it in Squadcast under `X.509 Certificate`. Then enter the `Saml 2.0` Endpoint as **https://<Your Domain Name >/adfs/ls**
+**(24)** Open the .pem file in text editor. Copy the contents and paste it in Squadcast under `X.509 Certificate`. Then enter the `Saml 2.0` Endpoint as **https://<Your Domain Name >/adfs/ls**. Also add the Domain Name of the Organization. 
 
-![](images/adfs_23.png)
+{{site.data.alerts.note-md}}
+Make sure to add the **Domain Name** of your Organization, for SSO login to work
+{{site.data.alerts.end}}
+
+
+![](images/microsoft_sso_new_2.png)
 
 **(25)** Enable `SSO` and click `Save`.
 
