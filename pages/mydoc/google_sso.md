@@ -41,11 +41,11 @@ This page describes how to add Squadcast to G Suite and configure SSO-support wi
 
 ![](images/sso_new_button.png)
 
-![](images/google_7_new.png)
+![](images/google_sso_new_1.png)
 
 **(8)** Click **Show configuration guide for Google** and copy the ACS URL displayed
 
-![](images/google_8.png)
+![](images/google_sso_new_2.png)
 
 **(9)** Go back to the Google custom app and in the Service Provider Details page and paste the copied **ACS URL** in both the **ACS URL** and **Entity ID** fields. Also select **Name ID** as **Basic Information** and **Primary Email** and **Name ID Format** as **EMAIL** and click **Next**
 
@@ -82,13 +82,23 @@ By default Squadcast lets you create a user via SSO with a configured default Ro
 
 ![](images/google_12.png)
 
-**(12)** Go back to the Squadcast Google SSO page and paste the SSO URL we have obtained from Step 5 above in the **SAML 2.0 Endpoint** text box and the certificate details in the **X.509 Certificate** field. Configure other options like the default User role and click **Save**
+**(12)**  Back in Squadcast, in the previously opened modal:
 
-![](images/google_13_new.png)
+- Paste the SSO URL we have obtained from Step 5 above in the **SAML 2.0 Endpoint** text box 
+- Copy the certificate details in the **X.509 Certificate** field
+- Enter the domain name of your Organization
+
+{{site.data.alerts.note-md}}
+Make sure to add the **Domain Name** of your Organization, for SSO login to work
+{{site.data.alerts.end}}
+
+Configure other options like the default User role and click **Save**
+
+![](images/google_sso_new_3.png)
 
 **(13)** You can allow Account owners and Admins to also login using their email credentials in addition to SSO. This can be done by checking the box as shown in the screenshot below
 
-![](images/google_14.png)
+![](images/google_sso_new_5.png)
 
 **(14)** You can enable the toggle button on the top to Enable Google SSO for Squadcast and you are good to go and your users will be able to use Google SSO to log in to Squadcast without needing a password
 

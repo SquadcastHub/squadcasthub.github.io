@@ -24,15 +24,19 @@ Squadcast supports any SAML 2.0 based Single Sign On (SSO) and you can set it fo
 
 **(2)** Select the **Custom SAML 2.0** tab and click **Show configuration guide for Custom SAML 2.0**
 
-![](images/saml_2_new.png)
+![](images/saml_sso_new_1.png)
 
 Now, copy the _ACS URL_ and paste it in your SSO provider system
 
-![](images/saml_3.png)
+![](images/saml_sso_new_2.png)
 
-**(3)** From your SSO provider's dashboard, copy the _SAML 2.0 Endpoint_ and _X.509 Certificate_ and paste it in the relevant fields in the Squadcast set-up modal. Configure other options like the _default_ `User role`. You can _allow Account Owners and Admins_ to also login using their email credentials _in addition_ to SSO. This can be done by checking the box as shown in the screenshot below and make sure to click **Save**
+**(3)** From your SSO provider's dashboard, copy the _SAML 2.0 Endpoint_ and _X.509 Certificate_ and paste it in the relevant fields in the Squadcast set-up modal. Add the Domain Name of the Organization. Configure other options like the _default_ `User role`. You can _allow Account Owners and Admins_ to also login using their email credentials _in addition_ to SSO. This can be done by checking the box as shown in the screenshot below and make sure to click **Save**
 
-![](images/saml_4_new.png)
+{{site.data.alerts.note-md}}
+Make sure to add the **Domain Name** of your Organization, for SSO login to work
+{{site.data.alerts.end}}
+
+![](images/saml_sso_new_3.png)
 
 {{site.data.alerts.note}}
 <br/><br/><p>For members trying to log into Squadcast through SSO who aren't already added to the Squadcast platform, will be added to the platform by default as <b>Users</b>.</p>
@@ -40,7 +44,7 @@ Now, copy the _ACS URL_ and paste it in your SSO provider system
 
 **(4)** You can turn On/Off SSO by _toggling_ the button at the top
 
-![](images/saml_5.png)
+![](images/saml_sso_new_4.png)
 
 **(5)** By default, the SSO provider will send _Firstname_, _Lastname_ and _Email ID_ to Squadcast. If you can send a custom key called `role` with one of these values `Admin`, `User` and `Stakeholder`, the user will be created with these roles instead of the default user role configured in the SSO modal in Squadcast
 

@@ -35,11 +35,11 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 **(2)** In the opened modal, select the **Okta** tab and click **Show configuration guide for Okta**.
 
-![](images/okta_2_new.png)
+![](images/okta_sso_new_1.png)
 
 **(3)** Copy the ID highlighted in the instructions.
 
-![](images/okta_3.png)
+![](images/okta_sso_new_2.png)
 
 **(4)** Move to your Okta Dashboard and navigate to **Applications**
 
@@ -57,15 +57,20 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 ![](images/okta_6.png)
 
-**(8)** Paste the SAML 2.0 Endpoint and X.509 Certificates in the respective fields in Squadcast
+**(8)** Paste the SAML 2.0 Endpoint and X.509 Certificates in the respective fields in Squadcast. Also, add the Domain name of the Organization. 
+
+{{site.data.alerts.note-md}}
+Make sure to add the **Domain Name** of your Organization, for SSO login to work
+{{site.data.alerts.end}}
+
 
 ![](images/okta_7_new.png)
 
-![](images/okta_8.png)
+![](images/okta_sso_new_3.png)
 
 **(9)** In Squadcast, enable the toggle above within the modal and click on `Save` to enable Okta SSO for your Squadcast Account.
 
-![](images/okta_9.png)
+![](images/okta_sso_new_4.png)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Note</b><br/><br/>
