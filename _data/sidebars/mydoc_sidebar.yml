@@ -770,6 +770,10 @@ entries:
                   - title: Zendesk
                     url: /zendesk
                     output: web, pdf
+
+                  - title: Zoho Desk
+                    url: /zoho-desk
+                    output: web, pdf
  
               - title: Outgoing Webhooks
                 output: web, pdf
