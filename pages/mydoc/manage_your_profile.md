@@ -13,7 +13,7 @@ folder: mydoc
 
 **(1)** Click on the user icon in the upper right corner and select **Profile**
 
-![](images/manage_your_profile_1.png)
+![](images/profile_new_3.png)
 
 **(2)** On your **Profile** page, you can:
 
@@ -84,6 +84,29 @@ You can also click on **Skip and verify later** to verify the _Mobile Number_ la
 <p><br/>  (3) Everytime you change your Mobile Number, you have to verify the new Mobile Number to continue receiving Phone and SMS notifications</p>
 {{site.data.alerts.end}}
 
+## Change Timezone and Date Format
+
+**(1)** Click on **More Options Icon**, and select **Edit**
+
+**(2)** Select your country _Timezone_ and the _Date Format_
+
+**(3)** Click on **Save**
+
+![](images/profile_new_2.png)
+
+{{site.data.alerts.yellow-note-i}}
+Note: 
+<br>
+
+Places where your Timezone will still reflect UTC: 
+<br>
+- Incident Exports<br>
+- Analytics Panel Exports<br>
+- Status Page Incidents <br>
+<br>
+Postmortem Download and Activity Timeline Download will be in the User selected Timezone. 
+{{site.data.alerts.end}}
+
 ### While Onboarding
 
 **(1)** Enter the details, _Mobile Number_ is **optional**. You can add a _Mobile Number_ later in your **Profile** page
@@ -110,7 +133,7 @@ To verify _Mobile Number_
 
 **(1)** Click on **Verify Phone Number**
 
-![](images/manage_account_6.png)
+![](images/profile_new_5.png)
 
 **(2)** An OTP will be sent to your _Mobile Number_. Fill in the OTP and **Submit**
 
