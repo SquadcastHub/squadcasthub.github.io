@@ -3,7 +3,7 @@ title: New Relic
 tags: [integration, new relic]
 keywords: 
 last_updated: 
-summary: "Send events to Squadcast from New Relic"
+summary: "Send Alerts to Squadcast from New Relic"
 sidebar: mydoc_sidebar
 permalink: docs/new-relic
 folder: mydoc
@@ -15,15 +15,13 @@ This document will help you integrate New Relic with Squadcast.
 
 Route detailed monitoring alerts from New Relic to the right users in Squadcast.
 
-## How to integrate New Relic with Squadcast
-
-### In Squadcast: Using New Relic as an Alert Source
+## Using New Relic as an Alert Source
 
 **(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
 
 ![](images/alert_source_1.png)
 
-**(2)** Search for **New Relic** from the Alert Source drop-down and copy the Webhook URL
+**(2)** Search for **New Relic** from the Alert Source drop-down and copy the Webhook URL
 
 ![](images/new_relic_1.png)
 
@@ -33,71 +31,63 @@ Route detailed monitoring alerts from New Relic to the right users in Squadcast.
 <p>An Alert Source is active if there is a recorded incident via that Alert Source for the Service in the last 30 days.</p>
 {{site.data.alerts.end}}
 
-### In New Relic: Add a Squadcast Webhook
+### In New Relic: Add a Squadcast Workflow
 
 Log in to your New Relic account.
 
-**(1)** From Home, navigate to **Alerts & AI** 
+**(1)** From **Explorer** dashboard, click on **Alerts & AI**. Then naviagte to **Workflows** and click on **+ Add a workflow**
 
 ![](images/new_relic_2.png)
 
-**(2)** Navigate to **Notification channels** tab and click on **New notification channel**
-
-![](images/new_relic_3.png)
-
-**(3)** Here:
-- Select **channel type** as **Webhook**
-- Enter the **Channel name** as **Squadcast**
-- Paste the copied Webhook URL copied from Squadcast previously under **Base Url**
-- Click on **Create channel**
+**(2)** Fill in the **Name**, select Issues according to your own preference. Under **Mute issues**, choose **Always send notifications** and click on **Webhook**
 
 ![](images/new_relic_4.png)
 
-**(4)** Now, you can add this **Notification Channel** to any Alert Policy you have created
+**(3)** Put in the webhook channel's name and click on **+ Add a destination**
 
-That is it, your integration with New Relic is complete and you are good to go!
+![](images/new_relic_3.png)
 
-### Configuring Proactive Detection for Anomalies in New Relic
+**(4)** Now, you can add a **Webhook name**, paste the previously copied Squadcast Webhook URL in the placeholder for **Endpoint URL** and save it.
 
-Log in to your New Relic account.
+![](images/new_relic_5.png)
 
-**(1)** From Home, hover over **Alerts & AI** and select **Settings**
+**(5)** Select the previously created Squadcast Webhook as **Destination** and paste the payload mentioned below under the **Payload template**. Then click on **Update message**
+
+{% raw %}
+```json
+{
+    "id": {{ json issueId }},
+    "issueUrl": {{ json issuePageUrl }},
+    "title": {{ json annotations.title.[0] }},
+    "priority": {{ json priority }},
+    "impactedEntities": {{json entitiesData.names}},
+    "totalIncidents": {{json totalIncidents}},
+    "state": {{ json state }},
+    "trigger": {{ json triggerEvent }},
+    "isCorrelated": {{ json isCorrelated }},
+    "createdAt": {{ createdAt }},
+    "updatedAt": {{ updatedAt }},
+    "sources": {{ json accumulations.source }},
+    "alertPolicyNames": {{ json accumulations.policyName }},
+    "alertConditionNames": {{ json accumulations.conditionName }},
+    "workflowName": {{ json workflowName }},
+    "status" : {{ json status }},
+    "annotationsDescription":{{json annotations.description.[0]}}
+}
+```
+{% endraw %}
 
 ![](images/new_relic_6.png)
 
-**(2)** Click on **Settings** in the sidebar under **Proactive Detection** and click on **Add a configuration**
+You can also send test notifications to Squadcast through **Send test notification**
+
+**(6)** Finally click on **Activate workflow**. You can even test the workflow by clicking on **Test workflow**
 
 ![](images/new_relic_7.png)
 
-**(3)** Here:
 
-- Give the configuration a **Name**
-- Select your New Relic **Account**
-- Choose the **Applications and Services** that need to be monitored
+That's it, you are good to go! Your New Relic integration is now complete. 
 
-![](images/new_relic_8.png)
+Whenever New Relic fires an alert, an incident will be created in Squadcast for it. Also, when an alert is resolved in New Relic, the corresponding incident gets **auto-resolved** in Squadcast.
 
-- Select the **Signals** that need to be monitored
-
-![](images/new_relic_9.png)
-
-- Select where you want to **receive notifications** 
-    + Select **Webhook**
-    + Paste previously copied Webhook from Squadcast under **URL**
-    + In **Payload template** add the payload exactly as shown below:
-    {% raw %}
-    ```json
-    {
-        "alertClass": "anomaly_detection",
-        "alertData": {{this}}
-    }
-    ```
-    {% endraw %}
-    + You can click on **Send test notification** to trigger an incident in Squadcast check if the integration works fine
-    + **Save** the configuration
-
-![](images/new_relic_10.png)
-
-Now, every time there is an alert in New Relic, the alert will be sent to Squadcast and an incident will be triggered, notifying the right people. 
-
-Similarly, when the alert gets resolved in New Relic, the corresponding incident will get **auto-resolved** in Squadcast as well.
+<style>.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}</style><div style="height: 100%;width: 100%;display: flex;margin-top: 40px;"><div style="margin: auto;"><div style="height: 100%;width: 100%;display: flex;padding: 20px;border: 1px solid #e7e9ed;border-radius: 8px;"><div style="margin: auto;"><div style="text-align: center;padding-bottom: 20px;font-size: 18px;line-height: 24px;font-family: Metropolis, sans-serif;color: #0d2149;">Ready to try Squadcast?</div><a href="https://app.squadcast.com/register" class="btttn" target="_blank" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #0f61dd;font-family: Metropolis,sans-serif;color: #fff;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #fff;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Start Now For Free!</a>   <a href="#" id="sd1" class="btttn" style="margin-right: 0;text-decoration: none;border-radius: 6px;background-color: #fff;font-family: Metropolis,sans-serif;color: #0f61dd;padding-top: 0;padding-bottom: 0;border-bottom: 1px solid transparent;-webkit-transition: all .1s ease-in-out;font-family: Metropolis,sans-serif;font-size: 13px;color: #0d2149;line-height: 22px;font-weight: 500;display: inline-block;color: #0f61dd;padding: 15px;text-align: left;margin-left: auto;margin-right: auto;max-width: 1200px;border: 1px solid #0f61dd;margin-left: 20px;transition: all .2s ease-in-out;" rel="noreferrer noopener">Schedule a Demo</a></div></div></div></div>
