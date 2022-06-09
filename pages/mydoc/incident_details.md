@@ -42,7 +42,7 @@ th{
 |-----------|--------------|
 | Incident ID          |  []() A unique ID for the incident <br> <br> ![](images/IncidentID.png) <br> <br> **Note**: To copy this Incident URL to the clipboard, use the **Copy** button on the right  |
 | Incident Message     | The displayed title of the incident |
-| Incident Tags        | Tags are key-value pairs, added to an incident. They allow you to quickly see relevant information, such as severity or environment, for a particular incident rather than needing to review all of the related alerts |
+| Incident Tags        | Tags are key-value pairs, added to an incident. They allow you to quickly see relevant information, such as severity or environment, for a particular incident rather than needing to review all of the related alerts. <br> <br> You can add tags manually or select from the dropdown of pre-existing key-value pairs. |
 | Incident Description | Incident Description i.e. the alert information along with images and links sent by the Alert Source |
 | Notes                | Incident Notes enable you to add important notes for you and your team that can help mitigate an incident faster |
 | Runbooks             | [Runbooks](https://support.squadcast.com/docs/runbooks) are a “how-to” guide for completing a commonly repeated task or procedure while working on a critical incident.  <br> <br> **Note**: Simple Runbooks will be available for accounts in the [Pro and Enterprise plans](https://www.squadcast.com/pricing). <br> <br> To attach and reference runbooks to your incident, click on the **Attach Runbooks** button -> Check the runbook you wish to attach -> Click **Add Runbook**  <br> <br>![](images/incidents_runbook.png)<br> <br> |

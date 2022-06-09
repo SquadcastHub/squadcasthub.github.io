@@ -40,8 +40,11 @@ Click on **+** right next to the **Actions** dropdown tab
 
 - By default, you will have the option to add **Tags** to an incident (either while creating the incident or after the incident is created)
 - You can do so by assigning the `tag name (key)` and `tag value` in the text fields provided and you can also change the tag color by clicking on the colour of your choice
+- You can select the tags from the dropdown menu of pre-existing tag key and value pairs 
 - You can also add multiple tags by clicking on the **+** option
 - Adding a **Tag** is optional
+
+![](images/tagging_new_1.png) 
 
 **(3)** Click on **Create new incident** to trigger the incident
 
