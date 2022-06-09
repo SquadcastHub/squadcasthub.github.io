@@ -37,19 +37,19 @@ Log in to your New Relic account.
 
 **(1)** From **Explorer** dashboard, click on **Alerts & AI**. Then naviagte to **Workflows** and click on **+ Add a workflow**
 
-![](images/new_relic_2.png)
+![](images/new_relic_2_new.png)
 
 **(2)** Fill in the **Name**, select Issues according to your own preference. Under **Mute issues**, choose **Always send notifications** and click on **Webhook**
 
-![](images/new_relic_4.png)
+![](images/new_relic_4_new.png)
 
 **(3)** Put in the webhook channel's name and click on **+ Add a destination**
 
-![](images/new_relic_3.png)
+![](images/new_relic_3_new.png)
 
 **(4)** Now, you can add a **Webhook name**, paste the previously copied Squadcast Webhook URL in the placeholder for **Endpoint URL** and save it.
 
-![](images/new_relic_5.png)
+![](images/new_relic_5_new.png)
 
 **(5)** Select the previously created Squadcast Webhook as **Destination** and paste the payload mentioned below under the **Payload template**. Then click on **Update message**
 
@@ -77,13 +77,13 @@ Log in to your New Relic account.
 ```
 {% endraw %}
 
-![](images/new_relic_6.png)
+![](images/new_relic_6_new.png)
 
 You can also send test notifications to Squadcast through **Send test notification**
 
 **(6)** Finally click on **Activate workflow**. You can even test the workflow by clicking on **Test workflow**
 
-![](images/new_relic_7.png)
+![](images/new_relic_7_new.png)
 
 
 That's it, you are good to go! Your New Relic integration is now complete. 
