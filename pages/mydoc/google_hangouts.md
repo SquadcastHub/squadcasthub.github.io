@@ -14,7 +14,7 @@ You can use this guide to integrate with [Hangouts Chat](http://chat.google.com/
 {{site.data.alerts.yellow-note-i-md}}
 **Important:**
 
-Google Hangouts is not supported in the EU data center yet.
+EU Customers can use the Google Hangouts Bot for EU under the name **squadcast_eu**
 {{site.data.alerts.end}}
 
 ### Prerequisites
