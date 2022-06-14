@@ -12,6 +12,11 @@ folder: mydoc
 
 Route detailed alerts from Amazon OpenSearch to the right users in Squadcast.
 
+{{site.data.alerts.yellow-note-i}}
+<b>Important</b><br/><br/>
+<p>Amazon OpenSearch can also be integrated through <b>Amazon Cloudwatch</b>. Please find the documentation <a href="https://support.squadcast.com/docs/amazon-cloudwatch-aws">here</a>.</p>
+{{site.data.alerts.end}}
+
 ## Using Amazon OpenSearch as an Alert Source
 
 **(1)** From the navigation bar on the left, select **Services**. Pick the applicable **Team** from the Team-picker on the top. Next, click on **Alert Sources** for the applicable Service
