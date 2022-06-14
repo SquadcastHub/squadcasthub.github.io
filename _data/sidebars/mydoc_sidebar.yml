@@ -315,6 +315,10 @@ entries:
                     url: /amazon-eventbridge
                     output: web, pdf
 
+                  - title: Amazon OpenSearch
+                    url: /amazon-opensearch
+                    output: web, pdf
+
                   - title: Amazon RDS (AWS)
                     url: /amazon-rds
                     output: web, pdf
