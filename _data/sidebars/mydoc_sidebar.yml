@@ -494,6 +494,10 @@ entries:
                   - title: Honeycomb
                     url: /honeycomb
                     output: web, pdf
+
+                  - title: Humio
+                    url: /humio
+                    output: web, pdf
                   
                   - title: Hyperping
                     url: /hyperping
