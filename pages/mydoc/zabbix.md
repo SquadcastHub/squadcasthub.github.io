@@ -108,6 +108,40 @@ url:{TRIGGER.URL}
 
 ![](images/zabbix_7.png)
 
+{{site.data.alerts.blue-note-md}}
+**Note: Custom User Defined Variables**  
+
+Users can define custom variables under **Default Message**. The variables can be added in the format mentioned below :
+
+**{ "custom" : { "key" : "value" , . . . , "key" : "value" } }**
+
+Replace the **[key]** & **[value]** with proper values and add at the end of the variables mentioned in **Step 7**.
+{{site.data.alerts.end}}
+
+{{site.data.alerts.blue-note-md}}
+**Note: Custom User Defined Incident Message**  
+
+Users can define custom Incident Message under **Default Message**. The variable can be added in the format mentioned below :
+
+**CustomIncidentMessage:[IncidentMessage]**
+
+Replace the **[IncidentMessage]** with proper values and add at the end of the variables mentioned in **Step 7**.
+This is how it might look like : 
+
+```yaml
+name:{TRIGGER.NAME}
+id:{TRIGGER.ID}
+status:{TRIGGER.STATUS}
+hostname:{HOSTNAME}
+ip:{IPADDRESS}
+value:{TRIGGER.VALUE}
+event_id:{EVENT.ID}
+severity:{TRIGGER.SEVERITY}
+url:{TRIGGER.URL}
+CustomIncidentMessage:{TRIGGER.NAME}
+```
+{{site.data.alerts.end}}
+
 **(8)** Similarly, switch to **Recovery operations** tab and configure the following: 
 Copy-paste the following in the ‘Default Message’ field:
 
