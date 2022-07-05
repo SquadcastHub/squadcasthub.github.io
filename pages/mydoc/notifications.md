@@ -26,7 +26,7 @@ You can also choose to be notified for incidents in Squadcast via [Slack](https:
 **(c)** To receive SMS and Phone call notifications for incidents:
 - Users have to [OTP-verify the phone number](https://support.squadcast.com/docs/set-up-your-profile#mobile-number-verification) associated with their Profile
 - SMS and Phone call notifications must be [enabled](https://support.squadcast.com/docs/billing#3-how-can-i-enable-sms-and-phone-calls-for-my-account) for the Organization
-- Ensure that a card is added for your account (for [Essential Plan](https://www.squadcast.com/pricing)) to continue receiving SMS and Phone call notifications for incidents once the [free limits](https://support.squadcast.com/docs/billing#4-how-many-sms-and-calls-do-i-get-for-free-in-the-essential-free-plan) are exhausted
+- Ensure that a card is added for your account (only for [Pro and Enterprise Plan](https://www.squadcast.com/pricing)) to continue receiving SMS and Phone call notifications for incidents once the [free limits](https://support.squadcast.com/docs/billing#4-how-many-sms-and-calls-do-i-get-for-free-in-the-essential-free-plan) are exhausted
 {{site.data.alerts.end}}
 
 ## Notification Phone Numbers
