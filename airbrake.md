@@ -32,4 +32,4 @@ You can also click on **Test integration** to test the alert. This will create a
 
 That's it, you are good to go! Your Airbrake integration is now complete. Whenever Airbrake fires an alert, an incident will be created in Squadcast for it.
 
-.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}Ready to try Squadcast?[Start Now For Free!](https://app.squadcast.com/register) [Schedule a Demo](https://calendly.com/renuka-squadcast/30min)
+.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}Ready to try Squadcast?[Start Now For Free!](https://www.squadcast.com/register) [Schedule a Demo](https://calendly.com/renuka-squadcast/30min)
