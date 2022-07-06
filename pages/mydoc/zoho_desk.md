@@ -42,7 +42,7 @@ Route detailed alerts from Zoho Desk to the right users in Squadcast.
 
 ![](images/zoho_desk_new_4.png)
 
-**(4)** Paste the code snippet mentioned below inside the code box. Replace the SQUADCAST WEBHOOK URL placeholder with the previously copied Squadcast Webhook URL. Then click on **SAVE**
+**(4)** Paste the code snippet mentioned below inside the code box. Replace the **<SQUADCAST-WEBHOOK-URL>** placeholder with the previously copied Squadcast Webhook URL. Then click on **SAVE**
 
 {% raw %}
 ```json
