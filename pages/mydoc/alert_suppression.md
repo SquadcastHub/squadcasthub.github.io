@@ -54,6 +54,19 @@ Ensure that the right Team is chosen from the team picker on the top of the scre
 
 ![](images/alert_suppression_4_new.png)
 
+(d) You can suppress incidents based on time as well. To do so, check **Suppress by time**. Add details for your suppression time slot like **Timezone**, **Duration** and **Repetition**. 
+
+Under **Duration**, you can specify **Start and End Dates** and choose **Start and End Time** as well or simply run it for the entire day. 
+
+Under **Repetition**, you can choose from the **drop down list**, while specifying the end for this repetition, as a particular date/time or never.
+
+{{site.data.alerts.yellow-note-i}}
+<b>Note:</b>
+You can add multiple suppression time slots for a single Suppression Rule.  
+{{site.data.alerts.end}}
+
+![](images/time-based_suppression.png)
+
 {{site.data.alerts.yellow-note-i}}
 <b>Note:</b>
 <br/><p>The drop-down blocks only support logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">AND</code> operator between 2 expressions. If you want to have a logical <code class="highlighter-rouge" style="color: #c7254e; background-color: #f9f2f4 !important;">OR</code> operation between 2 expressions, then you would have to create a new Suppression Rule.</p>
