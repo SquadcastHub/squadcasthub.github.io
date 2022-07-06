@@ -58,7 +58,7 @@ Ensure that the right Team is chosen from the team picker on the top of the scre
 
 Under **Duration**, you can specify **Start and End Dates** and choose **Start and End Time** as well or simply run it for the entire day. 
 
-Under **Repetition**, you can choose from the **drop down list**, while specifying the end for this repetition, as a particular date/time or never.
+You can add **Repetition** for your slot, to do so, you can choose from the **drop down list**, while specifying the end for this repetition, as a particular date/time or never.
 
 {{site.data.alerts.yellow-note-i}}
 <b>Note:</b>
