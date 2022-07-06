@@ -34,4 +34,4 @@ You can now mention your newly created **API destination** as target under **Rul
 
 That's it, you are good to go! Your Amazon EventBridge integration is now complete. Whenever Amazon EventBridge fires an alert, an incident will be created in Squadcast for it.
 
-.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}Ready to try Squadcast?[Start Now For Free!](https://app.squadcast.com/register) [Schedule a Demo](https://calendly.com/renuka-squadcast/30min)
+.btttn:hover{box-shadow: 0 10px 20px 0 rgba(15,97,221,.25); transform: translate(0,-2px);}Ready to try Squadcast?[Start Now For Free!](https://www.squadcast.com/register) [Schedule a Demo](https://calendly.com/renuka-squadcast/30min)
