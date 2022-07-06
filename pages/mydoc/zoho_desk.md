@@ -42,7 +42,31 @@ Route detailed alerts from Zoho Desk to the right users in Squadcast.
 
 ![](images/zoho_desk_new_4.png)
 
-**(4)** Paste the code snippet mentioned below inside the code box. Then click on **SAVE**
+**(4)** Paste the code snippet mentioned below inside the code box. Replace the Function Name placeholder with the actual function name and replace the SQUADCAST WEBHOOK URL placeholder with the previously copied Squadcast Webhook URL. Then click on **SAVE**
+
+{% raw %}
+```json
+void <Function Name>(string subject, string ticketid, string statustype, string description, string weburl, string language, string priority, string duedate, string classification)
+{
+    data = Map();
+    data.put("subject",subject);
+    data.put("ticketid",ticketid);
+    data.put("description",description);
+    data.put("weburl",weburl);
+    data.put("language",language);
+    data.put("priority",priority);
+    data.put("duedate",duedate);
+    data.put("statustype",statustype);
+    data.put("classification",classification);
+    response = invokeurl
+    [
+        url :"<SQUADCAST-WEBHOOK-URL>"
+        type :POST
+        parameters:data
+    ];
+}
+```
+{% endraw %}
 
 ![](images/zoho_desk_new_5.png)
 
