@@ -94,6 +94,19 @@ You can add multiple suppression time slots for a single Suppression Rule.
 
 (c) Write your custom Suppression Rule expression
 
+(d) You can suppress incidents based on time as well. To do so, check **Suppress by time**. Add details for your suppression time slot like **Timezone**, **Duration** and **Repetition**. 
+
+Under **Duration**, you can specify **Start and End Dates** and choose **Start and End Time** as well or simply run it for the entire day. 
+
+You can add **Repetition** for your slot, to do so, you can choose from the **drop down list**, while specifying the end for this repetition, as a particular date/time or never.
+
+{{site.data.alerts.yellow-note-i}}
+<b>Note:</b>
+You can add multiple suppression time slots for a single Suppression Rule.  
+{{site.data.alerts.end}}
+
+![](images/time-based_suppression2.png)
+
 ### Supported Rules
 
 The rule engine supports expressions with parameters, arithmetic, logical, and string operations. You can also check out this [link](https://regex101.com/) to get an idea of all the expression types accepted in Squadcast.
