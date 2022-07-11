@@ -65,6 +65,11 @@ You can add **Repetition** for your slot, to do so, you can choose from the **dr
 You can add multiple suppression time slots for a single Suppression Rule.  
 {{site.data.alerts.end}}
 
+{{site.data.alerts.yellow-note-i}}
+<b>Note:</b>
+Users can select a timezone as per which the time slot needs to be active.
+{{site.data.alerts.end}}
+
 ![](images/time-based_suppression.png)
 
 {{site.data.alerts.yellow-note-i}}
@@ -103,6 +108,11 @@ You can add **Repetition** for your slot, to do so, you can choose from the **dr
 {{site.data.alerts.yellow-note-i}}
 <b>Note:</b>
 You can add multiple suppression time slots for a single Suppression Rule.  
+{{site.data.alerts.end}}
+
+{{site.data.alerts.yellow-note-i}}
+<b>Note:</b>
+Users can select a timezone as per which the time slot needs to be active.
 {{site.data.alerts.end}}
 
 ![](images/time-based_suppression2.png)
