@@ -35,7 +35,7 @@ Learn more on how to [manage your profile](set-up-your-profile) and [other users
 
 **Getting Started as a User**
 
-[Users](managing-all-users) on the platform on Squadcast have privileges to manage Services, On-call Schedules, Escalation Policies, and so on. Users will not have access to add or delete users or other privileges exclusive to Account Owner and Admins.
+[Users](types-of-users) on the platform on Squadcast have privileges to manage Services, On-call Schedules, Escalation Policies, and so on. Users will not have access to add or delete users or other privileges exclusive to Account Owner and Admins.
 
 Irrespective of your role, you can go through our checklist to see how you can get more out of Squadcast 🚀
 
