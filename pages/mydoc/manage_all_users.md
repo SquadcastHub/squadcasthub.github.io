@@ -7,6 +7,8 @@ summary: "Adding your team & defining their roles"
 sidebar: mydoc_sidebar
 permalink: docs/managing-all-users
 folder: mydoc
+published: false
+search: exclude
 ---
 
 ## User Roles and privileges
