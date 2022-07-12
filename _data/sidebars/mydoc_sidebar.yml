@@ -751,6 +751,10 @@ entries:
                     url: /threat-stack
                     output: web, pdf
 
+                  - title: trello
+                    url: /trello
+                    output: web, pdf
+                  
                   - title: Twilio
                     url: /twilio
                     output: web, pdf
