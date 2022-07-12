@@ -242,7 +242,7 @@ We use third party providers to send out SMS and Phone call incident notificatio
 {{site.data.alerts.yellow-note-i-md}}
 **Important:**
 
-**(1)** **SMS and Phone Notifications to Iran:**
+**(1)** **SMS and Phone Notifications to Iran and Russia:**
 While we do send SMS and Phone call incident notifications to users in **Iran** and **Russia**, we cannot assure its 100% deliverability.
 
 **(2)** **SMSs to China:**
