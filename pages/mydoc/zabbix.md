@@ -108,30 +108,6 @@ url:{TRIGGER.URL}
 
 ![](images/zabbix_7.png)
 
-{{site.data.alerts.blue-note-md}}
-**Note: Custom User Defined Variables**  
-
-Users can define custom variables under **Default Message**. The variables can be added in the format mentioned below :
-
-**custom:key1 : value1 \n key2 : value2 \n . . . \n keyn : valuen**
-
-Replace the **[key]** & **[value]** with proper values and add at the end of the variables mentioned in **Step 7**.
-Eg.:
-
-```yaml
-name:{TRIGGER.NAME}
-id:{TRIGGER.ID}
-status:{TRIGGER.STATUS}
-hostname:{HOSTNAME}
-ip:{IPADDRESS}
-value:{TRIGGER.VALUE}
-event_id:{EVENT.ID}
-severity:{TRIGGER.SEVERITY}
-url:{TRIGGER.URL}
-custom:IP Address:{IPADDRESS} \n url:{TRIGGER.URL}
-```
-
-{{site.data.alerts.end}}
 
 {{site.data.alerts.blue-note-md}}
 **Note: Custom User Defined Incident Message**  
