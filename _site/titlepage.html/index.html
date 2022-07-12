@@ -7,6 +7,8 @@
 <meta name="description" content="">
 <meta name="keywords" content=" ">
 <title> | Incident Management using Squadcast</title>
+<link rel="canonical" href="https://support.squadcast.com/titlepage.html/">
+<link rel="alternate" href="https://support.squadcast.com/titlepage.html/" hreflang="en-us" />
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -208,14 +210,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 
                 
                 
-                <li><a href="https://app.squadcast.com/register" target="_blank" rel="noopener">Try for Free</a></li>
+                <li><a href="https://www.squadcast.com/register" target="_blank" rel="noopener">Try for Free</a></li>
                 
                 
                 
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
                 
-                <li><a href="#" onclick="javascript:Calendly.showPopupWidget('https://calendly.com/renuka-squadcast/30min');" rel="noopener">Schedule a Demo</a></li>
+                <li><a href="#" id="sd" rel="noreferrer noopener">Schedule a Demo</a></li>
+
+                <div id="sd_anirudh" style="display:none;"></div>
+                <div id="sd_nikil" style="display:none;"></div>
+
+                <script>document.getElementById("sd_nikil").onclick=function(){var e=document.createElement("link");e.href="https://assets.calendly.com/assets/external/widget.css",e.rel="stylesheet",document.head.appendChild(e);var t=document.createElement("script");t.src="https://assets.calendly.com/assets/external/widget.js",t.type="text/javascript",document.body.appendChild(t),t.addEventListener("load",function(){Calendly.showPopupWidget("https://calendly.com/renuka-squadcast")})};</script>
+                <script>document.getElementById("sd_anirudh").onclick=function(){var e=document.createElement("link");e.href="https://assets.calendly.com/assets/external/widget.css",e.rel="stylesheet",document.head.appendChild(e);var t=document.createElement("script");t.src="https://assets.calendly.com/assets/external/widget.js",t.type="text/javascript",document.body.appendChild(t),t.addEventListener("load",function(){Calendly.showPopupWidget("https://calendly.com/anirudh-13")})};</script>
+
+                <script>
+                var btn = document.getElementById("sd");
+                var timezone = new Date().getTimezoneOffset() / -60;
+
+                btn.onclick = function(){
+                    if(timezone >= -1){
+                        document.getElementById("sd_anirudh").click();
+                    }
+                    if(timezone < -1){
+                        document.getElementById("sd_nikil").click();
+                    }
+                }
+                </script>
                 
 			<li>
 
@@ -424,7 +446,7 @@ li.sidebarTitle{
             <div class="printTitleArea">
     <div class="printTitle"></div>
     <div class="printSubtitle"></div>
-    <div class="lastGeneratedDate">Last generated: July 29, 2021</div>
+    <div class="lastGeneratedDate">Last generated: July 12, 2022</div>
     <hr />
 
     <div class="printTitleImage">
@@ -432,7 +454,7 @@ li.sidebarTitle{
     </div>
 
     <div class="copyrightBoilerplate">
-        <p>&copy; 2021 Squadcast. This is a boilerplate copyright statement... All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
+        <p>&copy; 2022 Squadcast. This is a boilerplate copyright statement... All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
         </p>
 
     </div>
@@ -442,7 +464,21 @@ li.sidebarTitle{
 
                 <!--div class="tags">
                     
-                </div-->
+                </div-->                
+
+                <script>
+                var btn1 = document.getElementById("sd1");
+                var timezone1 = new Date().getTimezoneOffset() / -60;
+
+                btn1.onclick = function(){
+                    if(timezone1 >= -1){
+                        document.getElementById("sd_anirudh").click();
+                    }
+                    if(timezone1 < -1){
+                        document.getElementById("sd_nikil").click();
+                    }
+                }
+                </script>
                 <div id="feedback"></div>
                 <script>
                     var htm = '<div class="columns-337 w-row" style="display:flex; margin-top: 32px; margin-bottom: 32px; align-items: center;">'+
@@ -613,8 +649,8 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                     <p><img src="images/company_logo.png" alt="Company logo"/></p>
-               Copyright &copy; Squadcast Inc. 2017 - 2021<br/> All rights reserved <br />
-<!--  Site last generated: Jul 29, 2021 <br /> -->
+               Copyright &copy; Squadcast Inc. 2017 - 2022<br/> All rights reserved <br />
+<!--  Site last generated: Jul 12, 2022 <br /> -->
                 </div>
             </div>
             <script>
