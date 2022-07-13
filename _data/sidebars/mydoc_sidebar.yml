@@ -790,6 +790,10 @@ entries:
                   - title: Zoho Desk
                     url: /zoho-desk
                     output: web, pdf
+
+                  - title: Zoho Desk via Zoho Flow
+                    url: /zoho-desk-via-zoho-flow
+                    output: web, pdf
  
               - title: Outgoing Webhooks
                 output: web, pdf
