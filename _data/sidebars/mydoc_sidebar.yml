@@ -515,6 +515,10 @@ entries:
                     url: /instana
                     output: web, pdf
 
+                  - title: Intercom
+                    url: /intercom
+                    output: web, pdf
+
                   - title: Jenkins Integration
                     url: /jenkins
                     output: web, pdf
