@@ -479,6 +479,10 @@ entries:
                     url: /graylog-v4
                     output: web, pdf
 
+                  - title: Healthchecks
+                    url: /healthchecks
+                    output: web, pdf
+
                   - title: HetrixTools
                     url: /hetrixtools
                     output: web, pdf
