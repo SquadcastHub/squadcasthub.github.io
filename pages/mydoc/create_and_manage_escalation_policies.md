@@ -91,7 +91,27 @@ You can repeat any Escalation Policy for a **maximum of 3 times** only.
 ![](images/create_escalation_12.png)
 {{site.data.alerts.end}}
 
-**(9)** Click on **Save** to save and view the Escalation Policy
+**(9)** Check **For unresolved incidents send acknowledgement reminder every** to set up re-notification to work as reminders for users to resolve an incident. 
+
+On someone acknowleedging an incident, that user will start receiving periodic reminders till 48 hours of acknowledgement, as per the rule set in the Escalaltion Policy. 
+
+To set the time settings for re-notification,
+
+Go to **Escalation Policy** -> **Edit** -> check **For unresolved incidents send acknowledgement reminder every** -> Enter time (in hours), along with mode of notification -> click **Save**
+
+To change the time settings for re-notification,
+
+Go to **Escalation Policy** -> **Edit** -> Goto **For unresolved incidents send acknowledgement reminder every** -> Edit the time (in hours), along with mode of notification -> click **Save**
+
+{{site.data.alerts.blue-note-md}}
+**Note**
+
+1. Re-Notification starts from the time of the latest acknowledgement. 
+2. Only the user who acknowledges, will get the reminder. 
+3. Users will stop receiving notifications after 48 hours of acknowledgement.
+{{site.data.alerts.end}}
+
+**(10)** Click on **Save** to save and view the Escalation Policy
 
 ![](images/create_escalation_10.png)
 
