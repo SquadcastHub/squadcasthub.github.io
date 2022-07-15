@@ -479,6 +479,10 @@ entries:
                     url: /graylog-v4
                     output: web, pdf
 
+                  - title: Healthchecks
+                    url: /healthchecks
+                    output: web, pdf
+
                   - title: HetrixTools
                     url: /hetrixtools
                     output: web, pdf
@@ -513,6 +517,10 @@ entries:
 
                   - title: Instana
                     url: /instana
+                    output: web, pdf
+
+                  - title: Intercom
+                    url: /intercom
                     output: web, pdf
 
                   - title: Jenkins Integration
@@ -751,6 +759,10 @@ entries:
                     url: /threat-stack
                     output: web, pdf
 
+                  - title: Trello
+                    url: /trello
+                    output: web, pdf
+                  
                   - title: Twilio
                     url: /twilio
                     output: web, pdf
@@ -781,6 +793,10 @@ entries:
 
                   - title: Zoho Desk
                     url: /zoho-desk
+                    output: web, pdf
+
+                  - title: Zoho Desk via Zoho Flow
+                    url: /zoho-desk-via-zoho-flow
                     output: web, pdf
  
               - title: Outgoing Webhooks
