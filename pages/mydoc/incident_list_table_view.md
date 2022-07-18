@@ -87,7 +87,7 @@ Learn more about each filter value [here](filter-incidents).
 {{site.data.alerts.yellow-note-i-md}}
 **Incident Export Limit**
 
-You can export as many incidents as you want, there is no set limit. You can will receive a mail once the download is completed instead of a downloaded notification right away.
+You can export as many incidents as you want, there is no set limit. You will receive a mail once the download is completed instead of a downloaded notification right away.
 
 For more information, check out our [Export Async API Documentation](https://apidocs.squadcast.com/#15f17e18-af02-4835-a4a4-59c840e19e16).
 {{site.data.alerts.end}}
