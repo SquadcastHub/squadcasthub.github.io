@@ -55,3 +55,23 @@ You can get the _time of delivery_ for notifications that are in status sent or 
 **(2)** You wont see any push notifications in the logs if you haven't installed and logged in into Squadcast App eventhough you have push in your notification rule
 
 {{site.data.alerts.end}}
+
+{{site.data.alerts.blue-note-md}}
+**Note**
+
+There will be two types of logs under notification logs, differentiated by the icon in the first column:
+
+- Incident Alert
+- Acknowledgement Reminder Alert
+
+![](images/Notification_logs.png)
+
+
+- Incident Alerts - Alert notifications sent out for incidents to on-calls, users or squads based on Escalation Policies or Routing Rules.
+
+![](images/Incident_alerts.png)
+
+- Acknowledgement Reminder Alerts - Reminder notifications sent out for acknowledged incidents to the user who acknowledged the incident.
+
+![](images/Ack_reminder_alerts.png)
+{{site.data.alerts.end}}
