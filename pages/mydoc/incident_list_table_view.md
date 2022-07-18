@@ -87,7 +87,9 @@ Learn more about each filter value [here](filter-incidents).
 {{site.data.alerts.yellow-note-i-md}}
 **Incident Export Limit**
 
-There is no limit on the number of incidents you can export. You will receive an email once the download is complete.
+At the moment, you can export only a maximum of 1000 incidents at once. Please tweak your filters to ensure the count of listed incidents is within the limit for every export. There are no limits on the number of times you can export incidents.
+
+Using our Export Async API, there is no limit on the number of incidents you can export. You will receive an email once the download is complete.
 
 For more information, check out our [Export Async API Documentation](https://apidocs.squadcast.com/#15f17e18-af02-4835-a4a4-59c840e19e16).
 {{site.data.alerts.end}}
