@@ -114,6 +114,26 @@ In some cases, even when notifications might have been *delivered* to users, the
 
 {{site.data.alerts.end}}
 
+{{site.data.alerts.blue-note-md}}
+**Note**
+
+There will be two types of logs under notification logs, differentiated by the icon in the first column:
+
+- Incident Alert
+- Acknowledgement Reminder Alert
+
+![](images/Notification_logs.png)
+
+
+- Incident Alerts - Alert notifications sent out for incidents to on-calls, users or squads based on Escalation Policies or Routing Rules.
+
+![](images/Incident_alerts.png)
+
+- Acknowledgement Reminder Alerts - Reminder notifications sent out for acknowledged incidents to the user who acknowledged the incident.
+
+![](images/Ack_reminder_alerts.png)
+{{site.data.alerts.end}}
+
 ## Bypass Do Not Disturb (DND) for SMS and Phone Call Notifications
 
 Bypassing Do Not Disturb is a powerful feature to receive Push, SMS, and Phone call notifciations for incidents even when your phone has the Do Not Disturb mode turned on.

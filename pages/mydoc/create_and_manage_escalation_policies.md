@@ -91,7 +91,56 @@ You can repeat any Escalation Policy for a **maximum of 3 times** only.
 ![](images/create_escalation_12.png)
 {{site.data.alerts.end}}
 
-**(9)** Click on **Save** to save and view the Escalation Policy
+**(9)** **For unresolved incidents send acknowledgement reminder every** helps set up re-notification to work as reminders for users to resolve an incident. 
+
+On someone acknowledging an incident, that user will start receiving periodic reminders as set up, for a maximum of 48 hours since the time of acknowledgement.
+
+To set reminder rules for re-notification,
+
+Navigate to **Escalation Policy** -> **Edit** -> check **For unresolved incidents send acknowledgement reminder every** -> Enter time (in hours), along with mode of notification -> click **Save**
+
+{{site.data.alerts.blue-note-md}}
+**Note** 
+
+Time input can be between 1 and 48 hours (inclusive).
+{{site.data.alerts.end}}
+![](images/renotify.png)
+
+To edit reminder rules for re-notification,
+
+Go to **Escalation Policy** -> **Edit** -> Goto **For unresolved incidents send acknowledgement reminder every** -> Edit the time (in hours), along with mode of notification -> click **Save**
+
+![](images/renotify.png)
+
+{{site.data.alerts.blue-note-md}}
+**Note**
+
+1. Re-Notification starts from the time of the latest acknowledgement. 
+2. Only the user who acknowledges, will get the reminder. 
+3. Users will stop receiving notifications after 48 hours of acknowledgement.
+{{site.data.alerts.end}}
+
+{{site.data.alerts.blue-note-md}}
+**Note**
+
+There will be two types of logs under notification logs, differentiated by the icon in the first column:
+
+- Incident Alert
+- Acknowledgement Reminder Alert
+
+![](images/Notification_logs.png)
+
+
+- Incident Alerts - Alert notifications sent out for incidents to on-calls, users or squads based on Escalation Policies or Routing Rules.
+
+![](images/Incident_alerts.png)
+
+- Acknowledgement Reminder Alerts - Reminder notifications sent out for acknowledged incidents to the user who acknowledged the incident.
+
+![](images/Ack_reminder_alerts.png)
+{{site.data.alerts.end}}
+
+**(10)** Click on **Save** to save and view the Escalation Policy
 
 ![](images/create_escalation_10.png)
 
