@@ -124,3 +124,7 @@ Accounts in both the data centers will have all of the features, except for:
 **1.** [Google Hangouts](https://support.squadcast.com/docs/hangouts) extension will soon be supported in the EU data center.
 
 **2.** [Jira Server](https://support.squadcast.com/docs/jira-server-on-premise) extension will not be supported in the EU data center.
+
+### 20. What browsers are supported by Squadcast?
+
+Squadcast supports the current stable versions of Google Chrome, Apple Safari, Mozilla Firefox, Opera, Microsoft Edge.
