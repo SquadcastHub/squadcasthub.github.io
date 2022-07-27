@@ -351,6 +351,10 @@ entries:
                     url: /azure-monitor
                     output: web, pdf
 
+                  - title: Better Uptime
+                    url: /better-uptime
+                    output: web, pdf
+
                   - title: Bitbucket
                     url: /bitbucket
                     output: web, pdf
