@@ -33,9 +33,9 @@ The `email address` used with your *user in MS Teams* and your *user in Squadcas
 
 The user can install the Squadcast application from three locations:
 
-**(1)** Installation from Microsoft AppSource (preferred method for prospective Squadcast customers)
+**(1)** Installation from Microsoft AppSource.
 
-**(2)** Installation directly from the Microsoft Teams client (preferred method for for existing Squadcast customers)
+**(2)** Installation directly from the Microsoft Teams client.
 
 **(3)** Installation directly using the app URL [here](https://teams.microsoft.com/l/app/7792759a-43e8-4dc8-9f55-e7b0382c4a67?source=app-details-dialog).
 
