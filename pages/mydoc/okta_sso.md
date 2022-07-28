@@ -19,7 +19,7 @@ Squadcast supports SAML 2.0 based Okta Single Sign On (SSO) login and you can se
 
 {{site.data.alerts.blue-note}}
 <b>Points to Note: </b>
-<br/><br/><p>1. Only an Administrator / Account owner can enable and configure Okta SSO for an organisation in Squadcast.<br/><br/> 2. Once enabled, only the Account owner can use email-password based login by default although it can be configured to enable email based login for Administrators as well.</p>
+<br/><br/><p>1. Only an Account owner or a User with Extension permission can enable and configure Microsoft ADFS SSO for an organisation in Squadcast.<br/><br/> 2. Once enabled, only the Account owner can use email-password based login by default although it can be configured to enable email based login for Administrators as well.</p>
 {{site.data.alerts.end}}
 
 {{site.data.alerts.yellow-note-i}}

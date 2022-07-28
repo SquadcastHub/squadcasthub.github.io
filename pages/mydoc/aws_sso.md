@@ -15,7 +15,7 @@ This page describes how to add Squadcast in AWS SSO Dashboard and configure SSO 
 
 {{site.data.alerts.blue-note}}
 <b>Points to Note: </b>
-<br/><br/><p>1. Only an Account Owner/Administrator can enable and configure SSO for an Organisation in Squadcast.<br/><br/> 2. Once SSO is enabled, only the <b>Account Owner can use email-password based login by default</b>, although it can be configured to allow <b>Administrators to use enable email-password based login</b> as well. </p>
+<br/><br/><p>1. Only an Account owner or a User with Extension permission can enable and configure Microsoft ADFS SSO for an organisation in Squadcast.<br/><br/> 2. Once SSO is enabled, only the <b>Account Owner can use email-password based login by default</b>, although it can be configured to allow <b>Administrators to use enable email-password based login</b> as well. </p>
 {{site.data.alerts.end}}
 
 ## Setup Instructions

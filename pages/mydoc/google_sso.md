@@ -62,13 +62,12 @@ email      |  Basic Information  | Primary Email
 
 Optional - For overwriting the default configured role (choose 1)
 
-role | Custom Attribute | Admin
 role | Custom Attribute | User
 role | Custom Attribute | Stakeholder
 
 ```
 
-By default Squadcast lets you create a user via SSO with a configured default Role ( Admin / User / Stakeholder) in the SSO screen as shown below but it can be overwritten by sending an optional custom field `role` and it's value along with the above attribute.
+By default Squadcast lets you create a user via SSO with a configured default Role ( User / Stakeholder) in the SSO screen as shown below but it can be overwritten by sending an optional custom field `role` and it's value along with the above attribute.
 
 {{site.data.alerts.note}}
 <br/><br/><p>For members trying to log into Squadcast through SSO who aren't already added to the Squadcast platform, will be added to the platform by default as <b>Users</b>.</p>
