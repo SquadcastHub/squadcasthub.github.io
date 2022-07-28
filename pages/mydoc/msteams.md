@@ -26,11 +26,85 @@ Squadcast sends a notification to the configured MS Teams channel as soon as an 
 The `email address` used with your *user in MS Teams* and your *user in Squadcast* should be the same, if not, the integration will not work as expected.
 {{site.data.alerts.end}}
 
-## Follow the steps below to integrate Squadcast and MS Teams
+## Follow the steps below to integrate Squadcast and MS Teams for US Data Center
 
-**(1)** Download the MS Teams app bundle by clicking on one of these links.
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
 
-MS Teams app bundle for the US data center: <a href="../../resources/squadcast_msteams.zip">download link</a>
+The user can install the Squadcast application from three locations:
+
+**(1)** Installation from Microsoft AppSource (preferred method for prospective Squadcast customers)
+
+**(2)** Installation directly from the Microsoft Teams client (preferred method for for existing Squadcast customers)
+
+**(3)** Installation directly using the app URL [here](https://teams.microsoft.com/l/app/7792759a-43e8-4dc8-9f55-e7b0382c4a67?source=app-details-dialog).
+
+Installation however, is dependent on your administrator's application installation policy.
+
+Consult with your administrator and refer to the Microsoft Teams' [Application Poilcy](https://docs.microsoft.com/en-us/microsoftteams/teams-app-permission-policies) for more information.
+{{site.data.alerts.end}}
+
+### Install Squadcast from AppSource
+
+**(1)** Go to the Microsoft AppSource site, select the **Apps** option in the Search drop down and enter **Squadcast** in the search field.
+
+You can locate the Squadcast App [here](https://appsource.microsoft.com/en-us/product/office/WA200004390).
+
+**(2)** Click on the **Get it now** button.
+
+**(3)** Fill out the contact form accordingly, and proceed to app installation via the **Next** button. You will now be redirected to the Microsoft Teams client with the Squadcast app window open.
+
+**(4)** Click on the Squadcast app tile.
+
+**(5)** Click on the app card to open the app's configuration modal and then, click on **Add** to add the app
+
+![](images/msteams_app_modal.png)
+
+**(6)** Once successfully added, you will recieve an authorize message. Click on **Authorize** button to initiate the authorization flow
+
+![](images/msteams_authorise_message.png)
+
+**(7)** On doing so, you will be redirected to the **Extensions** page in Squadcast, indicating **successful integration of MS Teams and Squadcast**
+
+![](images/msteam_successfull_integration.png)
+
+### Install directly from the Microsoft Teams client
+
+**(1)** Navigate to the app directory and search for Squadcast from within your Microsoft Teams client.
+
+**(2)** Click on the Squadcast app tile.
+
+**(3)** Click on the app card to open the app's configuration modal and then, click on **Add** to add the app
+
+![](images/msteams_app_modal.png)
+
+**(4)** Once successfully added, you will recieve an authorize message. Click on **Authorize** button to initiate the authorization flow
+
+![](images/msteams_authorise_message.png)
+
+**(5)** On doing so, you will be redirected to the **Extensions** page in Squadcast, indicating **successful integration of MS Teams and Squadcast**
+
+![](images/msteam_successfull_integration.png)
+
+### Install directly from Squadcast App URL
+
+**(1)** Navigate to the App directly using the App URL [here](https://teams.microsoft.com/l/app/7792759a-43e8-4dc8-9f55-e7b0382c4a67?source=app-details-dialog). 
+
+**(2)** Click on the app card to open the app's configuration modal and then, click on **Add** to add the app
+
+![](images/msteams_app_modal.png)
+
+**(3)** Once successfully added, you will recieve an authorize message. Click on **Authorize** button to initiate the authorization flow
+
+![](images/msteams_authorise_message.png)
+
+**(4)** On doing so, you will be redirected to the **Extensions** page in Squadcast, indicating **successful integration of MS Teams and Squadcast**
+
+![](images/msteam_successfull_integration.png)
+
+## Follow the steps below to integrate Squadcast and MS Teams for EU Data Center
+
+**(1)** Download the MS Teams app bundle by clicking on one of this link.
 
 MS Teams app bundle for the EU data center: <a href="https://github.com/SquadcastHub/extensions/blob/main/bundles/Squadcast-EU-1.6.0.zip?raw=true">download link</a>
 
