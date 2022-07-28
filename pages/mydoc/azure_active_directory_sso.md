@@ -19,7 +19,7 @@ Squadcast supports SAML 2.0 based Single Sign-On (SSO) login for Azure Active Di
 
 {{site.data.alerts.blue-note}}
 <b>Point to Note: </b>
-<br/><br/><p>1. Only an Administrator / Account owner can enable and configure Azure Active Directory SSO for an Organisation in Squadcast.<br/><br/> 2. Once enabled, only the Account Owner can use email-password based login <b>by default</b> although, it can be configured to enable email-password based login for Administrators as well.</p>
+<br/><br/><p>1. Only an Account owner or a User with Extension permission can enable and configure Microsoft ADFS SSO for an organisation in Squadcast.<br/><br/> 2. Once enabled, only the Account Owner can use email-password based login <b>by default</b> although, it can be configured to enable email-password based login for Administrators as well.</p>
 {{site.data.alerts.end}}
 
 ### Setup Guide

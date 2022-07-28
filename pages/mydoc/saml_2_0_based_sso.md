@@ -13,7 +13,7 @@ Squadcast supports any SAML 2.0 based Single Sign On (SSO) and you can set it fo
 
 {{site.data.alerts.blue-note}}
 <b>Points to Note: </b>
-<br/><br/><p>1. Only an Administrator / Account Owner can enable and configure SAML SSO for an organisation in Squadcast.<br/><br/> 2. Once enabled, only the Account Owner can use _email-password based login_ by default although it can be configured to enable email based login for Administrators as well.</p>
+<br/><br/><p>1. Only an Account owner or a User with Extension permission can enable and configure Microsoft ADFS SSO for an organisation in Squadcast.<br/><br/> 2. Once enabled, only the Account Owner can use _email-password based login_ by default although it can be configured to enable email based login for Administrators as well.</p>
 {{site.data.alerts.end}}
 
 ### Setup Instructions
