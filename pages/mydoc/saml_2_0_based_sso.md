@@ -60,4 +60,6 @@ The following SAML 2.0 based SSO logins were officially tested and found to be w
 
 - [Citrix ADC SAML SSO](https://docs.citrix.com/en-us/citrix-adc/13/aaa-tm/saml-authentication/saml-sign-sign-on.html)
 
+- [Keycloak SSO](https://www.keycloak.org/)
+
 This is the officially tested list but any SAML 2.0 based SSO should work with Squadcast.
