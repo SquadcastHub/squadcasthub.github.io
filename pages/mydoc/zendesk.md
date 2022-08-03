@@ -160,4 +160,13 @@ Then, click on **Create**
 
 ![](images/zendesk_12.png)
 
+{{site.data.alerts.yellow-note-i-md}}
+**Note:**
+
+We accept payload sent in English only, you can follow the steps given below to change the language:
+On the side-bar, click **Account** -> **Appearance** -> **Localization** -> Under Languages section, select **English (United States)**.
+
+![](images/zendesk_lang.png)
+{{site.data.alerts.end}}
+
 That is it, you are now good to go! Whenever a ticket is created with `New` or `Open` status, an incident will be created in Squadcast for it. When the ticket is either `Solved` or `Closed` in Zendesk, the corresponding incident will automatically get resolved in Squadcast as well.
