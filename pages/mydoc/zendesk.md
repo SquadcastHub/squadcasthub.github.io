@@ -160,8 +160,6 @@ Then, click on **Create**
 
 ![](images/zendesk_12.png)
 
-That is it, you are now good to go! Whenever a ticket is created with `New` or `Open` status, an incident will be created in Squadcast for it. When the ticket is either `Solved` or `Closed` in Zendesk, the corresponding incident will automatically get resolved in Squadcast as well.
-
 {{site.data.alerts.yellow-note-i-md}}
 **Note:**
 
@@ -170,3 +168,5 @@ On the side-bar, click **Account** -> **Appearance** -> **Localization** -> Unde
 
 ![](images/zendesk_lang.png)
 {{site.data.alerts.end}}
+
+That is it, you are now good to go! Whenever a ticket is created with `New` or `Open` status, an incident will be created in Squadcast for it. When the ticket is either `Solved` or `Closed` in Zendesk, the corresponding incident will automatically get resolved in Squadcast as well.
