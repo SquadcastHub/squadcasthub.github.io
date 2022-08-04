@@ -767,6 +767,10 @@ entries:
                     url: /twilio
                     output: web, pdf
 
+                  - title: Uptime
+                    url: /uptime
+                    output: web, pdf
+
                   - title: Uptime Robot
                     url: /uptime-robot
                     output: web, pdf
