@@ -8,7 +8,7 @@ permalink: docs/uptime
 folder: mydoc
 ---
 
-[Uptime](https://uptimerobot.com/) is an uptime monitoring service. It can help you with website monitoring, SSL monitoring, ping and port monitoring, cron job monitoring & keyword monitoring.
+[Uptime](https://uptime.com/) is an uptime monitoring service. It can help you with website monitoring, SSL monitoring, ping and port monitoring, cron job monitoring & keyword monitoring.
 
 Route detailed alerts from Uptime to the right users in Squadcast.
 
