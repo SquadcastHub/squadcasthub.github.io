@@ -23,3 +23,16 @@ You can find for us in the [Terraform Registry](https://registry.terraform.io/se
 - Choose a default escalation policy for the service
 - Add an email prefix to activate email integration
 - Get all the alert source end-points to activate integration with the respective alert sources
+- Create a schedule 
+- Create a runbook
+- Create a user
+- Create and manage team roles and their permissions
+- Create and manage members of a team
+- Create and manage team meta details like name, description, etc.
+- Create a squad
+- Create and manage SLOs
+- Create maintenance windows for services
+- Create routing rules
+- Create deduplication rules
+- Create tagging rules
+- Create suppression rules
