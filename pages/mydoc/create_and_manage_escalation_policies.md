@@ -93,7 +93,7 @@ You can repeat any Escalation Policy for a **maximum of 3 times** only.
 
 **(9)** **For unresolved incidents**
 
-**Send acknowledgement reminder** helps set up re-notification to work as reminders for users to resolve an incident. 
+**(a)** **Send acknowledgement reminder** helps set up re-notification to work as reminders for users to resolve an incident. 
 
 On someone acknowledging an incident, that user will start receiving periodic reminders as set up, for a maximum of 48 hours since the time of acknowledgement.
 
@@ -142,7 +142,9 @@ There will be two types of logs under notification logs, differentiated by the i
 ![](images/Ack_reminder_alerts.png)
 {{site.data.alerts.end}}
 
-**(10)** You can also set a rule to re-trigger an incident if it not resolved until a certain period of time. 
+**(b)** **Set rule to re-trigger an unresolved incident** 
+
+You can also set a rule to re-trigger an incident if it not resolved until a certain period of time. 
 
 When an incident comes in, whether it was acknowledged or not, if it not resolved until a certain period of time, enabling this rule with a time will let the system decide if this incident needs to be re-triggered. 
 
@@ -159,7 +161,7 @@ This rule will specify when your incident will be re-triggered, from the time of
 - An incident can only be re-triggered once. 
 {{site.data.alerts.end}}
 
-**(11)** Click on **Save** to save and view the Escalation Policy
+**(10)** Click on **Save** to save and view the Escalation Policy
 
 ![](images/create_escalation_10.png)
 
