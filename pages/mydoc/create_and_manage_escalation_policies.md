@@ -142,9 +142,9 @@ There will be two types of logs under notification logs, differentiated by the i
 ![](images/Ack_reminder_alerts.png)
 {{site.data.alerts.end}}
 
-**(10)** You can also set a rule to re-trigger an incident if it not resolved untill a certain period of time. 
+**(10)** You can also set a rule to re-trigger an incident if it not resolved until a certain period of time. 
 
-When an incident comes in, whether it was acknowledged or not, if it not resolved untill a certain period of time, enabling this rule with a time will let the system decide if this incident needs to be re-triggered. 
+When an incident comes in, whether it was acknowledged or not, if it not resolved until a certain period of time, enabling this rule with a time will let the system decide if this incident needs to be re-triggered. 
 
 If the incident is re-triggered, it will be assigned to the latest escalation policy that it was assigned to previously. 
 
