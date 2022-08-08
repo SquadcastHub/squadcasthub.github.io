@@ -79,7 +79,7 @@ By default, **Personal Notification Rules** (as indicated by **Personal** option
 
 ![](images/create_escalation_8.png)
 
-**(8)** **Repeat the _entire policy_** if no one acknowledges the incident even after the Escalation Policy has been executed fully once 
+**(8)** **Actions For Unacknowledged Incidents** <br> <br> **Repeat the _entire policy_** if no one acknowledges the incident even after the Escalation Policy has been executed fully once 
 
 ![](images/create_escalation_9.png)
 
@@ -91,7 +91,9 @@ You can repeat any Escalation Policy for a **maximum of 3 times** only.
 ![](images/create_escalation_12.png)
 {{site.data.alerts.end}}
 
-**(9)** **For unresolved incidents send acknowledgement reminder every** helps set up re-notification to work as reminders for users to resolve an incident. 
+**(9)** **For unresolved incidents**
+
+**Send acknowledgement reminder** helps set up re-notification to work as reminders for users to resolve an incident. 
 
 On someone acknowledging an incident, that user will start receiving periodic reminders as set up, for a maximum of 48 hours since the time of acknowledgement.
 
@@ -104,13 +106,13 @@ Navigate to **Escalation Policy** -> **Edit** -> check **For unresolved incident
 
 Time input can be between 1 and 48 hours (inclusive).
 {{site.data.alerts.end}}
-![](images/renotify.png)
+![](images/escalation_policy_new_1.png)
 
 To edit reminder rules for re-notification,
 
 Go to **Escalation Policy** -> **Edit** -> Goto **For unresolved incidents send acknowledgement reminder every** -> Edit the time (in hours), along with mode of notification -> click **Save**
 
-![](images/renotify.png)
+![](images/escalation_policy_new_1.png)
 
 {{site.data.alerts.blue-note-md}}
 **Note**
@@ -140,7 +142,24 @@ There will be two types of logs under notification logs, differentiated by the i
 ![](images/Ack_reminder_alerts.png)
 {{site.data.alerts.end}}
 
-**(10)** Click on **Save** to save and view the Escalation Policy
+**(10)** You can also set a rule to re-trigger an incident if it not resolved untill a certain period of time. 
+
+When an incident comes in, whether it was acknowledged or not, if it not resolved untill a certain period of time, enabling this rule with a time will let the system decide if this incident needs to be re-triggered. 
+
+If the incident is re-triggered, it will be assigned to the latest escalation policy that it was assigned to previously. 
+
+This rule will specify when your incident will be re-triggered, from the time of the first trigger.
+
+![](images/escalation_policy_new_2.png)
+
+{{site.data.alerts.yellow-note-i-md}}
+**Important:**
+
+- It can be set to a maximum of 48 hrs from the time of the first trigger. 
+- An incident can only be re-triggered once. 
+{{site.data.alerts.end}}
+
+**(11)** Click on **Save** to save and view the Escalation Policy
 
 ![](images/create_escalation_10.png)
 
