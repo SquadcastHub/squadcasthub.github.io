@@ -22,7 +22,7 @@ Route detailed alerts from Grafana 8 to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Grafana 8**. **** Copy the displayed **Webhook URL** to [configure](grafana-8#in-grafana-8-create-a-squadcast-webhook-as-a-notification-channel) it within **Grafana 8.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Grafana 8**. Copy the displayed **Webhook URL** to [configure](grafana-8#in-grafana-8-create-a-squadcast-webhook-as-a-notification-channel) it within **Grafana 8.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Grafana 8.png>)
 

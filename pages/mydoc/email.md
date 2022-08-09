@@ -17,7 +17,7 @@ Route alerts into Squadcast using Email endpoints of Services from platforms tha
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Email**. **** Copy the displayed **Webhook URL** to [configure](email#how-to-configure-the-email-prefix-for-a-new-service) it within **Email**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Email**. Copy the displayed **Webhook URL** to [configure](email#how-to-configure-the-email-prefix-for-a-new-service) it within **Email**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Email.png>)
 

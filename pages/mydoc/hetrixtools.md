@@ -22,7 +22,7 @@ Route detailed monitoring alerts from HetrixTools to the right users in Squadcas
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **HetrixTools**. **** Copy the displayed **Webhook URL** to [configure](hetrixtools#in-hetrixtools-create-a-squadcast-webhook) it within **HetrixTools.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **HetrixTools**. Copy the displayed **Webhook URL** to [configure](hetrixtools#in-hetrixtools-create-a-squadcast-webhook) it within **HetrixTools.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/HetrixTools.png>)
 

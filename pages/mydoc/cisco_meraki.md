@@ -18,7 +18,7 @@ Route detailed alerts from Cisco Meraki to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Cisco Meraki**. **** Copy the displayed **Webhook URL** to [configure](cisco-meraki#create-a-squadcast-webhook-url-rest-endpoint-in-cisco-meraki) it within **Cisco Meraki**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Cisco Meraki**. Copy the displayed **Webhook URL** to [configure](cisco-meraki#create-a-squadcast-webhook-url-rest-endpoint-in-cisco-meraki) it within **Cisco Meraki**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Cisco Meraki.png>)
 

@@ -22,7 +22,7 @@ Route detailed events from GitHub to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **GitHub**. **** Copy the displayed **Webhook URL** to [configure](github#in-github-create-a-squadcast-webhook) it within **GitHub.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **GitHub**. Copy the displayed **Webhook URL** to [configure](github#in-github-create-a-squadcast-webhook) it within **GitHub.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/GitHub.png>)
 

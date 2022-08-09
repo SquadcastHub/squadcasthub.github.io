@@ -20,7 +20,7 @@ Squadcast will then process this information to create incidents for this servic
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Icinga2**. **** Copy the displayed **Webhook URL** to [configure](icinga2#create-a-squadcast-webhook-in-icinga2) it within **Icinga2.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Icinga2**. Copy the displayed **Webhook URL** to [configure](icinga2#create-a-squadcast-webhook-in-icinga2) it within **Icinga2.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Incinga2.png>)
 

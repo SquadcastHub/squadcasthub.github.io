@@ -18,7 +18,7 @@ Route detailed alerts from Dead Man's Snitch to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Dead Man's Snitch**. **** Copy the displayed **Webhook URL** to [configure](dead-mans-snitch#create-a-squadcast-integration-in-dead-mans-snitch) it within **Dead Man's Snitch**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Dead Man's Snitch**. Copy the displayed **Webhook URL** to [configure](dead-mans-snitch#create-a-squadcast-integration-in-dead-mans-snitch) it within **Dead Man's Snitch**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Dead Man's Snitch.png>)
 

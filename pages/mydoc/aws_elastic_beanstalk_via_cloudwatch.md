@@ -24,7 +24,7 @@ Route detailed monitoring alerts from AWS Elastic Beanstalk via CloudWatch to th
 
 **(2)** Select **AWS Elastic Beanstalk via CloudWatch.** Copy the displayed **Webhook URL** to [configure](aws-elastic-beanstalk-via-cloudwatch#create-a-squadcast-webhook-in-amazon-sns) it within **AWS Elastic Beanstalk via CloudWatch**. Finish by clicking **Add Alert Source** -> **Done**.
 
-![](<images/Amazon Cloudwatch (AWS).png>)
+![](<images/Amazon Cloudwatch (AWS) .png>)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b><br/><br/>

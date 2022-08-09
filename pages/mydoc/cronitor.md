@@ -18,7 +18,7 @@ Route detailed alerts from Cronitor to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Cronitor**. **** Copy the displayed **Webhook URL** to [configure](cronitor#create-a-squadcast-webhook-alert-in-cronitor) it within **Cronitor**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Cronitor**. Copy the displayed **Webhook URL** to [configure](cronitor#create-a-squadcast-webhook-alert-in-cronitor) it within **Cronitor**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Cronitor.png>)
 

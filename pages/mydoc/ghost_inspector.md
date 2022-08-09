@@ -17,7 +17,7 @@ Follow the steps below to configure a Ghost Inspector service so an alert can be
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Ghost Inspector**. **** Copy the displayed **Webhook URL** to [configure](ghost-inspector#create-a-squadcast-webhook-in-ghost-inspector) it within **Ghost Inspector.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Ghost Inspector**. Copy the displayed **Webhook URL** to [configure](ghost-inspector#create-a-squadcast-webhook-in-ghost-inspector) it within **Ghost Inspector.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Ghost Inspector.png>)
 

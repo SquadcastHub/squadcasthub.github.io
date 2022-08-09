@@ -18,7 +18,7 @@ Route detailed alerts from Crowdstrike Falcon to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Crowdstrike Falcon**. **** Copy the displayed **Webhook URL** to [configure](crowdstrike-falcon#create-a-squadcast-webhook-url-rest-endpoint-in-crowdstrike-falcon) it within **Crowdstrike Falcon**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Crowdstrike Falcon**. Copy the displayed **Webhook URL** to [configure](crowdstrike-falcon#create-a-squadcast-webhook-url-rest-endpoint-in-crowdstrike-falcon) it within **Crowdstrike Falcon**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Crowdstrike Falcon.png>)
 

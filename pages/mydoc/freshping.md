@@ -22,7 +22,7 @@ Route detailed monitoring alerts from Freshping to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Freshping**. **** Copy the displayed **Webhook URL** to [configure](freshping#create-a-squadcast-webhook-in-freshping) it within **Freshping.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Freshping**. Copy the displayed **Webhook URL** to [configure](freshping#create-a-squadcast-webhook-in-freshping) it within **Freshping.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Freshping.png>)
 

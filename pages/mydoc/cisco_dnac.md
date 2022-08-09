@@ -18,7 +18,7 @@ You can integrate Cisco DNAC with Squadcast and get those alerts into Squadcast 
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Cisco DNAC**. **** Copy the displayed **Webhook URL** to [configure](cisco-dnac#create-a-squadcast-webhook-url-rest-endpoint-in-cisco-dnac) it within **Cisco DNAC**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Cisco DNAC**. Copy the displayed **Webhook URL** to [configure](cisco-dnac#create-a-squadcast-webhook-url-rest-endpoint-in-cisco-dnac) it within **Cisco DNAC**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Cisco DNAC.png>)
 

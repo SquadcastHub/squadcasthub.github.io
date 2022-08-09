@@ -19,7 +19,7 @@ Squadcast will then process this information to create incidents for this servic
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Buildkite**. **** Copy the displayed **Webhook URL** to [configure](buildkite#create-a-squadcast-webhook-in-buildkite) it within **Buildkite**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Buildkite**. Copy the displayed **Webhook URL** to [configure](buildkite#create-a-squadcast-webhook-in-buildkite) it within **Buildkite**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Buildkite.png>)
 

@@ -22,7 +22,7 @@ Route detailed alerts from Kibana to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Kibana**. **** Copy the displayed **Webhook URL** to [configure](kibana#in-kibana-create-a-squadcast-webhook-alert) it within **Kibana**. Finish by clicking **Add Alert Source** -> **Done.**
+**(2)** Select **Kibana**. Copy the displayed **Webhook URL** to [configure](kibana#in-kibana-create-a-squadcast-webhook-alert) it within **Kibana**. Finish by clicking **Add Alert Source** -> **Done.**
 
 ![](<images/Kibana.png>)
 

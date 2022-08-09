@@ -21,7 +21,7 @@ Route detailed monitoring alerts from Datadog to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Datadog**. **** Copy the displayed **Webhook URL** to [configure](datadog#in-datadog-create-a-squadcast-webhook) it within **Datadog**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Datadog**. Copy the displayed **Webhook URL** to [configure](datadog#in-datadog-create-a-squadcast-webhook) it within **Datadog**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Datadog.png>)
 
