@@ -791,6 +791,10 @@ entries:
                     url: /zabbix-5
                     output: web, pdf
 
+                  - title: Zabbix 6.2
+                    url: /zabbix-6
+                    output: web, pdf
+
                   - title: Zendesk
                     url: /zendesk
                     output: web, pdf
