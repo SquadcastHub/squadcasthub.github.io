@@ -24,7 +24,7 @@ Route detailed alerts from Conviva to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Conviva**. **** Copy the displayed **Webhook URL** to [configure](conviva#in-conviva-create-a-squadcast-webhook-as-a-notification-channel) it within **Conviva**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Conviva**. Copy the displayed **Webhook URL** to [configure](conviva#in-conviva-create-a-squadcast-webhook-as-a-notification-channel) it within **Conviva**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Conviva.png>)
 

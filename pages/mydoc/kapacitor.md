@@ -20,7 +20,7 @@ Route detailed alerts from Kapacitor to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Kapacitor**. **** Copy the displayed **Webhook URL** to [configure](kapacitor#in-kapacitor-setup-a-squadcast-webhook) it within **Kapacitor**. Finish by clicking **Add Alert Source** -> **Done.**
+**(2)** Select **Kapacitor**. Copy the displayed **Webhook URL** to [configure](kapacitor#in-kapacitor-setup-a-squadcast-webhook) it within **Kapacitor**. Finish by clicking **Add Alert Source** -> **Done.**
 
 ![](<images/Kapacitor.png>)
 

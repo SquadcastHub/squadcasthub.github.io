@@ -18,7 +18,7 @@ Route detailed alerts from Domotz to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Domotz**. **** Copy the displayed **Webhook URL** to [configure](domotz#create-a-squadcast-webhook-shared-alert-in-domotz) it within **Domotz**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Domotz**. Copy the displayed **Webhook URL** to [configure](domotz#create-a-squadcast-webhook-shared-alert-in-domotz) it within **Domotz**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Domotz.png>)
 

@@ -19,7 +19,7 @@ Squadcast will then process this information to create incidents for this servic
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **CopperEgg**. **** Copy the displayed **Webhook URL** to [configure](copperegg#create-a-squadcast-webhook-in-copperegg) it within **CopperEgg**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **CopperEgg**. Copy the displayed **Webhook URL** to [configure](copperegg#create-a-squadcast-webhook-in-copperegg) it within **CopperEgg**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/CopperEgg.png>)
 

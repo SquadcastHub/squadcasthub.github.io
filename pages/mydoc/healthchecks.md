@@ -18,7 +18,7 @@ Route detailed alerts from Healthchecks to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Healthchecks**. **** Copy the displayed **Webhook URL** to [configure](healthchecks#create-a-squadcast-webhook-alert-in-healthchecks) it within **Healthchecks.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Healthchecks**. Copy the displayed **Webhook URL** to [configure](healthchecks#create-a-squadcast-webhook-alert-in-healthchecks) it within **Healthchecks.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Healthchecks.png>)
 

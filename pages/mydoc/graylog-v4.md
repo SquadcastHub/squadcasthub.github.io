@@ -22,7 +22,7 @@ Route detailed monitoring alerts from Graylog v4 to the right users in Squadcast
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Graylog v4**. **** Copy the displayed **Webhook URL** to [configure](graylog-v4#in-graylog-v4-add-a-webhook-for-squadcast) it within **Graylog v4.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Graylog v4**. Copy the displayed **Webhook URL** to [configure](graylog-v4#in-graylog-v4-add-a-webhook-for-squadcast) it within **Graylog v4.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Graylog v4.png>)
 

@@ -26,7 +26,7 @@ Please drop our **[Support Team](mailto:support@squadcast.com)** a line if you h
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Checkmk**. **** Copy the displayed **Webhook URL** to [configure](checkmk#steps-for-integrating-checkmk) it within **Checkmk**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Checkmk**. Copy the displayed **Webhook URL** to [configure](checkmk#steps-for-integrating-checkmk) it within **Checkmk**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Checkmk.png>)
 

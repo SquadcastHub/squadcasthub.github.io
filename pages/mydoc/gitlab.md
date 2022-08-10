@@ -22,7 +22,7 @@ Route detailed events from GitLab to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **GitLab**. **** Copy the displayed **Webhook URL** to [configure](gitlab#in-gitlab-create-a-squadcast-webhook) it within **GitLab.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **GitLab**. Copy the displayed **Webhook URL** to [configure](gitlab#in-gitlab-create-a-squadcast-webhook) it within **GitLab.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/GitLab.png>)
 

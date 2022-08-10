@@ -19,7 +19,7 @@ Squadcast will then process this information to create incidents for this servic
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Honeybadger**. **** Copy the displayed **Webhook URL** to [configure](honeybadger#create-a-squadcast-webhook-in-honeybadger) it within **Honeybadger.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Honeybadger**. Copy the displayed **Webhook URL** to [configure](honeybadger#create-a-squadcast-webhook-in-honeybadger) it within **Honeybadger.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Honeybadger.png>)
 

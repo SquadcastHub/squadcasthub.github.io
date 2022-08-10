@@ -20,7 +20,7 @@ Squadcast will then process this information to create incidents for this servic
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Instana**. **** Copy the displayed **Webhook URL** to [configure](instana#create-a-squadcast-webhook-in-instana) it within **Instana.** Finish by clicking **Add Alert Source** -> **Done.**
+**(2)** Select **Instana**. Copy the displayed **Webhook URL** to [configure](instana#create-a-squadcast-webhook-in-instana) it within **Instana.** Finish by clicking **Add Alert Source** -> **Done.**
 
 ![](<images/Instana.png>)
 

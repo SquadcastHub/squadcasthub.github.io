@@ -22,7 +22,7 @@ Route detailed alerts from Bitbucket to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Bitbucket**. **** Copy the displayed **Webhook URL** to [configure](bitbucket#in-squadcast-using-bitbucket-as-an-alert-source) it within **Bitbucket**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Bitbucket**. Copy the displayed **Webhook URL** to [configure](bitbucket#in-squadcast-using-bitbucket-as-an-alert-source) it within **Bitbucket**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Bitbucket .png>)
 

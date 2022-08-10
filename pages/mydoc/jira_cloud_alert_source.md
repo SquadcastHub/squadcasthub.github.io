@@ -23,7 +23,7 @@ Squadcast will then process this information to create incidents for this servic
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Jira Cloud**. **** Copy the displayed **Webhook URL** to [configure](jira-cloud-alert-source#create-a-squadcast-webhook-in-jira-cloud) it within **Jira Cloud.** Finish by clicking **Add Alert Source** -> **Done.**
+**(2)** Select **Jira Cloud**. Copy the displayed **Webhook URL** to [configure](jira-cloud-alert-source#create-a-squadcast-webhook-in-jira-cloud) it within **Jira Cloud.** Finish by clicking **Add Alert Source** -> **Done.**
 
 ![](<images/Jira Cloud.png>)
 

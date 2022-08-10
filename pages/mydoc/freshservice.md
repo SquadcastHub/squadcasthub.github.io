@@ -22,7 +22,7 @@ Route detailed ticket alerts from Freshservice to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Freshservice**. **** Copy the displayed **Webhook URL** to [configure](freshservice#in-freshservice-create-a-squadcast-webhook-alert) it within **Freshservice.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Freshservice**. Copy the displayed **Webhook URL** to [configure](freshservice#in-freshservice-create-a-squadcast-webhook-alert) it within **Freshservice.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Freshservice.png>)
 

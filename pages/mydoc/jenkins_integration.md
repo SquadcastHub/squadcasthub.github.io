@@ -29,7 +29,7 @@ In Squadcast:
 
 ![](<images/Alert_Sources.png>)
 
-- Select **Jenkins**. **** Copy the displayed **Webhook URL** to configure it within **Jenkins.** Finish by clicking **Add Alert Source** -> **Done.**
+- Select **Jenkins**. Copy the displayed **Webhook URL** to configure it within **Jenkins.** Finish by clicking **Add Alert Source** -> **Done.**
 
 ![](<images/Jenkins.png>)
 

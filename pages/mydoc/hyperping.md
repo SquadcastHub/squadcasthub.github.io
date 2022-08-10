@@ -22,7 +22,7 @@ Route detailed alerts from Hyperping to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Hyperping**. **** Copy the displayed **Webhook URL** to [configure](hyperping#in-hyperping-set-up-a-webhook-for-squadcast) it within **Hyperping.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Hyperping**. Copy the displayed **Webhook URL** to [configure](hyperping#in-hyperping-set-up-a-webhook-for-squadcast) it within **Hyperping.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Hyperping.png>)
 

@@ -22,7 +22,7 @@ Route detailed log alerts from Coralogix to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Coralogix**. **** Copy the displayed **Webhook URL** to [configure](coralogix#in-coralogix-create-a-squadcast-webhook) it within **Coralogix**. Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Coralogix**. Copy the displayed **Webhook URL** to [configure](coralogix#in-coralogix-create-a-squadcast-webhook) it within **Coralogix**. Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Coralogix.png>)
 

@@ -22,7 +22,7 @@ Route detailed alerts from Heroku to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Heroku**. **** Copy the displayed **Webhook URL** to [configure](heroku#in-heroku-set-up-a-webhook-for-squadcast) it within **Heroku.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Heroku**. Copy the displayed **Webhook URL** to [configure](heroku#in-heroku-set-up-a-webhook-for-squadcast) it within **Heroku.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Heroku.png>)
 

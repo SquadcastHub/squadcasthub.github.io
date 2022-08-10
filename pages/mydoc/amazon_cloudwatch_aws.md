@@ -21,7 +21,7 @@ Squadcast will then process this information to create incidents for this servic
 
 **(2)** Select **Amazon CloudWatch**. Copy the displayed **Webhook URL** to [configure](amazon-cloudwatch-aws#create-a-squadcast-webhook-in-amazon-cloudwatch) it within **Amazon CloudWatch.** Finish by clicking **Add Alert Source** -> **Done**.
 
-![](<images/Amazon Cloudwatch (AWS).png>)
+![](<images/Amazon Cloudwatch (AWS) .png>)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b><br/><br/>

@@ -18,7 +18,7 @@ Route detailed alerts from Intercom to the right users in Squadcast.
 
 ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Intercom**. **** Copy the displayed **Webhook URL** to [configure](intercom#create-a-squadcast-webhook-alert-in-intercom) it within **Intercom.** Finish by clicking **Add Alert Source** -> **Done.**
+**(2)** Select **Intercom**. Copy the displayed **Webhook URL** to [configure](intercom#create-a-squadcast-webhook-alert-in-intercom) it within **Intercom.** Finish by clicking **Add Alert Source** -> **Done.**
 
 ![](<images/Intercom.png>)
 

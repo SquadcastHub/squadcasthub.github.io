@@ -18,7 +18,7 @@ Route detailed alerts from Honeycomb to the right users in Squadcast.
 
  ![](<images/Alert_Sources.png>)
 
-**(2)** Select **Honeycomb**. **** Copy the displayed **Webhook URL** to [configure](honeycomb#create-a-squadcast-webhook-trigger-in-honeycomb) it within **Honeycomb.** Finish by clicking **Add Alert Source** -> **Done**.
+**(2)** Select **Honeycomb**. Copy the displayed **Webhook URL** to [configure](honeycomb#create-a-squadcast-webhook-trigger-in-honeycomb) it within **Honeycomb.** Finish by clicking **Add Alert Source** -> **Done**.
 
 ![](<images/Honeycomb.png>)
 
