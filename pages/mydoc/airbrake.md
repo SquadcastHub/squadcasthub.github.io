@@ -20,7 +20,7 @@ Route detailed alerts from Airbrake to the right users in Squadcast.
 
 **(2)** Select **Airbrake**. Copy the displayed **Webhook URL** to [configure](airbrake#create-a-squadcast-webhook-integration-in-airbrake) it within **Airbrake.** Finish by clicking **Add Alert Source** -> **Done**.
 
-![](<images/Amazon Cloudwatch (AWS).png>)
+![](<images/airbrake.png>)
 
 {{site.data.alerts.yellow-note-i}}
 <b>Important</b><br/><br/>
